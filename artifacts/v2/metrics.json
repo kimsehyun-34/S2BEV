@@ -1,0 +1,847 @@
+{
+  "experiment": "v2_recent_season_forward",
+  "model": "Validation-selected outcome ensemble",
+  "data": {
+    "csv": "data/epl_recent.csv",
+    "sha256": "955d443078fa2e8f0e0625ee70389ff4c1eec1be4b84c500c41841f40aacfcc2",
+    "matches": 2740,
+    "seasons": [
+      "2019/2020",
+      "2020/2021",
+      "2021/2022",
+      "2022/2023",
+      "2023/2024",
+      "2024/2025",
+      "2025/2026",
+      "2026/2027"
+    ],
+    "trained_through": "2026-10-25",
+    "recommendation_season": "2026/2027",
+    "test_matches": 840
+  },
+  "selection": {
+    "without_formation": {
+      "specs": [
+        {
+          "family": "poisson",
+          "alpha": 0.3
+        }
+      ],
+      "weights": [
+        1.0
+      ],
+      "validation": {
+        "accuracy": 0.5605263157894737,
+        "log_loss": 0.9601529185977677,
+        "multiclass_brier": 0.5690863088923978,
+        "expected_points_mae": 1.0805653969836677
+      }
+    },
+    "with_formation": {
+      "specs": [
+        {
+          "family": "poisson",
+          "alpha": 0.3
+        }
+      ],
+      "weights": [
+        1.0
+      ],
+      "validation": {
+        "accuracy": 0.5592105263157895,
+        "log_loss": 0.9591960242999179,
+        "multiclass_brier": 0.5685249790044904,
+        "expected_points_mae": 1.0797387764726196
+      }
+    }
+  },
+  "test": {
+    "uniform_random": {
+      "matches": 840,
+      "accuracy": 0.3333333333333333,
+      "log_loss": 1.0986122886681096,
+      "multiclass_brier": 0.6666666666666666,
+      "expected_points_mae": 1.2095238095238094,
+      "accuracy_note": "Expected accuracy of uniform random guesses"
+    },
+    "home_prior": {
+      "matches": 840,
+      "accuracy": 0.4142857142857143,
+      "log_loss": 1.0840160856996088,
+      "multiclass_brier": 0.656627169494628,
+      "expected_points_mae": 1.2455997135696386
+    },
+    "elo_logistic": {
+      "matches": 840,
+      "accuracy": 0.5059523809523809,
+      "log_loss": 1.0099668182793418,
+      "multiclass_brier": 0.606312495859026,
+      "expected_points_mae": 1.090236729456068
+    },
+    "legacy_rf_retrained": {
+      "matches": 840,
+      "accuracy": 0.513095238095238,
+      "log_loss": 1.0285625159751097,
+      "multiclass_brier": 0.6169706828425319,
+      "expected_points_mae": 1.1308076794623851
+    },
+    "without_formation": {
+      "matches": 840,
+      "accuracy": 0.5071428571428571,
+      "log_loss": 1.0104710843288653,
+      "multiclass_brier": 0.6051280957354124,
+      "expected_points_mae": 1.0976924751012112
+    },
+    "with_formation": {
+      "matches": 840,
+      "accuracy": 0.5047619047619047,
+      "log_loss": 1.0102836875293895,
+      "multiclass_brier": 0.6049560637903979,
+      "expected_points_mae": 1.0973090807319386
+    }
+  },
+  "test_by_season": {
+    "2024/2025": {
+      "uniform_random": {
+        "matches": 380,
+        "accuracy": 0.3333333333333333,
+        "log_loss": 1.0986122886681093,
+        "multiclass_brier": 0.666666666666667,
+        "expected_points_mae": 1.224561403508772,
+        "accuracy_note": "Expected accuracy of uniform random guesses"
+      },
+      "home_prior": {
+        "matches": 380,
+        "accuracy": 0.40789473684210525,
+        "log_loss": 1.0798554771536857,
+        "multiclass_brier": 0.6547113573407202,
+        "expected_points_mae": 1.2645706371191134
+      },
+      "elo_logistic": {
+        "matches": 380,
+        "accuracy": 0.5368421052631579,
+        "log_loss": 0.9856475220034739,
+        "multiclass_brier": 0.5896354507279612,
+        "expected_points_mae": 1.0778046127452123
+      },
+      "legacy_rf_retrained": {
+        "matches": 380,
+        "accuracy": 0.5473684210526316,
+        "log_loss": 0.9998450972634997,
+        "multiclass_brier": 0.59624741541598,
+        "expected_points_mae": 1.1200393346494717
+      },
+      "without_formation": {
+        "matches": 380,
+        "accuracy": 0.5447368421052632,
+        "log_loss": 0.9806953388020773,
+        "multiclass_brier": 0.5844863669148711,
+        "expected_points_mae": 1.0788925963821774
+      },
+      "with_formation": {
+        "matches": 380,
+        "accuracy": 0.5447368421052632,
+        "log_loss": 0.9806207861205716,
+        "multiclass_brier": 0.5843039888306414,
+        "expected_points_mae": 1.0783113420991801
+      }
+    },
+    "2025/2026": {
+      "uniform_random": {
+        "matches": 380,
+        "accuracy": 0.3333333333333333,
+        "log_loss": 1.0986122886681093,
+        "multiclass_brier": 0.666666666666667,
+        "expected_points_mae": 1.2017543859649122,
+        "accuracy_note": "Expected accuracy of uniform random guesses"
+      },
+      "home_prior": {
+        "matches": 380,
+        "accuracy": 0.4263157894736842,
+        "log_loss": 1.085063105545527,
+        "multiclass_brier": 0.6564923822714681,
+        "expected_points_mae": 1.2317451523545706
+      },
+      "elo_logistic": {
+        "matches": 380,
+        "accuracy": 0.49473684210526314,
+        "log_loss": 1.028328211378988,
+        "multiclass_brier": 0.6193535141658184,
+        "expected_points_mae": 1.0972665807675241
+      },
+      "legacy_rf_retrained": {
+        "matches": 380,
+        "accuracy": 0.4868421052631579,
+        "log_loss": 1.0501084454477316,
+        "multiclass_brier": 0.6323455591844267,
+        "expected_points_mae": 1.1361012293644006
+      },
+      "without_formation": {
+        "matches": 380,
+        "accuracy": 0.4868421052631579,
+        "log_loss": 1.0334768881406269,
+        "multiclass_brier": 0.6212824478988269,
+        "expected_points_mae": 1.1147211111413422
+      },
+      "with_formation": {
+        "matches": 380,
+        "accuracy": 0.4842105263157895,
+        "log_loss": 1.0331341938421879,
+        "multiclass_brier": 0.6210707508234308,
+        "expected_points_mae": 1.1145389333235574
+      }
+    },
+    "2026/2027": {
+      "uniform_random": {
+        "matches": 80,
+        "accuracy": 0.3333333333333333,
+        "log_loss": 1.0986122886681096,
+        "multiclass_brier": 0.6666666666666669,
+        "expected_points_mae": 1.175,
+        "accuracy_note": "Expected accuracy of uniform random guesses"
+      },
+      "home_prior": {
+        "matches": 80,
+        "accuracy": 0.3875,
+        "log_loss": 1.0988056320246322,
+        "multiclass_brier": 0.6663675165357,
+        "expected_points_mae": 1.221296992481203
+      },
+      "elo_logistic": {
+        "matches": 80,
+        "accuracy": 0.4125,
+        "log_loss": 1.0382668583663937,
+        "multiclass_brier": 0.6235836232743198,
+        "expected_points_mae": 1.1158974901032157
+      },
+      "legacy_rf_retrained": {
+        "matches": 80,
+        "accuracy": 0.475,
+        "log_loss": 1.0626270898603036,
+        "multiclass_brier": 0.6423755404946535,
+        "expected_points_mae": 1.156812955289151
+      },
+      "without_formation": {
+        "matches": 80,
+        "accuracy": 0.425,
+        "log_loss": 1.0426283074752412,
+        "multiclass_brier": 0.626443134856764,
+        "expected_points_mae": 1.1061058778259987
+      },
+      "with_formation": {
+        "matches": 80,
+        "accuracy": 0.4125,
+        "log_loss": 1.0426425642354833,
+        "multiclass_brier": 0.626508656442335,
+        "expected_points_mae": 1.1057065394273515
+      }
+    }
+  },
+  "comparisons": {
+    "formation_vs_ablation": {
+      "accuracy": {
+        "improvement": -0.002380952380952381,
+        "ci_95_low": -0.007177248374065266,
+        "ci_95_high": 0.0023725496825893278,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      },
+      "log_loss": {
+        "improvement": 0.00018739679947568264,
+        "ci_95_low": -0.000336111931579103,
+        "ci_95_high": 0.0007439603616796303,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      }
+    },
+    "upgraded_vs_legacy": {
+      "accuracy": {
+        "improvement": -0.008333333333333333,
+        "ci_95_low": -0.03128585594110099,
+        "ci_95_high": 0.014870349700665086,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      },
+      "log_loss": {
+        "improvement": 0.01827882844572016,
+        "ci_95_low": 0.0011179620709389315,
+        "ci_95_high": 0.034167685239447375,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      }
+    },
+    "upgraded_vs_home_prior": {
+      "accuracy": {
+        "improvement": 0.09047619047619047,
+        "ci_95_low": 0.055007598695617964,
+        "ci_95_high": 0.12379864386792454,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      },
+      "log_loss": {
+        "improvement": 0.07373239817021944,
+        "ci_95_low": 0.051471882536301625,
+        "ci_95_high": 0.09523130110863279,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      }
+    },
+    "upgraded_vs_elo": {
+      "accuracy": {
+        "improvement": -0.0011904761904761906,
+        "ci_95_low": -0.023670673076923075,
+        "ci_95_high": 0.020238899613899616,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      },
+      "log_loss": {
+        "improvement": -0.00031686925004779454,
+        "ci_95_low": -0.013439281727325676,
+        "ci_95_high": 0.012554995985911123,
+        "weeks": 80,
+        "matches": 840,
+        "method": "Paired calendar-week cluster percentile bootstrap",
+        "repeats": 3000,
+        "limitation": "Approximate interval for this sample; does not cover model selection or long-term season drift."
+      }
+    }
+  },
+  "market_reference": {
+    "available": true,
+    "matches": 840,
+    "market": {
+      "accuracy": 0.5202380952380953,
+      "log_loss": 0.9917870891989445,
+      "multiclass_brier": 0.5931147022426739,
+      "expected_points_mae": 1.0714586123024485
+    },
+    "with_formation_same_subset": {
+      "accuracy": 0.5047619047619047,
+      "log_loss": 1.0102836875293895,
+      "multiclass_brier": 0.6049560637903979,
+      "expected_points_mae": 1.0973090807319386
+    },
+    "note": "Normalized pre-kickoff odds, extra information; reference rather than equal-input baseline"
+  },
+  "formation_signal_supported": false,
+  "tactical_recommendation_validated": false,
+  "tactical_conclusion": "Optimal formation not identified from these observational match outcomes",
+  "deployment": {
+    "uses_formation": true,
+    "choice": "Frozen by forward-validation log loss, never test accuracy",
+    "purpose": "Match outcome probabilities only; no optimal-formation recommendation"
+  },
+  "support_audit": {
+    "season": "2026/2027",
+    "window_days": 730,
+    "support_floor": 10,
+    "teams": [
+      {
+        "team": "AFC Bournemouth",
+        "appearances_last_730_days": 76,
+        "formations_observed": 2,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.9605263157894737,
+        "formation_counts": {
+          "4-2-3-1": 73,
+          "4-1-4-1": 3
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Arsenal",
+        "appearances_last_730_days": 76,
+        "formations_observed": 3,
+        "formations_with_at_least_10_appearances": 2,
+        "most_used_formation": "4-3-3",
+        "most_used_share": 0.6710526315789473,
+        "formation_counts": {
+          "4-3-3": 51,
+          "4-2-3-1": 23,
+          "4-4-2": 2
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Aston Villa",
+        "appearances_last_730_days": 76,
+        "formations_observed": 5,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.9210526315789473,
+        "formation_counts": {
+          "4-2-3-1": 70,
+          "4-4-2": 3,
+          "4-4-1-1": 1,
+          "3-4-3": 1,
+          "4-2-2-2": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Brentford",
+        "appearances_last_730_days": 76,
+        "formations_observed": 8,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.75,
+        "formation_counts": {
+          "4-2-3-1": 57,
+          "4-3-3": 8,
+          "5-3-2": 5,
+          "4-4-2": 2,
+          "3-4-2-1": 1,
+          "3-5-2": 1,
+          "4-3-1-2": 1,
+          "4-1-4-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Brighton & Hove Albion",
+        "appearances_last_730_days": 76,
+        "formations_observed": 6,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.7894736842105263,
+        "formation_counts": {
+          "4-2-3-1": 60,
+          "4-4-2": 6,
+          "4-3-3": 4,
+          "4-1-4-1": 3,
+          "3-4-2-1": 2,
+          "5-4-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Chelsea",
+        "appearances_last_730_days": 76,
+        "formations_observed": 6,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.8421052631578947,
+        "formation_counts": {
+          "4-2-3-1": 64,
+          "3-4-2-1": 6,
+          "4-3-3": 3,
+          "4-1-4-1": 1,
+          "5-4-1": 1,
+          "3-4-1-2": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Coventry City",
+        "appearances_last_730_days": 8,
+        "formations_observed": 3,
+        "formations_with_at_least_10_appearances": 0,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.5,
+        "formation_counts": {
+          "4-2-3-1": 4,
+          "3-4-2-1": 3,
+          "4-1-4-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Crystal Palace",
+        "appearances_last_730_days": 76,
+        "formations_observed": 3,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "3-4-2-1",
+        "most_used_share": 0.9342105263157895,
+        "formation_counts": {
+          "3-4-2-1": 71,
+          "3-4-3": 4,
+          "5-4-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Everton",
+        "appearances_last_730_days": 76,
+        "formations_observed": 3,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.9210526315789473,
+        "formation_counts": {
+          "4-2-3-1": 70,
+          "4-3-3": 5,
+          "4-1-4-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Fulham",
+        "appearances_last_730_days": 76,
+        "formations_observed": 5,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.868421052631579,
+        "formation_counts": {
+          "4-2-3-1": 66,
+          "3-4-2-1": 6,
+          "4-5-1": 2,
+          "3-4-3": 1,
+          "4-3-3": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Hull City",
+        "appearances_last_730_days": 8,
+        "formations_observed": 1,
+        "formations_with_at_least_10_appearances": 0,
+        "most_used_formation": "5-4-1",
+        "most_used_share": 1.0,
+        "formation_counts": {
+          "5-4-1": 8
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Ipswich Town",
+        "appearances_last_730_days": 38,
+        "formations_observed": 4,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.7894736842105263,
+        "formation_counts": {
+          "4-2-3-1": 30,
+          "5-4-1": 4,
+          "3-4-2-1": 2,
+          "4-4-1-1": 2
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Leeds United",
+        "appearances_last_730_days": 46,
+        "formations_observed": 8,
+        "formations_with_at_least_10_appearances": 3,
+        "most_used_formation": "3-5-2",
+        "most_used_share": 0.32608695652173914,
+        "formation_counts": {
+          "3-5-2": 15,
+          "4-3-3": 12,
+          "3-4-2-1": 11,
+          "5-4-1": 3,
+          "3-4-1-2": 2,
+          "4-1-4-1": 1,
+          "3-1-4-2": 1,
+          "4-5-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Liverpool",
+        "appearances_last_730_days": 76,
+        "formations_observed": 4,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.9078947368421053,
+        "formation_counts": {
+          "4-2-3-1": 69,
+          "4-3-3": 3,
+          "4-2-2-2": 3,
+          "4-1-2-1-2": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Manchester City",
+        "appearances_last_730_days": 76,
+        "formations_observed": 7,
+        "formations_with_at_least_10_appearances": 2,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.39473684210526316,
+        "formation_counts": {
+          "4-2-3-1": 30,
+          "4-1-4-1": 22,
+          "4-3-2-1": 8,
+          "4-1-3-2": 7,
+          "4-3-3": 6,
+          "4-2-2-2": 2,
+          "4-1-2-1-2": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Manchester United",
+        "appearances_last_730_days": 76,
+        "formations_observed": 3,
+        "formations_with_at_least_10_appearances": 2,
+        "most_used_formation": "3-4-2-1",
+        "most_used_share": 0.5657894736842105,
+        "formation_counts": {
+          "3-4-2-1": 43,
+          "4-2-3-1": 31,
+          "3-4-3": 2
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Newcastle United",
+        "appearances_last_730_days": 76,
+        "formations_observed": 8,
+        "formations_with_at_least_10_appearances": 2,
+        "most_used_formation": "4-3-3",
+        "most_used_share": 0.7105263157894737,
+        "formation_counts": {
+          "4-3-3": 54,
+          "4-2-3-1": 14,
+          "3-4-2-1": 3,
+          "3-4-3": 1,
+          "5-3-2": 1,
+          "4-5-1": 1,
+          "4-1-4-1": 1,
+          "3-5-2": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Nottingham Forest",
+        "appearances_last_730_days": 76,
+        "formations_observed": 10,
+        "formations_with_at_least_10_appearances": 2,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.6842105263157895,
+        "formation_counts": {
+          "4-2-3-1": 52,
+          "3-4-2-1": 10,
+          "4-4-2": 4,
+          "3-5-2": 2,
+          "4-3-1-2": 2,
+          "5-3-2": 2,
+          "3-4-1-2": 1,
+          "4-2-2-2": 1,
+          "3-4-3": 1,
+          "4-5-1": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Sunderland",
+        "appearances_last_730_days": 46,
+        "formations_observed": 6,
+        "formations_with_at_least_10_appearances": 1,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.6304347826086957,
+        "formation_counts": {
+          "4-2-3-1": 29,
+          "4-3-3": 5,
+          "5-4-1": 5,
+          "4-4-2": 3,
+          "4-1-4-1": 3,
+          "3-4-3": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "appearances_last_730_days": 76,
+        "formations_observed": 7,
+        "formations_with_at_least_10_appearances": 2,
+        "most_used_formation": "4-2-3-1",
+        "most_used_share": 0.4342105263157895,
+        "formation_counts": {
+          "4-2-3-1": 33,
+          "4-3-3": 31,
+          "3-4-2-1": 5,
+          "4-4-2": 3,
+          "4-2-2-2": 2,
+          "3-5-2": 1,
+          "3-1-4-2": 1
+        },
+        "recommendation": null,
+        "reason": "No identified causal comparison or validated recommendation policy"
+      }
+    ],
+    "teams_with_two_supported_formations": 7,
+    "note": "Counts are necessary overlap diagnostics, not proof of comparable opponents, coaches or squads."
+  },
+  "legacy_audit": {
+    "uniform_random_expected_accuracy": 0.3333333333333333,
+    "always_home_accuracy": 0.48333333333333334,
+    "old_reported_team_row_accuracy": 0.525,
+    "matches": 60,
+    "team_rows": 120,
+    "paired_week_intervals": {
+      "accuracy_gain": {
+        "value": 0.016666666666666666,
+        "ci_95_low": -0.019736842105263157,
+        "ci_95_high": 0.05172413793103448
+      },
+      "log_loss_gain": {
+        "value": 0.004254692698325342,
+        "ci_95_low": 0.00024490795613587825,
+        "ci_95_high": 0.009227084106859086
+      }
+    },
+    "interpretation": "52.5% is above uniform random, but only a small margin over always-home. 120 team rows are not 120 independent games. No validation of a formation policy."
+  },
+  "protocol": {
+    "created_before_test_evaluation_utc": "2026-10-28T12:32:08.940239+00:00",
+    "data_sha256": "955d443078fa2e8f0e0625ee70389ff4c1eec1be4b84c500c41841f40aacfcc2",
+    "validation_seasons": [
+      "2022/2023",
+      "2023/2024"
+    ],
+    "test_seasons": [
+      "2024/2025",
+      "2025/2026",
+      "2026/2027"
+    ],
+    "selection_metric": "Mean per-match multiclass log loss across two forward validation seasons",
+    "specs": [
+      {
+        "family": "logistic",
+        "C": 0.03
+      },
+      {
+        "family": "logistic",
+        "C": 0.3
+      },
+      {
+        "family": "logistic",
+        "C": 3.0
+      },
+      {
+        "family": "hist_gradient",
+        "leaves": 7
+      },
+      {
+        "family": "hist_gradient",
+        "leaves": 15
+      },
+      {
+        "family": "poisson",
+        "alpha": 0.03
+      },
+      {
+        "family": "poisson",
+        "alpha": 0.3
+      },
+      {
+        "family": "random_forest",
+        "leaf": 8
+      },
+      {
+        "family": "random_forest",
+        "leaf": 16
+      }
+    ],
+    "ensemble": "Three distinct-family validation finalists; fixed single/equal/top-heavy blends",
+    "schedule": "Expanding training, refit at each season start; test parameters and weights frozen",
+    "probabilities": "One match distribution: average home probabilities and reversed away probabilities",
+    "features": "Strictly before match date; current-match shots, possession, goals, odds and records excluded",
+    "hypothesis": "Does formation improve held-out match outcome prediction relative to its tuned ablation?",
+    "formation_signal_rule": "Log-loss gain >= 0.01 and lower bound of paired calendar-week bootstrap 95% interval > 0",
+    "causal_rule": "No observational predictive score alone authorizes an optimal-formation recommendation",
+    "selection_warning": "2015/16 test was already seen and is audited only; never used for new selection or headline test"
+  },
+  "environment": {
+    "python": "3.10.11",
+    "scikit_learn": "1.7.2",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "joblib": "1.5.3"
+  },
+  "limitations": [
+    "Match results never reveal what would have happened under a different formation.",
+    "Coach, player availability, selection policy and opponent response remain confounders.",
+    "Final lineup formations are observed retrospectively; no timestamped pre-kickoff snapshot is guaranteed.",
+    "COVID-era fixtures and repeated teams induce dependence beyond week clusters.",
+    "Current season contains few rounds and should not be treated as a full-season validation.",
+    "Market benchmark has richer information and is not a betting-profit evaluation."
+  ],
+  "data_quality": {
+    "collection": {
+      "source": "ESPN public website data endpoints",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1",
+      "access": "No authentication required at collection time; undocumented endpoint; no open-data license asserted.",
+      "cutoff": "2026-10-28",
+      "retrieved_at_utc": "2026-10-28T12:30:02.757910+00:00",
+      "discovered_completed_matches": 2740,
+      "formation_complete_matches": 2740,
+      "missing_formation_matches": 0,
+      "non_11_starter_records": {
+        "home": 0,
+        "away": 0
+      },
+      "matches_by_season": {
+        "2019/2020": 380,
+        "2020/2021": 380,
+        "2021/2022": 380,
+        "2022/2023": 380,
+        "2023/2024": 380,
+        "2024/2025": 380,
+        "2025/2026": 380,
+        "2026/2027": 80
+      },
+      "csv_sha256": "955d443078fa2e8f0e0625ee70389ff4c1eec1be4b84c500c41841f40aacfcc2",
+      "post_match_fields": "Shots/possession retained for lagged histories only. Never features of the same match."
+    },
+    "crosscheck": {
+      "source": "https://football-data.co.uk/englandm.php",
+      "espn_matches": 2740,
+      "verified_matches": 2740,
+      "mismatches_or_unmatched": 0,
+      "market_coverage": 2740,
+      "football_data_matches_by_season": {
+        "2019/2020": 380,
+        "2020/2021": 380,
+        "2021/2022": 380,
+        "2022/2023": 380,
+        "2023/2024": 380,
+        "2024/2025": 380,
+        "2025/2026": 380,
+        "2026/2027": 80
+      },
+      "note": "Market odds are a pre-kickoff reference with additional information, never input features. Closing odds preferred; otherwise average then Bet365 available columns. This is not an equal-input comparator."
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "model": "RandomForestClassifier",
+  "seed": 42,
+  "data": {
+    "csv": "data/epl_2015_16.csv",
+    "sha256": "0fa8605f1c9c8f9df0838e9c6a0c8b3c2482a87ae287a6dde56a28ae98495c5f",
+    "matches": 380,
+    "team_rows": 760,
+    "seasons": [
+      "2015/2016"
+    ],
+    "recommendation_season": "2015/2016",
+    "teams": [
+      "AFC Bournemouth",
+      "Arsenal",
+      "Aston Villa",
+      "Chelsea",
+      "Crystal Palace",
+      "Everton",
+      "Leicester City",
+      "Liverpool",
+      "Manchester City",
+      "Manchester United",
+      "Newcastle United",
+      "Norwich City",
+      "Southampton",
+      "Stoke City",
+      "Sunderland",
+      "Swansea City",
+      "Tottenham Hotspur",
+      "Watford",
+      "West Bromwich Albion",
+      "West Ham United"
+    ],
+    "trained_through": "2016-05-17"
+  },
+  "split": {
+    "train": {
+      "first_date": "2015-08-08",
+      "last_date": "2016-01-24",
+      "matches": 230,
+      "team_rows": 460
+    },
+    "validation": {
+      "first_date": "2016-02-02",
+      "last_date": "2016-04-09",
+      "matches": 90,
+      "team_rows": 180
+    },
+    "test": {
+      "first_date": "2016-04-10",
+      "last_date": "2016-05-17",
+      "matches": 60,
+      "team_rows": 120
+    }
+  },
+  "selection": [
+    {
+      "parameters": {
+        "min_samples_leaf": 5,
+        "max_depth": 10
+      },
+      "validation": {
+        "accuracy": 0.5222222222222223,
+        "log_loss": 1.066495086384626,
+        "multiclass_brier": 0.6405953794428568,
+        "expected_points_mae": 1.155167809485897
+      }
+    },
+    {
+      "parameters": {
+        "min_samples_leaf": 10,
+        "max_depth": 7
+      },
+      "validation": {
+        "accuracy": 0.5333333333333333,
+        "log_loss": 1.0351481177110586,
+        "multiclass_brier": 0.6199055840452308,
+        "expected_points_mae": 1.142097557384605
+      }
+    }
+  ],
+  "selected_parameters": {
+    "min_samples_leaf": 10,
+    "max_depth": 7
+  },
+  "ablation_selection": [
+    {
+      "parameters": {
+        "min_samples_leaf": 5,
+        "max_depth": 10
+      },
+      "validation": {
+        "accuracy": 0.5277777777777778,
+        "log_loss": 1.053706505182451,
+        "multiclass_brier": 0.6327146130091716,
+        "expected_points_mae": 1.147262938711354
+      }
+    },
+    {
+      "parameters": {
+        "min_samples_leaf": 10,
+        "max_depth": 7
+      },
+      "validation": {
+        "accuracy": 0.5111111111111111,
+        "log_loss": 1.0348797398897578,
+        "multiclass_brier": 0.6200539750734877,
+        "expected_points_mae": 1.1383966958544998
+      }
+    }
+  ],
+  "test": {
+    "formation_model": {
+      "accuracy": 0.525,
+      "log_loss": 1.0201081472301927,
+      "multiclass_brier": 0.6083858022522988,
+      "expected_points_mae": 1.0234847831596852
+    },
+    "without_formation": {
+      "accuracy": 0.5083333333333333,
+      "log_loss": 1.024362839928518,
+      "multiclass_brier": 0.6107851430740212,
+      "expected_points_mae": 1.0247139432838963
+    },
+    "class_prior": {
+      "accuracy": 0.3416666666666667,
+      "log_loss": 1.1022110406196572,
+      "multiclass_brier": 0.6688541666666665,
+      "expected_points_mae": 1.139791666666667
+    }
+  },
+  "formation_log_loss_improvement_vs_ablation": 0.004254692698325346,
+  "formation_improves_test_log_loss": true,
+  "method": "Daily walk-forward features; fixed 60/20/20 chronological date split. Parameters selected only on validation. Final artifact refit on all observed matches.",
+  "limitations": [
+    "Observed associations do not identify the causal effect or true optimal formation.",
+    "Test scores evaluate match outcomes for observed formations, not unplayed recommendations.",
+    "Two rows per match are correlated; effective match count is half the team row count.",
+    "One historical season; no current squads, injuries, player ability or in-match tactical changes.",
+    "Opponent formation is not assumed known. Probabilities are not separately calibrated.",
+    "Three appearances is only a support floor, not a guarantee of reliability."
+  ],
+  "environment": {
+    "python": "3.10.11",
+    "scikit_learn": "1.7.2",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "joblib": "1.5.3"
+  }
+}

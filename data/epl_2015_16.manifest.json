@@ -1,0 +1,40 @@
+{
+  "source": "StatsBomb Open Data",
+  "repository": "https://github.com/statsbomb/open-data",
+  "license": "https://github.com/statsbomb/open-data/blob/master/LICENSE.pdf",
+  "attribution": "Data provided by StatsBomb (Hudl).",
+  "competition_id": 2,
+  "season_id": 27,
+  "git_ref": "master",
+  "seasons": [
+    "2015/2016"
+  ],
+  "matches": 380,
+  "teams": [
+    "AFC Bournemouth",
+    "Arsenal",
+    "Aston Villa",
+    "Chelsea",
+    "Crystal Palace",
+    "Everton",
+    "Leicester City",
+    "Liverpool",
+    "Manchester City",
+    "Manchester United",
+    "Newcastle United",
+    "Norwich City",
+    "Southampton",
+    "Stoke City",
+    "Sunderland",
+    "Swansea City",
+    "Tottenham Hotspur",
+    "Watford",
+    "West Bromwich Albion",
+    "West Ham United"
+  ],
+  "first_date": "2015-08-08",
+  "last_date": "2016-05-17",
+  "retrieved_at_utc": "2026-10-28T12:09:41.195150+00:00",
+  "csv_sha256": "0fa8605f1c9c8f9df0838e9c6a0c8b3c2482a87ae287a6dde56a28ae98495c5f",
+  "note": "Only starting formations and match results. No full events or player attributes."
+}

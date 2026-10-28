@@ -1,0 +1,905 @@
+{
+  "without_formation": {
+    "specs": [
+      {
+        "family": "poisson",
+        "alpha": 0.3
+      }
+    ],
+    "weights": [
+      1.0
+    ],
+    "validation": {
+      "accuracy": 0.5605263157894737,
+      "log_loss": 0.9601529185977677,
+      "multiclass_brier": 0.5690863088923978,
+      "expected_points_mae": 1.0805653969836677
+    }
+  },
+  "with_formation": {
+    "specs": [
+      {
+        "family": "poisson",
+        "alpha": 0.3
+      }
+    ],
+    "weights": [
+      1.0
+    ],
+    "validation": {
+      "accuracy": 0.5592105263157895,
+      "log_loss": 0.9591960242999179,
+      "multiclass_brier": 0.5685249790044904,
+      "expected_points_mae": 1.0797387764726196
+    }
+  },
+  "details_without": [
+    {
+      "spec": {
+        "family": "logistic",
+        "C": 0.03
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5026315789473684,
+          "log_loss": 1.0279310715048418,
+          "multiclass_brier": 0.6127168354515469,
+          "expected_points_mae": 1.1155455564699757
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5868421052631579,
+          "log_loss": 0.9347564452523845,
+          "multiclass_brier": 0.5501413747050395,
+          "expected_points_mae": 1.0566685918137921
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5447368421052632,
+        "log_loss": 0.9813437583786131,
+        "multiclass_brier": 0.5814291050782933,
+        "expected_points_mae": 1.086107074141884
+      }
+    },
+    {
+      "spec": {
+        "family": "logistic",
+        "C": 0.3
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.4763157894736842,
+          "log_loss": 1.0940789841812497,
+          "multiclass_brier": 0.6492807477998923,
+          "expected_points_mae": 1.1422805919619472
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5789473684210527,
+          "log_loss": 0.9498731011599083,
+          "multiclass_brier": 0.5595981492616192,
+          "expected_points_mae": 1.0644781697174166
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5276315789473685,
+        "log_loss": 1.021976042670579,
+        "multiclass_brier": 0.6044394485307558,
+        "expected_points_mae": 1.103379380839682
+      }
+    },
+    {
+      "spec": {
+        "family": "logistic",
+        "C": 3.0
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.44473684210526315,
+          "log_loss": 1.178214119940048,
+          "multiclass_brier": 0.6902861087471742,
+          "expected_points_mae": 1.189782181804516
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.55,
+          "log_loss": 0.9609221303768634,
+          "multiclass_brier": 0.5667666855681203,
+          "expected_points_mae": 1.0729042159340092
+        }
+      ],
+      "validation": {
+        "accuracy": 0.49736842105263157,
+        "log_loss": 1.0695681251584557,
+        "multiclass_brier": 0.6285263971576474,
+        "expected_points_mae": 1.1313431988692624
+      }
+    },
+    {
+      "spec": {
+        "family": "hist_gradient",
+        "leaves": 7
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.48947368421052634,
+          "log_loss": 1.052292076928768,
+          "multiclass_brier": 0.6244627704129362,
+          "expected_points_mae": 1.1141243012686477
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5526315789473685,
+          "log_loss": 0.9632802862502471,
+          "multiclass_brier": 0.5692786703896392,
+          "expected_points_mae": 1.0740003137038054
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5210526315789473,
+        "log_loss": 1.0077861815895075,
+        "multiclass_brier": 0.5968707204012876,
+        "expected_points_mae": 1.0940623074862266
+      }
+    },
+    {
+      "spec": {
+        "family": "hist_gradient",
+        "leaves": 15
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.4921052631578947,
+          "log_loss": 1.077121558752103,
+          "multiclass_brier": 0.6354914194962158,
+          "expected_points_mae": 1.1132552873022012
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5447368421052632,
+          "log_loss": 0.9806049502407344,
+          "multiclass_brier": 0.5798248763545816,
+          "expected_points_mae": 1.0756422091858517
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5184210526315789,
+        "log_loss": 1.0288632544964187,
+        "multiclass_brier": 0.6076581479253987,
+        "expected_points_mae": 1.0944487482440264
+      }
+    },
+    {
+      "spec": {
+        "family": "poisson",
+        "alpha": 0.03
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5289473684210526,
+          "log_loss": 1.0005747837388268,
+          "multiclass_brier": 0.5968214538195487,
+          "expected_points_mae": 1.11366225891204
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5815789473684211,
+          "log_loss": 0.9277469962826905,
+          "multiclass_brier": 0.5468772805758753,
+          "expected_points_mae": 1.0503289602111996
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5552631578947368,
+        "log_loss": 0.9641608900107586,
+        "multiclass_brier": 0.5718493671977118,
+        "expected_points_mae": 1.0819956095616197
+      }
+    },
+    {
+      "spec": {
+        "family": "poisson",
+        "alpha": 0.3
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.531578947368421,
+          "log_loss": 0.9960027903642765,
+          "multiclass_brier": 0.594365682512662,
+          "expected_points_mae": 1.113293546529605
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5894736842105263,
+          "log_loss": 0.924303046831259,
+          "multiclass_brier": 0.5438069352721335,
+          "expected_points_mae": 1.0478372474377307
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5605263157894737,
+        "log_loss": 0.9601529185977677,
+        "multiclass_brier": 0.5690863088923978,
+        "expected_points_mae": 1.0805653969836677
+      }
+    },
+    {
+      "spec": {
+        "family": "random_forest",
+        "leaf": 8
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5078947368421053,
+          "log_loss": 1.0142956097292137,
+          "multiclass_brier": 0.6059187450486255,
+          "expected_points_mae": 1.1277698177098048
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5815789473684211,
+          "log_loss": 0.9478226564651251,
+          "multiclass_brier": 0.5606127342171973,
+          "expected_points_mae": 1.0849066620161973
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5447368421052632,
+        "log_loss": 0.9810591330971692,
+        "multiclass_brier": 0.5832657396329114,
+        "expected_points_mae": 1.106338239863001
+      }
+    },
+    {
+      "spec": {
+        "family": "random_forest",
+        "leaf": 16
+      },
+      "with_formation": false,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5210526315789473,
+          "log_loss": 1.0045016250981849,
+          "multiclass_brier": 0.5997967766180808,
+          "expected_points_mae": 1.1179948989683488
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5868421052631579,
+          "log_loss": 0.9479104340279614,
+          "multiclass_brier": 0.560440240886522,
+          "expected_points_mae": 1.0792221626368212
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5539473684210526,
+        "log_loss": 0.9762060295630731,
+        "multiclass_brier": 0.5801185087523014,
+        "expected_points_mae": 1.098608530802585
+      }
+    },
+    {
+      "blend_candidates": [
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            }
+          ],
+          "weights": [
+            1.0
+          ],
+          "validation": {
+            "accuracy": 0.5605263157894737,
+            "log_loss": 0.9601529185977677,
+            "multiclass_brier": 0.5690863088923978,
+            "expected_points_mae": 1.0805653969836677
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "random_forest",
+              "leaf": 16
+            }
+          ],
+          "weights": [
+            1.0
+          ],
+          "validation": {
+            "accuracy": 0.5539473684210526,
+            "log_loss": 0.9762060295630731,
+            "multiclass_brier": 0.5801185087523014,
+            "expected_points_mae": 1.098608530802585
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "logistic",
+              "C": 0.03
+            }
+          ],
+          "weights": [
+            1.0
+          ],
+          "validation": {
+            "accuracy": 0.5447368421052632,
+            "log_loss": 0.9813437583786131,
+            "multiclass_brier": 0.5814291050782933,
+            "expected_points_mae": 1.086107074141884
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            }
+          ],
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "validation": {
+            "accuracy": 0.5592105263157895,
+            "log_loss": 0.9649875922827998,
+            "multiclass_brier": 0.5724700770178651,
+            "expected_points_mae": 1.088643876815075
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            }
+          ],
+          "weights": [
+            0.75,
+            0.25
+          ],
+          "validation": {
+            "accuracy": 0.5605263157894737,
+            "log_loss": 0.9617682838296382,
+            "multiclass_brier": 0.5702451100040103,
+            "expected_points_mae": 1.0844137457223042
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            },
+            {
+              "family": "logistic",
+              "C": 0.03
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "validation": {
+            "accuracy": 0.5565789473684211,
+            "log_loss": 0.9668427147709511,
+            "multiclass_brier": 0.5732972902019653,
+            "expected_points_mae": 1.0868729630837806
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            },
+            {
+              "family": "logistic",
+              "C": 0.03
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "validation": {
+            "accuracy": 0.5592105263157895,
+            "log_loss": 0.9645805523952043,
+            "multiclass_brier": 0.5718642269852667,
+            "expected_points_mae": 1.0852590889218388
+          }
+        }
+      ]
+    }
+  ],
+  "details_with": [
+    {
+      "spec": {
+        "family": "logistic",
+        "C": 0.03
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5078947368421053,
+          "log_loss": 1.029426811765985,
+          "multiclass_brier": 0.6132342190885502,
+          "expected_points_mae": 1.1147208409089582
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5815789473684211,
+          "log_loss": 0.934453946983225,
+          "multiclass_brier": 0.5497904363620734,
+          "expected_points_mae": 1.0561306120606235
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5447368421052632,
+        "log_loss": 0.981940379374605,
+        "multiclass_brier": 0.5815123277253119,
+        "expected_points_mae": 1.0854257264847909
+      }
+    },
+    {
+      "spec": {
+        "family": "logistic",
+        "C": 0.3
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.48157894736842105,
+          "log_loss": 1.0950019738303225,
+          "multiclass_brier": 0.6489700187946601,
+          "expected_points_mae": 1.139786597983084
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5605263157894737,
+          "log_loss": 0.9506578228000172,
+          "multiclass_brier": 0.5600376183261107,
+          "expected_points_mae": 1.0647080795900985
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5210526315789473,
+        "log_loss": 1.02282989831517,
+        "multiclass_brier": 0.6045038185603854,
+        "expected_points_mae": 1.1022473387865912
+      }
+    },
+    {
+      "spec": {
+        "family": "logistic",
+        "C": 3.0
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.45263157894736844,
+          "log_loss": 1.1767636642161834,
+          "multiclass_brier": 0.6880877543851012,
+          "expected_points_mae": 1.1853619503120614
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5526315789473685,
+          "log_loss": 0.9622056726212629,
+          "multiclass_brier": 0.5676262400928974,
+          "expected_points_mae": 1.0736117296927494
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5026315789473684,
+        "log_loss": 1.0694846684187231,
+        "multiclass_brier": 0.6278569972389992,
+        "expected_points_mae": 1.1294868400024054
+      }
+    },
+    {
+      "spec": {
+        "family": "hist_gradient",
+        "leaves": 7
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.48947368421052634,
+          "log_loss": 1.046260437243941,
+          "multiclass_brier": 0.6211855341694528,
+          "expected_points_mae": 1.1133652665835057
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5526315789473685,
+          "log_loss": 0.9627763119792324,
+          "multiclass_brier": 0.5686003035501072,
+          "expected_points_mae": 1.0724448416281773
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5210526315789473,
+        "log_loss": 1.0045183746115864,
+        "multiclass_brier": 0.59489291885978,
+        "expected_points_mae": 1.0929050541058414
+      }
+    },
+    {
+      "spec": {
+        "family": "hist_gradient",
+        "leaves": 15
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.48947368421052634,
+          "log_loss": 1.0811227480920118,
+          "multiclass_brier": 0.6381673775807576,
+          "expected_points_mae": 1.1154937494032087
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5342105263157895,
+          "log_loss": 0.985944369421708,
+          "multiclass_brier": 0.5825091845221836,
+          "expected_points_mae": 1.0775757723891706
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5118421052631579,
+        "log_loss": 1.03353355875686,
+        "multiclass_brier": 0.6103382810514706,
+        "expected_points_mae": 1.0965347608961897
+      }
+    },
+    {
+      "spec": {
+        "family": "poisson",
+        "alpha": 0.03
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5210526315789473,
+          "log_loss": 0.9988446450532293,
+          "multiclass_brier": 0.5960749443399861,
+          "expected_points_mae": 1.1130199047008087
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5842105263157895,
+          "log_loss": 0.9264004337745543,
+          "multiclass_brier": 0.54602152573856,
+          "expected_points_mae": 1.0500765043348628
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5526315789473685,
+        "log_loss": 0.9626225394138918,
+        "multiclass_brier": 0.571048235039273,
+        "expected_points_mae": 1.0815482045178357
+      }
+    },
+    {
+      "spec": {
+        "family": "poisson",
+        "alpha": 0.3
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5263157894736842,
+          "log_loss": 0.9951248786444791,
+          "multiclass_brier": 0.5939274626540252,
+          "expected_points_mae": 1.1126497059464493
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5921052631578947,
+          "log_loss": 0.9232671699553567,
+          "multiclass_brier": 0.5431224953549557,
+          "expected_points_mae": 1.0468278469987902
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5592105263157895,
+        "log_loss": 0.9591960242999179,
+        "multiclass_brier": 0.5685249790044904,
+        "expected_points_mae": 1.0797387764726196
+      }
+    },
+    {
+      "spec": {
+        "family": "random_forest",
+        "leaf": 8
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5263157894736842,
+          "log_loss": 1.0104786188459651,
+          "multiclass_brier": 0.6037333796519934,
+          "expected_points_mae": 1.1273111478160367
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5657894736842105,
+          "log_loss": 0.9506525084660568,
+          "multiclass_brier": 0.5627741994611435,
+          "expected_points_mae": 1.0842573341618258
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5460526315789473,
+        "log_loss": 0.9805655636560109,
+        "multiclass_brier": 0.5832537895565684,
+        "expected_points_mae": 1.1057842409889314
+      }
+    },
+    {
+      "spec": {
+        "family": "random_forest",
+        "leaf": 16
+      },
+      "with_formation": true,
+      "folds": [
+        {
+          "season": "2022/2023",
+          "matches": 380,
+          "accuracy": 0.5342105263157895,
+          "log_loss": 1.0030776502921934,
+          "multiclass_brier": 0.5989539075381627,
+          "expected_points_mae": 1.1165118205495503
+        },
+        {
+          "season": "2023/2024",
+          "matches": 380,
+          "accuracy": 0.5631578947368421,
+          "log_loss": 0.946094629316968,
+          "multiclass_brier": 0.5590378029790881,
+          "expected_points_mae": 1.0774602078388495
+        }
+      ],
+      "validation": {
+        "accuracy": 0.5486842105263158,
+        "log_loss": 0.9745861398045806,
+        "multiclass_brier": 0.5789958552586254,
+        "expected_points_mae": 1.0969860141942
+      }
+    },
+    {
+      "blend_candidates": [
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            }
+          ],
+          "weights": [
+            1.0
+          ],
+          "validation": {
+            "accuracy": 0.5592105263157895,
+            "log_loss": 0.9591960242999179,
+            "multiclass_brier": 0.5685249790044904,
+            "expected_points_mae": 1.0797387764726196
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "random_forest",
+              "leaf": 16
+            }
+          ],
+          "weights": [
+            1.0
+          ],
+          "validation": {
+            "accuracy": 0.5486842105263158,
+            "log_loss": 0.9745861398045806,
+            "multiclass_brier": 0.5789958552586254,
+            "expected_points_mae": 1.0969860141942
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "logistic",
+              "C": 0.03
+            }
+          ],
+          "weights": [
+            1.0
+          ],
+          "validation": {
+            "accuracy": 0.5447368421052632,
+            "log_loss": 0.981940379374605,
+            "multiclass_brier": 0.5815123277253119,
+            "expected_points_mae": 1.0854257264847909
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            }
+          ],
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "validation": {
+            "accuracy": 0.5513157894736842,
+            "log_loss": 0.9636997508218673,
+            "multiclass_brier": 0.5716499405043463,
+            "expected_points_mae": 1.087554651360062
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            }
+          ],
+          "weights": [
+            0.75,
+            0.25
+          ],
+          "validation": {
+            "accuracy": 0.5605263157894737,
+            "log_loss": 0.9606496483365152,
+            "multiclass_brier": 0.5695598405976156,
+            "expected_points_mae": 1.0833600060684645
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            },
+            {
+              "family": "logistic",
+              "C": 0.03
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "validation": {
+            "accuracy": 0.5552631578947368,
+            "log_loss": 0.9659812237241474,
+            "multiclass_brier": 0.5727154542099926,
+            "expected_points_mae": 1.0857705404661455
+          }
+        },
+        {
+          "specs": [
+            {
+              "family": "poisson",
+              "alpha": 0.3
+            },
+            {
+              "family": "random_forest",
+              "leaf": 16
+            },
+            {
+              "family": "logistic",
+              "C": 0.03
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "validation": {
+            "accuracy": 0.5539473684210526,
+            "log_loss": 0.963693011028353,
+            "multiclass_brier": 0.5712885635599506,
+            "expected_points_mae": 1.0842176059723274
+          }
+        }
+      ]
+    }
+  ],
+  "frozen_before_test_utc": "2026-10-28T12:32:45.676021+00:00"
+}

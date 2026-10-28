@@ -1,0 +1,26 @@
+{
+  "source": "ESPN public website data endpoints",
+  "endpoint": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1",
+  "access": "No authentication required at collection time; undocumented endpoint; no open-data license asserted.",
+  "cutoff": "2026-10-28",
+  "retrieved_at_utc": "2026-10-28T12:30:02.757910+00:00",
+  "discovered_completed_matches": 2740,
+  "formation_complete_matches": 2740,
+  "missing_formation_matches": 0,
+  "non_11_starter_records": {
+    "home": 0,
+    "away": 0
+  },
+  "matches_by_season": {
+    "2019/2020": 380,
+    "2020/2021": 380,
+    "2021/2022": 380,
+    "2022/2023": 380,
+    "2023/2024": 380,
+    "2024/2025": 380,
+    "2025/2026": 380,
+    "2026/2027": 80
+  },
+  "csv_sha256": "955d443078fa2e8f0e0625ee70389ff4c1eec1be4b84c500c41841f40aacfcc2",
+  "post_match_fields": "Shots/possession retained for lagged histories only. Never features of the same match."
+}

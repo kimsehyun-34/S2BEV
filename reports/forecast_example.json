@@ -1,0 +1,14 @@
+{
+  "team": "Arsenal",
+  "opponent": "Manchester City",
+  "venue": "home",
+  "as_of": "2026-10-29",
+  "trained_through": "2026-10-25",
+  "p_loss": 0.34874183267548053,
+  "p_draw": 0.2475576503352908,
+  "p_win": 0.4037005169892286,
+  "expected_points": 1.4586592013029767,
+  "recommended_formation": null,
+  "tactical_status": "not_identified",
+  "note": "Outcome forecast only. Changing the formation is not a validated tactical intervention."
+}

@@ -1,0 +1,60 @@
+{
+  "created_before_test_evaluation_utc": "2026-10-28T12:32:08.940239+00:00",
+  "data_sha256": "955d443078fa2e8f0e0625ee70389ff4c1eec1be4b84c500c41841f40aacfcc2",
+  "validation_seasons": [
+    "2022/2023",
+    "2023/2024"
+  ],
+  "test_seasons": [
+    "2024/2025",
+    "2025/2026",
+    "2026/2027"
+  ],
+  "selection_metric": "Mean per-match multiclass log loss across two forward validation seasons",
+  "specs": [
+    {
+      "family": "logistic",
+      "C": 0.03
+    },
+    {
+      "family": "logistic",
+      "C": 0.3
+    },
+    {
+      "family": "logistic",
+      "C": 3.0
+    },
+    {
+      "family": "hist_gradient",
+      "leaves": 7
+    },
+    {
+      "family": "hist_gradient",
+      "leaves": 15
+    },
+    {
+      "family": "poisson",
+      "alpha": 0.03
+    },
+    {
+      "family": "poisson",
+      "alpha": 0.3
+    },
+    {
+      "family": "random_forest",
+      "leaf": 8
+    },
+    {
+      "family": "random_forest",
+      "leaf": 16
+    }
+  ],
+  "ensemble": "Three distinct-family validation finalists; fixed single/equal/top-heavy blends",
+  "schedule": "Expanding training, refit at each season start; test parameters and weights frozen",
+  "probabilities": "One match distribution: average home probabilities and reversed away probabilities",
+  "features": "Strictly before match date; current-match shots, possession, goals, odds and records excluded",
+  "hypothesis": "Does formation improve held-out match outcome prediction relative to its tuned ablation?",
+  "formation_signal_rule": "Log-loss gain >= 0.01 and lower bound of paired calendar-week bootstrap 95% interval > 0",
+  "causal_rule": "No observational predictive score alone authorizes an optimal-formation recommendation",
+  "selection_warning": "2015/16 test was already seen and is audited only; never used for new selection or headline test"
+}

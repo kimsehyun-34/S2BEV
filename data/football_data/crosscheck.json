@@ -1,0 +1,18 @@
+{
+  "source": "https://football-data.co.uk/englandm.php",
+  "espn_matches": 2740,
+  "verified_matches": 2740,
+  "mismatches_or_unmatched": 0,
+  "market_coverage": 2740,
+  "football_data_matches_by_season": {
+    "2019/2020": 380,
+    "2020/2021": 380,
+    "2021/2022": 380,
+    "2022/2023": 380,
+    "2023/2024": 380,
+    "2024/2025": 380,
+    "2025/2026": 380,
+    "2026/2027": 80
+  },
+  "note": "Market odds are a pre-kickoff reference with additional information, never input features. Closing odds preferred; otherwise average then Bet365 available columns. This is not an equal-input comparator."
+}

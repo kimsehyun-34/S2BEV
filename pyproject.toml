@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epl-tactics"
+version = "0.2.0"
+description = "Chronologically evaluated EPL formation recommendation model"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.7,<1.8", "joblib>=1.4,<2", "requests>=2.32,<3", "scipy>=1.11,<2", "matplotlib>=3.7,<4", "threadpoolctl>=3.3,<4"]
+
+[project.scripts]
+epl-tactics = "epl_tactics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["epl_tactics*"]
