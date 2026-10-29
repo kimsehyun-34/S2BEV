@@ -24,506 +24,506 @@
       "season": "2006/2007",
       "matches": 38,
       "formation_recorded": 0,
-      "starting_eleven_recorded": 32
+      "starting_eleven_recorded": 38
     },
     {
       "team": "Arsenal",
       "season": "2007/2008",
       "matches": 38,
       "formation_recorded": 0,
-      "starting_eleven_recorded": 29
-    },
-    {
-      "team": "Arsenal",
-      "season": "2008/2009",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Arsenal",
-      "season": "2009/2010",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Arsenal",
-      "season": "2010/2011",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 31
-    },
-    {
-      "team": "Arsenal",
-      "season": "2011/2012",
-      "matches": 38,
-      "formation_recorded": 13,
-      "starting_eleven_recorded": 30
-    },
-    {
-      "team": "Arsenal",
-      "season": "2012/2013",
-      "matches": 38,
-      "formation_recorded": 33,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Arsenal",
-      "season": "2013/2014",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Arsenal",
-      "season": "2014/2015",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Arsenal",
-      "season": "2015/2016",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2016/2017",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2017/2018",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Arsenal",
-      "season": "2018/2019",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 30
-    },
-    {
-      "team": "Arsenal",
-      "season": "2019/2020",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2020/2021",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2021/2022",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2022/2023",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2023/2024",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2024/2025",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2025/2026",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Arsenal",
-      "season": "2026/2027",
-      "matches": 8,
-      "formation_recorded": 8,
-      "starting_eleven_recorded": 8
-    },
-    {
-      "team": "Chelsea",
-      "season": "2006/2007",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 31
-    },
-    {
-      "team": "Chelsea",
-      "season": "2007/2008",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Chelsea",
-      "season": "2008/2009",
-      "matches": 38,
-      "formation_recorded": 33,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Chelsea",
-      "season": "2009/2010",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Chelsea",
-      "season": "2010/2011",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Chelsea",
-      "season": "2011/2012",
-      "matches": 38,
-      "formation_recorded": 18,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Chelsea",
-      "season": "2012/2013",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Chelsea",
-      "season": "2013/2014",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Chelsea",
-      "season": "2014/2015",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Chelsea",
-      "season": "2015/2016",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2016/2017",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2017/2018",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Chelsea",
-      "season": "2018/2019",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Chelsea",
-      "season": "2019/2020",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2020/2021",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2021/2022",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2022/2023",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2023/2024",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2024/2025",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2025/2026",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Chelsea",
-      "season": "2026/2027",
-      "matches": 8,
-      "formation_recorded": 8,
-      "starting_eleven_recorded": 8
-    },
-    {
-      "team": "Liverpool",
-      "season": "2006/2007",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Liverpool",
-      "season": "2007/2008",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Liverpool",
-      "season": "2008/2009",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Liverpool",
-      "season": "2009/2010",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Liverpool",
-      "season": "2010/2011",
-      "matches": 38,
-      "formation_recorded": 33,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Liverpool",
-      "season": "2011/2012",
-      "matches": 38,
-      "formation_recorded": 18,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Liverpool",
-      "season": "2012/2013",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Liverpool",
-      "season": "2013/2014",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Liverpool",
-      "season": "2014/2015",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Liverpool",
-      "season": "2015/2016",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2016/2017",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2017/2018",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Liverpool",
-      "season": "2018/2019",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Liverpool",
-      "season": "2019/2020",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2020/2021",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2021/2022",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2022/2023",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2023/2024",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2024/2025",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2025/2026",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Liverpool",
-      "season": "2026/2027",
-      "matches": 8,
-      "formation_recorded": 8,
-      "starting_eleven_recorded": 8
-    },
-    {
-      "team": "Manchester City",
-      "season": "2006/2007",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester City",
-      "season": "2007/2008",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester City",
-      "season": "2008/2009",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Manchester City",
-      "season": "2009/2010",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester City",
-      "season": "2010/2011",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Manchester City",
-      "season": "2011/2012",
-      "matches": 38,
-      "formation_recorded": 16,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester City",
-      "season": "2012/2013",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Manchester City",
-      "season": "2013/2014",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Manchester City",
-      "season": "2014/2015",
-      "matches": 38,
-      "formation_recorded": 36,
       "starting_eleven_recorded": 35
     },
     {
+      "team": "Arsenal",
+      "season": "2008/2009",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Arsenal",
+      "season": "2009/2010",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2010/2011",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 35
+    },
+    {
+      "team": "Arsenal",
+      "season": "2011/2012",
+      "matches": 38,
+      "formation_recorded": 17,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Arsenal",
+      "season": "2012/2013",
+      "matches": 38,
+      "formation_recorded": 37,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2013/2014",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2014/2015",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2015/2016",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2016/2017",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2017/2018",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2018/2019",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 34
+    },
+    {
+      "team": "Arsenal",
+      "season": "2019/2020",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2020/2021",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2021/2022",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2022/2023",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2023/2024",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2024/2025",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2025/2026",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Arsenal",
+      "season": "2026/2027",
+      "matches": 8,
+      "formation_recorded": 8,
+      "starting_eleven_recorded": 8
+    },
+    {
+      "team": "Chelsea",
+      "season": "2006/2007",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Chelsea",
+      "season": "2007/2008",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Chelsea",
+      "season": "2008/2009",
+      "matches": 38,
+      "formation_recorded": 37,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Chelsea",
+      "season": "2009/2010",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Chelsea",
+      "season": "2010/2011",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2011/2012",
+      "matches": 38,
+      "formation_recorded": 21,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2012/2013",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2013/2014",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2014/2015",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2015/2016",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2016/2017",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2017/2018",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2018/2019",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Chelsea",
+      "season": "2019/2020",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2020/2021",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2021/2022",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2022/2023",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2023/2024",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2024/2025",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2025/2026",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Chelsea",
+      "season": "2026/2027",
+      "matches": 8,
+      "formation_recorded": 8,
+      "starting_eleven_recorded": 8
+    },
+    {
+      "team": "Liverpool",
+      "season": "2006/2007",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2007/2008",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2008/2009",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Liverpool",
+      "season": "2009/2010",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Liverpool",
+      "season": "2010/2011",
+      "matches": 38,
+      "formation_recorded": 37,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2011/2012",
+      "matches": 38,
+      "formation_recorded": 20,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2012/2013",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2013/2014",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2014/2015",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2015/2016",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2016/2017",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2017/2018",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2018/2019",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Liverpool",
+      "season": "2019/2020",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2020/2021",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2021/2022",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2022/2023",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2023/2024",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2024/2025",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2025/2026",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Liverpool",
+      "season": "2026/2027",
+      "matches": 8,
+      "formation_recorded": 8,
+      "starting_eleven_recorded": 8
+    },
+    {
+      "team": "Manchester City",
+      "season": "2006/2007",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester City",
+      "season": "2007/2008",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2008/2009",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester City",
+      "season": "2009/2010",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Manchester City",
+      "season": "2010/2011",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester City",
+      "season": "2011/2012",
+      "matches": 38,
+      "formation_recorded": 17,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester City",
+      "season": "2012/2013",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2013/2014",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2014/2015",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
       "team": "Manchester City",
       "season": "2015/2016",
       "matches": 38,
@@ -540,310 +540,310 @@
     {
       "team": "Manchester City",
       "season": "2017/2018",
+      "matches": 38,
+      "formation_recorded": 37,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2018/2019",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Manchester City",
+      "season": "2019/2020",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2020/2021",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2021/2022",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2022/2023",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2023/2024",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2024/2025",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2025/2026",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester City",
+      "season": "2026/2027",
+      "matches": 8,
+      "formation_recorded": 8,
+      "starting_eleven_recorded": 8
+    },
+    {
+      "team": "Manchester United",
+      "season": "2006/2007",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2007/2008",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester United",
+      "season": "2008/2009",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester United",
+      "season": "2009/2010",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2010/2011",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Manchester United",
+      "season": "2011/2012",
+      "matches": 38,
+      "formation_recorded": 15,
+      "starting_eleven_recorded": 36
+    },
+    {
+      "team": "Manchester United",
+      "season": "2012/2013",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2013/2014",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2014/2015",
       "matches": 38,
       "formation_recorded": 35,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Manchester United",
+      "season": "2015/2016",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2016/2017",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2017/2018",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Manchester United",
+      "season": "2018/2019",
+      "matches": 38,
+      "formation_recorded": 38,
       "starting_eleven_recorded": 36
     },
     {
-      "team": "Manchester City",
-      "season": "2018/2019",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2019/2020",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2020/2021",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2021/2022",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2022/2023",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2023/2024",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2024/2025",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2025/2026",
       "matches": 38,
       "formation_recorded": 38,
       "starting_eleven_recorded": 38
     },
     {
-      "team": "Manchester City",
+      "team": "Manchester United",
       "season": "2026/2027",
       "matches": 8,
       "formation_recorded": 8,
       "starting_eleven_recorded": 8
     },
     {
-      "team": "Manchester United",
+      "team": "Tottenham Hotspur",
       "season": "2006/2007",
       "matches": 38,
       "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester United",
-      "season": "2007/2008",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester United",
-      "season": "2008/2009",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Manchester United",
-      "season": "2009/2010",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Manchester United",
-      "season": "2010/2011",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester United",
-      "season": "2011/2012",
-      "matches": 38,
-      "formation_recorded": 13,
-      "starting_eleven_recorded": 30
-    },
-    {
-      "team": "Manchester United",
-      "season": "2012/2013",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Manchester United",
-      "season": "2013/2014",
-      "matches": 38,
-      "formation_recorded": 36,
       "starting_eleven_recorded": 36
     },
     {
-      "team": "Manchester United",
+      "team": "Tottenham Hotspur",
+      "season": "2007/2008",
+      "matches": 38,
+      "formation_recorded": 0,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2008/2009",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2009/2010",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2010/2011",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2011/2012",
+      "matches": 38,
+      "formation_recorded": 20,
+      "starting_eleven_recorded": 37
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2012/2013",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2013/2014",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
       "season": "2014/2015",
       "matches": 38,
-      "formation_recorded": 34,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2015/2016",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2016/2017",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2017/2018",
+      "matches": 38,
+      "formation_recorded": 38,
+      "starting_eleven_recorded": 38
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "season": "2018/2019",
+      "matches": 38,
+      "formation_recorded": 38,
       "starting_eleven_recorded": 35
-    },
-    {
-      "team": "Manchester United",
-      "season": "2015/2016",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2016/2017",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2017/2018",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Manchester United",
-      "season": "2018/2019",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Manchester United",
-      "season": "2019/2020",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2020/2021",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2021/2022",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2022/2023",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2023/2024",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2024/2025",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2025/2026",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Manchester United",
-      "season": "2026/2027",
-      "matches": 8,
-      "formation_recorded": 8,
-      "starting_eleven_recorded": 8
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2006/2007",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 30
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2007/2008",
-      "matches": 38,
-      "formation_recorded": 0,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2008/2009",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2009/2010",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2010/2011",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 33
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2011/2012",
-      "matches": 38,
-      "formation_recorded": 16,
-      "starting_eleven_recorded": 32
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2012/2013",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 34
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2013/2014",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2014/2015",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2015/2016",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2016/2017",
-      "matches": 38,
-      "formation_recorded": 38,
-      "starting_eleven_recorded": 38
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2017/2018",
-      "matches": 38,
-      "formation_recorded": 36,
-      "starting_eleven_recorded": 36
-    },
-    {
-      "team": "Tottenham Hotspur",
-      "season": "2018/2019",
-      "matches": 38,
-      "formation_recorded": 34,
-      "starting_eleven_recorded": 31
     },
     {
       "team": "Tottenham Hotspur",
@@ -902,12 +902,12 @@
       "starting_eleven_recorded": 8
     }
   ],
-  "espn_verified_unique_matches": 3739,
-  "unmatched_fixture_count": 264,
-  "rejected_espn_alternatives": 156,
+  "espn_verified_unique_matches": 4003,
+  "unmatched_fixture_count": 0,
+  "rejected_espn_alternatives": 178,
   "league_context_matches": 7680,
-  "sha256": "47b5d4ae4c9ba9cccff8c1f9e5a77f32b766f16fdf3ddd9e3d698e4c9d2e1e0b",
-  "retrieved_at_utc": "2026-10-29T04:26:33.852475+00:00",
+  "sha256": "35b51fd1f84a1368d0d7fa565b120f19782dbad2284c3822a2aa9c25d656dac4",
+  "retrieved_at_utc": "2026-10-29T12:20:10.159006+00:00",
   "sources": [
     "https://football-data.co.uk/englandm.php",
     "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1"

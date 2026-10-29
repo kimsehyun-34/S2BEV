@@ -1,17 +1,17 @@
 team,season,matches,formation_recorded,starting_eleven_recorded
-Arsenal,2006/2007,38,0,32
-Arsenal,2007/2008,38,0,29
-Arsenal,2008/2009,38,34,33
-Arsenal,2009/2010,38,34,34
-Arsenal,2010/2011,38,34,31
-Arsenal,2011/2012,38,13,30
-Arsenal,2012/2013,38,33,34
-Arsenal,2013/2014,38,36,36
-Arsenal,2014/2015,38,36,36
+Arsenal,2006/2007,38,0,38
+Arsenal,2007/2008,38,0,35
+Arsenal,2008/2009,38,38,37
+Arsenal,2009/2010,38,38,38
+Arsenal,2010/2011,38,38,35
+Arsenal,2011/2012,38,17,36
+Arsenal,2012/2013,38,37,38
+Arsenal,2013/2014,38,38,38
+Arsenal,2014/2015,38,38,38
 Arsenal,2015/2016,38,38,38
 Arsenal,2016/2017,38,38,38
-Arsenal,2017/2018,38,36,36
-Arsenal,2018/2019,38,34,30
+Arsenal,2017/2018,38,38,38
+Arsenal,2018/2019,38,38,34
 Arsenal,2019/2020,38,38,38
 Arsenal,2020/2021,38,38,38
 Arsenal,2021/2022,38,38,38
@@ -20,19 +20,19 @@ Arsenal,2023/2024,38,38,38
 Arsenal,2024/2025,38,38,38
 Arsenal,2025/2026,38,38,38
 Arsenal,2026/2027,8,8,8
-Chelsea,2006/2007,38,0,31
-Chelsea,2007/2008,38,0,32
-Chelsea,2008/2009,38,33,32
-Chelsea,2009/2010,38,34,33
-Chelsea,2010/2011,38,34,34
-Chelsea,2011/2012,38,18,32
-Chelsea,2012/2013,38,34,34
-Chelsea,2013/2014,38,36,36
-Chelsea,2014/2015,38,36,36
+Chelsea,2006/2007,38,0,37
+Chelsea,2007/2008,38,0,36
+Chelsea,2008/2009,38,37,36
+Chelsea,2009/2010,38,38,37
+Chelsea,2010/2011,38,38,38
+Chelsea,2011/2012,38,21,38
+Chelsea,2012/2013,38,38,38
+Chelsea,2013/2014,38,38,38
+Chelsea,2014/2015,38,38,38
 Chelsea,2015/2016,38,38,38
 Chelsea,2016/2017,38,38,38
-Chelsea,2017/2018,38,36,36
-Chelsea,2018/2019,38,34,33
+Chelsea,2017/2018,38,38,38
+Chelsea,2018/2019,38,38,37
 Chelsea,2019/2020,38,38,38
 Chelsea,2020/2021,38,38,38
 Chelsea,2021/2022,38,38,38
@@ -41,19 +41,19 @@ Chelsea,2023/2024,38,38,38
 Chelsea,2024/2025,38,38,38
 Chelsea,2025/2026,38,38,38
 Chelsea,2026/2027,8,8,8
-Liverpool,2006/2007,38,0,32
-Liverpool,2007/2008,38,0,32
-Liverpool,2008/2009,38,34,33
-Liverpool,2009/2010,38,34,33
-Liverpool,2010/2011,38,33,34
-Liverpool,2011/2012,38,18,32
-Liverpool,2012/2013,38,34,34
-Liverpool,2013/2014,38,36,36
-Liverpool,2014/2015,38,36,36
+Liverpool,2006/2007,38,0,38
+Liverpool,2007/2008,38,0,38
+Liverpool,2008/2009,38,38,36
+Liverpool,2009/2010,38,38,37
+Liverpool,2010/2011,38,37,38
+Liverpool,2011/2012,38,20,38
+Liverpool,2012/2013,38,38,38
+Liverpool,2013/2014,38,38,38
+Liverpool,2014/2015,38,38,38
 Liverpool,2015/2016,38,38,38
 Liverpool,2016/2017,38,38,38
-Liverpool,2017/2018,38,36,36
-Liverpool,2018/2019,38,34,32
+Liverpool,2017/2018,38,38,38
+Liverpool,2018/2019,38,38,36
 Liverpool,2019/2020,38,38,38
 Liverpool,2020/2021,38,38,38
 Liverpool,2021/2022,38,38,38
@@ -62,19 +62,19 @@ Liverpool,2023/2024,38,38,38
 Liverpool,2024/2025,38,38,38
 Liverpool,2025/2026,38,38,38
 Liverpool,2026/2027,8,8,8
-Manchester City,2006/2007,38,0,32
-Manchester City,2007/2008,38,0,32
-Manchester City,2008/2009,38,34,33
-Manchester City,2009/2010,38,34,32
-Manchester City,2010/2011,38,34,34
-Manchester City,2011/2012,38,16,32
-Manchester City,2012/2013,38,34,34
-Manchester City,2013/2014,38,36,36
-Manchester City,2014/2015,38,36,35
+Manchester City,2006/2007,38,0,37
+Manchester City,2007/2008,38,0,38
+Manchester City,2008/2009,38,38,37
+Manchester City,2009/2010,38,38,36
+Manchester City,2010/2011,38,38,37
+Manchester City,2011/2012,38,17,37
+Manchester City,2012/2013,38,38,38
+Manchester City,2013/2014,38,38,38
+Manchester City,2014/2015,38,38,37
 Manchester City,2015/2016,38,38,38
 Manchester City,2016/2017,38,38,38
-Manchester City,2017/2018,38,35,36
-Manchester City,2018/2019,38,34,32
+Manchester City,2017/2018,38,37,38
+Manchester City,2018/2019,38,38,36
 Manchester City,2019/2020,38,38,38
 Manchester City,2020/2021,38,38,38
 Manchester City,2021/2022,38,38,38
@@ -83,19 +83,19 @@ Manchester City,2023/2024,38,38,38
 Manchester City,2024/2025,38,38,38
 Manchester City,2025/2026,38,38,38
 Manchester City,2026/2027,8,8,8
-Manchester United,2006/2007,38,0,32
-Manchester United,2007/2008,38,0,32
-Manchester United,2008/2009,38,34,33
-Manchester United,2009/2010,38,34,34
-Manchester United,2010/2011,38,34,32
-Manchester United,2011/2012,38,13,30
-Manchester United,2012/2013,38,34,34
-Manchester United,2013/2014,38,36,36
-Manchester United,2014/2015,38,34,35
+Manchester United,2006/2007,38,0,38
+Manchester United,2007/2008,38,0,37
+Manchester United,2008/2009,38,38,37
+Manchester United,2009/2010,38,38,38
+Manchester United,2010/2011,38,38,36
+Manchester United,2011/2012,38,15,36
+Manchester United,2012/2013,38,38,38
+Manchester United,2013/2014,38,38,38
+Manchester United,2014/2015,38,35,37
 Manchester United,2015/2016,38,38,38
 Manchester United,2016/2017,38,38,38
-Manchester United,2017/2018,38,36,36
-Manchester United,2018/2019,38,34,32
+Manchester United,2017/2018,38,38,38
+Manchester United,2018/2019,38,38,36
 Manchester United,2019/2020,38,38,38
 Manchester United,2020/2021,38,38,38
 Manchester United,2021/2022,38,38,38
@@ -104,19 +104,19 @@ Manchester United,2023/2024,38,38,38
 Manchester United,2024/2025,38,38,38
 Manchester United,2025/2026,38,38,38
 Manchester United,2026/2027,8,8,8
-Tottenham Hotspur,2006/2007,38,0,30
-Tottenham Hotspur,2007/2008,38,0,32
-Tottenham Hotspur,2008/2009,38,34,33
-Tottenham Hotspur,2009/2010,38,34,34
-Tottenham Hotspur,2010/2011,38,34,33
-Tottenham Hotspur,2011/2012,38,16,32
-Tottenham Hotspur,2012/2013,38,34,34
-Tottenham Hotspur,2013/2014,38,36,36
-Tottenham Hotspur,2014/2015,38,36,36
+Tottenham Hotspur,2006/2007,38,0,36
+Tottenham Hotspur,2007/2008,38,0,38
+Tottenham Hotspur,2008/2009,38,38,37
+Tottenham Hotspur,2009/2010,38,38,38
+Tottenham Hotspur,2010/2011,38,38,37
+Tottenham Hotspur,2011/2012,38,20,37
+Tottenham Hotspur,2012/2013,38,38,38
+Tottenham Hotspur,2013/2014,38,38,38
+Tottenham Hotspur,2014/2015,38,38,38
 Tottenham Hotspur,2015/2016,38,38,38
 Tottenham Hotspur,2016/2017,38,38,38
-Tottenham Hotspur,2017/2018,38,36,36
-Tottenham Hotspur,2018/2019,38,34,31
+Tottenham Hotspur,2017/2018,38,38,38
+Tottenham Hotspur,2018/2019,38,38,35
 Tottenham Hotspur,2019/2020,38,38,38
 Tottenham Hotspur,2020/2021,38,38,38
 Tottenham Hotspur,2021/2022,38,38,38

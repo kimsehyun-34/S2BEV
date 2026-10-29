@@ -21,10 +21,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6919191919191919,
-        "log_loss": 0.85247471293181,
-        "brier": 0.49196658644461677,
-        "expected_points_mae": 1.1461116137018355
+        "accuracy": 0.6843434343434344,
+        "log_loss": 0.8577276311563524,
+        "brier": 0.49499268104401484,
+        "expected_points_mae": 1.1438369045592698
       },
       {
         "season": "2021/2022",
@@ -33,10 +33,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6136363636363636,
-        "log_loss": 0.9105640146046224,
-        "brier": 0.5300859151323795,
-        "expected_points_mae": 1.1426618747933008
+        "accuracy": 0.6237373737373737,
+        "log_loss": 0.9108681956575276,
+        "brier": 0.5293101897929763,
+        "expected_points_mae": 1.1406409318182735
       },
       {
         "season": "2023/2024",
@@ -45,19 +45,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6616161616161617,
-        "log_loss": 0.8875021452725373,
-        "brier": 0.5161959507754338,
-        "expected_points_mae": 1.1449648912809756
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8906685547291924,
+        "brier": 0.5183089881991152,
+        "expected_points_mae": 1.1486697502966998
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
       "accuracy": 0.6557239057239057,
-      "log_loss": 0.8835136242696566,
-      "brier": 0.5127494841174767,
-      "expected_points_mae": 1.1445794599253705
+      "log_loss": 0.8864214605143576,
+      "brier": 0.5142039530120354,
+      "expected_points_mae": 1.1443825288914145
     }
   },
   {
@@ -82,10 +82,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7121212121212122,
-        "log_loss": 0.786233099695883,
-        "brier": 0.44352641864907977,
-        "expected_points_mae": 1.06155740476252
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.7929282154634649,
+        "brier": 0.4489366338265625,
+        "expected_points_mae": 1.0733458653812373
       },
       {
         "season": "2021/2022",
@@ -94,10 +94,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6717171717171717,
-        "log_loss": 0.8665777494588489,
-        "brier": 0.4994063366268681,
-        "expected_points_mae": 1.0796025383173395
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8637795519683864,
+        "brier": 0.49752828755466744,
+        "expected_points_mae": 1.0721996840326777
       },
       {
         "season": "2023/2024",
@@ -106,19 +106,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6464646464646465,
-        "log_loss": 0.8447135605979966,
-        "brier": 0.48493125491703215,
-        "expected_points_mae": 1.0935324708614387
+        "accuracy": 0.648989898989899,
+        "log_loss": 0.8412883059275541,
+        "brier": 0.4832548279388671,
+        "expected_points_mae": 1.0886304733428782
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6767676767676768,
-      "log_loss": 0.8325081365842428,
-      "brier": 0.4759546700643267,
-      "expected_points_mae": 1.0782308046470994
+      "accuracy": 0.6776094276094277,
+      "log_loss": 0.8326653577864686,
+      "brier": 0.4765732497733656,
+      "expected_points_mae": 1.0780586742522646
     }
   },
   {
@@ -144,9 +144,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.7171717171717171,
-        "log_loss": 0.7605250418925938,
-        "brier": 0.42752878732119537,
-        "expected_points_mae": 0.9977417463916243
+        "log_loss": 0.7687345563977297,
+        "brier": 0.4330049066754894,
+        "expected_points_mae": 1.0067851653388469
       },
       {
         "season": "2021/2022",
@@ -155,10 +155,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6717171717171717,
-        "log_loss": 0.8667633009878002,
-        "brier": 0.4973261091976391,
-        "expected_points_mae": 1.0524500366566663
+        "accuracy": 0.6767676767676768,
+        "log_loss": 0.8706315609428505,
+        "brier": 0.49857099985898173,
+        "expected_points_mae": 1.0556648685740064
       },
       {
         "season": "2023/2024",
@@ -168,18 +168,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6616161616161617,
-        "log_loss": 0.8272545549992057,
-        "brier": 0.47392363968717666,
-        "expected_points_mae": 1.0533680835690669
+        "log_loss": 0.8231797244994016,
+        "brier": 0.47149983234343074,
+        "expected_points_mae": 1.047513981543994
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6835016835016835,
-      "log_loss": 0.8181809659598666,
-      "brier": 0.4662595120686704,
-      "expected_points_mae": 1.0345199555391191
+      "accuracy": 0.6851851851851852,
+      "log_loss": 0.8208486139466608,
+      "brier": 0.4676919129593007,
+      "expected_points_mae": 1.036654671818949
     }
   },
   {
@@ -204,10 +204,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7171717171717171,
-        "log_loss": 0.7786850469113459,
-        "brier": 0.4386811362595277,
-        "expected_points_mae": 1.043552366453256
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.7795198532784107,
+        "brier": 0.44060650166613063,
+        "expected_points_mae": 1.0412813872963438
       },
       {
         "season": "2021/2022",
@@ -216,10 +216,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6691919191919192,
-        "log_loss": 0.8617962296310713,
-        "brier": 0.4936451022013358,
-        "expected_points_mae": 1.0569033390754718
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8671893578358904,
+        "brier": 0.4961150717372777,
+        "expected_points_mae": 1.0578669517311763
       },
       {
         "season": "2023/2024",
@@ -228,19 +228,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6464646464646465,
-        "log_loss": 0.8362461167509135,
-        "brier": 0.47971605312708326,
-        "expected_points_mae": 1.0669665902587877
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.8376144235979176,
+        "brier": 0.47977661450313874,
+        "expected_points_mae": 1.0670006758989825
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6776094276094277,
-      "log_loss": 0.8255757977644436,
-      "brier": 0.47068076386264895,
-      "expected_points_mae": 1.0558074319291717
+      "accuracy": 0.6767676767676768,
+      "log_loss": 0.8281078782374063,
+      "brier": 0.4721660626355157,
+      "expected_points_mae": 1.0553830049755009
     }
   },
   {
@@ -265,10 +265,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6843434343434344,
-        "log_loss": 0.8916246236600976,
-        "brier": 0.5198658783074863,
-        "expected_points_mae": 1.1923632033432872
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8941332633852475,
+        "brier": 0.5217836213079171,
+        "expected_points_mae": 1.1922194757906126
       },
       {
         "season": "2021/2022",
@@ -278,9 +278,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.5580808080808081,
-        "log_loss": 0.9537899806473394,
-        "brier": 0.5622395241526682,
-        "expected_points_mae": 1.19996549786541
+        "log_loss": 0.9522017862265564,
+        "brier": 0.5605866855261853,
+        "expected_points_mae": 1.1971881071940005
       },
       {
         "season": "2023/2024",
@@ -289,19 +289,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6363636363636364,
-        "log_loss": 0.9490664414117093,
-        "brier": 0.5609017494586506,
-        "expected_points_mae": 1.2146065614960662
+        "accuracy": 0.6262626262626263,
+        "log_loss": 0.9511647286179427,
+        "brier": 0.562574372538665,
+        "expected_points_mae": 1.2170230150290424
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6262626262626263,
-      "log_loss": 0.931493681906382,
-      "brier": 0.5476690506396018,
-      "expected_points_mae": 1.2023117542349209
+      "accuracy": 0.6144781144781145,
+      "log_loss": 0.9324999260765822,
+      "brier": 0.5483148931242557,
+      "expected_points_mae": 1.2021435326712187
     }
   },
   {
@@ -326,10 +326,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.696969696969697,
-        "log_loss": 0.8462408055429644,
-        "brier": 0.4868359633330041,
-        "expected_points_mae": 1.137360814437435
+        "accuracy": 0.6944444444444444,
+        "log_loss": 0.8386826953526818,
+        "brier": 0.4825915606274394,
+        "expected_points_mae": 1.1276601763011032
       },
       {
         "season": "2021/2022",
@@ -338,10 +338,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6262626262626263,
-        "log_loss": 0.8953649757383351,
-        "brier": 0.5205296856902483,
-        "expected_points_mae": 1.1324150934212598
+        "accuracy": 0.6212121212121212,
+        "log_loss": 0.9035598690929348,
+        "brier": 0.5254158542239625,
+        "expected_points_mae": 1.1328657533945425
       },
       {
         "season": "2023/2024",
@@ -350,19 +350,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6641414141414141,
-        "log_loss": 0.8909737544461517,
-        "brier": 0.5189022069299895,
-        "expected_points_mae": 1.1578701270690255
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.8842087577979884,
+        "brier": 0.5137529232424773,
+        "expected_points_mae": 1.1469235679629757
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6624579124579124,
-      "log_loss": 0.8775265119091503,
-      "brier": 0.508755951984414,
-      "expected_points_mae": 1.14254867830924
+      "accuracy": 0.6632996632996633,
+      "log_loss": 0.8754837740812017,
+      "brier": 0.5072534460312932,
+      "expected_points_mae": 1.1358164992195403
     }
   },
   {
@@ -387,10 +387,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7095959595959596,
-        "log_loss": 0.7761266676386512,
-        "brier": 0.43711970730881566,
-        "expected_points_mae": 1.0393269647710572
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.7794845090858665,
+        "brier": 0.4395329342677457,
+        "expected_points_mae": 1.0440022544526681
       },
       {
         "season": "2021/2022",
@@ -400,9 +400,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6691919191919192,
-        "log_loss": 0.857759277579879,
-        "brier": 0.4952557903262345,
-        "expected_points_mae": 1.0715480026225388
+        "log_loss": 0.8597034319703277,
+        "brier": 0.49626744500028147,
+        "expected_points_mae": 1.0735305112797076
       },
       {
         "season": "2023/2024",
@@ -411,19 +411,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.8380761657677109,
-        "brier": 0.48075488695061275,
-        "expected_points_mae": 1.0775764682067897
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.8373666020139644,
+        "brier": 0.4805433370346312,
+        "expected_points_mae": 1.0756513191592085
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6792929292929293,
-      "log_loss": 0.823987370328747,
-      "brier": 0.47104346152855425,
-      "expected_points_mae": 1.0628171452001283
+      "accuracy": 0.680976430976431,
+      "log_loss": 0.8255181810233863,
+      "brier": 0.4721145721008861,
+      "expected_points_mae": 1.0643946949638614
     }
   },
   {
@@ -448,10 +448,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7121212121212122,
-        "log_loss": 0.7839338695516083,
-        "brier": 0.4414250151841471,
-        "expected_points_mae": 1.0477102583024014
+        "accuracy": 0.7045454545454546,
+        "log_loss": 0.7853159536653023,
+        "brier": 0.441933984701127,
+        "expected_points_mae": 1.0511310512246843
       },
       {
         "season": "2021/2022",
@@ -460,10 +460,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6666666666666666,
-        "log_loss": 0.8661416285289499,
-        "brier": 0.4968275960722452,
-        "expected_points_mae": 1.0654403446828615
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8617128792191027,
+        "brier": 0.49407804823890644,
+        "expected_points_mae": 1.0625506027208442
       },
       {
         "season": "2023/2024",
@@ -473,18 +473,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6641414141414141,
-        "log_loss": 0.8260174134682806,
-        "brier": 0.47131837783875163,
-        "expected_points_mae": 1.0687484191389653
+        "log_loss": 0.8259491105021997,
+        "brier": 0.4714090923798526,
+        "expected_points_mae": 1.0678046536996713
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.680976430976431,
-      "log_loss": 0.8253643038496129,
-      "brier": 0.46985699636504796,
-      "expected_points_mae": 1.0606330073747428
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.8243259811288681,
+      "brier": 0.4691403751066286,
+      "expected_points_mae": 1.0604954358817336
     }
   },
   {
@@ -509,10 +509,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6742424242424242,
-        "log_loss": 0.9113383079167144,
-        "brier": 0.5341350847509363,
-        "expected_points_mae": 1.2129158640584836
+        "accuracy": 0.6515151515151515,
+        "log_loss": 0.9176439510787382,
+        "brier": 0.5385029367195053,
+        "expected_points_mae": 1.2167529708164508
       },
       {
         "season": "2021/2022",
@@ -521,10 +521,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.5656565656565656,
-        "log_loss": 0.9631602775083328,
-        "brier": 0.5690451060094079,
-        "expected_points_mae": 1.212721793193902
+        "accuracy": 0.553030303030303,
+        "log_loss": 0.9640497399212462,
+        "brier": 0.5695226254698049,
+        "expected_points_mae": 1.2101389578566826
       },
       {
         "season": "2023/2024",
@@ -533,19 +533,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6515151515151515,
-        "log_loss": 0.9526214419749529,
-        "brier": 0.5635969705727282,
-        "expected_points_mae": 1.2205399072899261
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.9517156289384244,
+        "brier": 0.5628658554075185,
+        "expected_points_mae": 1.2167169357447836
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6304713804713805,
-      "log_loss": 0.9423733424666669,
-      "brier": 0.5555923871110243,
-      "expected_points_mae": 1.215392521514104
+      "accuracy": 0.6203703703703703,
+      "log_loss": 0.944469773312803,
+      "brier": 0.5569638058656096,
+      "expected_points_mae": 1.2145362881393058
     }
   },
   {
@@ -570,10 +570,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6742424242424242,
-        "log_loss": 0.9242725510024898,
-        "brier": 0.544299458120649,
-        "expected_points_mae": 1.230079372040083
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.9182809752181693,
+        "brier": 0.5401118522385749,
+        "expected_points_mae": 1.2185727990478852
       },
       {
         "season": "2021/2022",
@@ -582,10 +582,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.5681818181818182,
-        "log_loss": 0.9737697135194294,
-        "brier": 0.5759526085436131,
-        "expected_points_mae": 1.2247023241246564
+        "accuracy": 0.5580808080808081,
+        "log_loss": 0.97360580149529,
+        "brier": 0.5763421697398482,
+        "expected_points_mae": 1.2241467508931303
       },
       {
         "season": "2023/2024",
@@ -594,19 +594,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6464646464646465,
-        "log_loss": 0.9603227325059001,
-        "brier": 0.5697316101366504,
-        "expected_points_mae": 1.2318251855493563
+        "accuracy": 0.6338383838383839,
+        "log_loss": 0.9626735272357605,
+        "brier": 0.5708877174506491,
+        "expected_points_mae": 1.2293303563496782
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6296296296296297,
-      "log_loss": 0.9527883323426064,
-      "brier": 0.5633278922669709,
-      "expected_points_mae": 1.2288689605713654
+      "accuracy": 0.6178451178451179,
+      "log_loss": 0.9515201013164066,
+      "brier": 0.5624472464763575,
+      "expected_points_mae": 1.2240166354302313
     }
   },
   {
@@ -632,9 +632,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.7045454545454546,
-        "log_loss": 0.7809776163582205,
-        "brier": 0.4401588909622445,
-        "expected_points_mae": 1.0464217124733126
+        "log_loss": 0.7926687761738626,
+        "brier": 0.4474702261023765,
+        "expected_points_mae": 1.0546692317601922
       },
       {
         "season": "2021/2022",
@@ -643,10 +643,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6641414141414141,
-        "log_loss": 0.8632185457974859,
-        "brier": 0.4951882502297605,
-        "expected_points_mae": 1.0621324123452778
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8595865230621855,
+        "brier": 0.4945393631226884,
+        "expected_points_mae": 1.062581737420396
       },
       {
         "season": "2023/2024",
@@ -655,19 +655,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6515151515151515,
-        "log_loss": 0.8323002271211223,
-        "brier": 0.47398708557770913,
-        "expected_points_mae": 1.0711934419825309
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8286960247281898,
+        "brier": 0.4730013767449032,
+        "expected_points_mae": 1.071121891385616
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6734006734006734,
-      "log_loss": 0.8254987964256096,
-      "brier": 0.4697780755899047,
-      "expected_points_mae": 1.0599158556003738
+      "accuracy": 0.6784511784511784,
+      "log_loss": 0.826983774654746,
+      "brier": 0.4716703219899893,
+      "expected_points_mae": 1.062790953522068
     }
   },
   {
@@ -692,10 +692,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7095959595959596,
-        "log_loss": 0.7888576489549545,
-        "brier": 0.4460559137746687,
-        "expected_points_mae": 1.066569293597315
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.7927697259291578,
+        "brier": 0.4487341771226229,
+        "expected_points_mae": 1.077394217980604
       },
       {
         "season": "2021/2022",
@@ -704,10 +704,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6691919191919192,
-        "log_loss": 0.8668818430045602,
-        "brier": 0.5001683157343855,
-        "expected_points_mae": 1.077913529162439
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8611239822457714,
+        "brier": 0.4958538275782001,
+        "expected_points_mae": 1.0680105726917983
       },
       {
         "season": "2023/2024",
@@ -717,18 +717,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6666666666666666,
-        "log_loss": 0.836788756877331,
-        "brier": 0.4785686460685562,
-        "expected_points_mae": 1.0776089301996719
+        "log_loss": 0.8429927673120834,
+        "brier": 0.48265532768370495,
+        "expected_points_mae": 1.0883215648333924
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
       "accuracy": 0.6818181818181818,
-      "log_loss": 0.830842749612282,
-      "brier": 0.4749309585258702,
-      "expected_points_mae": 1.0740305843198086
+      "log_loss": 0.8322954918290042,
+      "brier": 0.4757477774615093,
+      "expected_points_mae": 1.0779087851685982
     }
   },
   {
@@ -753,10 +753,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.696969696969697,
-        "log_loss": 0.8489151881380468,
-        "brier": 0.4892636647802372,
-        "expected_points_mae": 1.140266292332635
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.8451510706792098,
+        "brier": 0.48711543231721527,
+        "expected_points_mae": 1.135611833612298
       },
       {
         "season": "2021/2022",
@@ -765,10 +765,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6338383838383839,
-        "log_loss": 0.9072507919473667,
-        "brier": 0.527726039983001,
-        "expected_points_mae": 1.1462365737285156
+        "accuracy": 0.6388888888888888,
+        "log_loss": 0.9124621228691209,
+        "brier": 0.5297470253050168,
+        "expected_points_mae": 1.147540282271976
       },
       {
         "season": "2023/2024",
@@ -778,18 +778,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6590909090909091,
-        "log_loss": 0.8854071953357548,
-        "brier": 0.5156752728136976,
-        "expected_points_mae": 1.146578753164616
+        "log_loss": 0.8794456629062486,
+        "brier": 0.5119003979966364,
+        "expected_points_mae": 1.1449054703541937
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6632996632996633,
-      "log_loss": 0.880524391807056,
-      "brier": 0.5108883258589788,
-      "expected_points_mae": 1.144360539741922
+      "accuracy": 0.6574074074074074,
+      "log_loss": 0.879019618818193,
+      "brier": 0.5095876185396229,
+      "expected_points_mae": 1.1426858620794893
     }
   },
   {
@@ -814,10 +814,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6919191919191919,
-        "log_loss": 0.819979330970758,
-        "brier": 0.46836213868028315,
-        "expected_points_mae": 1.1004569260016852
+        "accuracy": 0.6893939393939394,
+        "log_loss": 0.831427921369641,
+        "brier": 0.47630359109943704,
+        "expected_points_mae": 1.109079655341768
       },
       {
         "season": "2021/2022",
@@ -826,10 +826,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6237373737373737,
-        "log_loss": 0.8983941879260886,
-        "brier": 0.5207891232450265,
-        "expected_points_mae": 1.1236123063074588
+        "accuracy": 0.6161616161616161,
+        "log_loss": 0.898674863285788,
+        "brier": 0.5210524855406936,
+        "expected_points_mae": 1.122733762253916
       },
       {
         "season": "2023/2024",
@@ -838,19 +838,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6515151515151515,
-        "log_loss": 0.8750000821680738,
-        "brier": 0.5072258567819712,
-        "expected_points_mae": 1.1282922599985925
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8671981209131493,
+        "brier": 0.5032447018240401,
+        "expected_points_mae": 1.1221775131683662
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6557239057239057,
-      "log_loss": 0.86445786702164,
-      "brier": 0.4987923729024269,
-      "expected_points_mae": 1.1174538307692452
+      "accuracy": 0.6565656565656566,
+      "log_loss": 0.8657669685228595,
+      "brier": 0.5002002594880569,
+      "expected_points_mae": 1.11799697692135
     }
   },
   {
@@ -875,10 +875,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7070707070707071,
-        "log_loss": 0.8174458532541651,
-        "brier": 0.4659473686708878,
-        "expected_points_mae": 1.1151157240785508
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.8121599653489594,
+        "brier": 0.46284201657688834,
+        "expected_points_mae": 1.1078089549628252
       },
       {
         "season": "2021/2022",
@@ -887,10 +887,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6717171717171717,
-        "log_loss": 0.8699992578266128,
-        "brier": 0.5021506745584435,
-        "expected_points_mae": 1.0899308937063963
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8755741756060977,
+        "brier": 0.5039378665229851,
+        "expected_points_mae": 1.0867219708704792
       },
       {
         "season": "2023/2024",
@@ -899,19 +899,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6565656565656566,
-        "log_loss": 0.8646502047505426,
-        "brier": 0.5002629094075938,
-        "expected_points_mae": 1.1240083491407153
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.865114803296769,
+        "brier": 0.4988623115171517,
+        "expected_points_mae": 1.1123172623452107
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6784511784511784,
-      "log_loss": 0.8506984386104401,
-      "brier": 0.489453650878975,
-      "expected_points_mae": 1.1096849889752207
+      "accuracy": 0.6801346801346801,
+      "log_loss": 0.850949648083942,
+      "brier": 0.48854739820567505,
+      "expected_points_mae": 1.1022827293928383
     }
   },
   {
@@ -936,10 +936,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.696969696969697,
-        "log_loss": 0.7869156428127253,
-        "brier": 0.44586545120476917,
-        "expected_points_mae": 1.0628557393090803
+        "accuracy": 0.7045454545454546,
+        "log_loss": 0.7840104715262827,
+        "brier": 0.443553968813132,
+        "expected_points_mae": 1.0553099511349653
       },
       {
         "season": "2021/2022",
@@ -949,9 +949,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6691919191919192,
-        "log_loss": 0.8632114057492395,
-        "brier": 0.4955911571933269,
-        "expected_points_mae": 1.0773290238657185
+        "log_loss": 0.8633119695026604,
+        "brier": 0.4946991032677796,
+        "expected_points_mae": 1.0710039084198604
       },
       {
         "season": "2023/2024",
@@ -961,18 +961,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6464646464646465,
-        "log_loss": 0.8529835548549686,
-        "brier": 0.49169825515636517,
-        "expected_points_mae": 1.0942529098876073
+        "log_loss": 0.8426975391554614,
+        "brier": 0.48454021473681574,
+        "expected_points_mae": 1.0789559247567166
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6708754208754208,
-      "log_loss": 0.8343702011389778,
-      "brier": 0.477718287851487,
-      "expected_points_mae": 1.078145891020802
+      "accuracy": 0.6734006734006734,
+      "log_loss": 0.8300066600614683,
+      "brier": 0.4742644289392425,
+      "expected_points_mae": 1.0684232614371807
     }
   },
   {
@@ -997,10 +997,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7121212121212122,
-        "log_loss": 0.7830293912228008,
-        "brier": 0.44187976352544805,
-        "expected_points_mae": 1.0503938911848643
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.7838881929544333,
+        "brier": 0.44183179374879605,
+        "expected_points_mae": 1.0487948711815065
       },
       {
         "season": "2021/2022",
@@ -1009,10 +1009,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6742424242424242,
-        "log_loss": 0.8559704268869294,
-        "brier": 0.49121089597142653,
-        "expected_points_mae": 1.0506128238578978
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8627986979876681,
+        "brier": 0.4953393680577041,
+        "expected_points_mae": 1.0562162737575
       },
       {
         "season": "2023/2024",
@@ -1021,19 +1021,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6691919191919192,
-        "log_loss": 0.8355290193683899,
-        "brier": 0.4777762460305133,
-        "expected_points_mae": 1.0734992133156118
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.8300816461358927,
+        "brier": 0.4748665585975829,
+        "expected_points_mae": 1.0664575673446197
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6851851851851852,
-      "log_loss": 0.8248429458260401,
-      "brier": 0.4702889685091293,
-      "expected_points_mae": 1.0581686427861245
+      "accuracy": 0.6784511784511784,
+      "log_loss": 0.8255895123593314,
+      "brier": 0.47067924013469425,
+      "expected_points_mae": 1.0571562374278753
     }
   },
   {
@@ -1058,10 +1058,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6893939393939394,
-        "log_loss": 0.8549951045143485,
-        "brier": 0.4942701084019751,
-        "expected_points_mae": 1.1393114870969867
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.8625102406423757,
+        "brier": 0.4993501888121004,
+        "expected_points_mae": 1.1430683828631887
       },
       {
         "season": "2021/2022",
@@ -1070,10 +1070,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.5707070707070707,
-        "log_loss": 0.9241945940832859,
-        "brier": 0.5405932660025843,
-        "expected_points_mae": 1.1564364913412266
+        "accuracy": 0.5833333333333334,
+        "log_loss": 0.9302473949683562,
+        "brier": 0.5447460583388504,
+        "expected_points_mae": 1.1617395025273163
       },
       {
         "season": "2023/2024",
@@ -1082,19 +1082,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6439393939393939,
-        "log_loss": 0.9145202822188113,
-        "brier": 0.5358214079135912,
-        "expected_points_mae": 1.166766467477619
+        "accuracy": 0.6262626262626263,
+        "log_loss": 0.9107183073225759,
+        "brier": 0.5334283382631824,
+        "expected_points_mae": 1.1649965078462252
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6346801346801347,
-      "log_loss": 0.8979033269388154,
-      "brier": 0.5235615941060502,
-      "expected_points_mae": 1.1541714819719442
+      "accuracy": 0.6279461279461279,
+      "log_loss": 0.901158647644436,
+      "brier": 0.5258415284713778,
+      "expected_points_mae": 1.1566014644122433
     }
   },
   {
@@ -1120,9 +1120,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.7070707070707071,
-        "log_loss": 0.789066418929585,
-        "brier": 0.445653346088195,
-        "expected_points_mae": 1.059990050574801
+        "log_loss": 0.7923419075956598,
+        "brier": 0.4472694243729829,
+        "expected_points_mae": 1.0629467793566993
       },
       {
         "season": "2021/2022",
@@ -1131,10 +1131,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6666666666666666,
-        "log_loss": 0.8623764233103792,
-        "brier": 0.49607367535676944,
-        "expected_points_mae": 1.0687377820851218
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8578355859200698,
+        "brier": 0.49283525446493814,
+        "expected_points_mae": 1.0624943491421452
       },
       {
         "season": "2023/2024",
@@ -1143,19 +1143,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.8327611074263497,
-        "brier": 0.47507641469623096,
-        "expected_points_mae": 1.0747947649974188
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.8282132200462898,
+        "brier": 0.47169573335968856,
+        "expected_points_mae": 1.0655248816186518
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
       "accuracy": 0.6776094276094277,
-      "log_loss": 0.8280679832221047,
-      "brier": 0.472267812047065,
-      "expected_points_mae": 1.0678408658857808
+      "log_loss": 0.8261302378540063,
+      "brier": 0.47060013739920326,
+      "expected_points_mae": 1.0636553367058321
     }
   },
   {
@@ -1180,10 +1180,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7196969696969697,
-        "log_loss": 0.7955935028341039,
-        "brier": 0.44913634018787346,
-        "expected_points_mae": 1.0600219765161072
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.7948172136099756,
+        "brier": 0.4500761111991319,
+        "expected_points_mae": 1.0626346850434107
       },
       {
         "season": "2021/2022",
@@ -1193,9 +1193,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6666666666666666,
-        "log_loss": 0.8717008012993108,
-        "brier": 0.49990301040558116,
-        "expected_points_mae": 1.0635070703007405
+        "log_loss": 0.8629384804454328,
+        "brier": 0.4941261115771191,
+        "expected_points_mae": 1.0526212212844905
       },
       {
         "season": "2023/2024",
@@ -1205,18 +1205,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6616161616161617,
-        "log_loss": 0.8363112135486102,
-        "brier": 0.4775144011297104,
-        "expected_points_mae": 1.067267115056646
+        "log_loss": 0.8395618458831603,
+        "brier": 0.48011771727955865,
+        "expected_points_mae": 1.0676251051820342
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6826599326599326,
-      "log_loss": 0.8345351725606749,
-      "brier": 0.475517917241055,
-      "expected_points_mae": 1.063598720624498
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.8324391799795228,
+      "brier": 0.47477331335193645,
+      "expected_points_mae": 1.0609603371699785
     }
   },
   {
@@ -1241,10 +1241,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7196969696969697,
-        "log_loss": 0.7744007967150545,
-        "brier": 0.4363105083679702,
-        "expected_points_mae": 1.0386096798665545
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.7812480672198779,
+        "brier": 0.44015748273048044,
+        "expected_points_mae": 1.0480682362000793
       },
       {
         "season": "2021/2022",
@@ -1253,10 +1253,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6691919191919192,
-        "log_loss": 0.8670851632289343,
-        "brier": 0.49644298856634234,
-        "expected_points_mae": 1.06368820462588
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8663206496233515,
+        "brier": 0.4979872944174903,
+        "expected_points_mae": 1.0655090273276075
       },
       {
         "season": "2023/2024",
@@ -1265,19 +1265,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.648989898989899,
-        "log_loss": 0.8318722488642465,
-        "brier": 0.4761481769849038,
-        "expected_points_mae": 1.073478856640948
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8225589094394801,
+        "brier": 0.46992352059188125,
+        "expected_points_mae": 1.0582425579153003
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6792929292929293,
-      "log_loss": 0.8244527362694118,
-      "brier": 0.46963389130640554,
-      "expected_points_mae": 1.058592247044461
+      "accuracy": 0.6826599326599326,
+      "log_loss": 0.8233758754275698,
+      "brier": 0.4693560992466173,
+      "expected_points_mae": 1.057273273814329
     }
   },
   {
@@ -1302,10 +1302,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6868686868686869,
-        "log_loss": 0.8516419037342482,
-        "brier": 0.4920784980275707,
-        "expected_points_mae": 1.142472558390922
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8697843954807211,
+        "brier": 0.5049479545766248,
+        "expected_points_mae": 1.1585649048576137
       },
       {
         "season": "2021/2022",
@@ -1315,9 +1315,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6136363636363636,
-        "log_loss": 0.9084576129022033,
-        "brier": 0.5305904873229499,
-        "expected_points_mae": 1.1584928717650522
+        "log_loss": 0.9208944679618867,
+        "brier": 0.5381451334015598,
+        "expected_points_mae": 1.1625233969424669
       },
       {
         "season": "2023/2024",
@@ -1326,19 +1326,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6717171717171717,
-        "log_loss": 0.9104693100773826,
-        "brier": 0.5321659339762292,
-        "expected_points_mae": 1.167035843941215
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.9048192446921268,
+        "brier": 0.5294049616231307,
+        "expected_points_mae": 1.1670858812915625
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6574074074074074,
-      "log_loss": 0.8901896089046112,
-      "brier": 0.5182783064422499,
-      "expected_points_mae": 1.1560004246990632
+      "accuracy": 0.6523569023569024,
+      "log_loss": 0.8984993693782448,
+      "brier": 0.5241660165337718,
+      "expected_points_mae": 1.1627247276972144
     }
   },
   {
@@ -1363,10 +1363,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6893939393939394,
-        "log_loss": 0.8962899564594461,
-        "brier": 0.523051070566366,
-        "expected_points_mae": 1.2004853426215185
+        "accuracy": 0.6818181818181818,
+        "log_loss": 0.8996425235726578,
+        "brier": 0.5252498781412859,
+        "expected_points_mae": 1.2022611208497558
       },
       {
         "season": "2021/2022",
@@ -1375,10 +1375,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.5959595959595959,
-        "log_loss": 0.944108943375389,
-        "brier": 0.5546834229894679,
-        "expected_points_mae": 1.1942559403253523
+        "accuracy": 0.6035353535353535,
+        "log_loss": 0.9419717880802534,
+        "brier": 0.5536519604587492,
+        "expected_points_mae": 1.1931730553658593
       },
       {
         "season": "2023/2024",
@@ -1387,19 +1387,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.9245936847334123,
-        "brier": 0.5432179042226387,
-        "expected_points_mae": 1.2013547038933885
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.9212882403829076,
+        "brier": 0.540819499775057,
+        "expected_points_mae": 1.1967974259095386
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6481481481481481,
-      "log_loss": 0.9216641948560823,
-      "brier": 0.5403174659261576,
-      "expected_points_mae": 1.1986986622800866
+      "accuracy": 0.6506734006734006,
+      "log_loss": 0.920967517345273,
+      "brier": 0.5399071127916973,
+      "expected_points_mae": 1.197410534041718
     }
   },
   {
@@ -1424,10 +1424,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7045454545454546,
-        "log_loss": 0.8516927872329941,
-        "brier": 0.4909343827233396,
-        "expected_points_mae": 1.162213297346407
+        "accuracy": 0.7070707070707071,
+        "log_loss": 0.841835247361334,
+        "brier": 0.48344954704350607,
+        "expected_points_mae": 1.1409195776069079
       },
       {
         "season": "2021/2022",
@@ -1436,10 +1436,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.9007243725544993,
-        "brier": 0.5220830659563924,
-        "expected_points_mae": 1.134398344377288
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.8987118822171816,
+        "brier": 0.5210502145358942,
+        "expected_points_mae": 1.1373090609814123
       },
       {
         "season": "2023/2024",
@@ -1449,18 +1449,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6590909090909091,
-        "log_loss": 0.8770634946834767,
-        "brier": 0.5066327610475847,
-        "expected_points_mae": 1.1435942591856227
+        "log_loss": 0.8752853202892683,
+        "brier": 0.5058542262520044,
+        "expected_points_mae": 1.144933705483313
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6742424242424242,
-      "log_loss": 0.8764935514903232,
-      "brier": 0.5065500699091056,
-      "expected_points_mae": 1.1467353003031058
+      "accuracy": 0.6708754208754208,
+      "log_loss": 0.871944149955928,
+      "brier": 0.5034513292771349,
+      "expected_points_mae": 1.1410541146905446
     }
   },
   {
@@ -1485,10 +1485,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7171717171717171,
-        "log_loss": 0.7625388019351156,
-        "brier": 0.42897126546542397,
-        "expected_points_mae": 1.0090665554496328
+        "accuracy": 0.7196969696969697,
+        "log_loss": 0.7710650578548282,
+        "brier": 0.43457202952655055,
+        "expected_points_mae": 1.0217526595452797
       },
       {
         "season": "2021/2022",
@@ -1498,9 +1498,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6691919191919192,
-        "log_loss": 0.8601741853040168,
-        "brier": 0.49613832023802124,
-        "expected_points_mae": 1.0476316832441157
+        "log_loss": 0.8589555606663898,
+        "brier": 0.4955609510164809,
+        "expected_points_mae": 1.0452120481549267
       },
       {
         "season": "2023/2024",
@@ -1509,19 +1509,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6641414141414141,
-        "log_loss": 0.827831600443963,
-        "brier": 0.47323315128301,
-        "expected_points_mae": 1.0560982741049585
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8233743092090148,
+        "brier": 0.4704526058335261,
+        "expected_points_mae": 1.0529915031053736
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6835016835016835,
-      "log_loss": 0.8168481958943653,
-      "brier": 0.46611424566215176,
-      "expected_points_mae": 1.037598837599569
+      "accuracy": 0.6851851851851852,
+      "log_loss": 0.8177983092434109,
+      "brier": 0.4668618621255192,
+      "expected_points_mae": 1.03998540360186
     }
   },
   {
@@ -1546,10 +1546,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7146464646464646,
-        "log_loss": 0.8210303388854548,
-        "brier": 0.46925921462239356,
-        "expected_points_mae": 1.107247894766761
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.8305787621735968,
+        "brier": 0.47643722205138267,
+        "expected_points_mae": 1.1186870708384695
       },
       {
         "season": "2021/2022",
@@ -1558,10 +1558,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6161616161616161,
-        "log_loss": 0.8912998641841213,
-        "brier": 0.5172344368382441,
-        "expected_points_mae": 1.121870378451723
+        "accuracy": 0.6363636363636364,
+        "log_loss": 0.8924303543002609,
+        "brier": 0.5182169023597017,
+        "expected_points_mae": 1.1232362621144978
       },
       {
         "season": "2023/2024",
@@ -1570,19 +1570,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6767676767676768,
-        "log_loss": 0.8681843987821974,
-        "brier": 0.5032273728406037,
-        "expected_points_mae": 1.1280933279274834
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8715792140417324,
+        "brier": 0.5041841052715808,
+        "expected_points_mae": 1.126159855345533
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6691919191919192,
-      "log_loss": 0.8601715339505912,
-      "brier": 0.4965736747670805,
-      "expected_points_mae": 1.1190705337153224
+      "accuracy": 0.6717171717171717,
+      "log_loss": 0.8648627768385297,
+      "brier": 0.49961274322755506,
+      "expected_points_mae": 1.1226943960995
     }
   },
   {
@@ -1608,9 +1608,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.7121212121212122,
-        "log_loss": 0.7625941133303531,
-        "brier": 0.4288641920135755,
-        "expected_points_mae": 1.01030258148371
+        "log_loss": 0.7746569430427245,
+        "brier": 0.43607784112717407,
+        "expected_points_mae": 1.0299340816638325
       },
       {
         "season": "2021/2022",
@@ -1619,10 +1619,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6742424242424242,
-        "log_loss": 0.8603111780330556,
-        "brier": 0.4957980284331978,
-        "expected_points_mae": 1.0518234397362585
+        "accuracy": 0.6767676767676768,
+        "log_loss": 0.8671950328357976,
+        "brier": 0.4977863566306507,
+        "expected_points_mae": 1.0498687470187793
       },
       {
         "season": "2023/2024",
@@ -1632,18 +1632,18 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.648989898989899,
-        "log_loss": 0.8317984323838479,
-        "brier": 0.47655939358732424,
-        "expected_points_mae": 1.066815484899318
+        "log_loss": 0.8309401642050136,
+        "brier": 0.4770616648967717,
+        "expected_points_mae": 1.06615898092227
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6784511784511784,
-      "log_loss": 0.8182345745824189,
-      "brier": 0.46707387134469924,
-      "expected_points_mae": 1.0429805020397622
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.8242640466945119,
+      "brier": 0.47030862088486547,
+      "expected_points_mae": 1.0486539365349605
     }
   },
   {
@@ -1668,10 +1668,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7095959595959596,
-        "log_loss": 0.791468059287185,
-        "brier": 0.44616263960035457,
-        "expected_points_mae": 1.0602371051487578
+        "accuracy": 0.7045454545454546,
+        "log_loss": 0.7932789115518925,
+        "brier": 0.44740054588417993,
+        "expected_points_mae": 1.0573238414449893
       },
       {
         "season": "2021/2022",
@@ -1681,9 +1681,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6666666666666666,
-        "log_loss": 0.8626603981075828,
-        "brier": 0.49593428121076694,
-        "expected_points_mae": 1.0829584858065056
+        "log_loss": 0.8594315379068208,
+        "brier": 0.4938477617212874,
+        "expected_points_mae": 1.0777477604661818
       },
       {
         "season": "2023/2024",
@@ -1692,19 +1692,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6616161616161617,
-        "log_loss": 0.8338104750105844,
-        "brier": 0.4751202690622196,
-        "expected_points_mae": 1.0810309281755923
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8298998346828811,
+        "brier": 0.4728256737530868,
+        "expected_points_mae": 1.0759988159535456
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6792929292929293,
-      "log_loss": 0.8293129774684508,
-      "brier": 0.4724057299577804,
-      "expected_points_mae": 1.0747421730436186
+      "accuracy": 0.6767676767676768,
+      "log_loss": 0.8275367613805314,
+      "brier": 0.4713579937861847,
+      "expected_points_mae": 1.0703568059549056
     }
   },
   {
@@ -1729,10 +1729,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6767676767676768,
-        "log_loss": 0.8653040628630873,
-        "brier": 0.5018469867146235,
-        "expected_points_mae": 1.1513687525376755
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8611417154521035,
+        "brier": 0.4993130152157702,
+        "expected_points_mae": 1.1465789738066905
       },
       {
         "season": "2021/2022",
@@ -1741,10 +1741,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.5631313131313131,
-        "log_loss": 0.9370272872972812,
-        "brier": 0.5494873559220396,
-        "expected_points_mae": 1.1714663340292584
+        "accuracy": 0.5757575757575758,
+        "log_loss": 0.9414466094513094,
+        "brier": 0.5519633477840324,
+        "expected_points_mae": 1.1738007508533357
       },
       {
         "season": "2023/2024",
@@ -1753,19 +1753,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.648989898989899,
-        "log_loss": 0.9272276133037276,
-        "brier": 0.5454901708467048,
-        "expected_points_mae": 1.1864907374773122
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.9246786202614301,
+        "brier": 0.543749973421684,
+        "expected_points_mae": 1.1876507257302182
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6296296296296297,
-      "log_loss": 0.9098529878213655,
-      "brier": 0.5322748378277893,
-      "expected_points_mae": 1.1697752746814154
+      "accuracy": 0.632996632996633,
+      "log_loss": 0.9090889817216142,
+      "brier": 0.531675445473829,
+      "expected_points_mae": 1.1693434834634149
     }
   },
   {
@@ -1790,10 +1790,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7045454545454546,
-        "log_loss": 0.8364506358533267,
-        "brier": 0.47958014414711725,
-        "expected_points_mae": 1.1276565142040242
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.8342248519269967,
+        "brier": 0.4791486000411819,
+        "expected_points_mae": 1.1274715894386265
       },
       {
         "season": "2021/2022",
@@ -1802,10 +1802,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6313131313131313,
-        "log_loss": 0.9104893806817117,
-        "brier": 0.5291665850820941,
-        "expected_points_mae": 1.1432164235476339
+        "accuracy": 0.6287878787878788,
+        "log_loss": 0.9092768769633353,
+        "brier": 0.5288898723689701,
+        "expected_points_mae": 1.1425327404027166
       },
       {
         "season": "2023/2024",
@@ -1814,19 +1814,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6742424242424242,
-        "log_loss": 0.8833340118611045,
-        "brier": 0.5143513805751289,
-        "expected_points_mae": 1.1467025042935728
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8847739905449513,
+        "brier": 0.5152782049294302,
+        "expected_points_mae": 1.1460406773444498
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.67003367003367,
-      "log_loss": 0.8767580094653808,
-      "brier": 0.50769936993478,
-      "expected_points_mae": 1.139191814015077
+      "accuracy": 0.6666666666666666,
+      "log_loss": 0.8760919064784278,
+      "brier": 0.5077722257798608,
+      "expected_points_mae": 1.1386816690619308
     }
   },
   {
@@ -1851,10 +1851,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.7146464646464646,
-        "log_loss": 0.7797731028811565,
-        "brier": 0.43912090282499,
-        "expected_points_mae": 1.042756434099967
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.783947447043455,
+        "brier": 0.4413137037918117,
+        "expected_points_mae": 1.0468677270398468
       },
       {
         "season": "2021/2022",
@@ -1864,9 +1864,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6641414141414141,
-        "log_loss": 0.8646958647668045,
-        "brier": 0.4985566042894254,
-        "expected_points_mae": 1.0790921101624769
+        "log_loss": 0.8595812205243861,
+        "brier": 0.4950658585463833,
+        "expected_points_mae": 1.071263330267062
       },
       {
         "season": "2023/2024",
@@ -1875,19 +1875,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.826504137279943,
-        "brier": 0.4721016146945618,
-        "expected_points_mae": 1.0697245017055534
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8292334577456503,
+        "brier": 0.4726875118548854,
+        "expected_points_mae": 1.072319409582433
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6792929292929293,
-      "log_loss": 0.8236577016426346,
-      "brier": 0.4699263739363257,
-      "expected_points_mae": 1.0638576819893324
+      "accuracy": 0.6826599326599326,
+      "log_loss": 0.8242540417711637,
+      "brier": 0.46968902473102675,
+      "expected_points_mae": 1.063483488963114
     }
   },
   {
@@ -1913,9 +1913,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.7095959595959596,
-        "log_loss": 0.7892096389662219,
-        "brier": 0.4451930741381708,
-        "expected_points_mae": 1.0533719099691685
+        "log_loss": 0.79046167474223,
+        "brier": 0.44612523253865916,
+        "expected_points_mae": 1.0555675214920486
       },
       {
         "season": "2021/2022",
@@ -1925,9 +1925,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6691919191919192,
-        "log_loss": 0.8625783859825039,
-        "brier": 0.4965073375567948,
-        "expected_points_mae": 1.0839479112259465
+        "log_loss": 0.8609863471290896,
+        "brier": 0.49474426975278835,
+        "expected_points_mae": 1.0789746592368827
       },
       {
         "season": "2023/2024",
@@ -1936,19 +1936,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6565656565656566,
-        "log_loss": 0.8282661873121081,
-        "brier": 0.4723581740052929,
-        "expected_points_mae": 1.0749618059073707
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8257755487411089,
+        "brier": 0.47052314164032477,
+        "expected_points_mae": 1.071288847194648
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6784511784511784,
-      "log_loss": 0.826684737420278,
-      "brier": 0.47135286190008624,
-      "expected_points_mae": 1.070760542367495
+      "accuracy": 0.6801346801346801,
+      "log_loss": 0.8257411902041428,
+      "brier": 0.4704642146439241,
+      "expected_points_mae": 1.068610342641193
     }
   },
   {
@@ -1967,9 +1967,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6919191919191919,
-        "log_loss": 0.7876767466900849,
-        "brier": 0.4414802216239406,
-        "expected_points_mae": 0.9450346589254136
+        "log_loss": 0.810464637186309,
+        "brier": 0.4490183756830557,
+        "expected_points_mae": 0.9493933238627849
       },
       {
         "season": "2021/2022",
@@ -1979,9 +1979,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6691919191919192,
-        "log_loss": 0.8506621199788137,
-        "brier": 0.48876953658756106,
-        "expected_points_mae": 1.0465057006264868
+        "log_loss": 0.849023912219096,
+        "brier": 0.48796682539710295,
+        "expected_points_mae": 1.0452851236583207
       },
       {
         "season": "2023/2024",
@@ -1990,19 +1990,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6843434343434344,
-        "log_loss": 0.8063176908399067,
-        "brier": 0.45732243247953697,
-        "expected_points_mae": 1.0046401182911364
+        "accuracy": 0.6893939393939394,
+        "log_loss": 0.8056502008103961,
+        "brier": 0.4569550605955704,
+        "expected_points_mae": 1.0021063188169013
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6818181818181818,
-      "log_loss": 0.8148855191696017,
-      "brier": 0.46252406356367964,
-      "expected_points_mae": 0.998726825947679
+      "accuracy": 0.6835016835016835,
+      "log_loss": 0.8217129167386004,
+      "brier": 0.4646467538919097,
+      "expected_points_mae": 0.9989282554460022
     }
   },
   {
@@ -2020,10 +2020,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6868686868686869,
-        "log_loss": 0.8225316423077338,
-        "brier": 0.4549025264341422,
-        "expected_points_mae": 0.9352419554923055
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8942104187787583,
+        "brier": 0.47517369438575596,
+        "expected_points_mae": 0.9460470425293349
       },
       {
         "season": "2021/2022",
@@ -2032,10 +2032,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6540404040404041,
-        "log_loss": 0.8516812870534526,
-        "brier": 0.48922698878928056,
-        "expected_points_mae": 1.0253975515455156
+        "accuracy": 0.648989898989899,
+        "log_loss": 0.85259311286912,
+        "brier": 0.48965733230280956,
+        "expected_points_mae": 1.0271573543432793
       },
       {
         "season": "2023/2024",
@@ -2044,19 +2044,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6616161616161617,
-        "log_loss": 0.8296974151226646,
-        "brier": 0.46906814825063153,
-        "expected_points_mae": 0.9793349570873855
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8344854049104158,
+        "brier": 0.47099232835687477,
+        "expected_points_mae": 0.9756345404734559
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6675084175084175,
-      "log_loss": 0.8346367814946171,
-      "brier": 0.4710658878246847,
-      "expected_points_mae": 0.9799914880417355
+      "accuracy": 0.6599326599326599,
+      "log_loss": 0.8604296455194314,
+      "brier": 0.47860778501514667,
+      "expected_points_mae": 0.98294631244869
     }
   },
   {
@@ -2074,10 +2074,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6843434343434344,
-        "log_loss": 0.8040051866055471,
-        "brier": 0.4559431235426511,
-        "expected_points_mae": 0.9336927565749988
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.9091995622560523,
+        "brier": 0.4944261814519568,
+        "expected_points_mae": 0.9485859078618704
       },
       {
         "season": "2021/2022",
@@ -2086,10 +2086,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6338383838383839,
-        "log_loss": 0.8807782420069601,
-        "brier": 0.5051860449678484,
-        "expected_points_mae": 1.024341809643618
+        "accuracy": 0.6363636363636364,
+        "log_loss": 0.8856548130567882,
+        "brier": 0.5075144260760831,
+        "expected_points_mae": 1.0260457914987378
       },
       {
         "season": "2023/2024",
@@ -2098,19 +2098,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6464646464646465,
-        "log_loss": 0.9025266222619905,
-        "brier": 0.512550354927336,
-        "expected_points_mae": 1.0034373616668661
+        "accuracy": 0.6363636363636364,
+        "log_loss": 0.9150492150214483,
+        "brier": 0.516422443859773,
+        "expected_points_mae": 1.005370855098595
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6548821548821548,
-      "log_loss": 0.8624366836248327,
-      "brier": 0.49122650781261185,
-      "expected_points_mae": 0.987157309295161
+      "accuracy": 0.648989898989899,
+      "log_loss": 0.9033011967780963,
+      "brier": 0.506121017129271,
+      "expected_points_mae": 0.9933341848197343
     }
   },
   {
@@ -2128,10 +2128,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6641414141414141,
-        "log_loss": 0.8430573201441184,
-        "brier": 0.48759125386231994,
-        "expected_points_mae": 0.9739563673334939
+        "accuracy": 0.6515151515151515,
+        "log_loss": 0.8783797897911604,
+        "brier": 0.4959349133875312,
+        "expected_points_mae": 0.9341401564534273
       },
       {
         "season": "2021/2022",
@@ -2140,10 +2140,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.5858585858585859,
-        "log_loss": 0.9535426404279038,
-        "brier": 0.5421269380799197,
-        "expected_points_mae": 1.0261053892406982
+        "accuracy": 0.5984848484848485,
+        "log_loss": 0.9592962932461233,
+        "brier": 0.5447162658174853,
+        "expected_points_mae": 1.0277044743621329
       },
       {
         "season": "2023/2024",
@@ -2152,19 +2152,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6313131313131313,
-        "log_loss": 1.0020069952729922,
-        "brier": 0.5579563824695387,
-        "expected_points_mae": 1.0217459906459745
+        "accuracy": 0.6186868686868687,
+        "log_loss": 1.0117914293388892,
+        "brier": 0.5616158386335828,
+        "expected_points_mae": 1.0308959795830375
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.627104377104377,
-      "log_loss": 0.9328689852816714,
-      "brier": 0.5292248581372595,
-      "expected_points_mae": 1.007269249073389
+      "accuracy": 0.622895622895623,
+      "log_loss": 0.949822504125391,
+      "brier": 0.5340890059461998,
+      "expected_points_mae": 0.9975802034661992
     }
   },
   {
@@ -2185,9 +2185,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.6893939393939394,
-        "log_loss": 0.7835227889365254,
-        "brier": 0.4470432273071571,
-        "expected_points_mae": 1.0052708552749081
+        "log_loss": 0.7932445335498175,
+        "brier": 0.44952096205417913,
+        "expected_points_mae": 1.0062348234633882
       },
       {
         "season": "2021/2022",
@@ -2196,10 +2196,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6540404040404041,
-        "log_loss": 0.8807850250304777,
-        "brier": 0.5015267214788235,
-        "expected_points_mae": 1.0042217136203055
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.9029034591800982,
+        "brier": 0.5131165893737685,
+        "expected_points_mae": 1.0172418084594188
       },
       {
         "season": "2023/2024",
@@ -2208,19 +2208,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6540404040404041,
-        "log_loss": 0.8299304543022921,
-        "brier": 0.47826126352012105,
-        "expected_points_mae": 1.0199666818595503
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8229956629976724,
+        "brier": 0.4735765142143038,
+        "expected_points_mae": 1.0194032542101676
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6658249158249159,
-      "log_loss": 0.8314127560897651,
-      "brier": 0.4756104041020339,
-      "expected_points_mae": 1.009819750251588
+      "accuracy": 0.6691919191919192,
+      "log_loss": 0.8397145519091961,
+      "brier": 0.4787380218807504,
+      "expected_points_mae": 1.0142932953776582
     }
   },
   {
@@ -2240,10 +2240,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.702020202020202,
-        "log_loss": 0.7692844794685406,
-        "brier": 0.43630836025603514,
-        "expected_points_mae": 0.9957366271083686
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.7946200624345913,
+        "brier": 0.45162594377146464,
+        "expected_points_mae": 1.02052722218545
       },
       {
         "season": "2021/2022",
@@ -2252,10 +2252,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.8826125342818952,
-        "brier": 0.5058233778753704,
-        "expected_points_mae": 1.0445021377803088
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.8881476780744753,
+        "brier": 0.5074717379079294,
+        "expected_points_mae": 1.0380627167860106
       },
       {
         "season": "2023/2024",
@@ -2264,19 +2264,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6691919191919192,
-        "log_loss": 0.831210220532865,
-        "brier": 0.47683426039859694,
-        "expected_points_mae": 1.0388438697551354
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.8136210427025331,
+        "brier": 0.4673243817701106,
+        "expected_points_mae": 1.0274095964213732
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6767676767676768,
-      "log_loss": 0.8277024114277669,
-      "brier": 0.47298866617666757,
-      "expected_points_mae": 1.026360878214604
+      "accuracy": 0.6734006734006734,
+      "log_loss": 0.8321295944038667,
+      "brier": 0.47547402114983495,
+      "expected_points_mae": 1.0286665117976113
     }
   },
   {
@@ -2296,10 +2296,10 @@
         "validation_first_date": "2018-08-10",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6944444444444444,
-        "log_loss": 0.7551548268609741,
-        "brier": 0.425314530500226,
-        "expected_points_mae": 0.9310845776515958
+        "accuracy": 0.6893939393939394,
+        "log_loss": 0.7862351216940501,
+        "brier": 0.44203649257631245,
+        "expected_points_mae": 0.9639615929023679
       },
       {
         "season": "2021/2022",
@@ -2308,10 +2308,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.9066935135067936,
-        "brier": 0.5110373635402174,
-        "expected_points_mae": 0.990644304274516
+        "accuracy": 0.6237373737373737,
+        "log_loss": 0.9304600114658097,
+        "brier": 0.5223066907648951,
+        "expected_points_mae": 0.9938053451506171
       },
       {
         "season": "2023/2024",
@@ -2320,19 +2320,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.8341990128802147,
-        "brier": 0.4775497640126714,
-        "expected_points_mae": 0.9770008738587938
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8323869070078872,
+        "brier": 0.4771369364895419,
+        "expected_points_mae": 0.9839665876814474
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6708754208754208,
-      "log_loss": 0.8320157844159942,
-      "brier": 0.47130055268437154,
-      "expected_points_mae": 0.9662432519283016
+      "accuracy": 0.6607744107744108,
+      "log_loss": 0.849694013389249,
+      "brier": 0.48049337327691655,
+      "expected_points_mae": 0.9805778419114775
     }
   },
   {
@@ -2353,9 +2353,9 @@
         "unique_matches": 198,
         "team_appearances": 228,
         "accuracy": 0.7070707070707071,
-        "log_loss": 0.7583292979883268,
-        "brier": 0.429459040289911,
-        "expected_points_mae": 0.9696138404782206
+        "log_loss": 0.7890412734439078,
+        "brier": 0.4445664671729039,
+        "expected_points_mae": 0.9940623431568804
       },
       {
         "season": "2021/2022",
@@ -2364,10 +2364,10 @@
         "validation_first_date": "2021-08-13",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6565656565656566,
-        "log_loss": 0.900329067404062,
-        "brier": 0.5130573110466103,
-        "expected_points_mae": 1.025566384149675
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.910762083329655,
+        "brier": 0.5139927263807234,
+        "expected_points_mae": 1.0270142813823195
       },
       {
         "season": "2023/2024",
@@ -2376,19 +2376,19 @@
         "validation_first_date": "2023-08-11",
         "unique_matches": 198,
         "team_appearances": 228,
-        "accuracy": 0.6590909090909091,
-        "log_loss": 0.8371825035977771,
-        "brier": 0.4807075718305927,
-        "expected_points_mae": 1.0110242570935404
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8198546852876513,
+        "brier": 0.47106800744643623,
+        "expected_points_mae": 1.0086390140611772
       }
     ],
     "validation": {
       "unique_matches": 594,
       "team_appearances": 684,
-      "accuracy": 0.6742424242424242,
-      "log_loss": 0.8319469563300553,
-      "brier": 0.47440797438903803,
-      "expected_points_mae": 1.002068160573812
+      "accuracy": 0.6759259259259259,
+      "log_loss": 0.8398860140204047,
+      "brier": 0.47654240033335454,
+      "expected_points_mae": 1.0099052128667925
     }
   }
 ]

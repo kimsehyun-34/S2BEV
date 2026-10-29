@@ -91,6 +91,38 @@ def write_focused_report(data_dir: str | Path = "data/focused", model_dir: str |
               "수집 출처: ESPN 공개 웹 경기 데이터 및 Football-Data. 접근 가능성과 자유 재배포 라이선스는 별개입니다.","",
               "상세 수치와 구단별·시즌별 결과는 metrics.json, 모든 튜닝 시도는 trials_formation.json / trials_no_formation.json에 저장했습니다."]
     (root/"analysis.md").write_text("\n".join(lines),encoding="utf-8")
+    write_comparison(data_dir, model_dir, root, report)
+    return path
+
+
+def write_comparison(data_dir: Path, model_dir: Path, root: Path, report: dict) -> Path:
+    """Shareable one-file comparison page; numbers come only from metrics.json and saved tuning records."""
+    trials = json.loads((model_dir/"trials_formation.json").read_text(encoding="utf-8"))
+    trials_no = json.loads((model_dir/"trials_no_formation.json").read_text(encoding="utf-8"))
+    coverage = pd.read_csv(data_dir/"coverage.csv")
+    formations = pd.read_csv(model_dir/"formation_counts.csv")
+    formations = formations[formations.formation.ne("__missing__")]
+    top = formations.sort_values("appearances", ascending=False).groupby("team").head(5)
+    payload = {
+        "data": report["data"], "protocol": {k: report["protocol"][k] for k in ["folds","test_start","rf_trials_per_variant","other_trials_per_variant","half_life_days","feature_version"]},
+        "features": {"rows": report["features"]["supervised_team_rows"], "numeric": len(report["features"]["numeric_features"])},
+        "test": report["test"], "test_by_season": report["test_by_season"], "test_by_team": report["test_by_team"],
+        "comparisons": report["comparisons"], "market": report["market_reference"], "known": report["known_formation_subset"],
+        "selection": {k: {"best": v["best"]["spec"], "best_loss": v["best"]["validation"]["log_loss"],
+                          "best_rf": v["best_rf"]["spec"], "best_rf_loss": v["best_rf"]["validation"]["log_loss"]}
+                      for k, v in report["selection"].items() if isinstance(v, dict) and "best" in v},
+        "trials": [{"n": t["trial"], "family": t["spec"]["family"], "loss": t["validation"]["log_loss"], "acc": t["validation"]["accuracy"],
+                    "spec": t["spec"], "fwf": "with"} for t in trials] +
+                  [{"n": t["trial"], "family": t["spec"]["family"], "loss": t["validation"]["log_loss"], "acc": t["validation"]["accuracy"],
+                    "spec": t["spec"], "fwf": "without"} for t in trials_no],
+        "importance": report["validation_top_features"][:15],
+        "coverage": coverage.to_dict("records"), "formations": top.to_dict("records"),
+        "limitations": report["limitations"],
+    }
+    payload = json.dumps(payload, ensure_ascii=False, allow_nan=False).replace("&","\\u0026").replace("<","\\u003c").replace(">","\\u003e")
+    template = (Path(__file__).parent/"comparison_template.html").read_text(encoding="utf-8")
+    path = root/"comparison.html"
+    path.write_text(template.replace("__PAYLOAD__", payload), encoding="utf-8")
     return path
 
 

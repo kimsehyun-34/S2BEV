@@ -123,7 +123,8 @@ def tune(rows: pd.DataFrame, numeric: list[str], folds: list[str], specs: list[d
         for season,training,validation,train_x,val_x in matrices:
             estimator = make_estimator(spec)
             estimator.fit(train_x, training.outcome, sample_weight=train_weights(training))
-            probability = estimator.predict_proba(val_x)
+            probability = np.zeros((val_x.shape[0],3))
+            probability[:,estimator.classes_.astype(int)] = estimator.predict_proba(val_x)
             fold_results.append({"season": season,"train_team_rows":len(training),
                                  "train_last_date":str(training.date.max().date()),
                                  "validation_first_date":str(validation.date.min().date()),

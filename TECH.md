@@ -26,7 +26,7 @@ components:
 
 lessons:
   - name: formation-signal-six-clubs
-    summary: 6개 구단 4,003경기(구단 관점 4,608행)로 RF 튜닝해도 포메이션 변수의 로그손실 개선이 0과 구분되지 않았고 검증 최선은 규제 로지스틱이며 Elo 기준을 못 넘었다
+    summary: 6개 구단 4,003경기(구단 관점 4,608행)에서 RF 튜닝은 로그손실을 소폭(+0.0098) 개선했지만 Elo 기준을 못 넘었고, 포메이션 변수 추가 개선은 0과 구분되지 않았다
     outcome: failed
     tech: [RandomForest, logistic, Elo, formation]
   - name: missing-category-as-numeric-signal
@@ -42,5 +42,6 @@ lessons:
 # 메모
 
 - ESPN 비문서화 API 사용. 공개 접근이 재배포 라이선스를 뜻하지 않아 data/focused/facts는 Git 제외.
+- 팀명 매핑 버그(Wigan·Bolton 등 7개 구단 약칭)로 초기 264경기가 ESPN과 조인되지 않았다. 수정 후 전 경기 일치; 수정 전 결과는 폐기.
 - 부분 훈련 결과 비교 시 같은 설정에서 포메이션 열만 제거한 모델과 비교해야 모델 계열 효과가 섞이지 않음.
 - 브라우저 검증: CHROME_PATH=<chrome.exe> node scripts/verify_report.cjs <playwright-core 경로> (설치된 chromium 버전이 playwright와 달라도 실행 가능)
