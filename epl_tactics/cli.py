@@ -23,6 +23,20 @@ def parser() -> argparse.ArgumentParser:
     fetch.add_argument("--workers", type=int, default=4)
     fetch.add_argument("--ref", default="master", help="Git revision or commit SHA for reproducibility")
     fetch.add_argument("--cache-dir", default="data/raw")
+    focused = commands.add_parser("collect-focused", help="Collect long EPL histories for Arsenal and five other selected clubs")
+    focused.add_argument("--start-year", type=int, default=2006)
+    focused.add_argument("--cutoff", default="2026-10-29")
+    focused.add_argument("--workers", type=int, default=4)
+    focused.add_argument("--output-dir", default="data/focused")
+    focused_fit = commands.add_parser("analyze-focused", help="Randomized RF tuning on forward-season folds, then retrospective test")
+    focused_fit.add_argument("--data-dir", default="data/focused")
+    focused_fit.add_argument("--output-dir", default="artifacts/focused")
+    focused_fit.add_argument("--report-dir", default="reports/focused")
+    focused_fit.add_argument("--rf-trials", type=int, default=32)
+    focused_report = commands.add_parser("report-focused", help="Rebuild the selected-club analysis without retraining")
+    focused_report.add_argument("--data-dir", default="data/focused")
+    focused_report.add_argument("--model-dir", default="artifacts/focused")
+    focused_report.add_argument("--output-dir", default="reports/focused")
     recent = commands.add_parser("collect-recent", help="Collect recent ESPN lineups and independently verify scores")
     recent.add_argument("--output", default="data/epl_recent.csv")
     recent.add_argument("--start-year", type=int, default=2019)
@@ -36,11 +50,12 @@ def parser() -> argparse.ArgumentParser:
     fit = commands.add_parser("train", help="Legacy single-season RF experiment; use benchmark for v2")
     fit.add_argument("--data", default="data/epl_2015_16.csv")
     fit.add_argument("--output-dir", default="artifacts")
-    for name in ["recommend", "report", "predict"]:
+    for name in ["recommend", "report", "predict", "explorer"]:
         command = commands.add_parser(name, help={"recommend": "Explain why optimal-formation recommendations are withheld",
                                                   "report": "Export the frozen model/feasibility audit",
+                                                  "explorer": "Restore the interactive historical team/formation explorer",
                                                   "predict": "Forecast a fixture scenario using announced formations"}[name])
-        command.add_argument("--model", default="artifacts/v2/model.joblib")
+        command.add_argument("--model", default="artifacts/model.joblib" if name == "explorer" else "artifacts/v2/model.joblib")
         command.add_argument("--as-of", help="Date after training cutoff; defaults to cutoff + 7 days")
         command.add_argument("--min-team-support", type=int, default=3)
         command.add_argument("--min-league-support", type=int, default=10)
@@ -61,6 +76,17 @@ def main(argv: list[str] | None = None) -> None:
     try:
         if args.command == "fetch":
             result = fetch_statsbomb(args.output, args.season_id, args.workers, args.ref, args.cache_dir)
+        elif args.command == "collect-focused":
+            from .focused_data import collect_focused
+            result = collect_focused(args.start_year, args.cutoff, args.workers, args.output_dir)
+        elif args.command == "analyze-focused":
+            from .focused_model import run_focused
+            from .focused_report import write_focused_report
+            result = run_focused(args.data_dir, args.output_dir, args.rf_trials)
+            write_focused_report(args.data_dir, args.output_dir, args.report_dir)
+        elif args.command == "report-focused":
+            from .focused_report import write_focused_report
+            result = {"html": str(write_focused_report(args.data_dir, args.model_dir, args.output_dir).resolve())}
         elif args.command == "collect-recent":
             result = {"collection": fetch_recent(args.output, args.start_year, args.cutoff, args.workers),
                       "crosscheck": crosscheck_football_data(args.output)}
@@ -94,6 +120,8 @@ def main(argv: list[str] | None = None) -> None:
                     path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
             else:
                 if bundle["artifact_version"] == 2:
+                    if args.command == "explorer":
+                        raise ValueError("The historical explorer requires the v1 model: --model artifacts/model.joblib")
                     if args.as_of:
                         raise ValueError("The v2 audit has frozen evaluation dates; use --as-of with predict")
                     path = write_analysis_report(bundle["report"], args.output_dir)

@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "578492",
+    "date": "2021-01-01",
+    "home_team": "Manchester United",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "578494",
+    "date": "2021-01-02",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "578491",
+    "date": "2021-01-02",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578497",
+    "date": "2021-01-03",
+    "home_team": "Chelsea",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578496",
+    "date": "2021-01-04",
+    "home_team": "Southampton",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578660",
+    "date": "2021-01-12",
+    "home_team": "Burnley",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578481",
+    "date": "2021-01-13",
+    "home_team": "Manchester City",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "578503",
+    "date": "2021-01-13",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "578484",
+    "date": "2021-01-14",
+    "home_team": "Arsenal",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "578473",
+    "date": "2021-01-16",
+    "home_team": "Fulham",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578479",
+    "date": "2021-01-17",
+    "home_team": "Sheffield United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578476",
+    "date": "2021-01-17",
+    "home_team": "Liverpool",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578474",
+    "date": "2021-01-17",
+    "home_team": "Manchester City",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "578477",
+    "date": "2021-01-18",
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "578483",
+    "date": "2021-01-19",
+    "home_team": "Leicester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578659",
+    "date": "2021-01-20",
+    "home_team": "Manchester City",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "578486",
+    "date": "2021-01-20",
+    "home_team": "Fulham",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578482",
+    "date": "2021-01-21",
+    "home_team": "Liverpool",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "578462",
+    "date": "2021-01-26",
+    "home_team": "Southampton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578466",
+    "date": "2021-01-26",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578465",
+    "date": "2021-01-27",
+    "home_team": "Chelsea",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "578467",
+    "date": "2021-01-27",
+    "home_team": "Manchester United",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "578464",
+    "date": "2021-01-28",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578458",
+    "date": "2021-01-30",
+    "home_team": "Manchester City",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "578456",
+    "date": "2021-01-30",
+    "home_team": "Arsenal",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578452",
+    "date": "2021-01-31",
+    "home_team": "Chelsea",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "578455",
+    "date": "2021-01-31",
+    "home_team": "West Ham United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578459",
+    "date": "2021-01-31",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578445",
+    "date": "2021-02-02",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578444",
+    "date": "2021-02-02",
+    "home_team": "Manchester United",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "578448",
+    "date": "2021-02-03",
+    "home_team": "Burnley",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578441",
+    "date": "2021-02-03",
+    "home_team": "Liverpool",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "578442",
+    "date": "2021-02-04",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578431",
+    "date": "2021-02-06",
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578435",
+    "date": "2021-02-06",
+    "home_team": "Manchester United",
+    "away_team": "Everton"
+  },
+  {
+    "id": "578439",
+    "date": "2021-02-07",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "578437",
+    "date": "2021-02-07",
+    "home_team": "Liverpool",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578433",
+    "date": "2021-02-07",
+    "home_team": "Sheffield United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578425",
+    "date": "2021-02-13",
+    "home_team": "Leicester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578429",
+    "date": "2021-02-13",
+    "home_team": "Manchester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578426",
+    "date": "2021-02-14",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578424",
+    "date": "2021-02-14",
+    "home_team": "Arsenal",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "578427",
+    "date": "2021-02-15",
+    "home_team": "Chelsea",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "578507",
+    "date": "2021-02-17",
+    "home_team": "Everton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578411",
+    "date": "2021-02-20",
+    "home_team": "Southampton",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578413",
+    "date": "2021-02-20",
+    "home_team": "Liverpool",
+    "away_team": "Everton"
+  },
+  {
+    "id": "578419",
+    "date": "2021-02-21",
+    "home_team": "West Ham United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578416",
+    "date": "2021-02-21",
+    "home_team": "Arsenal",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578417",
+    "date": "2021-02-21",
+    "home_team": "Manchester United",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "578409",
+    "date": "2021-02-27",
+    "home_team": "Manchester City",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "578401",
+    "date": "2021-02-28",
+    "home_team": "Leicester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578404",
+    "date": "2021-02-28",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "578407",
+    "date": "2021-02-28",
+    "home_team": "Chelsea",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578406",
+    "date": "2021-02-28",
+    "home_team": "Sheffield United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578380",
+    "date": "2021-03-02",
+    "home_team": "Manchester City",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "578377",
+    "date": "2021-03-03",
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578339",
+    "date": "2021-03-04",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578373",
+    "date": "2021-03-04",
+    "home_team": "Liverpool",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578391",
+    "date": "2021-03-06",
+    "home_team": "Burnley",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578394",
+    "date": "2021-03-07",
+    "home_team": "Liverpool",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "578397",
+    "date": "2021-03-07",
+    "home_team": "Manchester City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578392",
+    "date": "2021-03-07",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "578393",
+    "date": "2021-03-08",
+    "home_team": "Chelsea",
+    "away_team": "Everton"
+  },
+  {
+    "id": "578338",
+    "date": "2021-03-10",
+    "home_team": "Manchester City",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "578384",
+    "date": "2021-03-13",
+    "home_team": "Leeds United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578386",
+    "date": "2021-03-13",
+    "home_team": "Fulham",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578388",
+    "date": "2021-03-14",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578390",
+    "date": "2021-03-14",
+    "home_team": "Manchester United",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "578385",
+    "date": "2021-03-15",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578371",
+    "date": "2021-03-21",
+    "home_team": "West Ham United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578489",
+    "date": "2021-03-21",
+    "home_team": "Aston Villa",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578369",
+    "date": "2021-04-03",
+    "home_team": "Chelsea",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "578366",
+    "date": "2021-04-03",
+    "home_team": "Leicester City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578365",
+    "date": "2021-04-03",
+    "home_team": "Arsenal",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578368",
+    "date": "2021-04-04",
+    "home_team": "Newcastle United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578361",
+    "date": "2021-04-04",
+    "home_team": "Manchester United",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "578355",
+    "date": "2021-04-10",
+    "home_team": "Manchester City",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "578352",
+    "date": "2021-04-10",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "578353",
+    "date": "2021-04-10",
+    "home_team": "Crystal Palace",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578357",
+    "date": "2021-04-11",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578351",
+    "date": "2021-04-11",
+    "home_team": "Sheffield United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578348",
+    "date": "2021-04-16",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578344",
+    "date": "2021-04-18",
+    "home_team": "Arsenal",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "578342",
+    "date": "2021-04-18",
+    "home_team": "Manchester United",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "578345",
+    "date": "2021-04-19",
+    "home_team": "Leeds United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578341",
+    "date": "2021-04-20",
+    "home_team": "Chelsea",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "578379",
+    "date": "2021-04-21",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "578346",
+    "date": "2021-04-21",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578335",
+    "date": "2021-04-23",
+    "home_team": "Arsenal",
+    "away_team": "Everton"
+  },
+  {
+    "id": "578337",
+    "date": "2021-04-24",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "578333",
+    "date": "2021-04-24",
+    "home_team": "West Ham United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578336",
+    "date": "2021-04-25",
+    "home_team": "Leeds United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578327",
+    "date": "2021-05-01",
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578323",
+    "date": "2021-05-01",
+    "home_team": "Chelsea",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "578321",
+    "date": "2021-05-02",
+    "home_team": "Newcastle United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578328",
+    "date": "2021-05-02",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "578319",
+    "date": "2021-05-08",
+    "home_team": "Leeds United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578313",
+    "date": "2021-05-08",
+    "home_team": "Manchester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578318",
+    "date": "2021-05-08",
+    "home_team": "Liverpool",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "578316",
+    "date": "2021-05-09",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "578320",
+    "date": "2021-05-09",
+    "home_team": "Arsenal",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "578306",
+    "date": "2021-05-11",
+    "home_team": "Manchester United",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "578302",
+    "date": "2021-05-12",
+    "home_team": "Chelsea",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578326",
+    "date": "2021-05-13",
+    "home_team": "Manchester United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578304",
+    "date": "2021-05-14",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578305",
+    "date": "2021-05-16",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "578307",
+    "date": "2021-05-16",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578293",
+    "date": "2021-05-18",
+    "home_team": "Manchester United",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "578297",
+    "date": "2021-05-18",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "578295",
+    "date": "2021-05-18",
+    "home_team": "Chelsea",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "578292",
+    "date": "2021-05-19",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "578291",
+    "date": "2021-05-19",
+    "home_team": "Crystal Palace",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "578296",
+    "date": "2021-05-19",
+    "home_team": "Burnley",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "578281",
+    "date": "2021-05-23",
+    "home_team": "Arsenal",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "578283",
+    "date": "2021-05-23",
+    "home_team": "Aston Villa",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "578289",
+    "date": "2021-05-23",
+    "home_team": "Leicester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "578284",
+    "date": "2021-05-23",
+    "home_team": "Liverpool",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "578285",
+    "date": "2021-05-23",
+    "home_team": "Manchester City",
+    "away_team": "Everton"
+  },
+  {
+    "id": "578286",
+    "date": "2021-05-23",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "606029",
+    "date": "2021-08-13",
+    "home_team": "Brentford",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "606033",
+    "date": "2021-08-14",
+    "home_team": "Manchester United",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "606032",
+    "date": "2021-08-14",
+    "home_team": "Chelsea",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "606034",
+    "date": "2021-08-14",
+    "home_team": "Norwich City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "606035",
+    "date": "2021-08-15",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "606020",
+    "date": "2021-08-21",
+    "home_team": "Liverpool",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "606026",
+    "date": "2021-08-21",
+    "home_team": "Manchester City",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "606024",
+    "date": "2021-08-22",
+    "home_team": "Southampton",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "606027",
+    "date": "2021-08-22",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "606021",
+    "date": "2021-08-22",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "606009",
+    "date": "2021-08-28",
+    "home_team": "Manchester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "606011",
+    "date": "2021-08-28",
+    "home_team": "Liverpool",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "606018",
+    "date": "2021-08-29",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Watford"
+  },
+  {
+    "id": "606016",
+    "date": "2021-08-29",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "606006",
+    "date": "2021-09-11",
+    "home_team": "Crystal Palace",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "606005",
+    "date": "2021-09-11",
+    "home_team": "Arsenal",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "606003",
+    "date": "2021-09-11",
+    "home_team": "Leicester City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "606004",
+    "date": "2021-09-11",
+    "home_team": "Manchester United",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "605999",
+    "date": "2021-09-11",
+    "home_team": "Chelsea",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "606002",
+    "date": "2021-09-12",
+    "home_team": "Leeds United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605989",
+    "date": "2021-09-18",
+    "home_team": "Burnley",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605992",
+    "date": "2021-09-18",
+    "home_team": "Liverpool",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "605997",
+    "date": "2021-09-18",
+    "home_team": "Manchester City",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "605996",
+    "date": "2021-09-19",
+    "home_team": "West Ham United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605991",
+    "date": "2021-09-19",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605983",
+    "date": "2021-09-25",
+    "home_team": "Chelsea",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605979",
+    "date": "2021-09-25",
+    "home_team": "Manchester United",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "605982",
+    "date": "2021-09-25",
+    "home_team": "Brentford",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605986",
+    "date": "2021-09-26",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "605972",
+    "date": "2021-10-02",
+    "home_team": "Manchester United",
+    "away_team": "Everton"
+  },
+  {
+    "id": "605977",
+    "date": "2021-10-02",
+    "home_team": "Chelsea",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "605969",
+    "date": "2021-10-02",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605970",
+    "date": "2021-10-03",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "605974",
+    "date": "2021-10-03",
+    "home_team": "Liverpool",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605964",
+    "date": "2021-10-16",
+    "home_team": "Watford",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605965",
+    "date": "2021-10-16",
+    "home_team": "Leicester City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605960",
+    "date": "2021-10-16",
+    "home_team": "Manchester City",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "605961",
+    "date": "2021-10-16",
+    "home_team": "Brentford",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605966",
+    "date": "2021-10-17",
+    "home_team": "Newcastle United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "605962",
+    "date": "2021-10-18",
+    "home_team": "Arsenal",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "605949",
+    "date": "2021-10-22",
+    "home_team": "Arsenal",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "605955",
+    "date": "2021-10-23",
+    "home_team": "Chelsea",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "605953",
+    "date": "2021-10-23",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605956",
+    "date": "2021-10-24",
+    "home_team": "West Ham United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "605952",
+    "date": "2021-10-24",
+    "home_team": "Manchester United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605939",
+    "date": "2021-10-30",
+    "home_team": "Leicester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605941",
+    "date": "2021-10-30",
+    "home_team": "Liverpool",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "605943",
+    "date": "2021-10-30",
+    "home_team": "Manchester City",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "605942",
+    "date": "2021-10-30",
+    "home_team": "Newcastle United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605946",
+    "date": "2021-10-30",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605933",
+    "date": "2021-11-06",
+    "home_team": "Manchester United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605930",
+    "date": "2021-11-06",
+    "home_team": "Chelsea",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "605937",
+    "date": "2021-11-07",
+    "home_team": "Arsenal",
+    "away_team": "Watford"
+  },
+  {
+    "id": "605936",
+    "date": "2021-11-07",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "605932",
+    "date": "2021-11-07",
+    "home_team": "West Ham United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605922",
+    "date": "2021-11-20",
+    "home_team": "Leicester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605926",
+    "date": "2021-11-20",
+    "home_team": "Watford",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605919",
+    "date": "2021-11-20",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605924",
+    "date": "2021-11-21",
+    "home_team": "Manchester City",
+    "away_team": "Everton"
+  },
+  {
+    "id": "605925",
+    "date": "2021-11-21",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "605913",
+    "date": "2021-11-27",
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "605914",
+    "date": "2021-11-27",
+    "home_team": "Liverpool",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "605917",
+    "date": "2021-11-28",
+    "home_team": "Manchester City",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "605912",
+    "date": "2021-11-28",
+    "home_team": "Chelsea",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605905",
+    "date": "2021-12-01",
+    "home_team": "Watford",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605908",
+    "date": "2021-12-01",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605907",
+    "date": "2021-12-01",
+    "home_team": "Everton",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605899",
+    "date": "2021-12-02",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "605902",
+    "date": "2021-12-02",
+    "home_team": "Manchester United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605893",
+    "date": "2021-12-04",
+    "home_team": "West Ham United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605896",
+    "date": "2021-12-04",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605897",
+    "date": "2021-12-04",
+    "home_team": "Watford",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605894",
+    "date": "2021-12-05",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "605898",
+    "date": "2021-12-05",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "605889",
+    "date": "2021-12-06",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605888",
+    "date": "2021-12-11",
+    "home_team": "Manchester City",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "605884",
+    "date": "2021-12-11",
+    "home_team": "Arsenal",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "605881",
+    "date": "2021-12-11",
+    "home_team": "Chelsea",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "605879",
+    "date": "2021-12-11",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "605882",
+    "date": "2021-12-11",
+    "home_team": "Norwich City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605870",
+    "date": "2021-12-14",
+    "home_team": "Manchester City",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "605877",
+    "date": "2021-12-15",
+    "home_team": "Arsenal",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "605869",
+    "date": "2021-12-16",
+    "home_team": "Chelsea",
+    "away_team": "Everton"
+  },
+  {
+    "id": "605871",
+    "date": "2021-12-16",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "605859",
+    "date": "2021-12-18",
+    "home_team": "Leeds United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605867",
+    "date": "2021-12-19",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605863",
+    "date": "2021-12-19",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605866",
+    "date": "2021-12-19",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605855",
+    "date": "2021-12-26",
+    "home_team": "Manchester City",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "605849",
+    "date": "2021-12-26",
+    "home_team": "Norwich City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "605852",
+    "date": "2021-12-26",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "605851",
+    "date": "2021-12-26",
+    "home_team": "Aston Villa",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "605856",
+    "date": "2021-12-27",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "605846",
+    "date": "2021-12-28",
+    "home_team": "Southampton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "605842",
+    "date": "2021-12-28",
+    "home_team": "Leicester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "605840",
+    "date": "2021-12-29",
+    "home_team": "Chelsea",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "605843",
+    "date": "2021-12-29",
+    "home_team": "Brentford",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "605841",
+    "date": "2021-12-30",
+    "home_team": "Manchester United",
+    "away_team": "Burnley"
+  }
+]

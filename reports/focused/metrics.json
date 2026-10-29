@@ -1,0 +1,3069 @@
+{
+  "experiment": "focused_six_clubs_v3",
+  "data": {
+    "clubs": [
+      "Arsenal",
+      "Chelsea",
+      "Liverpool",
+      "Manchester City",
+      "Manchester United",
+      "Tottenham Hotspur"
+    ],
+    "start_season": 2006,
+    "cutoff": "2026-10-29",
+    "unique_matches": 4003,
+    "club_appearances": {
+      "Arsenal": 768,
+      "Chelsea": 768,
+      "Liverpool": 768,
+      "Manchester City": 768,
+      "Manchester United": 768,
+      "Tottenham Hotspur": 768
+    },
+    "coverage": [
+      {
+        "team": "Arsenal",
+        "season": "2006/2007",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Arsenal",
+        "season": "2007/2008",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 29
+      },
+      {
+        "team": "Arsenal",
+        "season": "2008/2009",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Arsenal",
+        "season": "2009/2010",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Arsenal",
+        "season": "2010/2011",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 31
+      },
+      {
+        "team": "Arsenal",
+        "season": "2011/2012",
+        "matches": 38,
+        "formation_recorded": 13,
+        "starting_eleven_recorded": 30
+      },
+      {
+        "team": "Arsenal",
+        "season": "2012/2013",
+        "matches": 38,
+        "formation_recorded": 33,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Arsenal",
+        "season": "2013/2014",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Arsenal",
+        "season": "2014/2015",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Arsenal",
+        "season": "2015/2016",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2016/2017",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2017/2018",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Arsenal",
+        "season": "2018/2019",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 30
+      },
+      {
+        "team": "Arsenal",
+        "season": "2019/2020",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2020/2021",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2021/2022",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2022/2023",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2023/2024",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2024/2025",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2025/2026",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Arsenal",
+        "season": "2026/2027",
+        "matches": 8,
+        "formation_recorded": 8,
+        "starting_eleven_recorded": 8
+      },
+      {
+        "team": "Chelsea",
+        "season": "2006/2007",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 31
+      },
+      {
+        "team": "Chelsea",
+        "season": "2007/2008",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Chelsea",
+        "season": "2008/2009",
+        "matches": 38,
+        "formation_recorded": 33,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Chelsea",
+        "season": "2009/2010",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Chelsea",
+        "season": "2010/2011",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Chelsea",
+        "season": "2011/2012",
+        "matches": 38,
+        "formation_recorded": 18,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Chelsea",
+        "season": "2012/2013",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Chelsea",
+        "season": "2013/2014",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Chelsea",
+        "season": "2014/2015",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Chelsea",
+        "season": "2015/2016",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2016/2017",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2017/2018",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Chelsea",
+        "season": "2018/2019",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Chelsea",
+        "season": "2019/2020",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2020/2021",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2021/2022",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2022/2023",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2023/2024",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2024/2025",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2025/2026",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Chelsea",
+        "season": "2026/2027",
+        "matches": 8,
+        "formation_recorded": 8,
+        "starting_eleven_recorded": 8
+      },
+      {
+        "team": "Liverpool",
+        "season": "2006/2007",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Liverpool",
+        "season": "2007/2008",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Liverpool",
+        "season": "2008/2009",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Liverpool",
+        "season": "2009/2010",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Liverpool",
+        "season": "2010/2011",
+        "matches": 38,
+        "formation_recorded": 33,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Liverpool",
+        "season": "2011/2012",
+        "matches": 38,
+        "formation_recorded": 18,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Liverpool",
+        "season": "2012/2013",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Liverpool",
+        "season": "2013/2014",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Liverpool",
+        "season": "2014/2015",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Liverpool",
+        "season": "2015/2016",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2016/2017",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2017/2018",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Liverpool",
+        "season": "2018/2019",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Liverpool",
+        "season": "2019/2020",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2020/2021",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2021/2022",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2022/2023",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2023/2024",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2024/2025",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2025/2026",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Liverpool",
+        "season": "2026/2027",
+        "matches": 8,
+        "formation_recorded": 8,
+        "starting_eleven_recorded": 8
+      },
+      {
+        "team": "Manchester City",
+        "season": "2006/2007",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester City",
+        "season": "2007/2008",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester City",
+        "season": "2008/2009",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Manchester City",
+        "season": "2009/2010",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester City",
+        "season": "2010/2011",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Manchester City",
+        "season": "2011/2012",
+        "matches": 38,
+        "formation_recorded": 16,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester City",
+        "season": "2012/2013",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Manchester City",
+        "season": "2013/2014",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Manchester City",
+        "season": "2014/2015",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 35
+      },
+      {
+        "team": "Manchester City",
+        "season": "2015/2016",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2016/2017",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2017/2018",
+        "matches": 38,
+        "formation_recorded": 35,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Manchester City",
+        "season": "2018/2019",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester City",
+        "season": "2019/2020",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2020/2021",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2021/2022",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2022/2023",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2023/2024",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2024/2025",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2025/2026",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester City",
+        "season": "2026/2027",
+        "matches": 8,
+        "formation_recorded": 8,
+        "starting_eleven_recorded": 8
+      },
+      {
+        "team": "Manchester United",
+        "season": "2006/2007",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester United",
+        "season": "2007/2008",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester United",
+        "season": "2008/2009",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Manchester United",
+        "season": "2009/2010",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Manchester United",
+        "season": "2010/2011",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester United",
+        "season": "2011/2012",
+        "matches": 38,
+        "formation_recorded": 13,
+        "starting_eleven_recorded": 30
+      },
+      {
+        "team": "Manchester United",
+        "season": "2012/2013",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Manchester United",
+        "season": "2013/2014",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Manchester United",
+        "season": "2014/2015",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 35
+      },
+      {
+        "team": "Manchester United",
+        "season": "2015/2016",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2016/2017",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2017/2018",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Manchester United",
+        "season": "2018/2019",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Manchester United",
+        "season": "2019/2020",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2020/2021",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2021/2022",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2022/2023",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2023/2024",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2024/2025",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2025/2026",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Manchester United",
+        "season": "2026/2027",
+        "matches": 8,
+        "formation_recorded": 8,
+        "starting_eleven_recorded": 8
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2006/2007",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 30
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2007/2008",
+        "matches": 38,
+        "formation_recorded": 0,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2008/2009",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2009/2010",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2010/2011",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 33
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2011/2012",
+        "matches": 38,
+        "formation_recorded": 16,
+        "starting_eleven_recorded": 32
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2012/2013",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 34
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2013/2014",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2014/2015",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2015/2016",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2016/2017",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2017/2018",
+        "matches": 38,
+        "formation_recorded": 36,
+        "starting_eleven_recorded": 36
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2018/2019",
+        "matches": 38,
+        "formation_recorded": 34,
+        "starting_eleven_recorded": 31
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2019/2020",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2020/2021",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2021/2022",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2022/2023",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2023/2024",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2024/2025",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2025/2026",
+        "matches": 38,
+        "formation_recorded": 38,
+        "starting_eleven_recorded": 38
+      },
+      {
+        "team": "Tottenham Hotspur",
+        "season": "2026/2027",
+        "matches": 8,
+        "formation_recorded": 8,
+        "starting_eleven_recorded": 8
+      }
+    ],
+    "espn_verified_unique_matches": 3739,
+    "unmatched_fixture_count": 264,
+    "rejected_espn_alternatives": 156,
+    "league_context_matches": 7680,
+    "sha256": "47b5d4ae4c9ba9cccff8c1f9e5a77f32b766f16fdf3ddd9e3d698e4c9d2e1e0b",
+    "retrieved_at_utc": "2026-10-29T04:26:33.852475+00:00",
+    "sources": [
+      "https://football-data.co.uk/englandm.php",
+      "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1"
+    ],
+    "scope": "Supervised rows restricted to six clubs; all their EPL opponents included. League results used only as opponent context.",
+    "license_note": "Public website access does not assert an open redistribution license; ESPN endpoint undocumented.",
+    "missing_data": "No formation inferred. Missing lineup/stats retained, coverage exported. Provider per-player match stats used only after date."
+  },
+  "protocol": {
+    "created_utc": "2026-10-29T05:12:28.026449+00:00",
+    "clubs": [
+      "Arsenal",
+      "Chelsea",
+      "Liverpool",
+      "Manchester City",
+      "Manchester United",
+      "Tottenham Hotspur"
+    ],
+    "data_hashes": {
+      "matches.csv": "47b5d4ae4c9ba9cccff8c1f9e5a77f32b766f16fdf3ddd9e3d698e4c9d2e1e0b",
+      "league_context.csv": "8ef3e6f21a61eb8e92a7245450d83439aaedb4f0628f4f18c5da559afabc524e"
+    },
+    "folds": [
+      "2018/2019",
+      "2021/2022",
+      "2023/2024"
+    ],
+    "test_start": "2024/2025",
+    "rf_trials_per_variant": 32,
+    "other_trials_per_variant": 8,
+    "search_space": {
+      "n_estimators": [
+        200,
+        350,
+        500
+      ],
+      "max_depth": [
+        5,
+        8,
+        12,
+        18,
+        null
+      ],
+      "min_samples_leaf": [
+        2,
+        5,
+        10,
+        20,
+        40
+      ],
+      "min_samples_split": [
+        2,
+        10,
+        30
+      ],
+      "max_features": [
+        "sqrt",
+        0.3,
+        0.6,
+        1.0
+      ],
+      "max_samples": [
+        0.65,
+        0.85,
+        1.0
+      ],
+      "criterion": [
+        "gini",
+        "entropy"
+      ],
+      "class_weight": [
+        null,
+        "balanced_subsample"
+      ]
+    },
+    "sampled_configurations": [
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 30,
+        "min_samples_leaf": 10,
+        "max_samples": 1.0,
+        "max_features": 0.3,
+        "max_depth": 18,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 10,
+        "min_samples_leaf": 2,
+        "max_samples": 0.85,
+        "max_features": 0.6,
+        "max_depth": 8,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 30,
+        "min_samples_leaf": 20,
+        "max_samples": 1.0,
+        "max_features": 1.0,
+        "max_depth": null,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 30,
+        "min_samples_leaf": 5,
+        "max_samples": 0.85,
+        "max_features": 0.6,
+        "max_depth": null,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10,
+        "max_samples": 0.85,
+        "max_features": 0.6,
+        "max_depth": 5,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 5,
+        "max_samples": 0.85,
+        "max_features": 0.6,
+        "max_depth": 8,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 30,
+        "min_samples_leaf": 5,
+        "max_samples": 0.85,
+        "max_features": 1.0,
+        "max_depth": 5,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 30,
+        "min_samples_leaf": 5,
+        "max_samples": 1.0,
+        "max_features": "sqrt",
+        "max_depth": 18,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 30,
+        "min_samples_leaf": 40,
+        "max_samples": 0.65,
+        "max_features": 0.3,
+        "max_depth": 5,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 200,
+        "min_samples_split": 30,
+        "min_samples_leaf": 40,
+        "max_samples": 0.85,
+        "max_features": 0.3,
+        "max_depth": 5,
+        "criterion": "entropy",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10,
+        "max_samples": 0.85,
+        "max_features": "sqrt",
+        "max_depth": 18,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 10,
+        "min_samples_leaf": 2,
+        "max_samples": 1.0,
+        "max_features": 0.3,
+        "max_depth": 8,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 30,
+        "min_samples_leaf": 2,
+        "max_samples": 0.85,
+        "max_features": 0.6,
+        "max_depth": null,
+        "criterion": "entropy",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10,
+        "max_samples": 0.85,
+        "max_features": 1.0,
+        "max_depth": 12,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 200,
+        "min_samples_split": 10,
+        "min_samples_leaf": 2,
+        "max_samples": 0.65,
+        "max_features": 0.6,
+        "max_depth": null,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 2,
+        "max_samples": 0.85,
+        "max_features": 1.0,
+        "max_depth": null,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 2,
+        "min_samples_leaf": 5,
+        "max_samples": 0.85,
+        "max_features": 0.3,
+        "max_depth": null,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 200,
+        "min_samples_split": 10,
+        "min_samples_leaf": 20,
+        "max_samples": 0.85,
+        "max_features": 1.0,
+        "max_depth": 8,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 10,
+        "min_samples_leaf": 5,
+        "max_samples": 1.0,
+        "max_features": "sqrt",
+        "max_depth": 12,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 5,
+        "max_samples": 1.0,
+        "max_features": 0.3,
+        "max_depth": 18,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 5,
+        "max_samples": 0.65,
+        "max_features": 0.3,
+        "max_depth": 8,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 200,
+        "min_samples_split": 30,
+        "min_samples_leaf": 2,
+        "max_samples": 0.85,
+        "max_features": 1.0,
+        "max_depth": 8,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 30,
+        "min_samples_leaf": 10,
+        "max_samples": 0.65,
+        "max_features": "sqrt",
+        "max_depth": 8,
+        "criterion": "entropy",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 10,
+        "min_samples_leaf": 2,
+        "max_samples": 1.0,
+        "max_features": "sqrt",
+        "max_depth": 12,
+        "criterion": "entropy",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 2,
+        "min_samples_leaf": 40,
+        "max_samples": 1.0,
+        "max_features": 0.6,
+        "max_depth": null,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10,
+        "max_samples": 0.65,
+        "max_features": 0.6,
+        "max_depth": null,
+        "criterion": "gini",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 10,
+        "min_samples_leaf": 10,
+        "max_samples": 0.65,
+        "max_features": 1.0,
+        "max_depth": 18,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 2,
+        "min_samples_leaf": 2,
+        "max_samples": 0.85,
+        "max_features": "sqrt",
+        "max_depth": 5,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 10,
+        "min_samples_leaf": 20,
+        "max_samples": 1.0,
+        "max_features": 1.0,
+        "max_depth": 8,
+        "criterion": "entropy",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 500,
+        "min_samples_split": 30,
+        "min_samples_leaf": 2,
+        "max_samples": 0.65,
+        "max_features": 0.6,
+        "max_depth": 18,
+        "criterion": "entropy",
+        "class_weight": "balanced_subsample"
+      },
+      {
+        "family": "rf",
+        "n_estimators": 200,
+        "min_samples_split": 2,
+        "min_samples_leaf": 5,
+        "max_samples": 0.85,
+        "max_features": 0.3,
+        "max_depth": 5,
+        "criterion": "gini",
+        "class_weight": null
+      },
+      {
+        "family": "rf",
+        "n_estimators": 350,
+        "min_samples_split": 30,
+        "min_samples_leaf": 20,
+        "max_samples": 0.65,
+        "max_features": "sqrt",
+        "max_depth": 5,
+        "criterion": "entropy",
+        "class_weight": null
+      },
+      {
+        "family": "logistic",
+        "C": 0.003
+      },
+      {
+        "family": "logistic",
+        "C": 0.03
+      },
+      {
+        "family": "logistic",
+        "C": 0.3
+      },
+      {
+        "family": "logistic",
+        "C": 3.0
+      },
+      {
+        "family": "hgb",
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 30,
+        "l2_regularization": 5.0
+      },
+      {
+        "family": "hgb",
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20.0
+      },
+      {
+        "family": "hgb",
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 5.0
+      },
+      {
+        "family": "hgb",
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20.0
+      }
+    ],
+    "seed": 42,
+    "feature_version": 2,
+    "objective": "Fixture-weighted forward-validation log loss",
+    "with_formation_and_ablated": true,
+    "half_life_days": 1095,
+    "test_refit": "Before each test season, all earlier seasons; configurations frozen",
+    "honesty_note": "2024-2026 outcomes were previously evaluated in v2. This is a retrospective held-out comparison, not a fresh prospective test.",
+    "scope": "Only selected-club rows are supervised. Non-cohort opponent league histories are context.",
+    "recommendation_rule": "Exploratory formation scores only; no causal optimal formation claimed"
+  },
+  "features": {
+    "clubs": [
+      "Arsenal",
+      "Chelsea",
+      "Liverpool",
+      "Manchester City",
+      "Manchester United",
+      "Tottenham Hotspur"
+    ],
+    "supervised_team_rows": 4608,
+    "unique_matches": 4003,
+    "numeric_features": [
+      "is_home",
+      "team_elo",
+      "team_season_games",
+      "team_history_games",
+      "team_rest_days",
+      "team_games_last7",
+      "team_games_last14",
+      "team_points_5",
+      "team_goals_for_5",
+      "team_goals_against_5",
+      "team_shots_5",
+      "team_shots_against_5",
+      "team_sot_5",
+      "team_sot_against_5",
+      "team_possession_5",
+      "team_corners_5",
+      "team_fouls_5",
+      "team_yellow_5",
+      "team_red_5",
+      "team_passes_5",
+      "team_accurate_passes_5",
+      "team_crosses_5",
+      "team_long_balls_5",
+      "team_tackles_5",
+      "team_interceptions_5",
+      "team_saves_5",
+      "team_blocked_shots_5",
+      "team_points_10",
+      "team_goals_for_10",
+      "team_goals_against_10",
+      "team_shots_10",
+      "team_shots_against_10",
+      "team_sot_10",
+      "team_sot_against_10",
+      "team_possession_10",
+      "team_corners_10",
+      "team_fouls_10",
+      "team_yellow_10",
+      "team_red_10",
+      "team_passes_10",
+      "team_accurate_passes_10",
+      "team_crosses_10",
+      "team_long_balls_10",
+      "team_tackles_10",
+      "team_interceptions_10",
+      "team_saves_10",
+      "team_blocked_shots_10",
+      "team_points_20",
+      "team_points_coverage20",
+      "team_goals_for_20",
+      "team_goals_for_coverage20",
+      "team_goals_against_20",
+      "team_goals_against_coverage20",
+      "team_shots_20",
+      "team_shots_coverage20",
+      "team_shots_against_20",
+      "team_shots_against_coverage20",
+      "team_sot_20",
+      "team_sot_coverage20",
+      "team_sot_against_20",
+      "team_sot_against_coverage20",
+      "team_possession_20",
+      "team_possession_coverage20",
+      "team_corners_20",
+      "team_corners_coverage20",
+      "team_fouls_20",
+      "team_fouls_coverage20",
+      "team_yellow_20",
+      "team_yellow_coverage20",
+      "team_red_20",
+      "team_red_coverage20",
+      "team_passes_20",
+      "team_passes_coverage20",
+      "team_accurate_passes_20",
+      "team_accurate_passes_coverage20",
+      "team_crosses_20",
+      "team_crosses_coverage20",
+      "team_long_balls_20",
+      "team_long_balls_coverage20",
+      "team_tackles_20",
+      "team_tackles_coverage20",
+      "team_interceptions_20",
+      "team_interceptions_coverage20",
+      "team_saves_20",
+      "team_saves_coverage20",
+      "team_blocked_shots_20",
+      "team_blocked_shots_coverage20",
+      "team_venue_points",
+      "team_venue_goals_for",
+      "team_venue_goals_against",
+      "team_venue_shots",
+      "team_venue_sot",
+      "opponent_elo",
+      "opponent_season_games",
+      "opponent_history_games",
+      "opponent_rest_days",
+      "opponent_games_last7",
+      "opponent_games_last14",
+      "opponent_points_5",
+      "opponent_goals_for_5",
+      "opponent_goals_against_5",
+      "opponent_shots_5",
+      "opponent_shots_against_5",
+      "opponent_sot_5",
+      "opponent_sot_against_5",
+      "opponent_possession_5",
+      "opponent_corners_5",
+      "opponent_fouls_5",
+      "opponent_yellow_5",
+      "opponent_red_5",
+      "opponent_passes_5",
+      "opponent_accurate_passes_5",
+      "opponent_crosses_5",
+      "opponent_long_balls_5",
+      "opponent_tackles_5",
+      "opponent_interceptions_5",
+      "opponent_saves_5",
+      "opponent_blocked_shots_5",
+      "opponent_points_10",
+      "opponent_goals_for_10",
+      "opponent_goals_against_10",
+      "opponent_shots_10",
+      "opponent_shots_against_10",
+      "opponent_sot_10",
+      "opponent_sot_against_10",
+      "opponent_possession_10",
+      "opponent_corners_10",
+      "opponent_fouls_10",
+      "opponent_yellow_10",
+      "opponent_red_10",
+      "opponent_passes_10",
+      "opponent_accurate_passes_10",
+      "opponent_crosses_10",
+      "opponent_long_balls_10",
+      "opponent_tackles_10",
+      "opponent_interceptions_10",
+      "opponent_saves_10",
+      "opponent_blocked_shots_10",
+      "opponent_points_20",
+      "opponent_points_coverage20",
+      "opponent_goals_for_20",
+      "opponent_goals_for_coverage20",
+      "opponent_goals_against_20",
+      "opponent_goals_against_coverage20",
+      "opponent_shots_20",
+      "opponent_shots_coverage20",
+      "opponent_shots_against_20",
+      "opponent_shots_against_coverage20",
+      "opponent_sot_20",
+      "opponent_sot_coverage20",
+      "opponent_sot_against_20",
+      "opponent_sot_against_coverage20",
+      "opponent_possession_20",
+      "opponent_possession_coverage20",
+      "opponent_corners_20",
+      "opponent_corners_coverage20",
+      "opponent_fouls_20",
+      "opponent_fouls_coverage20",
+      "opponent_yellow_20",
+      "opponent_yellow_coverage20",
+      "opponent_red_20",
+      "opponent_red_coverage20",
+      "opponent_passes_20",
+      "opponent_passes_coverage20",
+      "opponent_accurate_passes_20",
+      "opponent_accurate_passes_coverage20",
+      "opponent_crosses_20",
+      "opponent_crosses_coverage20",
+      "opponent_long_balls_20",
+      "opponent_long_balls_coverage20",
+      "opponent_tackles_20",
+      "opponent_tackles_coverage20",
+      "opponent_interceptions_20",
+      "opponent_interceptions_coverage20",
+      "opponent_saves_20",
+      "opponent_saves_coverage20",
+      "opponent_blocked_shots_20",
+      "opponent_blocked_shots_coverage20",
+      "opponent_venue_points",
+      "opponent_venue_goals_for",
+      "opponent_venue_goals_against",
+      "opponent_venue_shots",
+      "opponent_venue_sot",
+      "diff_elo",
+      "diff_points_5",
+      "diff_goals_for_20",
+      "diff_goals_against_20",
+      "diff_shots_20",
+      "diff_sot_20",
+      "diff_rest_days",
+      "team_lineup_complete",
+      "team_lineup_size",
+      "team_lineup_returning",
+      "team_lineup_prior_players_known",
+      "team_lineup_observed_experience",
+      "team_lineup_prior_goals_rate",
+      "team_lineup_prior_assists_rate",
+      "team_lineup_prior_shots_rate",
+      "team_lineup_prior_sot_rate",
+      "opponent_lineup_complete",
+      "opponent_lineup_size",
+      "opponent_lineup_returning",
+      "opponent_lineup_prior_players_known",
+      "opponent_lineup_observed_experience",
+      "opponent_lineup_prior_goals_rate",
+      "opponent_lineup_prior_assists_rate",
+      "opponent_lineup_prior_shots_rate",
+      "opponent_lineup_prior_sot_rate",
+      "formation_known",
+      "defenders",
+      "forwards",
+      "midfielders",
+      "formation_lines",
+      "formation_used_last20",
+      "formation_switch"
+    ],
+    "categorical_features": [
+      "team",
+      "opponent",
+      "formation",
+      "team_formation",
+      "previous_formation"
+    ],
+    "missing_fraction": {
+      "is_home": 0.0,
+      "team_elo": 0.0,
+      "team_season_games": 0.0,
+      "team_history_games": 0.0,
+      "team_rest_days": 0.0,
+      "team_games_last7": 0.0,
+      "team_games_last14": 0.0,
+      "team_points_5": 0.0013020833333333333,
+      "team_goals_for_5": 0.0013020833333333333,
+      "team_goals_against_5": 0.0013020833333333333,
+      "team_shots_5": 0.0013020833333333333,
+      "team_shots_against_5": 0.0013020833333333333,
+      "team_sot_5": 0.0013020833333333333,
+      "team_sot_against_5": 0.0013020833333333333,
+      "team_possession_5": 0.009548611111111112,
+      "team_corners_5": 0.0013020833333333333,
+      "team_fouls_5": 0.0013020833333333333,
+      "team_yellow_5": 0.0013020833333333333,
+      "team_red_5": 0.0013020833333333333,
+      "team_passes_5": 0.009548611111111112,
+      "team_accurate_passes_5": 0.009548611111111112,
+      "team_crosses_5": 0.009548611111111112,
+      "team_long_balls_5": 0.009548611111111112,
+      "team_tackles_5": 0.009548611111111112,
+      "team_interceptions_5": 0.009548611111111112,
+      "team_saves_5": 0.009548611111111112,
+      "team_blocked_shots_5": 0.009548611111111112,
+      "team_points_10": 0.0013020833333333333,
+      "team_goals_for_10": 0.0013020833333333333,
+      "team_goals_against_10": 0.0013020833333333333,
+      "team_shots_10": 0.0013020833333333333,
+      "team_shots_against_10": 0.0013020833333333333,
+      "team_sot_10": 0.0013020833333333333,
+      "team_sot_against_10": 0.0013020833333333333,
+      "team_possession_10": 0.0032552083333333335,
+      "team_corners_10": 0.0013020833333333333,
+      "team_fouls_10": 0.0013020833333333333,
+      "team_yellow_10": 0.0013020833333333333,
+      "team_red_10": 0.0013020833333333333,
+      "team_passes_10": 0.0032552083333333335,
+      "team_accurate_passes_10": 0.0032552083333333335,
+      "team_crosses_10": 0.0032552083333333335,
+      "team_long_balls_10": 0.0032552083333333335,
+      "team_tackles_10": 0.0032552083333333335,
+      "team_interceptions_10": 0.0032552083333333335,
+      "team_saves_10": 0.0032552083333333335,
+      "team_blocked_shots_10": 0.0032552083333333335,
+      "team_points_20": 0.0013020833333333333,
+      "team_points_coverage20": 0.0,
+      "team_goals_for_20": 0.0013020833333333333,
+      "team_goals_for_coverage20": 0.0,
+      "team_goals_against_20": 0.0013020833333333333,
+      "team_goals_against_coverage20": 0.0,
+      "team_shots_20": 0.0013020833333333333,
+      "team_shots_coverage20": 0.0,
+      "team_shots_against_20": 0.0013020833333333333,
+      "team_shots_against_coverage20": 0.0,
+      "team_sot_20": 0.0013020833333333333,
+      "team_sot_coverage20": 0.0,
+      "team_sot_against_20": 0.0013020833333333333,
+      "team_sot_against_coverage20": 0.0,
+      "team_possession_20": 0.0015190972222222222,
+      "team_possession_coverage20": 0.0,
+      "team_corners_20": 0.0013020833333333333,
+      "team_corners_coverage20": 0.0,
+      "team_fouls_20": 0.0013020833333333333,
+      "team_fouls_coverage20": 0.0,
+      "team_yellow_20": 0.0013020833333333333,
+      "team_yellow_coverage20": 0.0,
+      "team_red_20": 0.0013020833333333333,
+      "team_red_coverage20": 0.0,
+      "team_passes_20": 0.0015190972222222222,
+      "team_passes_coverage20": 0.0,
+      "team_accurate_passes_20": 0.0015190972222222222,
+      "team_accurate_passes_coverage20": 0.0,
+      "team_crosses_20": 0.0015190972222222222,
+      "team_crosses_coverage20": 0.0,
+      "team_long_balls_20": 0.0015190972222222222,
+      "team_long_balls_coverage20": 0.0,
+      "team_tackles_20": 0.0015190972222222222,
+      "team_tackles_coverage20": 0.0,
+      "team_interceptions_20": 0.0015190972222222222,
+      "team_interceptions_coverage20": 0.0,
+      "team_saves_20": 0.0015190972222222222,
+      "team_saves_coverage20": 0.0,
+      "team_blocked_shots_20": 0.0015190972222222222,
+      "team_blocked_shots_coverage20": 0.0,
+      "team_venue_points": 0.0026041666666666665,
+      "team_venue_goals_for": 0.0026041666666666665,
+      "team_venue_goals_against": 0.0026041666666666665,
+      "team_venue_shots": 0.0026041666666666665,
+      "team_venue_sot": 0.0026041666666666665,
+      "opponent_elo": 0.0,
+      "opponent_season_games": 0.0,
+      "opponent_history_games": 0.0,
+      "opponent_rest_days": 0.0,
+      "opponent_games_last7": 0.0,
+      "opponent_games_last14": 0.0,
+      "opponent_points_5": 0.003689236111111111,
+      "opponent_goals_for_5": 0.003689236111111111,
+      "opponent_goals_against_5": 0.003689236111111111,
+      "opponent_shots_5": 0.003689236111111111,
+      "opponent_shots_against_5": 0.003689236111111111,
+      "opponent_sot_5": 0.003689236111111111,
+      "opponent_sot_against_5": 0.003689236111111111,
+      "opponent_possession_5": 0.16666666666666666,
+      "opponent_corners_5": 0.003689236111111111,
+      "opponent_fouls_5": 0.003689236111111111,
+      "opponent_yellow_5": 0.003689236111111111,
+      "opponent_red_5": 0.003689236111111111,
+      "opponent_passes_5": 0.16666666666666666,
+      "opponent_accurate_passes_5": 0.16666666666666666,
+      "opponent_crosses_5": 0.16666666666666666,
+      "opponent_long_balls_5": 0.16666666666666666,
+      "opponent_tackles_5": 0.16666666666666666,
+      "opponent_interceptions_5": 0.16666666666666666,
+      "opponent_saves_5": 0.16666666666666666,
+      "opponent_blocked_shots_5": 0.16666666666666666,
+      "opponent_points_10": 0.003689236111111111,
+      "opponent_goals_for_10": 0.003689236111111111,
+      "opponent_goals_against_10": 0.003689236111111111,
+      "opponent_shots_10": 0.003689236111111111,
+      "opponent_shots_against_10": 0.003689236111111111,
+      "opponent_sot_10": 0.003689236111111111,
+      "opponent_sot_against_10": 0.003689236111111111,
+      "opponent_possession_10": 0.07573784722222222,
+      "opponent_corners_10": 0.003689236111111111,
+      "opponent_fouls_10": 0.003689236111111111,
+      "opponent_yellow_10": 0.003689236111111111,
+      "opponent_red_10": 0.003689236111111111,
+      "opponent_passes_10": 0.07573784722222222,
+      "opponent_accurate_passes_10": 0.07573784722222222,
+      "opponent_crosses_10": 0.07573784722222222,
+      "opponent_long_balls_10": 0.07573784722222222,
+      "opponent_tackles_10": 0.07573784722222222,
+      "opponent_interceptions_10": 0.07573784722222222,
+      "opponent_saves_10": 0.07573784722222222,
+      "opponent_blocked_shots_10": 0.07573784722222222,
+      "opponent_points_20": 0.003689236111111111,
+      "opponent_points_coverage20": 0.0,
+      "opponent_goals_for_20": 0.003689236111111111,
+      "opponent_goals_for_coverage20": 0.0,
+      "opponent_goals_against_20": 0.003689236111111111,
+      "opponent_goals_against_coverage20": 0.0,
+      "opponent_shots_20": 0.003689236111111111,
+      "opponent_shots_coverage20": 0.0,
+      "opponent_shots_against_20": 0.003689236111111111,
+      "opponent_shots_against_coverage20": 0.0,
+      "opponent_sot_20": 0.003689236111111111,
+      "opponent_sot_coverage20": 0.0,
+      "opponent_sot_against_20": 0.003689236111111111,
+      "opponent_sot_against_coverage20": 0.0,
+      "opponent_possession_20": 0.06597222222222222,
+      "opponent_possession_coverage20": 0.0,
+      "opponent_corners_20": 0.003689236111111111,
+      "opponent_corners_coverage20": 0.0,
+      "opponent_fouls_20": 0.003689236111111111,
+      "opponent_fouls_coverage20": 0.0,
+      "opponent_yellow_20": 0.003689236111111111,
+      "opponent_yellow_coverage20": 0.0,
+      "opponent_red_20": 0.003689236111111111,
+      "opponent_red_coverage20": 0.0,
+      "opponent_passes_20": 0.06597222222222222,
+      "opponent_passes_coverage20": 0.0,
+      "opponent_accurate_passes_20": 0.06597222222222222,
+      "opponent_accurate_passes_coverage20": 0.0,
+      "opponent_crosses_20": 0.06597222222222222,
+      "opponent_crosses_coverage20": 0.0,
+      "opponent_long_balls_20": 0.06597222222222222,
+      "opponent_long_balls_coverage20": 0.0,
+      "opponent_tackles_20": 0.06597222222222222,
+      "opponent_tackles_coverage20": 0.0,
+      "opponent_interceptions_20": 0.06597222222222222,
+      "opponent_interceptions_coverage20": 0.0,
+      "opponent_saves_20": 0.06597222222222222,
+      "opponent_saves_coverage20": 0.0,
+      "opponent_blocked_shots_20": 0.06597222222222222,
+      "opponent_blocked_shots_coverage20": 0.0,
+      "opponent_venue_points": 0.006076388888888889,
+      "opponent_venue_goals_for": 0.006076388888888889,
+      "opponent_venue_goals_against": 0.006076388888888889,
+      "opponent_venue_shots": 0.006076388888888889,
+      "opponent_venue_sot": 0.006076388888888889,
+      "diff_elo": 0.0,
+      "diff_points_5": 0.003689236111111111,
+      "diff_goals_for_20": 0.003689236111111111,
+      "diff_goals_against_20": 0.003689236111111111,
+      "diff_shots_20": 0.003689236111111111,
+      "diff_sot_20": 0.003689236111111111,
+      "diff_rest_days": 0.0,
+      "team_lineup_complete": 0.0,
+      "team_lineup_size": 0.0,
+      "team_lineup_returning": 0.06488715277777778,
+      "team_lineup_prior_players_known": 0.0,
+      "team_lineup_observed_experience": 0.059027777777777776,
+      "team_lineup_prior_goals_rate": 0.059027777777777776,
+      "team_lineup_prior_assists_rate": 0.059027777777777776,
+      "team_lineup_prior_shots_rate": 0.059027777777777776,
+      "team_lineup_prior_sot_rate": 0.059027777777777776,
+      "opponent_lineup_complete": 0.0,
+      "opponent_lineup_size": 0.0,
+      "opponent_lineup_returning": 0.0685763888888889,
+      "opponent_lineup_prior_players_known": 0.0,
+      "opponent_lineup_observed_experience": 0.0666232638888889,
+      "opponent_lineup_prior_goals_rate": 0.0666232638888889,
+      "opponent_lineup_prior_assists_rate": 0.0666232638888889,
+      "opponent_lineup_prior_shots_rate": 0.0666232638888889,
+      "opponent_lineup_prior_sot_rate": 0.0666232638888889,
+      "formation_known": 0.0,
+      "defenders": 0.16319444444444445,
+      "forwards": 0.16319444444444445,
+      "midfielders": 0.16319444444444445,
+      "formation_lines": 0.16319444444444445,
+      "formation_used_last20": 0.1644965277777778,
+      "formation_switch": 0.2072482638888889
+    },
+    "same_match_excluded": [
+      "goals",
+      "shots",
+      "possession",
+      "cards",
+      "player match stats",
+      "odds"
+    ],
+    "lineup_note": "Current starting identities only; player productivity from earlier observed selected-club fixtures. No career/ability or injury claims.",
+    "context_note": "All EPL opponent result histories are context, never supervised non-cohort team rows.",
+    "recency_weight_effective_sizes": {
+      "Arsenal": {
+        "raw_appearances": 768,
+        "weight_effective_sample_size": 301.3915234291018,
+        "note": "Kish weight effective size; not independent games or a causal overlap measure"
+      },
+      "Chelsea": {
+        "raw_appearances": 768,
+        "weight_effective_sample_size": 303.59331419643706,
+        "note": "Kish weight effective size; not independent games or a causal overlap measure"
+      },
+      "Liverpool": {
+        "raw_appearances": 768,
+        "weight_effective_sample_size": 301.86768461119664,
+        "note": "Kish weight effective size; not independent games or a causal overlap measure"
+      },
+      "Manchester City": {
+        "raw_appearances": 768,
+        "weight_effective_sample_size": 302.5890937854325,
+        "note": "Kish weight effective size; not independent games or a causal overlap measure"
+      },
+      "Manchester United": {
+        "raw_appearances": 768,
+        "weight_effective_sample_size": 302.5775780736077,
+        "note": "Kish weight effective size; not independent games or a causal overlap measure"
+      },
+      "Tottenham Hotspur": {
+        "raw_appearances": 768,
+        "weight_effective_sample_size": 303.171405623325,
+        "note": "Kish weight effective size; not independent games or a causal overlap measure"
+      }
+    }
+  },
+  "selection": {
+    "with_formation": {
+      "best": {
+        "trial": 33,
+        "with_formation": true,
+        "spec": {
+          "family": "logistic",
+          "C": 0.003
+        },
+        "folds": [
+          {
+            "season": "2018/2019",
+            "train_team_rows": 2736,
+            "train_last_date": "2018-05-13",
+            "validation_first_date": "2018-08-10",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6919191919191919,
+            "log_loss": 0.7876767466900849,
+            "brier": 0.4414802216239406,
+            "expected_points_mae": 0.9450346589254136
+          },
+          {
+            "season": "2021/2022",
+            "train_team_rows": 3420,
+            "train_last_date": "2021-05-23",
+            "validation_first_date": "2021-08-13",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6691919191919192,
+            "log_loss": 0.8506621199788137,
+            "brier": 0.48876953658756106,
+            "expected_points_mae": 1.0465057006264868
+          },
+          {
+            "season": "2023/2024",
+            "train_team_rows": 3876,
+            "train_last_date": "2023-05-28",
+            "validation_first_date": "2023-08-11",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6843434343434344,
+            "log_loss": 0.8063176908399067,
+            "brier": 0.45732243247953697,
+            "expected_points_mae": 1.0046401182911364
+          }
+        ],
+        "validation": {
+          "unique_matches": 594,
+          "team_appearances": 684,
+          "accuracy": 0.6818181818181818,
+          "log_loss": 0.8148855191696017,
+          "brier": 0.46252406356367964,
+          "expected_points_mae": 0.998726825947679
+        }
+      },
+      "best_rf": {
+        "trial": 25,
+        "with_formation": true,
+        "spec": {
+          "family": "rf",
+          "n_estimators": 500,
+          "min_samples_split": 2,
+          "min_samples_leaf": 40,
+          "max_samples": 1.0,
+          "max_features": 0.6,
+          "max_depth": null,
+          "criterion": "gini",
+          "class_weight": null
+        },
+        "folds": [
+          {
+            "season": "2018/2019",
+            "train_team_rows": 2736,
+            "train_last_date": "2018-05-13",
+            "validation_first_date": "2018-08-10",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.7171717171717171,
+            "log_loss": 0.7625388019351156,
+            "brier": 0.42897126546542397,
+            "expected_points_mae": 1.0090665554496328
+          },
+          {
+            "season": "2021/2022",
+            "train_team_rows": 3420,
+            "train_last_date": "2021-05-23",
+            "validation_first_date": "2021-08-13",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6691919191919192,
+            "log_loss": 0.8601741853040168,
+            "brier": 0.49613832023802124,
+            "expected_points_mae": 1.0476316832441157
+          },
+          {
+            "season": "2023/2024",
+            "train_team_rows": 3876,
+            "train_last_date": "2023-05-28",
+            "validation_first_date": "2023-08-11",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6641414141414141,
+            "log_loss": 0.827831600443963,
+            "brier": 0.47323315128301,
+            "expected_points_mae": 1.0560982741049585
+          }
+        ],
+        "validation": {
+          "unique_matches": 594,
+          "team_appearances": 684,
+          "accuracy": 0.6835016835016835,
+          "log_loss": 0.8168481958943653,
+          "brier": 0.46611424566215176,
+          "expected_points_mae": 1.037598837599569
+        }
+      },
+      "trials": 40
+    },
+    "without_formation": {
+      "best": {
+        "trial": 33,
+        "with_formation": false,
+        "spec": {
+          "family": "logistic",
+          "C": 0.003
+        },
+        "folds": [
+          {
+            "season": "2018/2019",
+            "train_team_rows": 2736,
+            "train_last_date": "2018-05-13",
+            "validation_first_date": "2018-08-10",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6944444444444444,
+            "log_loss": 0.7889261503614459,
+            "brier": 0.44248107512069423,
+            "expected_points_mae": 0.9370859428172469
+          },
+          {
+            "season": "2021/2022",
+            "train_team_rows": 3420,
+            "train_last_date": "2021-05-23",
+            "validation_first_date": "2021-08-13",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6691919191919192,
+            "log_loss": 0.8496063643384127,
+            "brier": 0.48872334577703946,
+            "expected_points_mae": 1.0470825534022274
+          },
+          {
+            "season": "2023/2024",
+            "train_team_rows": 3876,
+            "train_last_date": "2023-05-28",
+            "validation_first_date": "2023-08-11",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6843434343434344,
+            "log_loss": 0.8051431478282687,
+            "brier": 0.4567156527832043,
+            "expected_points_mae": 1.0062420798155438
+          }
+        ],
+        "validation": {
+          "unique_matches": 594,
+          "team_appearances": 684,
+          "accuracy": 0.6826599326599326,
+          "log_loss": 0.8145585541760424,
+          "brier": 0.4626400245603127,
+          "expected_points_mae": 0.9968035253450059
+        }
+      },
+      "best_rf": {
+        "trial": 25,
+        "with_formation": false,
+        "spec": {
+          "family": "rf",
+          "n_estimators": 500,
+          "min_samples_split": 2,
+          "min_samples_leaf": 40,
+          "max_samples": 1.0,
+          "max_features": 0.6,
+          "max_depth": null,
+          "criterion": "gini",
+          "class_weight": null
+        },
+        "folds": [
+          {
+            "season": "2018/2019",
+            "train_team_rows": 2736,
+            "train_last_date": "2018-05-13",
+            "validation_first_date": "2018-08-10",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.7222222222222222,
+            "log_loss": 0.7644463296387547,
+            "brier": 0.4305693040842293,
+            "expected_points_mae": 1.0115601003182901
+          },
+          {
+            "season": "2021/2022",
+            "train_team_rows": 3420,
+            "train_last_date": "2021-05-23",
+            "validation_first_date": "2021-08-13",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6717171717171717,
+            "log_loss": 0.858477232120441,
+            "brier": 0.4951264707116086,
+            "expected_points_mae": 1.0486134412296317
+          },
+          {
+            "season": "2023/2024",
+            "train_team_rows": 3876,
+            "train_last_date": "2023-05-28",
+            "validation_first_date": "2023-08-11",
+            "unique_matches": 198,
+            "team_appearances": 228,
+            "accuracy": 0.6641414141414141,
+            "log_loss": 0.827351628118968,
+            "brier": 0.4726984589116411,
+            "expected_points_mae": 1.059317843001581
+          }
+        ],
+        "validation": {
+          "unique_matches": 594,
+          "team_appearances": 684,
+          "accuracy": 0.686026936026936,
+          "log_loss": 0.8167583966260545,
+          "brier": 0.4661314112358263,
+          "expected_points_mae": 1.0398304615165008
+        }
+      },
+      "trials": 40
+    },
+    "frozen_before_test_utc": "2026-10-29T05:41:11.987761+00:00"
+  },
+  "test": {
+    "always_team_win": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.4988610478359909,
+      "log_loss": 10.385235728943533,
+      "brier": 1.0022779013211844,
+      "expected_points_mae": 1.2642369020387245
+    },
+    "team_venue_prior": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.4988610478359909,
+      "log_loss": 1.0210619540509183,
+      "brier": 0.6128436096367091,
+      "expected_points_mae": 1.2079096477484323
+    },
+    "elo_logistic": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5375854214123007,
+      "log_loss": 0.976746221790089,
+      "brier": 0.5820806973384052,
+      "expected_points_mae": 1.1063981120042163
+    },
+    "selected_with_formation": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5250569476082004,
+      "log_loss": 0.9814919835818525,
+      "brier": 0.5832115312477294,
+      "expected_points_mae": 1.1177503623160032
+    },
+    "selected_without_formation": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5284738041002278,
+      "log_loss": 0.9817788213410538,
+      "brier": 0.5835966193107438,
+      "expected_points_mae": 1.1188524028267413
+    },
+    "tuned_rf": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5364464692482915,
+      "log_loss": 0.989644990240409,
+      "brier": 0.5904892675409016,
+      "expected_points_mae": 1.11956689026653
+    },
+    "untuned_rf": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5318906605922551,
+      "log_loss": 0.9986149465600774,
+      "brier": 0.59694292036871,
+      "expected_points_mae": 1.1261826864771487
+    },
+    "same_spec_without_formation": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5284738041002278,
+      "log_loss": 0.9817788213410538,
+      "brier": 0.5835966193107438,
+      "expected_points_mae": 1.1188524028267413
+    },
+    "uniform_random": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.3333333333333333,
+      "log_loss": 1.0986122886681096,
+      "brier": 0.6666666666666669,
+      "expected_points_mae": 1.26044039483675
+    }
+  },
+  "test_by_season": {
+    "2024/2025": {
+      "always_team_win": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.4898989898989899,
+        "log_loss": 10.570958838018118,
+        "brier": 1.0202020171414141,
+        "expected_points_mae": 1.2979797978787877
+      },
+      "team_venue_prior": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.4898989898989899,
+        "log_loss": 1.0267562678315334,
+        "brier": 0.6179529446954064,
+        "expected_points_mae": 1.2208004413886766
+      },
+      "elo_logistic": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5555555555555556,
+        "log_loss": 0.9555669980434246,
+        "brier": 0.567588160556929,
+        "expected_points_mae": 1.0816205719317251
+      },
+      "selected_with_formation": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5303030303030303,
+        "log_loss": 0.9711597141639369,
+        "brier": 0.5751554973868139,
+        "expected_points_mae": 1.095681313198221
+      },
+      "selected_without_formation": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5378787878787878,
+        "log_loss": 0.9718139473856984,
+        "brier": 0.5755434203984552,
+        "expected_points_mae": 1.09661605273884
+      },
+      "tuned_rf": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5555555555555556,
+        "log_loss": 0.9888889880671936,
+        "brier": 0.5891521075214441,
+        "expected_points_mae": 1.1171861223744928
+      },
+      "untuned_rf": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5505050505050505,
+        "log_loss": 0.9997324291714438,
+        "brier": 0.595792643030712,
+        "expected_points_mae": 1.1194443592262056
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5378787878787878,
+        "log_loss": 0.9718139473856984,
+        "brier": 0.5755434203984552,
+        "expected_points_mae": 1.09661605273884
+      }
+    },
+    "2025/2026": {
+      "always_team_win": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5,
+        "log_loss": 10.361632920473207,
+        "brier": 0.9999999970000002,
+        "expected_points_mae": 1.2525252525252524
+      },
+      "team_venue_prior": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5,
+        "log_loss": 1.0267494657597847,
+        "brier": 0.615095007053331,
+        "expected_points_mae": 1.2006299699118848
+      },
+      "elo_logistic": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5202020202020202,
+        "log_loss": 1.004244993693829,
+        "brier": 0.6011139853331456,
+        "expected_points_mae": 1.1322189728508363
+      },
+      "selected_with_formation": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5303030303030303,
+        "log_loss": 0.993920485025378,
+        "brier": 0.5923580125675779,
+        "expected_points_mae": 1.1372473747490046
+      },
+      "selected_without_formation": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5328282828282829,
+        "log_loss": 0.9947092034648757,
+        "brier": 0.5936732060827654,
+        "expected_points_mae": 1.1408047155570866
+      },
+      "tuned_rf": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5227272727272727,
+        "log_loss": 0.9961628709401721,
+        "brier": 0.5954583136896686,
+        "expected_points_mae": 1.123119132287818
+      },
+      "untuned_rf": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5176767676767676,
+        "log_loss": 1.0014819002219892,
+        "brier": 0.6005063831148735,
+        "expected_points_mae": 1.1269677392931183
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5328282828282829,
+        "log_loss": 0.9947092034648757,
+        "brier": 0.5936732060827654,
+        "expected_points_mae": 1.1408047155570866
+      }
+    },
+    "2026/2027": {
+      "always_team_win": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.5348837209302325,
+        "log_loss": 9.638728298254144,
+        "brier": 0.9302325553488373,
+        "expected_points_mae": 1.1627906980232559
+      },
+      "team_venue_prior": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.5348837209302325,
+        "log_loss": 0.9686526180760983,
+        "brier": 0.5789500042852406,
+        "expected_points_mae": 1.1820724168383867
+      },
+      "elo_logistic": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.5348837209302325,
+        "log_loss": 0.9476469070203003,
+        "brier": 0.5611721219843046,
+        "expected_points_mae": 1.1015939837884599
+      },
+      "selected_with_formation": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.47674418604651164,
+        "log_loss": 0.9718395663476486,
+        "brier": 0.5781904010879907,
+        "expected_points_mae": 1.1295936940273186
+      },
+      "selected_without_formation": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.46511627906976744,
+        "log_loss": 0.9681236907048593,
+        "brier": 0.5742796240496486,
+        "expected_points_mae": 1.1201602957754881
+      },
+      "tuned_rf": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.5116279069767442,
+        "log_loss": 0.96311354958328,
+        "brier": 0.5737656988524534,
+        "expected_points_mae": 1.1141726605550935
+      },
+      "untuned_rf": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.5116279069767442,
+        "log_loss": 0.9802680074412623,
+        "brier": 0.5858310433729701,
+        "expected_points_mae": 1.1535954385265619
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 43,
+        "team_appearances": 48,
+        "accuracy": 0.46511627906976744,
+        "log_loss": 0.9681236907048593,
+        "brier": 0.5742796240496486,
+        "expected_points_mae": 1.1201602957754881
+      }
+    }
+  },
+  "test_by_team": {
+    "Arsenal": {
+      "always_team_win": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6309523809523809,
+        "log_loss": 7.647871918015937,
+        "brier": 0.7380952358809525,
+        "expected_points_mae": 0.8571428584523811
+      },
+      "team_venue_prior": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6309523809523809,
+        "log_loss": 0.9186058319560301,
+        "brier": 0.5377495160526484,
+        "expected_points_mae": 1.1044305568982238
+      },
+      "elo_logistic": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6547619047619048,
+        "log_loss": 0.8628836793218753,
+        "brier": 0.49905029713544585,
+        "expected_points_mae": 0.9676849465440315
+      },
+      "selected_with_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6547619047619048,
+        "log_loss": 0.8577894256068296,
+        "brier": 0.4952769929958801,
+        "expected_points_mae": 0.984736877798508
+      },
+      "selected_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6428571428571429,
+        "log_loss": 0.8617582533236006,
+        "brier": 0.49727408924448746,
+        "expected_points_mae": 0.9870292391051633
+      },
+      "tuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6428571428571429,
+        "log_loss": 0.8823588964011652,
+        "brier": 0.5108704601699122,
+        "expected_points_mae": 0.9934888460641809
+      },
+      "untuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8883936930640823,
+        "brier": 0.5144876822716309,
+        "expected_points_mae": 1.000116956619122
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6428571428571429,
+        "log_loss": 0.8617582533236006,
+        "brier": 0.49727408924448746,
+        "expected_points_mae": 0.9870292391051633
+      }
+    },
+    "Chelsea": {
+      "always_team_win": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4523809523809524,
+        "log_loss": 11.348455103184941,
+        "brier": 1.0952380919523812,
+        "expected_points_mae": 1.4047619042857142
+      },
+      "team_venue_prior": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4523809523809524,
+        "log_loss": 1.0827054115418977,
+        "brier": 0.6546481605561179,
+        "expected_points_mae": 1.2831536870067177
+      },
+      "elo_logistic": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5238095238095238,
+        "log_loss": 1.018633750259827,
+        "brier": 0.6125306944282751,
+        "expected_points_mae": 1.1726600503951725
+      },
+      "selected_with_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5,
+        "log_loss": 1.0008934806497385,
+        "brier": 0.6013711396943643,
+        "expected_points_mae": 1.1665350783241681
+      },
+      "selected_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4880952380952381,
+        "log_loss": 1.0004077119053751,
+        "brier": 0.6010926083966257,
+        "expected_points_mae": 1.1658506864528495
+      },
+      "tuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5,
+        "log_loss": 1.0291453530657169,
+        "brier": 0.6180095679531002,
+        "expected_points_mae": 1.1787370043220167
+      },
+      "untuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4880952380952381,
+        "log_loss": 1.0378858200139387,
+        "brier": 0.6256377764635144,
+        "expected_points_mae": 1.1861503545219676
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4880952380952381,
+        "log_loss": 1.0004077119053751,
+        "brier": 0.6010926083966257,
+        "expected_points_mae": 1.1658506864528495
+      }
+    },
+    "Liverpool": {
+      "always_team_win": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5476190476190477,
+        "log_loss": 9.374810737761472,
+        "brier": 0.9047619020476192,
+        "expected_points_mae": 1.1071428576190476
+      },
+      "team_venue_prior": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5476190476190477,
+        "log_loss": 0.9833722323391673,
+        "brier": 0.5902250890297405,
+        "expected_points_mae": 1.1870165713740384
+      },
+      "elo_logistic": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5714285714285714,
+        "log_loss": 0.9736017967870267,
+        "brier": 0.5833354058502557,
+        "expected_points_mae": 1.1130568631154503
+      },
+      "selected_with_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5714285714285714,
+        "log_loss": 0.9728366465923822,
+        "brier": 0.5765927813516101,
+        "expected_points_mae": 1.1102326835600456
+      },
+      "selected_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5833333333333334,
+        "log_loss": 0.9745349179989927,
+        "brier": 0.5771687368565727,
+        "expected_points_mae": 1.110922916775074
+      },
+      "tuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5357142857142857,
+        "log_loss": 0.9759686527237923,
+        "brier": 0.583508638987148,
+        "expected_points_mae": 1.118619187385215
+      },
+      "untuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5476190476190477,
+        "log_loss": 0.9893597185784496,
+        "brier": 0.5931431320627475,
+        "expected_points_mae": 1.1264199590259327
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5833333333333334,
+        "log_loss": 0.9745349179989927,
+        "brier": 0.5771687368565727,
+        "expected_points_mae": 1.110922916775074
+      }
+    },
+    "Manchester City": {
+      "always_team_win": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6071428571428571,
+        "log_loss": 8.141283009371804,
+        "brier": 0.7857142833571429,
+        "expected_points_mae": 0.9761904772619049
+      },
+      "team_venue_prior": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6071428571428571,
+        "log_loss": 0.9099267734992585,
+        "brier": 0.5310044099839932,
+        "expected_points_mae": 1.1190292276350344
+      },
+      "elo_logistic": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6190476190476191,
+        "log_loss": 0.8921348938961087,
+        "brier": 0.5233849324784065,
+        "expected_points_mae": 1.0772248459329965
+      },
+      "selected_with_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6190476190476191,
+        "log_loss": 0.8932801419998478,
+        "brier": 0.5211590375077529,
+        "expected_points_mae": 1.070184846471332
+      },
+      "selected_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6190476190476191,
+        "log_loss": 0.8927253922395709,
+        "brier": 0.5214884351311183,
+        "expected_points_mae": 1.0739285196491979
+      },
+      "tuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6190476190476191,
+        "log_loss": 0.9053739811816883,
+        "brier": 0.5345139870212874,
+        "expected_points_mae": 1.085536994524995
+      },
+      "untuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.5833333333333334,
+        "log_loss": 0.9206080701320578,
+        "brier": 0.5432942924384174,
+        "expected_points_mae": 1.1015213956317722
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.6190476190476191,
+        "log_loss": 0.8927253922395709,
+        "brier": 0.5214884351311183,
+        "expected_points_mae": 1.0739285196491979
+      }
+    },
+    "Manchester United": {
+      "always_team_win": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.38095238095238093,
+        "log_loss": 12.828688377252538,
+        "brier": 1.2380952343809528,
+        "expected_points_mae": 1.5714285702380952
+      },
+      "team_venue_prior": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.38095238095238093,
+        "log_loss": 1.154352534521277,
+        "brier": 0.7035024895922014,
+        "expected_points_mae": 1.2649801207851845
+      },
+      "elo_logistic": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.40476190476190477,
+        "log_loss": 1.1068714742245522,
+        "brier": 0.6693740142570705,
+        "expected_points_mae": 1.161765821040126
+      },
+      "selected_with_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.36904761904761907,
+        "log_loss": 1.1032016017176243,
+        "brier": 0.6669908815991067,
+        "expected_points_mae": 1.17150064282366
+      },
+      "selected_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.39285714285714285,
+        "log_loss": 1.104670927939567,
+        "brier": 0.6690441386721965,
+        "expected_points_mae": 1.1758966367172614
+      },
+      "tuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.42857142857142855,
+        "log_loss": 1.086219296370219,
+        "brier": 0.6571762124190839,
+        "expected_points_mae": 1.167873388330371
+      },
+      "untuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4166666666666667,
+        "log_loss": 1.0927938828564898,
+        "brier": 0.6612967253718377,
+        "expected_points_mae": 1.1685450896277991
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.39285714285714285,
+        "log_loss": 1.104670927939567,
+        "brier": 0.6690441386721965,
+        "expected_points_mae": 1.1758966367172614
+      }
+    },
+    "Tottenham Hotspur": {
+      "always_team_win": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.27380952380952384,
+        "log_loss": 15.049038288353943,
+        "brier": 1.4523809480238097,
+        "expected_points_mae": 1.9523809501190474
+      },
+      "team_venue_prior": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.27380952380952384,
+        "log_loss": 1.1976936463628907,
+        "brier": 0.7442012604572189,
+        "expected_points_mae": 1.3792344976863173
+      },
+      "elo_logistic": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.44047619047619047,
+        "log_loss": 1.0741210769028808,
+        "brier": 0.6482951906355728,
+        "expected_points_mae": 1.1580209571988531
+      },
+      "selected_with_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4523809523809524,
+        "log_loss": 1.1012337704053576,
+        "brier": 0.6657200304822078,
+        "expected_points_mae": 1.1823725121991744
+      },
+      "selected_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4523809523809524,
+        "log_loss": 1.0974237616107434,
+        "brier": 0.6638259463990904,
+        "expected_points_mae": 1.1788248011752525
+      },
+      "tuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.47619047619047616,
+        "log_loss": 1.08823628009271,
+        "brier": 0.6579050428587296,
+        "expected_points_mae": 1.1532654745583022
+      },
+      "untuned_rf": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4523809523809524,
+        "log_loss": 1.0964619635215915,
+        "brier": 0.6653495418424435,
+        "expected_points_mae": 1.150694533325289
+      },
+      "same_spec_without_formation": {
+        "unique_matches": 84,
+        "team_appearances": 84,
+        "accuracy": 0.4523809523809524,
+        "log_loss": 1.0974237616107434,
+        "brier": 0.6638259463990904,
+        "expected_points_mae": 1.1788248011752525
+      }
+    }
+  },
+  "comparisons": {
+    "tuning_gain": {
+      "accuracy": {
+        "improvement": 0.004555808656036446,
+        "ci95_low": -0.00831353919239905,
+        "ci95_high": 0.018223234624145785,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      },
+      "log_loss": {
+        "improvement": 0.008969956319668593,
+        "ci95_low": 0.0004243832606643183,
+        "ci95_high": 0.017364923921661817,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      }
+    },
+    "formation_gain": {
+      "accuracy": {
+        "improvement": -0.003416856492027335,
+        "ci95_low": -0.01173777961888981,
+        "ci95_high": 0.0033938575430172042,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      },
+      "log_loss": {
+        "improvement": 0.00028683775920147563,
+        "ci95_low": -0.002307718646869249,
+        "ci95_high": 0.0028815992376070966,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      }
+    },
+    "formation_gain_separately_tuned": {
+      "accuracy": {
+        "improvement": -0.003416856492027335,
+        "ci95_low": -0.01173777961888981,
+        "ci95_high": 0.0033938575430172042,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      },
+      "log_loss": {
+        "improvement": 0.00028683775920147563,
+        "ci95_low": -0.002307718646869249,
+        "ci95_high": 0.0028815992376070966,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      }
+    },
+    "selected_vs_elo": {
+      "accuracy": {
+        "improvement": -0.012528473804100227,
+        "ci95_low": -0.03873391209324915,
+        "ci95_high": 0.013447569813720436,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      },
+      "log_loss": {
+        "improvement": -0.0047457617917633955,
+        "ci95_low": -0.023975694153566224,
+        "ci95_high": 0.015275183264182778,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      }
+    },
+    "selected_vs_always_win": {
+      "accuracy": {
+        "improvement": 0.02619589977220957,
+        "ci95_low": -0.003282817937323475,
+        "ci95_high": 0.05555555555555555,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      },
+      "log_loss": {
+        "improvement": 9.403743743361678,
+        "ci95_low": 8.506061063804406,
+        "ci95_high": 10.311330096482378,
+        "weeks": 79,
+        "repeats": 5000,
+        "method": "Fixture-weighted paired calendar-week bootstrap"
+      }
+    }
+  },
+  "market_reference": {
+    "team_rows": 504,
+    "market": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5671981776765376,
+      "log_loss": 0.9406804840966141,
+      "brier": 0.5582552015191073,
+      "expected_points_mae": 1.0834795866394122
+    },
+    "model_same_subset": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5250569476082004,
+      "log_loss": 0.9814919835818525,
+      "brier": 0.5832115312477294,
+      "expected_points_mae": 1.1177503623160032
+    },
+    "note": "Pre-kickoff odds provide additional information; not a betting-profit claim"
+  },
+  "known_formation_subset": {
+    "team_rows": 504,
+    "with_formation": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5250569476082004,
+      "log_loss": 0.9814919835818525,
+      "brier": 0.5832115312477294,
+      "expected_points_mae": 1.1177503623160032
+    },
+    "without_formation": {
+      "unique_matches": 439,
+      "team_appearances": 504,
+      "accuracy": 0.5284738041002278,
+      "log_loss": 0.9817788213410538,
+      "brier": 0.5835966193107438,
+      "expected_points_mae": 1.1188524028267413
+    }
+  },
+  "tactical_recommendation_validated": false,
+  "limitations": [
+    "Club focus alone does not increase games per club; longer history does.",
+    "Historic squads/managers differ. Recency weighting cannot identify causal effects.",
+    "No timestamped injury/availability snapshots or guaranteed pre-kickoff formation timestamps.",
+    "Player histories cover previously collected fixtures, not full careers.",
+    "League-context opponent histories are collected separately from the selected supervised rows.",
+    "Holdout seasons already appeared in v2; retrospective test with no v3 tuning on them."
+  ],
+  "environment": {
+    "python": "3.10.11",
+    "sklearn": "1.7.2"
+  },
+  "validation_top_features": [
+    {
+      "feature": "numeric__diff_elo",
+      "validation_log_loss_importance": 0.027343733128892083,
+      "repeat_sd": 0.009725615067246075
+    },
+    {
+      "feature": "numeric__is_home",
+      "validation_log_loss_importance": 0.003288479909525891,
+      "repeat_sd": 0.0006677938628320952
+    },
+    {
+      "feature": "numeric__diff_goals_for_20",
+      "validation_log_loss_importance": 0.0027679755949134854,
+      "repeat_sd": 0.001033409660281296
+    },
+    {
+      "feature": "numeric__opponent_venue_sot",
+      "validation_log_loss_importance": 0.002591147033764026,
+      "repeat_sd": 0.0012277244848155047
+    },
+    {
+      "feature": "numeric__opponent_shots_against_20",
+      "validation_log_loss_importance": 0.0023910137558388334,
+      "repeat_sd": 0.0006695044825816731
+    },
+    {
+      "feature": "numeric__team_sot_against_20",
+      "validation_log_loss_importance": 0.002180259769298513,
+      "repeat_sd": 0.0018733179242444026
+    },
+    {
+      "feature": "numeric__opponent_history_games",
+      "validation_log_loss_importance": 0.0020401299896896465,
+      "repeat_sd": 9.349405036686152e-05
+    },
+    {
+      "feature": "numeric__opponent_venue_shots",
+      "validation_log_loss_importance": 0.0018522680139386738,
+      "repeat_sd": 0.002087419388377577
+    },
+    {
+      "feature": "numeric__team_fouls_10",
+      "validation_log_loss_importance": 0.0018018289839818828,
+      "repeat_sd": 0.0007706422627353183
+    },
+    {
+      "feature": "numeric__opponent_lineup_prior_shots_rate",
+      "validation_log_loss_importance": 0.0017422027272741003,
+      "repeat_sd": 0.0008301365948108975
+    },
+    {
+      "feature": "numeric__opponent_shots_against_5",
+      "validation_log_loss_importance": 0.0016000101016584445,
+      "repeat_sd": 0.0003777678130530442
+    },
+    {
+      "feature": "numeric__opponent_lineup_prior_sot_rate",
+      "validation_log_loss_importance": 0.001595150324319894,
+      "repeat_sd": 0.0002145456414173755
+    },
+    {
+      "feature": "numeric__opponent_tackles_20",
+      "validation_log_loss_importance": 0.0013352454069927762,
+      "repeat_sd": 0.0003940635372422958
+    },
+    {
+      "feature": "numeric__opponent_venue_goals_against",
+      "validation_log_loss_importance": 0.0012776847155292481,
+      "repeat_sd": 0.0009157698976067203
+    },
+    {
+      "feature": "numeric__team_venue_goals_against",
+      "validation_log_loss_importance": 0.001006340510628941,
+      "repeat_sd": 0.00046590575170286333
+    },
+    {
+      "feature": "numeric__team_elo",
+      "validation_log_loss_importance": 0.0008906253493428477,
+      "repeat_sd": 0.0008833911912597285
+    },
+    {
+      "feature": "numeric__opponent_venue_points",
+      "validation_log_loss_importance": 0.0007126261435274062,
+      "repeat_sd": 0.0006784340778611149
+    },
+    {
+      "feature": "numeric__team_lineup_prior_shots_rate",
+      "validation_log_loss_importance": 0.0006310140338668576,
+      "repeat_sd": 0.00047007052900271956
+    },
+    {
+      "feature": "numeric__team_venue_shots",
+      "validation_log_loss_importance": 0.0005126593338019569,
+      "repeat_sd": 0.00048081671126832127
+    },
+    {
+      "feature": "numeric__team_sot_against_5",
+      "validation_log_loss_importance": 0.0003511155036305391,
+      "repeat_sd": 0.0007196590940206172
+    },
+    {
+      "feature": "numeric__opponent_blocked_shots_20",
+      "validation_log_loss_importance": 6.827716137303153e-05,
+      "repeat_sd": 0.0007067157614265522
+    },
+    {
+      "feature": "numeric__team_history_games",
+      "validation_log_loss_importance": 0.0,
+      "repeat_sd": 0.0
+    },
+    {
+      "feature": "numeric__opponent_elo",
+      "validation_log_loss_importance": -0.00010111373083709907,
+      "repeat_sd": 0.0006004282140645494
+    },
+    {
+      "feature": "numeric__opponent_lineup_prior_assists_rate",
+      "validation_log_loss_importance": -0.00020138523729699523,
+      "repeat_sd": 0.00011699115681944666
+    },
+    {
+      "feature": "numeric__team_lineup_prior_sot_rate",
+      "validation_log_loss_importance": -0.0002388351104968267,
+      "repeat_sd": 0.00026709462350598323
+    }
+  ]
+}

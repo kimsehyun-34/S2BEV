@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "318191",
+    "date": "2012-01-01",
+    "home_team": "Sunderland",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318245",
+    "date": "2012-01-02",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "317946",
+    "date": "2012-01-02",
+    "home_team": "Fulham",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318171",
+    "date": "2012-01-03",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "317934",
+    "date": "2012-01-03",
+    "home_team": "Manchester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318027",
+    "date": "2012-01-04",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318157",
+    "date": "2012-01-11",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Everton"
+  },
+  {
+    "id": "318268",
+    "date": "2012-01-14",
+    "home_team": "Chelsea",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "317997",
+    "date": "2012-01-14",
+    "home_team": "Liverpool",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "318094",
+    "date": "2012-01-14",
+    "home_team": "Manchester United",
+    "away_team": "Bolton Wanderers"
+  },
+  {
+    "id": "318093",
+    "date": "2012-01-14",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "318202",
+    "date": "2012-01-15",
+    "home_team": "Swansea City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318152",
+    "date": "2012-01-16",
+    "home_team": "Wigan Athletic",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "317999",
+    "date": "2012-01-21",
+    "home_team": "Norwich City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318062",
+    "date": "2012-01-21",
+    "home_team": "Bolton Wanderers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318275",
+    "date": "2012-01-22",
+    "home_team": "Manchester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318059",
+    "date": "2012-01-22",
+    "home_team": "Arsenal",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318220",
+    "date": "2012-01-31",
+    "home_team": "Swansea City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318304",
+    "date": "2012-01-31",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "317986",
+    "date": "2012-01-31",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318264",
+    "date": "2012-01-31",
+    "home_team": "Everton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318089",
+    "date": "2012-01-31",
+    "home_team": "Manchester United",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "318003",
+    "date": "2012-02-01",
+    "home_team": "Bolton Wanderers",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318096",
+    "date": "2012-02-04",
+    "home_team": "Arsenal",
+    "away_team": "Blackburn Rovers"
+  },
+  {
+    "id": "318263",
+    "date": "2012-02-04",
+    "home_team": "Manchester City",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "318100",
+    "date": "2012-02-05",
+    "home_team": "Chelsea",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "317995",
+    "date": "2012-02-06",
+    "home_team": "Liverpool",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318146",
+    "date": "2012-02-11",
+    "home_team": "Manchester United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318214",
+    "date": "2012-02-11",
+    "home_team": "Everton",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318071",
+    "date": "2012-02-11",
+    "home_team": "Sunderland",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318306",
+    "date": "2012-02-11",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "318055",
+    "date": "2012-02-12",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "317981",
+    "date": "2012-02-25",
+    "home_team": "Chelsea",
+    "away_team": "Bolton Wanderers"
+  },
+  {
+    "id": "318200",
+    "date": "2012-02-25",
+    "home_team": "Manchester City",
+    "away_team": "Blackburn Rovers"
+  },
+  {
+    "id": "318163",
+    "date": "2012-02-26",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318138",
+    "date": "2012-02-26",
+    "home_team": "Norwich City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318170",
+    "date": "2012-03-03",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318279",
+    "date": "2012-03-03",
+    "home_team": "Manchester City",
+    "away_team": "Bolton Wanderers"
+  },
+  {
+    "id": "318103",
+    "date": "2012-03-03",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318284",
+    "date": "2012-03-04",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318019",
+    "date": "2012-03-10",
+    "home_team": "Chelsea",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "317964",
+    "date": "2012-03-10",
+    "home_team": "Sunderland",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318278",
+    "date": "2012-03-10",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318145",
+    "date": "2012-03-11",
+    "home_team": "Manchester United",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "318176",
+    "date": "2012-03-11",
+    "home_team": "Swansea City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318267",
+    "date": "2012-03-12",
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "318307",
+    "date": "2012-03-13",
+    "home_team": "Liverpool",
+    "away_team": "Everton"
+  },
+  {
+    "id": "318257",
+    "date": "2012-03-18",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318155",
+    "date": "2012-03-21",
+    "home_team": "Manchester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318082",
+    "date": "2012-03-21",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "318305",
+    "date": "2012-03-21",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318018",
+    "date": "2012-03-21",
+    "home_team": "Queens Park Rangers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318144",
+    "date": "2012-03-24",
+    "home_team": "Chelsea",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "317958",
+    "date": "2012-03-24",
+    "home_team": "Arsenal",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "318276",
+    "date": "2012-03-24",
+    "home_team": "Liverpool",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "318166",
+    "date": "2012-03-24",
+    "home_team": "Stoke City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318234",
+    "date": "2012-03-26",
+    "home_team": "Manchester United",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "318061",
+    "date": "2012-03-31",
+    "home_team": "Aston Villa",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318131",
+    "date": "2012-03-31",
+    "home_team": "Manchester City",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "318081",
+    "date": "2012-03-31",
+    "home_team": "Queens Park Rangers",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318250",
+    "date": "2012-04-01",
+    "home_team": "Newcastle United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318135",
+    "date": "2012-04-01",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Swansea City"
+  },
+  {
+    "id": "318052",
+    "date": "2012-04-02",
+    "home_team": "Blackburn Rovers",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318057",
+    "date": "2012-04-07",
+    "home_team": "Sunderland",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318180",
+    "date": "2012-04-07",
+    "home_team": "Chelsea",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "318270",
+    "date": "2012-04-07",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "318259",
+    "date": "2012-04-08",
+    "home_team": "Manchester United",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "318099",
+    "date": "2012-04-08",
+    "home_team": "Arsenal",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318164",
+    "date": "2012-04-09",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "318079",
+    "date": "2012-04-09",
+    "home_team": "Fulham",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318258",
+    "date": "2012-04-10",
+    "home_team": "Blackburn Rovers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "317977",
+    "date": "2012-04-11",
+    "home_team": "Manchester City",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "318286",
+    "date": "2012-04-11",
+    "home_team": "Wigan Athletic",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "317991",
+    "date": "2012-04-11",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318215",
+    "date": "2012-04-14",
+    "home_team": "Norwich City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318128",
+    "date": "2012-04-15",
+    "home_team": "Manchester United",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "317956",
+    "date": "2012-04-16",
+    "home_team": "Arsenal",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "318206",
+    "date": "2012-04-21",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "318298",
+    "date": "2012-04-21",
+    "home_team": "Queens Park Rangers",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318042",
+    "date": "2012-04-22",
+    "home_team": "Manchester United",
+    "away_team": "Everton"
+  },
+  {
+    "id": "317990",
+    "date": "2012-04-22",
+    "home_team": "Liverpool",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "318017",
+    "date": "2012-04-22",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "317971",
+    "date": "2012-04-28",
+    "home_team": "Stoke City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "318240",
+    "date": "2012-04-28",
+    "home_team": "Norwich City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318183",
+    "date": "2012-04-29",
+    "home_team": "Chelsea",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "317980",
+    "date": "2012-04-29",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Blackburn Rovers"
+  },
+  {
+    "id": "318266",
+    "date": "2012-04-30",
+    "home_team": "Manchester City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318009",
+    "date": "2012-05-01",
+    "home_team": "Liverpool",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "318090",
+    "date": "2012-05-02",
+    "home_team": "Chelsea",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "318178",
+    "date": "2012-05-02",
+    "home_team": "Bolton Wanderers",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "317989",
+    "date": "2012-05-05",
+    "home_team": "Arsenal",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "318124",
+    "date": "2012-05-06",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "318142",
+    "date": "2012-05-06",
+    "home_team": "Aston Villa",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "318067",
+    "date": "2012-05-06",
+    "home_team": "Manchester United",
+    "away_team": "Swansea City"
+  },
+  {
+    "id": "317961",
+    "date": "2012-05-08",
+    "home_team": "Liverpool",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "317944",
+    "date": "2012-05-13",
+    "home_team": "Chelsea",
+    "away_team": "Blackburn Rovers"
+  },
+  {
+    "id": "318011",
+    "date": "2012-05-13",
+    "home_team": "Manchester City",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "318301",
+    "date": "2012-05-13",
+    "home_team": "Sunderland",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "318008",
+    "date": "2012-05-13",
+    "home_team": "Swansea City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "318070",
+    "date": "2012-05-13",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "318265",
+    "date": "2012-05-13",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345830",
+    "date": "2012-08-18",
+    "home_team": "Arsenal",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "345827",
+    "date": "2012-08-18",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345832",
+    "date": "2012-08-18",
+    "home_team": "Newcastle United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345826",
+    "date": "2012-08-19",
+    "home_team": "Wigan Athletic",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345909",
+    "date": "2012-08-19",
+    "home_team": "Manchester City",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "345828",
+    "date": "2012-08-20",
+    "home_team": "Everton",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345866",
+    "date": "2012-08-22",
+    "home_team": "Chelsea",
+    "away_team": "Reading"
+  },
+  {
+    "id": "345819",
+    "date": "2012-08-25",
+    "home_team": "Manchester United",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "345823",
+    "date": "2012-08-25",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "345821",
+    "date": "2012-08-25",
+    "home_team": "Chelsea",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "345817",
+    "date": "2012-08-26",
+    "home_team": "Stoke City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345820",
+    "date": "2012-08-26",
+    "home_team": "Liverpool",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345813",
+    "date": "2012-09-01",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "345814",
+    "date": "2012-09-01",
+    "home_team": "Manchester City",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "345809",
+    "date": "2012-09-02",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345907",
+    "date": "2012-09-02",
+    "home_team": "Southampton",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345906",
+    "date": "2012-09-15",
+    "home_team": "Arsenal",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "345808",
+    "date": "2012-09-15",
+    "home_team": "Manchester United",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "345801",
+    "date": "2012-09-15",
+    "home_team": "Queens Park Rangers",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345803",
+    "date": "2012-09-15",
+    "home_team": "Stoke City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345802",
+    "date": "2012-09-15",
+    "home_team": "Sunderland",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345865",
+    "date": "2012-09-16",
+    "home_team": "Reading",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345799",
+    "date": "2012-09-22",
+    "home_team": "Chelsea",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "345796",
+    "date": "2012-09-23",
+    "home_team": "Liverpool",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345793",
+    "date": "2012-09-23",
+    "home_team": "Manchester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345798",
+    "date": "2012-09-23",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "345785",
+    "date": "2012-09-29",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345787",
+    "date": "2012-09-29",
+    "home_team": "Fulham",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345786",
+    "date": "2012-09-29",
+    "home_team": "Norwich City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345789",
+    "date": "2012-09-29",
+    "home_team": "Manchester United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345784",
+    "date": "2012-10-06",
+    "home_team": "Manchester City",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "345781",
+    "date": "2012-10-06",
+    "home_team": "Chelsea",
+    "away_team": "Norwich City"
+  },
+  {
+    "id": "345777",
+    "date": "2012-10-06",
+    "home_team": "West Ham United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345783",
+    "date": "2012-10-07",
+    "home_team": "Liverpool",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "345778",
+    "date": "2012-10-07",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "345780",
+    "date": "2012-10-07",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345771",
+    "date": "2012-10-20",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345861",
+    "date": "2012-10-20",
+    "home_team": "Liverpool",
+    "away_team": "Reading"
+  },
+  {
+    "id": "345775",
+    "date": "2012-10-20",
+    "home_team": "Manchester United",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "345773",
+    "date": "2012-10-20",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345769",
+    "date": "2012-10-20",
+    "home_team": "Norwich City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345764",
+    "date": "2012-10-27",
+    "home_team": "Arsenal",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "345766",
+    "date": "2012-10-27",
+    "home_team": "Manchester City",
+    "away_team": "Swansea City"
+  },
+  {
+    "id": "345761",
+    "date": "2012-10-28",
+    "home_team": "Everton",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345901",
+    "date": "2012-10-28",
+    "home_team": "Southampton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345762",
+    "date": "2012-10-28",
+    "home_team": "Chelsea",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345753",
+    "date": "2012-11-03",
+    "home_team": "Manchester United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345755",
+    "date": "2012-11-03",
+    "home_team": "Swansea City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345760",
+    "date": "2012-11-03",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "345757",
+    "date": "2012-11-03",
+    "home_team": "West Ham United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345758",
+    "date": "2012-11-04",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "345745",
+    "date": "2012-11-10",
+    "home_team": "Arsenal",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "345747",
+    "date": "2012-11-10",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345750",
+    "date": "2012-11-11",
+    "home_team": "Manchester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345746",
+    "date": "2012-11-11",
+    "home_team": "Chelsea",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345743",
+    "date": "2012-11-17",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345744",
+    "date": "2012-11-17",
+    "home_team": "Liverpool",
+    "away_team": "Wigan Athletic"
+  },
+  {
+    "id": "345737",
+    "date": "2012-11-17",
+    "home_team": "Manchester City",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "345738",
+    "date": "2012-11-17",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345739",
+    "date": "2012-11-17",
+    "home_team": "Norwich City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345734",
+    "date": "2012-11-24",
+    "home_team": "Manchester United",
+    "away_team": "Queens Park Rangers"
+  },
+  {
+    "id": "345729",
+    "date": "2012-11-24",
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345731",
+    "date": "2012-11-25",
+    "home_team": "Swansea City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345732",
+    "date": "2012-11-25",
+    "home_team": "Chelsea",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345736",
+    "date": "2012-11-25",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "345722",
+    "date": "2012-11-28",
+    "home_team": "Chelsea",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "345721",
+    "date": "2012-11-28",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345723",
+    "date": "2012-11-28",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345728",
+    "date": "2012-11-28",
+    "home_team": "Manchester United",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "345724",
+    "date": "2012-11-28",
+    "home_team": "Wigan Athletic",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345714",
+    "date": "2012-12-01",
+    "home_team": "West Ham United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345718",
+    "date": "2012-12-01",
+    "home_team": "Arsenal",
+    "away_team": "Swansea City"
+  },
+  {
+    "id": "345719",
+    "date": "2012-12-01",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345895",
+    "date": "2012-12-01",
+    "home_team": "Liverpool",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "345715",
+    "date": "2012-12-01",
+    "home_team": "Manchester City",
+    "away_team": "Everton"
+  },
+  {
+    "id": "345854",
+    "date": "2012-12-01",
+    "home_team": "Reading",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345712",
+    "date": "2012-12-08",
+    "home_team": "Arsenal",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "345704",
+    "date": "2012-12-08",
+    "home_team": "Sunderland",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345706",
+    "date": "2012-12-09",
+    "home_team": "Manchester City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345711",
+    "date": "2012-12-09",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345705",
+    "date": "2012-12-09",
+    "home_team": "West Ham United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345699",
+    "date": "2012-12-15",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345696",
+    "date": "2012-12-15",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "345700",
+    "date": "2012-12-15",
+    "home_team": "Manchester United",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "345701",
+    "date": "2012-12-16",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Swansea City"
+  },
+  {
+    "id": "345853",
+    "date": "2012-12-17",
+    "home_team": "Reading",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345688",
+    "date": "2012-12-22",
+    "home_team": "Wigan Athletic",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "345852",
+    "date": "2012-12-22",
+    "home_team": "Manchester City",
+    "away_team": "Reading"
+  },
+  {
+    "id": "345695",
+    "date": "2012-12-22",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Stoke City"
+  },
+  {
+    "id": "345691",
+    "date": "2012-12-22",
+    "home_team": "Liverpool",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "345692",
+    "date": "2012-12-23",
+    "home_team": "Swansea City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "345689",
+    "date": "2012-12-23",
+    "home_team": "Chelsea",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "345683",
+    "date": "2012-12-26",
+    "home_team": "Manchester United",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "345680",
+    "date": "2012-12-26",
+    "home_team": "Norwich City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345682",
+    "date": "2012-12-26",
+    "home_team": "Sunderland",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345684",
+    "date": "2012-12-26",
+    "home_team": "Aston Villa",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345681",
+    "date": "2012-12-26",
+    "home_team": "Stoke City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "345677",
+    "date": "2012-12-29",
+    "home_team": "Sunderland",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "345678",
+    "date": "2012-12-29",
+    "home_team": "Manchester United",
+    "away_team": "West Bromwich Albion"
+  },
+  {
+    "id": "345674",
+    "date": "2012-12-29",
+    "home_team": "Norwich City",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "345675",
+    "date": "2012-12-29",
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "345672",
+    "date": "2012-12-30",
+    "home_team": "Everton",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "345673",
+    "date": "2012-12-30",
+    "home_team": "Queens Park Rangers",
+    "away_team": "Liverpool"
+  }
+]

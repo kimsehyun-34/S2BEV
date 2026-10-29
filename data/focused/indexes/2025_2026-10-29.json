@@ -1,0 +1,1190 @@
+[
+  {
+    "id": "704467",
+    "date": "2025-01-01",
+    "home_team": "Brentford",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704472",
+    "date": "2025-01-04",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "704478",
+    "date": "2025-01-04",
+    "home_team": "Crystal Palace",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704474",
+    "date": "2025-01-04",
+    "home_team": "Manchester City",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "704477",
+    "date": "2025-01-04",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704475",
+    "date": "2025-01-05",
+    "home_team": "Liverpool",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704482",
+    "date": "2025-01-14",
+    "home_team": "Brentford",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704487",
+    "date": "2025-01-14",
+    "home_team": "Chelsea",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "704484",
+    "date": "2025-01-14",
+    "home_team": "Nottingham Forest",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704485",
+    "date": "2025-01-15",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704488",
+    "date": "2025-01-16",
+    "home_team": "Manchester United",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "704494",
+    "date": "2025-01-18",
+    "home_team": "Brentford",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704493",
+    "date": "2025-01-18",
+    "home_team": "Arsenal",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "704489",
+    "date": "2025-01-19",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704497",
+    "date": "2025-01-19",
+    "home_team": "Manchester United",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "704490",
+    "date": "2025-01-19",
+    "home_team": "Ipswich Town",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704495",
+    "date": "2025-01-20",
+    "home_team": "Chelsea",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "704508",
+    "date": "2025-01-25",
+    "home_team": "Liverpool",
+    "away_team": "Ipswich Town"
+  },
+  {
+    "id": "704504",
+    "date": "2025-01-25",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704502",
+    "date": "2025-01-25",
+    "home_team": "Manchester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704500",
+    "date": "2025-01-26",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "704503",
+    "date": "2025-01-26",
+    "home_team": "Fulham",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704511",
+    "date": "2025-02-01",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704512",
+    "date": "2025-02-02",
+    "home_team": "Brentford",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704516",
+    "date": "2025-02-02",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "704515",
+    "date": "2025-02-02",
+    "home_team": "Arsenal",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704513",
+    "date": "2025-02-03",
+    "home_team": "Chelsea",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "704425",
+    "date": "2025-02-12",
+    "home_team": "Everton",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704526",
+    "date": "2025-02-14",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704520",
+    "date": "2025-02-15",
+    "home_team": "Leicester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704522",
+    "date": "2025-02-15",
+    "home_team": "Manchester City",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "704521",
+    "date": "2025-02-16",
+    "home_team": "Liverpool",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "704524",
+    "date": "2025-02-16",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704567",
+    "date": "2025-02-19",
+    "home_team": "Aston Villa",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704530",
+    "date": "2025-02-22",
+    "home_team": "Everton",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704538",
+    "date": "2025-02-22",
+    "home_team": "Arsenal",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "704532",
+    "date": "2025-02-22",
+    "home_team": "Ipswich Town",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704537",
+    "date": "2025-02-22",
+    "home_team": "Aston Villa",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704534",
+    "date": "2025-02-23",
+    "home_team": "Manchester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704547",
+    "date": "2025-02-25",
+    "home_team": "Chelsea",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "704546",
+    "date": "2025-02-26",
+    "home_team": "Manchester United",
+    "away_team": "Ipswich Town"
+  },
+  {
+    "id": "704541",
+    "date": "2025-02-26",
+    "home_team": "Nottingham Forest",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704540",
+    "date": "2025-02-26",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704548",
+    "date": "2025-02-26",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "704554",
+    "date": "2025-03-08",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704556",
+    "date": "2025-03-08",
+    "home_team": "Liverpool",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "704553",
+    "date": "2025-03-09",
+    "home_team": "Chelsea",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "704558",
+    "date": "2025-03-09",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "704555",
+    "date": "2025-03-09",
+    "home_team": "Manchester United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704561",
+    "date": "2025-03-15",
+    "home_team": "Manchester City",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "704559",
+    "date": "2025-03-16",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704564",
+    "date": "2025-03-16",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704562",
+    "date": "2025-03-16",
+    "home_team": "Leicester City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704572",
+    "date": "2025-04-01",
+    "home_team": "Arsenal",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "704569",
+    "date": "2025-04-01",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704574",
+    "date": "2025-04-02",
+    "home_team": "Manchester City",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "704575",
+    "date": "2025-04-02",
+    "home_team": "Liverpool",
+    "away_team": "Everton"
+  },
+  {
+    "id": "704576",
+    "date": "2025-04-03",
+    "home_team": "Chelsea",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704584",
+    "date": "2025-04-05",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704579",
+    "date": "2025-04-06",
+    "home_team": "Brentford",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704586",
+    "date": "2025-04-06",
+    "home_team": "Fulham",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704587",
+    "date": "2025-04-06",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "704581",
+    "date": "2025-04-06",
+    "home_team": "Manchester United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704591",
+    "date": "2025-04-12",
+    "home_team": "Manchester City",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "704595",
+    "date": "2025-04-12",
+    "home_team": "Arsenal",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "704598",
+    "date": "2025-04-13",
+    "home_team": "Chelsea",
+    "away_team": "Ipswich Town"
+  },
+  {
+    "id": "704594",
+    "date": "2025-04-13",
+    "home_team": "Liverpool",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "704593",
+    "date": "2025-04-13",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704590",
+    "date": "2025-04-13",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704604",
+    "date": "2025-04-19",
+    "home_team": "Everton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704608",
+    "date": "2025-04-20",
+    "home_team": "Fulham",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704602",
+    "date": "2025-04-20",
+    "home_team": "Ipswich Town",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704600",
+    "date": "2025-04-20",
+    "home_team": "Manchester United",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "704601",
+    "date": "2025-04-20",
+    "home_team": "Leicester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704599",
+    "date": "2025-04-21",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "704615",
+    "date": "2025-04-22",
+    "home_team": "Manchester City",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "704618",
+    "date": "2025-04-23",
+    "home_team": "Arsenal",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "704611",
+    "date": "2025-04-26",
+    "home_team": "Chelsea",
+    "away_team": "Everton"
+  },
+  {
+    "id": "704609",
+    "date": "2025-04-27",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704617",
+    "date": "2025-04-27",
+    "home_team": "Liverpool",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704627",
+    "date": "2025-05-02",
+    "home_team": "Manchester City",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "704619",
+    "date": "2025-05-03",
+    "home_team": "Arsenal",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "704621",
+    "date": "2025-05-04",
+    "home_team": "Brentford",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704628",
+    "date": "2025-05-04",
+    "home_team": "West Ham United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704623",
+    "date": "2025-05-04",
+    "home_team": "Chelsea",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704636",
+    "date": "2025-05-10",
+    "home_team": "Southampton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704634",
+    "date": "2025-05-11",
+    "home_team": "Newcastle United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704633",
+    "date": "2025-05-11",
+    "home_team": "Manchester United",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "704637",
+    "date": "2025-05-11",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "704632",
+    "date": "2025-05-11",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704640",
+    "date": "2025-05-16",
+    "home_team": "Aston Villa",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "704643",
+    "date": "2025-05-16",
+    "home_team": "Chelsea",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "704639",
+    "date": "2025-05-18",
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "704642",
+    "date": "2025-05-19",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "704647",
+    "date": "2025-05-20",
+    "home_team": "Manchester City",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "704650",
+    "date": "2025-05-25",
+    "home_team": "Fulham",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "704652",
+    "date": "2025-05-25",
+    "home_team": "Liverpool",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "704658",
+    "date": "2025-05-25",
+    "home_team": "Manchester United",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "704655",
+    "date": "2025-05-25",
+    "home_team": "Nottingham Forest",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "704656",
+    "date": "2025-05-25",
+    "home_team": "Southampton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "704657",
+    "date": "2025-05-25",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "740596",
+    "date": "2025-08-15",
+    "home_team": "Liverpool",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "740601",
+    "date": "2025-08-16",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "740602",
+    "date": "2025-08-16",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740603",
+    "date": "2025-08-17",
+    "home_team": "Chelsea",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "740604",
+    "date": "2025-08-17",
+    "home_team": "Manchester United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740615",
+    "date": "2025-08-22",
+    "home_team": "West Ham United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740613",
+    "date": "2025-08-23",
+    "home_team": "Manchester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740606",
+    "date": "2025-08-23",
+    "home_team": "Arsenal",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "740612",
+    "date": "2025-08-24",
+    "home_team": "Fulham",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740614",
+    "date": "2025-08-25",
+    "home_team": "Newcastle United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740618",
+    "date": "2025-08-30",
+    "home_team": "Chelsea",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "740621",
+    "date": "2025-08-30",
+    "home_team": "Manchester United",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "740620",
+    "date": "2025-08-30",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "740617",
+    "date": "2025-08-31",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740625",
+    "date": "2025-08-31",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740627",
+    "date": "2025-09-13",
+    "home_team": "Arsenal",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "740626",
+    "date": "2025-09-13",
+    "home_team": "West Ham United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740634",
+    "date": "2025-09-13",
+    "home_team": "Brentford",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740633",
+    "date": "2025-09-14",
+    "home_team": "Burnley",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740630",
+    "date": "2025-09-14",
+    "home_team": "Manchester City",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740641",
+    "date": "2025-09-20",
+    "home_team": "Liverpool",
+    "away_team": "Everton"
+  },
+  {
+    "id": "740636",
+    "date": "2025-09-20",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740645",
+    "date": "2025-09-20",
+    "home_team": "Manchester United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740643",
+    "date": "2025-09-21",
+    "home_team": "Arsenal",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740649",
+    "date": "2025-09-27",
+    "home_team": "Brentford",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740648",
+    "date": "2025-09-27",
+    "home_team": "Chelsea",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "740647",
+    "date": "2025-09-27",
+    "home_team": "Crystal Palace",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740654",
+    "date": "2025-09-27",
+    "home_team": "Manchester City",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "740646",
+    "date": "2025-09-27",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "740653",
+    "date": "2025-09-28",
+    "home_team": "Newcastle United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740662",
+    "date": "2025-10-04",
+    "home_team": "Leeds United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740656",
+    "date": "2025-10-04",
+    "home_team": "Arsenal",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "740663",
+    "date": "2025-10-04",
+    "home_team": "Manchester United",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "740660",
+    "date": "2025-10-04",
+    "home_team": "Chelsea",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740659",
+    "date": "2025-10-05",
+    "home_team": "Brentford",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740672",
+    "date": "2025-10-18",
+    "home_team": "Nottingham Forest",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740671",
+    "date": "2025-10-18",
+    "home_team": "Manchester City",
+    "away_team": "Everton"
+  },
+  {
+    "id": "740669",
+    "date": "2025-10-18",
+    "home_team": "Fulham",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740674",
+    "date": "2025-10-19",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "740670",
+    "date": "2025-10-19",
+    "home_team": "Liverpool",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740685",
+    "date": "2025-10-25",
+    "home_team": "Chelsea",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "740683",
+    "date": "2025-10-25",
+    "home_team": "Manchester United",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "740679",
+    "date": "2025-10-25",
+    "home_team": "Brentford",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740676",
+    "date": "2025-10-26",
+    "home_team": "Arsenal",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "740677",
+    "date": "2025-10-26",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740681",
+    "date": "2025-10-26",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740687",
+    "date": "2025-11-01",
+    "home_team": "Burnley",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740692",
+    "date": "2025-11-01",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740690",
+    "date": "2025-11-01",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740694",
+    "date": "2025-11-01",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "740691",
+    "date": "2025-11-02",
+    "home_team": "Manchester City",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "740705",
+    "date": "2025-11-08",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740704",
+    "date": "2025-11-08",
+    "home_team": "Sunderland",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740699",
+    "date": "2025-11-08",
+    "home_team": "Chelsea",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "740702",
+    "date": "2025-11-09",
+    "home_team": "Manchester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740707",
+    "date": "2025-11-22",
+    "home_team": "Burnley",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740710",
+    "date": "2025-11-22",
+    "home_team": "Liverpool",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "740712",
+    "date": "2025-11-22",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740714",
+    "date": "2025-11-23",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740711",
+    "date": "2025-11-24",
+    "home_team": "Manchester United",
+    "away_team": "Everton"
+  },
+  {
+    "id": "740717",
+    "date": "2025-11-29",
+    "home_team": "Manchester City",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "740720",
+    "date": "2025-11-29",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "740725",
+    "date": "2025-11-30",
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740722",
+    "date": "2025-11-30",
+    "home_team": "West Ham United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740719",
+    "date": "2025-11-30",
+    "home_team": "Chelsea",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740730",
+    "date": "2025-12-02",
+    "home_team": "Fulham",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740729",
+    "date": "2025-12-02",
+    "home_team": "Newcastle United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740734",
+    "date": "2025-12-03",
+    "home_team": "Arsenal",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "740732",
+    "date": "2025-12-03",
+    "home_team": "Leeds United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740731",
+    "date": "2025-12-03",
+    "home_team": "Liverpool",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "740735",
+    "date": "2025-12-04",
+    "home_team": "Manchester United",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "740745",
+    "date": "2025-12-06",
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740743",
+    "date": "2025-12-06",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740736",
+    "date": "2025-12-06",
+    "home_team": "Manchester City",
+    "away_team": "Sunderland"
+  },
+  {
+    "id": "740744",
+    "date": "2025-12-06",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "740742",
+    "date": "2025-12-06",
+    "home_team": "Leeds United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740737",
+    "date": "2025-12-08",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740750",
+    "date": "2025-12-13",
+    "home_team": "Chelsea",
+    "away_team": "Everton"
+  },
+  {
+    "id": "740752",
+    "date": "2025-12-13",
+    "home_team": "Liverpool",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "740746",
+    "date": "2025-12-13",
+    "home_team": "Arsenal",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "740747",
+    "date": "2025-12-14",
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740755",
+    "date": "2025-12-14",
+    "home_team": "Nottingham Forest",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740751",
+    "date": "2025-12-15",
+    "home_team": "Manchester United",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "740763",
+    "date": "2025-12-20",
+    "home_team": "Newcastle United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "740760",
+    "date": "2025-12-20",
+    "home_team": "Manchester City",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "740762",
+    "date": "2025-12-20",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "740757",
+    "date": "2025-12-20",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "740765",
+    "date": "2025-12-21",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "740769",
+    "date": "2025-12-26",
+    "home_team": "Manchester United",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "740770",
+    "date": "2025-12-27",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "740772",
+    "date": "2025-12-27",
+    "home_team": "Arsenal",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "740775",
+    "date": "2025-12-27",
+    "home_team": "Liverpool",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "740766",
+    "date": "2025-12-27",
+    "home_team": "Chelsea",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "740771",
+    "date": "2025-12-28",
+    "home_team": "Crystal Palace",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "740779",
+    "date": "2025-12-30",
+    "home_team": "Chelsea",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "740776",
+    "date": "2025-12-30",
+    "home_team": "Arsenal",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "740782",
+    "date": "2025-12-30",
+    "home_team": "Manchester United",
+    "away_team": "Wolverhampton Wanderers"
+  }
+]

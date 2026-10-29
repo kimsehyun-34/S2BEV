@@ -2,11 +2,13 @@
 
 **현재 자료로 팀별 ‘최적 포메이션’을 검증할 수 없어 전술 추천을 보류합니다.** 데이터를 380경기에서 최근 2,740경기로 늘리고 네 가지 모델 계열을 비교했지만, 포메이션의 추가 예측 가치를 확인하지 못했습니다. 경기 결과 확률을 예측하는 모델과 검증 결과는 제공합니다.
 
-- [분석 보고서](reports/index.html): 브라우저에서 파일을 열면 됩니다. 서버·인터넷 불필요.
+- [팀별 전술대형 탐색 화면](reports/index.html): 팀·포메이션 선택, 배치도, 과거 모델의 기대 승점과 확률. 첨부 화면을 복원했으며 첫 화면은 Arsenal입니다. 최적 대형의 검증 결과를 뜻하지 않습니다.
+- [최신 성능 검토 보고서](reports/analysis.html): 브라우저에서 파일을 열면 됩니다. 서버·인터넷 불필요.
 - [상세 분석 문서](reports/analysis.md): 기존 52.5%의 해석, 새 평가, 불확실성, 현재 분석할 수 없는 것.
 - [전체 지표](artifacts/v2/metrics.json), [평가 전 고정한 프로토콜](artifacts/v2/protocol.json), [모델 선택 기록](artifacts/v2/selection.json).
 - [경기당 하나의 테스트 예측](artifacts/v2/test_predictions.csv), [팀별 분석 가능성 CSV](reports/tactical_feasibility.csv).
 - [학습 모델](artifacts/v2/model.joblib), [그래프 SVG](reports/benchmark.svg).
+- [유명 6개 구단 집중 분석](reports/focused/index.html): Arsenal·Chelsea·Liverpool·Manchester City·Manchester United·Tottenham의 2006/07~2026/27 EPL 경기 4,003개, Random Forest 하이퍼파라미터 튜닝 결과.
 
 ## 실제 결과
 
@@ -30,6 +32,22 @@
 
 기존 52.5%는 균등 랜덤 33.3%보다는 높지만, 기존 60경기에서 홈승만 예측해도 48.3%였습니다. 120개 팀 행은 독립된 120경기가 아닙니다. 기존 52.5%와 새 50.48%는 다른 표본이어서 직접 개선·악화 폭으로 비교하면 안 됩니다. 그래서 기존 RF도 같은 새 자료·같은 새 테스트에서 재학습해 비교했습니다.
 
+## 유명 6개 구단 집중 분석 (v3)
+
+Arsenal 등 6개 구단이 치른 모든 EPL 경기(상대팀 제한 없음)를 2006/07부터 수집했습니다. 고유 경기 4,003개, 구단 관점 학습 행 4,608개이며 두 수는 다릅니다. ESPN 상세 기록이 확인된 경기는 3,739개, 나머지 264개는 결과·배당만 있고 없는 포메이션은 채우지 않았습니다.
+
+- RF 설정 32개(트리 수·깊이·말단 표본·특성 비율·표본 비율·분할 기준·클래스 가중 등 8개 하이퍼파라미터)와 로지스틱·부스팅 8개를 시간순 3개 구간(2018/19, 2021/22, 2023/24)에서 비교했고, 포메이션 포함/제외를 각각 튜닝했습니다. 선택은 검증 로그손실만 사용했고 2024/25 이후 평가 경기는 쓰지 않았습니다(이전 실험에서 이미 본 구간이므로 새 미래 검증은 아닙니다).
+- 평가 439경기 / 504개 구단 관점. 튜닝 RF 정확도 53.6%, 튜닝 전 RF 53.2%, Elo 기준 53.8%, 항상 해당 구단 승리 49.9%. RF 튜닝의 로그손실 개선 +0.0090(95% 구간 [+0.0004, +0.0174]).
+- 검증에서 가장 좋은 모델은 RF가 아니라 강한 규제의 로지스틱(C=0.003)이었고, 단순 Elo 기준보다 뚜렷이 낫지 않았습니다. 포메이션 변수 추가의 개선도 0과 구분되지 않았습니다(같은 설정 비교 +0.0003). 최적 포메이션 추천은 계속 보류합니다.
+
+```powershell
+python -m epl_tactics collect-focused            # data/focused (중단 후 재실행하면 이어서 수집)
+python -m epl_tactics analyze-focused            # artifacts/focused 와 reports/focused 생성
+python -m epl_tactics report-focused             # 재학습 없이 리포트만 재생성
+```
+
+수집한 원본 ESPN 응답(`data/focused/facts/`)은 재배포 권리가 불분명해 Git에 올리지 않습니다. `collect-focused`로 다시 받을 수 있습니다.
+
 ## 실행 환경
 
 Python 3.10 이상. 프로젝트 루트에서 실행합니다. 제공하는 모델은 scikit-learn **1.7.2**로 학습했으며, 다른 버전에서는 재학습해야 합니다.
@@ -39,6 +57,8 @@ python -m venv .venv
 .venv/Scripts/python.exe -m pip install -r requirements.txt
 .venv/Scripts/python.exe -m epl_tactics report
 ```
+
+탐색 화면을 다시 생성하려면 `.venv/Scripts/python.exe -m epl_tactics explorer`를 실행하세요. `reports/index.html`과 같은 내용의 `reports/explorer.html`도 생성합니다. 최신 성능 보고서는 `reports/analysis.html`에 생성되므로, 보고서를 다시 만들어도 탐색 화면을 덮어쓰지 않습니다.
 
 현재 작업 환경에는 기존 Python 3.10의 패키지를 참조하는 `.venv`를 만들어 검증했습니다. 새 환경에서는 위와 같이 의존성을 설치하세요. `joblib`은 신뢰하는 로컬 학습 결과만 로딩하세요.
 

@@ -1,0 +1,471 @@
+{
+  "created_utc": "2026-10-29T05:12:28.026449+00:00",
+  "clubs": [
+    "Arsenal",
+    "Chelsea",
+    "Liverpool",
+    "Manchester City",
+    "Manchester United",
+    "Tottenham Hotspur"
+  ],
+  "data_hashes": {
+    "matches.csv": "47b5d4ae4c9ba9cccff8c1f9e5a77f32b766f16fdf3ddd9e3d698e4c9d2e1e0b",
+    "league_context.csv": "8ef3e6f21a61eb8e92a7245450d83439aaedb4f0628f4f18c5da559afabc524e"
+  },
+  "folds": [
+    "2018/2019",
+    "2021/2022",
+    "2023/2024"
+  ],
+  "test_start": "2024/2025",
+  "rf_trials_per_variant": 32,
+  "other_trials_per_variant": 8,
+  "search_space": {
+    "n_estimators": [
+      200,
+      350,
+      500
+    ],
+    "max_depth": [
+      5,
+      8,
+      12,
+      18,
+      null
+    ],
+    "min_samples_leaf": [
+      2,
+      5,
+      10,
+      20,
+      40
+    ],
+    "min_samples_split": [
+      2,
+      10,
+      30
+    ],
+    "max_features": [
+      "sqrt",
+      0.3,
+      0.6,
+      1.0
+    ],
+    "max_samples": [
+      0.65,
+      0.85,
+      1.0
+    ],
+    "criterion": [
+      "gini",
+      "entropy"
+    ],
+    "class_weight": [
+      null,
+      "balanced_subsample"
+    ]
+  },
+  "sampled_configurations": [
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 10,
+      "max_samples": 1.0,
+      "max_features": 0.3,
+      "max_depth": 18,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 20,
+      "max_samples": 1.0,
+      "max_features": 1.0,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 5,
+      "max_samples": 1.0,
+      "max_features": "sqrt",
+      "max_depth": 18,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 40,
+      "max_samples": 0.65,
+      "max_features": 0.3,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 30,
+      "min_samples_leaf": 40,
+      "max_samples": 0.85,
+      "max_features": 0.3,
+      "max_depth": 5,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.85,
+      "max_features": "sqrt",
+      "max_depth": 18,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 1.0,
+      "max_features": 0.3,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 12,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 0.65,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.3,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 10,
+      "min_samples_leaf": 20,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5,
+      "max_samples": 1.0,
+      "max_features": "sqrt",
+      "max_depth": 12,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 1.0,
+      "max_features": 0.3,
+      "max_depth": 18,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.65,
+      "max_features": 0.3,
+      "max_depth": 8,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 30,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 10,
+      "max_samples": 0.65,
+      "max_features": "sqrt",
+      "max_depth": 8,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 1.0,
+      "max_features": "sqrt",
+      "max_depth": 12,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 40,
+      "max_samples": 1.0,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.65,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 10,
+      "min_samples_leaf": 10,
+      "max_samples": 0.65,
+      "max_features": 1.0,
+      "max_depth": 18,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": "sqrt",
+      "max_depth": 5,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 10,
+      "min_samples_leaf": 20,
+      "max_samples": 1.0,
+      "max_features": 1.0,
+      "max_depth": 8,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 2,
+      "max_samples": 0.65,
+      "max_features": 0.6,
+      "max_depth": 18,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.3,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 20,
+      "max_samples": 0.65,
+      "max_features": "sqrt",
+      "max_depth": 5,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    {
+      "family": "logistic",
+      "C": 0.003
+    },
+    {
+      "family": "logistic",
+      "C": 0.03
+    },
+    {
+      "family": "logistic",
+      "C": 0.3
+    },
+    {
+      "family": "logistic",
+      "C": 3.0
+    },
+    {
+      "family": "hgb",
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 30,
+      "l2_regularization": 5.0
+    },
+    {
+      "family": "hgb",
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 30,
+      "l2_regularization": 20.0
+    },
+    {
+      "family": "hgb",
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 5.0
+    },
+    {
+      "family": "hgb",
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 20.0
+    }
+  ],
+  "seed": 42,
+  "feature_version": 2,
+  "objective": "Fixture-weighted forward-validation log loss",
+  "with_formation_and_ablated": true,
+  "half_life_days": 1095,
+  "test_refit": "Before each test season, all earlier seasons; configurations frozen",
+  "honesty_note": "2024-2026 outcomes were previously evaluated in v2. This is a retrospective held-out comparison, not a fresh prospective test.",
+  "scope": "Only selected-club rows are supervised. Non-cohort opponent league histories are context.",
+  "recommendation_rule": "Exploratory formation scores only; no causal optimal formation claimed"
+}

@@ -1,0 +1,3021 @@
+[
+  {
+    "team": "AFC Bournemouth",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-1-4-1",
+    "gap_to_next_supported": 0.001381935679957369,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.4681550030352221,
+        "p_draw": 0.28292866357545293,
+        "p_win": 0.24891633338932498,
+        "expected_points": 1.029677663743428,
+        "team_matches": 0,
+        "league_team_matches": 384,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.46873559311817764,
+        "p_draw": 0.2891789069264728,
+        "p_win": 0.2420854999553496,
+        "expected_points": 1.0154354067925215,
+        "team_matches": 12,
+        "league_team_matches": 60,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.4777172534858152,
+        "p_draw": 0.2763973842149954,
+        "p_win": 0.24588536229918956,
+        "expected_points": 1.0140534711125642,
+        "team_matches": 11,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.4772347014275222,
+        "p_draw": 0.2789792204767805,
+        "p_win": 0.24378607809569744,
+        "expected_points": 1.0103374547638728,
+        "team_matches": 2,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.4747198704341672,
+        "p_draw": 0.2828985584268366,
+        "p_win": 0.2423815711389963,
+        "expected_points": 1.0100432718438255,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.4784738517926124,
+        "p_draw": 0.27841998282637737,
+        "p_win": 0.24310616538101026,
+        "expected_points": 1.0077384789694082,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.4859435783869282,
+        "p_draw": 0.27160185522177466,
+        "p_win": 0.24245456639129725,
+        "expected_points": 0.9989655543956664,
+        "team_matches": 13,
+        "league_team_matches": 61,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "Arsenal",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "single_supported_formation",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": null,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "사용 사례 기준을 충족한 대형이 하나뿐이어서 대형 간 비교 근거가 부족합니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.19711821590805093,
+        "p_draw": 0.32270940534604775,
+        "p_win": 0.4801723787459018,
+        "expected_points": 1.7632265415837531,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.20324045153519957,
+        "p_draw": 0.33848321318181257,
+        "p_win": 0.4582763352829882,
+        "expected_points": 1.7133122190307772,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.20293817062397845,
+        "p_draw": 0.33948908830772895,
+        "p_win": 0.45757274106829304,
+        "expected_points": 1.712207311512608,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.20541949897429412,
+        "p_draw": 0.33916082233793426,
+        "p_win": 0.45541967868777194,
+        "expected_points": 1.70541985840125,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.20698798048741182,
+        "p_draw": 0.33720758264897827,
+        "p_win": 0.4558044368636103,
+        "expected_points": 1.704620893239809,
+        "team_matches": 0,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.2037235917840886,
+        "p_draw": 0.3436221413623087,
+        "p_win": 0.4526542668536031,
+        "expected_points": 1.701584941923118,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.20683529512513013,
+        "p_draw": 0.3389610534612818,
+        "p_win": 0.4542036514135885,
+        "expected_points": 1.701572007702047,
+        "team_matches": 38,
+        "league_team_matches": 384,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "Aston Villa",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.008609781383220327,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.6164278280678699,
+        "p_draw": 0.22181944586266766,
+        "p_win": 0.1617527260694625,
+        "expected_points": 0.7070776240710552,
+        "team_matches": 8,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.6171937949181105,
+        "p_draw": 0.22497538627891686,
+        "p_win": 0.15783081880297267,
+        "expected_points": 0.6984678426878349,
+        "team_matches": 16,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.6163180202713793,
+        "p_draw": 0.22701472724084096,
+        "p_win": 0.1566672524877799,
+        "expected_points": 0.6970164847041806,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.6226280508559294,
+        "p_draw": 0.21843453023655113,
+        "p_win": 0.15893741890751956,
+        "expected_points": 0.6952467869591098,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 6,
+        "league_team_matches": 11,
+        "supported": true
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 1,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.6236276284649712,
+        "p_draw": 0.22001190748354854,
+        "p_win": 0.1563604640514803,
+        "expected_points": 0.6890932996379895,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.621070923480994,
+        "p_draw": 0.22396292391598846,
+        "p_win": 0.15496615260301763,
+        "expected_points": 0.6888613817250414,
+        "team_matches": 4,
+        "league_team_matches": 15,
+        "supported": true
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.6300142921937318,
+        "p_draw": 0.2153177752151337,
+        "p_win": 0.1546679325911345,
+        "expected_points": 0.6793215729885372,
+        "team_matches": 3,
+        "league_team_matches": 61,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "Chelsea",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "single_supported_formation",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": null,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "사용 사례 기준을 충족한 대형이 하나뿐이어서 대형 간 비교 근거가 부족합니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.2632384113891188,
+        "p_draw": 0.33661523202005833,
+        "p_win": 0.40014635659082315,
+        "expected_points": 1.5370543017925278,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.2635311338091141,
+        "p_draw": 0.34567857276707875,
+        "p_win": 0.39079029342380744,
+        "expected_points": 1.5180494530385011,
+        "team_matches": 37,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.26539688164188374,
+        "p_draw": 0.34565343175108365,
+        "p_win": 0.3889496866070329,
+        "expected_points": 1.5125024915721825,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.2640999173485464,
+        "p_draw": 0.34788889643857257,
+        "p_win": 0.3880111862128814,
+        "expected_points": 1.5119224550772166,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.26812887479616504,
+        "p_draw": 0.3442837838998292,
+        "p_win": 0.38758734130400607,
+        "expected_points": 1.5070458078118474,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.26995927637811634,
+        "p_draw": 0.342268355662131,
+        "p_win": 0.3877723679597529,
+        "expected_points": 1.5055854595413898,
+        "team_matches": 1,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.26480472655578335,
+        "p_draw": 0.35285655667507426,
+        "p_win": 0.3823387167691427,
+        "expected_points": 1.4998727069825024,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Crystal Palace",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.01674329494910798,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.4743345724925281,
+        "p_draw": 0.25674798938967386,
+        "p_win": 0.2689174381177982,
+        "expected_points": 1.0635003037430686,
+        "team_matches": 20,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.47505248153594243,
+        "p_draw": 0.2640427732991061,
+        "p_win": 0.26090474516495155,
+        "expected_points": 1.0467570087939606,
+        "team_matches": 3,
+        "league_team_matches": 60,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.4836299144680276,
+        "p_draw": 0.25200091744895137,
+        "p_win": 0.26436916808302113,
+        "expected_points": 1.0451084216980147,
+        "team_matches": 9,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.48372449789515864,
+        "p_draw": 0.2530719955623669,
+        "p_win": 0.26320350654247443,
+        "expected_points": 1.04268251518979,
+        "team_matches": 2,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.4812900086440308,
+        "p_draw": 0.256890215605346,
+        "p_win": 0.2618197757506233,
+        "expected_points": 1.0423495428572158,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.48431690152327667,
+        "p_draw": 0.25273148655174515,
+        "p_win": 0.26295161192497835,
+        "expected_points": 1.0415863223266801,
+        "team_matches": 2,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.4926118212082135,
+        "p_draw": 0.2455913572609104,
+        "p_win": 0.2617968215308762,
+        "expected_points": 1.030981821853539,
+        "team_matches": 2,
+        "league_team_matches": 61,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Everton",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.022706553726288714,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.4696187049225567,
+        "p_draw": 0.2535989970826269,
+        "p_win": 0.27678229799481674,
+        "expected_points": 1.0839458910670772,
+        "team_matches": 28,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.4816886373503176,
+        "p_draw": 0.24533584856511395,
+        "p_win": 0.27297551408456877,
+        "expected_points": 1.0642623908188202,
+        "team_matches": 1,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.47680826785250463,
+        "p_draw": 0.2531507642770574,
+        "p_win": 0.2700409678704382,
+        "expected_points": 1.0632736678883719,
+        "team_matches": 1,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 1,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.4795351634505402,
+        "p_draw": 0.2495294897222408,
+        "p_win": 0.27093534682721926,
+        "expected_points": 1.0623355302038986,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.4710051016030381,
+        "p_draw": 0.2623297389742825,
+        "p_win": 0.2666651594226797,
+        "expected_points": 1.0623252172423217,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.48012756707865806,
+        "p_draw": 0.24918898071161905,
+        "p_win": 0.2706834522097232,
+        "expected_points": 1.0612393373407885,
+        "team_matches": 6,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.49079240189209317,
+        "p_draw": 0.2411178452982595,
+        "p_win": 0.26808975280964764,
+        "expected_points": 1.0453871037272024,
+        "team_matches": 1,
+        "league_team_matches": 61,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Leicester City",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "single_supported_formation",
+    "exploratory_formation": "4-4-2",
+    "gap_to_next_supported": null,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "사용 사례 기준을 충족한 대형이 하나뿐이어서 대형 간 비교 근거가 부족합니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.1907723595742893,
+        "p_draw": 0.3161861116685474,
+        "p_win": 0.4930415287571637,
+        "expected_points": 1.7953106979400386,
+        "team_matches": 33,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.19743188666852196,
+        "p_draw": 0.3277976410942263,
+        "p_win": 0.4747704722372521,
+        "expected_points": 1.7521090578059826,
+        "team_matches": 1,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.19712960575730085,
+        "p_draw": 0.32880351622014264,
+        "p_win": 0.4740668780225568,
+        "expected_points": 1.751004150287813,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.1995568193668205,
+        "p_draw": 0.3274120093388484,
+        "p_win": 0.47303117129433153,
+        "expected_points": 1.746505523221843,
+        "team_matches": 1,
+        "league_team_matches": 384,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.2005756231879936,
+        "p_draw": 0.3261950835808961,
+        "p_win": 0.47322929323111057,
+        "expected_points": 1.7458829632742279,
+        "team_matches": 2,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.19943297454595577,
+        "p_draw": 0.3285026299165223,
+        "p_win": 0.47206439553752233,
+        "expected_points": 1.7446958165290893,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.19859579119125428,
+        "p_draw": 0.33172792729196177,
+        "p_win": 0.4696762815167843,
+        "expected_points": 1.7407567718423147,
+        "team_matches": 1,
+        "league_team_matches": 60,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Liverpool",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-3-3",
+    "gap_to_next_supported": 0.0011273559373103925,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.2211443241349401,
+        "p_draw": 0.294845615044087,
+        "p_win": 0.4840100608209732,
+        "expected_points": 1.7468757975070066,
+        "team_matches": 2,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 2,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 1,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 2,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.2301431952804808,
+        "p_draw": 0.3013173240504596,
+        "p_win": 0.4685394806690599,
+        "expected_points": 1.7069357660576394,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.22984091436925969,
+        "p_draw": 0.30232319917637596,
+        "p_win": 0.46783588645436464,
+        "expected_points": 1.70583085853947,
+        "team_matches": 1,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.2333855772887762,
+        "p_draw": 0.2995672076730979,
+        "p_win": 0.4670472150381263,
+        "expected_points": 1.7007088527874767,
+        "team_matches": 11,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.23395084307137834,
+        "p_draw": 0.29928298696784966,
+        "p_win": 0.46676616996077225,
+        "expected_points": 1.6995814968501664,
+        "team_matches": 6,
+        "league_team_matches": 61,
+        "supported": true
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.23267901353078513,
+        "p_draw": 0.3015176613405485,
+        "p_win": 0.4658033251286667,
+        "expected_points": 1.6989276367265487,
+        "team_matches": 13,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.2303328741792611,
+        "p_draw": 0.30632250517059106,
+        "p_win": 0.46334462065014814,
+        "expected_points": 1.6963563671210355,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Manchester City",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "candidate_recommendation",
+    "exploratory_formation": "4-4-2",
+    "gap_to_next_supported": 0.031793969788542986,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.20344626093617146,
+        "p_draw": 0.32399510777250046,
+        "p_win": 0.47255863129132836,
+        "expected_points": 1.7416710016464856,
+        "team_matches": 13,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.20997301794223053,
+        "p_draw": 0.33010195715768326,
+        "p_win": 0.4599250249000864,
+        "expected_points": 1.7098770318579426,
+        "team_matches": 24,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.2087576017958115,
+        "p_draw": 0.3325282389290367,
+        "p_win": 0.4587141592751521,
+        "expected_points": 1.708670716754493,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.21104125814794084,
+        "p_draw": 0.3314790806896377,
+        "p_win": 0.4574796611624217,
+        "expected_points": 1.703918064176903,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.2125938172544675,
+        "p_draw": 0.33048630607401036,
+        "p_win": 0.4569198766715224,
+        "expected_points": 1.7012459360885777,
+        "team_matches": 1,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.21017981431247418,
+        "p_draw": 0.336498892402298,
+        "p_win": 0.4533212932852281,
+        "expected_points": 1.6964627722579824,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Manchester United",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.0025683392039774766,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.20373932505090966,
+        "p_draw": 0.3389059675777462,
+        "p_win": 0.4573547073713446,
+        "expected_points": 1.7109700896917799,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 2,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 1,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.21061240387260474,
+        "p_draw": 0.3528303260931349,
+        "p_win": 0.43655727003426076,
+        "expected_points": 1.6625021361959171,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.2103101229613836,
+        "p_draw": 0.3538362012190513,
+        "p_win": 0.43585367581956547,
+        "expected_points": 1.6613972286777476,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.21261349175003852,
+        "p_draw": 0.3535353149154309,
+        "p_win": 0.433851193334531,
+        "expected_points": 1.655088894919024,
+        "team_matches": 1,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.21437864265825302,
+        "p_draw": 0.35106174434578447,
+        "p_win": 0.4345596129959629,
+        "expected_points": 1.654740583333673,
+        "team_matches": 0,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.21511534416672617,
+        "p_draw": 0.3508801847883346,
+        "p_win": 0.4340044710449396,
+        "expected_points": 1.6528935979231534,
+        "team_matches": 25,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.21116643029214432,
+        "p_draw": 0.3580877252021962,
+        "p_win": 0.43074584450565984,
+        "expected_points": 1.650325258719176,
+        "team_matches": 9,
+        "league_team_matches": 60,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "Newcastle United",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.020554697136989875,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.4009553231264375,
+        "p_draw": 0.31293995807273534,
+        "p_win": 0.2861047188008276,
+        "expected_points": 1.171254114475218,
+        "team_matches": 25,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.41565228704607443,
+        "p_draw": 0.3011718607617748,
+        "p_win": 0.2831758521921511,
+        "expected_points": 1.1506994173382281,
+        "team_matches": 7,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.40581098339095384,
+        "p_draw": 0.3167583724363389,
+        "p_win": 0.27743064417270763,
+        "expected_points": 1.1490503049544618,
+        "team_matches": 1,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 1,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.41305518203099334,
+        "p_draw": 0.30780634879950575,
+        "p_win": 0.2791384691695013,
+        "expected_points": 1.1452217563080096,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.4117544712901283,
+        "p_draw": 0.31026570732387126,
+        "p_win": 0.2779798213860008,
+        "expected_points": 1.1442051714818737,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.41387483869954644,
+        "p_draw": 0.3076166271836381,
+        "p_win": 0.27850853411681586,
+        "expected_points": 1.1431422295340856,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.42450610429455615,
+        "p_draw": 0.29741675697060527,
+        "p_win": 0.278077138734839,
+        "expected_points": 1.1316481731751222,
+        "team_matches": 4,
+        "league_team_matches": 61,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "Norwich City",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.014903013950121946,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.5141427975602417,
+        "p_draw": 0.24165133502666383,
+        "p_win": 0.24420586741309447,
+        "expected_points": 0.9742689372659472,
+        "team_matches": 10,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.5138828195835383,
+        "p_draw": 0.24949280896678017,
+        "p_win": 0.23662437144968168,
+        "expected_points": 0.9593659233158253,
+        "team_matches": 3,
+        "league_team_matches": 60,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.5228903919082182,
+        "p_draw": 0.23684546946823923,
+        "p_win": 0.2402641386235426,
+        "expected_points": 0.9576378853388671,
+        "team_matches": 1,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 2,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 1,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.5233770786875848,
+        "p_draw": 0.23817773592659272,
+        "p_win": 0.23844518538582252,
+        "expected_points": 0.9535132920840603,
+        "team_matches": 1,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.520942589436457,
+        "p_draw": 0.24199595596957177,
+        "p_win": 0.23706145459397132,
+        "expected_points": 0.9531803197514858,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.5239694823157027,
+        "p_draw": 0.23783722691597092,
+        "p_win": 0.2381932907683264,
+        "expected_points": 0.9524170992209502,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.5329103744887246,
+        "p_draw": 0.23059520932736616,
+        "p_win": 0.2364944161839093,
+        "expected_points": 0.9400784578790939,
+        "team_matches": 20,
+        "league_team_matches": 61,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "Southampton",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-4-2",
+    "gap_to_next_supported": 0.029092788993520413,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.19230625831100295,
+        "p_draw": 0.3643806386627717,
+        "p_win": 0.4433131030262256,
+        "expected_points": 1.6943199477414486,
+        "team_matches": 3,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.19487499911645487,
+        "p_draw": 0.3750739219513541,
+        "p_win": 0.43005107893219136,
+        "expected_points": 1.6652271587479281,
+        "team_matches": 24,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 2,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 2,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 3,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 1,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.1935245738851872,
+        "p_draw": 0.37768728292092935,
+        "p_win": 0.4287881431938838,
+        "expected_points": 1.6640517125025807,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.1932222929739661,
+        "p_draw": 0.37869315804684567,
+        "p_win": 0.42808454897918863,
+        "expected_points": 1.6629468049844114,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.19580823023731658,
+        "p_draw": 0.3766381246815303,
+        "p_win": 0.4275536450811534,
+        "expected_points": 1.6592990599249904,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.19736078934384327,
+        "p_draw": 0.375645350065903,
+        "p_win": 0.4269938605902541,
+        "expected_points": 1.6566269318366653,
+        "team_matches": 1,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.19447736256933412,
+        "p_draw": 0.38232380741254085,
+        "p_win": 0.42319883001812536,
+        "expected_points": 1.651920297466917,
+        "team_matches": 2,
+        "league_team_matches": 60,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Stoke City",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "single_supported_formation",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": null,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "사용 사례 기준을 충족한 대형이 하나뿐이어서 대형 간 비교 근거가 부족합니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.43525222764609345,
+        "p_draw": 0.2581735089928505,
+        "p_win": 0.30657426336105614,
+        "expected_points": 1.177896299076019,
+        "team_matches": 34,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.44332484892628965,
+        "p_draw": 0.25148065265363445,
+        "p_win": 0.3051944984200759,
+        "expected_points": 1.1670641479138621,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.44319809625097434,
+        "p_draw": 0.2553920163313206,
+        "p_win": 0.3014098874177052,
+        "expected_points": 1.1596216785844362,
+        "team_matches": 1,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.4406832652576192,
+        "p_draw": 0.25931135428137675,
+        "p_win": 0.3000053804610041,
+        "expected_points": 1.159327495664389,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.4437510186120519,
+        "p_draw": 0.2555018263050714,
+        "p_win": 0.30074715508287675,
+        "expected_points": 1.1577432915537016,
+        "team_matches": 2,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.4378540036748303,
+        "p_draw": 0.2675442251904843,
+        "p_win": 0.29460177113468555,
+        "expected_points": 1.151349538594541,
+        "team_matches": 1,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.4513038715095188,
+        "p_draw": 0.24892326780710766,
+        "p_win": 0.29977286068337367,
+        "expected_points": 1.1482418498572287,
+        "team_matches": 0,
+        "league_team_matches": 61,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Sunderland",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.02272939756622505,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.40509151707081503,
+        "p_draw": 0.3073853683070476,
+        "p_win": 0.2875231146221375,
+        "expected_points": 1.16995471217346,
+        "team_matches": 10,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.4195301141145742,
+        "p_draw": 0.2945711856888801,
+        "p_win": 0.28589870019654584,
+        "expected_points": 1.1522672862785175,
+        "team_matches": 1,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 1,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 1,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 1,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 3,
+        "league_team_matches": 11,
+        "supported": true
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.4163070529062911,
+        "p_draw": 0.301926763336946,
+        "p_win": 0.28176618375676293,
+        "expected_points": 1.1472253146072349,
+        "team_matches": 2,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.41433907570868594,
+        "p_draw": 0.30489701447746737,
+        "p_win": 0.2807639098138468,
+        "expected_points": 1.1471887439190078,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.41712670957484427,
+        "p_draw": 0.30173704172107846,
+        "p_win": 0.28113624870407744,
+        "expected_points": 1.145145787833311,
+        "team_matches": 3,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.41057928016205403,
+        "p_draw": 0.3118926788206256,
+        "p_win": 0.2775280410173206,
+        "expected_points": 1.1444768018725873,
+        "team_matches": 16,
+        "league_team_matches": 60,
+        "supported": true
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.42785541356188467,
+        "p_draw": 0.29116009499635337,
+        "p_win": 0.2809844914417622,
+        "expected_points": 1.13411356932164,
+        "team_matches": 0,
+        "league_team_matches": 61,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Swansea City",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.012183420072872986,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.3815785252611333,
+        "p_draw": 0.2970598577603014,
+        "p_win": 0.32136161697856547,
+        "expected_points": 1.2611447086959977,
+        "team_matches": 22,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.3894175487426284,
+        "p_draw": 0.2874935177779198,
+        "p_win": 0.3230889334794519,
+        "expected_points": 1.2567603182162754,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.3850802439131695,
+        "p_draw": 0.2978989898186837,
+        "p_win": 0.317020766268147,
+        "expected_points": 1.2489612886231247,
+        "team_matches": 6,
+        "league_team_matches": 15,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 2,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.3877267977689778,
+        "p_draw": 0.2943788331709442,
+        "p_win": 0.3178943690600782,
+        "expected_points": 1.2480619403511788,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.3882797201300554,
+        "p_draw": 0.29448864314469503,
+        "p_win": 0.31723163672524973,
+        "expected_points": 1.2461835533204444,
+        "team_matches": 6,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.3829025638727344,
+        "p_draw": 0.30666233439270346,
+        "p_win": 0.31043510173456235,
+        "expected_points": 1.2379676395963906,
+        "team_matches": 1,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.39786468671184677,
+        "p_draw": 0.2865356407815613,
+        "p_win": 0.31559967250659215,
+        "expected_points": 1.2333346583013378,
+        "team_matches": 1,
+        "league_team_matches": 61,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Tottenham Hotspur",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "single_supported_formation",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": null,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "사용 사례 기준을 충족한 대형이 하나뿐이어서 대형 간 비교 근거가 부족합니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.20801190879017598,
+        "p_draw": 0.31557791414158737,
+        "p_win": 0.4764101770682371,
+        "expected_points": 1.7448084453462986,
+        "team_matches": 0,
+        "league_team_matches": 120,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 1,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 1,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.21444042902489896,
+        "p_draw": 0.326632415141773,
+        "p_win": 0.4589271558333283,
+        "expected_points": 1.703413882641758,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.21413814811367785,
+        "p_draw": 0.3276382902676894,
+        "p_win": 0.45822356161863304,
+        "expected_points": 1.7023089751235885,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.2167402992732912,
+        "p_draw": 0.3254265225718331,
+        "p_win": 0.457833178154876,
+        "expected_points": 1.698926057036461,
+        "team_matches": 0,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.2176238142145801,
+        "p_draw": 0.3248490405238514,
+        "p_win": 0.4575271452615688,
+        "expected_points": 1.6974304763085577,
+        "team_matches": 0,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.2182079669892674,
+        "p_draw": 0.3246169670742692,
+        "p_win": 0.4571750659364638,
+        "expected_points": 1.6961421648836605,
+        "team_matches": 36,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.21524569812532865,
+        "p_draw": 0.33116658387463044,
+        "p_win": 0.4535877180000412,
+        "expected_points": 1.6919297378747542,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "Watford",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.017441881251301306,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.49403888587568434,
+        "p_draw": 0.25956656515041115,
+        "p_win": 0.24639454897390473,
+        "expected_points": 0.9987502120721252,
+        "team_matches": 6,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.4927385215821772,
+        "p_draw": 0.26669952206447384,
+        "p_win": 0.2405619563533492,
+        "expected_points": 0.9883853911245215,
+        "team_matches": 0,
+        "league_team_matches": 60,
+        "supported": false
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.5020779560940515,
+        "p_draw": 0.25620796222179326,
+        "p_win": 0.24171408168415534,
+        "expected_points": 0.9813502072742593,
+        "team_matches": 0,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.5000183269527562,
+        "p_draw": 0.25931834416045413,
+        "p_win": 0.2406633288867899,
+        "expected_points": 0.9813083308208239,
+        "team_matches": 3,
+        "league_team_matches": 15,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.5036565357020157,
+        "p_draw": 0.254092239548378,
+        "p_win": 0.2422512247496064,
+        "expected_points": 0.9808459137971972,
+        "team_matches": 27,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.5026703597221696,
+        "p_draw": 0.25586745321117155,
+        "p_win": 0.2414621870666592,
+        "expected_points": 0.9802540144111491,
+        "team_matches": 1,
+        "league_team_matches": 65,
+        "supported": false
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.5093087648589251,
+        "p_draw": 0.25008559754938287,
+        "p_win": 0.24060563759169232,
+        "expected_points": 0.9719025103244598,
+        "team_matches": 1,
+        "league_team_matches": 61,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "team": "West Bromwich Albion",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-2-3-1",
+    "gap_to_next_supported": 0.017943301326494687,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.4598903274941741,
+        "p_draw": 0.26764001346663335,
+        "p_win": 0.27246965903919274,
+        "expected_points": 1.0850489905842116,
+        "team_matches": 11,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.4622182130199101,
+        "p_draw": 0.2731198358412767,
+        "p_win": 0.2646619511388134,
+        "expected_points": 1.0671056892577169,
+        "team_matches": 5,
+        "league_team_matches": 60,
+        "supported": true
+      },
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.47150940523084756,
+        "p_draw": 0.2610006771184688,
+        "p_win": 0.26748991765068386,
+        "expected_points": 1.0634704300705204,
+        "team_matches": 9,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 0,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 0,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 0,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.47012929570049594,
+        "p_draw": 0.2630815725920045,
+        "p_win": 0.2667891317074997,
+        "expected_points": 1.0634489677145034,
+        "team_matches": 3,
+        "league_team_matches": 13,
+        "supported": true
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.46762380177530155,
+        "p_draw": 0.2669375167634966,
+        "p_win": 0.26543868146120203,
+        "expected_points": 1.0632535611471028,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.47072169932861385,
+        "p_draw": 0.2627410635813827,
+        "p_win": 0.26653723709000354,
+        "expected_points": 1.0623527748513935,
+        "team_matches": 5,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.4806163436081267,
+        "p_draw": 0.25477848900393524,
+        "p_win": 0.2646051673879382,
+        "expected_points": 1.04859399116775,
+        "team_matches": 5,
+        "league_team_matches": 61,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "team": "West Ham United",
+    "season": "2015/2016",
+    "as_of": "2016-05-24",
+    "context": "Equal average over 19 opponents and home/away; historical snapshot",
+    "recommended_formation": null,
+    "status": "not_validated",
+    "comparison_status": "near_tie",
+    "exploratory_formation": "4-4-2",
+    "gap_to_next_supported": 0.027004812695899494,
+    "support_floor": {
+      "team": 3,
+      "league_team_rows": 10
+    },
+    "warnings": [
+      "관측 데이터에 따른 후보 순위이며, 최적 전술이나 실제 승점 향상을 보장하지 않습니다.",
+      "상위 두 대형의 기대 승점 차이가 0.03 미만으로 작습니다. 통계적 유의성을 뜻하지 않습니다."
+    ],
+    "candidates": [
+      {
+        "formation": "4-4-2",
+        "p_loss": 0.19073579082521794,
+        "p_draw": 0.35305710195205753,
+        "p_win": 0.4562071072227249,
+        "expected_points": 1.721678423620232,
+        "team_matches": 3,
+        "league_team_matches": 120,
+        "supported": true
+      },
+      {
+        "formation": "4-2-3-1",
+        "p_loss": 0.195339633568996,
+        "p_draw": 0.35965374418434043,
+        "p_win": 0.44500662224666404,
+        "expected_points": 1.6946736109243326,
+        "team_matches": 12,
+        "league_team_matches": 384,
+        "supported": true
+      },
+      {
+        "formation": "3-4-1-2",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 1,
+        "league_team_matches": 8,
+        "supported": false
+      },
+      {
+        "formation": "3-4-2-1",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 0,
+        "league_team_matches": 6,
+        "supported": false
+      },
+      {
+        "formation": "3-4-3",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 2,
+        "league_team_matches": 9,
+        "supported": false
+      },
+      {
+        "formation": "3-5-2",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 0,
+        "league_team_matches": 11,
+        "supported": false
+      },
+      {
+        "formation": "4-2-2-2",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 0,
+        "league_team_matches": 1,
+        "supported": false
+      },
+      {
+        "formation": "4-3-2-1",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 1,
+        "league_team_matches": 7,
+        "supported": false
+      },
+      {
+        "formation": "4-5-1",
+        "p_loss": 0.19376397832261594,
+        "p_draw": 0.36243932358234604,
+        "p_win": 0.44379669809503836,
+        "expected_points": 1.693829417867461,
+        "team_matches": 1,
+        "league_team_matches": 13,
+        "supported": false
+      },
+      {
+        "formation": "4-1-2-1-2",
+        "p_loss": 0.19346169741139482,
+        "p_draw": 0.36344519870826236,
+        "p_win": 0.4430931038803432,
+        "expected_points": 1.6927245103492918,
+        "team_matches": 0,
+        "league_team_matches": 15,
+        "supported": false
+      },
+      {
+        "formation": "4-3-3",
+        "p_loss": 0.1960476346747453,
+        "p_draw": 0.36139016534294705,
+        "p_win": 0.44256219998230795,
+        "expected_points": 1.6890767652898708,
+        "team_matches": 12,
+        "league_team_matches": 65,
+        "supported": true
+      },
+      {
+        "formation": "4-4-1-1",
+        "p_loss": 0.19760019378127197,
+        "p_draw": 0.3603973907273197,
+        "p_win": 0.4420024154914087,
+        "expected_points": 1.6864046372015458,
+        "team_matches": 0,
+        "league_team_matches": 61,
+        "supported": false
+      },
+      {
+        "formation": "4-1-4-1",
+        "p_loss": 0.19526585830785587,
+        "p_draw": 0.36740096340558503,
+        "p_win": 0.4373331782865594,
+        "expected_points": 1.679400498265263,
+        "team_matches": 6,
+        "league_team_matches": 60,
+        "supported": true
+      }
+    ]
+  }
+]

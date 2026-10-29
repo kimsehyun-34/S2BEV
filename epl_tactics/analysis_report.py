@@ -235,11 +235,11 @@ ESPN 공개 웹 데이터에서 {data['matches']:,}경기를 수집했습니다.
 <div><strong>{data['test_matches']}</strong><span>순차 테스트 경기</span></div><div><strong>{_percent(selected['accuracy'])}</strong><span>검증에서 선택한 모델의 결과 예측 정확도</span></div></div>
 <p>위 정확도는 전술 추천 성공률이 아닙니다. 기존 52.5%와 표본이 달라 직접 개선폭으로 비교하지 않습니다.</p>
 <img src="data:image/png;base64,{png}" alt="같은 테스트 경기의 모델별 정확도와 개선폭 신뢰구간">
-{content}<section><h2>결과 파일</h2><p><a href="analysis.md">상세 분석 문서</a> · <a href="benchmark_metrics.json">전체 지표 JSON</a> · <a href="benchmark.svg">그래프 SVG</a></p>
+{content}<section><h2>결과 파일</h2><p><a href="analysis.md">상세 분석 문서</a> · <a href="benchmark_metrics.json">전체 지표 JSON</a> · <a href="benchmark.svg">그래프 SVG</a> · <a href="index.html">팀별 전술대형 탐색 화면</a></p>
 <p><a href="tactical_feasibility.csv">팀별 분석 가능성 CSV</a> · 실행 방법은 프로젝트 README를 확인하세요. 전술 추천 API는 검증되지 않은 최적 대형을 반환하지 않습니다.</p></section>
 <footer>Sources: <a href="https://www.espn.com/soccer/lineups/_/gameId/704467">ESPN match lineups</a> · <a href="https://football-data.co.uk/englandm.php">Football-Data</a>.
 ESPN 데이터는 공개 웹 인터페이스에서 로컬 연구용으로 수집했으며 오픈 라이선스를 주장하지 않습니다. 기존 StatsBomb 2015/16 실험은 별도 감사에만 사용했습니다.</footer>
 </main></body></html>'''
-    result = directory / "index.html"
+    result = directory / "analysis.html"
     result.write_text(page, encoding="utf-8")
     return result

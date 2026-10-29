@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "637991",
+    "date": "2023-01-01",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "637992",
+    "date": "2023-01-01",
+    "home_team": "Nottingham Forest",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638001",
+    "date": "2023-01-02",
+    "home_team": "Brentford",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "637999",
+    "date": "2023-01-03",
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "638007",
+    "date": "2023-01-03",
+    "home_team": "Manchester United",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "638003",
+    "date": "2023-01-04",
+    "home_team": "Crystal Palace",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638002",
+    "date": "2023-01-05",
+    "home_team": "Chelsea",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638261",
+    "date": "2023-01-12",
+    "home_team": "Fulham",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638015",
+    "date": "2023-01-14",
+    "home_team": "Manchester United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638018",
+    "date": "2023-01-14",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638017",
+    "date": "2023-01-15",
+    "home_team": "Chelsea",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "638012",
+    "date": "2023-01-15",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "637886",
+    "date": "2023-01-18",
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638263",
+    "date": "2023-01-19",
+    "home_team": "Manchester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638022",
+    "date": "2023-01-21",
+    "home_team": "Liverpool",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638021",
+    "date": "2023-01-22",
+    "home_team": "Manchester City",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "638019",
+    "date": "2023-01-22",
+    "home_team": "Arsenal",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638025",
+    "date": "2023-01-23",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638034",
+    "date": "2023-02-03",
+    "home_team": "Chelsea",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "638038",
+    "date": "2023-02-04",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638032",
+    "date": "2023-02-04",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "638033",
+    "date": "2023-02-04",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638029",
+    "date": "2023-02-05",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "637889",
+    "date": "2023-02-08",
+    "home_team": "Manchester United",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "638048",
+    "date": "2023-02-11",
+    "home_team": "West Ham United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638047",
+    "date": "2023-02-11",
+    "home_team": "Arsenal",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "638042",
+    "date": "2023-02-11",
+    "home_team": "Leicester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638043",
+    "date": "2023-02-12",
+    "home_team": "Leeds United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638040",
+    "date": "2023-02-12",
+    "home_team": "Manchester City",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "638041",
+    "date": "2023-02-13",
+    "home_team": "Liverpool",
+    "away_team": "Everton"
+  },
+  {
+    "id": "637931",
+    "date": "2023-02-15",
+    "home_team": "Arsenal",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638049",
+    "date": "2023-02-18",
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638057",
+    "date": "2023-02-18",
+    "home_team": "Chelsea",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "638053",
+    "date": "2023-02-18",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638054",
+    "date": "2023-02-18",
+    "home_team": "Newcastle United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638055",
+    "date": "2023-02-19",
+    "home_team": "Manchester United",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "638052",
+    "date": "2023-02-19",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "638068",
+    "date": "2023-02-25",
+    "home_team": "Leicester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638059",
+    "date": "2023-02-25",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638067",
+    "date": "2023-02-25",
+    "home_team": "Crystal Palace",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638060",
+    "date": "2023-02-26",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "637888",
+    "date": "2023-03-01",
+    "home_team": "Arsenal",
+    "away_team": "Everton"
+  },
+  {
+    "id": "638260",
+    "date": "2023-03-01",
+    "home_team": "Liverpool",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "638075",
+    "date": "2023-03-04",
+    "home_team": "Manchester City",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "638072",
+    "date": "2023-03-04",
+    "home_team": "Arsenal",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "638078",
+    "date": "2023-03-04",
+    "home_team": "Chelsea",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "638073",
+    "date": "2023-03-04",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638074",
+    "date": "2023-03-05",
+    "home_team": "Liverpool",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638082",
+    "date": "2023-03-11",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638088",
+    "date": "2023-03-11",
+    "home_team": "Leicester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638085",
+    "date": "2023-03-11",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "638081",
+    "date": "2023-03-11",
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638079",
+    "date": "2023-03-12",
+    "home_team": "Fulham",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638087",
+    "date": "2023-03-12",
+    "home_team": "Manchester United",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "638098",
+    "date": "2023-03-18",
+    "home_team": "Southampton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638097",
+    "date": "2023-03-18",
+    "home_team": "Chelsea",
+    "away_team": "Everton"
+  },
+  {
+    "id": "638089",
+    "date": "2023-03-19",
+    "home_team": "Arsenal",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "638108",
+    "date": "2023-04-01",
+    "home_team": "Manchester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638102",
+    "date": "2023-04-01",
+    "home_team": "Arsenal",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "638105",
+    "date": "2023-04-01",
+    "home_team": "Chelsea",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "638100",
+    "date": "2023-04-02",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638107",
+    "date": "2023-04-03",
+    "home_team": "Everton",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "637891",
+    "date": "2023-04-04",
+    "home_team": "Chelsea",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638062",
+    "date": "2023-04-05",
+    "home_team": "Manchester United",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "638112",
+    "date": "2023-04-08",
+    "home_team": "Manchester United",
+    "away_team": "Everton"
+  },
+  {
+    "id": "638110",
+    "date": "2023-04-08",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "638113",
+    "date": "2023-04-08",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638111",
+    "date": "2023-04-08",
+    "home_team": "Southampton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638118",
+    "date": "2023-04-09",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638126",
+    "date": "2023-04-15",
+    "home_team": "Chelsea",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "638120",
+    "date": "2023-04-15",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "638123",
+    "date": "2023-04-15",
+    "home_team": "Manchester City",
+    "away_team": "Leicester City"
+  },
+  {
+    "id": "638119",
+    "date": "2023-04-16",
+    "home_team": "West Ham United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638122",
+    "date": "2023-04-16",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638124",
+    "date": "2023-04-17",
+    "home_team": "Leeds United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638129",
+    "date": "2023-04-21",
+    "home_team": "Arsenal",
+    "away_team": "Southampton"
+  },
+  {
+    "id": "638136",
+    "date": "2023-04-22",
+    "home_team": "Liverpool",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "638133",
+    "date": "2023-04-23",
+    "home_team": "Newcastle United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638146",
+    "date": "2023-04-26",
+    "home_team": "Chelsea",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "638141",
+    "date": "2023-04-26",
+    "home_team": "West Ham United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638148",
+    "date": "2023-04-26",
+    "home_team": "Manchester City",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638139",
+    "date": "2023-04-27",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638152",
+    "date": "2023-04-30",
+    "home_team": "Fulham",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638157",
+    "date": "2023-04-30",
+    "home_team": "Manchester United",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "638149",
+    "date": "2023-04-30",
+    "home_team": "Liverpool",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638156",
+    "date": "2023-05-02",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638096",
+    "date": "2023-05-03",
+    "home_team": "Liverpool",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "638095",
+    "date": "2023-05-03",
+    "home_team": "Manchester City",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "638092",
+    "date": "2023-05-04",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638167",
+    "date": "2023-05-06",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638168",
+    "date": "2023-05-06",
+    "home_team": "Manchester City",
+    "away_team": "Leeds United"
+  },
+  {
+    "id": "638160",
+    "date": "2023-05-06",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "638164",
+    "date": "2023-05-06",
+    "home_team": "Liverpool",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "638162",
+    "date": "2023-05-07",
+    "home_team": "Newcastle United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638159",
+    "date": "2023-05-07",
+    "home_team": "West Ham United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638176",
+    "date": "2023-05-13",
+    "home_team": "Aston Villa",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638174",
+    "date": "2023-05-13",
+    "home_team": "Chelsea",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "638169",
+    "date": "2023-05-13",
+    "home_team": "Manchester United",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "638172",
+    "date": "2023-05-14",
+    "home_team": "Everton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638177",
+    "date": "2023-05-14",
+    "home_team": "Arsenal",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "638170",
+    "date": "2023-05-15",
+    "home_team": "Leicester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "638183",
+    "date": "2023-05-20",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "638179",
+    "date": "2023-05-20",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "638187",
+    "date": "2023-05-20",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "638184",
+    "date": "2023-05-20",
+    "home_team": "Nottingham Forest",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "638186",
+    "date": "2023-05-21",
+    "home_team": "Manchester City",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638132",
+    "date": "2023-05-24",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638137",
+    "date": "2023-05-25",
+    "home_team": "Manchester United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "638189",
+    "date": "2023-05-28",
+    "home_team": "Arsenal",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "638196",
+    "date": "2023-05-28",
+    "home_team": "Brentford",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "638195",
+    "date": "2023-05-28",
+    "home_team": "Chelsea",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "638192",
+    "date": "2023-05-28",
+    "home_team": "Leeds United",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "638190",
+    "date": "2023-05-28",
+    "home_team": "Manchester United",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "638193",
+    "date": "2023-05-28",
+    "home_team": "Southampton",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671031",
+    "date": "2023-08-11",
+    "home_team": "Burnley",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671032",
+    "date": "2023-08-12",
+    "home_team": "Arsenal",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "671038",
+    "date": "2023-08-13",
+    "home_team": "Brentford",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671039",
+    "date": "2023-08-13",
+    "home_team": "Chelsea",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671040",
+    "date": "2023-08-14",
+    "home_team": "Manchester United",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "671044",
+    "date": "2023-08-19",
+    "home_team": "Liverpool",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "671048",
+    "date": "2023-08-19",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671046",
+    "date": "2023-08-19",
+    "home_team": "Manchester City",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "671049",
+    "date": "2023-08-20",
+    "home_team": "West Ham United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671042",
+    "date": "2023-08-21",
+    "home_team": "Crystal Palace",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671056",
+    "date": "2023-08-25",
+    "home_team": "Chelsea",
+    "away_team": "Luton Town"
+  },
+  {
+    "id": "671052",
+    "date": "2023-08-26",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671051",
+    "date": "2023-08-26",
+    "home_team": "Arsenal",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "671058",
+    "date": "2023-08-26",
+    "home_team": "Manchester United",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "671059",
+    "date": "2023-08-27",
+    "home_team": "Sheffield United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671055",
+    "date": "2023-08-27",
+    "home_team": "Newcastle United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671061",
+    "date": "2023-09-02",
+    "home_team": "Burnley",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671062",
+    "date": "2023-09-02",
+    "home_team": "Chelsea",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "671066",
+    "date": "2023-09-02",
+    "home_team": "Manchester City",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "671064",
+    "date": "2023-09-03",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "671065",
+    "date": "2023-09-03",
+    "home_team": "Arsenal",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671080",
+    "date": "2023-09-16",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671075",
+    "date": "2023-09-16",
+    "home_team": "Manchester United",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "671079",
+    "date": "2023-09-16",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "671078",
+    "date": "2023-09-16",
+    "home_team": "West Ham United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671072",
+    "date": "2023-09-17",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671073",
+    "date": "2023-09-17",
+    "home_team": "Everton",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671081",
+    "date": "2023-09-23",
+    "home_team": "Manchester City",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "671088",
+    "date": "2023-09-23",
+    "home_team": "Burnley",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671085",
+    "date": "2023-09-24",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671083",
+    "date": "2023-09-24",
+    "home_team": "Chelsea",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "671090",
+    "date": "2023-09-24",
+    "home_team": "Liverpool",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "671099",
+    "date": "2023-09-30",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671092",
+    "date": "2023-09-30",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "671097",
+    "date": "2023-09-30",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671100",
+    "date": "2023-09-30",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671093",
+    "date": "2023-10-02",
+    "home_team": "Fulham",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671107",
+    "date": "2023-10-07",
+    "home_team": "Luton Town",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671103",
+    "date": "2023-10-07",
+    "home_team": "Burnley",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671108",
+    "date": "2023-10-07",
+    "home_team": "Manchester United",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "671102",
+    "date": "2023-10-08",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671101",
+    "date": "2023-10-08",
+    "home_team": "Arsenal",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671115",
+    "date": "2023-10-21",
+    "home_team": "Liverpool",
+    "away_team": "Everton"
+  },
+  {
+    "id": "671113",
+    "date": "2023-10-21",
+    "home_team": "Manchester City",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "671114",
+    "date": "2023-10-21",
+    "home_team": "Chelsea",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671119",
+    "date": "2023-10-21",
+    "home_team": "Sheffield United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671116",
+    "date": "2023-10-23",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "671126",
+    "date": "2023-10-27",
+    "home_team": "Crystal Palace",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671130",
+    "date": "2023-10-28",
+    "home_team": "Chelsea",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "671122",
+    "date": "2023-10-28",
+    "home_team": "Arsenal",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "671127",
+    "date": "2023-10-29",
+    "home_team": "Liverpool",
+    "away_team": "Nottingham Forest"
+  },
+  {
+    "id": "671128",
+    "date": "2023-10-29",
+    "home_team": "Manchester United",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671131",
+    "date": "2023-11-04",
+    "home_team": "Fulham",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671136",
+    "date": "2023-11-04",
+    "home_team": "Manchester City",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "671137",
+    "date": "2023-11-04",
+    "home_team": "Newcastle United",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671135",
+    "date": "2023-11-05",
+    "home_team": "Luton Town",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671139",
+    "date": "2023-11-06",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671144",
+    "date": "2023-11-11",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671146",
+    "date": "2023-11-11",
+    "home_team": "Arsenal",
+    "away_team": "Burnley"
+  },
+  {
+    "id": "671142",
+    "date": "2023-11-11",
+    "home_team": "Manchester United",
+    "away_team": "Luton Town"
+  },
+  {
+    "id": "671141",
+    "date": "2023-11-12",
+    "home_team": "Liverpool",
+    "away_team": "Brentford"
+  },
+  {
+    "id": "671150",
+    "date": "2023-11-12",
+    "home_team": "Chelsea",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671154",
+    "date": "2023-11-25",
+    "home_team": "Manchester City",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671153",
+    "date": "2023-11-25",
+    "home_team": "Newcastle United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671160",
+    "date": "2023-11-25",
+    "home_team": "Brentford",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671151",
+    "date": "2023-11-26",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "671157",
+    "date": "2023-11-26",
+    "home_team": "Everton",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671162",
+    "date": "2023-12-02",
+    "home_team": "Arsenal",
+    "away_team": "Wolverhampton Wanderers"
+  },
+  {
+    "id": "671165",
+    "date": "2023-12-02",
+    "home_team": "Newcastle United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671163",
+    "date": "2023-12-03",
+    "home_team": "Chelsea",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "671167",
+    "date": "2023-12-03",
+    "home_team": "Liverpool",
+    "away_team": "Fulham"
+  },
+  {
+    "id": "671166",
+    "date": "2023-12-03",
+    "home_team": "Manchester City",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671175",
+    "date": "2023-12-05",
+    "home_team": "Luton Town",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671172",
+    "date": "2023-12-06",
+    "home_team": "Sheffield United",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671173",
+    "date": "2023-12-06",
+    "home_team": "Aston Villa",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671180",
+    "date": "2023-12-06",
+    "home_team": "Manchester United",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671176",
+    "date": "2023-12-07",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "671182",
+    "date": "2023-12-09",
+    "home_team": "Crystal Palace",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671184",
+    "date": "2023-12-09",
+    "home_team": "Manchester United",
+    "away_team": "AFC Bournemouth"
+  },
+  {
+    "id": "671188",
+    "date": "2023-12-09",
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671190",
+    "date": "2023-12-10",
+    "home_team": "Everton",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671185",
+    "date": "2023-12-10",
+    "home_team": "Luton Town",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671189",
+    "date": "2023-12-10",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Newcastle United"
+  },
+  {
+    "id": "671197",
+    "date": "2023-12-15",
+    "home_team": "Nottingham Forest",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671191",
+    "date": "2023-12-16",
+    "home_team": "Chelsea",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "671199",
+    "date": "2023-12-16",
+    "home_team": "Manchester City",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "671200",
+    "date": "2023-12-17",
+    "home_team": "Arsenal",
+    "away_team": "Brighton & Hove Albion"
+  },
+  {
+    "id": "671195",
+    "date": "2023-12-17",
+    "home_team": "Liverpool",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671206",
+    "date": "2023-12-23",
+    "home_team": "West Ham United",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671205",
+    "date": "2023-12-23",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Everton"
+  },
+  {
+    "id": "671201",
+    "date": "2023-12-23",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671207",
+    "date": "2023-12-24",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671212",
+    "date": "2023-12-26",
+    "home_team": "Burnley",
+    "away_team": "Liverpool"
+  },
+  {
+    "id": "671215",
+    "date": "2023-12-26",
+    "home_team": "Manchester United",
+    "away_team": "Aston Villa"
+  },
+  {
+    "id": "671213",
+    "date": "2023-12-27",
+    "home_team": "Chelsea",
+    "away_team": "Crystal Palace"
+  },
+  {
+    "id": "671214",
+    "date": "2023-12-27",
+    "home_team": "Everton",
+    "away_team": "Manchester City"
+  },
+  {
+    "id": "671211",
+    "date": "2023-12-28",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Tottenham Hotspur"
+  },
+  {
+    "id": "671218",
+    "date": "2023-12-28",
+    "home_team": "Arsenal",
+    "away_team": "West Ham United"
+  },
+  {
+    "id": "671228",
+    "date": "2023-12-30",
+    "home_team": "Luton Town",
+    "away_team": "Chelsea"
+  },
+  {
+    "id": "671225",
+    "date": "2023-12-30",
+    "home_team": "Manchester City",
+    "away_team": "Sheffield United"
+  },
+  {
+    "id": "671230",
+    "date": "2023-12-30",
+    "home_team": "Nottingham Forest",
+    "away_team": "Manchester United"
+  },
+  {
+    "id": "671221",
+    "date": "2023-12-31",
+    "home_team": "Fulham",
+    "away_team": "Arsenal"
+  },
+  {
+    "id": "671224",
+    "date": "2023-12-31",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "AFC Bournemouth"
+  }
+]

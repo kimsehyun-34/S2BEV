@@ -4,3 +4,7 @@ __pycache__/
 *.egg-info/
 data/raw/
 artifacts/*.joblib
+
+data/focused/facts/
+artifacts/focused_run.log
+artifacts/focused/*.joblib

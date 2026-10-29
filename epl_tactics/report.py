@@ -18,9 +18,12 @@ def write_report(results: list[dict], metrics: dict, output_dir: str | Path) -> 
     output_dir.mkdir(parents=True, exist_ok=True)
     flat, summaries, table = [], [], []
     for index, result in enumerate(results):
-        best = next((r for r in result["candidates"] if r["formation"] == result["recommended_formation"]), None)
+        exploratory = result.get("exploratory_formation", result["recommended_formation"])
+        best = next((r for r in result["candidates"] if r["formation"] == exploratory), None)
+        comparison_status = result.get("comparison_status", result["status"])
         summary = {"team": result["team"], "season": result["season"], "as_of": result["as_of"],
                    "formation": result["recommended_formation"], "status": result["status"],
+                   "exploratory_formation": exploratory, "comparison_status": comparison_status,
                    "expected_points": best["expected_points"] if best else None,
                    "p_win": best["p_win"] if best else None,
                    "team_matches": best["team_matches"] if best else 0,
@@ -31,17 +34,21 @@ def write_report(results: list[dict], metrics: dict, output_dir: str | Path) -> 
                          **candidate, "selected": candidate["formation"] == result["recommended_formation"]})
         points_text = f'{best["expected_points"]:.3f}' if best else "—"
         table.append(f'<tr data-index="{index}" tabindex="0"><td>{html.escape(result["team"])}</td>'
-                     f'<td>{html.escape(result["recommended_formation"] or "추천 보류")}</td>'
+                     f'<td>{html.escape(exploratory or "비교 근거 부족")}</td>'
                      f'<td>{points_text}</td><td>{summary["team_matches"]}</td>'
-                     f'<td>{STATUS[result["status"]]}</td></tr>')
+                     f'<td>{STATUS[comparison_status]}</td></tr>')
     pd.DataFrame(flat).to_csv(output_dir / "formation_rankings.csv", index=False, encoding="utf-8-sig")
     pd.DataFrame(summaries).to_csv(output_dir / "team_recommendations.csv", index=False, encoding="utf-8-sig")
     (output_dir / "recommendations.json").write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
     payload = json.dumps({"results": results, "metrics": metrics}, ensure_ascii=False)
     payload = payload.replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
     page = TEMPLATE.replace("__PAYLOAD__", payload).replace("__TABLE__", "\n".join(table))
+    focused_link = ('<p><a href="focused/index.html">아스날 등 6개 구단 집중 수집·튜닝 결과 →</a></p>'
+                    if (output_dir / "focused" / "index.html").exists() else "")
+    page = page.replace("__FOCUSED_LINK__", focused_link)
     path = output_dir / "index.html"
     path.write_text(page, encoding="utf-8")
+    (output_dir / "explorer.html").write_text(page, encoding="utf-8")
     return path
 
 
@@ -66,8 +73,10 @@ footer{margin-top:20px;font-size:12px;color:var(--muted)}@media(max-width:800px)
 </style></head><body><main>
 <div class="eyebrow">FOOTBALL ANALYTICS · RESEARCH MODEL</div><h1>EPL 팀별 전술대형 탐색</h1>
 <p class="muted" id="scope"></p>
+__FOCUSED_LINK__
 <div class="notice"><strong>과거 시즌 연구 결과입니다.</strong> 현재 선수단의 최적 전술을 뜻하지 않습니다.
-포메이션별 예상 승·무·패로 기대 승점 = 3 × 승리확률 + 무승부확률을 비교합니다. 관측 데이터만으로 전술의 인과 효과를 입증할 수 없습니다.</div>
+포메이션별 예상 승·무·패로 기대 승점 = 3 × 승리확률 + 무승부확률을 비교합니다. 관측 데이터만으로 전술의 인과 효과를 입증할 수 없습니다.
+<p>아래는 이전 모델의 탐색 결과입니다. 최적 대형 추천은 보류 중입니다. <a href="analysis.html">최근 데이터 성능 검토 보기 →</a></p></div>
 <div class="stats"><div class="stat"><strong id="match-count"></strong><span>실제 경기 수</span></div>
 <div class="stat"><strong id="test-accuracy"></strong><span>미래 구간 결과 예측 정확도</span></div>
 <div class="stat"><strong id="test-count"></strong><span>테스트 구간 경기 수</span></div></div>
@@ -80,7 +89,7 @@ footer{margin-top:20px;font-size:12px;color:var(--muted)}@media(max-width:800px)
 <div class="key" id="probabilities"></div><p id="support"></p><p id="candidate-note" class="weak"></p>
 <div id="warnings" class="muted"></div><div class="scroll"><table><thead><tr><th>대형</th><th>기대 승점</th><th>팀 사용</th><th>비교 기준</th></tr></thead><tbody id="candidates"></tbody></table></div></section></div>
 <section class="panel"><h2>모든 팀 비교</h2><p class="muted">같은 시즌의 다른 모든 팀을 상대로 홈·원정 상황에 동일 가중치를 적용했습니다. 행을 선택하면 상세 결과를 볼 수 있습니다.</p>
-<div class="scroll"><table><thead><tr><th>팀</th><th>지원되는 후보 중 1위</th><th>기대 승점</th><th>팀 사용</th><th>비교 상태</th></tr></thead><tbody id="teams">__TABLE__</tbody></table></div>
+<div class="scroll"><table><thead><tr><th>팀</th><th>지원 후보 중 탐색 점수 1위</th><th>기대 승점</th><th>팀 사용</th><th>비교 상태</th></tr></thead><tbody id="teams">__TABLE__</tbody></table></div>
 <p><a href="team_recommendations.csv" download>팀별 CSV</a> · <a href="formation_rankings.csv" download>전체 대형별 CSV</a> · <a href="recommendations.json" download>JSON</a></p></section>
 <section class="panel"><h2>검증 결과와 해석</h2><p id="split" class="muted"></p>
 <div class="scroll"><table><thead><tr><th>모델</th><th>정확도 ↑</th><th>로그손실 ↓</th><th>Brier ↓</th></tr></thead><tbody id="metrics"></tbody></table></div>
@@ -97,6 +106,7 @@ const put=(id,text)=>el(id).textContent=text;
 const statuses={candidate_recommendation:'비교 가능한 후보',near_tie:'상위 후보 차이 작음',single_supported_formation:'비교 대형 부족',insufficient_support:'추천 보류',not_validated:'전술 효과 미검증'};
 const option=(value,text)=>{const x=document.createElement('option');x.value=value;x.textContent=text;return x};
 results.forEach((r,i)=>el('team').append(option(i,r.team)));
+const initialTeam=results.findIndex(r=>r.team==='Arsenal');if(initialTeam>=0)el('team').value=String(initialTeam);
 put('scope',`${metrics.data.recommendation_season} · ${metrics.data.teams.length}개 팀 · 학습 데이터 종료 ${metrics.data.trained_through} · 분석 기준일 ${results[0].as_of}`);
 put('match-count',metrics.data.matches);put('test-accuracy',pct(metrics.test.formation_model.accuracy));put('test-count',metrics.split.test.matches);
 put('split',`학습 ${metrics.split.train.first_date} ~ ${metrics.split.train.last_date} / 검증 ${metrics.split.validation.first_date} ~ ${metrics.split.validation.last_date} / 테스트 ${metrics.split.test.first_date} ~ ${metrics.split.test.last_date}`);
@@ -116,8 +126,8 @@ put('probabilities',`승 ${pct(c.p_win)} · 무 ${pct(c.p_draw)} · 패 ${pct(c.
 put('support',`해당 팀 사용 ${c.team_matches}경기 · 전체 학습 데이터의 팀 단위 사용 ${c.league_team_matches}회`);
 put('candidate-note',c.supported?'최소 사용 사례 기준을 충족한 후보입니다. 이것은 신뢰구간이나 확신도를 뜻하지 않습니다.':'관측 사례가 부족하여 추천 대상에서 제외한 참고 점수입니다.');}
 function showTeam(){const r=results[Number(el('team').value)];el('formation').replaceChildren();r.candidates.forEach(c=>el('formation').append(option(c.formation,c.formation+(c.supported?'':' · 참고만'))));
-el('formation').value=r.recommended_formation||r.candidates[0].formation;put('team-title',r.team);put('context',`다른 ${metrics.data.teams.length-1}개 팀 × 홈·원정 동일 가중 평균 · 과거 선수단 상태`);
-put('recommendation',`지원 후보 중 1위: ${r.recommended_formation||'보류'} · ${statuses[r.status]}`);
+const exploratory=r.exploratory_formation||r.recommended_formation;el('formation').value=exploratory||r.candidates[0].formation;put('team-title',r.team);put('context',`다른 ${metrics.data.teams.length-1}개 팀 × 홈·원정 동일 가중 평균 · 과거 선수단 상태`);
+put('recommendation',`지원 후보 중 탐색 점수 1위: ${exploratory||'비교 근거 부족'} · ${statuses[r.comparison_status||r.status]}`);
 el('warnings').replaceChildren();r.warnings.forEach(w=>{const p=document.createElement('p');p.textContent=w;el('warnings').append(p)});
 el('candidates').replaceChildren();r.candidates.forEach(c=>row(el('candidates'),[c.formation,c.expected_points.toFixed(3),c.team_matches,c.supported?'충족':'참고만']));showCandidate();}
 el('team').addEventListener('change',showTeam);el('formation').addEventListener('change',showCandidate);

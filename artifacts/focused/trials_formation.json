@@ -1,0 +1,2394 @@
+[
+  {
+    "trial": 1,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 10,
+      "max_samples": 1.0,
+      "max_features": 0.3,
+      "max_depth": 18,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6919191919191919,
+        "log_loss": 0.85247471293181,
+        "brier": 0.49196658644461677,
+        "expected_points_mae": 1.1461116137018355
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6136363636363636,
+        "log_loss": 0.9105640146046224,
+        "brier": 0.5300859151323795,
+        "expected_points_mae": 1.1426618747933008
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8875021452725373,
+        "brier": 0.5161959507754338,
+        "expected_points_mae": 1.1449648912809756
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6557239057239057,
+      "log_loss": 0.8835136242696566,
+      "brier": 0.5127494841174767,
+      "expected_points_mae": 1.1445794599253705
+    }
+  },
+  {
+    "trial": 2,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.786233099695883,
+        "brier": 0.44352641864907977,
+        "expected_points_mae": 1.06155740476252
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8665777494588489,
+        "brier": 0.4994063366268681,
+        "expected_points_mae": 1.0796025383173395
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.8447135605979966,
+        "brier": 0.48493125491703215,
+        "expected_points_mae": 1.0935324708614387
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6767676767676768,
+      "log_loss": 0.8325081365842428,
+      "brier": 0.4759546700643267,
+      "expected_points_mae": 1.0782308046470994
+    }
+  },
+  {
+    "trial": 3,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 20,
+      "max_samples": 1.0,
+      "max_features": 1.0,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.7605250418925938,
+        "brier": 0.42752878732119537,
+        "expected_points_mae": 0.9977417463916243
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8667633009878002,
+        "brier": 0.4973261091976391,
+        "expected_points_mae": 1.0524500366566663
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8272545549992057,
+        "brier": 0.47392363968717666,
+        "expected_points_mae": 1.0533680835690669
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6835016835016835,
+      "log_loss": 0.8181809659598666,
+      "brier": 0.4662595120686704,
+      "expected_points_mae": 1.0345199555391191
+    }
+  },
+  {
+    "trial": 4,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.7786850469113459,
+        "brier": 0.4386811362595277,
+        "expected_points_mae": 1.043552366453256
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8617962296310713,
+        "brier": 0.4936451022013358,
+        "expected_points_mae": 1.0569033390754718
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.8362461167509135,
+        "brier": 0.47971605312708326,
+        "expected_points_mae": 1.0669665902587877
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6776094276094277,
+      "log_loss": 0.8255757977644436,
+      "brier": 0.47068076386264895,
+      "expected_points_mae": 1.0558074319291717
+    }
+  },
+  {
+    "trial": 5,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6843434343434344,
+        "log_loss": 0.8916246236600976,
+        "brier": 0.5198658783074863,
+        "expected_points_mae": 1.1923632033432872
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5580808080808081,
+        "log_loss": 0.9537899806473394,
+        "brier": 0.5622395241526682,
+        "expected_points_mae": 1.19996549786541
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6363636363636364,
+        "log_loss": 0.9490664414117093,
+        "brier": 0.5609017494586506,
+        "expected_points_mae": 1.2146065614960662
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6262626262626263,
+      "log_loss": 0.931493681906382,
+      "brier": 0.5476690506396018,
+      "expected_points_mae": 1.2023117542349209
+    }
+  },
+  {
+    "trial": 6,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.696969696969697,
+        "log_loss": 0.8462408055429644,
+        "brier": 0.4868359633330041,
+        "expected_points_mae": 1.137360814437435
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6262626262626263,
+        "log_loss": 0.8953649757383351,
+        "brier": 0.5205296856902483,
+        "expected_points_mae": 1.1324150934212598
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8909737544461517,
+        "brier": 0.5189022069299895,
+        "expected_points_mae": 1.1578701270690255
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6624579124579124,
+      "log_loss": 0.8775265119091503,
+      "brier": 0.508755951984414,
+      "expected_points_mae": 1.14254867830924
+    }
+  },
+  {
+    "trial": 7,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.7761266676386512,
+        "brier": 0.43711970730881566,
+        "expected_points_mae": 1.0393269647710572
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.857759277579879,
+        "brier": 0.4952557903262345,
+        "expected_points_mae": 1.0715480026225388
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8380761657677109,
+        "brier": 0.48075488695061275,
+        "expected_points_mae": 1.0775764682067897
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.823987370328747,
+      "brier": 0.47104346152855425,
+      "expected_points_mae": 1.0628171452001283
+    }
+  },
+  {
+    "trial": 8,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 5,
+      "max_samples": 1.0,
+      "max_features": "sqrt",
+      "max_depth": 18,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.7839338695516083,
+        "brier": 0.4414250151841471,
+        "expected_points_mae": 1.0477102583024014
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8661416285289499,
+        "brier": 0.4968275960722452,
+        "expected_points_mae": 1.0654403446828615
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8260174134682806,
+        "brier": 0.47131837783875163,
+        "expected_points_mae": 1.0687484191389653
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.680976430976431,
+      "log_loss": 0.8253643038496129,
+      "brier": 0.46985699636504796,
+      "expected_points_mae": 1.0606330073747428
+    }
+  },
+  {
+    "trial": 9,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 40,
+      "max_samples": 0.65,
+      "max_features": 0.3,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.9113383079167144,
+        "brier": 0.5341350847509363,
+        "expected_points_mae": 1.2129158640584836
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5656565656565656,
+        "log_loss": 0.9631602775083328,
+        "brier": 0.5690451060094079,
+        "expected_points_mae": 1.212721793193902
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6515151515151515,
+        "log_loss": 0.9526214419749529,
+        "brier": 0.5635969705727282,
+        "expected_points_mae": 1.2205399072899261
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6304713804713805,
+      "log_loss": 0.9423733424666669,
+      "brier": 0.5555923871110243,
+      "expected_points_mae": 1.215392521514104
+    }
+  },
+  {
+    "trial": 10,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 30,
+      "min_samples_leaf": 40,
+      "max_samples": 0.85,
+      "max_features": 0.3,
+      "max_depth": 5,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.9242725510024898,
+        "brier": 0.544299458120649,
+        "expected_points_mae": 1.230079372040083
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5681818181818182,
+        "log_loss": 0.9737697135194294,
+        "brier": 0.5759526085436131,
+        "expected_points_mae": 1.2247023241246564
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.9603227325059001,
+        "brier": 0.5697316101366504,
+        "expected_points_mae": 1.2318251855493563
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6296296296296297,
+      "log_loss": 0.9527883323426064,
+      "brier": 0.5633278922669709,
+      "expected_points_mae": 1.2288689605713654
+    }
+  },
+  {
+    "trial": 11,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.85,
+      "max_features": "sqrt",
+      "max_depth": 18,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7045454545454546,
+        "log_loss": 0.7809776163582205,
+        "brier": 0.4401588909622445,
+        "expected_points_mae": 1.0464217124733126
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8632185457974859,
+        "brier": 0.4951882502297605,
+        "expected_points_mae": 1.0621324123452778
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6515151515151515,
+        "log_loss": 0.8323002271211223,
+        "brier": 0.47398708557770913,
+        "expected_points_mae": 1.0711934419825309
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6734006734006734,
+      "log_loss": 0.8254987964256096,
+      "brier": 0.4697780755899047,
+      "expected_points_mae": 1.0599158556003738
+    }
+  },
+  {
+    "trial": 12,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 1.0,
+      "max_features": 0.3,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.7888576489549545,
+        "brier": 0.4460559137746687,
+        "expected_points_mae": 1.066569293597315
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8668818430045602,
+        "brier": 0.5001683157343855,
+        "expected_points_mae": 1.077913529162439
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.836788756877331,
+        "brier": 0.4785686460685562,
+        "expected_points_mae": 1.0776089301996719
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6818181818181818,
+      "log_loss": 0.830842749612282,
+      "brier": 0.4749309585258702,
+      "expected_points_mae": 1.0740305843198086
+    }
+  },
+  {
+    "trial": 13,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.696969696969697,
+        "log_loss": 0.8489151881380468,
+        "brier": 0.4892636647802372,
+        "expected_points_mae": 1.140266292332635
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6338383838383839,
+        "log_loss": 0.9072507919473667,
+        "brier": 0.527726039983001,
+        "expected_points_mae": 1.1462365737285156
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8854071953357548,
+        "brier": 0.5156752728136976,
+        "expected_points_mae": 1.146578753164616
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6632996632996633,
+      "log_loss": 0.880524391807056,
+      "brier": 0.5108883258589788,
+      "expected_points_mae": 1.144360539741922
+    }
+  },
+  {
+    "trial": 14,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 12,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6919191919191919,
+        "log_loss": 0.819979330970758,
+        "brier": 0.46836213868028315,
+        "expected_points_mae": 1.1004569260016852
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6237373737373737,
+        "log_loss": 0.8983941879260886,
+        "brier": 0.5207891232450265,
+        "expected_points_mae": 1.1236123063074588
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6515151515151515,
+        "log_loss": 0.8750000821680738,
+        "brier": 0.5072258567819712,
+        "expected_points_mae": 1.1282922599985925
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6557239057239057,
+      "log_loss": 0.86445786702164,
+      "brier": 0.4987923729024269,
+      "expected_points_mae": 1.1174538307692452
+    }
+  },
+  {
+    "trial": 15,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 0.65,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7070707070707071,
+        "log_loss": 0.8174458532541651,
+        "brier": 0.4659473686708878,
+        "expected_points_mae": 1.1151157240785508
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.8699992578266128,
+        "brier": 0.5021506745584435,
+        "expected_points_mae": 1.0899308937063963
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.8646502047505426,
+        "brier": 0.5002629094075938,
+        "expected_points_mae": 1.1240083491407153
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6784511784511784,
+      "log_loss": 0.8506984386104401,
+      "brier": 0.489453650878975,
+      "expected_points_mae": 1.1096849889752207
+    }
+  },
+  {
+    "trial": 16,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.696969696969697,
+        "log_loss": 0.7869156428127253,
+        "brier": 0.44586545120476917,
+        "expected_points_mae": 1.0628557393090803
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8632114057492395,
+        "brier": 0.4955911571933269,
+        "expected_points_mae": 1.0773290238657185
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.8529835548549686,
+        "brier": 0.49169825515636517,
+        "expected_points_mae": 1.0942529098876073
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6708754208754208,
+      "log_loss": 0.8343702011389778,
+      "brier": 0.477718287851487,
+      "expected_points_mae": 1.078145891020802
+    }
+  },
+  {
+    "trial": 17,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.3,
+      "max_depth": null,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.7830293912228008,
+        "brier": 0.44187976352544805,
+        "expected_points_mae": 1.0503938911848643
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.8559704268869294,
+        "brier": 0.49121089597142653,
+        "expected_points_mae": 1.0506128238578978
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8355290193683899,
+        "brier": 0.4777762460305133,
+        "expected_points_mae": 1.0734992133156118
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6851851851851852,
+      "log_loss": 0.8248429458260401,
+      "brier": 0.4702889685091293,
+      "expected_points_mae": 1.0581686427861245
+    }
+  },
+  {
+    "trial": 18,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 10,
+      "min_samples_leaf": 20,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6893939393939394,
+        "log_loss": 0.8549951045143485,
+        "brier": 0.4942701084019751,
+        "expected_points_mae": 1.1393114870969867
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5707070707070707,
+        "log_loss": 0.9241945940832859,
+        "brier": 0.5405932660025843,
+        "expected_points_mae": 1.1564364913412266
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6439393939393939,
+        "log_loss": 0.9145202822188113,
+        "brier": 0.5358214079135912,
+        "expected_points_mae": 1.166766467477619
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6346801346801347,
+      "log_loss": 0.8979033269388154,
+      "brier": 0.5235615941060502,
+      "expected_points_mae": 1.1541714819719442
+    }
+  },
+  {
+    "trial": 19,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5,
+      "max_samples": 1.0,
+      "max_features": "sqrt",
+      "max_depth": 12,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7070707070707071,
+        "log_loss": 0.789066418929585,
+        "brier": 0.445653346088195,
+        "expected_points_mae": 1.059990050574801
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8623764233103792,
+        "brier": 0.49607367535676944,
+        "expected_points_mae": 1.0687377820851218
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8327611074263497,
+        "brier": 0.47507641469623096,
+        "expected_points_mae": 1.0747947649974188
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6776094276094277,
+      "log_loss": 0.8280679832221047,
+      "brier": 0.472267812047065,
+      "expected_points_mae": 1.0678408658857808
+    }
+  },
+  {
+    "trial": 20,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 1.0,
+      "max_features": 0.3,
+      "max_depth": 18,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7196969696969697,
+        "log_loss": 0.7955935028341039,
+        "brier": 0.44913634018787346,
+        "expected_points_mae": 1.0600219765161072
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8717008012993108,
+        "brier": 0.49990301040558116,
+        "expected_points_mae": 1.0635070703007405
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8363112135486102,
+        "brier": 0.4775144011297104,
+        "expected_points_mae": 1.067267115056646
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6826599326599326,
+      "log_loss": 0.8345351725606749,
+      "brier": 0.475517917241055,
+      "expected_points_mae": 1.063598720624498
+    }
+  },
+  {
+    "trial": 21,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.65,
+      "max_features": 0.3,
+      "max_depth": 8,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7196969696969697,
+        "log_loss": 0.7744007967150545,
+        "brier": 0.4363105083679702,
+        "expected_points_mae": 1.0386096798665545
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8670851632289343,
+        "brier": 0.49644298856634234,
+        "expected_points_mae": 1.06368820462588
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.648989898989899,
+        "log_loss": 0.8318722488642465,
+        "brier": 0.4761481769849038,
+        "expected_points_mae": 1.073478856640948
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.8244527362694118,
+      "brier": 0.46963389130640554,
+      "expected_points_mae": 1.058592247044461
+    }
+  },
+  {
+    "trial": 22,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 30,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": 1.0,
+      "max_depth": 8,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6868686868686869,
+        "log_loss": 0.8516419037342482,
+        "brier": 0.4920784980275707,
+        "expected_points_mae": 1.142472558390922
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6136363636363636,
+        "log_loss": 0.9084576129022033,
+        "brier": 0.5305904873229499,
+        "expected_points_mae": 1.1584928717650522
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6717171717171717,
+        "log_loss": 0.9104693100773826,
+        "brier": 0.5321659339762292,
+        "expected_points_mae": 1.167035843941215
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6574074074074074,
+      "log_loss": 0.8901896089046112,
+      "brier": 0.5182783064422499,
+      "expected_points_mae": 1.1560004246990632
+    }
+  },
+  {
+    "trial": 23,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 10,
+      "max_samples": 0.65,
+      "max_features": "sqrt",
+      "max_depth": 8,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6893939393939394,
+        "log_loss": 0.8962899564594461,
+        "brier": 0.523051070566366,
+        "expected_points_mae": 1.2004853426215185
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5959595959595959,
+        "log_loss": 0.944108943375389,
+        "brier": 0.5546834229894679,
+        "expected_points_mae": 1.1942559403253523
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.9245936847334123,
+        "brier": 0.5432179042226387,
+        "expected_points_mae": 1.2013547038933885
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6481481481481481,
+      "log_loss": 0.9216641948560823,
+      "brier": 0.5403174659261576,
+      "expected_points_mae": 1.1986986622800866
+    }
+  },
+  {
+    "trial": 24,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_samples": 1.0,
+      "max_features": "sqrt",
+      "max_depth": 12,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7045454545454546,
+        "log_loss": 0.8516927872329941,
+        "brier": 0.4909343827233396,
+        "expected_points_mae": 1.162213297346407
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.9007243725544993,
+        "brier": 0.5220830659563924,
+        "expected_points_mae": 1.134398344377288
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8770634946834767,
+        "brier": 0.5066327610475847,
+        "expected_points_mae": 1.1435942591856227
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6742424242424242,
+      "log_loss": 0.8764935514903232,
+      "brier": 0.5065500699091056,
+      "expected_points_mae": 1.1467353003031058
+    }
+  },
+  {
+    "trial": 25,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 40,
+      "max_samples": 1.0,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7171717171717171,
+        "log_loss": 0.7625388019351156,
+        "brier": 0.42897126546542397,
+        "expected_points_mae": 1.0090665554496328
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8601741853040168,
+        "brier": 0.49613832023802124,
+        "expected_points_mae": 1.0476316832441157
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.827831600443963,
+        "brier": 0.47323315128301,
+        "expected_points_mae": 1.0560982741049585
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6835016835016835,
+      "log_loss": 0.8168481958943653,
+      "brier": 0.46611424566215176,
+      "expected_points_mae": 1.037598837599569
+    }
+  },
+  {
+    "trial": 26,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "max_samples": 0.65,
+      "max_features": 0.6,
+      "max_depth": null,
+      "criterion": "gini",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7146464646464646,
+        "log_loss": 0.8210303388854548,
+        "brier": 0.46925921462239356,
+        "expected_points_mae": 1.107247894766761
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6161616161616161,
+        "log_loss": 0.8912998641841213,
+        "brier": 0.5172344368382441,
+        "expected_points_mae": 1.121870378451723
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6767676767676768,
+        "log_loss": 0.8681843987821974,
+        "brier": 0.5032273728406037,
+        "expected_points_mae": 1.1280933279274834
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6691919191919192,
+      "log_loss": 0.8601715339505912,
+      "brier": 0.4965736747670805,
+      "expected_points_mae": 1.1190705337153224
+    }
+  },
+  {
+    "trial": 27,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 10,
+      "min_samples_leaf": 10,
+      "max_samples": 0.65,
+      "max_features": 1.0,
+      "max_depth": 18,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7121212121212122,
+        "log_loss": 0.7625941133303531,
+        "brier": 0.4288641920135755,
+        "expected_points_mae": 1.01030258148371
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.8603111780330556,
+        "brier": 0.4957980284331978,
+        "expected_points_mae": 1.0518234397362585
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.648989898989899,
+        "log_loss": 0.8317984323838479,
+        "brier": 0.47655939358732424,
+        "expected_points_mae": 1.066815484899318
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6784511784511784,
+      "log_loss": 0.8182345745824189,
+      "brier": 0.46707387134469924,
+      "expected_points_mae": 1.0429805020397622
+    }
+  },
+  {
+    "trial": 28,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 2,
+      "min_samples_leaf": 2,
+      "max_samples": 0.85,
+      "max_features": "sqrt",
+      "max_depth": 5,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.791468059287185,
+        "brier": 0.44616263960035457,
+        "expected_points_mae": 1.0602371051487578
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6666666666666666,
+        "log_loss": 0.8626603981075828,
+        "brier": 0.49593428121076694,
+        "expected_points_mae": 1.0829584858065056
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8338104750105844,
+        "brier": 0.4751202690622196,
+        "expected_points_mae": 1.0810309281755923
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.8293129774684508,
+      "brier": 0.4724057299577804,
+      "expected_points_mae": 1.0747421730436186
+    }
+  },
+  {
+    "trial": 29,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 10,
+      "min_samples_leaf": 20,
+      "max_samples": 1.0,
+      "max_features": 1.0,
+      "max_depth": 8,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6767676767676768,
+        "log_loss": 0.8653040628630873,
+        "brier": 0.5018469867146235,
+        "expected_points_mae": 1.1513687525376755
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5631313131313131,
+        "log_loss": 0.9370272872972812,
+        "brier": 0.5494873559220396,
+        "expected_points_mae": 1.1714663340292584
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.648989898989899,
+        "log_loss": 0.9272276133037276,
+        "brier": 0.5454901708467048,
+        "expected_points_mae": 1.1864907374773122
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6296296296296297,
+      "log_loss": 0.9098529878213655,
+      "brier": 0.5322748378277893,
+      "expected_points_mae": 1.1697752746814154
+    }
+  },
+  {
+    "trial": 30,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 500,
+      "min_samples_split": 30,
+      "min_samples_leaf": 2,
+      "max_samples": 0.65,
+      "max_features": 0.6,
+      "max_depth": 18,
+      "criterion": "entropy",
+      "class_weight": "balanced_subsample"
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7045454545454546,
+        "log_loss": 0.8364506358533267,
+        "brier": 0.47958014414711725,
+        "expected_points_mae": 1.1276565142040242
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6313131313131313,
+        "log_loss": 0.9104893806817117,
+        "brier": 0.5291665850820941,
+        "expected_points_mae": 1.1432164235476339
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6742424242424242,
+        "log_loss": 0.8833340118611045,
+        "brier": 0.5143513805751289,
+        "expected_points_mae": 1.1467025042935728
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.67003367003367,
+      "log_loss": 0.8767580094653808,
+      "brier": 0.50769936993478,
+      "expected_points_mae": 1.139191814015077
+    }
+  },
+  {
+    "trial": 31,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 200,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_samples": 0.85,
+      "max_features": 0.3,
+      "max_depth": 5,
+      "criterion": "gini",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7146464646464646,
+        "log_loss": 0.7797731028811565,
+        "brier": 0.43912090282499,
+        "expected_points_mae": 1.042756434099967
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8646958647668045,
+        "brier": 0.4985566042894254,
+        "expected_points_mae": 1.0790921101624769
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.826504137279943,
+        "brier": 0.4721016146945618,
+        "expected_points_mae": 1.0697245017055534
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6792929292929293,
+      "log_loss": 0.8236577016426346,
+      "brier": 0.4699263739363257,
+      "expected_points_mae": 1.0638576819893324
+    }
+  },
+  {
+    "trial": 32,
+    "with_formation": true,
+    "spec": {
+      "family": "rf",
+      "n_estimators": 350,
+      "min_samples_split": 30,
+      "min_samples_leaf": 20,
+      "max_samples": 0.65,
+      "max_features": "sqrt",
+      "max_depth": 5,
+      "criterion": "entropy",
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7095959595959596,
+        "log_loss": 0.7892096389662219,
+        "brier": 0.4451930741381708,
+        "expected_points_mae": 1.0533719099691685
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8625783859825039,
+        "brier": 0.4965073375567948,
+        "expected_points_mae": 1.0839479112259465
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.8282661873121081,
+        "brier": 0.4723581740052929,
+        "expected_points_mae": 1.0749618059073707
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6784511784511784,
+      "log_loss": 0.826684737420278,
+      "brier": 0.47135286190008624,
+      "expected_points_mae": 1.070760542367495
+    }
+  },
+  {
+    "trial": 33,
+    "with_formation": true,
+    "spec": {
+      "family": "logistic",
+      "C": 0.003
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6919191919191919,
+        "log_loss": 0.7876767466900849,
+        "brier": 0.4414802216239406,
+        "expected_points_mae": 0.9450346589254136
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.8506621199788137,
+        "brier": 0.48876953658756106,
+        "expected_points_mae": 1.0465057006264868
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6843434343434344,
+        "log_loss": 0.8063176908399067,
+        "brier": 0.45732243247953697,
+        "expected_points_mae": 1.0046401182911364
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6818181818181818,
+      "log_loss": 0.8148855191696017,
+      "brier": 0.46252406356367964,
+      "expected_points_mae": 0.998726825947679
+    }
+  },
+  {
+    "trial": 34,
+    "with_formation": true,
+    "spec": {
+      "family": "logistic",
+      "C": 0.03
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6868686868686869,
+        "log_loss": 0.8225316423077338,
+        "brier": 0.4549025264341422,
+        "expected_points_mae": 0.9352419554923055
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.8516812870534526,
+        "brier": 0.48922698878928056,
+        "expected_points_mae": 1.0253975515455156
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6616161616161617,
+        "log_loss": 0.8296974151226646,
+        "brier": 0.46906814825063153,
+        "expected_points_mae": 0.9793349570873855
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6675084175084175,
+      "log_loss": 0.8346367814946171,
+      "brier": 0.4710658878246847,
+      "expected_points_mae": 0.9799914880417355
+    }
+  },
+  {
+    "trial": 35,
+    "with_formation": true,
+    "spec": {
+      "family": "logistic",
+      "C": 0.3
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6843434343434344,
+        "log_loss": 0.8040051866055471,
+        "brier": 0.4559431235426511,
+        "expected_points_mae": 0.9336927565749988
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6338383838383839,
+        "log_loss": 0.8807782420069601,
+        "brier": 0.5051860449678484,
+        "expected_points_mae": 1.024341809643618
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6464646464646465,
+        "log_loss": 0.9025266222619905,
+        "brier": 0.512550354927336,
+        "expected_points_mae": 1.0034373616668661
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6548821548821548,
+      "log_loss": 0.8624366836248327,
+      "brier": 0.49122650781261185,
+      "expected_points_mae": 0.987157309295161
+    }
+  },
+  {
+    "trial": 36,
+    "with_formation": true,
+    "spec": {
+      "family": "logistic",
+      "C": 3.0
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6641414141414141,
+        "log_loss": 0.8430573201441184,
+        "brier": 0.48759125386231994,
+        "expected_points_mae": 0.9739563673334939
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.5858585858585859,
+        "log_loss": 0.9535426404279038,
+        "brier": 0.5421269380799197,
+        "expected_points_mae": 1.0261053892406982
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6313131313131313,
+        "log_loss": 1.0020069952729922,
+        "brier": 0.5579563824695387,
+        "expected_points_mae": 1.0217459906459745
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.627104377104377,
+      "log_loss": 0.9328689852816714,
+      "brier": 0.5292248581372595,
+      "expected_points_mae": 1.007269249073389
+    }
+  },
+  {
+    "trial": 37,
+    "with_formation": true,
+    "spec": {
+      "family": "hgb",
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 30,
+      "l2_regularization": 5.0
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6893939393939394,
+        "log_loss": 0.7835227889365254,
+        "brier": 0.4470432273071571,
+        "expected_points_mae": 1.0052708552749081
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.8807850250304777,
+        "brier": 0.5015267214788235,
+        "expected_points_mae": 1.0042217136203055
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6540404040404041,
+        "log_loss": 0.8299304543022921,
+        "brier": 0.47826126352012105,
+        "expected_points_mae": 1.0199666818595503
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6658249158249159,
+      "log_loss": 0.8314127560897651,
+      "brier": 0.4756104041020339,
+      "expected_points_mae": 1.009819750251588
+    }
+  },
+  {
+    "trial": 38,
+    "with_formation": true,
+    "spec": {
+      "family": "hgb",
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 30,
+      "l2_regularization": 20.0
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.702020202020202,
+        "log_loss": 0.7692844794685406,
+        "brier": 0.43630836025603514,
+        "expected_points_mae": 0.9957366271083686
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8826125342818952,
+        "brier": 0.5058233778753704,
+        "expected_points_mae": 1.0445021377803088
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6691919191919192,
+        "log_loss": 0.831210220532865,
+        "brier": 0.47683426039859694,
+        "expected_points_mae": 1.0388438697551354
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6767676767676768,
+      "log_loss": 0.8277024114277669,
+      "brier": 0.47298866617666757,
+      "expected_points_mae": 1.026360878214604
+    }
+  },
+  {
+    "trial": 39,
+    "with_formation": true,
+    "spec": {
+      "family": "hgb",
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 5.0
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6944444444444444,
+        "log_loss": 0.7551548268609741,
+        "brier": 0.425314530500226,
+        "expected_points_mae": 0.9310845776515958
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.9066935135067936,
+        "brier": 0.5110373635402174,
+        "expected_points_mae": 0.990644304274516
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8341990128802147,
+        "brier": 0.4775497640126714,
+        "expected_points_mae": 0.9770008738587938
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6708754208754208,
+      "log_loss": 0.8320157844159942,
+      "brier": 0.47130055268437154,
+      "expected_points_mae": 0.9662432519283016
+    }
+  },
+  {
+    "trial": 40,
+    "with_formation": true,
+    "spec": {
+      "family": "hgb",
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 20.0
+    },
+    "folds": [
+      {
+        "season": "2018/2019",
+        "train_team_rows": 2736,
+        "train_last_date": "2018-05-13",
+        "validation_first_date": "2018-08-10",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.7070707070707071,
+        "log_loss": 0.7583292979883268,
+        "brier": 0.429459040289911,
+        "expected_points_mae": 0.9696138404782206
+      },
+      {
+        "season": "2021/2022",
+        "train_team_rows": 3420,
+        "train_last_date": "2021-05-23",
+        "validation_first_date": "2021-08-13",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6565656565656566,
+        "log_loss": 0.900329067404062,
+        "brier": 0.5130573110466103,
+        "expected_points_mae": 1.025566384149675
+      },
+      {
+        "season": "2023/2024",
+        "train_team_rows": 3876,
+        "train_last_date": "2023-05-28",
+        "validation_first_date": "2023-08-11",
+        "unique_matches": 198,
+        "team_appearances": 228,
+        "accuracy": 0.6590909090909091,
+        "log_loss": 0.8371825035977771,
+        "brier": 0.4807075718305927,
+        "expected_points_mae": 1.0110242570935404
+      }
+    ],
+    "validation": {
+      "unique_matches": 594,
+      "team_appearances": 684,
+      "accuracy": 0.6742424242424242,
+      "log_loss": 0.8319469563300553,
+      "brier": 0.47440797438903803,
+      "expected_points_mae": 1.002068160573812
+    }
+  }
+]
