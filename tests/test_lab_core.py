@@ -48,6 +48,19 @@ class CatalogTests(unittest.TestCase):
             describe("team_mystery_7")
 
 
+class RenderEscapingTests(unittest.TestCase):
+    def test_payload_cannot_break_out_of_its_script_tag(self):
+        import re
+        from epl_tactics.lab.report import render
+        payload = {"x": "</script><!-- & <b>bold</b>  ", "y": ["<", ">", "&"]}
+        page = render(payload)
+        embedded = re.search(r'<script id="lab-payload" type="application/json">(.*?)</script>', page, re.S).group(1)
+        for raw in ["<", ">", "&", " ", " "]:
+            self.assertNotIn(raw, embedded)
+        self.assertEqual(json.loads(embedded), payload)
+        self.assertNotIn("__PAYLOAD__", page)
+
+
 @unittest.skipUnless(HAVE_DATA and NODE, "needs data/focused, artifacts/focused and node")
 class EngineParityTests(unittest.TestCase):
     def test_browser_engine_reproduces_python_model_on_every_held_out_row(self):

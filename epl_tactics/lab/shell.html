@@ -357,7 +357,7 @@ footer h3{color:var(--ink)}
   function route(hash, scroll) {
     const id = hash || 's1';
     if (STEPS.some((s) => s[0] === id)) return show(id, false);
-    if (id === 'glossary') return;
+    if (id === 'glossary') { if (!document.querySelector('section.step:not([hidden])')) show('s1', false); return; }   // direct link: keep a step open, the browser scrolls to the glossary
     const owner = STEPS.find((s) => id.startsWith(`${s[0]}-`));
     show(owner ? owner[0] : 's1', false);
     const target = owner && document.getElementById(id);
