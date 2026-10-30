@@ -1,0 +1,1098 @@
+<style>
+.s2-sec{display:flex;align-items:baseline;gap:10px;margin:36px 0 12px;font-size:20px}
+.s2-sec .k{flex:none;font-size:13px;font-weight:650;color:var(--ink-2);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.s2-intro{margin:-4px 0 14px;max-width:80ch}
+.s2-read{margin:.7em 0 0;font-size:14px;line-height:1.65;color:var(--ink-2);max-width:88ch}
+.s2-read b{color:var(--ink);font-weight:650;margin-right:7px}
+.s2-pipe{list-style:none;margin:0;padding:0}
+.s2-stage{display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px;position:relative;padding-bottom:22px}
+.s2-stage:last-child{padding-bottom:0}
+.s2-stage::before{content:"";position:absolute;left:16px;top:38px;bottom:4px;width:2px;background:var(--grid)}
+.s2-stage:last-child::before{display:none}
+.s2-dot{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--accent);background:var(--accent-soft);font-weight:650;font-size:14px}
+.s2-stage h4{margin:5px 0 2px;font-size:16px}
+.s2-stage p{margin:.35em 0;max-width:86ch}
+.s2-counts{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:4px 0 4px;font-size:14px;color:var(--ink-2)}
+.s2-cnt b{color:var(--ink);font-size:16.5px;font-weight:650;font-variant-numeric:tabular-nums;margin-right:3px}
+.s2-arrow,.s2-dotsep{color:var(--ink-3)}
+details.s2-more{margin-top:2px}
+details.s2-more>summary{cursor:pointer;color:var(--link);font-size:14px;min-height:36px;display:inline-flex;align-items:center;gap:4px}
+details.s2-more>summary:focus-visible{outline:3px solid var(--s1);outline-offset:2px}
+details.s2-more ul{margin:.2em 0 .4em}
+.s2-chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.s2-controls{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:flex-end;margin:8px 0 14px}
+.s2-controls>div{min-width:0;max-width:100%}
+.s2-controls select{max-width:100%}
+.s2-presets{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:4px 0 10px}
+.s2-presets .btn.small,.s2-chips .btn.small{min-height:36px}
+.s2-flabel{display:block;font-size:13px;color:var(--ink-2);margin-bottom:4px;font-weight:550}
+.s2-presets .s2-flabel{display:inline;margin:0 2px 0 0}
+.s2-zero{margin:8px 0 0}
+.s2-zero .note{margin:8px 0 0}
+.s2-foot{font-size:13.5px;margin:.6em 0 0;color:var(--ink-2);max-width:88ch}
+.s2-keylist{columns:2;column-gap:20px;font-size:13px;color:var(--ink-2);margin:8px 0 0;padding-left:1.4em}
+.s2-keylist li{break-inside:avoid;margin:.1em 0}
+table.data td.s2-rowlabel{white-space:nowrap}
+.s2-heat-narrow{display:none}
+@media (max-width:640px){
+  .s2-heat-wide{display:none}
+  .s2-heat-narrow{display:block}
+}
+.s2-target{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;padding:12px 14px;border:1px dashed var(--border-strong);border-radius:10px;background:var(--surface-2);margin:0 0 12px}
+.s2-target b{font-weight:650}
+.s2-target .muted{font-size:13.5px;flex-basis:100%}
+.s2-check{margin:10px 0 4px}
+.s2-check td.calc{font-family:var(--mono);font-size:12.5px;white-space:nowrap}
+.s2-ok{color:var(--ok);font-weight:650}
+.s2-bad{color:var(--bad);font-weight:650}
+.s2-ttnav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin:12px 0 4px}
+.s2-sublabel{font-size:13px;color:var(--ink-2);margin:14px 0 4px;font-weight:600}
+.s2-tf h4{font-size:14.5px;margin:0 0 2px}
+.s2-tf .muted{font-size:13px;margin:0 0 4px}
+.s2-formula{margin:12px 0 0;display:flex;flex-direction:column;gap:6px}
+.s2-formula .eq{display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:6px 10px;font-size:13px}
+.s2-wide{min-width:660px}
+.s2-wide-corr{min-width:640px}
+.s2-ramp{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13px;color:var(--ink-2);margin:8px 0 0}
+.s2-ramp i{display:inline-block;width:22px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px;border:1px solid var(--border)}
+.s2-callouts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin:12px 0 0}
+.s2-callouts h4{font-size:14.5px;margin:0 0 4px}
+.s2-callouts ol{margin:0;padding-left:1.3em;font-size:14px}
+.s2-callouts li{margin:.2em 0}
+.s2-num{font-variant-numeric:tabular-nums;font-weight:600}
+.s2-cells{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+.s2-cell{display:inline-flex;flex-direction:column;align-items:center;min-width:64px;padding:5px 8px;border:1px solid var(--border);border-radius:8px;font-size:12.5px;color:var(--ink-2);background:var(--surface)}
+.s2-cell b{font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+.s2-cell.on{border-color:var(--accent);background:var(--accent-soft)}
+.s2-stack{display:flex;gap:2px;height:28px;border-radius:7px;overflow:hidden;margin:10px 0 6px;background:var(--surface)}
+.s2-stack span{display:block;min-width:4px}
+.s2-sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.s2-final{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 28px;margin:12px 0 0}
+.s2-final dt{font-weight:650;margin-top:6px}
+.s2-final dd{margin:0;color:var(--ink-2);font-size:14.5px}
+.s2-mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:8px}
+.s2-mini h4{font-size:14px;margin:0 0 2px;color:var(--ink-2);font-weight:600}
+table.data.s2-tight td,table.data.s2-tight th{padding:7px 8px}
+.s2-nowrap{white-space:nowrap}
+@media (max-width:560px){
+  table.s2-stacked thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  table.s2-stacked,table.s2-stacked tbody,table.s2-stacked tr,table.s2-stacked td{display:block;width:100%}
+  table.s2-stacked tr{padding:8px 0;border-bottom:1px solid var(--grid)}
+  table.s2-stacked td{border:0;padding:1px 0;text-align:left!important}
+  table.s2-stacked td:first-child{font-weight:600}
+  table.s2-stacked td[data-l]::before{content:attr(data-l);display:inline-block;min-width:7.5em;color:var(--ink-2);font:12.5px var(--font)}
+  table.data.s2-tight td,table.data.s2-tight th{padding:6px 5px}
+}
+@media (max-width:700px){
+  .s2-callouts,.s2-final,.s2-mini{grid-template-columns:1fr}
+  .s2-sec{font-size:18px;margin-top:28px}
+  .s2-stage{grid-template-columns:28px minmax(0,1fr);gap:10px}
+  .s2-dot{width:28px;height:28px;font-size:13px}
+  .s2-stage::before{left:13px;top:32px}
+}
+</style>
+
+<header class="step-head">
+  <div class="eyebrow">2단계 · 전처리 · 분산도</div>
+  <h2>원시 기록을 ‘경기 전에 알 수 있는 값’으로 다듬기</h2>
+  <p class="lede">1단계에서 모은 경기 기록을 모델이 읽는 숫자 표로 바꾸는 과정입니다. 가장 중요한 규칙은 <span data-g="누수">누수</span>를 막는 것, 즉 각 행의 입력에는 그 경기가 끝난 뒤에야 알 수 있는 정보가 하나도 들어가면 안 된다는 점입니다. 다 바꾼 뒤에는 분포와 산점도(분산도)를 그려 입력이 결과와 어떻게 함께 움직이는지 봅니다.</p>
+</header>
+<div class="takeaway"><b class="t">한 줄 결론</b><p id="s2-takeaway"></p></div>
+
+<h3 class="s2-sec"><span class="k">2-1</span>전처리 6단계</h3>
+<p class="s2-intro muted">원시 기록이 모델 입력이 되기까지 실제로 거친 순서입니다. 숫자는 모두 이번 데이터에서 직접 센 값이고, ‘자세히’를 누르면 규칙과 예가 나옵니다.</p>
+<div class="card"><ol class="s2-pipe" id="s2-pipe"></ol></div>
+
+<div class="card" id="s2-tt">
+  <h3>시간 여행: 한 행의 입력은 어디서 왔을까</h3>
+  <p class="sub">구단과 경기를 고르면, 그 경기 행의 ‘최근 N경기 평균’을 만든 이전 경기들을 꺼내 직접 다시 계산합니다. 데이터에 저장된 값과 똑같이 나오는지 확인해 보세요.</p>
+  <div class="s2-controls" id="s2-tt-controls"></div>
+  <div id="s2-tt-target"></div>
+  <div id="s2-tt-chart"></div>
+  <div id="s2-tt-legend"></div>
+  <div class="s2-check" id="s2-tt-check"></div>
+  <div id="s2-tt-read"></div>
+  <div class="s2-sublabel" id="s2-tt-list-title"></div>
+  <div id="s2-tt-table"></div>
+  <div class="s2-ttnav" id="s2-tt-nav"></div>
+</div>
+
+<h3 class="s2-sec"><span class="k">2-2</span>빈칸(<span data-g="결측치">결측치</span>)은 얼마나, 언제 있었나</h3>
+<div class="grid2">
+  <div class="card">
+    <h3>입력 묶음별 빈칸 비율</h3>
+    <p class="sub">숫자 입력을 1단계의 묶음별로 모아, 전체 칸 중 비어 있는 칸의 비율을 셌습니다.</p>
+    <div id="s2-miss-bars"></div>
+    <div id="s2-miss-bars-read"></div>
+  </div>
+  <div class="card">
+    <h3>빈칸 채우기 전후: 한 입력 예시</h3>
+    <p class="sub" id="s2-fill-sub"></p>
+    <div id="s2-fill-table"></div>
+    <div id="s2-fill-read"></div>
+  </div>
+</div>
+<div class="card">
+  <h3>시즌별로 본 빈칸</h3>
+  <p class="sub">대표 입력 몇 가지가 시즌마다 얼마나 비어 있었는지 봅니다. 기록 방식이 바뀐 시기가 그대로 드러납니다.</p>
+  <div class="scroll s2-heat-wide"><div class="s2-wide" id="s2-miss-heat"></div></div>
+  <div class="s2-heat-narrow"><div id="s2-miss-heat-n"></div><ol class="s2-keylist" id="s2-miss-key"></ol></div>
+  <div id="s2-miss-legend"></div>
+  <div id="s2-miss-read"></div>
+  <details class="s2-more"><summary>표로 보기</summary><div id="s2-miss-table"></div></details>
+</div>
+<div class="note" id="s2-zero-note"></div>
+
+<h3 class="s2-sec"><span class="k">2-3</span>변환 전후: 같은 값이 어떻게 바뀌나</h3>
+<div class="card">
+  <h3>빈칸 채우기 → 표준화</h3>
+  <p class="sub">입력 하나를 골라, 모델이 배운 학습 행에서 ① 원래 값 ② <span data-g="중앙값 대체">중앙값으로 채운</span> 뒤 ③ <span data-g="표준화">표준화</span>한 뒤를 나란히 봅니다. 평균·퍼짐 같은 숫자는 실제로 학습된 변환기에서 꺼낸 값입니다.</p>
+  <div class="s2-controls" id="s2-tf-controls"></div>
+  <div id="s2-tf-legend"></div>
+  <div class="grid3 s2-tf" id="s2-tf-panels"></div>
+  <div class="s2-formula" id="s2-tf-formula"></div>
+  <div id="s2-tf-read"></div>
+</div>
+<div class="card">
+  <h3>이름 입력 5개 → <span data-g="원-핫 인코딩">원-핫</span> 열</h3>
+  <p class="sub">팀 이름처럼 글자인 입력은 ‘이 이름이면 1, 아니면 0’인 열 여러 개로 펼칩니다. 막대는 이름 입력마다 생긴 열 수입니다.</p>
+  <div id="s2-oh-bars"></div>
+  <div id="s2-oh-example"></div>
+  <div id="s2-oh-read"></div>
+</div>
+
+<h3 class="s2-sec"><span class="k">2-4</span>분산도: 분포와 관계 보기</h3>
+<p class="s2-intro muted" id="s2-e-intro"></p>
+<div id="s2-e-legend"></div>
+<div class="card">
+  <h3>① 승·무·패별 분포</h3>
+  <p class="sub">입력 하나를 고르면, 이긴 경기·비긴 경기·진 경기에서 그 값이 어떻게 퍼져 있는지 겹쳐 봅니다.</p>
+  <div class="s2-controls" id="s2-dist-controls"></div>
+  <div id="s2-dist-desc" class="muted"></div>
+  <div id="s2-dist-hist"></div>
+  <div id="s2-dist-box"></div>
+  <div id="s2-dist-note"></div>
+  <div id="s2-dist-read"></div>
+  <div class="s2-sublabel">요약 통계</div>
+  <div id="s2-dist-table"></div>
+</div>
+<div class="card">
+  <h3>② 두 입력의 관계 (산점도)</h3>
+  <p class="sub">점 하나가 구단 관점 행 하나입니다. 가로·세로 입력을 고르고, 구단이나 홈/원정으로 좁혀 볼 수 있습니다. 먼저 아래 추천 조합부터 눌러 보세요.</p>
+  <div class="s2-presets" id="s2-sc-presets"></div>
+  <div class="s2-controls" id="s2-sc-controls"></div>
+  <div id="s2-sc-stat" class="s2-read"></div>
+  <div id="s2-sc-zero" class="s2-zero"></div>
+  <div id="s2-sc-chart"></div>
+  <div id="s2-sc-legend"></div>
+  <div id="s2-sc-read"></div>
+</div>
+<div class="card">
+  <h3>③ 상관 히트맵</h3>
+  <p class="sub">대표 입력 <span id="s2-corr-count"></span>개와 결과 점수(승 3 · 무 1 · 패 0) 사이의 상관계수 r입니다. 왼쪽 번호가 위쪽 번호와 같은 입력입니다.</p>
+  <div class="scroll"><div class="s2-wide-corr" id="s2-corr-heat"></div></div>
+  <div id="s2-corr-legend"></div>
+  <p class="s2-foot" id="s2-corr-foot"></p>
+  <div class="s2-callouts" id="s2-corr-callouts"></div>
+  <div id="s2-corr-read"></div>
+</div>
+<div class="card">
+  <h3>④ 시즌별 평균 변화</h3>
+  <p class="sub">같은 입력도 시대에 따라 수준이 달라질 수 있습니다. 시즌마다 평균(선)과 가운데 50% 범위(띠)를 그렸습니다.</p>
+  <div class="s2-controls" id="s2-drift-controls"></div>
+  <div id="s2-drift-chart"></div>
+  <div id="s2-drift-legend"></div>
+  <div id="s2-drift-zero" class="s2-zero"></div>
+  <div id="s2-drift-read"></div>
+  <details class="s2-more"><summary>표로 보기</summary><div id="s2-drift-table"></div></details>
+</div>
+
+<h3 class="s2-sec"><span class="k">2-5</span>정리: 모델이 최종적으로 받는 것</h3>
+<div class="card" id="s2-final"></div>
+
+<script>
+Lab.register('s2', function (root, data, LAB) {
+  'use strict';
+  const f = Lab.fmt, el = Lab.el, S = Lab.svgEl, esc = Lab.esc;
+  const $ = (id) => root.querySelector('#' + id);
+  const P = data.pipeline, K = P.constants, R = data.rows, W = data.weights, NT = data.n_train, N = data.n_rows;
+  const VARS = new Map(data.vars.map((v) => [v.name, v]));
+  const OUT = [
+    { code: 2, key: 'win', label: '승', color: 'var(--c-win)', css: '--c-win' },
+    { code: 1, key: 'draw', label: '무', color: 'var(--c-draw)', css: '--c-draw' },
+    { code: 0, key: 'loss', label: '패', color: 'var(--c-loss)', css: '--c-loss' },
+  ];
+  const OUT_BY = { 2: OUT[0], 1: OUT[1], 0: OUT[2] };
+  const PTS = [0, 1, 3];
+  const isNum = Number.isFinite;
+  const shortClub = (i) => { const k = LAB.meta.clubs.indexOf(data.clubs[i]); return k >= 0 ? LAB.meta.clubs_short[k] : data.clubs[i]; };
+  const ssn = (s) => s.slice(0, 4) + '/' + s.slice(-2);
+  const ss2 = (s) => s.slice(2, 4) + '/' + s.slice(-2);
+  const base = Date.parse(data.base_date + 'T00:00:00Z');
+  const dateOf = (day) => new Date(base + day * 864e5).toISOString().slice(0, 10);
+  // A value that rounds to zero must never read '-0' / '-0.00'.
+  const unNeg = (s) => String(s).replace(/^-(?=0(?:[.,]0+)?$)/, '');
+  const num = (x, d) => unNeg(f.num(x, d));
+  const digitsFor = (v) => (v.scale >= 20 ? 1 : v.scale >= 0.2 ? 2 : 3);
+  // Whole-number inputs (counts, days, 0/1 flags) read as '4', not '4.00', when the value itself is whole (medians, quartiles, bin centres).
+  const wholeVar = new Map();
+  const isWhole = (v) => { if (!wholeVar.has(v.name)) wholeVar.set(v.name, data.cols[v.name].every((x) => x == null || Number.isInteger(x))); return wholeVar.get(v.name); };
+  const fv = (v, x) => ((v.discrete || isWhole(v)) && Number.isInteger(x) ? f.int(x) : num(x, digitsFor(v)));
+  const tickF = (v, grouping = true) => { const nf = new Intl.NumberFormat('ko-KR', { maximumFractionDigits: digitsFor(v), useGrouping: grouping }); return (q) => unNeg(nf.format(q)); };
+  // Korean particle that fits the last sound of a word or number: jo('슈팅', '이/가') = '이', jo('3-4-3', '으로/로') = '으로'.
+  function jo(word, pair) {
+    const [withFinal, noFinal] = pair.split('/');
+    let s = String(word).replace(/[\s’'"”\]]+$/, '').replace(/\s*\([^()]*\)$/, '').replace(/[\s’'"”\]]+$/, '');
+    const ch = s.slice(-1), code = ch.charCodeAt(0);
+    let fin = false, rieul = false;
+    if (code >= 0xac00 && code <= 0xd7a3) { const j = (code - 0xac00) % 28; fin = j > 0; rieul = j === 8; }
+    else if (/[0-9]/.test(ch)) { fin = '013678'.includes(ch); rieul = '178'.includes(ch); }   // 영 일 삼 육 칠 팔
+    else if (/[lmn]/i.test(ch)) { fin = true; rieul = /l/i.test(ch); }
+    return withFinal === '으로' ? (fin && !rieul ? withFinal : noFinal) : (fin ? withFinal : noFinal);
+  }
+  const wj = (word, pair) => word + jo(word, pair);
+  // Placeholder zeros: per-row flags ('1' = that side's last-20 window holds a match ESPN wrote as 0 instead of blank).
+  const Z = data.zeros;
+  const zeroHit = (v, i) => (v.zero_side === 'team' ? Z.team_flag[i] === '1' : v.zero_side === 'opp' ? Z.opp_flag[i] === '1'
+    : v.zero_side === 'both' ? Z.team_flag[i] === '1' || Z.opp_flag[i] === '1' : false);
+  const sideText = (v) => (v.zero_side === 'team' ? '우리 팀' : v.zero_side === 'opp' ? '상대 팀' : '우리 팀이나 상대 팀');
+  const unit = (v) => (v.unit && !['0/1', '비율'].includes(v.unit) ? v.unit : '');
+  const axisName = (v) => v.short + (unit(v) ? ` (${unit(v)})` : '');
+  const fresh = (box) => { const d = el('div'); box.replaceChildren(d); return d; };
+  const strength = (r) => { const a = Math.abs(r); return a < 0.1 ? '거의 없는' : a < 0.3 ? '약한' : a < 0.5 ? '보통 정도의' : a < 0.7 ? '꽤 강한' : '매우 강한'; };
+  const term = (name, text) => el('span', { 'data-g': name }, text || name);
+  function readSo(box, how, so) {
+    box.replaceChildren(el('p', { class: 's2-read' }, el('b', { text: '이 그림 읽는 법' }), how),
+      el('p', { class: 's2-read' }, el('b', { text: '그래서?' }), so));
+  }
+  function field(labelText, control) {
+    if (!control.id) control.id = 's2-f-' + Math.random().toString(36).slice(2, 8);
+    return el('div', {}, el('label', { class: 'f', for: control.id, text: labelText }), control);
+  }
+  // Same look as label.f for a group of buttons (a segmented control has its own aria-label).
+  const groupField = (labelText, box) => el('div', {}, el('div', { class: 's2-flabel', 'aria-hidden': 'true', text: labelText }), box);
+  function varSelect(value, onChange, labelText) {
+    const s = el('select', { 'aria-label': labelText });
+    for (const g of LAB.groups) {
+      const vs = data.vars.filter((v) => v.group === g.key);
+      if (!vs.length) continue;
+      s.append(el('optgroup', { label: g.label }, vs.map((v) => el('option', { value: v.name, selected: v.name === value ? '' : null }, v.label))));
+    }
+    s.addEventListener('change', () => onChange(s.value));
+    return s;
+  }
+  const clubRows = data.clubs.map(() => []);
+  R.club.forEach((c, i) => clubRows[c].push(i));
+
+  // Scatter colours by outcome code (0 = 패, 1 = 무, 2 = 승); Lab.scatter resolves the custom properties on every draw, so a theme flip re-colours it.
+  const outColors = ['--c-loss', '--c-draw', '--c-win'];
+
+  // ------------------------------------------------------------ small chart kinds (built on Lab.chart)
+  function binCounts(values, lo, hi, bins) {
+    const step = (hi - lo) / bins, c = new Array(bins).fill(0); let n = 0, out = 0;
+    for (const v of values) {
+      if (!isNum(v)) continue;
+      if (v < lo || v > hi) { out++; continue; }
+      c[Math.min(bins - 1, Math.floor((v - lo) / step))]++; n++;
+    }
+    return { c, n, out, step };
+  }
+  const binning = (v, w) => (v.discrete ? { lo: v.lo - 0.5, hi: v.hi + 0.5, bins: Math.round(v.hi - v.lo + 1) }
+    : { lo: v.lo, hi: v.hi, bins: w < 360 ? 18 : 30 });
+  const intTicks = (v) => (v.discrete && v.hi - v.lo <= 12 ? Array.from({ length: v.hi - v.lo + 1 }, (_, k) => v.lo + k) : null);
+
+  /* Overlaid outcome distributions drawn as 2px step lines (shares within each outcome). */
+  function stepHist(box, v, groups, { height = 230, label = '' } = {}) {
+    return Lab.chart(box, {
+      height, margin: { l: 46, b: 40, t: 10, r: 14 }, label,
+      draw({ g, w, h }) {
+        const { lo, hi, bins } = binning(v, w);
+        const tables = groups.map((gr) => { const t = binCounts(gr.values, lo, hi, bins); return { ...gr, ...t, share: t.c.map((x) => (t.n ? x / t.n : 0)) }; });
+        const top = Math.max(1e-9, ...tables.flatMap((t) => t.share));
+        const x = Lab.scaleLinear([lo, hi], [0, w]), y = Lab.scaleLinear([0, top * 1.12], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: (q) => Math.round(q * 100) + '%' });
+        Lab.axisBottom(g, x, h, { label: axisName(v), ticks: intTicks(v), format: tickF(v) });
+        if (v.discrete && bins <= 15) {
+          // few whole-number values: side-by-side thin bars read better than overlapping steps
+          const bw = (w / bins), barW = Math.max(2, Math.min(24, (bw - 8) / tables.length - 2));
+          tables.forEach((t, k) => t.share.forEach((s, i) => {
+            if (!s) return;
+            const cx = x(lo + (i + 0.5) * t.step) + (k - (tables.length - 1) / 2) * (barW + 2);
+            g.append(S('rect', { x: cx - barW / 2, y: y(s), width: barW, height: Math.max(1, y(0) - y(s)), rx: 3, fill: t.color }));
+          }));
+        } else for (const t of tables) {
+          let d = `M${x(lo).toFixed(1)},${y(0).toFixed(1)}`;
+          t.share.forEach((s, i) => { d += `L${x(lo + i * t.step).toFixed(1)},${y(s).toFixed(1)}L${x(lo + (i + 1) * t.step).toFixed(1)},${y(s).toFixed(1)}`; });
+          d += `L${x(hi).toFixed(1)},${y(0).toFixed(1)}`;
+          g.append(S('path', { d, fill: 'none', stroke: t.color, 'stroke-width': 2, 'stroke-linejoin': 'round' }));
+        }
+        const hit = S('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' });
+        Lab.tip.attach(hit, (e) => {
+          const r = hit.getBoundingClientRect(), i = Math.max(0, Math.min(bins - 1, Math.floor(((e ? e.clientX : r.left) - r.left) / r.width * bins)));
+          const a = lo + i * tables[0].step, b = a + tables[0].step;
+          const head = v.discrete ? `${fv(v, (a + b) / 2)}` : `${fv(v, a)} ~ ${fv(v, b)}`;
+          return `<b>${esc(head)}</b>` + tables.map((t) => `<div><i class="swatch" style="background:${t.color}"></i>${esc(t.name)} ${f.pct(t.share[i], 1)} (${t.c[i]}행)</div>`).join('');
+        });
+        g.append(hit);
+      },
+    });
+  }
+
+  /* Stacked count histogram: layers = [{name,color,values}] share the same bins. */
+  function stackHist(box, layers, { lo, hi, bins, ticks, xLabel, height = 190, label = '', fmt = Lab.fmt.compact }) {
+    const binned = layers.map((L) => ({ ...L, ...binCounts(L.values, lo, hi, bins) }));
+    const tot = new Array(bins).fill(0); binned.forEach((b) => b.c.forEach((c, i) => { tot[i] += c; }));
+    return Lab.chart(box, {
+      height, margin: { l: 44, b: 40, t: 8, r: 10 }, label,
+      draw({ g, w, h }) {
+        const x = Lab.scaleLinear([lo, hi], [0, w]), y = Lab.scaleLinear([0, Math.max(1, ...tot) * 1.08], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: Lab.fmt.compact });
+        Lab.axisBottom(g, x, h, { label: xLabel, ticks, format: fmt });
+        const bw = w / bins, barW = Math.max(1, Math.min(24, bw - 2));
+        for (let i = 0; i < bins; i++) {
+          let acc = 0;
+          for (const L of binned) {
+            const c = L.c[i]; if (!c) continue;
+            const top = y(acc + c), bottom = y(acc) - (acc ? 2 : 0);
+            g.append(S('rect', { x: x(lo + i * (hi - lo) / bins) + (bw - barW) / 2, y: top, width: barW, height: Math.max(1, bottom - top), rx: 2, fill: L.color }));
+            acc += c;
+          }
+        }
+        const hit = S('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' });
+        Lab.tip.attach(hit, (e) => {
+          const r = hit.getBoundingClientRect(), i = Math.max(0, Math.min(bins - 1, Math.floor(((e ? e.clientX : r.left) - r.left) / r.width * bins)));
+          const a = lo + i * (hi - lo) / bins, b = a + (hi - lo) / bins;
+          return `<b>${esc(fmt(a))} ~ ${esc(fmt(b))}</b>` + binned.map((L) => `<div><i class="swatch" style="background:${L.color}"></i>${esc(L.name)} ${f.int(L.c[i])}행</div>`).join('');
+        });
+        g.append(hit);
+      },
+    });
+  }
+
+  /* Box summary per outcome from precomputed quartiles (whiskers = last value within 1.5×IQR). */
+  function boxPlot(box, v, items, { label = '' } = {}) {
+    return Lab.chart(box, {
+      height: items.length * 34 + 44, margin: { l: 46, b: 40, t: 4, r: 14 }, label,
+      draw({ g, w, h }) {
+        const { lo, hi } = binning(v, w);
+        const x = Lab.scaleLinear([lo, hi], [0, w]), cx = (q) => Math.max(0, Math.min(w, x(q)));
+        Lab.axisBottom(g, x, h, { label: axisName(v), ticks: intTicks(v), format: tickF(v) });
+        const band = h / items.length;
+        items.forEach((it, k) => {
+          const s = it.s; if (!s || !s.n) return;
+          const cy = k * band + band / 2, bh = Math.min(18, band * 0.6), row = S('g');
+          row.append(S('text', { x: -10, y: cy + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, it.label));
+          row.append(S('line', { x1: cx(s.whisker_lo), x2: cx(s.whisker_hi), y1: cy, y2: cy, stroke: 'var(--ink-3)', 'stroke-width': 1.5 }));
+          for (const q of [s.whisker_lo, s.whisker_hi]) row.append(S('line', { x1: cx(q), x2: cx(q), y1: cy - bh / 3, y2: cy + bh / 3, stroke: 'var(--ink-3)', 'stroke-width': 1.5 }));
+          row.append(S('rect', { x: cx(s.q1), y: cy - bh / 2, width: Math.max(2, cx(s.q3) - cx(s.q1)), height: bh, rx: 3, style: `fill:color-mix(in srgb, ${it.color} 32%, var(--surface));stroke:${it.color};stroke-width:1.5` }));
+          row.append(S('line', { x1: cx(s.median), x2: cx(s.median), y1: cy - bh / 2, y2: cy + bh / 2, stroke: 'var(--ink)', 'stroke-width': 2.5 }));
+          row.append(S('circle', { cx: cx(s.mean), cy, r: 3.5, fill: 'var(--surface)', stroke: 'var(--ink)', 'stroke-width': 1.5 }));
+          const hitRow = S('rect', { x: -40, y: k * band, width: w + 40, height: band, fill: 'transparent' });
+          row.append(hitRow);
+          Lab.tip.attach(hitRow, () => `<b>${esc(it.label)} 경기 (n=${f.int(s.n)})</b><div>가운데 50%: ${fv(v, s.q1)} ~ ${fv(v, s.q3)}</div><div>중앙값 ${fv(v, s.median)} · 평균 ${fv(v, s.mean)}</div><div>수염 끝: ${fv(v, s.whisker_lo)} ~ ${fv(v, s.whisker_hi)}</div>`);
+          g.append(row);
+        });
+      },
+    });
+  }
+
+  /* Generic SVG heatmap. Colours/labels come from callbacks so both heatmaps share it. */
+  function heatmap(box, { rows, cols, value, fill, text, textFill, tip, labelW = 200, cellH = 26, colLabel, label = '' }) {
+    return Lab.chart(box, {
+      height: rows.length * cellH + 30, margin: { l: labelW, t: 24, r: 6, b: 6 }, label,
+      draw({ g, w }) {
+        const cw = w / cols.length;
+        cols.forEach((c, j) => { const t = colLabel(c, j, cw); if (t) g.append(S('text', { x: j * cw + cw / 2, y: -8, 'text-anchor': 'middle', class: 'tick' }, t)); });
+        rows.forEach((r, i) => {
+          g.append(S('text', { x: -8, y: i * cellH + cellH / 2 + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, r));
+          cols.forEach((c, j) => {
+            const v = value(i, j);
+            const rect = S('rect', { x: j * cw + 1, y: i * cellH + 1, width: Math.max(1, cw - 2), height: cellH - 2, rx: 3, style: `fill:${fill(v, i, j)}` });
+            g.append(rect);
+            const t = text(v, i, j);
+            if (t && cw >= 24) g.append(S('text', { x: j * cw + cw / 2, y: i * cellH + cellH / 2 + 4, 'text-anchor': 'middle', style: `fill:${textFill(v, i, j)};font-size:11px;pointer-events:none` }, t));
+            Lab.tip.attach(rect, () => tip(v, i, j));
+          });
+        });
+      },
+    });
+  }
+
+  // ================================================================ A. takeaway
+  const top = data.corr.all_top[0];
+  $('s2-takeaway').textContent =
+    `${f.int(P.matches)}경기의 원시 기록을 지난 경기 기록과 그 경기 선발 명단으로 만든 ${f.int(P.rows)}행 × ${f.int(P.total_columns)}열 표로 바꿨고, 각 행의 입력에는 그 경기 자체의 결과가 들어가지 않습니다. ` +
+    `분포를 그려 보면 결과와 가장 잘 함께 움직이는 입력은 ‘${top.label}’(상관계수 ${f.num(top.r, 2)})이지만, 결과 점수 차이의 약 ${f.pct(top.r * top.r, 0)}만 설명할 만큼 약해 입력 하나로 결과를 가를 수는 없습니다.`;
+
+  // ================================================================ B. pipeline
+  const cnt = (num, label) => el('span', { class: 's2-cnt' }, el('b', { text: String(num) }), label);
+  const arrow = () => el('span', { class: 's2-arrow', 'aria-hidden': 'true', text: '→' });
+  const dot = () => el('span', { class: 's2-dotsep', 'aria-hidden': 'true', text: '·' });
+  const lastSeason = data.seasons[data.seasons.length - 1];
+  const nameEx = P.names.examples[0] || ['', ''];
+  const dLabel = P.formation_d_labels[0] || '';
+  const elo = VARS.get('team_elo'), defenders = VARS.get('defenders');
+  const eloX = Math.round(data.stats.team_elo.all.q3);
+  const groupChips = el('div', { class: 's2-chips' }, P.groups.map((gr) => el('span', { class: 'chip', text: `${gr.label} ${gr.n}` })));
+  const weightBox = el('div', { class: 's2-mini' },
+    el('div', {}, el('h4', { text: '경기 나이에 따른 무게' }), el('div', { id: 's2-w-curve' })),
+    el('div', {}, el('h4', { text: '시즌별로 차지하는 무게' }), el('div', { id: 's2-w-share' })));
+  const weightRead = el('div');
+  const unseenOpp = data.unseen.find((u) => u.name === 'opponent');
+  const stages = [
+    {
+      title: '두 출처를 합치고 맞춰 보기',
+      counts: [cnt(f.int(P.league_matches), '리그 경기'), arrow(), cnt(f.int(P.matches), '6개 구단 경기'), arrow(), cnt(f.int(P.espn_verified), 'ESPN 대조 통과')],
+      text: [`Football-Data에서 ${ssn(data.seasons[0])}~${ssn(lastSeason)} EPL 전 경기의 결과·슈팅·배당을 받고, 6개 구단이 뛴 경기만 골라 ESPN 상세 기록(포메이션·선발·점유율 등)과 날짜·팀·스코어를 하나하나 맞춰 봤습니다.`],
+      more: [
+        `ESPN 기록을 찾지 못한 6개 구단 경기: ${f.int(P.unmatched)}개 (있었다면 버리지 않고 ESPN 상세 기록 없이 남깁니다)`,
+        `팀 이름이나 스코어가 달라 버린 ESPN 후보 기록: ${f.int(P.rejected_alternatives)}개`,
+        `6개 구단이 뛰지 않은 ${f.int(P.league_matches - P.matches)}경기는 학습 행이 되지 않고, 상대 팀의 최근 성적과 Elo를 계산하는 배경 자료로만 씁니다.`,
+      ],
+    },
+    {
+      title: '이름 정리 · 포메이션 표기 통일',
+      counts: [cnt(f.int(P.names.count), '개 팀 이름 표기 통일'), dot(), cnt(`${P.formation_raw_kinds} → ${P.formation_clean_kinds}`, '종 포메이션 표기'), dot(), cnt(f.int(P.formation_missing_rows), '행은 ‘기록 없음’ 유지')],
+      text: [`같은 팀이 출처마다 다르게 적혀 있어(예: ${nameEx[0]} → ${nameEx[1]}) 하나로 맞췄습니다. ESPN의 ‘${dLabel}’처럼 꼬리표가 붙은 표기는 같은 모양으로 합쳤고, 포메이션이 비어 있으면 추측하지 않고 ‘__missing__’(기록 없음)으로 남겼습니다.`],
+      more: [
+        `바꾼 이름 예: ${P.names.examples.map((p) => `${p[0]} → ${p[1]}`).join(', ')}`,
+        `‘${dLabel}’ ${f.int(P.formation_d_count)}건 → ‘${dLabel.replace(/-d$/, '')}’${jo(dLabel.replace(/-d$/, ''), '으로/로')} 합침`,
+        `포메이션이 빈 팀-경기 기록 ${f.int(P.formation_missing_sides)} / ${f.int(P.formation_sides)}개, 구단 관점 행으로는 ${f.int(P.formation_missing_rows)} / ${f.int(P.rows)}행입니다. 시즌별 모습은 2-2에서 봅니다.`,
+      ],
+    },
+    {
+      title: '경기 전 값으로 바꾸기 (누수 막기)',
+      counts: [cnt(f.int(P.matches), '경기'), arrow(), cnt(f.int(P.rows), '구단 관점 행'), dot(), cnt(P.numeric, '개 숫자 입력'), dot(), cnt(P.categorical, '개 이름 입력')],
+      text: [`날짜 순서대로 하루씩 진행하면서, 각 행에는 그날 이전 경기로 만든 값만 넣었습니다. 그 경기의 득점·슈팅·결과는 다음 경기 행부터 쓰입니다. 6개 구단끼리 붙은 ${f.int(P.derby_matches)}경기는 양쪽 관점에서 한 번씩, 두 행이 됩니다(${P.clubs}개 구단 × ${f.int(P.rows_per_club)}경기 = ${f.int(P.rows)}행).`,
+        '예외가 하나 있습니다. 선발·포메이션 입력은 그 경기의 선발 명단(보통 킥오프 약 1시간 전 발표)에서 옵니다. 다만 포메이션 표기는 언제 기록됐는지 시각이 남아 있지 않아, 경기 전에 알 수 있었다고 완전히 보장하지는 못합니다.'],
+      more: [
+        `최근 ${K.windows.join('·')}경기 평균: 승점·득점·실점·슈팅·점유율 등 ${K.history_stats}가지 기록 × ${K.windows.length}구간. 기록이 있는 경기만 평균합니다.`,
+        el('span', {}, term('Elo'), `: 모든 팀이 ${f.int(K.elo_start)}점에서 시작해 경기마다 ${K.elo_k} × (실제 결과 − 기대 승률)만큼 주고받습니다. 기대 승률은 홈 팀에 ${K.elo_home_edge}점을 더해 계산하고, 새 시즌이 되면 ${f.int(K.elo_start)}점 쪽으로 ${f.pct(1 - K.elo_keep, 0)} 되돌립니다.`),
+        el('span', { class: 'eq', text: `홈 팀 기대 승률 = 1 ÷ (1 + 10^((원정 Elo − 홈 Elo − ${K.elo_home_edge}) ÷ ${K.elo_scale}))` }),
+        `같은 장소 최근 ${K.venue_n}경기: 이번이 홈 경기면 홈 경기만, 원정이면 원정 경기만 평균합니다.`,
+        `휴식일: 직전 경기와의 날짜 차이(최대 ${K.rest_cap}일, 수집한 첫 경기는 ${K.rest_default}일로 둠).`,
+        '선발 11명: 직전 경기 선발 유지 인원, 그리고 이전에 수집한 경기에서 관측한 선발 선수들의 경기당 득점·도움·슈팅률.',
+        '포메이션: 수비수·미드필더·공격수 수, 최근 20경기 같은 포메이션 사용률, 직전 경기 대비 변경 여부.',
+        el('span', {}, `숫자 입력 ${P.numeric}개의 묶음:`, groupChips),
+      ],
+    },
+    {
+      title: '빈칸 채우기 (중앙값 + ‘비어 있었음’ 표시)',
+      counts: [cnt(f.int(P.missing_cells), '칸 비어 있음'), el('span', { class: 'muted', text: `(전체 ${f.int(P.cells)}칸의 ${f.pct(P.missing_cells / P.cells, 1)})` }), dot(), cnt(P.cols_with_missing_train, '개 열에 빈칸'), arrow(), cnt(P.indicators, '개 표시 열 추가')],
+      text: [`빈칸은 그 열의 중앙값으로 채우고, 옆에 ‘원래 비어 있었음(1/0)’ 열을 붙여 정보가 사라지지 않게 했습니다. 중앙값은 학습에 쓴 ${f.int(P.train_rows)}행(${P.train_first} ~ ${P.train_last})에서만 구해, 처음 보는 경기의 정보가 새어 들어가지 않습니다.`],
+      more: [
+        `예: 포메이션 기록이 없는 경기의 ‘수비수 수’ → 학습 구간 중앙값 ${f.num(defenders.median, 0)}명으로 채우고 ‘비어 있었음’ = 1.`,
+        `주의: 0으로 적힌 기록(숨은 빈칸) ${f.int(data.zeros.matches)}경기는 빈칸으로 잡히지 않습니다. 2-2 아래 주의 상자를 보세요.`,
+      ],
+    },
+    {
+      title: '같은 눈금에 올리기 (표준화 + 원-핫)',
+      counts: [cnt(`${P.numeric} + ${P.indicators}`, `= ${P.scaled}개 숫자 열 표준화`), dot(), cnt(P.categorical, '개 이름'), arrow(), cnt(P.onehot_total, '개 원-핫 열'), dot(), cnt(f.int(P.total_columns), '열 최종')],
+      text: ['숫자 열은 (값 − 평균) ÷ 퍼짐으로 바꿔 평균 0·퍼짐 1에 맞추고, 팀 이름처럼 글자인 값은 ‘해당하면 1, 아니면 0’인 열 여러 개로 펼쳤습니다.'],
+      more: [
+        el('span', {}, `예: 우리 팀 Elo ${f.int(eloX)}점 → `, el('span', { class: 'eq', text: `(${f.int(eloX)} − ${f.num(elo.mean, 1)}) ÷ ${f.num(elo.scale, 1)} = ${f.num((eloX - elo.mean) / elo.scale, 2)}` })),
+        `평균과 퍼짐도 학습 행 ${f.int(P.train_rows)}개에서만 구했고, 처음 보는 경기 ${f.int(P.test_rows)}행에는 같은 값을 그대로 적용합니다.`,
+        `학습 구간에 없던 이름(예: 상대 팀 ${unseenOpp && unseenOpp.values.length ? unseenOpp.values.join(', ') : '없음'})은 원-핫 열이 모두 0이 됩니다.`,
+      ],
+    },
+    {
+      title: '학습 가중치 (최근 경기일수록 크게)',
+      counts: [cnt(f.int(P.half_life), '일마다 무게 절반'), dot(), cnt(f.int(P.derby_matches), '경기(6개 구단끼리)'), arrow(), cnt(f.num(W.derby_weight, 1), '씩 두 행')],
+      text: [`오래된 경기일수록 덜 반영하도록 날짜에 따라 무게를 줄였습니다(기준일 ${W.ref_date}, 학습 구간의 마지막 경기). 6개 구단끼리 붙은 경기는 두 행으로 나오므로, 한 경기가 두 번 세지지 않게 각 행에 ${wj(f.num(W.derby_weight, 1), '을/를')} 곱합니다.`],
+      extra: [weightBox, weightRead],
+    },
+  ];
+  const pipe = $('s2-pipe');
+  stages.forEach((st, k) => {
+    const body = el('div', { class: 's2-body' }, el('h4', { text: st.title }), el('div', { class: 's2-counts' }, st.counts), st.text.map((t) => el('p', {}, t)));
+    if (st.more) body.append(el('details', { class: 's2-more' }, el('summary', { text: '자세히' }), el('ul', { class: 'clean' }, st.more.map((m) => el('li', {}, m)))));
+    if (st.extra) body.append(...st.extra);
+    pipe.append(el('li', { class: 's2-stage' }, el('span', { class: 's2-dot', 'aria-hidden': 'true', text: String(k + 1) }), body));
+  });
+
+  // weight curve
+  Lab.chart($('s2-w-curve'), {
+    height: 200, margin: { l: 44, b: 40, t: 14, r: 16 }, label: '경기 나이에 따른 학습 무게 곡선',
+    draw({ g, w, h }) {
+      const pts = W.curve, xmax = pts[pts.length - 1][0];
+      const x = Lab.scaleLinear([0, xmax], [0, w]), y = Lab.scaleLinear([0, 1.05], [h, 0]);
+      Lab.axisLeft(g, y, w, { format: (v) => Math.round(v * 100) + '%', ticks: [0, 0.25, 0.5, 0.75, 1] });
+      Lab.axisBottom(g, x, h, { label: '학습 기준일보다 몇 년 전 경기인가', format: (v) => v + '년' });
+      g.append(S('path', { d: pts.map((p, i) => `${i ? 'L' : 'M'}${x(p[0]).toFixed(1)},${y(p[1]).toFixed(1)}`).join(''), fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2 }));
+      for (const [yr, wt] of W.marks) {
+        g.append(S('circle', { cx: x(yr), cy: y(wt), r: 4.5, fill: 'var(--accent)', stroke: 'var(--surface)', 'stroke-width': 2 }));
+        g.append(S('text', { x: x(yr) + 7, y: y(wt) - 7, class: 'value-label' }, f.pct(wt, 0)));
+      }
+      const hit = S('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' });
+      Lab.tip.attach(hit, (e) => {
+        const r = hit.getBoundingClientRect(), v = x.invert((e ? e.clientX : r.left) - r.left);
+        const p = pts.reduce((a, b) => (Math.abs(b[0] - v) < Math.abs(a[0] - v) ? b : a));
+        return `<b>${f.num(p[0], 2)}년 전 경기</b><div>무게 ${f.pct(p[1], 1)} (최근 경기 = 100%)</div>`;
+      });
+      g.append(hit);
+    },
+  });
+  Lab.chart($('s2-w-share'), {
+    height: 200, margin: { l: 44, b: 40, t: 14, r: 8 }, label: '학습 시즌별 무게 비율 막대',
+    draw({ g, w, h }) {
+      const top = Math.max(...W.share), band = Lab.scaleBand(W.seasons, [0, w], 0.3), y = Lab.scaleLinear([0, top * 1.12], [h, 0]);
+      Lab.axisLeft(g, y, w, { format: (v) => Math.round(v * 100) + '%' });
+      g.append(S('line', { x1: 0, x2: w, y1: h, y2: h, class: 'axis-line' }));
+      const every = Math.ceil(W.seasons.length / Math.max(2, Math.floor(w / 48)));
+      W.seasons.forEach((s, i) => {
+        const bw = Math.min(24, band.bandwidth), bx = band(s) + (band.bandwidth - bw) / 2;
+        g.append(S('rect', { x: bx, y: y(W.share[i]), width: bw, height: Math.max(1, h - y(W.share[i])), rx: 3, fill: 'var(--accent)' }));
+        const lastShown = Math.floor((W.seasons.length - 1) / every) * every;
+        if (i % every === 0 || (i === W.seasons.length - 1 && i - lastShown >= Math.ceil(every / 2) + 1)) g.append(S('text', { x: band(s) + band.bandwidth / 2, y: h + 17, 'text-anchor': 'middle', class: 'tick' }, ss2(s)));
+        const hit = S('rect', { x: band(s) - (band.step - band.bandwidth) / 2, y: 0, width: band.step, height: h, fill: 'transparent' });
+        Lab.tip.attach(hit, () => `<b>${esc(ssn(s))}</b><div>전체 무게의 ${f.pct(W.share[i], 1)}</div><div>${f.int(W.rows[i])}행</div>`);
+        g.append(hit);
+      });
+      g.append(S('text', { x: w / 2, y: h + 32, 'text-anchor': 'middle', class: 'axis-label' }, '학습 시즌'));
+    },
+  });
+  readSo(weightRead,
+    '왼쪽은 경기가 학습 기준일보다 몇 년 전인지(가로)에 따른 무게(세로, 가장 최근 경기 = 100%), 오른쪽은 각 시즌이 전체 무게에서 차지하는 비율입니다.',
+    `${W.marks.map(([yr, wt]) => `${yr}년 전 경기는 ${f.pct(wt, 0)}`).join(', ')}만 반영됩니다. 그래서 최근 3시즌(${ssn(W.last3[0])}~${ssn(W.last3[W.last3.length - 1])})이 전체 무게의 ${f.pct(W.last3_share, 0)}를 차지하고, ${ssn(W.seasons[0])} 시즌은 ${f.pct(W.share[0], 1)}뿐입니다.`);
+
+  // ================================================================ B'. time travel demo
+  const tt = { club: 0, row: 0, win: K.windows[0] };
+  {
+    const lastTrain = R.season[NT - 1], list = clubRows[0].filter((i) => R.season[i] === lastTrain);
+    tt.row = list[Math.min(9, list.length - 1)];
+  }
+  const ttClub = Lab.select(data.clubs.map((c, i) => ({ value: i, label: shortClub(i) })), 0, (v) => {
+    const pos = seasonList(tt.club, R.season[tt.row]).indexOf(tt.row);
+    tt.club = +v;
+    const list = seasonList(tt.club, R.season[tt.row]);
+    setRow(list[Math.max(0, Math.min(pos, list.length - 1))]);
+  }, { label: '구단' });
+  const ttSeason = Lab.select(data.seasons.map((s, i) => ({ value: i, label: ssn(s) })), R.season[tt.row], (v) => {
+    const pos = seasonList(tt.club, R.season[tt.row]).indexOf(tt.row);
+    const list = seasonList(tt.club, +v);
+    setRow(list[Math.max(0, Math.min(pos, list.length - 1))]);
+  }, { label: '시즌' });
+  const ttMatch = el('select', { 'aria-label': '경기' });
+  ttMatch.addEventListener('change', () => setRow(+ttMatch.value));
+  const ttWin = el('div');
+  $('s2-tt-controls').append(field('구단', ttClub), field('시즌', ttSeason), field('경기', ttMatch), groupField('평균 구간', ttWin));
+  Lab.segmented(ttWin, K.windows.map((w) => ({ value: String(w), label: `최근 ${w}경기` })), String(tt.win), (v) => { tt.win = +v; renderTT(); }, '평균 구간');
+  function seasonList(club, season) { return clubRows[club].filter((i) => R.season[i] === season); }
+  const matchLabel = (i) => `${dateOf(R.day[i]).slice(5)} ${R.home[i] ? '홈' : '원정'} vs ${data.opponents[R.opp[i]]} (${R.gf[i]}:${R.ga[i]})`;
+  function setRow(i) {
+    tt.row = i; tt.club = R.club[i];
+    ttClub.value = String(tt.club); ttSeason.value = String(R.season[i]);
+    ttMatch.replaceChildren(...seasonList(tt.club, R.season[i]).map((j, k) => el('option', { value: j, selected: j === i ? '' : null }, `${k + 1}. ${matchLabel(j)}`)));
+    ttMatch.value = String(i);
+    renderTT();
+  }
+  const outChip = (code) => el('span', { class: `chip ${OUT_BY[code].key}`, text: OUT_BY[code].label });
+  function renderTT() {
+    const i = tt.row, list = clubRows[tt.club], p = list.indexOf(i);
+    const prev = list.slice(0, p).filter((j) => R.day[j] < R.day[i]);
+    const win = prev.slice(-tt.win), show = prev.slice(-20), start = show.length - win.length;
+    const opp = data.opponents[R.opp[i]];
+    $('s2-tt-target').replaceChildren(el('div', { class: 's2-target' },
+      el('b', { text: `고른 경기: ${dateOf(R.day[i])} · ${shortClub(tt.club)} ${R.home[i] ? '홈' : '원정'} vs ${opp}` }),
+      el('span', {}, `실제 결과 ${R.gf[i]}:${R.ga[i]} `, outChip(R.out[i])),
+      el('span', { class: 'muted', text: '이 결과가 이 행의 정답(종속변수)입니다. 아래 계산에는 들어가지 않고, 다음 경기 행부터 ‘지난 경기’로 쓰입니다.' })));
+    // timeline
+    const mean = win.length ? win.reduce((a, j) => a + PTS[R.out[j]], 0) / win.length : null;
+    Lab.chart(fresh($('s2-tt-chart')), {
+      height: 210, margin: { l: 50, b: 40, t: 26, r: 14 }, label: `지난 ${show.length}경기의 승점과 최근 ${tt.win}경기 평균`,
+      draw({ g, w, h }) {
+        const slots = show.length + 1.6, x = (k) => (k + 0.5) * (w / slots), y = Lab.scaleLinear([0, 3], [h, 0]);
+        if (win.length) g.append(S('rect', { x: x(start) - w / slots / 2, y: 0, width: x(show.length - 1) - x(start) + w / slots, height: h, fill: 'var(--accent-soft)' }));
+        Lab.axisLeft(g, y, w, { ticks: [0, 1, 3], format: (v) => ({ 0: '패 0점', 1: '무 1점', 3: '승 3점' }[v]) });
+        const kx = x(show.length - 0.2);
+        g.append(S('line', { x1: kx, x2: kx, y1: -8, y2: h, stroke: 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': '4 4' }));
+        g.append(S('text', { x: kx - 6, y: -12, 'text-anchor': 'end', class: 'tick' }, '킥오프 전 ←'));
+        if (mean != null) {
+          g.append(S('line', { x1: x(start) - 6, x2: x(show.length - 1) + 6, y1: y(mean), y2: y(mean), stroke: 'var(--ink)', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
+          g.append(S('text', { x: x(start), y: y(mean) - 7, class: 'value-label' }, `평균 ${f.num(mean, 2)}`));
+        }
+        show.forEach((j, k) => {
+          const inWin = k >= start, o = OUT_BY[R.out[j]];
+          const c = S('circle', { cx: x(k), cy: y(PTS[R.out[j]]), r: 6, fill: o.color, stroke: 'var(--surface)', 'stroke-width': 2, opacity: inWin ? 1 : 0.28 });
+          g.append(c);
+          const hit = S('rect', { x: x(k) - w / slots / 2, y: 0, width: w / slots, height: h, fill: 'transparent' });
+          Lab.tip.attach(hit, () => `<b>${esc(dateOf(R.day[j]))}</b><div>${R.home[j] ? '홈' : '원정'} vs ${esc(data.opponents[R.opp[j]])}</div><div>${R.gf[j]}:${R.ga[j]} ${o.label} · 승점 ${PTS[R.out[j]]}</div><div>${inWin ? `최근 ${tt.win}경기 평균에 포함` : '이번 구간 밖'}</div>`);
+          g.append(hit);
+        });
+        const tx = x(show.length + 0.6);
+        g.append(S('circle', { cx: tx, cy: y(1.5), r: 9, fill: 'var(--surface)', stroke: 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': '3 3' }));
+        g.append(S('text', { x: tx, y: y(1.5) + 4.5, 'text-anchor': 'middle', class: 'value-label' }, '?'));
+        if (show.length) {
+          g.append(S('text', { x: x(0), y: h + 17, 'text-anchor': 'start', class: 'tick' }, dateOf(R.day[show[0]])));
+          if (w > 420) g.append(S('text', { x: x(show.length - 1), y: h + 17, 'text-anchor': 'end', class: 'tick' }, dateOf(R.day[show[show.length - 1]])));
+        }
+        g.append(S('text', { x: tx, y: h + 17, 'text-anchor': 'middle', class: 'tick tick-strong' }, '이 경기'));
+        g.append(S('line', { x1: 0, x2: w, y1: h, y2: h, class: 'axis-line' }));
+        if (!show.length) g.append(S('text', { x: w / 2 - 30, y: h / 2, 'text-anchor': 'middle', class: 'tick' }, '이전 경기 없음(수집 첫 경기)'));
+      },
+    });
+    $('s2-tt-legend').replaceChildren(Lab.legend([...OUT.map((o) => ({ label: `${o.label}(승점 ${PTS[o.code]})`, color: o.color })), { label: `최근 ${tt.win}경기 구간`, color: 'var(--accent-soft)' }]));
+    // recompute vs stored
+    const ok = (a, b) => (a == null && b == null) || (a != null && b != null && Math.abs(a - b) < 5e-4);
+    const mark = (good) => el('span', { class: good ? 's2-ok' : 's2-bad', text: good ? '일치' : '불일치' });
+    const rows = [];
+    let allOk = true;
+    for (const [lab, key, fn] of [['승점', 'points', (j) => PTS[R.out[j]]], ['득점', 'goals_for', (j) => R.gf[j]], ['실점', 'goals_against', (j) => R.ga[j]]]) {
+      const sum = win.reduce((a, j) => a + fn(j), 0), m = win.length ? sum / win.length : null;
+      const real = data.cols[`team_${key}_${tt.win}`][i], good = ok(m, real); allOk = allOk && good;
+      rows.push([`최근 ${tt.win}경기 평균 ${lab}`, win.length ? `${sum} ÷ ${win.length} = ${f.num(m, 3)}` : '이전 경기 없음 → 빈칸', real == null ? '빈칸' : f.num(real, 3), mark(good)]);
+    }
+    const last = prev[prev.length - 1];
+    const gap = last == null ? null : R.day[i] - R.day[last];
+    const rest = last == null ? K.rest_default : Math.min(gap, K.rest_cap), realRest = data.cols.team_rest_days[i];
+    const goodRest = ok(rest, realRest); allOk = allOk && goodRest;
+    rows.push(['직전 경기 후 휴식일', last == null ? `이전 경기 없음 → ${K.rest_default}일` : `${dateOf(R.day[last])} → ${gap}일${gap > K.rest_cap ? ` (최대 ${K.rest_cap}일)` : ''}`, f.int(realRest), mark(goodRest)]);
+    const venue = prev.filter((j) => R.home[j] === R.home[i]).slice(-K.venue_n);
+    const vsum = venue.reduce((a, j) => a + PTS[R.out[j]], 0), vm = venue.length ? vsum / venue.length : null, vreal = data.cols.team_venue_points[i];
+    const goodV = ok(vm, vreal); allOk = allOk && goodV;
+    rows.push([`같은 장소(${R.home[i] ? '홈' : '원정'}) 최근 ${K.venue_n}경기 평균 승점`, venue.length ? `${vsum} ÷ ${venue.length} = ${f.num(vm, 3)}` : '이전 경기 없음 → 빈칸', vreal == null ? '빈칸' : f.num(vreal, 3), mark(goodV)]);
+    $('s2-tt-check').replaceChildren(el('div', { class: 'scroll' }, el('table', { class: 'data s2-stacked' },
+      el('caption', { class: 'sr-only', text: '직접 계산한 값과 데이터에 저장된 값 비교' }),
+      el('thead', {}, el('tr', {}, ['입력', '이전 경기로 직접 계산', '데이터에 저장된 값', '확인'].map((t) => el('th', { scope: 'col', text: t })))),
+      el('tbody', {}, rows.map((r) => el('tr', {}, el('td', { text: r[0] }), el('td', { class: 'calc', 'data-l': '직접 계산', text: r[1] }),
+        el('td', { class: 'num', 'data-l': '저장된 값', text: r[2] }), el('td', { 'data-l': '확인' }, r[3])))))));
+    readSo($('s2-tt-read'),
+      `점 하나가 ${shortClub(tt.club)}의 지난 경기입니다(높이 = 얻은 승점, 색 = 승·무·패). 음영이 고른 ${tt.win}경기 구간, 점선이 그 평균이고, 점선 세로줄 오른쪽 ‘?’가 지금 예측할 경기입니다.`,
+      win.length
+        ? `이 행의 ‘최근 ${tt.win}경기 평균 승점’ ${wj(num(mean, 2), '은/는')} ${dateOf(R.day[win[0]])} ~ ${dateOf(R.day[win[win.length - 1]])}의 ${win.length}경기만으로 만들어졌고, 직접 계산한 값 ${rows.length}개가 ${allOk ? '모두 데이터와 일치합니다' : '일부 데이터와 다릅니다'}. ‘다음 경기 행’을 누르면 방금 이 경기가 비로소 평균 안으로 들어오는 것을 볼 수 있습니다.`
+        : `${shortClub(tt.club)}의 수집 첫 경기라 이전 기록이 없습니다. 그래서 평균 입력은 빈칸이 되고, 휴식일은 규칙대로 ${K.rest_default}일로 둡니다. 이런 빈칸은 2-2에서 중앙값으로 채웁니다.`);
+    $('s2-tt-list-title').textContent = `평균에 들어간 ${win.length}경기 (최근 순)`;
+    const trs = win.slice().reverse().map((j) => el('tr', {},
+      el('td', { class: 's2-nowrap', text: dateOf(R.day[j]) }), el('td', { text: `${data.opponents[R.opp[j]]} (${R.home[j] ? '홈' : '원정'})` }),
+      el('td', { class: 's2-nowrap' }, `${R.gf[j]}:${R.ga[j]} `, outChip(R.out[j])), el('td', { class: 'num', text: String(PTS[R.out[j]]) })));
+    $('s2-tt-table').replaceChildren(win.length ? el('div', { class: 'scroll', style: 'max-height:320px' }, el('table', { class: 'data s2-tight' },
+      el('caption', { class: 'sr-only', text: '평균 계산에 들어간 이전 경기 목록' }),
+      el('thead', {}, el('tr', {}, ['날짜', '상대 (장소)', '스코어·결과', '승점'].map((t, k) => el('th', { scope: 'col', class: k === 3 ? 'num' : '', text: t })))), el('tbody', {}, trs)))
+      : el('p', { class: 'muted', text: '이전 경기가 없습니다.' }));
+    $('s2-tt-nav').replaceChildren(
+      el('button', { class: 'btn', type: 'button', disabled: p <= 0 ? '' : null, onclick: () => setRow(list[p - 1]) }, '← 이전 경기 행'),
+      el('button', { class: 'btn', type: 'button', disabled: p >= list.length - 1 ? '' : null, onclick: () => setRow(list[p + 1]) }, '다음 경기 행 →'));
+  }
+  setRow(tt.row);
+
+  // ================================================================ C. missing values
+  const M = data.missing;
+  Lab.barsH($('s2-miss-bars'), M.groups.map((gr) => ({
+    label: gr.label, value: gr.rate,
+    tip: `<b>${esc(gr.label)}</b><div>빈칸 ${f.pct(gr.rate, 2)} (${f.int(gr.cells)}칸, 전체 빈칸의 ${f.pct(gr.cells / M.total_cells, 0)})</div><div>숫자 입력 ${gr.cols}개 중 ${gr.cols_missing}개에 빈칸이 있음</div>`,
+  })), { format: (v) => f.pct(v, 1), labelWidth: 96, color: 'var(--accent)', ariaLabel: '입력 묶음별 빈칸 비율 막대' });
+  {
+    const byRate = M.groups.slice().sort((a, b) => b.rate - a.rate), byCells = M.groups.slice().sort((a, b) => b.cells - a.cells);
+    const R1 = byRate[0], C1 = byCells[0], none = M.groups.filter((gr) => gr.cells === 0).map((gr) => `‘${gr.label}’`);
+    const cellShare = C1.cells / M.total_cells, espnShare = C1.cells ? C1.opp_espn_cells / C1.cells : 0;
+    let so = R1 === C1
+      ? `비율로도 개수로도 ‘${R1.label}’ 묶음이 가장 많이 비어 있습니다(${f.pct(R1.rate, 1)}, ${f.int(R1.cells)}칸 = 전체 빈칸의 ${f.pct(cellShare, 0)}). `
+      : `비율은 ‘${R1.label}’ 묶음이 ${f.pct(R1.rate, 1)}로 가장 높지만(열 ${R1.cols}개), 빈칸 개수로는 열이 ${C1.cols}개인 ‘${C1.label}’ 묶음이 ${f.int(C1.cells)}칸, 전체 빈칸 ${f.int(M.total_cells)}칸의 ${f.pct(cellShare, 0)}로 가장 많습니다. `;
+    if (espnShare >= 0.5) so += `‘${C1.label}’ 빈칸의 ${f.pct(espnShare, 0)}는 상대 팀의 ESPN 전용 기록(점유율·패스 등) 열입니다. ESPN 상세 기록은 6개 구단이 뛴 경기에서만 모았기 때문에, 상대 팀이 그 구간의 경기를 모두 6개 구단 밖 팀과 치렀다면 비게 됩니다.`;
+    if (none.length) so += ` ${none.join('·')} 묶음은 빈칸이 없습니다.`;
+    readSo($('s2-miss-bars-read'), '막대가 길수록 그 묶음의 칸이 많이 비어 있습니다(비율). 막대에 마우스를 올리면 빈칸 개수와 빈칸이 있는 열 수가 나옵니다.', so);
+  }
+  {
+    const v = defenders, col = data.cols[v.name];
+    const missing = [], present = [];
+    for (let i = 0; i < NT; i++) (col[i] == null ? missing : present).push(i);
+    const pickM = [missing[0], missing[Math.floor(missing.length / 2)], missing[missing.length - 1]];
+    const after = present.filter((i) => i > pickM[1]).slice(0, 3);
+    const sample = [...pickM, ...after].sort((a, b) => a - b);
+    $('s2-fill-sub').textContent = `‘${v.label}’${jo(v.label, '은/는')} 포메이션 기록이 없는 경기에서 비어 있습니다. 학습 행 ${f.int(NT)}개 중 ${f.int(v.train_missing)}개가 빈칸이고, 학습 구간 중앙값은 ${f.num(v.median, 0)}명입니다.`;
+    $('s2-fill-table').replaceChildren(el('div', { class: 'scroll' }, el('table', { class: 'data s2-tight' },
+      el('caption', { class: 'sr-only', text: '빈칸 채우기 전후 예시' }),
+      el('thead', {}, el('tr', {}, ['경기(우리 팀 관점)', '원래', '채운 값', '빈칸 표시'].map((t, k) => el('th', { scope: 'col', class: k ? 'num' : '', text: t })))),
+      el('tbody', {}, sample.map((i) => {
+        const raw = col[i];
+        return el('tr', {}, el('td', { text: `${dateOf(R.day[i])} ${shortClub(R.club[i])} vs ${data.opponents[R.opp[i]]}` }),
+          el('td', { class: 'num', text: raw == null ? '빈칸' : f.num(raw, 0) }),
+          el('td', { class: 'num' }, raw == null ? el('b', { text: f.num(v.median, 0) }) : f.num(raw, 0)),
+          el('td', { class: 'num', text: raw == null ? '1' : '0' }));
+      })))));
+    $('s2-fill-read').replaceChildren(el('p', { class: 's2-read' }, el('b', { text: '그래서?' }),
+      `채운 값만 보면 실제로 수비수 ${f.num(v.median, 0)}명이었던 경기와 구별되지 않지만, ‘비어 있었음’ 열이 1이라 모델은 두 경우를 나눠 볼 수 있습니다. 학습 행 중 이 표시가 1인 비율은 ${f.pct(v.ind_mean, 1)}입니다.`));
+  }
+  {
+    const heatFill = (r) => (r == null ? 'var(--surface)' : r === 0 ? 'var(--surface-2)' : `color-mix(in srgb, var(--accent) ${Math.round(20 + 80 * Math.sqrt(r))}%, var(--surface))`);
+    const heatInk = (r) => (r != null && 20 + 80 * Math.sqrt(r) >= 85 ? 'var(--accent-ink)' : 'var(--ink)');
+    heatmap($('s2-miss-heat'), {
+      rows: M.heat.map((r) => r.label), cols: data.seasons, labelW: 236, label: '시즌별 입력 빈칸 비율 히트맵',
+      value: (i, j) => M.heat[i].rates[j], fill: heatFill, textFill: heatInk,
+      text: (r) => (r != null && r >= 0.1 ? Math.round(r * 100) + '' : ''),
+      colLabel: (s, j, cw) => (cw >= 30 || j % 2 === 0 ? s.slice(2, 4) : ''),
+      tip: (r, i, j) => `<b>${esc(ssn(data.seasons[j]))} · ${esc(M.heat[i].label)}</b><div>빈칸 ${f.pct(r, 1)} (${f.int(Math.round(r * M.season_rows[j]))} / ${f.int(M.season_rows[j])}행)</div>`,
+    });
+    // Phones: the same table turned sideways (seasons down, inputs across as numbers 1..k with a key below), so it fits without scrolling.
+    heatmap($('s2-miss-heat-n'), {
+      rows: data.seasons.map(ss2), cols: M.heat.map((r, i) => i), labelW: 46, cellH: 22, label: '시즌별 입력 빈칸 비율 히트맵(세로: 시즌)',
+      value: (j, i) => M.heat[i].rates[j], fill: heatFill, textFill: heatInk,
+      text: (r) => (r != null && r >= 0.1 ? Math.round(r * 100) + '' : ''),
+      colLabel: (c, i) => String(i + 1),
+      tip: (r, j, i) => `<b>${esc(ssn(data.seasons[j]))} · ${esc(M.heat[i].label)}</b><div>빈칸 ${f.pct(r, 1)} (${f.int(Math.round(r * M.season_rows[j]))} / ${f.int(M.season_rows[j])}행)</div>`,
+    });
+    $('s2-miss-key').replaceChildren(...M.heat.map((r) => el('li', { text: r.label })));
+    $('s2-miss-legend').replaceChildren(el('div', { class: 's2-ramp' }, el('span', {}, el('i', { style: 'background:var(--surface-2)' }), '빈칸 없음'),
+      [0.01, 0.1, 0.25, 0.5, 1].map((r) => el('span', {}, el('i', { style: `background:${heatFill(r)}` }), f.pct(r, 0))),
+      el('span', { class: 's2-heat-wide', text: '칸 안 숫자 = 빈칸 %(10% 이상만) · 위쪽 숫자 = 시즌 시작 연도(06 = 2006/07)' }),
+      el('span', { class: 's2-heat-narrow', text: '칸 안 숫자 = 빈칸 %(10% 이상만) · 위쪽 번호 = 아래 목록의 입력' })));
+    const form = M.heat.find((r) => r.key === 'formation'), formSwitch = M.heat.find((r) => r.key === 'formation_switch');
+    const steady = M.heat.find((r) => r.key === 'opponent_possession_5');
+    const seasonsWhere = (r, test) => r.rates.map((x, j) => (test(x) ? j : -1)).filter((j) => j >= 0);
+    const none = seasonsWhere(form, (x) => x >= 0.999), part = seasonsWhere(form, (x) => x >= 0.3 && x < 0.999);
+    const rest = M.heat.filter((r) => ![form, formSwitch, steady].includes(r));
+    let mx = 0, mxS = 0, mxR = rest[0];
+    rest.forEach((r) => r.rates.forEach((x, j) => { if (x > mx) { mx = x; mxS = j; mxR = r; } }));
+    const steadyMed = steady ? steady.rates.slice().sort((a, b) => a - b)[Math.floor(steady.rates.length / 2)] : 0;
+    const steadyMax = steady ? steady.rates.indexOf(Math.max(...steady.rates)) : 0;
+    readSo($('s2-miss-read'), '가로는 시즌, 세로는 입력입니다. 칸이 진할수록 그 시즌 행에서 많이 비어 있습니다. 칸에 마우스를 올리면 정확한 비율과 행 수가 나옵니다.',
+      `포메이션은 ${none.map((j) => ssn(data.seasons[j])).join('·')}에 기록이 전혀 ` +
+      (part.length ? `없고, ${part.map((j) => `${ssn(data.seasons[j])}에도 ${f.pct(form.rates[j], 0)}`).join(', ')}가 빠졌습니다. ` : '없습니다. ') +
+      (formSwitch && [...none, ...part].every((j) => formSwitch.rates[j] >= 0.3) ? `‘${formSwitch.label}’도 같은 시즌에 비어 있습니다. ` : '') +
+      (steady ? `‘${steady.label}’${jo(steady.label, '은/는')} 시즌마다 ${f.pct(steadyMed, 0)} 안팎(가장 많은 ${ssn(data.seasons[steadyMax])} ${f.pct(steady.rates[steadyMax], 0)})으로 꾸준히 비는데, ESPN 기록을 6개 구단이 뛴 경기에서만 모았기 때문입니다(상대가 6개 구단 밖이면 ${f.pct(M.espn_cover.other_poss5_missing, 0)}, 6개 구단이면 ${f.pct(M.espn_cover.big6_poss5_missing, 1)}). ` : '') +
+      `나머지 입력은 가장 많이 빈 시즌도 ${f.pct(mx, 1)}(${mxR ? mxR.label : ''}, ${ssn(data.seasons[mxS])})에 그칩니다.`);
+    // Whole-percent cells, but never let a small non-zero rate read as '0%' (or an incomplete one as '100%').
+    const pctCell = (x) => (x == null ? '–' : x === 0 ? '0%' : x < 0.005 ? '<1%' : x > 0.995 && x < 1 ? '>99%' : f.pct(x, 0));
+    $('s2-miss-table').replaceChildren(el('div', { class: 'scroll' }, el('table', { class: 'data s2-tight' },
+      el('caption', { class: 'sr-only', text: '시즌별 입력 빈칸 비율 표' }),
+      el('thead', {}, el('tr', {}, el('th', { scope: 'col', text: '입력' }), data.seasons.map((s) => el('th', { scope: 'col', class: 'num', text: ss2(s) })))),
+      el('tbody', {}, M.heat.map((r) => el('tr', {}, el('td', { class: 's2-rowlabel', text: r.label }), r.rates.map((x) => el('td', { class: 'num', text: pctCell(x) }))))))));
+  }
+  {
+    const topS = Z.top[0];
+    $('s2-zero-note').replaceChildren(el('div', {},
+      el('b', { text: '숨은 빈칸: 0으로 적힌 기록. ' }),
+      `${f.int(Z.matches)} / ${f.int(Z.total)}경기에서 두 팀 점유율이 모두 0%로 적혀 있습니다. 실제로는 불가능한 값이라, ESPN이 기록하지 않은 경기를 빈칸 대신 0으로 준 것으로 보입니다(가장 많은 시즌: ${ssn(topS.season)} ${f.int(topS.n)} / ${f.int(topS.of)}경기). ` +
+      `같은 경기의 Football-Data 슈팅 기록은 ${f.int(Z.fd_has_shots)}경기 모두 남아 있어 진짜 0이 아닙니다. 현재 파이프라인과 모델은 이 0을 실제 값으로 읽습니다. ` +
+      `그래서 우리 팀 최근 ${Z.window}경기 기준으로 ${f.int(Z.rows_in_window20)}행(${f.pct(Z.rows_in_window20 / Z.rows, 0)}), 상대 팀 쪽까지 넣으면 ${f.int(Z.rows_either)}행(${f.pct(Z.rows_either / Z.rows, 0)})의 슈팅·점유율 같은 최근 평균에 이런 0이 섞여 있습니다. ` +
+      '빈칸이 늘 ‘빈칸’으로 보이지는 않는다는 예입니다. 아래 그림에서 이런 입력에는 따로 표시를 달았고, 산점도에서는 영향받은 행을 빼고 볼 수 있습니다.'));
+  }
+
+  // ================================================================ D. transform before / after
+  const tf = { name: 'formation_used_last20' };
+  const tfSel = varSelect(tf.name, (v) => { tf.name = v; renderTF(); }, '변환을 볼 입력');
+  $('s2-tf-controls').append(field('입력 고르기', tfSel),
+    groupField('바로 보기', el('div', { class: 's2-chips', role: 'group', 'aria-label': '바로 보기' },
+      ['team_elo', 'formation_used_last20', 'team_rest_days'].filter((n) => VARS.has(n)).map((n) => el('button', { class: 'btn small', type: 'button', onclick: () => { tf.name = n; tfSel.value = n; renderTF(); } }, VARS.get(n).short)))));
+  // Not a club colour: the categorical slots are reserved for clubs across steps.
+  const OBS = 'var(--ink-3)', FILL = 'var(--accent)';
+  $('s2-tf-legend').append(Lab.legend([{ label: '원래 있던 값', color: OBS }, { label: '중앙값으로 채운 값', color: FILL }]));
+  const meanSd = (a) => { const m = a.reduce((s, x) => s + x, 0) / a.length; return [m, Math.sqrt(a.reduce((s, x) => s + (x - m) ** 2, 0) / a.length)]; };
+  function renderTF() {
+    const v = VARS.get(tf.name), raw = data.cols[v.name].slice(0, NT);
+    const obs = raw.filter(isNum), k = raw.length - obs.length, filled = raw.map((x) => (isNum(x) ? x : v.median));
+    const z = (x) => (x - v.mean) / v.scale;
+    const bn = binning(v, 300), lo = bn.lo, hi = bn.hi, bins = v.discrete ? bn.bins : 24;
+    const ticks = intTicks(v), zt = ticks ? ticks.map(z) : null;
+    const zfmt = (q) => num(q, 1);
+    const panels = $('s2-tf-panels'); panels.replaceChildren();
+    const [m1, s1] = obs.length ? meanSd(obs) : [NaN, NaN], [m2, s2] = meanSd(filled), [m3, s3] = meanSd(filled.map(z));
+    const outside = obs.filter((x) => x < lo || x > hi).length;
+    const specs = [
+      ['① 원래 값', `평균 ${fv(v, m1)} · 표준편차 ${fv(v, s1)} · ${k ? `빈칸 ${f.int(k)}개는 그릴 수 없음` : '빈칸 없음'}`, [{ name: '원래 있던 값', color: OBS, values: obs }], lo, hi, ticks, axisName(v), tickF(v)],
+      ['② 중앙값으로 채운 뒤', `평균 ${fv(v, m2)} · 표준편차 ${fv(v, s2)} · ${k ? `빈칸 ${f.int(k)}개 → ${fv(v, v.median)}` : '채울 칸 없음'}`, [{ name: '원래 있던 값', color: OBS, values: obs }, { name: '중앙값으로 채운 값', color: FILL, values: new Array(k).fill(v.median) }], lo, hi, ticks, axisName(v), tickF(v)],
+      ['③ 표준화한 뒤', `평균 ${num(m3, 2)} · 표준편차 ${num(s3, 2)} (눈금만 바뀜)`, [{ name: '원래 있던 값', color: OBS, values: obs.map(z) }, { name: '중앙값으로 채운 값', color: FILL, values: new Array(k).fill(z(v.median)) }], z(lo), z(hi), zt, '표준화 값 z', zfmt],
+    ];
+    for (const [title, sub, layers, a, b, tk, xl, fmt] of specs) {
+      const holder = el('div');
+      panels.append(el('div', {}, el('h4', { text: title }), el('p', { class: 'muted', text: sub }), holder));
+      stackHist(holder, layers, { lo: a, hi: b, bins, ticks: tk, xLabel: xl, fmt, label: `${v.short} ${title} 히스토그램` });
+    }
+    // Worked example: the 75th percentile, unless it sits on the mean (z ≈ 0 teaches nothing) — then the upper whisker or the maximum.
+    const sa = data.stats[v.name].all;
+    const ex = [sa.q3, sa.whisker_hi, sa.max].find((q) => isNum(q) && Math.abs(z(q)) >= 0.1) ?? sa.q3;
+    const parts = [el('div', {}, '표준화 공식(실제 학습된 값): ', el('span', { class: 'eq', text: `z = (x − ${num(v.mean, 4)}) ÷ ${num(v.scale, 4)}` }), `  예: x = ${fv(v, ex)} → z = ${num(z(ex), 2)}`)];
+    if (v.ind_mean != null) parts.push(el('div', {}, '‘비어 있었음’ 열도 표준화됩니다: ', el('span', { class: 'eq', text: `1 → ${num((1 - v.ind_mean) / v.ind_scale, 2)},  0 → ${num(-v.ind_mean / v.ind_scale, 2)}` }), ` (학습 행의 ${f.pct(v.ind_mean, 1)}가 1)`));
+    if (outside && !v.discrete) parts.push(el('div', { class: 'muted', text: `양 끝 0.5%씩(${f.int(outside)}개)은 그림 범위 밖이라 생략했습니다.` }));
+    $('s2-tf-formula').replaceChildren(...parts);
+    readSo($('s2-tf-read'),
+      `세 그림은 같은 학습 행 ${f.int(NT)}개를 단계별로 다시 그린 것입니다. 막대 높이 = 그 구간에 든 행 수.`,
+      (k ? `빈칸 ${f.int(k)}개(${f.pct(k / NT, 1)})가 모두 중앙값 ${fv(v, v.median)} 한 곳에 쌓여 ②에서 그 막대만 높아졌습니다. 채운 값이 진짜 값처럼 보이지 않도록 ‘비어 있었음’ 열을 함께 넣는 이유입니다. `
+        : `이 입력은 학습 구간에 빈칸이 없어 ①과 ②가 같습니다. `) +
+      `표준화(③)는 모양은 그대로 두고 눈금만 옮겼습니다: 평균 ${fv(v, v.mean)} → 0, 퍼짐 ${fv(v, v.scale)} → 1.`);
+  }
+  renderTF();
+
+  // one-hot
+  Lab.barsH($('s2-oh-bars'), P.onehot.map((o) => ({ label: o.label, value: o.n, tip: `<b>${esc(o.label)}</b><div>학습 구간의 서로 다른 값 ${o.n}개 → 열 ${o.n}개</div>` })),
+    { format: (v) => f.int(v) + '열', labelWidth: 118, color: 'var(--accent)', ariaLabel: '이름 입력별 원-핫 열 수' });
+  {
+    const i = N - 1, c = R.club[i];
+    $('s2-oh-example').replaceChildren(el('p', { class: 's2-read' }, el('b', { text: '예시' }),
+      `${dateOf(R.day[i])} ${shortClub(c)} vs ${data.opponents[R.opp[i]]} 행의 ‘우리 팀’ ${data.clubs.length}칸:`),
+    el('div', { class: 's2-cells', role: 'list' }, data.clubs.map((name, k) => el('span', { class: 's2-cell' + (k === c ? ' on' : ''), role: 'listitem' }, el('b', { text: k === c ? '1' : '0' }), shortClub(k)))));
+    const uns = data.unseen.filter((u) => u.count > 0);
+    readSo($('s2-oh-read'), `막대 = 이름 입력 하나가 펼쳐진 열 수입니다. 다 합치면 ${f.int(P.onehot_total)}열입니다.`,
+      `열은 ${f.int(P.onehot_total)}개로 늘지만 한 행에서 1인 칸은 이름 입력마다 하나, 즉 ${P.categorical}개뿐입니다. 학습 구간에 없던 이름은 모든 칸이 0이 됩니다` +
+      (uns.length ? `: 처음 보는 경기 중 ${uns.map((u) => `${u.name === 'opponent' ? '상대 팀' : VARS.has(u.name) ? VARS.get(u.name).short : (P.onehot.find((o) => o.name === u.name) || {}).label} ${u.values.join(', ')}(${u.rows}행)`).join(', ')}.` : '.'));
+  }
+
+  // ================================================================ E. distributions and scatter
+  const oc = data.outcome_counts;
+  $('s2-e-intro').textContent = `구단 관점 행 ${f.int(N)}개 전체(학습 ${f.int(NT)}행 + 처음 보는 경기 ${f.int(N - NT)}행)를 그립니다. 결과 색은 페이지 전체에서 같습니다.`;
+  $('s2-e-legend').append(Lab.legend(OUT.map((o) => ({ label: `${o.label} ${f.int(oc[o.key])}행`, color: o.color }))));
+  const dist = { name: 'diff_elo' };
+  const distSel = varSelect(dist.name, (v) => setDist(v), '분포를 볼 입력');
+  const driftSel = varSelect(dist.name, (v) => setDist(v), '시즌별 평균을 볼 입력');
+  $('s2-dist-controls').append(field('입력 고르기', distSel));
+  $('s2-drift-controls').append(field('입력 고르기 (①과 함께 바뀜)', driftSel));
+  function setDist(name) { dist.name = name; distSel.value = name; driftSel.value = name; renderDist(); renderDrift(); }
+  function renderDist() {
+    const v = VARS.get(dist.name), col = data.cols[v.name], st = data.stats[v.name];
+    $('s2-dist-desc').textContent = `${v.desc}${unit(v) ? ` (단위: ${unit(v)})` : ''}`;
+    const groups = OUT.map((o) => ({ name: o.label, color: o.color, values: col.filter((x, i) => R.out[i] === o.code) }));
+    stepHist(fresh($('s2-dist-hist')), v, groups, { label: `${v.short}의 승무패별 분포` });
+    boxPlot(fresh($('s2-dist-box')), v, OUT.map((o) => ({ label: o.label, color: o.color, s: st[o.key] })), { label: `${v.short}의 승무패별 상자 그림` });
+    const d = (st.win.mean - st.loss.mean) / st.all.sd, ad = Math.abs(d);
+    const size = ad < 0.1 ? '거의 없어' : ad < 0.3 ? '작아' : ad < 0.6 ? '중간 정도지만' : '크지만';
+    const tail = ad < 0.3 ? '이 입력 하나로는 결과를 거의 가르지 못합니다.' : '세 분포가 넓게 겹치므로 이것만으로 결과를 확정할 수는 없습니다.';
+    let soDist = `이긴 경기의 평균은 ${fv(v, st.win.mean)}, 진 경기는 ${fv(v, st.loss.mean)}입니다. 차이는 전체 표준편차의 ${num(ad, 2)}배로 ${size} ${tail}`;
+    const cl = st.clean;
+    if (v.zero_side && cl && cl.all.n && cl.all.sd > 0) {
+      const dc = Math.abs(cl.win.mean - cl.loss.mean) / cl.all.sd;
+      soDist += ` 단, 0으로 적힌 기록이 섞인 행(${sideText(v)} 최근 ${Z.window}경기 기준)을 빼고 다시 재면 차이는 표준편차의 ${num(dc, 2)}배입니다(n = ${f.int(cl.all.n)}행).`;
+    }
+    readSo($('s2-dist-read'),
+      `${v.discrete && v.hi - v.lo < 15 ? '막대는' : '선은'} 승·무·패 경기 각각에서 이 값이 어느 구간에 몰려 있는지(그 결과 경기 중 비율)입니다. 아래 상자는 가운데 50%, 굵은 세로선은 중앙값, 동그라미는 평균입니다.`, soDist);
+    const notes = [];
+    if (v.zero_flag) notes.push(el('div', { class: 'note' }, el('div', { text: '이 입력은 ESPN이 0으로 적은 경기(2-2의 ‘숨은 빈칸’)의 영향을 받습니다. 그런 경기가 최근 경기 구간에 들어 있으면 평균이 실제 경기력이 아니라 기록 누락 때문에 달라집니다.' })));
+    if (st.all.missing) notes.push(el('p', { class: 'muted', style: 'font-size:13.5px', text: `빈칸 ${f.int(st.all.missing)}행(${f.pct(st.all.miss_rate, 1)})은 그림에서 빠집니다.` }));
+    $('s2-dist-note').replaceChildren(...notes);
+    const rowsT = [['전체', st.all], ...OUT.map((o) => [o.label, st[o.key]])];
+    $('s2-dist-table').replaceChildren(el('div', { class: 'scroll' }, el('table', { class: 'data' },
+      el('caption', { class: 'sr-only', text: `${v.short} 요약 통계` }),
+      el('thead', {}, el('tr', {}, ['구분', 'n', '평균', '표준편차', '25%', '중앙값', '75%', '빈칸', '이상치(1.5×IQR)'].map((t, k) => el('th', { scope: 'col', class: k ? 'num' : '', text: t })))),
+      el('tbody', {}, rowsT.map(([lab, s]) => el('tr', {}, el('td', { text: lab }), el('td', { class: 'num', text: f.int(s.n) }),
+        ...['mean', 'sd', 'q1', 'median', 'q3'].map((k) => el('td', { class: 'num', text: fv(v, s[k]) })),
+        el('td', { class: 'num', text: f.pct(s.miss_rate, 1) }), el('td', { class: 'num', text: `${f.int(s.outliers)} (${f.pct(s.n ? s.outliers / s.n : 0, 1)})` })))))));
+  }
+
+  // scatter
+  const sc = { x: data.presets[0].x, y: data.presets[0].y, club: 'all', venue: 'all', zero: 'keep' };
+  const xSel = varSelect(sc.x, (v) => { sc.x = v; renderSc(); }, '가로 입력');
+  const ySel = varSelect(sc.y, (v) => { sc.y = v; renderSc(); }, '세로 입력');
+  const clubSel = Lab.select([{ value: 'all', label: '6개 구단 전체' }, ...data.clubs.map((c, i) => ({ value: String(i), label: shortClub(i) }))], 'all', (v) => { sc.club = v; renderSc(); }, { label: '구단' });
+  const venueBox = el('div'), zeroBox = el('div');
+  const zeroField = groupField('0으로 적힌 기록이 섞인 행', zeroBox);
+  $('s2-sc-controls').append(field('가로(X)', xSel), field('세로(Y)', ySel), field('구단', clubSel), groupField('장소', venueBox), zeroField);
+  Lab.segmented(venueBox, [{ value: 'all', label: '전체' }, { value: '1', label: '홈' }, { value: '0', label: '원정' }], 'all', (v) => { sc.venue = v; renderSc(); }, '장소');
+  Lab.segmented(zeroBox, [{ value: 'keep', label: '포함' }, { value: 'drop', label: '빼기' }], 'keep', (v) => { sc.zero = v; renderSc(); }, '0으로 적힌 기록이 섞인 행');
+  $('s2-sc-presets').append(el('span', { class: 's2-flabel', text: '추천 조합:' }),
+    ...data.presets.map((p) => el('button', { class: 'btn small', type: 'button', onclick: () => { sc.x = p.x; sc.y = p.y; xSel.value = p.x; ySel.value = p.y; renderSc(); } }, p.title)));
+  $('s2-sc-legend').append(Lab.legend(OUT.map((o) => ({ label: o.label, color: o.color }))));
+  const jitter = (i) => (((i * 2654435761) % 1000) / 1000 - 0.5) * 0.36;
+  function pearson(xs, ys) {
+    const n = xs.length; if (n < 3) return NaN;
+    const mx = xs.reduce((a, b) => a + b, 0) / n, my = ys.reduce((a, b) => a + b, 0) / n;
+    let sxy = 0, sxx = 0, syy = 0;
+    for (let k = 0; k < n; k++) { const dx = xs[k] - mx, dy = ys[k] - my; sxy += dx * dy; sxx += dx * dx; syy += dy * dy; }
+    return sxx && syy ? sxy / Math.sqrt(sxx * syy) : NaN;
+  }
+  // 'Same information' only for |r| >= 0.9; 0.7-0.9 overlaps strongly but still carries its own part.
+  const overlap = (r) => (Math.abs(r) >= 0.9 ? '. 거의 같은 정보를 담고 있어, 모델에 둘 다 넣어도 새 정보는 많지 않습니다(다중공선성)'
+    : Math.abs(r) >= 0.7 ? '. 정보가 강하게 겹치므로, 둘을 함께 넣으면 일부는 중복입니다(다중공선성)' : '');
+  function renderSc() {
+    const vx = VARS.get(sc.x), vy = VARS.get(sc.y), cx = data.cols[sc.x], cy = data.cols[sc.y];
+    const zeroVars = [vx, vy].filter((v, k, a) => v.zero_side && a.indexOf(v) === k);
+    zeroField.hidden = !zeroVars.length;
+    const drop = zeroVars.length > 0 && sc.zero === 'drop';
+    const hit = (i) => zeroVars.some((v) => zeroHit(v, i));
+    const idx = [], idxClean = [];
+    for (let i = 0; i < N; i++) {
+      if (sc.club !== 'all' && R.club[i] !== +sc.club) continue;
+      if (sc.venue !== 'all' && R.home[i] !== +sc.venue) continue;
+      if (!(isNum(cx[i]) && isNum(cy[i]))) continue;
+      const bad = zeroVars.length > 0 && hit(i);
+      if (!bad) idxClean.push(i);
+      if (!drop || !bad) idx.push(i);
+    }
+    const xs = idx.map((i) => cx[i]), ys = idx.map((i) => cy[i]), n = idx.length;
+    const r = pearson(xs, ys);
+    const scope = `${sc.club === 'all' ? '6개 구단' : shortClub(+sc.club)}${sc.venue === 'all' ? '' : sc.venue === '1' ? ' 홈 경기' : ' 원정 경기'}`;
+    $('s2-sc-stat').replaceChildren(el('b', { text: `r = ${isNum(r) ? num(r, 2) : '–'}` }), ` · n = ${f.int(n)}행 (${scope}, 두 값이 모두 있는 행${drop ? ', 0 기록이 섞인 행 뺌' : ''})`);
+    // Placeholder-zero caveat whenever X or Y can contain ESPN's '0 instead of blank' matches.
+    let zeroClause = '';
+    if (zeroVars.length) {
+      const kept = idxClean.length;
+      const rKeep = pearson(idxClean.map((i) => cx[i]), idxClean.map((i) => cy[i]));
+      const names = zeroVars.map((v) => `‘${v.short}’`).join('·');
+      const who = new Set(zeroVars.map((v) => v.zero_side)).size === 1 ? sideText(zeroVars[0]) : '우리 팀이나 상대 팀';
+      $('s2-sc-zero').replaceChildren(el('div', { class: 'note' }, el('div', {},
+        `${wj(names, '은/는')} 2-2의 ‘숨은 빈칸’(0으로 적힌 기록)이 섞일 수 있는 입력입니다. ` +
+        (drop ? `지금은 ${who}의 최근 ${Z.window}경기에 그런 경기가 들어 있는 행을 빼고 ${f.int(kept)}행만 그렸습니다. ‘포함’을 누르면 전체로 돌아갑니다.`
+          : `위 ‘빼기’를 누르면 ${who}의 최근 ${Z.window}경기에 그런 경기가 들어 있는 행 ${f.int(n - kept)}개를 빼고 다시 그립니다.`))));
+      if (!drop && isNum(rKeep) && isNum(r)) {
+        const d = Math.abs(rKeep) - Math.abs(r);
+        zeroClause = ` 단, 이 r에는 0으로 적힌 기록이 섞여 있습니다. 그런 행을 빼면 r = ${wj(num(rKeep, 2), '으로/로')}(n = ${f.int(kept)}) ` +
+          (d >= 0.05 ? '관계가 더 뚜렷해집니다. 지금 보이는 관계가 약한 데에는 기록 누락 탓도 있습니다.' : d <= -0.05 ? '관계가 더 약해집니다. 지금 보이는 관계 일부는 기록 누락 탓입니다.' : '크게 달라지지 않습니다.');
+      } else if (drop) zeroClause = ' 0으로 적힌 기록이 섞인 행을 뺀 결과입니다.';
+    } else $('s2-sc-zero').replaceChildren();
+    Lab.scatter(fresh($('s2-sc-chart')), {
+      x: idx.map((i, k) => xs[k] + (vx.discrete ? jitter(i) : 0)), y: idx.map((i, k) => ys[k] + (vy.discrete ? jitter(i + 7) : 0)), c: idx.map((i) => R.out[i]),
+    }, {
+      colors: outColors, xLabel: axisName(vx), yLabel: axisName(vy), xFormat: tickF(vx, false), yFormat: tickF(vy, false), height: 380,   // '1600' not '1,600': Lab.scatter's fixed left margin clips the y label beside 5-character ticks alpha: 0.5, radius: 3, ariaLabel: `${wj(vx.short, '과/와')} ${vy.short}의 산점도, 색은 결과`,
+      tipFn: (k) => { const i = idx[k]; return `<b>${esc(dateOf(R.day[i]))} ${esc(shortClub(R.club[i]))} ${R.home[i] ? '홈' : '원정'} vs ${esc(data.opponents[R.opp[i]])}</b><div>${esc(vx.short)} ${fv(vx, xs[k])} · ${esc(vy.short)} ${fv(vy, ys[k])}</div><div>${R.gf[i]}:${R.ga[i]} ${OUT_BY[R.out[i]].label}</div>`; },
+    });
+    const sorted = xs.slice().sort((a, b) => a - b), med = Lab.quantile(sorted, 0.5);
+    let hiN = 0, hiW = 0, loN = 0, loW = 0;
+    idx.forEach((i, k) => { if (xs[k] > med) { hiN++; hiW += R.out[i] === 2; } else { loN++; loW += R.out[i] === 2; } });
+    const rs = num(r, 2);
+    const so = !isNum(r) ? '이 조합은 값이 하나로만 몰려 있어 관계를 잴 수 없습니다.'
+      : `두 입력은 r = ${wj(rs, '으로/로')} ${Math.abs(r) < 0.1 ? '거의 따로 움직입니다' : `${strength(r)} ${r >= 0 ? '양의' : '음의'} 관계입니다`}${overlap(r)}.${zeroClause} ` +
+        (hiN && loN ? `색을 보면, ${vx.short} 값이 중앙값(${fv(vx, med)})보다 큰 행의 승률은 ${f.pct(hiW / hiN, 0)}(n=${f.int(hiN)}), 작거나 같은 행은 ${f.pct(loW / loN, 0)}(n=${f.int(loN)})입니다.` : '');
+    readSo($('s2-sc-read'), `점의 가로 위치 = ${vx.short}, 세로 위치 = ${vy.short}, 색 = 그 경기 결과입니다. 점이 오른쪽 위로 기울어 모여 있을수록 r이 1에 가깝습니다.${vx.discrete || vy.discrete ? ' 정수 값은 겹치지 않게 살짝 흩어 그렸습니다(계산에는 원래 값 사용).' : ''}`, so);
+  }
+
+  // correlation heatmap
+  {
+    const C = data.corr, n = C.names.length;
+    const zeroNames = new Set(C.zero.map((z) => z.name));
+    $('s2-corr-count').textContent = String(n - 1);
+    const corrFill = (r, i, j) => (i === j ? 'var(--surface-2)' : `color-mix(in srgb, ${r >= 0 ? 'var(--accent)' : 'var(--s8)'} ${Math.round(Math.abs(r) * 85)}%, var(--surface-2))`);
+    heatmap($('s2-corr-heat'), {
+      rows: C.short.map((s, i) => `${i + 1}. ${s}${zeroNames.has(C.names[i]) ? ' *' : ''}`), cols: C.names, labelW: 196, cellH: 26, label: '대표 입력과 결과 점수의 상관 히트맵',
+      value: (i, j) => C.r[i][j], fill: corrFill,
+      textFill: () => 'var(--ink)',  // the mixes stay mid-tone, so theme ink reads in both themes
+      text: (r, i, j) => (i === j ? '' : (i === n - 1 || j === n - 1 || Math.abs(r) >= 0.7) ? (Math.abs(r) < 0.005 ? '0' : f.num(r, 2).replace(/^0/, '').replace(/^-0/, '−')) : ''),
+      colLabel: (c, j) => String(j + 1),
+      tip: (r, i, j) => `<b>${esc(C.short[i])} × ${esc(C.short[j])}</b><div>r = ${num(r, 3)}</div>` +
+        (i !== j && (zeroNames.has(C.names[i]) || zeroNames.has(C.names[j])) ? '<div>* 0으로 적힌 기록의 영향을 받는 입력 포함</div>' : ''),
+    });
+    $('s2-corr-foot').textContent = C.zero.length
+      ? `* 2-2의 ‘숨은 빈칸’(0으로 적힌 기록)이 섞인 입력입니다. 영향받은 행을 빼고 결과 점수와의 r을 다시 재면 ` +
+        C.zero.map((z) => `${z.short} ${num(z.r_all, 2)} → ${num(z.r_clean, 2)}(n = ${f.int(z.n_clean)})`).join(', ') + '입니다. 이 입력들의 칸은 실제 관계보다 흐리거나 진하게 보일 수 있습니다.'
+      : '';
+    const ramp = [-1, -0.5, 0, 0.5, 1];
+    $('s2-corr-legend').replaceChildren(el('div', { class: 's2-ramp' }, ramp.map((r) => el('span', {}, el('i', { style: `background:${r === 0 ? 'var(--surface-2)' : corrFill(r, 0, 1)}` }), `r = ${r > 0 ? '+' : ''}${r}`)),
+      el('span', { text: '칸 안 숫자는 결과 점수 줄과 |r| ≥ 0.7인 칸만 표시' })));
+    const label = (name) => C.short[C.names.indexOf(name)];
+    const strong = C.top_pairs.filter((p) => Math.abs(p.r) >= 0.7);
+    const star = (name) => (zeroNames.has(name) ? ' *' : '');
+    $('s2-corr-callouts').append(
+      el('div', {}, el('h4', { text: '결과와 가장 함께 움직이는 입력' }), el('ol', {}, C.outcome_rank.slice(0, 5).map((o) => el('li', {}, `${o.short}${star(o.name)} `, el('span', { class: 's2-num', text: `r = ${f.signed(o.r, 2)}` }))))),
+      el('div', {}, el('h4', { text: '강하게 겹치는 입력 쌍 (|r| ≥ 0.7)' }), el('ol', {}, strong.map((p) => el('li', {}, `${label(p.a)}${star(p.a)} – ${label(p.b)}${star(p.b)} `, el('span', { class: 's2-num', text: `r = ${f.signed(p.r, 2)}` }), Math.abs(p.r) >= 0.9 ? ' (거의 같은 정보)' : ''))),
+        el('p', { class: 'muted', style: 'font-size:13.5px;margin:.5em 0 0', text: `입력 ${C.n_inputs}개 전체로 넓히면 |r| ≥ 0.95인 쌍이 ${f.int(C.all_dup_pairs)}개(${f.int(C.all_pairs)}쌍 중, 관련 열 ${f.int(C.all_dup_cols)}개)입니다. 예: ${C.dup_examples.slice(0, 2).map((e) => `${e.a} – ${e.b}(r = ${f.num(e.r, 2)})`).join(' / ')}. 그중 ${f.int(C.dup_coverage_pairs)}쌍은 ‘기록 확보 비율’ 열끼리 사실상 같은 값입니다.` })));
+    const o = C.outcome_rank, maxAbs = Math.abs(o[0].r), sp = strong[0];
+    readSo($('s2-corr-read'),
+      '칸 하나 = 두 입력의 상관계수 r(−1~+1)입니다. 파랑은 함께 커지는 관계, 빨강은 하나가 커지면 다른 하나는 작아지는 관계이고, 진할수록 강합니다. 맨 아래 줄과 맨 오른쪽 열이 결과 점수와의 상관입니다.',
+      el('span', {}, `결과와 가장 강하게 움직이는 것은 ${o[0].short}(r = ${f.signed(o[0].r, 2)})이고 ${o[1].short}, ${wj(o[2].short, '이/가')} 뒤를 잇지만, 모두 |r| ${f.num(maxAbs, 2)} 이하라 혼자서는 약합니다. ` +
+        (C.zero.length ? '‘*’ 표시 입력은 0으로 적힌 기록 때문에 r이 흔들리므로 아래 각주의 다시 잰 값과 함께 보세요. ' : '') +
+        (sp ? `반면 ${label(sp.a)}–${label(sp.b)}(r = ${f.signed(sp.r, 2)})처럼 입력끼리는 훨씬 강하게 묶여 있어, 모델이 받는 정보에는 겹치는 부분이 많습니다. 랜덤 포레스트는 이런 중복이 있어도 학습되지만, 3단계의 ` : '3단계의 '),
+      term('변수 중요도'), '가 비슷한 입력들 사이에 나뉘어 작게 보일 수 있습니다.'));
+  }
+
+  // season drift
+  function renderDrift() {
+    const v = VARS.get(dist.name), ss = data.season_stats[v.name], seasons = data.seasons, testIdx = seasons.indexOf(data.test_start);
+    const cm = v.zero_side && ss.clean_mean ? ss.clean_mean : null;   // season mean without placeholder-zero rows
+    Lab.chart(fresh($('s2-drift-chart')), {
+      height: 260, margin: { l: 62, b: 40, t: 18, r: 14 }, label: `${v.short}의 시즌별 평균과 가운데 50% 범위`,
+      draw({ g, w, h }) {
+        const vals = [...ss.q1, ...ss.q3, ...ss.mean, ...(cm || [])].filter(isNum);
+        if (!vals.length) return;
+        let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.08 || 0.5; lo -= pad; hi += pad;
+        const x = Lab.scaleLinear([0, seasons.length - 1], [0, w]), y = Lab.scaleLinear([lo, hi], [h, 0]);
+        if (testIdx >= 0) {
+          g.append(S('rect', { x: x(testIdx - 0.5), y: 0, width: w - x(testIdx - 0.5), height: h, fill: 'var(--surface-2)' }));
+          g.append(S('text', { x: w, y: -6, 'text-anchor': 'end', class: 'tick' }, '처음 보는 경기(테스트)'));
+        }
+        Lab.axisLeft(g, y, w, { label: axisName(v), format: tickF(v) });
+        g.append(S('line', { x1: 0, x2: w, y1: h, y2: h, class: 'axis-line' }));
+        const every = Math.ceil(seasons.length / Math.max(2, Math.floor(w / 56)));
+        seasons.forEach((s, i) => { if (i % every === 0) g.append(S('text', { x: x(i), y: h + 17, 'text-anchor': 'middle', class: 'tick' }, ss2(s))); });
+        g.append(S('text', { x: w / 2, y: h + 32, 'text-anchor': 'middle', class: 'axis-label' }, '시즌'));
+        // band and line, broken where a season has no value
+        let segs = [], cur = [];
+        seasons.forEach((s, i) => { if (isNum(ss.mean[i])) cur.push(i); else if (cur.length) { segs.push(cur); cur = []; } });
+        if (cur.length) segs.push(cur);
+        for (const sg of segs) {
+          const top = sg.map((i) => `${x(i).toFixed(1)},${y(ss.q3[i]).toFixed(1)}`), bot = sg.slice().reverse().map((i) => `${x(i).toFixed(1)},${y(ss.q1[i]).toFixed(1)}`);
+          g.append(S('path', { d: `M${top.join('L')}L${bot.join('L')}Z`, style: 'fill:color-mix(in srgb, var(--accent) 22%, transparent)' }));
+          g.append(S('path', { d: 'M' + sg.map((i) => `${x(i).toFixed(1)},${y(ss.mean[i]).toFixed(1)}`).join('L'), fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2 }));
+          sg.forEach((i) => g.append(S('circle', { cx: x(i), cy: y(ss.mean[i]), r: 3.5, fill: 'var(--accent)', stroke: 'var(--surface)', 'stroke-width': 2 })));
+        }
+        if (cm) {   // dashed ink line, broken where too few clean rows remain
+          let run = [];
+          const flush = () => { if (run.length > 1) g.append(S('path', { d: 'M' + run.map((i) => `${x(i).toFixed(1)},${y(cm[i]).toFixed(1)}`).join('L'), fill: 'none', stroke: 'var(--ink-2)', 'stroke-width': 2, 'stroke-dasharray': '5 4' })); run = []; };
+          seasons.forEach((s, i) => { if (isNum(cm[i])) run.push(i); else flush(); });
+          flush();
+          seasons.forEach((s, i) => { if (isNum(cm[i])) g.append(S('circle', { cx: x(i), cy: y(cm[i]), r: 3, fill: 'var(--surface)', stroke: 'var(--ink-2)', 'stroke-width': 1.5 })); });
+        }
+        const hit = S('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' });
+        Lab.tip.attach(hit, (e) => {
+          const r = hit.getBoundingClientRect(), i = Math.max(0, Math.min(seasons.length - 1, Math.round(x.invert((e ? e.clientX : r.left) - r.left))));
+          return `<b>${esc(ssn(seasons[i]))}</b>` + (isNum(ss.mean[i]) ? `<div>평균 ${fv(v, ss.mean[i])}</div><div>가운데 50%: ${fv(v, ss.q1[i])} ~ ${fv(v, ss.q3[i])}</div>` : '<div>값 없음(전부 빈칸)</div>') + `<div>n = ${f.int(ss.n[i])}행</div>` +
+            (cm ? `<div>0 기록 섞인 행을 뺀 평균: ${isNum(cm[i]) ? fv(v, cm[i]) : `– (남은 행 ${f.int(ss.clean_n[i])}개, ${Z.clean_min}개 미만)`}${isNum(cm[i]) ? ` (n = ${f.int(ss.clean_n[i])})` : ''}</div>` : '');
+        });
+        g.append(hit);
+      },
+    });
+    $('s2-drift-legend').replaceChildren(el('div', { class: 'legend' },
+      el('span', { class: 'legend-item' }, el('i', { class: 'swatch', style: 'background:var(--accent)' }), '시즌 평균'),
+      el('span', { class: 'legend-item' }, el('i', { class: 'swatch', style: 'background:color-mix(in srgb, var(--accent) 22%, transparent)' }), '가운데 50%(25~75%)'),
+      el('span', { class: 'legend-item' }, el('i', { class: 'swatch', style: 'background:var(--surface-2);border:1px solid var(--border)' }), '처음 보는 경기 구간'),
+      cm ? el('span', { class: 'legend-item' }, el('i', { class: 'swatch', style: 'background:none;border-top:2px dashed var(--ink-2);border-radius:0;height:0;width:18px;vertical-align:middle' }), '0 기록 섞인 행을 뺀 평균') : null));
+    // Compare the first and last three full seasons; for placeholder-affected inputs use the means without those rows.
+    const series = cm || ss.mean;
+    const full = seasons.map((s, i) => i).filter((i) => M.season_rows[i] === Math.max(...M.season_rows) && isNum(series[i]));
+    const a3 = full.slice(0, 3), b3 = full.slice(-3), avg = (ix) => ix.reduce((s, i) => s + series[i], 0) / ix.length;
+    const sd = data.stats[v.name].all.sd;
+    let so = '이 입력은 비교할 시즌이 부족합니다.';
+    if (a3.length === 3 && b3.length === 3 && sd > 0) {
+      const A = avg(a3), B = avg(b3), dz = (B - A) / sd;
+      so = `${cm ? '0 기록이 섞인 행을 빼고 보면 ' : ''}${ssn(seasons[a3[0]])}~${ssn(seasons[a3[2]])} 평균 ${fv(v, A)} → ${ssn(seasons[b3[0]])}~${ssn(seasons[b3[2]])} 평균 ${wj(fv(v, B), '으로/로')}, 전체 표준편차의 ${num(Math.abs(dz), 2)}배만큼 ${B >= A ? '올랐' : '내렸'}습니다. ` +
+        (Math.abs(dz) >= 0.3 ? `시대에 따라 값의 수준이 달라졌다는 뜻입니다. 표준화 기준은 ${P.train_last}까지의 학습 행에서 구했으므로, 최근 값은 그 기준에서 한쪽으로 치우쳐 보일 수 있습니다.` : '이 비교로는 시대에 따른 수준 차이가 크지 않습니다.');
+    }
+    let zeroNote = null;
+    if (cm) {
+      // the season where the placeholder zeros move the mean most (only seasons where the clean mean is shown)
+      let worst = -1, gap = 0;
+      seasons.forEach((s, i) => { if (isNum(cm[i]) && isNum(ss.mean[i]) && Math.abs(cm[i] - ss.mean[i]) > gap) { gap = Math.abs(cm[i] - ss.mean[i]); worst = i; } });
+      const dropped = seasons.map((s, i) => i).filter((i) => !isNum(cm[i]) && isNum(ss.mean[i]));
+      const lowest = ss.mean.reduce((b, x, i) => (isNum(x) && (b < 0 || x < ss.mean[b]) ? i : b), -1);
+      so += ' 단, 이 입력의 실선(모든 행)에는 0으로 적힌 기록이 섞여 있습니다' +
+        (worst >= 0 && sd > 0 ? `. 가장 크게 어긋난 ${wj(ssn(seasons[worst]), '은/는')} 모든 행 평균 ${fv(v, ss.mean[worst])}, 그런 행을 뺀 평균 ${wj(fv(v, cm[worst]), '으로/로')} 표준편차의 ${num(gap / sd, 2)}배 차이가 납니다.` : '.');
+      zeroNote = el('div', { class: 'note' }, el('div', {},
+        `이 입력은 2-2의 ‘숨은 빈칸’(0으로 적힌 기록)의 영향을 받습니다. 점선은 ${sideText(v)}의 최근 ${Z.window}경기에 그런 경기가 없는 행만으로 다시 낸 시즌 평균입니다.` +
+        (dropped.length ? ` ${dropped.map((i) => ssn(seasons[i])).join('·')}${jo(ssn(seasons[dropped[dropped.length - 1]]), '은/는')} 남는 행이 ${Z.clean_min}개보다 적어 점선을 비웠습니다.` : '') +
+        // averaged stats: the zeros pull the mean down (a coverage share would go the other way, so no claim there)
+        (lowest >= 0 && dropped.includes(lowest) && !v.name.includes('coverage') ? ` 실선이 가장 낮은 ${ssn(seasons[lowest])}도 그런 시즌이라, 그 낮은 값은 경기력보다 기록 누락을 보여 줍니다.` : '')));
+    }
+    $('s2-drift-zero').replaceChildren(...(zeroNote ? [zeroNote] : []));
+    const lastI = seasons.length - 1;
+    if (M.season_rows[lastI] < Math.max(...M.season_rows)) so += ` ${ssn(seasons[lastI])}${jo(ssn(seasons[lastI]), '은/는')} 아직 ${f.int(M.season_rows[lastI])}행뿐이라 점이 흔들릴 수 있습니다.`;
+    readSo($('s2-drift-read'), '가로는 시즌, 세로는 그 시즌 행들의 값입니다. 선이 오르내리면 시대에 따라 수준이 바뀐 것이고, 띠가 넓으면 같은 시즌 안에서도 값이 많이 퍼진 것입니다.', so);
+    $('s2-drift-table').replaceChildren(el('div', { class: 'scroll', style: 'max-height:320px' }, el('table', { class: 'data' },
+      el('caption', { class: 'sr-only', text: `${v.short} 시즌별 평균 표` }),
+      el('thead', {}, el('tr', {}, ['시즌', 'n', '평균', '25%', '75%', ...(cm ? ['0 기록 뺀 평균 (n)'] : [])].map((t, k) => el('th', { scope: 'col', class: k ? 'num' : '', text: t })))),
+      el('tbody', {}, seasons.map((s, i) => el('tr', {}, el('td', { text: ssn(s) }), el('td', { class: 'num', text: f.int(ss.n[i]) }),
+        ...[ss.mean[i], ss.q1[i], ss.q3[i]].map((q) => el('td', { class: 'num', text: isNum(q) ? fv(v, q) : '–' })),
+        cm ? el('td', { class: 'num', text: `${isNum(cm[i]) ? fv(v, cm[i]) : '–'} (${f.int(ss.clean_n[i])})` }) : null))))));
+  }
+  renderDist();
+  renderSc();
+  renderDrift();
+
+  // ================================================================ F. wrap-up
+  {
+    const blocks = [
+      { n: P.numeric, label: `표준화한 숫자 입력 ${P.numeric}열`, color: 'var(--accent)' },
+      { n: P.indicators, label: `‘비어 있었음’ 표시 ${P.indicators}열(표준화)`, color: 'color-mix(in srgb, var(--accent) 45%, var(--surface))' },
+      { n: P.onehot_total, label: `원-핫 이름 ${P.onehot_total}열`, color: 'var(--ink-3)' },   // not a club slot
+    ];
+    const bar = el('div', { class: 's2-stack', role: 'img', 'aria-label': `최종 입력 ${P.total_columns}열의 구성: ` + blocks.map((b) => b.label).join(', ') },
+      blocks.map((b) => { const s = el('span', { style: `flex:${b.n} 1 0;background:${b.color}` }); Lab.tip.attach(s, () => `<b>${esc(b.label)}</b><div>전체 ${P.total_columns}열의 ${f.pct(b.n / P.total_columns, 0)}</div>`); return s; }));
+    const legend = el('div', { class: 'legend' }, blocks.map((b) => el('span', { class: 'legend-item' }, el('i', { class: 'swatch', style: `background:${b.color}` }), b.label)));
+    $('s2-final').append(
+      el('h3', { text: `행 ${f.int(P.train_rows)}개 × 열 ${f.int(P.total_columns)}개 + 정답 + 무게` }),
+      el('p', { class: 'sub', text: '랜덤 포레스트가 실제로 받는 표의 모양입니다. 3단계에서는 먼저 시간순 검증(검증 시즌마다 그 앞 시즌들만으로 이 전처리를 다시 거쳐 학습)으로 설정을 고르고, 고른 설정으로 이 표 전체를 다시 학습합니다.' }),
+      bar, legend,
+      el('dl', { class: 's2-final' },
+        el('div', {}, el('dt', { text: '행: 학습에 쓴 경기' }), el('dd', { text: `${P.train_first} ~ ${P.train_last}의 구단 관점 행 ${f.int(P.train_rows)}개. 처음 보는 경기(테스트) ${f.int(P.test_rows)}행은 학습 구간에서 구한 중앙값·평균·퍼짐을 그대로 적용해 같은 모양으로 바꿉니다.` })),
+        el('div', {}, el('dt', {}, '열: ', term('독립변수(입력)', '입력')), el('dd', { text: `숫자 ${P.numeric} + 빈칸 표시 ${P.indicators} + 원-핫 ${P.onehot_total} = ${P.total_columns}열. 지난 경기 기록으로 만든 값과, 그 경기 선발 명단(보통 킥오프 약 1시간 전 발표)에서 온 선발·포메이션 값입니다. 포메이션 표기는 기록 시각이 없어 경기 전 값이라고 완전히 보장되지는 않습니다.` })),
+        el('div', {}, el('dt', {}, '정답: ', term('종속변수(정답)', '종속변수')), el('dd', { text: '우리 팀 관점의 결과 하나(0 = 패, 1 = 무, 2 = 승). 입력 열에는 들어가지 않습니다.' })),
+        el('div', {}, el('dt', { text: '무게' }), el('dd', { text: `${f.int(P.half_life)}일마다 절반이 되는 최근성 무게 × 경기 무게(6개 구단끼리 ${f.num(W.derby_weight, 1)}). 학습 행 무게의 합은 ${f.num(P.weight_total, 1)}입니다.` }))));
+  }
+  Lab.nav(root, ['s1', '데이터'], ['s3', '모델 학습']);
+});
+</script>

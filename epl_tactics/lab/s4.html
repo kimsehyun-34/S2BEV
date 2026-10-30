@@ -1,0 +1,1147 @@
+<style>
+#s4 [hidden]{display:none!important}
+.s4-howto{max-width:86ch;margin:0 0 6px;font-size:15px}
+.s4-honest{margin:10px 0 18px}
+.s4-honest b{font-weight:650}
+.s4-modebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:6px 0 14px}
+.s4-modebar .s4-modelabel{font-weight:650;font-size:15px}
+.s4-modebar .seg button{min-height:44px;padding:8px 16px;font-size:15px}
+.s4-real{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--gap);align-items:start;margin-bottom:var(--gap)}
+.s4-real>.card{margin:0}
+.s4-match{position:sticky;top:84px}
+.s4-match:focus{outline:none}
+.s4-filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:8px 12px;margin:6px 0 10px}
+.s4-filters select{width:100%}
+.s4-count{font-size:14px;color:var(--ink-2);margin:4px 0 8px}
+.s4-list{max-height:470px;border:1px solid var(--grid)}
+.s4-list table.data td{vertical-align:middle}
+.s4-list tr{cursor:pointer}
+.s4-list tbody tr:hover td{background:var(--surface-2)}
+.s4-list tr.is-sel td{background:var(--accent-soft)}
+.s4-list tr.is-sel td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.s4-sortbtn{all:unset;cursor:pointer;display:inline-flex;align-items:center;min-height:36px}
+.s4-sortbtn:focus-visible{outline:3px solid var(--s1);outline-offset:1px}
+.s4-pick{all:unset;cursor:pointer;display:block;min-height:36px;padding:2px 0;font-weight:600;color:var(--ink);line-height:1.35}
+.s4-pick small{display:block;font-weight:400;color:var(--ink-2);font-size:12.5px}
+.s4-pick:focus-visible{outline:3px solid var(--s1);outline-offset:2px;border-radius:4px}
+.s4-minibar{display:flex;gap:2px;width:64px;height:8px;border-radius:3px;overflow:hidden;margin-top:3px;background:var(--surface)}
+.s4-minibar span{display:block;min-width:0}
+.s4-hit{font-weight:600;white-space:nowrap}
+.s4-hit.ok{color:var(--ok)}
+.s4-hit.no{color:var(--ink-2)}
+.s4-date{white-space:nowrap;font-variant-numeric:tabular-nums}
+.s4-match-sub{font-size:13px;color:var(--ink-2);letter-spacing:.02em}
+.s4-score{font-size:21px;margin:4px 0 2px;font-weight:650;letter-spacing:-.01em}
+.s4-score .g{font-variant-numeric:tabular-nums;padding:0 6px}
+.s4-persp{font-size:14px;color:var(--ink-2);margin:0 0 12px}
+.s4-pb{margin:0 0 14px}
+.s4-pb-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 10px;align-items:baseline;font-size:14px}
+.s4-pb-head b{font-weight:600}
+.s4-pb-note{font-size:12.5px;color:var(--ink-2)}
+.s4-pb-bar{display:flex;gap:2px;height:14px;border-radius:4px;overflow:hidden;margin:6px 0 4px;background:var(--surface)}
+.s4-pb.big .s4-pb-bar{height:24px}
+.s4-pb-bar span{display:block;min-width:0}
+.s4-pb-vals{display:flex;flex-wrap:wrap;gap:2px 16px;font-size:14px;color:var(--ink-2)}
+.s4-pb-vals b{color:var(--ink);font-weight:650;font-variant-numeric:tabular-nums}
+.s4-pb.big .s4-pb-vals{font-size:15px}
+.s4-verdicts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:6px 0 14px}
+.s4-verdicts>div{border:1px solid var(--border);border-radius:10px;padding:9px 11px;background:var(--surface-2);min-width:0}
+.s4-verdicts .l{display:block;font-size:12.5px;color:var(--ink-2)}
+.s4-verdicts .v{display:block;font-size:17px;font-weight:650;line-height:1.3;margin-top:2px}
+.s4-verdicts small{display:block;font-size:13px;color:var(--ink-2);line-height:1.45;margin-top:2px}
+.s4-mk{border-top:1px dashed var(--border-strong);padding-top:10px;margin-top:4px}
+.s4-fake-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px 14px;margin:8px 0 6px}
+.s4-fake-grid>div{grid-column:span 2;min-width:0}
+.s4-fake-grid>.s4-wide{grid-column:span 3}
+.s4-fake-grid select{width:100%}
+.s4-asof-p{margin:0}
+.s4-asof-p+.s4-asof-p{margin-top:6px}
+.s4-work{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr);gap:var(--gap);align-items:start;margin-bottom:var(--gap)}
+.s4-work>.card{margin:0}
+.s4-result{position:sticky;top:84px}
+.s4-ed-top{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+.s4-ed-top h3{margin:0}
+.s4-ed-top h3:focus{outline:none}
+.s4-btn36{min-height:36px}
+.s4-src{margin:8px 0 4px;font-size:14.5px}
+.s4-src .chip{margin-right:6px}
+.s4-qcap{font-size:14px;margin:8px 0 2px;max-width:80ch}
+.s4-howband{font-size:14px;color:var(--ink-2);margin:6px 0 4px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.s4-key{display:inline-flex;align-items:center;gap:6px}
+.s4-key .kb{display:inline-block;width:26px;height:6px;border-radius:3px;background:var(--s4-band)}
+.s4-key .kt{display:inline-block;width:2px;height:14px;background:var(--ink-2);border-radius:1px}
+#s4{--s4-band:color-mix(in srgb,var(--accent) 38%,var(--grid))}
+.s4-q{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px;align-items:start;padding:8px 0 4px;border-top:1px solid var(--grid)}
+.s4-q.head{border-top:0;padding:6px 0 2px;font-size:13px;color:var(--ink-2);font-weight:600}
+.s4-q-label{grid-column:1/-1;font-size:14px;font-weight:600;line-height:1.35}
+.s4-q-label small{font-weight:400;color:var(--ink-2);font-size:12.5px;margin-left:8px}
+.s4-who{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.s4-ctl{display:flex;align-items:center;gap:8px}
+.s4-range{position:relative;flex:1 1 auto;min-width:0;height:36px}
+.s4-rail{position:absolute;left:9px;right:9px;top:15px;height:6px;border-radius:3px;background:var(--grid);pointer-events:none}
+.s4-band{position:absolute;top:0;bottom:0;border-radius:3px;background:var(--s4-band)}
+.s4-tick{position:absolute;top:-5px;width:2px;height:16px;margin-left:-1px;border-radius:1px;background:var(--ink-2)}
+.s4-range input[type=range]{position:absolute;left:0;top:0;width:100%;height:36px;margin:0;padding:0;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer}
+.s4-range input[type=range]::-webkit-slider-runnable-track{height:36px;background:transparent;border:0}
+.s4-range input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;margin-top:9px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--accent)}
+.s4-range input[type=range]::-moz-range-track{background:transparent;border:0}
+.s4-range input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid var(--surface)}
+.s4-range input[type=range]:focus-visible{outline:3px solid var(--s1);outline-offset:1px}
+.s4-cell.is-missing input[type=range]::-webkit-slider-thumb{background:var(--surface);box-shadow:0 0 0 2px var(--ink-3)}
+.s4-num{width:86px;flex:none;text-align:right;font-variant-numeric:tabular-nums}
+.s4-meta{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:center;font-size:12.5px;color:var(--ink-2);min-height:18px;line-height:1.45}
+.s4-meta .w{color:var(--ink)}
+.s4-meta .w::before,.s4-ar-warn:not(:empty)::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--warn-line);margin-right:5px;vertical-align:1px}
+.s4-linkbtn{all:unset;cursor:pointer;color:var(--link);text-decoration:underline;text-underline-offset:2px;min-height:36px;display:inline-flex;align-items:center;padding:0 4px}
+.s4-linkbtn:focus-visible{outline:3px solid var(--s1);border-radius:3px}
+.s4-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;padding:10px 0 4px;border-top:1px solid var(--grid)}
+.s4-form select{width:100%}
+.s4-form .s4-formnote{grid-column:1/-1;font-size:14px;color:var(--ink-2);margin:0}
+.s4-mini{display:none}
+.s4-all{margin-top:14px;border-top:1px solid var(--grid);padding-top:6px}
+.s4-all>summary{cursor:pointer;font-weight:650;min-height:44px;display:flex;align-items:center;gap:10px;list-style:none}
+.s4-all>summary::-webkit-details-marker{display:none}
+.s4-all>summary::before{content:"";flex:none;width:8px;height:8px;border-right:2px solid var(--ink-2);border-bottom:2px solid var(--ink-2);transform:rotate(-45deg);transition:transform .15s}
+.s4-all[open]>summary::before{transform:rotate(45deg)}
+.s4-all>summary small{font-weight:400;color:var(--ink-2);font-size:13px}
+.s4-all-tools{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:4px 0 10px}
+.s4-all-tools input[type=search]{flex:1 1 220px;min-width:0;min-height:38px;padding:7px 10px;border:1px solid var(--border-strong);border-radius:8px;background:var(--surface)}
+.s4-all-tools label{display:inline-flex;gap:6px;align-items:center;font-size:14px;min-height:36px;cursor:pointer}
+.s4-all-body{max-height:70vh;overflow:auto;border:1px solid var(--grid);border-radius:8px;padding:0 12px}
+.s4-grp h4{margin:14px 0 0;font-size:15px}
+.s4-grp h4 span{font-weight:400;color:var(--ink-2);font-size:13px;margin-left:6px}
+.s4-grp>p{margin:0 0 6px;font-size:13px;color:var(--ink-2)}
+.s4-ar{display:grid;grid-template-columns:minmax(0,1fr) 150px 112px 98px;gap:4px 12px;align-items:center;padding:7px 0;border-top:1px solid var(--grid);font-size:13.5px}
+.s4-ar-name{min-width:0;line-height:1.4}
+.s4-ar-name code{display:block;color:var(--ink-3);font-size:12px;word-break:break-all}
+.s4-ar-name .chip{margin-left:6px;font-size:11.5px;padding:0 7px}
+.s4-ar-ctl{display:flex;align-items:center;gap:6px;min-width:0}
+.s4-ar-ctl input,.s4-ar-ctl select{width:100%;min-width:0;min-height:36px}
+.s4-ar-ctl output{font-variant-numeric:tabular-nums;font-weight:600;word-break:break-all}
+.s4-unit{font-size:12px;color:var(--ink-2);flex:none}
+.s4-ar-orig{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums;word-break:break-all}
+.s4-ar-warn{grid-column:1/-1;font-size:14px;color:var(--ink);line-height:1.5}
+.s4-ar-warn:empty{display:none}
+.s4-ar.is-changed{background:linear-gradient(90deg,color-mix(in srgb,var(--s4) 14%,transparent),transparent 60%)}
+.s4-kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0 8px}
+.s4-kv>div{border:1px solid var(--border);border-radius:10px;padding:8px 10px;min-width:0}
+.s4-kv .l{display:block;font-size:12px;color:var(--ink-2);line-height:1.35}
+.s4-kv b{display:block;font-size:19px;font-weight:650;line-height:1.3}
+.s4-say{font-size:15px;margin:8px 0}
+.s4-small{font-size:14px;color:var(--ink-2)}
+.s4-save{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:10px}
+.s4-dv{list-style:none;margin:8px 0 0;padding:0}
+.s4-dv li{border-top:1px solid var(--grid)}
+.s4-dv-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(96px,.85fr) 66px;gap:2px 12px;align-items:center;width:100%;padding:6px 4px;min-height:40px;text-align:left;background:none;border:0;color:inherit;font:inherit;border-radius:6px}
+button.s4-dv-row{cursor:pointer}
+button.s4-dv-row:hover{background:var(--surface-2)}
+.s4-dv-label{font-size:13.5px;line-height:1.35;min-width:0}
+.s4-dv-label small{display:block;color:var(--ink-2);font-size:12px}
+.s4-dv-track{position:relative;height:14px}
+.s4-dv-track::before{content:"";position:absolute;left:50%;top:-5px;bottom:-5px;width:1px;background:var(--axis)}
+.s4-dv-bar{position:absolute;top:1px;height:12px}
+.s4-dv-bar.up{left:50%;background:var(--c-win);border-radius:0 4px 4px 0}
+.s4-dv-bar.down{right:50%;background:var(--ink-3);border-radius:4px 0 0 4px}
+.s4-dv-val{text-align:right;font-variant-numeric:tabular-nums;font-size:13px;font-weight:600}
+.s4-dv-sum{font-size:14px;color:var(--ink-2);margin:8px 0 0;border-top:1px solid var(--grid);padding-top:8px}
+.s4-swatch-up{background:var(--c-win)}
+.s4-swatch-down{background:var(--ink-3)}
+.s4-sweep-top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:flex-end;margin:6px 0 4px}
+.s4-sweep-top>div{flex:1 1 240px;min-width:0}
+.s4-sweep-top select{width:100%}
+.s4-sweep-chart .cur-label{font-size:12px;fill:var(--ink);font-weight:600}
+.s4-cur-key{width:2px!important;height:14px!important;border-radius:0!important;margin:0 5px!important;background:repeating-linear-gradient(to bottom,var(--ink-2) 0 4px,transparent 4px 7px)}
+#s4 span.f{display:block;font-size:13px;color:var(--ink-2);margin-bottom:4px;font-weight:550}
+.s4-alt{margin-top:8px;font-size:13.5px}
+.s4-alt>summary{cursor:pointer;color:var(--ink-2);min-height:36px;display:inline-flex;align-items:center}
+.s4-shelf td .s4-desc{display:block;font-size:12.5px;color:var(--ink-2);font-weight:400;max-width:48ch}
+.s4-shelf td b{font-weight:600}
+.s4-acts{display:flex;gap:6px;flex-wrap:wrap}
+.s4-delta-pos{color:var(--ok)}
+.s4-about h4{margin:16px 0 4px}
+.s4-score-tbl td:first-child{white-space:nowrap}
+.s4-show-sm{display:none}
+@media (max-width:900px){
+  .s4-real,.s4-work{grid-template-columns:minmax(0,1fr)}
+  .s4-match,.s4-result{position:static}
+  .s4-result{order:-1}
+  .s4-mini{display:block;position:sticky;top:72px;z-index:5;margin:8px -4px 4px;padding:6px 8px;background:var(--surface);border:1px solid var(--border);border-radius:9px;box-shadow:var(--shadow);font-size:13px}
+  .s4-mini .s4-pb-bar{height:10px;margin:2px 0 3px}
+}
+@media (max-width:700px){
+  .s4-fake-grid{grid-template-columns:minmax(0,1fr)}
+  .s4-fake-grid>div,.s4-fake-grid>.s4-wide{grid-column:auto}
+  .s4-q{grid-template-columns:minmax(0,1fr);gap:2px}
+  .s4-q.head{display:none}
+  .s4-q-label{padding-top:2px}
+  .s4-who{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;display:block;font-size:12.5px;color:var(--ink-2);margin-top:4px}
+  .s4-form{grid-template-columns:minmax(0,1fr)}
+  .s4-ar{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .s4-ar-name{grid-column:1/-1}
+  .s4-kv{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .s4-verdicts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .s4-verdicts>div:last-child{grid-column:1/-1}
+  .s4-hide-sm{display:none}
+  .s4-show-sm{display:inline}
+  .s4-shelf table.data thead{display:none}
+  .s4-shelf table.data,.s4-shelf table.data tbody{display:block}
+  .s4-shelf table.data tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px;padding:10px 0;border-bottom:1px solid var(--grid)}
+  .s4-shelf table.data td{display:block;border:0;padding:0;text-align:left}
+  .s4-shelf table.data td.num{text-align:left}
+  .s4-shelf table.data td[data-label]::before{content:attr(data-label);display:block;font-size:11.5px;color:var(--ink-2)}
+  .s4-shelf td.s4-sh-name,.s4-shelf td.s4-sh-act{grid-column:1/-1}
+  .s4-shelf table.data td.s4-sh-idx{display:none}
+  .s4-list table.data th,.s4-list table.data td{padding:7px 6px}
+  .s4-list tr.is-sel td:nth-child(2){box-shadow:inset 3px 0 0 var(--accent)}
+}
+@media (max-width:520px){
+  .s4-dv-row{grid-template-columns:minmax(0,1fr) 60px}
+  .s4-dv-label{grid-column:1/-1}
+  .s4-all-body{padding:0 8px}
+  .s4-ar{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.s4-all>summary::before{transition:none}}
+</style>
+
+<div class="step-head">
+  <div class="eyebrow">4단계 · 예측 실험</div>
+  <h2>조건을 직접 넣어 승·무·패 확률 보기</h2>
+  <p class="lede">모델이 학습 때 보지 못한 실제 경기를 고르거나, 두 팀을 골라 가상의 경기를 만든 뒤 조건을 바꿔 가며 예측이 어떻게 달라지는지 확인합니다.</p>
+</div>
+
+<div class="takeaway"><b class="t">한 줄 결론</b>
+  <p>모델이 처음 보는 고유 경기 <b data-v="held-matches"></b>개에서 맞힌 비율은 <b data-v="acc"></b>입니다(6개 구단끼리의 경기는 두 팀 입장의 행을 반씩 세어 한 경기로 계산). 그래서 여기 나오는 숫자는 ‘결과’가 아니라 ‘가능성’이며, 그 가능성을 가장 크게 움직이는 입력은 1위 ‘<span data-v="top1"></span>’, 2위 ‘<span data-v="top2"></span>’입니다.</p>
+</div>
+
+<p class="s4-howto"><b>사용법.</b> 먼저 출발점을 고르세요. ‘처음 보는 실제 경기’에서는 <span data-v="test-season"></span> 시즌 이후 경기를 골라 예측과 실제 결과를 나란히 보고, ‘가상의 경기 만들기’에서는 두 팀과 홈/원정을 정해 아직 열리지 않은 대결을 만듭니다. 그다음 ‘조건 바꾸기’에서 <span data-g="Elo">Elo</span>·최근 성적·휴식일 같은 값을 움직이면 확률이 바로 다시 계산되고, 아래에서 그 이유와 ‘이 값을 바꾸면?’ 그래프를 볼 수 있습니다. 마음에 드는 조건은 저장해 두고 나란히 비교하세요.</p>
+
+<div class="note s4-honest" role="note"><div><b>먼저 알아 둘 점.</b> 이 <span data-g="랜덤 포레스트">랜덤 포레스트</span> 모델은 처음 보는 경기의 약 <b data-v="acc0"></b>만 맞힙니다(<span data-g="정확도">정확도</span>). 화면의 숫자는 판정이 아니라 확률입니다. 승 60%는 ‘모델의 확률대로라면 10번 중 4번은 이기지 못한다’는 뜻이고, 그 확률 자체도 틀릴 수 있습니다. 포메이션 입력은 예측을 좋게 만든다는 증거가 없고(효과의 <span data-g="신뢰구간">신뢰구간</span>이 0을 포함), 모델은 부상·출전 정지·감독 교체·이적 소식을 전혀 모릅니다. Elo 차이와 홈 여부만 쓰는 단순한 <span data-g="기준 모델">기준 모델</span>보다 뚜렷하게 낫지도 않습니다<span data-v="vs-elo"></span>.</div></div>
+
+<div class="s4-modebar">
+  <span class="s4-modelabel" id="s4-mode-l">출발점</span>
+  <div id="s4-mode"></div>
+</div>
+
+<div class="s4-real" id="s4-real">
+  <section class="card" aria-labelledby="s4-real-h">
+    <h3 id="s4-real-h">처음 보는 실제 경기</h3>
+    <p class="sub">모델은 <b data-v="train-last"></b>까지의 경기로만 학습했습니다. 아래 <b data-v="held-rows"></b>개 행(고유 경기 <span data-v="held-matches"></span>개)은 모두 그 뒤의 경기라 모델이 처음 보는 경기입니다. 두 팀이 모두 6개 구단인 경기는 양쪽 입장으로 한 번씩 나옵니다. 경기를 누르면 예측과 실제 결과가 함께 나옵니다.</p>
+    <div class="s4-filters" id="s4-filters"></div>
+    <p class="s4-count" id="s4-count" aria-live="polite"></p>
+    <div class="scroll s4-list" id="s4-list"></div>
+  </section>
+  <section class="card" id="s4-match" aria-labelledby="s4-match-h" tabindex="-1"></section>
+</div>
+
+<section class="card" id="s4-fake" hidden aria-labelledby="s4-fake-h">
+  <h3 id="s4-fake-h">가상의 경기 만들기</h3>
+  <p class="sub">우리 팀(6개 구단 중 하나)과 상대 팀(이번 시즌 EPL 구단), 장소, 포메이션을 고르면 두 팀의 가장 최근 상태로 모든 입력을 채워 예측합니다. 승·무·패는 언제나 ‘우리 팀’ 입장입니다.</p>
+  <div class="s4-fake-grid" id="s4-fake-ctl"></div>
+  <div class="note info"><div id="s4-asof"></div></div>
+</section>
+
+<div class="s4-work" id="s4-work">
+  <section class="card s4-editor" aria-labelledby="s4-ed-h">
+    <div class="s4-ed-top">
+      <h3 id="s4-ed-h" tabindex="-1">조건 바꾸기</h3>
+      <button class="btn small s4-btn36" id="s4-reset-all" type="button">모두 원래대로</button>
+    </div>
+    <p class="s4-src" id="s4-src"></p>
+    <div class="s4-mini" id="s4-mini" aria-hidden="true"></div>
+    <p class="s4-qcap" id="s4-qcap"></p>
+    <p class="s4-small s4-qcap2" id="s4-qcap2"></p>
+    <p class="s4-howband">
+      <span class="s4-key"><i class="kb"></i>학습 데이터의 가운데 90%(흔한 범위)</span>
+      <span class="s4-key"><i class="kt"></i>출발점의 원래 값</span></p>
+    <div id="s4-quick"></div>
+    <div class="s4-form" id="s4-form"></div>
+    <details class="s4-all" id="s4-all">
+      <summary>모델 입력 전체 보기·바꾸기 <small>(<span data-v="n-inputs"></span>개 · 그룹별 · 검색 가능)</small></summary>
+      <div class="s4-all-tools">
+        <input type="search" id="s4-all-q" placeholder="입력 이름 검색 (예: 슈팅, elo)" aria-label="입력 이름 검색">
+        <label><input type="checkbox" id="s4-all-changed"> 바뀐 입력만</label>
+      </div>
+      <p class="s4-small" id="s4-all-help">‘자동 계산’ 입력(차이 값, 포메이션에서 나오는 값)은 다른 입력을 바꾸면 따라 바뀝니다. 비워 둘 수 있는 칸은 학습 데이터에서도 비어 있던 적이 있는 <span data-g="결측치">결측치</span> 입력뿐이며, 모델은 빈 칸을 학습 데이터 중앙값으로 채우고 ‘비어 있었음’ 표시를 함께 씁니다.</p>
+      <div class="s4-all-body" id="s4-all-body"></div>
+    </details>
+  </section>
+
+  <section class="card s4-result" id="s4-result" aria-labelledby="s4-res-h">
+    <h3 id="s4-res-h">예측 결과</h3>
+    <p class="s4-small" id="s4-res-src"></p>
+    <div id="s4-res-bars"></div>
+    <p class="s4-say" id="s4-res-say"></p>
+    <div class="s4-kv" id="s4-res-kv"></div>
+    <p class="s4-small">기대 승점 = 3 × 승 확률 + 1 × 무 확률. 모델의 확률을 그대로 믿을 때 같은 조건의 경기에서 평균적으로 얻는 승점입니다.</p>
+    <div class="s4-save"><button class="btn primary" type="button" id="s4-save">지금 조건 저장하기</button><span class="s4-small" id="s4-save-msg"></span></div>
+    <p class="sr-only" aria-live="polite" id="s4-live"></p>
+  </section>
+</div>
+
+<div class="grid2">
+  <section class="card" id="s4-why" aria-labelledby="s4-why-h">
+    <h3 id="s4-why-h">왜 이런 예측이 나왔나</h3>
+    <p class="sub" id="s4-why-read"></p>
+    <div id="s4-why-seg"></div>
+    <div class="legend"><span class="legend-item"><i class="swatch s4-swatch-up"></i>승 확률을 올림(+)</span><span class="legend-item"><i class="swatch s4-swatch-down"></i>승 확률을 내림(−)</span></div>
+    <ol class="s4-dv" id="s4-why-list"></ol>
+    <p class="s4-dv-sum" id="s4-why-sum"></p>
+    <p class="s4-small">원인이 아니라 ‘모델이 이 경기에서 어디에 기댔는지’입니다. 서로 얽힌 입력(예: Elo와 최근 득점)은 효과를 나눠 갖기 때문에, 막대 하나만 보고 “이것 때문에 이긴다”고 읽으면 안 됩니다. 입력을 누르면 ‘이 값을 바꾸면?’ 그래프가 그 입력으로 바뀝니다.</p>
+  </section>
+
+  <section class="card" id="s4-sweep" aria-labelledby="s4-sweep-h">
+    <h3 id="s4-sweep-h">이 값을 바꾸면?</h3>
+    <p class="sub">입력 하나만 학습 데이터의 최솟값부터 최댓값까지 움직이고, 나머지는 지금 조건 그대로 둔 채 확률을 다시 계산합니다.</p>
+    <div class="s4-sweep-top"><div><label class="f" for="s4-sweep-sel">바꿔 볼 입력</label><select id="s4-sweep-sel"></select></div></div>
+    <div id="s4-sweep-legend"></div>
+    <div class="s4-sweep-chart" id="s4-sweep-chart"></div>
+    <p id="s4-sweep-say" class="s4-say"></p>
+    <details class="s4-alt"><summary>숫자로 보기</summary><div class="scroll" id="s4-sweep-table"></div></details>
+  </section>
+</div>
+
+<section class="card s4-shelf" id="s4-shelf" aria-labelledby="s4-shelf-h">
+  <h3 id="s4-shelf-h">저장한 조건 비교</h3>
+  <p class="sub">‘지금 조건 저장하기’로 최대 5개까지 모아 나란히 비교할 수 있습니다. 차이는 처음 저장한 조건(기준)과 비교한 값입니다.</p>
+  <div id="s4-shelf-body"></div>
+</section>
+
+<section class="card s4-about" id="s4-about" aria-labelledby="s4-about-h">
+  <h3 id="s4-about-h">이 모델에 대해</h3>
+  <ul class="clean" id="s4-facts"></ul>
+  <h4>처음 보는 경기 성적표</h4>
+  <p class="sub">같은 경기들에서 이 모델과 Elo 기준 모델의 점수입니다. <span data-g="로그손실">로그손실</span>은 낮을수록 좋고, 1/3씩 찍으면 <span data-v="ln3"></span>입니다. 두 팀이 모두 6개 구단인 경기는 두 행을 반씩 세어 한 경기로 칩니다.</p>
+  <div id="s4-scoreboard"></div>
+  <p class="s4-say" id="s4-score-say"></p>
+  <p class="s4-small" id="s4-official"></p>
+  <p class="s4-small" id="s4-market"></p>
+  <h4>한계</h4>
+  <ul class="clean">
+    <li>부상·출전 정지·감독 교체·이적처럼 경기 직전에 알려지는 정보는 데이터에 없습니다.</li>
+    <li>포메이션 입력은 효과가 입증되지 않았습니다. 포메이션을 바꿔 확률이 달라져도 ‘이 포메이션이 이기게 해 준다’는 뜻이 아닙니다.</li>
+    <li>선발 11명 관련 입력은 이 프로젝트가 모은 경기(6개 구단이 치른 경기)에서 관측한 기록일 뿐 선수 경력 전체가 아닙니다. 가상 경기에서는 실제 선발을 알 수 없어 그 팀이 이 데이터에 나온 최근 경기(최대 10경기)의 평균으로 채웁니다. 6개 구단이 아닌 팀은 6개 구단과 만난 경기만 있어 몇 년 전 경기가 섞이거나 경기 수가 적을 수 있습니다.</li>
+    <li>예전 시즌의 선수단·감독은 지금과 다릅니다. 최근 경기에 더 큰 가중치를 줬지만, 그렇다고 인과 관계가 밝혀지지는 않습니다.</li>
+    <li>처음 보는 경기들은 이전 실험(v2)에서 평가에 쓰인 적이 있어, 완전히 새로운 미래 시험은 아닙니다(이번 모델의 학습·튜닝에는 쓰지 않았습니다).</li>
+    <li>범위를 크게 벗어난 값을 넣어도 나무 모델은 학습 범위 끝 값처럼 다룹니다. 극단적인 조건의 확률은 믿을 만하지 않습니다.</li>
+  </ul>
+</section>
+
+<script>
+Lab.register('s4', function (root, data, LAB) {
+  'use strict';
+  const E = window.LabEngine, f = Lab.fmt, el = Lab.el;
+  const $ = (sel) => root.querySelector(sel);
+  const motion = () => (matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
+  let engine = null;
+  const eng = () => engine || (engine = E.create(data));            // created once, lazily
+
+  // ------------------------------------------------------------------ constants from the payload
+  const SC = data.scenario, HELD = data.heldout, MODEL = data.model, STATS = data.stats;
+  const MISSING = E.MISSING, isMissing = E.isMissing;
+  const CAT = new Map(LAB.catalog.map((c) => [c.name, c]));
+  const GROUP_LABEL = new Map(LAB.groups.map((g) => [g.key, g.label]));
+  const SHORT = new Map(LAB.meta.clubs.map((c, i) => [c, LAB.meta.clubs_short[i]]));
+  const short = (t) => SHORT.get(t) || t;
+  const CLUBS = new Set(SC.clubs);
+  const ORDER = [2, 1, 0];                                            // 승, 무, 패 (left to right)
+  const OUT_LABEL = ['패', '무', '승'], OUT_KEY = ['loss', 'draw', 'win'];
+  const COLOR = ['var(--c-loss)', 'var(--c-draw)', 'var(--c-win)'];
+  const pct = (x, d = 1) => f.pct(x, d);
+  const signed = (x, d) => (Math.abs(x) < 0.5 * Math.pow(10, -d) ? (0).toFixed(d) : `${x > 0 ? '+' : '−'}${Math.abs(x).toFixed(d)}`);
+  const pp = (x) => `${signed(x * 100, 1)}%p`;
+  const seasonLabel = (s) => (/^\d{4}\/\d{4}$/.test(String(s)) ? `${String(s).slice(0, 4)}/${String(s).slice(7)}` : String(s));
+  const same = (a, b) => a === b || (isMissing(a) && isMissing(b));
+  const kids = (...a) => a.filter((x) => x != null && x !== false && x !== '');   // replaceChildren(null) would print "null"
+  const argmax = (p) => (p[0] >= p[1] && p[0] >= p[2] ? 0 : p[1] >= p[2] ? 1 : 2);   // first max, like numpy
+  const notOutcome = (k) => `${OUT_LABEL[k]}${k === 2 ? '이' : '가'} 아닌`;
+  const DIFF_KEYS = SC.diff_bases.map((d) => 'diff_' + d);
+  const FORM_DERIVED = ['team_formation', ...SC.formation_numeric];
+  const DERIVED = new Set([...DIFF_KEYS, ...FORM_DERIVED]);
+  const FIXED = new Set(['team', 'opponent']);
+  const NUMERIC = new Set(MODEL.pre.numeric);
+  const EDITABLE_NUM = LAB.catalog.filter((c) => NUMERIC.has(c.name) && !DERIVED.has(c.name)).map((c) => c.name);
+  const QUICK = ['elo', 'points_5', 'goals_for_20', 'goals_against_20', 'shots_20', 'rest_days'];
+  const metricLabel = (name) => { const l = (CAT.get(name) || {}).label || name; const i = l.indexOf(' · '); return i >= 0 ? l.slice(i + 3) : l; };
+
+  // ------------------------------------------------------------------ value formatting
+  function stepOf(name) {
+    const c = CAT.get(name) || {}, s = STATS[name];
+    if (!s || s.min == null || s.max == null) return 1;
+    if (c.kind === 'count' || c.kind === 'binary') return 1;
+    const span = s.max - s.min;
+    return span > 0 ? Math.pow(10, Math.floor(Math.log10(span / 100))) : 1;
+  }
+  const decOf = (name) => Math.max(0, Math.min(4, Math.round(-Math.log10(stepOf(name)))));
+  function fmtVal(name, v) {
+    if (FIXED.has(name)) return String(v);
+    if (!NUMERIC.has(name)) return isMissing(v) || v === MISSING ? '기록 없음' : String(v).replace('|' + MISSING, '|기록 없음');
+    if (isMissing(v)) return '비어 있음';
+    if (name === 'is_home') return v === 1 ? '홈 (1)' : v === 0 ? '원정 (0)' : f.num(v, 2);
+    const c = CAT.get(name) || {};
+    let d = decOf(name);
+    if ((c.kind === 'count' || c.kind === 'binary') && !Number.isInteger(v)) d = Math.max(d, 1);
+    return f.num(v, d);
+  }
+  const inputStr = (v) => (isMissing(v) ? '' : String(Math.round(v * 1e4) / 1e4));
+  function rangeNote(name, v) {
+    const s = STATS[name];
+    if (!s || isMissing(v) || s.min == null) return '';
+    if (v < s.min || v > s.max) return `학습 데이터에 없던 값입니다(학습 범위 ${fmtVal(name, s.min)} ~ ${fmtVal(name, s.max)}). 나무 모델은 범위 밖 값을 가장 가까운 끝 값처럼 다룹니다.`;
+    if (s.p05 != null && (v < s.p05 || v > s.p95)) return `드문 값입니다. 학습 데이터의 90%가 ${fmtVal(name, s.p05)} ~ ${fmtVal(name, s.p95)} 사이였습니다.`;
+    return '';
+  }
+
+  // ------------------------------------------------------------------ held-out matches (engine computes every probability shown)
+  const N = HELD.rows.length;
+  const matches = [];
+  for (let i = 0; i < N; i++) {
+    const row = E.heldoutRow(HELD, i);
+    const p = eng().predict(row), pe = eng().eloBaseline(row);
+    const out = row.outcome, top = argmax(p);
+    const mk = [row.market_loss, row.market_draw, row.market_win];
+    matches.push({ i, id: row.match_id, date: row.date, season: row.season, team: row.team, opponent: row.opponent,
+      home: row.is_home === 1, outcome: out, gf: row.goals_for, ga: row.goals_against, p, pe, top, hit: top === out,
+      market: mk.every((v) => !isMissing(v)) ? mk : null, ll: -Math.log(Math.max(p[out], 1e-9)) });
+  }
+
+  // How much each input moved P(승) on the unseen rows (mean |contribution|, computed in Python; see export_s4.influence_block).
+  const INF = data.influence;
+  const byInput = Object.entries(INF.by_input).sort((a, b) => b[1] - a[1]);
+  const topInputs = byInput.slice(0, 2).map(([n]) => (CAT.get(n) || {}).label || n);
+  const pairLabel = (base) => metricLabel('team_' + base);
+
+  // Scores on the same unseen rows: this model, the Elo baseline (fixture-weighted, from the payload).
+  const FX = data.fixed_model_scores.overall, FE = data.fixed_model_scores.elo.overall;
+  const vsElo = () => {
+    const acc = Math.abs(FX.accuracy - FE.accuracy) < 0.02 ? '정확도는 비슷하고' : FX.accuracy > FE.accuracy ? '정확도는 조금 높고' : '정확도는 조금 낮고';
+    const ll = FX.log_loss > FE.log_loss ? '확률의 질(로그손실)은 오히려 조금 나쁩니다' : '확률의 질(로그손실)은 조금 좋습니다';
+    return `${acc} ${ll}`;
+  };
+
+  // ------------------------------------------------------------------ static numbers in the prose
+  const V = {
+    'acc': pct(FX.accuracy), 'acc0': pct(FX.accuracy, 0), 'held-rows': f.int(MODEL.heldout_rows), 'held-matches': f.int(MODEL.heldout_matches),
+    'train-last': MODEL.train_last_date, 'test-season': seasonLabel(MODEL.test_start), 'n-inputs': f.int(LAB.catalog.length),
+    'top1': topInputs[0], 'top2': topInputs[1], 'ln3': f.num(Math.log(3), 3),
+    'vs-elo': ` — 처음 보는 경기에서 ${vsElo()}(아래 ‘이 모델에 대해’ 성적표)`,
+  };
+  root.querySelectorAll('[data-v]').forEach((n) => { n.textContent = V[n.dataset.v] ?? ''; });
+
+  // ------------------------------------------------------------------ stacked 승/무/패 bar
+  function makeProbBar({ kind, title, note, big }) {
+    let cur = [1 / 3, 1 / 3, 1 / 3];
+    const segs = ORDER.map((k) => el('span', { style: `background:${COLOR[k]}` }));
+    const bar = el('div', { class: 's4-pb-bar', role: 'img', tabindex: '0' }, segs);
+    const vals = ORDER.map((k) => el('b', { 'data-o': OUT_KEY[k] }));
+    Lab.tip.attach(bar, () => `<b>${Lab.esc(title)}</b>` + ORDER.map((k) => `<div><i class="swatch" style="background:${COLOR[k]}"></i>${OUT_LABEL[k]} ${pct(cur[k])}</div>`).join(''));
+    const node = el('div', { class: 's4-pb' + (big ? ' big' : ''), 'data-kind': kind },
+      el('div', { class: 's4-pb-head' }, el('b', { text: title }), note ? el('span', { class: 's4-pb-note', text: note }) : null),
+      bar, el('div', { class: 's4-pb-vals' }, ORDER.map((k, j) => el('span', {}, el('i', { class: 'swatch', style: `background:${COLOR[k]}` }), `${OUT_LABEL[k]} `, vals[j]))));
+    function set(p) {
+      cur = p;
+      ORDER.forEach((k, j) => { segs[j].style.flex = `${Math.max(0, p[k])} 1 0`; vals[j].textContent = pct(p[k]); });
+      bar.setAttribute('aria-label', `${title}: ` + ORDER.map((k) => `${OUT_LABEL[k]} ${pct(p[k])}`).join(', '));
+      node.dataset.p = p.map((v) => v.toFixed(9)).join(',');
+    }
+    return { node, set };
+  }
+  const miniBar = (p) => el('span', { class: 's4-minibar', 'aria-hidden': 'true' }, ORDER.map((k) => el('span', { style: `flex:${Math.max(0, p[k])} 1 0;background:${COLOR[k]}` })));
+
+  // ------------------------------------------------------------------ editor state
+  const S = { mode: 'real', sel: N - 1, src: null, base: null, row: null, snap: null, last: null, whyMode: 'input', sweep: 'team_elo', shelf: [] };
+  let shelfSeq = 0;
+
+  // Formation history of a held-out row: the known formations in the club's previous 20 matches (exported per row,
+  // the same list formation_used_last20 was computed from), so trying another formation recomputes that input exactly.
+  function realSnapshot(i) {
+    const counts = HELD.formation_history[i], list = [];
+    for (const [form, n] of Object.entries(counts)) for (let k = 0; k < n; k++) list.push(form);
+    return { formations_last20: list, last_formation: HELD.rows[i][HELD.columns.indexOf('previous_formation')] };
+  }
+
+  // Recompute derived inputs; untouched inputs keep the exact original values (so the original prediction is reproduced).
+  function derive(row) {
+    const b = S.base, next = { ...row }, fresh = E.recomputeDiffs(row);
+    for (const d of SC.diff_bases) {
+      const k = 'diff_' + d;
+      next[k] = same(row['team_' + d], b['team_' + d]) && same(row['opponent_' + d], b['opponent_' + d]) ? b[k] : fresh[k];
+    }
+    if (row.formation === b.formation) {
+      // Same starting formation: its shape and usage rate stay as they were; only the "switch" flag follows the previous formation.
+      for (const k of FORM_DERIVED) next[k] = b[k];
+      if (row.previous_formation !== b.previous_formation) {
+        const known = E.parseFormation(row.formation) !== null;
+        next.formation_switch = known && row.previous_formation !== MISSING ? Number(row.formation !== row.previous_formation) : null;
+      }
+      return next;
+    }
+    return E.applyFormation(next, S.snap, row.formation, row.previous_formation);
+  }
+  const changedNames = () => LAB.catalog.map((c) => c.name).filter((k) => !DERIVED.has(k) && !FIXED.has(k) && !same(S.row[k], S.base[k]));
+
+  function load(src, row, snap) {
+    S.src = src; S.base = { ...row }; S.row = { ...row }; S.snap = snap;
+    renderSource(); buildQuickHead(); syncQuick(true); syncForm(); syncAll(true); scheduleUpdate(true);
+  }
+  function setValue(name, v) { S.row = derive({ ...S.row, [name]: v }); scheduleUpdate(); }
+  function resetOne(name) { setValue(name, S.base[name]); syncQuick(true); syncForm(); syncAll(true); }
+  $('#s4-reset-all').addEventListener('click', () => { S.row = { ...S.base }; syncQuick(true); syncForm(); syncAll(true); scheduleUpdate(true); });
+
+  function sourceTitle(src, row) {
+    const venue = row.is_home === 1 ? '홈' : '원정';
+    if (src.kind === 'real') {
+      const m = matches[src.i];
+      return { chip: '실제 경기', text: `${short(m.team)} (${venue}) vs ${short(m.opponent)}`, sub: `${m.date} · 실제 결과 ${OUT_LABEL[m.outcome]} ${m.gf}–${m.ga}` };
+    }
+    return { chip: '가상 경기', text: `${short(src.team)} (${src.home ? '홈' : '원정'}) vs ${short(src.opponent)}`, sub: `${SC.latest_match_date}까지의 기록 기준` };
+  }
+  function renderSource() {
+    const t = sourceTitle(S.src, S.base);
+    $('#s4-src').replaceChildren(el('span', { class: 'chip', text: t.chip }), el('b', { text: t.text }), el('span', { class: 'muted', text: ` · ${t.sub}` }));
+    $('#s4-res-src').textContent = `${t.chip}: ${t.text} · 승·무·패는 ${short(S.base.team)} 입장`;
+  }
+
+  // ------------------------------------------------------------------ MODE switch
+  const modeSeg = Lab.segmented($('#s4-mode'), [{ value: 'real', label: '처음 보는 실제 경기' }, { value: 'fake', label: '가상의 경기 만들기' }], 'real', setMode, '출발점 고르기');
+  // The editor always follows the chosen starting point: switching modes loads that mode's current match/fixture.
+  function showMode(m) {
+    S.mode = m; modeSeg.select(m);
+    $('#s4-real').hidden = m !== 'real'; $('#s4-fake').hidden = m !== 'fake';
+    requestAnimationFrame(Lab.redrawAll);
+  }
+  function setMode(m) {
+    showMode(m);
+    if (S.src && S.src.kind === m) return;
+    if (m === 'fake') loadFake(); else loadReal(S.sel);
+  }
+
+  // ------------------------------------------------------------------ MODE 1: held-out list + match card
+  const FL = { season: 'all', team: 'all', opponent: 'all', venue: 'all', result: 'all', hit: 'all' };
+  const sortState = { key: 'date', dir: -1 };
+  const uniq = (a) => [...new Set(a)];
+  function filterSelect(id, label, options, key) {
+    const s = el('select', { id }, options.map((o) => el('option', { value: o.value }, o.label)));
+    s.value = FL[key];
+    s.addEventListener('change', () => { FL[key] = s.value; renderList(); });
+    return el('div', {}, el('label', { class: 'f', for: id, text: label }), s);
+  }
+  const ALL = { value: 'all', label: '전체' };
+  $('#s4-filters').append(
+    filterSelect('s4-fl-season', '시즌', [ALL, ...uniq(matches.map((m) => m.season)).sort().map((s) => ({ value: s, label: seasonLabel(s) }))], 'season'),
+    filterSelect('s4-fl-team', '우리 팀', [ALL, ...SC.clubs.map((t) => ({ value: t, label: short(t) }))], 'team'),
+    filterSelect('s4-fl-opp', '상대 팀', [ALL, ...uniq(matches.map((m) => m.opponent)).sort().map((t) => ({ value: t, label: short(t) }))], 'opponent'),
+    filterSelect('s4-fl-venue', '장소', [ALL, { value: 'home', label: '홈' }, { value: 'away', label: '원정' }], 'venue'),
+    filterSelect('s4-fl-result', '실제 결과', [ALL, { value: '2', label: '승' }, { value: '1', label: '무' }, { value: '0', label: '패' }], 'result'),
+    filterSelect('s4-fl-hit', '모델 1순위', [ALL, { value: 'hit', label: '맞음' }, { value: 'miss', label: '빗나감' }], 'hit'));
+
+  const LIST_COLS = [
+    { key: 'date', label: '날짜', get: (m) => m.date, cls: 's4-hide-sm' },
+    { key: 'match', label: '경기 (우리 팀 기준)', get: (m) => short(m.team) + ' ' + short(m.opponent) },
+    { key: 'result', label: '실제 결과', get: (m) => m.outcome * 100 + (m.gf - m.ga) },
+    { key: 'pick', label: '모델 1순위', get: (m) => m.p[m.top] },
+    { key: 'hit', label: '적중', get: (m) => (m.hit ? 1 : 0) },
+    { key: 'll', label: '로그손실', get: (m) => m.ll, cls: 'num s4-hide-sm' },
+  ];
+  function filtered() {
+    return matches.filter((m) => (FL.season === 'all' || m.season === FL.season) && (FL.team === 'all' || m.team === FL.team)
+      && (FL.opponent === 'all' || m.opponent === FL.opponent) && (FL.venue === 'all' || (FL.venue === 'home') === m.home)
+      && (FL.result === 'all' || String(m.outcome) === FL.result) && (FL.hit === 'all' || (FL.hit === 'hit') === m.hit));
+  }
+  function renderList() {
+    const col = LIST_COLS.find((c) => c.key === sortState.key);
+    const list = filtered().sort((a, b) => { const x = col.get(a), y = col.get(b); return ((x > y) - (x < y)) * sortState.dir || (a.i - b.i) * sortState.dir; });
+    const hits = list.filter((m) => m.hit).length;
+    $('#s4-count').textContent = list.length
+      ? `조건에 맞는 행 ${f.int(list.length)}개 · 모델 1순위가 맞은 행 ${f.int(hits)}개(행 기준 ${pct(hits / list.length, 1)})`
+      : '조건에 맞는 경기가 없습니다. 필터를 넓혀 보세요.';
+    const head = el('tr', {}, LIST_COLS.map((c) => {
+      const on = sortState.key === c.key;
+      return el('th', { scope: 'col', class: c.cls || '', 'aria-sort': on ? (sortState.dir > 0 ? 'ascending' : 'descending') : null },
+        el('button', { type: 'button', class: 's4-sortbtn', onclick: () => { sortState.dir = on ? -sortState.dir : (c.key === 'date' ? -1 : 1); sortState.key = c.key; renderList(); } },
+          c.label, on ? (sortState.dir > 0 ? ' ▲' : ' ▼') : ''));
+    }));
+    const body = list.map((m) => el('tr', { 'data-i': m.i, class: m.i === S.sel ? 'is-sel' : null },
+      el('td', { class: 's4-date s4-hide-sm', text: m.date }),
+      el('td', {}, el('button', { type: 'button', class: 's4-pick', 'aria-current': m.i === S.sel ? 'true' : null, 'aria-label': `${m.date} ${short(m.team)} 대 ${short(m.opponent)} 경기 보기` },
+        `${short(m.team)} vs ${short(m.opponent)}`, el('small', {}, `${m.home ? '홈' : '원정'} · `,
+          el('span', { class: 's4-hide-sm', text: `${seasonLabel(m.season)} 시즌` }), el('span', { class: 's4-show-sm', text: m.date })))),
+      el('td', {}, el('span', { class: `chip ${OUT_KEY[m.outcome]}`, text: `${OUT_LABEL[m.outcome]} ${m.gf}–${m.ga}` })),
+      el('td', {}, el('span', { text: `${OUT_LABEL[m.top]} ${pct(m.p[m.top], 0)}` }), miniBar(m.p)),
+      el('td', {}, el('span', { class: `s4-hit ${m.hit ? 'ok' : 'no'}`, text: m.hit ? '맞음' : '빗나감' })),
+      el('td', { class: 'num s4-hide-sm', text: f.num(m.ll, 2) })));
+    $('#s4-list').replaceChildren(el('table', { class: 'data' }, el('caption', { class: 'sr-only', text: '처음 보는 실제 경기 목록' }), el('thead', {}, head), el('tbody', {}, body)));
+  }
+  $('#s4-list').addEventListener('click', (e) => {
+    const tr = e.target.closest('tr[data-i]');
+    if (tr) selectMatch(Number(tr.dataset.i), true);
+  });
+  function markSelected() {
+    root.querySelectorAll('#s4-list tr[data-i]').forEach((tr) => {
+      const on = Number(tr.dataset.i) === S.sel, btn = tr.querySelector('.s4-pick');
+      tr.classList.toggle('is-sel', on);
+      if (on) btn.setAttribute('aria-current', 'true'); else btn.removeAttribute('aria-current');
+    });
+  }
+  function selectMatch(i, scroll) {
+    S.sel = i; markSelected(); renderMatch();
+    if (scroll && matchMedia('(max-width: 900px)').matches) $('#s4-match').scrollIntoView({ behavior: motion(), block: 'start' });
+  }
+  function renderMatch() {
+    const m = matches[S.sel], card = $('#s4-match');
+    const homeName = m.home ? short(m.team) : short(m.opponent), awayName = m.home ? short(m.opponent) : short(m.team);
+    const hg = m.home ? m.gf : m.ga, ag = m.home ? m.ga : m.gf;
+    const rf = makeProbBar({ kind: 'rf', title: '랜덤 포레스트 (이 모델)', big: true });
+    const elo = makeProbBar({ kind: 'elo', title: 'Elo 기준 모델', note: 'Elo 차이 + 홈 여부만 사용' });
+    rf.set(m.p); elo.set(m.pe);
+    let market = null;
+    if (m.market) {
+      const mk = makeProbBar({ kind: 'market', title: '배당률로 본 확률', note: '모델이 갖지 못한 추가 정보' });
+      mk.set(m.market);
+      market = el('div', { class: 's4-mk' }, mk.node,
+        el('p', { class: 's4-small', text: '경기 직전 배당에는 부상·선발 소식처럼 모델이 모르는 정보가 담겨 있습니다. 비교용으로만 보여 주며 모델 입력이 아닙니다.' }));
+    }
+    const derby = CLUBS.has(m.opponent);
+    const goBtn = el('button', { type: 'button', class: 'btn primary', id: 's4-go-edit', onclick: () => { loadReal(S.sel); focusEditor(); } }, '이 경기 조건 바꿔 보기');
+    card.replaceChildren(...kids(
+      el('div', { class: 's4-match-sub', id: 's4-match-h' }, `${m.date} · ${seasonLabel(m.season)} 시즌 · ${short(m.team)} ${m.home ? '홈' : '원정'} 경기`),
+      el('div', { class: 's4-score' }, homeName, el('span', { class: 'g', text: `${hg} : ${ag}` }), awayName),
+      el('p', { class: 's4-persp', text: `아래 승·무·패는 모두 ${short(m.team)} 입장입니다.` + (derby ? ` 두 팀 모두 6개 구단이라 목록에는 ${short(m.opponent)} 입장의 같은 경기도 있습니다.` : '') }),
+      rf.node, elo.node,
+      el('div', { class: 's4-verdicts' },
+        el('div', {}, el('span', { class: 'l', text: '실제 결과' }), el('span', { class: 'v' }, el('span', { class: `chip ${OUT_KEY[m.outcome]}`, text: OUT_LABEL[m.outcome] }), ` ${m.gf}–${m.ga}`)),
+        el('div', {}, el('span', { class: 'l', text: '모델 1순위' }), el('span', { class: 'v', text: `${OUT_LABEL[m.top]} ${pct(m.p[m.top])}` }),
+          el('small', { class: `s4-hit ${m.hit ? 'ok' : 'no'}`, text: m.hit ? '맞음' : '빗나감' })),
+        el('div', {}, el('span', { class: 'l', html: `이 경기의 ${Lab.term('로그손실')}` }), el('span', { class: 'v', text: f.num(m.ll, 3) }),
+          el('small', { text: `실제 결과(${OUT_LABEL[m.outcome]})에 준 확률 ${pct(m.p[m.outcome])} · 낮을수록 좋음` }))),
+      market, goBtn));
+  }
+  function loadReal(i) { load({ kind: 'real', i }, E.heldoutRow(HELD, i), realSnapshot(i)); }
+  function focusEditor() {
+    $('#s4-work').scrollIntoView({ behavior: motion(), block: 'start' });
+    $('#s4-ed-h').focus({ preventScroll: true });
+  }
+
+  // ------------------------------------------------------------------ MODE 2: made-up fixture
+  const F2 = { team: SC.clubs[0], opponent: null, home: true, formation: null, previous: null };
+  function teamDefaults(team) {
+    const sn = SC.snapshots[team], counts = {};
+    sn.formations_last20.forEach((x) => { counts[x] = (counts[x] || 0) + 1; });
+    const common = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+    const last = sn.last_formation;
+    return { formation: last && last !== MISSING ? last : common || SC.formations[0].formation, previous: last || MISSING, counts };
+  }
+  const opt = (value, label) => el('option', { value }, label);
+  const teamSel = el('select', { id: 's4-f-team' }, SC.clubs.map((t) => opt(t, short(t))));
+  const oppSel = el('select', { id: 's4-f-opp' });
+  const formSel = el('select', { id: 's4-f-form' }), prevSel = el('select', { id: 's4-f-prev' });
+  const venueBox = el('div');
+  const venueSeg = Lab.segmented(venueBox, [{ value: 'home', label: '홈' }, { value: 'away', label: '원정' }], 'home', (v) => { F2.home = v === 'home'; loadFake(); }, '우리 팀 경기 장소');
+  const field = (label, ctl, id, cls) => el('div', { class: cls || null }, el(id ? 'label' : 'span', { class: 'f', for: id || null, text: label }), ctl);
+  $('#s4-fake-ctl').append(field('우리 팀', teamSel, 's4-f-team'), field('상대 팀', oppSel, 's4-f-opp'), field('장소', venueBox),
+    field('우리 팀 선발 포메이션', formSel, 's4-f-form', 's4-wide'), field('우리 팀 직전 경기 포메이션', prevSel, 's4-f-prev', 's4-wide'));
+  function refreshFakeOptions() {
+    const d = teamDefaults(F2.team);
+    const opps = SC.opponents.filter((t) => t !== F2.team);
+    if (!F2.opponent || !opps.includes(F2.opponent)) F2.opponent = SC.clubs.find((t) => t !== F2.team && opps.includes(t)) || opps[0];
+    oppSel.replaceChildren(...opps.map((t) => opt(t, short(t))));
+    oppSel.value = F2.opponent;
+    const n = SC.snapshots[F2.team].formations_last20.length;
+    formSel.replaceChildren(...SC.formations.map((x) => opt(x.formation, d.counts[x.formation] ? `${x.formation} (최근 ${n}경기 중 ${d.counts[x.formation]}번)` : x.formation)), opt(MISSING, '기록 없음/모름'));
+    prevSel.replaceChildren(...SC.formations.map((x) => opt(x.formation, x.formation)), opt(MISSING, '기록 없음/모름'));
+    formSel.value = F2.formation; prevSel.value = F2.previous;
+    teamSel.value = F2.team; venueSeg.select(F2.home ? 'home' : 'away');
+    renderAsOf();
+  }
+  function renderAsOf() {
+    const a = SC.snapshots[F2.team], b = SC.snapshots[F2.opponent];
+    const gap = Math.round((Date.parse(SC.nominal_kickoff) - Date.parse(SC.latest_match_date)) / 86400000);
+    const lineupSpan = (team, sn) => {
+      const w = sn.lineup_window;
+      if (!w || !w.matches) return `${short(team)}은(는) 선발 기록이 없어 빈 칸(모델이 중앙값으로 채움)`;
+      return `${short(team)}은(는) ${w.first === w.last ? w.first : `${w.first} ~ ${w.last}`}의 ${w.matches}경기 평균`;
+    };
+    const oldest = [a, b].map((sn) => sn.lineup_window && sn.lineup_window.first).filter(Boolean).sort()[0];
+    const caveats = [];
+    if (oldest && Date.parse(SC.latest_match_date) - Date.parse(oldest) > 365 * 86400000) caveats.push('1년도 더 된 경기가 섞여 있어 지금 선수단과 다를 수 있습니다');
+    if ([a, b].some((sn) => sn.lineup_window && sn.lineup_window.matches < 10)) caveats.push('평균에 쓴 경기가 10경기보다 적습니다');
+    $('#s4-asof').replaceChildren(
+      el('p', { class: 's4-asof-p' }, el('b', { text: `${SC.latest_match_date} 기준. ` }),
+        `데이터의 마지막 경기일은 ${SC.latest_match_date}(${seasonLabel(SC.latest_season)} 시즌)이고, 가상 경기는 그 ${gap}일 뒤인 ${SC.nominal_kickoff}에 열린다고 가정해 휴식일을 계산합니다. `
+        + `${short(F2.team)}의 마지막 경기는 ${a.last_match || '기록 없음'}, ${short(F2.opponent)}의 마지막 경기는 ${b.last_match || '기록 없음'}이고, Elo·최근 성적 같은 값은 그 경기까지의 기록입니다.`),
+      el('p', { class: 's4-asof-p' },
+        '선발 11명 관련 값은 실제 선발을 알 수 없어, 그 팀이 이 데이터에 나온 최근 경기(최대 10경기)의 선발 기록 평균으로 채웁니다. 이 데이터에는 6개 구단이 치른 경기만 있어서, 6개 구단이 아닌 팀은 6개 구단과 만난 경기만 쓰입니다. '
+        + `이번 조건에서 ${lineupSpan(F2.team, a)}, ${lineupSpan(F2.opponent, b)}입니다. `
+        + (caveats.length ? `주의: ${caveats.join(', ')}. 이 값들은 ‘대략적인 평소 모습’ 정도로만 보세요.` : '이 값들은 ‘평소 모습’이라는 가정입니다.')));
+  }
+  teamSel.addEventListener('change', () => { F2.team = teamSel.value; const d = teamDefaults(F2.team); F2.formation = d.formation; F2.previous = d.previous; refreshFakeOptions(); loadFake(); });
+  oppSel.addEventListener('change', () => { F2.opponent = oppSel.value; renderAsOf(); loadFake(); });
+  formSel.addEventListener('change', () => { F2.formation = formSel.value; loadFake(); });
+  prevSel.addEventListener('change', () => { F2.previous = prevSel.value; loadFake(); });
+  function loadFake() {
+    const row = E.scenario(SC, { team: F2.team, opponent: F2.opponent, home: F2.home, formation: F2.formation, previousFormation: F2.previous });
+    load({ kind: 'fake', team: F2.team, opponent: F2.opponent, home: F2.home, formation: F2.formation, previous: F2.previous }, row, SC.snapshots[F2.team]);
+  }
+  { const d = teamDefaults(F2.team); F2.formation = d.formation; F2.previous = d.previous; refreshFakeOptions(); }
+
+  // ------------------------------------------------------------------ quick editor (12 sliders)
+  const quick = [];
+  const quickBox = $('#s4-quick');
+  const qHeadTeam = el('div'), qHeadOpp = el('div');
+  quickBox.append(el('div', { class: 's4-q head', 'aria-hidden': 'true' }, qHeadTeam, qHeadOpp));
+  function buildQuickHead() {
+    qHeadTeam.textContent = `우리 팀 · ${short(S.base.team)}`; qHeadOpp.textContent = `상대 팀 · ${short(S.base.opponent)}`;
+    for (const q of quick) {
+      const who = q.side === 'team' ? `우리 팀 ${short(S.base.team)}` : `상대 팀 ${short(S.base.opponent)}`;
+      q.who.textContent = who; q.range.setAttribute('aria-label', `${who} · ${q.metric}`); q.num.setAttribute('aria-label', `${who} · ${q.metric} (숫자 입력)`);
+    }
+  }
+  function quickCell(name, side) {
+    const s = STATS[name], step = stepOf(name), d = decOf(name);
+    const lo = Number((Math.floor(s.min / step) * step).toFixed(d)), hi = Number((Math.ceil(s.max / step) * step).toFixed(d));
+    const pos = (v) => ((Math.min(hi, Math.max(lo, v)) - lo) / (hi - lo || 1)) * 100;
+    const id = 's4-q-' + name;
+    const range = el('input', { type: 'range', id, min: lo, max: hi, step, 'data-name': name, 'aria-describedby': id + '-m' });
+    const num = el('input', { type: 'number', class: 's4-num', step: 'any', inputmode: 'decimal', 'data-name': name, min: lo, max: hi });
+    const tick = el('span', { class: 's4-tick' });
+    const who = el('label', { class: 's4-who', for: id });
+    const meta = el('div', { class: 's4-meta', id: id + '-m' });
+    const cell = el('div', { class: 's4-cell' }, who, el('div', { class: 's4-ctl' },
+      el('div', { class: 's4-range' }, el('span', { class: 's4-rail' }, el('span', { class: 's4-band', style: `left:${pos(s.p05)}%;width:${pos(s.p95) - pos(s.p05)}%` }), tick), range), num), meta);
+    const q = { name, side, metric: metricLabel(name), cell, range, num, tick, meta, who, lo, hi, pos, d, metaKey: '', clamped: false };
+    range.addEventListener('input', () => { q.clamped = false; setValue(name, Number(range.value)); });
+    num.addEventListener('change', () => {
+      const raw = num.value.trim();
+      if (raw === '') {
+        if (allowEmpty(name)) setValue(name, null); else num.value = inputStr(S.row[name]);
+        return;
+      }
+      let v = Number(raw);
+      if (!Number.isFinite(v)) return;
+      q.clamped = v < lo || v > hi;
+      v = Math.min(hi, Math.max(lo, v));
+      setValue(name, v); num.value = inputStr(v);
+    });
+    quick.push(q);
+    return cell;
+  }
+  const pairEffect = (base) => INF.pairs[base] || 0;
+  for (const base of QUICK) {
+    const unit = (CAT.get('team_' + base) || {}).unit;
+    const note = [unit ? `단위: ${unit}` : '', `평균 영향 ${f.num(pairEffect(base) * 100, 1)}%p`].filter(Boolean).join(' · ');
+    quickBox.append(el('div', { class: 's4-q', 'data-base': base }, el('div', { class: 's4-q-label' }, pairLabel(base), el('small', { text: note })),
+      quickCell('team_' + base, 'team'), quickCell('opponent_' + base, 'opponent')));
+  }
+  // Caption: which of these basics really move the forecast, and which stronger inputs live only in the full panel.
+  {
+    const BIG = 0.01;                                     // "moves the forecast" = mean effect on P(승) of at least 1%p
+    const big = QUICK.filter((b) => pairEffect(b) >= BIG).sort((x, y) => pairEffect(y) - pairEffect(x));
+    const small = QUICK.filter((b) => pairEffect(b) < BIG);
+    const quickNames = new Set(QUICK.flatMap((b) => ['team_' + b, 'opponent_' + b, 'diff_' + b]));
+    const families = new Map();                           // team/opponent/diff of the same thing count as one input family
+    for (const [name, v] of byInput) {
+      if (quickNames.has(name) || FIXED.has(name) || FORM_DERIVED.includes(name) || name === 'formation' || name === 'previous_formation') continue;
+      const base = name.replace(/^(team|opponent|diff)_/, '');
+      const key = base !== name && INF.pairs[base] != null ? base : name;
+      if (!families.has(key)) families.set(key, { label: key === name ? (CAT.get(name) || {}).label || name : pairLabel(key), v: key === name ? v : INF.pairs[key] });
+    }
+    const others = [...families.values()].sort((x, y) => y.v - x.v).slice(0, 3);
+    const q = (s) => `‘${s}’`, pp1 = (v) => `${f.num(v * 100, 1)}%p`;
+    let lead = `자주 궁금해하는 기본 입력 ${QUICK.length}쌍(우리 팀·상대 팀)입니다. `;
+    if (!big.length) lead += `이 ${QUICK.length}쌍은 모두 승 확률을 평균 1%p도 움직이지 않습니다.`;
+    else if (!small.length) lead += `${QUICK.length}쌍 모두 승 확률을 평균 1%p 이상 움직입니다.`;
+    else lead += `이 중 예측을 크게 움직이는 것은 ${big.map((b) => q(pairLabel(b))).join(', ')} ${big.length}쌍뿐이고, 나머지 ${small.length}쌍은 평균 ${pp1(Math.max(...small.map(pairEffect)))} 이하로 거의 움직이지 않습니다.`;
+    $('#s4-qcap').textContent = lead;
+    $('#s4-qcap2').textContent = `‘평균 영향’은 처음 보는 경기 ${f.int(INF.rows)}개 행에서 그 값(우리 팀·상대 팀·둘의 차이 합계)이 승 확률을 움직인 평균 크기입니다.`
+      + (others.length ? ` 기본 입력 밖에서 가장 크게 움직이는 입력은 ${others.map((o) => `${q(o.label)}(${pp1(o.v)})`).join(', ')}이며, 아래 ‘모델 입력 전체 보기’에서 바꿀 수 있습니다.` : '');
+  }
+  function syncQuick(force) {
+    for (const q of quick) {
+      const v = S.row[q.name], b = S.base[q.name], s = STATS[q.name];
+      q.cell.classList.toggle('is-missing', isMissing(v));
+      if (force || document.activeElement !== q.range) q.range.value = isMissing(v) ? s.median : v;
+      if (force || document.activeElement !== q.num) q.num.value = isMissing(v) ? '' : inputStr(Number(v.toFixed(Math.min(4, q.d + 1))));
+      q.tick.hidden = isMissing(b);
+      if (!isMissing(b)) q.tick.style.left = q.pos(b) + '%';
+      const changed = !same(v, b);
+      const warn = isMissing(v) ? '비어 있음(모델이 중앙값으로 채움)' : q.clamped ? '학습 범위 끝으로 맞췄습니다' : (s.p05 != null && (v < s.p05 || v > s.p95)) ? '드문 값' : '';
+      const key = `${changed}|${warn}|${b}`;
+      if (key === q.metaKey && !force) continue;
+      q.metaKey = key;
+      q.meta.replaceChildren(...kids(
+        warn ? el('span', { class: 'w', title: rangeNote(q.name, v) || null, text: warn }) : null,
+        changed ? el('span', {}, `원래 ${fmtVal(q.name, b)} `, el('button', { type: 'button', class: 's4-linkbtn', onclick: () => { q.clamped = false; resetOne(q.name); }, 'aria-label': `${q.who.textContent} ${q.metric} 원래 값으로` }, '되돌리기')) : null));
+    }
+  }
+  const allowEmpty = (name) => (STATS[name] && STATS[name].missing > 0) || isMissing(S.base[name]);
+
+  // formation (quick)
+  const formationOptions = () => [...SC.formations.map((x) => opt(x.formation, x.formation)), opt(MISSING, '기록 없음/모름')];
+  const qForm = el('select', { id: 's4-q-formation', 'data-name': 'formation' }, formationOptions());
+  const qPrev = el('select', { id: 's4-q-previous', 'data-name': 'previous_formation' }, formationOptions());
+  const formNote = el('p', { class: 's4-formnote' });
+  qForm.addEventListener('change', () => { setValue('formation', qForm.value); syncForm(); syncAll(); });
+  qPrev.addEventListener('change', () => { setValue('previous_formation', qPrev.value); syncForm(); syncAll(); });
+  $('#s4-form').append(field('우리 팀 선발 포메이션', qForm, 's4-q-formation'), field('우리 팀 직전 경기 포메이션', qPrev, 's4-q-previous'), formNote);
+  function ensureOption(sel, v) { if (![...sel.options].some((o) => o.value === v)) sel.append(opt(v, v)); sel.value = v; }
+  function syncForm() {
+    ensureOption(qForm, S.row.formation); ensureOption(qPrev, S.row.previous_formation);
+    const noHistory = S.row.formation !== S.base.formation && S.row.formation !== MISSING && !S.snap.formations_last20.length;
+    formNote.textContent = '포메이션 입력은 예측을 좋게 만든다는 증거가 없습니다. 바꿔 볼 수는 있지만 확률 변화를 ‘전술 효과’로 읽지 마세요.'
+      + (noHistory ? ' 직전 20경기의 포메이션 기록이 없어 ‘최근 20경기 같은 포메이션 사용률’은 계산할 수 없으므로 비워 둡니다.' : '');
+  }
+
+  // ------------------------------------------------------------------ all inputs panel (lazy)
+  const allRows = new Map();
+  let allBuilt = false;
+  const allDetails = $('#s4-all');
+  function buildAll() {
+    allBuilt = true;
+    const body = $('#s4-all-body');
+    for (const g of LAB.groups) {
+      const items = LAB.catalog.filter((c) => c.group === g.key);
+      if (!items.length) continue;
+      const sec = el('section', { class: 's4-grp', 'data-group': g.key }, el('h4', {}, g.label, el('span', { text: `${items.length}개` })), el('p', { text: g.desc }));
+      items.forEach((c) => sec.append(buildAllRow(c)));
+      body.append(sec);
+    }
+    syncAll(true);
+  }
+  function buildAllRow(c) {
+    const name = c.name, ro = DERIVED.has(name) || FIXED.has(name);
+    let ctl, kind;
+    if (ro) { ctl = el('output', { 'aria-label': c.label }); kind = 'ro'; }
+    else if (name === 'formation' || name === 'previous_formation') {
+      ctl = el('select', { 'aria-label': c.label }, formationOptions()); kind = 'cat';
+      ctl.addEventListener('change', () => { setValue(name, ctl.value); syncForm(); });
+    } else if (name === 'is_home') {
+      ctl = el('select', { 'aria-label': c.label }, opt('1', '홈 (1)'), opt('0', '원정 (0)')); kind = 'home';
+      ctl.addEventListener('change', () => setValue(name, Number(ctl.value)));
+    } else {
+      ctl = el('input', { type: 'number', step: 'any', inputmode: 'decimal', 'aria-label': c.label }); kind = 'num';
+      ctl.addEventListener('input', () => commitNumber(name, ctl, false));
+      ctl.addEventListener('change', () => commitNumber(name, ctl, true));
+    }
+    const badge = el('span', { class: 'badge-edit', text: '바뀜' }); badge.hidden = true;
+    const tag = DERIVED.has(name) ? el('span', { class: 'chip', text: '자동 계산' }) : FIXED.has(name) ? el('span', { class: 'chip', text: '출발점에서 정함' }) : null;
+    const orig = el('span', { class: 's4-ar-orig' });
+    const reset = ro ? el('span') : el('button', { type: 'button', class: 'btn small s4-btn36', 'aria-label': `${c.label} 원래 값으로`, onclick: () => resetOne(name) }, '되돌리기');
+    const warn = el('div', { class: 's4-ar-warn' });
+    const node = el('div', { class: 's4-ar', 'data-name': name, 'data-search': `${c.label} ${name}`.toLowerCase() },
+      el('div', { class: 's4-ar-name', title: c.desc || null }, el('span', { text: c.label }), badge, tag, el('code', { text: name })),
+      el('div', { class: 's4-ar-ctl' }, ctl, kind === 'num' && c.unit ? el('span', { class: 's4-unit', text: c.unit }) : null),
+      orig, el('div', {}, reset), warn);
+    allRows.set(name, { node, ctl, kind, badge, orig, reset, warn, note: '' });
+    return node;
+  }
+  function commitNumber(name, inp, final) {
+    const r = allRows.get(name), raw = inp.value.trim();
+    if (raw === '') {
+      if (allowEmpty(name)) { r.note = ''; setValue(name, null); }
+      else if (final) { r.note = '이 입력은 학습 데이터에서 항상 값이 있었기 때문에 비워 둘 수 없습니다. 원래 값으로 돌려놓았습니다.'; inp.value = inputStr(S.row[name]); syncAll(); }
+      return;
+    }
+    const v = Number(raw);
+    if (!Number.isFinite(v)) return;
+    r.note = ''; setValue(name, v);
+  }
+  function syncAll(force) {
+    if (!allBuilt) return;
+    for (const [name, r] of allRows) {
+      const v = S.row[name], b = S.base[name], changed = !DERIVED.has(name) && !FIXED.has(name) && !same(v, b);
+      if (r.kind === 'ro') r.ctl.textContent = fmtVal(name, v);
+      else if (force || document.activeElement !== r.ctl) {
+        if (r.kind === 'num') r.ctl.value = inputStr(v);
+        else if (r.kind === 'home') r.ctl.value = String(v);
+        else ensureOption(r.ctl, v);
+      }
+      // number fields show the original at the field's own precision, so an untouched field never looks changed
+      r.orig.textContent = `원래 ${r.kind === 'num' && !isMissing(b) ? inputStr(b) : fmtVal(name, b)}`;
+      r.badge.hidden = !changed; r.node.classList.toggle('is-changed', changed);
+      if (r.reset.tagName === 'BUTTON') { r.reset.disabled = !changed; r.reset.hidden = !changed; }   // hidden (not invisible): no empty row on phones
+      const msg = r.note || (NUMERIC.has(name) ? rangeNote(name, v) : '');
+      if (r.warn.textContent !== msg) r.warn.textContent = msg;
+    }
+    filterAll();
+  }
+  const allQ = $('#s4-all-q'), allChanged = $('#s4-all-changed');
+  function filterAll() {
+    if (!allBuilt) return;
+    const q = allQ.value.trim().toLowerCase(), only = allChanged.checked;
+    root.querySelectorAll('.s4-grp').forEach((sec) => {
+      let any = false;
+      sec.querySelectorAll('.s4-ar').forEach((n) => {
+        const show = (!q || n.dataset.search.includes(q)) && (!only || n.classList.contains('is-changed'));
+        n.hidden = !show; any = any || show;
+      });
+      sec.hidden = !any;
+    });
+  }
+  allQ.addEventListener('input', filterAll); allChanged.addEventListener('change', filterAll);
+  allDetails.addEventListener('toggle', () => { if (allDetails.open && !allBuilt) buildAll(); });
+
+  // ------------------------------------------------------------------ result panel
+  const rfBar = makeProbBar({ kind: 'rf', title: '랜덤 포레스트 (이 모델)', big: true });
+  const eloBar = makeProbBar({ kind: 'elo', title: 'Elo 기준 모델', note: 'Elo 차이 + 홈 여부만 사용' });
+  $('#s4-res-bars').append(rfBar.node, eloBar.node);
+  const miniBox = $('#s4-mini');
+  const kvXp = el('b'), kvXpE = el('b'), kvN = el('b');
+  $('#s4-res-kv').append(el('div', {}, el('span', { class: 'l', text: '기대 승점 (이 모델)' }), kvXp),
+    el('div', {}, el('span', { class: 'l', text: '기대 승점 (Elo 기준)' }), kvXpE), el('div', {}, el('span', { class: 'l', text: '직접 바꾼 입력' }), kvN));
+  const xp = (p) => 3 * p[2] + p[1];
+  function renderResult(p, pe) {
+    rfBar.set(p); eloBar.set(pe);
+    miniBox.replaceChildren(el('div', { class: 's4-pb-bar' }, ORDER.map((k) => el('span', { style: `flex:${Math.max(0, p[k])} 1 0;background:${COLOR[k]}` }))),
+      el('span', { text: `예측 ${ORDER.map((k) => `${OUT_LABEL[k]} ${pct(p[k], 0)}`).join(' · ')}` }));
+    const top = argmax(p), other = 1 - p[top], k10 = Math.round(other * 10);
+    const lead = p[top] < 0.45 ? '어느 결과도 절반을 넘지 못하는 팽팽한 조건입니다. ' : '';
+    $('#s4-res-say').replaceChildren(lead,
+      '모델이 가장 높게 본 결과는 ', el('b', { text: `${OUT_LABEL[top]}(${pct(p[top], 0)})` }), '입니다. ',
+      k10 > 0 ? `그래도 다른 결과가 나올 확률이 ${pct(other, 0)}라, 모델의 확률대로라면 같은 조건의 경기 10번 중 ${k10}번쯤은 ${notOutcome(top)} 결과가 나옵니다. ` : `다른 결과가 나올 확률은 ${pct(other, 0)}입니다. `,
+      `Elo 기준 모델은 승 확률을 ${pct(pe[2], 0)}로 봅니다.`);
+    kvXp.textContent = `${f.num(xp(p), 2)}점`; kvXpE.textContent = `${f.num(xp(pe), 2)}점`;
+    kvN.textContent = `${changedNames().length}개`;
+  }
+  let liveTimer = 0, lastLive = '';
+  function announce(p) {
+    clearTimeout(liveTimer);
+    liveTimer = setTimeout(() => {
+      const t = `예측 갱신: 승 ${pct(p[2])}, 무 ${pct(p[1])}, 패 ${pct(p[0])}`;
+      if (t !== lastLive) { $('#s4-live').textContent = t; lastLive = t; }
+    }, 450);
+  }
+
+  // ------------------------------------------------------------------ why: diverging bars of the effect on P(승)
+  Lab.segmented($('#s4-why-seg'), [{ value: 'input', label: '입력별' }, { value: 'group', label: '그룹별 합계' }], 'input', (v) => { S.whyMode = v; renderWhy(); }, '기여도 보기 방식');
+  const sweepTarget = (name) => (DIFF_KEYS.includes(name) ? 'team_' + name.slice(5) : EDITABLE_NUM.includes(name) ? name : null);
+  function renderWhy() {
+    const ex = S.last.ex, list = $('#s4-why-list');
+    let items;
+    if (S.whyMode === 'group') {
+      const acc = new Map();
+      for (const c of ex.contributions) {
+        const g = (CAT.get(c.name) || {}).group || 'identity';
+        const a = acc.get(g) || { loss: 0, draw: 0, win: 0, n: 0 };
+        a.loss += c.loss; a.draw += c.draw; a.win += c.win; a.n += 1; acc.set(g, a);
+      }
+      items = [...acc].map(([g, a]) => ({ ...a, label: GROUP_LABEL.get(g) || g, sub: `입력 ${a.n}개의 합` })).sort((u, v) => Math.abs(v.win) - Math.abs(u.win));
+    } else {
+      const top = ex.contributions.slice(0, 10), rest = ex.contributions.slice(10);
+      items = top.map((c) => ({ ...c, label: (CAT.get(c.name) || {}).label || c.name, sub: `지금 값 ${fmtVal(c.name, S.row[c.name])}`, target: sweepTarget(c.name) }));
+      if (rest.length) {
+        const r = rest.reduce((a, c) => ({ loss: a.loss + c.loss, draw: a.draw + c.draw, win: a.win + c.win }), { loss: 0, draw: 0, win: 0 });
+        items.push({ ...r, label: `나머지 입력 ${rest.length}개 합계`, sub: '하나하나는 작은 효과' });
+      }
+    }
+    const maxAbs = Math.max(0.005, ...items.map((it) => Math.abs(it.win)));
+    list.setAttribute('aria-label', `승 확률에 대한 ${S.whyMode === 'group' ? '그룹별' : '입력별'} 기여도`);
+    list.replaceChildren(...items.map((it) => {
+      const w = (Math.abs(it.win) / maxAbs) * 50;
+      const inner = [el('span', { class: 's4-dv-label' }, it.label, el('small', { text: it.sub })),
+        el('span', { class: 's4-dv-track', 'aria-hidden': 'true' }, el('span', { class: `s4-dv-bar ${it.win >= 0 ? 'up' : 'down'}`, style: `width:${w.toFixed(2)}%` })),
+        el('span', { class: 's4-dv-val', text: pp(it.win) })];
+      const tip = () => `<b>${Lab.esc(it.label)}</b><div>${Lab.esc(it.sub)}</div><div><i class="swatch" style="background:var(--c-win)"></i>승 ${pp(it.win)}</div><div><i class="swatch" style="background:var(--c-draw)"></i>무 ${pp(it.draw)}</div><div><i class="swatch" style="background:var(--c-loss)"></i>패 ${pp(it.loss)}</div>`
+        + (it.target ? '<div>눌러서 ‘이 값을 바꾸면?’ 보기</div>' : '');
+      const row = it.target
+        ? el('button', { type: 'button', class: 's4-dv-row', 'data-name': it.name, onclick: () => setSweep(it.target, true) }, inner)
+        : el('div', { class: 's4-dv-row', tabindex: '0' }, inner);
+      Lab.tip.attach(row, tip);
+      return el('li', {}, row);
+    }));
+    const p = ex.proba, total = ex.contributions.reduce((s, c) => s + c.win, 0);
+    const de = STATS.diff_elo;
+    $('#s4-why-read').textContent = `출발점 ${pct(ex.bias[2])}는 학습 경기 전체의 승 비율(최근 경기일수록 크게 셈)에 해당합니다. 막대는 이 경기 값이 ‘평균적인 학습 경기’와 달라서 승 확률이 오른(+, 오른쪽) 또는 내린(−, 왼쪽) 크기입니다. `
+      + `학습 경기에서는 보통 우리 팀 Elo가 ${f.int(Math.round(de.median))}점가량 높았으므로(중앙값), 우리 팀이 앞서도 차이가 그보다 작으면 Elo 막대는 −로 나오기 쉽습니다.`;
+    $('#s4-why-sum').textContent = `출발점 ${pct(ex.bias[2])} + 모든 막대의 합 ${pp(total)} = 지금 예측한 승 확률 ${pct(p[2])}`;
+  }
+
+  // ------------------------------------------------------------------ sweep: "what if I change X?"
+  const sweepSel = $('#s4-sweep-sel');
+  for (const g of LAB.groups) {
+    const names = EDITABLE_NUM.filter((n) => (CAT.get(n) || {}).group === g.key && STATS[n] && STATS[n].min != null);
+    if (names.length) sweepSel.append(el('optgroup', { label: g.label }, names.map((n) => opt(n, CAT.get(n).label))));
+  }
+  sweepSel.value = S.sweep;
+  sweepSel.addEventListener('change', () => setSweep(sweepSel.value, false));
+  const sweepLegend = Lab.legend(ORDER.map((k) => ({ label: OUT_LABEL[k], color: COLOR[k] })));
+  sweepLegend.append(el('span', { class: 'legend-item' }, el('i', { class: 'swatch', style: 'background:var(--surface-2);outline:1px solid var(--border)' }), '흔한 범위(학습 데이터 가운데 90%)'),
+    el('span', { class: 'legend-item' }, el('i', { class: 'swatch s4-cur-key' }), '지금 값'));
+  $('#s4-sweep-legend').append(sweepLegend);
+  const SW = { name: S.sweep, pts: [], lo: 0, hi: 1, cur: null, curP: null };
+  function setSweep(name, scroll) {
+    S.sweep = name; sweepSel.value = name; renderSweep();
+    if (scroll && matchMedia('(max-width: 900px)').matches) $('#s4-sweep').scrollIntoView({ behavior: motion(), block: 'start' });
+  }
+  function sweepValues(name) {
+    const s = STATS[name], c = CAT.get(name) || {}, cur = S.row[name];
+    let lo = s.min, hi = s.max;
+    if (!isMissing(cur)) { lo = Math.min(lo, cur); hi = Math.max(hi, cur); }
+    if (!(hi > lo)) hi = lo + 1;
+    if (c.kind === 'binary' && lo >= 0 && hi <= 1) return { lo: 0, hi: 1, values: [0, 1] };
+    if (c.kind === 'count' && hi - lo <= 40) { const out = []; for (let v = Math.ceil(lo); v <= Math.floor(hi); v++) out.push(v); return { lo, hi, values: out }; }
+    return { lo, hi, values: Array.from({ length: 41 }, (_, k) => lo + ((hi - lo) * k) / 40) };
+  }
+  function renderSweep() {
+    const name = S.sweep, sv = sweepValues(name), e = eng();
+    SW.name = name; SW.lo = sv.lo; SW.hi = sv.hi;
+    SW.pts = sv.values.map((v) => ({ v, p: e.predict(derive({ ...S.row, [name]: v })) }));
+    SW.cur = isMissing(S.row[name]) ? null : S.row[name]; SW.curP = S.last.p;
+    sweepChart.redraw();
+    const wins = SW.pts.map((x) => x.p[2]), lab = (CAT.get(name) || {}).label || name;
+    sweepChart.svg.setAttribute('aria-label', `${lab} 값에 따른 승·무·패 확률 선 그래프`);
+    $('#s4-sweep-say').textContent = `‘${lab}’ 값만 ${fmtVal(name, SW.lo)} ~ ${fmtVal(name, SW.hi)} 범위에서 바꾸면 승 확률은 ${pct(Math.min(...wins))} ~ ${pct(Math.max(...wins))} 사이에서 움직입니다. `
+      + (SW.cur == null ? '지금 이 입력은 비어 있습니다(모델이 중앙값으로 채움).' : `지금 값(${fmtVal(name, SW.cur)})에서는 ${pct(SW.curP[2])}입니다.`)
+      + (DERIVED.has(name) ? '' : (name.startsWith('team_') || name.startsWith('opponent_')) && SC.diff_bases.includes(name.replace(/^(team|opponent)_/, '')) ? ' 차이 값(우리−상대)도 함께 다시 계산합니다.' : '');
+    const stepIdx = Math.max(1, Math.round(SW.pts.length / 8));
+    const sample = SW.pts.filter((_, k) => k % stepIdx === 0 || k === SW.pts.length - 1);
+    Lab.table($('#s4-sweep-table'), [{ key: 'v', label: '값', align: 'right', sort: false }, { key: 'w', label: '승', align: 'right', sort: false }, { key: 'd', label: '무', align: 'right', sort: false }, { key: 'l', label: '패', align: 'right', sort: false }],
+      sample.map((x) => ({ v: fmtVal(name, x.v), w: pct(x.p[2]), d: pct(x.p[1]), l: pct(x.p[0]) })), { caption: `${lab} 값별 확률` });
+  }
+  const sweepChart = Lab.chart($('#s4-sweep-chart'), {
+    height: 260, margin: { t: 22, r: 14, b: 42, l: 46 }, label: '',
+    draw({ g, w, h }) {
+      if (!SW.pts.length) return;
+      const x = Lab.scaleLinear([SW.lo, SW.hi], [0, w]), y = Lab.scaleLinear([0, 1], [h, 0]);
+      const s = STATS[SW.name];
+      if (s && s.p05 != null && s.p95 > s.p05) {
+        const a = x(Math.max(SW.lo, s.p05)), b = x(Math.min(SW.hi, s.p95));
+        g.append(Lab.svgEl('rect', { x: a, y: 0, width: Math.max(0, b - a), height: h, fill: 'var(--surface-2)' }));
+        g.append(Lab.svgEl('text', { x: a + 4, y: -7, class: 'tick' }, '흔한 범위(가운데 90%)'));
+      }
+      Lab.axisLeft(g, y, w, { ticks: [0, 0.25, 0.5, 0.75, 1], format: (v) => Math.round(v * 100) + '%' });
+      const ticks = SW.pts.length === 2 ? [0, 1] : Lab.ticks(SW.lo, SW.hi, w < 360 ? 4 : 6);
+      const ts = ticks.length > 1 ? ticks[1] - ticks[0] : 1, td = Math.max(0, Math.min(3, -Math.floor(Math.log10(ts) + 1e-9)));
+      Lab.axisBottom(g, x, h, { ticks, format: (v) => f.num(v, td), label: (CAT.get(SW.name) || {}).label });
+      for (const k of ORDER) {
+        const d = SW.pts.map((pt, j) => `${j ? 'L' : 'M'}${x(pt.v).toFixed(1)},${y(pt.p[k]).toFixed(1)}`).join('');
+        g.append(Lab.svgEl('path', { d, fill: 'none', stroke: COLOR[k], 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+      }
+      if (SW.cur != null) {
+        const cx = x(SW.cur);
+        g.append(Lab.svgEl('line', { x1: cx, x2: cx, y1: 0, y2: h, stroke: 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': '4 3' }));
+        g.append(Lab.svgEl('text', { x: Math.min(w - 4, Math.max(4, cx)), y: 12, 'text-anchor': cx > w - 40 ? 'end' : cx < 40 ? 'start' : 'middle', class: 'cur-label' }, '지금'));
+        for (const k of ORDER) g.append(Lab.svgEl('circle', { cx, cy: y(SW.curP[k]), r: 4.5, fill: COLOR[k], stroke: 'var(--surface)', 'stroke-width': 2 }));
+      }
+      const cross = Lab.svgEl('line', { y1: 0, y2: h, stroke: 'var(--ink-3)', 'stroke-width': 1, visibility: 'hidden' });
+      g.append(cross);
+      const hit = Lab.svgEl('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' });
+      g.append(hit);
+      Lab.tip.attach(hit, (ev) => {
+        const r = hit.getBoundingClientRect(), v = ev ? x.invert(((ev.clientX - r.left) / r.width) * w) : (SW.cur ?? SW.lo);
+        const near = SW.pts.reduce((a, b) => (Math.abs(b.v - v) < Math.abs(a.v - v) ? b : a));
+        cross.setAttribute('x1', x(near.v)); cross.setAttribute('x2', x(near.v)); cross.setAttribute('visibility', 'visible');
+        return `<b>${Lab.esc(fmtVal(SW.name, near.v))}</b>` + ORDER.map((k) => `<div><i class="swatch" style="background:${COLOR[k]}"></i>${OUT_LABEL[k]} ${pct(near.p[k])}</div>`).join('');
+      });
+      hit.addEventListener('pointerleave', () => cross.setAttribute('visibility', 'hidden'));
+    },
+  });
+
+  // ------------------------------------------------------------------ scenario shelf
+  const saveBtn = $('#s4-save'), saveMsg = $('#s4-save-msg');
+  function describeChanges(names) {
+    if (!names.length) return '바꾼 입력 없음(원래 조건)';
+    const parts = names.slice(0, 3).map((n) => `${(CAT.get(n) || {}).label || n} ${fmtVal(n, S.base[n])}→${fmtVal(n, S.row[n])}`);
+    return `바꾼 입력: ${parts.join(', ')}${names.length > 3 ? ` 외 ${names.length - 3}개` : ''}`;
+  }
+  function renderSaveState() {
+    saveBtn.disabled = S.shelf.length >= 5;
+    saveMsg.textContent = S.shelf.length >= 5 ? '저장 칸이 가득 찼습니다(5/5). 아래 표에서 하나를 지우세요.' : `저장 ${S.shelf.length}/5`;
+  }
+  saveBtn.addEventListener('click', () => {
+    if (S.shelf.length >= 5 || !S.last) return;
+    const t = sourceTitle(S.src, S.base), names = changedNames();
+    S.shelf.push({ id: ++shelfSeq, title: `${t.text} · ${t.chip}${S.src.kind === 'real' ? ' ' + matches[S.src.i].date : ''}`, desc: describeChanges(names),
+      src: { ...S.src }, base: { ...S.base }, row: { ...S.row }, snap: S.snap, p: S.last.p, pe: S.last.pe });
+    renderShelf(); renderSaveState();
+    saveMsg.textContent = `저장했습니다 (${S.shelf.length}/5). 아래 ‘저장한 조건 비교’에서 볼 수 있습니다.` +
+      (S.shelf.length >= 5 ? ' 가득 찼습니다. 새로 저장하려면 하나를 지워 주세요.' : '');
+  });
+  function renderShelf() {
+    const box = $('#s4-shelf-body');
+    if (!S.shelf.length) { box.replaceChildren(el('p', { class: 'muted', text: '아직 저장한 조건이 없습니다. 예측 결과 카드의 ‘지금 조건 저장하기’를 눌러 보세요.' })); return; }
+    const b0 = S.shelf[0];
+    const th = (t, cls) => el('th', { scope: 'col', class: cls || '', text: t });
+    const head = el('tr', {}, th('#'), th('조건'), th('승', 'num'), th('무', 'num'), th('패', 'num'), th('기대 승점', 'num'), th('승 확률 차이', 'num'), th('기대 승점 차이', 'num'), th('Elo 기준 승', 'num'), th(''));
+    const rows = S.shelf.map((s, k) => {
+      const dW = s.p[2] - b0.p[2], dX = xp(s.p) - xp(b0.p);
+      return el('tr', { 'data-id': s.id },
+        el('td', { class: 's4-sh-idx', text: String(k + 1) }),
+        el('td', { class: 's4-sh-name' }, el('b', { text: s.title }), el('span', { class: 's4-desc', text: s.desc })),
+        el('td', { class: 'num', 'data-label': '승', text: pct(s.p[2]) }), el('td', { class: 'num', 'data-label': '무', text: pct(s.p[1]) }), el('td', { class: 'num', 'data-label': '패', text: pct(s.p[0]) }),
+        el('td', { class: 'num', 'data-label': '기대 승점', text: f.num(xp(s.p), 2) }),
+        el('td', { class: 'num', 'data-label': '승 확률 차이', text: k ? pp(dW) : '기준' }),
+        el('td', { class: 'num', 'data-label': '기대 승점 차이', text: k ? signed(dX, 2) : '기준' }),
+        el('td', { class: 'num', 'data-label': 'Elo 기준 승', text: pct(s.pe[2]) }),
+        el('td', { class: 's4-sh-act' }, el('div', { class: 's4-acts' },
+          el('button', { type: 'button', class: 'btn small s4-btn36', onclick: () => restoreSaved(s) }, '불러오기'),
+          el('button', { type: 'button', class: 'btn small s4-btn36', 'aria-label': `${k + 1}번 조건 지우기`, onclick: () => { S.shelf = S.shelf.filter((x) => x.id !== s.id); renderShelf(); renderSaveState(); } }, '지우기'))));
+    });
+    box.replaceChildren(el('div', { class: 'scroll' }, el('table', { class: 'data' }, el('caption', { class: 'sr-only', text: '저장한 조건 비교표' }), el('thead', {}, head), el('tbody', {}, rows))));
+  }
+  // Loading a saved condition also moves the starting-point controls (mode, match card or fixture pickers) to it.
+  function restoreSaved(s) {
+    if (s.src.kind === 'fake') {
+      Object.assign(F2, { team: s.src.team, opponent: s.src.opponent, home: s.src.home, formation: s.src.formation, previous: s.src.previous });
+      refreshFakeOptions();
+    } else {
+      S.sel = s.src.i; markSelected(); renderMatch();
+    }
+    showMode(s.src.kind);
+    S.src = { ...s.src }; S.base = { ...s.base }; S.row = { ...s.row }; S.snap = s.snap;
+    renderSource(); buildQuickHead(); syncQuick(true); syncForm(); syncAll(true); scheduleUpdate(true); focusEditor();
+  }
+
+  // ------------------------------------------------------------------ update loop (debounced)
+  let timer = 0;
+  function scheduleUpdate(now) { clearTimeout(timer); timer = setTimeout(update, now ? 0 : 60); }
+  function update() {
+    const e = eng(), ex = e.explain(S.row), p = ex.proba, pe = e.eloBaseline(S.row);
+    S.last = { p, pe, ex };
+    renderResult(p, pe); renderWhy(); renderSweep(); syncQuick(); syncForm(); syncAll(); renderSaveState(); announce(p);
+  }
+
+  // ------------------------------------------------------------------ about the model + scoreboard
+  const sp = MODEL.spec;
+  $('#s4-facts').append(
+    el('li', { text: `학습: ${MODEL.train_first_date} ~ ${MODEL.train_last_date}의 경기 ${f.int(MODEL.train_matches)}개(구단 관점 행 ${f.int(MODEL.train_rows)}개). ${seasonLabel(MODEL.test_start)} 시즌부터는 한 경기도 보지 않았습니다.` }),
+    el('li', { text: `처음 보는 경기: ${MODEL.heldout_first_date} ~ ${MODEL.heldout_last_date}의 경기 ${f.int(MODEL.heldout_matches)}개(구단 관점 행 ${f.int(MODEL.heldout_rows)}개).` }),
+    el('li', { text: `설정: 결정나무 ${f.int(sp.n_estimators)}그루, 잎(마지막 갈래)마다 최소 ${f.int(sp.min_samples_leaf)}행, 갈래마다 입력의 ${typeof sp.max_features === 'number' ? pct(sp.max_features, 0) : sp.max_features}만 후보로 사용, 깊이 제한 ${sp.max_depth == null ? '없음' : sp.max_depth}. 3단계에서 고른 설정 그대로입니다.` }),
+    el('li', { text: `입력은 ${f.int(LAB.catalog.length)}개(숫자 ${f.int(MODEL.pre.numeric.length)}개 + 글자 값 ${f.int(MODEL.pre.categorical.length)}개)이고, 모두 경기 전에 알 수 있는 값입니다.` }));
+  const SCORES = data.fixed_model_scores;
+  const seasons = Object.keys(SCORES.by_season).sort();
+  const seasonRows = seasons.map((s) => ({ label: seasonLabel(s), rf: SCORES.by_season[s], elo: SCORES.elo.by_season[s] }));
+  const sbRows = [...seasonRows, { label: '전체', rf: FX, elo: FE }];
+  $('#s4-scoreboard').append(el('div', { class: 'scroll' }, el('table', { class: 'data s4-score-tbl' },
+    el('caption', { class: 'sr-only', text: '처음 보는 경기 성적표' }),
+    el('thead', {}, el('tr', {}, ['시즌', '고유 경기', '구단 관점 행', '정확도 · 이 모델', '정확도 · Elo 기준', '로그손실 · 이 모델', '로그손실 · Elo 기준'].map((t, k) => el('th', { scope: 'col', class: k ? 'num' : '', text: t })))),
+    el('tbody', {}, sbRows.map((r) => el('tr', { 'data-season': r.label },
+      el('td', {}, r.label === '전체' ? el('b', { text: r.label }) : r.label),
+      el('td', { class: 'num', text: f.int(r.rf.unique_matches) }), el('td', { class: 'num', text: f.int(r.rf.team_appearances) }),
+      el('td', { class: 'num', 'data-k': 'rf-acc', text: pct(r.rf.accuracy) }), el('td', { class: 'num', 'data-k': 'elo-acc', text: pct(r.elo.accuracy) }),
+      el('td', { class: 'num', 'data-k': 'rf-ll', text: f.num(r.rf.log_loss, 3) }), el('td', { class: 'num', 'data-k': 'elo-ll', text: f.num(r.elo.log_loss, 3) })))))));
+  const OT = data.official_test;
+  $('#s4-official').textContent = `3단계의 공식 점수(정확도 ${pct(OT.selected_with_formation.accuracy)}, 로그손실 ${f.num(OT.selected_with_formation.log_loss, 3)}; Elo 기준 ${pct(OT.elo_logistic.accuracy)}, ${f.num(OT.elo_logistic.log_loss, 3)})는 시즌마다 그 직전까지의 경기로 다시 학습한 모델의 점수라, 한 번만 학습한 이 화면의 모델과 숫자가 조금 다릅니다.`;
+  // "그래서?" for the scoreboard: compare the two models season by season (numbers from the payload).
+  {
+    const worseLL = seasonRows.filter((r) => r.rf.log_loss > r.elo.log_loss).length;
+    const dAcc = (FX.accuracy - FE.accuracy) * 100;
+    const llPart = worseLL === seasonRows.length ? `로그손실은 ${seasonRows.length}개 시즌 모두 이 모델이 조금 더 나쁩니다`
+      : worseLL === 0 ? `로그손실은 ${seasonRows.length}개 시즌 모두 이 모델이 조금 더 좋습니다`
+      : `로그손실은 ${seasonRows.length}개 시즌 중 ${worseLL}개 시즌에서 이 모델이 더 나쁩니다`;
+    $('#s4-score-say').replaceChildren(el('b', { text: '그래서? ' }),
+      `전체 정확도는 이 모델 ${pct(FX.accuracy)}, Elo 기준 모델 ${pct(FE.accuracy)}로 ${Math.abs(dAcc) < 2 ? '비슷하고' : dAcc > 0 ? '이 모델이 조금 높고' : '이 모델이 조금 낮고'}(차이 ${signed(dAcc, 1)}%p), `
+      + `${llPart}(전체 ${f.num(FX.log_loss, 3)} 대 ${f.num(FE.log_loss, 3)}). `
+      + (FX.log_loss > FE.log_loss ? `입력 ${f.int(LAB.catalog.length)}개를 다 써도 Elo 차이와 홈 여부 두 개보다 확률을 더 잘 맞히지는 못했다는 뜻입니다.` : '입력을 많이 쓴 만큼 확률이 조금 나아졌지만, 차이는 작습니다.'));
+  }
+  const MK = SCORES.market;
+  if (MK) {
+    $('#s4-market').textContent = `참고: 배당률이 있는 ${f.int(MK.rows)}개 행에서 배당 확률의 정확도는 ${pct(MK.odds.accuracy)}, 로그손실은 ${f.num(MK.odds.log_loss, 3)}입니다(같은 행에서 이 모델은 ${pct(MK.model.accuracy)}, ${f.num(MK.model.log_loss, 3)}). 시장은 부상·선발 소식 같은 추가 정보를 반영하므로, 모델이 따라잡지 못하는 것이 자연스럽습니다.`;
+  }
+
+  // ------------------------------------------------------------------ boot
+  renderList();
+  renderMatch();
+  renderShelf();
+  loadReal(S.sel);
+  Lab.nav(root, ['s3', '모델 학습'], null);
+});
+</script>

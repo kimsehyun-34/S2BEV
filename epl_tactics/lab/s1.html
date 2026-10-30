@@ -1,0 +1,769 @@
+<style>
+#s1 code{overflow-wrap:anywhere}
+#s1 code.s1-code{overflow-wrap:normal}
+#s1 .btn.small{min-height:36px}
+#s1 h4.s1-h4{margin:22px 0 6px}
+#s1 .s1-read{margin:.7em 0 0;font-size:14.5px;color:var(--ink-2);max-width:82ch}
+#s1 .s1-read b{color:var(--ink);font-weight:650;margin-right:.45em}
+#s1 .s1-qa{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 24px;margin:0}
+#s1 .s1-qa>div{display:flex;flex-direction:column;min-width:0}
+#s1 .s1-qa dt{font-weight:650;font-size:15.5px}
+#s1 .s1-qa dd{margin:4px 0 0;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;flex:1;gap:8px}
+#s1 .s1-qa dd span{flex:1}
+#s1 .s1-qa dd .btn{align-self:flex-start}
+#s1 .s1-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px}
+#s1 .s1-src{border-top:2px solid var(--border-strong);padding-top:10px;min-width:0}
+#s1 .s1-src h4{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px}
+#s1 .s1-src h4 small{font-weight:400;color:var(--ink-3);font-size:12.5px}
+#s1 .s1-scope{margin:2px 0 6px;color:var(--ink-2);font-size:14px}
+#s1 .s1-small{font-size:14px;color:var(--ink-2)}
+#s1 .s1-nowrap{white-space:nowrap}
+#s1 .s1-flag{display:inline-block;margin-top:4px;font-size:13px;line-height:1.4;word-break:keep-all;overflow-wrap:normal;padding:1px 6px;border-radius:5px;background:var(--warn-bg);color:var(--warn-ink);border:1px solid var(--warn-line)}
+#s1 .note ul.s1-qlist{margin:.35em 0 .45em;padding-left:1.2em}
+#s1 .note ul.s1-qlist li{margin:.25em 0}
+#s1 .note p{margin:.35em 0 0}
+#s1 table.s1-leak-t th{white-space:normal;word-break:keep-all}
+#s1 table.s1-leak-t td.s1-lab{min-width:120px}
+#s1 table.s1-zero-t th{white-space:normal;word-break:keep-all}
+#s1 ol.s1-steps{margin:.4em 0;padding-left:1.4em}
+#s1 ol.s1-steps li{margin:.35em 0;padding-left:.2em}
+#s1 .s1-result{display:flex;flex-wrap:wrap;gap:6px 28px;margin:10px 0 2px;padding:10px 14px;border-radius:10px;background:var(--surface-2)}
+#s1 .s1-result span{color:var(--ink-2);font-size:14px}
+#s1 .s1-result b{color:var(--ink);font-size:17px;font-weight:650;margin-right:6px;font-variant-numeric:tabular-nums}
+#s1 .s1-flow{display:grid;grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr) 112px minmax(0,1fr);gap:8px;margin:8px 0 14px}
+#s1 .s1-node{border:1px solid var(--border);border-radius:10px;padding:12px 14px;background:var(--surface-2);min-width:0}
+#s1 .s1-node .v{font-size:24px;font-weight:650;line-height:1.2;font-variant-numeric:tabular-nums}
+#s1 .s1-node .l{font-weight:600;font-size:14.5px;margin-top:2px}
+#s1 .s1-node .d{font-size:14px;color:var(--ink-2);line-height:1.55;margin-top:4px}
+#s1 .s1-arrow{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;text-align:center;font-size:14px;color:var(--ink-2);line-height:1.45}
+#s1 .s1-arrow b{font-size:20px;color:var(--ink-3);font-weight:400;line-height:1}
+#s1 .s1-key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:14px;color:var(--ink-2);margin:8px 0 2px}
+#s1 .s1-key[hidden]{display:none}
+#s1 .s1-ramp{display:inline-flex;align-items:center;gap:2px}
+#s1 .s1-ramp i{display:inline-block;width:22px;height:12px;border-radius:3px;background:var(--accent)}
+#s1 .s1-ramp em{font-style:normal;margin:0 4px}
+#s1 .s1-zero{display:inline-block;width:22px;height:12px;border-radius:3px;border:1.5px dashed var(--border-strong);vertical-align:-1px;margin-right:6px}
+#s1 .s1-toolbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:6px 0 8px}
+#s1 details.s1-more{margin-top:10px}
+#s1 details.s1-more>summary{cursor:pointer;color:var(--link);font-size:14px;min-height:36px;display:inline-flex;align-items:center}
+#s1 .s1-chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+#s1 .s1-chips .chip{font-size:13px}
+#s1 table.data td.s1-lab{min-width:150px}
+#s1 table.data td .s1-raw{display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink-3);line-height:1.4}
+#s1 table.data tr.s1-gh th{background:var(--surface-2);color:var(--ink);position:static;white-space:normal}
+#s1 table.data tr.s1-gh th span{font-weight:400;color:var(--ink-2);margin-left:8px}
+#s1 .s1-pre{font-family:var(--mono);font-size:12.5px;background:var(--surface-2);border-radius:8px;padding:10px 12px;margin:6px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+#s1 .s1-groups{border-top:1px solid var(--grid);margin-top:10px}
+#s1 details.s1-grp{border-bottom:1px solid var(--grid)}
+#s1 details.s1-grp>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:128px 44px minmax(80px,180px) minmax(0,1fr) 20px;gap:4px 14px;align-items:center;padding:9px 2px;min-height:44px}
+#s1 details.s1-grp>summary::-webkit-details-marker{display:none}
+#s1 details.s1-grp>summary:hover{background:var(--surface-2)}
+#s1 .s1-grp-name{font-weight:600}
+#s1 .s1-grp-n{text-align:right;font-variant-numeric:tabular-nums;font-weight:650}
+#s1 .s1-grp-bar{height:10px;border-radius:3px;background:var(--surface-2);overflow:hidden}
+#s1 .s1-grp-bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+#s1 .s1-grp-desc{color:var(--ink-2);font-size:14px}
+#s1 .s1-chev{color:var(--ink-3);text-align:center;font-size:12px}
+#s1 details.s1-grp[open] .s1-chev{transform:rotate(180deg)}
+#s1 ul.s1-members{columns:3 230px;column-gap:24px;margin:2px 0 12px;padding-left:1.1em;font-size:14px}
+#s1 ul.s1-members li{break-inside:avoid;margin:.15em 0}
+#s1 ul.s1-members code{color:var(--ink-3);font-size:11.5px;margin-left:4px}
+#s1 .s1-field{display:flex;flex-direction:column;min-width:min(280px,100%)}
+#s1 .s1-field input{width:100%}
+#s1 .s1-count{color:var(--ink-2);font-size:14px}
+#s1 #s1-input-table td:nth-child(1){min-width:190px}
+#s1 #s1-input-table td:nth-child(n+3):nth-child(-n+5){white-space:nowrap}
+#s1 #s1-input-table td:nth-child(6){word-break:keep-all}
+#s1 .s1-toolbar.s1-filter{align-items:flex-end}
+#s1 .s1-toolbar.s1-filter .s1-count{padding-bottom:8px}
+#s1 table.s1-kv td{padding-top:6px;padding-bottom:6px}
+#s1 #s1-input-table td:last-child{min-width:240px;color:var(--ink-2)}
+#s1 .s1-rel{color:var(--ink-2);white-space:nowrap}
+#s1 ol.s1-limits{padding-left:1.3em;margin:.4em 0}
+#s1 ol.s1-limits li{margin:.55em 0}
+@media (max-width:900px){#s1 .s1-qa{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){
+  #s1 .s1-flow{grid-template-columns:1fr}
+  #s1 .s1-arrow{flex-direction:row;justify-content:flex-start;text-align:left;gap:10px;padding:0 0 0 14px}
+  #s1 .s1-arrow b{transform:rotate(90deg)}
+}
+@media (max-width:700px){
+  #s1 .s1-cols{grid-template-columns:1fr}
+  #s1 details.s1-grp>summary{grid-template-columns:minmax(0,1fr) 44px 20px}
+  #s1 .s1-grp-bar{grid-column:1 / -1;grid-row:2}
+  #s1 .s1-grp-desc{grid-column:1 / -1;grid-row:3}
+  #s1 .s1-chev{grid-column:3;grid-row:1}
+}
+#s1 table.s1-dict-t{min-width:760px}
+#s1 .eq{display:inline-block;margin-top:4px}
+@media (max-width:700px){
+  #s1 table.data td.s1-lab{min-width:0}
+  #s1 table.s1-kv td,#s1 table.s1-pair-t td{overflow-wrap:anywhere;padding-left:6px;padding-right:6px}
+  #s1 table.s1-kv th,#s1 table.s1-pair-t th{white-space:normal;padding-left:6px;padding-right:6px}
+  #s1 table.s1-pair-t td.s1-rel{white-space:normal}
+  #s1 table.s1-pair-t th,#s1 table.s1-pair-t td.s1-rel,#s1 table.s1-pair-t td.s1-lab{word-break:keep-all;overflow-wrap:normal}
+  #s1 table.s1-pair-t td .s1-raw{overflow-wrap:anywhere}
+  #s1 table.s1-leak-t td,#s1 table.s1-leak-t th,#s1 table.s1-zero-t td,#s1 table.s1-zero-t th{padding-left:6px;padding-right:6px}
+  #s1 table.s1-leak-t td.s1-lab,#s1 table.s1-zero-t td.s1-lab{min-width:0;overflow-wrap:anywhere}
+}
+@media (max-width:560px){
+  #s1 .s1-qa{grid-template-columns:1fr}
+  #s1 table.data.s1-zero-t td .s1-raw{display:none}
+  #s1 table.data.s1-zero-t td.s1-lab{word-break:keep-all;overflow-wrap:normal}
+}
+</style>
+
+<div class="step-head">
+  <div class="eyebrow">1단계 · 데이터</div>
+  <h2>무엇을 모았고, 무엇을 맞히나</h2>
+  <p class="lede">정답은 무엇이고, 입력은 무엇이며, 몇 개이고, 어디서 왔는지. 이 네 가지 질문에 차례로 답합니다.</p>
+</div>
+<div class="takeaway"><b class="t">한 줄 결론</b><p id="s1-takeaway"></p></div>
+<div class="kpis" id="s1-kpis"></div>
+
+<div class="card">
+  <h3>가장 궁금한 네 가지, 짧은 답</h3>
+  <p class="sub">자세한 설명은 아래 카드에 있습니다. 버튼을 누르면 해당 설명으로 바로 내려갑니다.</p>
+  <dl class="s1-qa" id="s1-qa"></dl>
+</div>
+
+<div class="card" id="s1-sources">
+  <h3>어디서 어떻게 모았나</h3>
+  <p class="sub">공개된 자료 두 곳에서 모아 같은 경기끼리 짝을 맞췄습니다. 경기 결과·배당은 Football-Data, 포메이션·선발 명단·팀 기록은 ESPN에서 가져왔습니다.</p>
+  <div class="s1-cols" id="s1-src-cols"></div>
+  <div id="s1-src-merge"></div>
+  <h4 class="s1-h4">두 출처의 같은 경기를 어떻게 맞췄나</h4>
+  <ol class="s1-steps" id="s1-join"></ol>
+  <div class="s1-result" id="s1-join-result"></div>
+  <h4 class="s1-h4" id="s1-flow-title">경기 수가 바뀌는 이유</h4>
+  <div class="s1-flow" id="s1-flow"></div>
+  <div id="s1-flow-legend"></div>
+  <div id="s1-flow-chart"></div>
+  <div id="s1-flow-read"></div>
+</div>
+
+<div class="card" id="s1-coverage">
+  <h3>얼마나 모였나</h3>
+  <p class="sub">구단·시즌마다 포메이션과 선발 11명이 실제로 기록된 경기의 비율입니다. 기록이 없는 칸은 추측해서 채우지 않았습니다.</p>
+  <div class="s1-toolbar"><div id="s1-cov-seg"></div></div>
+  <div id="s1-cov-chart"></div>
+  <div class="s1-key" id="s1-cov-codes" hidden></div>
+  <div class="s1-key" id="s1-cov-key"></div>
+  <div id="s1-cov-read"></div>
+  <details class="s1-more"><summary>표로 보기</summary><div class="scroll" id="s1-cov-table"></div></details>
+</div>
+
+<div class="card" id="s1-shape">
+  <h3>데이터는 어떤 모양인가 ① 원시 표</h3>
+  <p class="sub">모아 온 그대로의 표입니다. 실제 경기 하나가 한 줄이고, 두 팀의 기록이 홈·원정 열로 나란히 적혀 있습니다.</p>
+  <p id="s1-raw-meta"></p>
+  <div class="s1-chips" id="s1-raw-groups"></div>
+  <h4 class="s1-h4" id="s1-ex-title">예시 경기</h4>
+  <p class="s1-small" id="s1-ex-note"></p>
+  <div class="grid2" id="s1-ex"></div>
+  <details class="s1-more" id="s1-ex-players"></details>
+  <div id="s1-quality"></div>
+  <details class="s1-more" id="s1-zero-more"><summary>0으로만 저장된 항목, 시즌별로 보기</summary><div class="scroll" id="s1-zero-table"></div></details>
+  <h4 class="s1-h4" id="s1-dict-title">열 사전</h4>
+  <p class="s1-small">모든 열의 한국어 이름, 출처, 형식, 빈 칸 비율입니다. ‘0 비율’은 값이 정확히 0인 경기의 비율입니다.</p>
+  <div class="scroll" id="s1-dict" style="max-height:520px"></div>
+</div>
+
+<div class="card" id="s1-model">
+  <h3>데이터는 어떤 모양인가 ② 모델 표</h3>
+  <p class="sub">모델이 학습과 테스트에 쓰는 표입니다. 한 줄은 ‘한 구단의 한 경기’이고, 모든 값을 그 구단(우리 팀) 입장에서 다시 적었습니다.</p>
+  <p id="s1-model-meta"></p>
+  <ul class="clean" id="s1-model-roles"></ul>
+  <h4 class="s1-h4" id="s1-pair-title">같은 경기, 두 줄</h4>
+  <p class="s1-small" id="s1-pair-note"></p>
+  <div class="scroll" id="s1-pair" style="max-height:640px"></div>
+  <p><button type="button" class="btn small" id="s1-pair-toggle" aria-expanded="false" aria-controls="s1-pair"></button></p>
+  <div id="s1-pair-read"></div>
+</div>
+
+<div class="card" id="s1-target">
+  <h3>종속변수(정답): 우리 팀 입장의 패·무·승</h3>
+  <p class="sub" id="s1-target-def"></p>
+  <div class="s1-chips" id="s1-target-chips"></div>
+  <div class="s1-toolbar"><div id="s1-oc-seg"></div><div id="s1-oc-legend"></div></div>
+  <div id="s1-oc-chart"></div>
+  <div id="s1-oc-read"></div>
+  <details class="s1-more"><summary>표로 보기</summary><div class="scroll" id="s1-oc-table"></div></details>
+</div>
+
+<div class="card" id="s1-inputs">
+  <h3 id="s1-inputs-title">독립변수(입력)</h3>
+  <p class="sub">모든 입력은 ‘그 경기가 시작되기 전까지’ 알 수 있는 정보입니다. 숫자 입력과 이름(글자) 입력 두 종류가 있습니다.</p>
+  <p id="s1-inputs-comp"></p>
+  <div class="s1-groups" id="s1-groups"></div>
+  <div id="s1-groups-read"></div>
+</div>
+
+<div class="card" id="s1-leak">
+  <h3>넣지 않은 것: 그 경기에서 생긴 기록</h3>
+  <p class="sub">경기가 끝나야 알 수 있는 값이 입력에 섞이면, 시험 전에 답안을 본 것처럼 성적이 부풀려집니다. 이것을 <span data-g="누수">누수</span>라고 합니다. 그래서 그 경기의 기록은 입력에서 모두 뺐습니다.</p>
+  <div class="s1-cols">
+    <div class="s1-src"><h4>입력으로 쓰는 것</h4><ul class="clean" id="s1-leak-use"></ul></div>
+    <div class="s1-src"><h4>입력에서 뺀 것</h4><ul class="clean" id="s1-leak-no"></ul></div>
+  </div>
+  <h4 class="s1-h4" id="s1-leak-ex-title">예시</h4>
+  <div class="scroll" id="s1-leak-ex"></div>
+  <div id="s1-leak-read"></div>
+</div>
+
+<div class="card" id="s1-input-list">
+  <h3 id="s1-list-title">입력 전체 목록</h3>
+  <p class="sub" id="s1-list-sub"></p>
+  <div class="s1-toolbar s1-filter">
+    <div class="s1-field"><label class="f" for="s1-q">입력 찾기</label><input type="text" id="s1-q" placeholder="예: Elo, 슈팅, lineup" autocomplete="off"></div>
+    <div class="s1-field" style="min-width:200px"><label class="f" for="s1-grp-filter">묶음</label><span id="s1-grp-select"></span></div>
+    <span class="s1-count" id="s1-count" aria-live="polite"></span>
+  </div>
+  <div id="s1-input-table"></div>
+</div>
+
+<div class="card" id="s1-missing">
+  <h3>아직 없는 것</h3>
+  <p class="sub">결과에 분명히 영향을 주지만 이 데이터에는 들어 있지 않은 정보입니다. 모델의 한계도 여기서 나옵니다.</p>
+  <ol class="s1-limits" id="s1-limits"></ol>
+</div>
+
+<script>
+Lab.register('s1', function (root, D, LAB) {
+  'use strict';
+  const f = Lab.fmt, el = Lab.el, esc = Lab.esc;
+  const $ = (id) => root.querySelector('#' + id);
+  const clubs = D.clubs, shorts = (LAB.meta && LAB.meta.clubs_short) || clubs;
+  const shortOf = (c) => shorts[clubs.indexOf(c)] || c;
+  const seasonLabel = (s) => String(s).replace(/^(\d{4})\/\d{2}(\d{2})$/, '$1/$2');
+  const seasonTiny = (s) => String(s).replace(/^\d{2}(\d{2})\/\d{2}(\d{2})$/, '$1/$2');
+  const pct = (x, d = 1) => f.pct(x, d);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const jump = (id) => { const n = $(id); if (n) n.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); };
+  const OUT = [{ i: 2, label: '승', color: 'var(--c-win)' }, { i: 1, label: '무', color: 'var(--c-draw)' }, { i: 0, label: '패', color: 'var(--c-loss)' }];
+  const OUT_NAME = ['패', '무', '승'];
+  const catalog = LAB.catalog || [], catBy = new Map(catalog.map((e) => [e.name, e]));
+  const groups = LAB.groups || [], groupBy = new Map(groups.map((g) => [g.key, g]));
+  const K = D.kpi, FL = D.flow, SRC = D.sources, CV = D.coverage, RAW = D.raw, MOD = D.model, OC = D.outcome, IN = D.inputs;
+  const EX = RAW.example;
+
+  function fmtNum(v) {
+    if (v == null || !Number.isFinite(v)) return '–';
+    const a = Math.abs(v), d = a >= 100 ? 0 : a >= 10 ? 1 : a >= 1 ? 2 : 3;
+    return new Intl.NumberFormat('ko-KR', { maximumFractionDigits: d }).format(v);
+  }
+  const para = (label, text) => el('p', { class: 's1-read' }, el('b', { text: label }), text);
+  const paraHtml = (label, html) => { const p = el('p', { class: 's1-read', html }); p.prepend(el('b', { text: label })); return p; };
+  const table = (head, rows, opts = {}) => el('table', { class: 'data' + (opts.cls ? ' ' + opts.cls : '') },
+    opts.caption ? el('caption', { class: 'sr-only', text: opts.caption }) : null,
+    el('thead', {}, el('tr', {}, head.map((h) => el('th', { scope: 'col', class: h.num ? 'num' : '' }, h.label)))),
+    el('tbody', {}, rows));
+
+  // ================================================================ A. takeaway + KPIs + four questions
+  const testFrom = seasonLabel(K.test_start);
+  $('s1-takeaway').textContent =
+    `맞히려는 것(정답)은 ‘우리 팀 입장에서 본 경기 결과(패·무·승)’ 하나, 맞히는 데 쓰는 것(입력)은 경기 전에 알 수 있는 값 ${f.int(K.inputs)}개입니다. ` +
+    `${K.clubs}개 구단의 EPL 경기 ${f.int(K.unique_matches)}개(${seasonLabel(K.first_season)}~${seasonLabel(K.last_season)})를 두 출처에서 모아 서로 대조했고, ` +
+    `한 경기를 구단마다 한 줄씩 펼쳐 ${f.int(K.rows)}줄의 모델 표를 만들었습니다. ${testFrom} 이전 ${f.int(K.train_rows)}줄로 학습하고, 이후 ${f.int(K.test_rows)}줄은 처음 보는 경기(테스트)로 남겨 둡니다.`;
+  const kpi = (v, ...l) => el('div', { class: 'kpi' }, el('div', { class: 'v', text: v }), el('div', { class: 'l' }, ...l));
+  const nowrap = (t) => el('span', { class: 's1-nowrap', text: t });
+  $('s1-kpis').append(
+    kpi(f.int(K.unique_matches), '고유 경기: 실제로 열린 경기 수'),
+    kpi(f.int(K.rows), '구단 관점 행(모델 표의 줄 수): ', nowrap(`학습 ${f.int(K.train_rows)}`), ' + ', nowrap(`테스트 ${f.int(K.test_rows)}`)),
+    kpi(`${f.int(K.inputs)}개`, `모델 입력: 숫자 ${K.numeric}개 + 이름 ${K.categories}개`),
+    kpi(`${K.n_seasons}시즌`, nowrap(K.first_date), ' ~ ', nowrap(K.last_date)));
+  const groupNames = groups.filter((g) => IN.group_counts[g.key]).map((g) => g.label).join(', ');
+  [
+    [`${Lab.term('종속변수(정답)')}은?`, '우리 팀(그 줄의 구단) 입장에서 본 경기 결과 하나입니다. 패·무·승 셋 중 하나를 맞힙니다.', 's1-target', '정답 자세히'],
+    [`${Lab.term('독립변수(입력)')}은?`, `경기 전에 알 수 있는 값만 씁니다. ${groupNames}.`, 's1-inputs', '입력 자세히'],
+    ['몇 개인가?', `입력 ${f.int(K.inputs)}개(숫자 ${K.numeric} + 이름 ${K.categories}), 모델 표 ${f.int(K.rows)}줄(고유 경기 ${f.int(K.unique_matches)}개)입니다. ` +
+      `그중 ${testFrom} 이전 ${f.int(K.train_rows)}줄로 학습하고, 이후 ${f.int(K.test_rows)}줄은 테스트에 씁니다.`, 's1-shape', '표 모양 자세히'],
+    ['어디서 왔나?', 'Football-Data(결과·슈팅·카드·배당)와 ESPN 공개 웹 데이터(포메이션·선발·팀 기록)를 날짜·점수·팀·시즌으로 대조해 합쳤습니다.', 's1-sources', '출처 자세히'],
+  ].forEach(([q, a, target, btn]) => $('s1-qa').append(el('div', {},
+    el('dt', { html: q }),
+    el('dd', {}, el('span', { text: a }), el('button', { type: 'button', class: 'btn small', onclick: () => jump(target) }, `${btn} ↓`)))));
+
+  // ================================================================ B. sources, join, flow
+  const FD = SRC.fd, ES = SRC.espn, Q = SRC.quality;
+  $('s1-src-cols').append(
+    el('div', { class: 's1-src' },
+      el('h4', {}, 'Football-Data', FD.host ? el('small', { text: FD.host }) : null),
+      el('p', { class: 's1-scope', text: `EPL 전체 ${f.int(FD.league_matches)}경기 · ${seasonLabel(FD.first_season)}~${seasonLabel(FD.last_season)} (${FD.seasons}시즌)` }),
+      el('ul', { class: 'clean' },
+        el('li', { text: '경기 결과(양 팀 최종 득점)' }),
+        el('li', { text: '슈팅·유효슈팅·코너킥·파울·옐로/레드카드' }),
+        FD.odds.map((o) => el('li', { text: `배당: ${o.label} (${seasonLabel(o.first)}~${seasonLabel(o.last)}, 6개 구단 경기 중 ${f.int(o.matches)}경기)` })))),
+    el('div', { class: 's1-src' },
+      el('h4', {}, 'ESPN 공개 웹 데이터', ES.host ? el('small', { text: ES.host }) : null),
+      el('p', { class: 's1-scope', text: `6개 구단이 뛴 ${f.int(ES.matches)}경기만 · ${ES.retrieved} 수집` }),
+      el('ul', { class: 'clean' },
+        el('li', { text: '선발 포메이션(예: 4-2-3-1)' }),
+        el('li', { text: '선발 11명과 교체 명단, 선수별 그 경기 득점·도움·슈팅' }),
+        el('li', { text: '팀 경기 기록: 점유율·패스·크로스·태클·가로채기·선방 등' })),
+      el('p', { class: 's1-small', text: '공식 문서가 없는 공개 웹 인터페이스입니다. 공개되어 있다고 자유롭게 재배포해도 된다는 뜻은 아닙니다.' })));
+  $('s1-src-merge').append(para('겹치는 기록은?',
+    `슈팅·유효슈팅·코너킥·파울·카드는 두 곳 모두에 있습니다. 6개 구단 경기에서는 ESPN 값이 있으면 ESPN 값을 썼습니다. ` +
+    `집계 기준이 조금씩 달라서, 같은 팀의 슈팅 수가 두 곳 모두 0이 아닌데도 서로 다른 경기가 ${f.int(Q.shots_real_differ)}개(차이 중앙값 ${fmtNum(Q.shots_real_differ_median_gap)}개) 있습니다.`));
+  $('s1-join').append(
+    el('li', { text: 'ESPN 경기 일정에서 6개 구단이 뛴 경기를 찾아, 날짜·홈 팀·원정 팀이 같은 Football-Data 경기에 후보로 붙였습니다. 팀 이름 표기는 미리 하나로 맞췄습니다(예: Man United → Manchester United).' }),
+    el('li', { text: `후보마다 홈 팀·원정 팀·양 팀 득점·시즌이 모두 같은지 확인하고, 하나라도 다르면 버렸습니다(버린 후보 ${f.int(ES.rejected)}개).` }),
+    el('li', { text: '날짜까지 같은 후보 중 기록(포메이션·선수 명단·팀 기록)이 가장 많은 것 하나를 골랐습니다.' }));
+  $('s1-join-result').append(
+    el('span', {}, el('b', { text: `${f.int(ES.verified)} / ${f.int(ES.matches)}` }), '경기 대조 통과'),
+    el('span', {}, el('b', { text: f.int(ES.unmatched) }), '짝을 못 찾은 경기'),
+    el('span', {}, el('b', { text: f.int(ES.rejected) }), '조건이 달라 버린 ESPN 후보'));
+
+  $('s1-flow-title').textContent = `경기 수가 ${f.int(FL.league)} → ${f.int(FL.involving)} → ${f.int(FL.rows)}처럼 바뀌는 이유`;
+  const node = (v, l, html) => el('div', { class: 's1-node' }, el('div', { class: 'v', text: v }), el('div', { class: 'l', text: l }), el('div', { class: 'd', html }));
+  const arrow = (t) => el('div', { class: 's1-arrow' }, el('b', { 'aria-hidden': 'true', text: '→' }), el('span', { text: t }));
+  $('s1-flow').append(
+    node(f.int(FL.league), '리그 전체 경기', `${FD.seasons}시즌 동안 열린 EPL 모든 경기입니다. 6개 구단이 없는 ${esc(f.int(FL.other))}경기는 상대 팀의 ${Lab.term('Elo')}·최근 기록을 계산하는 데만 씁니다.`),
+    arrow('6개 구단이 한 팀이라도 뛴 경기만 남김'),
+    node(f.int(FL.involving), '6개 구단이 뛴 고유 경기', `그중 ${f.int(FL.two_club)}경기는 6개 구단끼리 맞붙은 경기입니다.`),
+    arrow('구단마다 한 줄씩 펼침 (맞대결은 두 줄)'),
+    node(f.int(FL.rows), '구단 관점 행', `${f.int(FL.one_club)} + ${f.int(FL.two_club)} × 2 = ${f.int(FL.rows)}. 구단마다 ${f.int(FL.per_club)}경기 × ${K.clubs}개 구단과도 같습니다.`));
+
+  // The second copy of a derby wears the derby colour as a hatch: same entity, counted again.
+  const HATCH = 'repeating-linear-gradient(135deg, var(--s6) 0 3px, transparent 3px 6px)';
+  const SEG = {
+    one: { color: 'var(--accent)', name: '6개 구단 중 한 팀만 뛴 경기' },
+    two: { color: 'var(--s6)', name: '6개 구단끼리 맞붙은 경기' },
+    copy: { color: 'url(#s1-hatch)', swatch: HATCH, name: '같은 맞대결을 상대 구단 쪽에서 본 줄' },
+    other: { color: 'var(--ink-3)', op: 0.45, name: '6개 구단이 없는 경기(상대 전력 계산용)' },
+  };
+  const swatchOf = (k) => SEG[k].swatch || (SEG[k].op ? `color-mix(in srgb, ${SEG[k].color} ${SEG[k].op * 100}%, var(--surface))` : SEG[k].color);
+  $('s1-flow-legend').append(Lab.legend(['one', 'two', 'copy', 'other'].map((k) => ({ label: SEG[k].name, color: swatchOf(k) }))));
+  const flowBars = [
+    { label: '리그 전체', unit: '경기', total: FL.league, segs: [['one', FL.one_club], ['two', FL.two_club], ['other', FL.other]] },
+    { label: '6개 구단 경기', unit: '경기', total: FL.involving, segs: [['one', FL.one_club], ['two', FL.two_club]] },
+    { label: '구단 관점 행', unit: '줄', total: FL.rows, segs: [['one', FL.one_club], ['two', FL.two_club], ['copy', FL.two_club]] },
+  ];
+  Lab.chart($('s1-flow-chart'), {
+    height: flowBars.length * 44 + 34, margin: { t: 6, r: 0, b: 28, l: 0 }, label: '리그 전체 경기, 6개 구단 경기, 구단 관점 행 수를 같은 눈금으로 비교한 막대',
+    draw({ svg, g, w, h }) {
+      const lw = w < 460 ? 92 : 118, rw = 58, pw = Math.max(80, w - lw - rw);
+      svg.prepend(Lab.svgEl('defs', {}, Lab.svgEl('pattern', { id: 's1-hatch', patternUnits: 'userSpaceOnUse', width: 6, height: 6, patternTransform: 'rotate(45)' },
+        Lab.svgEl('rect', { width: 6, height: 6, fill: 'var(--surface)' }), Lab.svgEl('rect', { width: 3, height: 6, fill: 'var(--s6)' }))));
+      const inner = Lab.svgEl('g', { transform: `translate(${lw},0)` }); g.append(inner);
+      const x = Lab.scaleLinear([0, FL.league], [0, pw]);
+      Lab.axisBottom(inner, x, h, { ticks: Lab.ticks(0, FL.league, pw < 300 ? 3 : 6), format: f.int, grid: true });
+      const band = h / flowBars.length, bh = Math.min(22, band * 0.5);
+      flowBars.forEach((b, i) => {
+        const cy = i * band + band / 2;
+        const row = Lab.svgEl('g', { tabindex: 0, role: 'img', 'aria-label': `${b.label} ${b.total}${b.unit}: ` + b.segs.map(([k, v]) => `${SEG[k].name} ${v}`).join(', ') });
+        row.append(Lab.svgEl('rect', { x: -lw, y: i * band, width: lw + pw + rw, height: band, fill: 'transparent' }));
+        row.append(Lab.svgEl('text', { x: -10, y: cy + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, b.label));
+        let acc = 0;
+        b.segs.forEach(([k, v], j) => {
+          const x0 = x(acc) + (j ? 1 : 0), x1 = x(acc + v) - (j < b.segs.length - 1 ? 1 : 0);
+          row.append(Lab.svgEl('rect', { x: x0, y: cy - bh / 2, width: Math.max(0, x1 - x0), height: bh, rx: 3, fill: SEG[k].color, 'fill-opacity': SEG[k].op || 1 }));
+          acc += v;
+        });
+        row.append(Lab.svgEl('text', { x: x(b.total) + 8, y: cy + 4, class: 'value-label' }, f.int(b.total)));
+        Lab.tip.attach(row, () => `<b>${esc(b.label)} ${f.int(b.total)}${b.unit}</b>` + b.segs.map(([k, v]) =>
+          `<div><i class="swatch" style="background:${swatchOf(k)}"></i>${esc(SEG[k].name)} ${f.int(v)}</div>`).join(''));
+        inner.append(row);
+      });
+    },
+  });
+  $('s1-flow-read').append(
+    para('이 그림 읽는 법', '세 막대는 같은 눈금입니다. 위에서 아래로 내려가며 회색(6개 구단이 없는 경기)이 빠지고, 초록 빗금(같은 맞대결의 두 번째 줄)이 한 칸 더 생기는 것을 보세요.'),
+    paraHtml('그래서?', `맞대결 ${esc(f.int(FL.two_club))}경기는 두 구단 모두의 경기라 두 줄이 됩니다. 그대로 채점하면 이 경기들이 두 번 세어지므로, ` +
+      `두 줄에 가중치(<code>fixture_weight</code>)를 ${esc(String(FL.derby_weight))}씩 줘서 한 경기가 한 번만 세어지게 합니다. ` +
+      `<span class="eq">${esc(f.int(FL.one_club))} × 1 + ${esc(f.int(FL.two_club))} × 2 × ${esc(String(FL.derby_weight))} = ${esc(f.int(FL.weight_sum))}</span>`));
+
+  // ================================================================ C. coverage heatmap
+  const covShort = new Map(CV.short_seasons.map((s) => [s.season, s.matches]));
+  let covMetric = 'formation';
+  const COV_NAME = { formation: '포메이션', eleven: '선발 11명' };
+  // Narrow screens label the club columns with 3-letter codes, so spell them out under the chart there.
+  const codesKey = $('s1-cov-codes');
+  codesKey.append(el('span', { text: '열 이름:' }), ...clubs.map((c, i) => el('span', { class: 's1-nowrap', text: `${D.codes[i]} = ${c}` })));
+  const covChart = Lab.chart($('s1-cov-chart'), {
+    height: 240, margin: { t: 0, r: 0, b: 0, l: 0 }, label: '구단·시즌별 기록 비율 히트맵',
+    draw({ svg, g, width }) {
+      const S = CV.seasons, rec = CV[covMetric], M = CV.matches;
+      const wide = (width - 104) / S.length >= 34;
+      codesKey.hidden = wide;
+      const lw = wide ? 104 : 52, th = 28, ch = wide ? 30 : 24;
+      const nx = wide ? S.length : clubs.length, ny = wide ? clubs.length : S.length, cw = (width - lw) / nx;
+      const H = th + ny * ch + 2;
+      svg.setAttribute('height', H); svg.setAttribute('viewBox', `0 0 ${width} ${H}`);
+      const head = (i) => wide ? seasonTiny(S[i]) + (covShort.has(S[i]) ? '*' : '') : D.codes[i];
+      const side = (j) => wide ? shortOf(clubs[j]) : seasonTiny(S[j]) + (covShort.has(S[j]) ? '*' : '');
+      for (let i = 0; i < nx; i++) g.append(Lab.svgEl('text', { x: lw + cw * i + cw / 2, y: th - 10, 'text-anchor': 'middle', class: 'tick' }, head(i)));
+      for (let j = 0; j < ny; j++) g.append(Lab.svgEl('text', { x: lw - 8, y: th + ch * j + ch / 2 + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, side(j)));
+      for (let ci = 0; ci < clubs.length; ci++) {
+        for (let si = 0; si < S.length; si++) {
+          const n = M[ci][si], r = rec[ci][si], share = n ? r / n : 0;
+          const cx = wide ? si : ci, cy = wide ? ci : si, x = lw + cw * cx, y = th + ch * cy;
+          const cell = Lab.svgEl('g', {});
+          if (share > 0) cell.append(Lab.svgEl('rect', { x: x + 1, y: y + 1, width: Math.max(1, cw - 2), height: ch - 2, rx: 3, fill: 'var(--accent)', 'fill-opacity': (0.12 + 0.88 * share).toFixed(3) }));
+          else cell.append(Lab.svgEl('rect', { x: x + 2, y: y + 2, width: Math.max(1, cw - 4), height: ch - 4, rx: 3, fill: 'transparent', stroke: 'var(--border-strong)', 'stroke-dasharray': '3 3' }));
+          if (share < 0.995) cell.append(Lab.svgEl('text', { x: x + cw / 2, y: y + ch / 2 + 4, 'text-anchor': 'middle', style: `font-size:11px;font-weight:600;fill:${share >= 0.85 ? 'var(--accent-ink)' : 'var(--ink)'}` }, String(Math.round(share * 100))));
+          Lab.tip.attach(cell, () => `<b>${esc(clubs[ci])} · ${esc(seasonLabel(S[si]))}</b>` +
+            `<div>${f.int(n)}경기 중 포메이션 기록 ${f.int(CV.formation[ci][si])}경기 (${pct(n ? CV.formation[ci][si] / n : 0, 0)})</div>` +
+            `<div>선발 11명 기록 ${f.int(CV.eleven[ci][si])}경기 (${pct(n ? CV.eleven[ci][si] / n : 0, 0)})</div>`);
+          g.append(cell);
+        }
+      }
+    },
+  });
+  function drawCovTable() {
+    const rec = CV[covMetric];
+    $('s1-cov-table').replaceChildren(table([{ label: '시즌' }, ...clubs.map((c) => ({ label: shortOf(c), num: true }))],
+      CV.seasons.map((s, si) => el('tr', {}, el('td', { text: seasonLabel(s) }),
+        clubs.map((c, ci) => el('td', { class: 'num', text: `${rec[ci][si]}/${CV.matches[ci][si]} (${pct(CV.matches[ci][si] ? rec[ci][si] / CV.matches[ci][si] : 0, 0)})` })))),
+      { caption: `구단·시즌별 ${COV_NAME[covMetric]} 기록 경기 수` }));
+  }
+  Lab.segmented($('s1-cov-seg'), [{ value: 'formation', label: '포메이션 기록' }, { value: 'eleven', label: '선발 11명 기록' }], covMetric,
+    (v) => { covMetric = v; covChart.redraw(); drawCovTable(); }, '보여 줄 기록');
+  drawCovTable();
+  $('s1-cov-key').append(
+    el('span', {}, '기록된 비율'),
+    el('span', { class: 's1-ramp', 'aria-hidden': 'true' }, el('em', { text: '낮음' }),
+      [0.1, 0.3, 0.55, 0.8, 1].map((v) => el('i', { style: `opacity:${(0.12 + 0.88 * v).toFixed(2)}` })), el('em', { text: '100%' })),
+    el('span', {}, el('i', { class: 's1-zero', 'aria-hidden': 'true' }), '0% (전혀 없음)'),
+    el('span', { text: '칸 안 숫자 = 100%가 아닌 칸의 비율(%)' }),
+    CV.short_seasons.length ? el('span', { text: CV.short_seasons.map((s) => `* ${seasonLabel(s.season)}: 구단마다 ${s.matches}경기만 있는 진행 중 시즌`).join(' · ') } ) : null);
+  const gapTxt = CV.gap_seasons.map(seasonLabel).join('·');
+  const partTxt = CV.partial_seasons.map((p) => `${seasonLabel(p.season)} 시즌은 ${pct(p.share, 0)}`).join(', ');
+  $('s1-cov-read').append(
+    para('이 그림 읽는 법', '가로줄은 구단, 세로줄은 시즌입니다(좁은 화면에서는 반대). 진할수록 기록이 많이 남아 있고, 100%가 아닌 칸에만 숫자를 적었습니다. 칸에 마우스를 올리면 경기 수가 나옵니다.'),
+    paraHtml('그래서?', esc(`포메이션은 ${gapTxt ? gapTxt + ' 시즌에 하나도 없고, ' : ''}${partTxt ? partTxt + '만 남아 있습니다. ' : ''}` +
+      `전체로는 구단 관점 행의 ${pct(CV.formation_share)}에만 포메이션이 있습니다. 빈 칸은 지어내지 않고 ‘기록 없음’`) + `(${Lab.term('결측치')})` +
+      esc(`으로 두며, 2단계에서 처리합니다. 선발 11명은 ${pct(CV.eleven_share)}로 거의 다 있습니다. `) +
+      esc(CV.short_seasons.map((s) => `${seasonLabel(s.season)} 시즌은 ${K.last_date}까지 구단마다 ${s.matches}경기만 열린 진행 중 시즌입니다.`).join(' '))));
+
+  // ================================================================ D1. raw table
+  const colBy = new Map(RAW.columns.map((c) => [c.name, c]));
+  $('s1-raw-meta').append(el('code', { text: RAW.path }), ` · ${f.int(RAW.n_rows)}행 × ${RAW.n_cols}열 · 한 행 = 실제 경기 하나`);
+  $('s1-raw-groups').append(...RAW.groups.map((g) => el('span', { class: 'chip', title: g.desc }, `${g.label} ${g.count}열`)));
+  $('s1-ex-title').textContent = `예시 경기: ${EX.date} ${EX.home_team} ${EX.home_goals}–${EX.away_goals} ${EX.away_team} (${seasonLabel(EX.season)})`;
+  $('s1-ex-note').textContent = `${EX.note}입니다. 6개 구단끼리 맞붙은 경기라, 아래 모델 표에서 두 줄이 되는 모습도 같은 경기로 보여 드립니다.`;
+  function showValue(v, name) {
+    if (v == null || v === '') return '–';
+    if (typeof v === 'boolean') return v ? '참' : '거짓';
+    if (typeof v === 'object') return `${v.total}명 (선발 ${v.starters} · 교체 명단 ${v.subs}, 그중 실제 출전 ${v.subs_used})`;
+    if (typeof v === 'number') {
+      if (/^market_(win|draw|loss)$/.test(name)) return `${fmtNum(v)} (${pct(v)})`;
+      return Number.isInteger(v) ? String(v) : fmtNum(v);
+    }
+    return String(v);
+  }
+  const labCell = (label, raw, flag) => el('td', { class: 's1-lab' }, label, el('span', { class: 's1-raw', text: raw }),
+    flag ? el('span', { class: 's1-flag', text: flag }) : null);
+  // Stats that were never recorded in some seasons but stored as 0 (computed in export_s1.zero_coded_stats).
+  const ZS = Q.structural || [], zBy = new Map(ZS.map((z) => [z.stat, z]));
+  const zSeasons = (z) => [...z.almost, ...z.partial.map((p) => p.season)];
+  const zRanges = (z) => z.almost_ranges.map(([a, b]) => (a === b ? seasonLabel(a) : `${seasonLabel(a)}~${seasonLabel(b)}`)).join(', ');
+  const zWhen = (z) => [zRanges(z), ...z.partial.map((p) => `${seasonLabel(p.season)}(${pct(p.share, 0)})`)].filter(Boolean).join(', ');
+  const zStatOf = (name) => { const mm = /^(?:team|opponent)_(.+?)_(?:\d+|coverage20)$/.exec(name); return mm && zBy.get(mm[1]); };
+  const singles = RAW.columns.filter((c) => !c.side);
+  const stems = [...new Set(RAW.columns.filter((c) => c.side).map((c) => c.stem))];
+  $('s1-ex').append(
+    el('div', { style: 'min-width:0' }, el('div', { class: 'scroll' }, table([{ label: '항목(한 칸짜리 열)' }, { label: '값' }],
+      singles.map((c) => el('tr', {}, labCell(c.label, c.name), el('td', { text: showValue(EX.values[c.name], c.name) }))),
+      { caption: '예시 경기의 경기 정보 열', cls: 's1-kv' })), $('s1-ex-players')),
+    el('div', { class: 'scroll' }, table([{ label: '항목(홈·원정 짝 열)' }, { label: `홈: ${EX.home_team}` }, { label: `원정: ${EX.away_team}` }],
+      stems.map((s) => {
+        const h = colBy.get('home_' + s), z = zBy.get(s);
+        const flag = z && zSeasons(z).includes(EX.season) ? `${seasonLabel(EX.season)} 시즌은 기록 없이 0으로 저장(실제 0 아님)` : null;
+        return el('tr', {}, labCell(h ? h.short : s, `home_/away_${s}`, flag),
+          el('td', { text: showValue(EX.values['home_' + s], 'home_' + s) }), el('td', { text: showValue(EX.values['away_' + s], 'away_' + s) }));
+      }),
+      { caption: '예시 경기의 양 팀 기록 열', cls: 's1-kv' })));
+  const sample = EX.values.home_players && EX.values.home_players.sample;
+  $('s1-ex-players').append(el('summary', { text: '선수 명단 열(JSON 글자) 안에는 무엇이 있나' }),
+    el('p', { class: 's1-small', text: '선수 한 명이 아래처럼 한 덩어리로 적혀 있습니다. id는 ESPN 선수 번호, starter는 선발 여부, position은 포지션, goals·assists·shots·sot는 그 경기 득점·도움·슈팅·유효슈팅, appearance는 출전 여부입니다. 선수 이름은 저장하지 않았습니다.' }),
+    el('pre', { class: 's1-pre', text: sample ? JSON.stringify(sample, null, 1) : '–' }));
+  const W = ZS[0], wInput = W ? catBy.get(`team_${W.stat}_5`) : null;
+  // Other zero-coded stats, grouped by the exact same set of seasons so no stat is claimed for a season it is fine in.
+  const zGroups = [];
+  ZS.slice(1).forEach((z) => {
+    const k = zSeasons(z).sort().join(','), hit = zGroups.find((x) => x.k === k);
+    if (hit) hit.labels.push(z.label); else zGroups.push({ k, labels: [z.label], seasons: zSeasons(z).sort() });
+  });
+  const almostTxt = `${pct(Q.structural_share, 0)} 이상`, halfTxt = Q.partial_share === 0.5 ? '절반 이상' : `${pct(Q.partial_share, 0)} 이상`;
+  $('s1-quality').append(el('div', { class: 'note' }, el('div', {},
+    el('b', { text: '0으로 저장된 빈 기록. ' }),
+    'ESPN에 없던 기록이 빈 칸이 아니라 0으로 저장된 곳이 있습니다. 두 가지 경우입니다.',
+    el('ul', { class: 's1-qlist' },
+      el('li', { text: `경기 하나의 팀 기록 전체가 0: Football-Data에는 실제 슈팅 수가 있는데 합친 표에서는 0이 된 경기가 ${f.int(Q.shots_zero_overwritten)}개` +
+        (Q.shots_zero_top_season ? `(가장 많은 시즌은 ${seasonLabel(Q.shots_zero_top_season)}, ${f.int(Q.shots_zero_top_count)}개)` : '') +
+        `이고, 양 팀 점유율이 모두 0%인(실제로는 불가능한) 경기가 ${f.int(Q.possession_both_zero)}개입니다` +
+        (Q.possession_zero_top_season ? `(${seasonLabel(Q.possession_zero_top_season)} 시즌은 ${f.int(Q.possession_zero_top_season_matches)}경기 중 ${f.int(Q.possession_zero_top_count)}경기).` : '.') }),
+      W ? el('li', { text: `한 항목이 여러 시즌 내내 0: ${W.label} 항목은 ${zRanges(W) || zWhen(W)} 시즌에 다른 팀 기록이 있는 경기에서도 ` +
+        `${W.almost.length ? `거의 모두(${almostTxt})` : `${halfTxt}`} 0이라, 그 시기에는 사실상 기록이 없습니다. ` +
+        `전체 경기의 ${pct(W.share_all)}가 양 팀 모두 0입니다.` +
+        zGroups.map((g) => ` ${g.labels.join('·')}도 ${g.seasons.map(seasonLabel).join('·')} 시즌에는 경기의 ${halfTxt}에서 0입니다.`).join('') +
+        (Q.unjudged_detail || []).map((u) => ` ${seasonLabel(u.season)} 시즌은 ${f.int(u.matches)}경기 중 ${f.int(u.box_zero)}경기가 위의 ‘팀 기록 전체가 0’인 경우라, 항목별로는 따로 따지지 않았습니다.`).join('') }) : null),
+    el('p', { text: '현재 파이프라인은 이 0을 실제 값으로 평균 냅니다. ' +
+      (W && wInput ? `그래서 모델 표에서 ‘${wInput.label}’ 값이 0인 줄이 ${pct(W.rows_zero_5)}이고, ` : '') +
+      (Q.worst_coverage_counts_zero ? '‘기록 확보 비율’ 입력도 이 0을 기록된 값으로 셉니다. ' : '') +
+      '아래 ‘시즌별로 보기’와 열 사전의 ‘0 비율’ 열에서 확인할 수 있습니다.' }))));
+  $('s1-zero-more').hidden = !ZS.length;
+  if (ZS.length) {
+    $('s1-zero-table').before(el('p', { class: 's1-small', text: `시즌 비율은 ESPN 팀 기록이 있는 경기(점유율이 0이 아닌 경기)만으로 계산했습니다. ` +
+      (Q.unjudged.length ? `그런 경기가 ${Q.min_box}경기 미만인 시즌(${Q.unjudged.map(seasonLabel).join(', ')})은 판단에서 뺐습니다.` : '') }));
+    $('s1-zero-table').append(table([{ label: '항목' }, { label: '0으로 저장된 시즌 (그 시즌 경기 중 0인 비율)' },
+      { label: '전체 경기 중 양 팀 0', num: true }, { label: '우리 팀 5경기 평균이 0인 줄', num: true }],
+      ZS.map((z) => el('tr', {}, labCell(z.label, `home_/away_${z.stat}`),
+        el('td', {}, [...z.almost_ranges.map(([a, c]) => `${a === c ? seasonLabel(a) : `${seasonLabel(a)}~${seasonLabel(c)}`} (${almostTxt})`),
+          ...z.partial.map((p) => `${seasonLabel(p.season)} (${pct(p.share, 0)})`)].flatMap((t, i) => (i ? [el('br'), t] : [t]))),
+        el('td', { class: 'num', text: pct(z.share_all) }), el('td', { class: 'num', text: z.rows_zero_5 == null ? '–' : pct(z.rows_zero_5) }))),
+      { caption: '0으로만 저장된 항목과 시즌', cls: 's1-zero-t' }));
+  }
+  $('s1-dict-title').textContent = `열 사전: ${RAW.n_cols}개 열 전체`;
+  const SRCN = RAW.sources;
+  const dictRows = [];
+  RAW.groups.forEach((g) => {
+    const cols = RAW.columns.filter((c) => c.group === g.key);
+    if (!cols.length) return;
+    dictRows.push(el('tr', { class: 's1-gh' }, el('th', { colspan: 7 }, `${g.label} · ${cols.length}열`, el('span', { text: g.desc }))));
+    cols.forEach((c) => dictRows.push(el('tr', {},
+      el('td', { text: c.label }), el('td', {}, el('code', { text: c.name })), el('td', { text: SRCN[c.source] || c.source }),
+      el('td', { text: c.type }), el('td', { class: 'num', text: c.missing ? pct(c.missing) : '0%' }),
+      el('td', { class: 'num', text: c.zero == null ? '–' : pct(c.zero) }),
+      el('td', { class: 'muted', text: c.desc + (c.side && zBy.has(c.stem) ? ` ※ ${zWhen(zBy.get(c.stem))} 시즌은 기록 없이 0으로 저장(위 주의 상자)` : '') }))));
+  });
+  $('s1-dict').append(table([{ label: '한국어 이름' }, { label: '열 이름' }, { label: '출처' }, { label: '형식' }, { label: '비어 있음', num: true }, { label: '0 비율', num: true }, { label: '설명' }],
+    dictRows, { caption: '원시 표 열 사전', cls: 's1-dict-t' }));
+
+  // ================================================================ D2. model table
+  const R = MOD.roles, extra = MOD.extra;
+  const labelOf = (n) => (catBy.get(n) || {}).label || (extra[n] || {}).label || n;
+  $('s1-model-meta').append(`${f.int(MOD.n_rows)}행 × ${MOD.n_cols}열 · 한 행 = 한 구단의 한 경기(구단 관점 행) · `,
+    nowrap(`${testFrom} 이전 ${f.int(K.train_rows)}행은 학습용`), ', ', nowrap(`이후 ${f.int(K.test_rows)}행은 처음 보는 경기(테스트)`),
+    K.refit_each_test_season ? '. 공식 테스트 점수는 테스트 시즌마다 그 직전 시즌까지 다시 학습한 모델로 냅니다(3단계).' : '');
+  const dt = Object.entries(MOD.dtypes).map(([k, v]) => `${k} ${v}`).join(' · ');
+  // What each non-input column is used for instead (export_s1.MODEL_EXTRA `use`).
+  const USE = { weight: `학습할 때 줄마다 무게를 정하는 데 씀(최근 경기일수록 무겁게, 맞대결 두 줄은 ${FL.derby_weight}씩). ${labelOf('fixture_weight')}는 점수를 매길 때도 씀`, split: '검증·테스트 기간을 시즌 단위로 나누는 데 씀',
+    key: '같은 경기의 두 줄을 묶는 열쇠', result: '정답을 만든 값이라 입력에서 뺌', compare: '시장 예측과 비교할 때만 씀' };
+  const byUse = (u) => R.other.filter((n) => extra[n] && extra[n].use === u).map(labelOf);
+  $('s1-model-roles').append(
+    el('li', { text: `입력 ${R.input_numeric + R.input_category}열: 숫자 ${R.input_numeric}개 + 이름 ${R.input_category}개. 모델이 보는 값은 이것뿐입니다.` }),
+    el('li', { text: `정답 ${R.target}열: outcome(${extra.outcome ? extra.outcome.desc : '0 = 패, 1 = 무, 2 = 승'})` }),
+    el('li', {}, `기타 ${R.other.length}열: 입력에는 넣지 않습니다.`,
+      el('ul', {}, Object.keys(USE).filter((u) => byUse(u).length).map((u) => el('li', {}, el('b', { text: byUse(u).join(' · ') }), ` — ${USE[u]}`)))),
+    el('li', { text: `열 형식: ${dt}` }));
+  const [HV, AV] = MOD.example;
+  $('s1-pair-title').textContent = `같은 경기, 두 줄: ${EX.home_team} 관점과 ${EX.away_team} 관점`;
+  $('s1-pair-note').textContent = `원시 표의 한 줄(${EX.date} ${EX.home_team} ${EX.home_goals}–${EX.away_goals} ${EX.away_team})이 모델 표에서는 두 줄이 됩니다. ‘우리 팀’ 자리에 각 구단이 한 번씩 들어갑니다.`;
+  // Relation codes are computed in export_s1.pair_relation (and tested there).
+  const REL = { swap: '서로 자리 바뀜', swap_same: '서로 자리 바뀜(두 값이 같음)', home_flip: '1↔0', outcome_flip: '승↔패 뒤집힘', draw_both: '둘 다 무',
+    neg: '부호만 반대', neg_zero: '부호만 반대(둘 다 0)', own: '각 팀 자기 값', own_same: '각 팀 자기 값(이 경기는 같음)', same: '두 줄이 같음(경기 정보)' };
+  const zeroCoded = new Set(MOD.zero_coded || []);
+  const relation = (n) => (REL[MOD.relation[n]] || '') + (zeroCoded.has(n) ? ' · 0은 기록 없던 시즌의 빈 값' : '');
+  function modelValue(v, n) {
+    if (v == null) return '– (비어 있음)';
+    if (n === 'outcome') return `${v} (${OUT_NAME[v]})`;
+    if (n === 'is_home') return `${v} (${v ? '홈' : '원정'})`;
+    if (typeof v === 'string') return v.replace('__missing__', '기록 없음');
+    return showValue(v, n);
+  }
+  let pairAll = false;
+  function drawPair() {
+    const names = pairAll ? MOD.columns : MOD.key_columns;
+    $('s1-pair').replaceChildren(table([{ label: '열' }, { label: `${HV.team} 줄 (홈)` }, { label: `${AV.team} 줄 (원정)` }, { label: '두 줄 비교' }],
+      names.map((n) => el('tr', {}, labCell(labelOf(n), n), el('td', { text: modelValue(HV[n], n) }), el('td', { text: modelValue(AV[n], n) }),
+        el('td', { class: 's1-rel', text: relation(n) }))), { caption: '같은 경기의 두 구단 관점 행 비교', cls: 's1-pair-t' }));
+    const t = $('s1-pair-toggle');
+    t.textContent = pairAll ? `주요 ${MOD.key_columns.length}개 열만 보기` : `${MOD.n_cols}개 열 모두 보기`;
+    t.setAttribute('aria-expanded', String(pairAll));
+  }
+  $('s1-pair-toggle').addEventListener('click', () => { pairAll = !pairAll; drawPair(); });
+  drawPair();
+  $('s1-pair-read').append(
+    paraHtml('그래서?', esc(`‘우리 팀’과 ‘상대 팀’ 자리가 바뀌고, 홈 여부는 1↔0, 결과는 승↔패, Elo 차이는 부호만 반대가 됩니다. ` +
+      `같은 경기를 두 번 배우는 셈이라 채점 가중치(fixture_weight)를 ${FL.derby_weight}씩 나눠 줍니다(한 팀만 뛴 경기는 한 줄, 가중치 1).`)),
+    para('헷갈리기 쉬운 점', '포메이션처럼 앞에 ‘우리 팀·상대 팀’이 붙지 않은 열은 줄마다 그 줄 구단의 값입니다.' +
+      (MOD.relation.formation === 'own_same' ? ' 이 경기는 두 팀의 선발 포메이션이 우연히 같았을 뿐, 경기 전체에 하나뿐인 값이 아닙니다.' : '')));
+
+  // ================================================================ E. target (outcome)
+  $('s1-target-def').append(`정답은 그 줄의 구단, 즉 ‘우리 팀’ 입장에서 본 결과입니다. 같은 경기라도 줄마다 정답이 다릅니다. 예를 들어 ${EX.date} ${EX.home_team} ${EX.home_goals}–${EX.away_goals} ${EX.away_team} 경기는 ` +
+    `${HV.team} 줄의 정답이 ‘${OUT_NAME[HV.outcome]}’, ${AV.team} 줄의 정답이 ‘${OUT_NAME[AV.outcome]}’입니다.`);
+  $('s1-target-chips').append(el('span', { class: 'chip loss', text: '0 = 패 (우리 팀이 짐)' }), el('span', { class: 'chip draw', text: '1 = 무 (비김)' }), el('span', { class: 'chip win', text: '2 = 승 (우리 팀이 이김)' }));
+  let ocView = 'all';
+  const VIEW = { all: '모든 경기', home: '홈 경기', away: '원정 경기' };
+  const ocCounts = (club) => { const c = OC.by_club[club]; return ocView === 'home' ? c.home : ocView === 'away' ? c.away : c.home.map((v, i) => v + c.away[i]); };
+  function ocRows() {
+    const items = clubs.map((c) => ({ label: shortOf(c), full: c, counts: ocCounts(c) }));
+    const total = [0, 1, 2].map((i) => items.reduce((s, it) => s + it.counts[i], 0));
+    return [{ label: '6개 구단 전체', full: '6개 구단 전체', counts: total, all: true }, ...items];
+  }
+  const ocChart = Lab.chart($('s1-oc-chart'), {
+    height: 7 * 44 + 34, margin: { t: 4, r: 0, b: 28, l: 0 }, label: '구단별 승·무·패 비율 누적 막대',
+    draw({ g, w, h }) {
+      const data = ocRows(), lw = w < 460 ? 96 : 124, rw = 62, pw = Math.max(80, w - lw - rw);
+      const inner = Lab.svgEl('g', { transform: `translate(${lw},0)` }); g.append(inner);
+      const x = Lab.scaleLinear([0, 1], [0, pw]);
+      Lab.axisBottom(inner, x, h, { ticks: [0, 0.25, 0.5, 0.75, 1], format: (v) => Math.round(v * 100) + '%', grid: true });
+      const band = h / data.length, bh = Math.min(22, band * 0.5);
+      data.forEach((r, i) => {
+        const n = r.counts[0] + r.counts[1] + r.counts[2], cy = i * band + band / 2;
+        const row = Lab.svgEl('g', { tabindex: 0, role: 'img', 'aria-label': `${r.full} ${VIEW[ocView]}: ` + OUT.map((o) => `${o.label} ${pct(r.counts[o.i] / n)}`).join(', ') + `, ${n}줄` });
+        row.append(Lab.svgEl('rect', { x: -lw, y: i * band, width: lw + pw + rw, height: band, fill: 'transparent' }));
+        row.append(Lab.svgEl('text', { x: -10, y: cy - 1, 'text-anchor': 'end', class: 'tick tick-strong' }, r.label));
+        row.append(Lab.svgEl('text', { x: -10, y: cy + 14, 'text-anchor': 'end', class: 'tick', style: 'font-size:11px' }, `n=${f.int(n)}`));
+        let acc = 0;
+        OUT.forEach((o, j) => {
+          const v = n ? r.counts[o.i] / n : 0, x0 = x(acc) + (j ? 1 : 0), x1 = x(acc + v) - (j < 2 ? 1 : 0);
+          row.append(Lab.svgEl('rect', { x: x0, y: cy - bh / 2, width: Math.max(0, x1 - x0), height: bh, rx: 3, fill: o.color }));
+          acc += v;
+        });
+        row.append(Lab.svgEl('text', { x: pw + 8, y: cy + 4, class: 'value-label' }, `승 ${pct(n ? r.counts[2] / n : 0, 0)}`));
+        Lab.tip.attach(row, () => `<b>${esc(r.full)} · ${VIEW[ocView]}</b>` + OUT.map((o) => `<div><i class="swatch" style="background:${o.color}"></i>${o.label} ${f.int(r.counts[o.i])}줄 (${pct(r.counts[o.i] / n)})</div>`).join('') + `<div>합계 ${f.int(n)}줄</div>`);
+        inner.append(row);
+        if (r.all) inner.append(Lab.svgEl('line', { x1: -lw, x2: pw + rw, y1: (i + 1) * band, y2: (i + 1) * band, class: 'axis-line' }));
+      });
+    },
+  });
+  function drawOcTable() {
+    $('s1-oc-table').replaceChildren(table([{ label: '구단' }, { label: '줄 수', num: true }, ...OUT.map((o) => ({ label: o.label, num: true }))],
+      ocRows().map((r) => { const n = r.counts[0] + r.counts[1] + r.counts[2]; return el('tr', {}, el('td', { text: r.full }), el('td', { class: 'num', text: f.int(n) }),
+        OUT.map((o) => el('td', { class: 'num', text: `${f.int(r.counts[o.i])} (${pct(n ? r.counts[o.i] / n : 0)})` }))); }),
+      { caption: `구단별 결과 분포 (${VIEW[ocView]})` }));
+  }
+  Lab.segmented($('s1-oc-seg'), [{ value: 'all', label: '모든 경기' }, { value: 'home', label: '홈' }, { value: 'away', label: '원정' }], ocView,
+    (v) => { ocView = v; ocChart.redraw(); drawOcTable(); }, '경기 장소');
+  $('s1-oc-legend').append(Lab.legend(OUT.map((o) => ({ label: o.label, color: o.color }))));
+  drawOcTable();
+  // weighted_share = fixture-weighted (a derby counts once), the same weighting as the test accuracy below.
+  const winShare = OC.row_share[2], allAcc = OC.weighted_share[2], testAcc = OC.always_win_test;
+  $('s1-oc-read').append(
+    para('이 그림 읽는 법', '막대 하나가 100%이고, 왼쪽부터 승(파랑)·무(청록)·패(주황)의 비율입니다. n은 줄 수입니다. 위의 버튼으로 홈 경기와 원정 경기만 따로 볼 수 있습니다.'),
+    paraHtml('그래서?', esc(`구단 관점 행 ${f.int(K.rows)}개 중 ${pct(winShare)}가 ‘우리 팀 승’입니다(홈 ${pct(OC.home_win)}, 원정 ${pct(OC.away_win)}). ` +
+      `강팀만 모았기 때문에, 전체 기간으로 보면 ‘항상 우리 팀이 이긴다’고만 찍어도 ${allAcc > 0.5 ? '절반 넘게' : `약 ${pct(allAcc, 0)}를`} 맞힙니다(채점할 때처럼 맞대결을 한 경기로 세면 ${pct(allAcc)}). ` +
+      `그래서 이 단순한 답이 모델이 꼭 넘어야 할 `) + Lab.term('기준 모델') + esc('이 됩니다.')),
+    paraHtml('다만', esc(`처음 보는 ${seasonLabel(OC.test_start)} 이후 경기(${f.int(OC.test_rows)}줄)에서는 ${testAcc < allAcc ? '이 구단들이 이긴 비율이 낮아져, ' : ''}같은 방법의 `) +
+      Lab.term('정확도') + esc(`가 ${pct(testAcc)}${testAcc < 0.5 ? '로 절반에 못 미쳤습니다' : '였습니다'}. 기간에 따라 기준선 자체가 움직인다는 뜻입니다.`)));
+
+  // ================================================================ F1. inputs by group
+  $('s1-inputs-title').append(`: 경기 전에 알 수 있는 값 ${f.int(IN.n_total)}개`);
+  const catNames = catalog.filter((e) => e.kind === 'category').map((e) => `${e.label}(${e.name})`).join(', ');
+  $('s1-inputs-comp').append(el('span', { html: esc(`숫자 ${IN.n_numeric}개 + 이름 ${IN.n_category}개 = ${IN.n_total}개입니다. 이름 입력은 ${catNames}입니다. 모델은 글자를 바로 쓰지 못하므로 2단계에서 `) +
+    Lab.term('원-핫 인코딩') + esc('으로 0/1 숫자 열로 바꿉니다.') }));
+  const maxCount = Math.max(...Object.values(IN.group_counts));
+  groups.forEach((gr) => {
+    const n = IN.group_counts[gr.key] || 0;
+    if (!n) return;
+    const members = catalog.filter((e) => e.group === gr.key);
+    $('s1-groups').append(el('details', { class: 's1-grp' },
+      el('summary', { 'aria-label': `${gr.label} ${n}개: ${gr.desc}` },
+        el('span', { class: 's1-grp-name', text: gr.label }), el('span', { class: 's1-grp-n', text: `${n}개` }),
+        el('span', { class: 's1-grp-bar', 'aria-hidden': 'true' }, el('i', { style: `width:${(n / maxCount * 100).toFixed(1)}%` })),
+        el('span', { class: 's1-grp-desc', text: gr.desc }), el('span', { class: 's1-chev', 'aria-hidden': 'true', text: '▼' })),
+      el('ul', { class: 's1-members' }, members.map((e) => el('li', {}, e.label, el('code', { text: e.name }))))));
+  });
+  // Window averages exclude the *_coverage20 "how much was recorded" shares (export_s1.inputs, tested).
+  const avgShare = IN.window_averages / IN.n_total;
+  $('s1-groups-read').append(
+    para('이 표 읽는 법', '막대 길이는 그 묶음에 든 입력의 개수입니다. 줄을 누르면 묶음에 든 입력 이름이 모두 펼쳐집니다.'),
+    para('그래서?', `입력의 ${pct(avgShare, 0)}(${IN.window_averages}개)는 최근 5·10·20경기 평균(또는 두 팀 평균의 차이)입니다. ` +
+      `최근 경기 묶음에는 이 밖에 평균이 아닌 ‘기록 확보 비율’(최근 20경기 중 그 기록이 남아 있던 경기의 비율) ${IN.window_coverage}개가 더 있습니다. ` +
+      '같은 기록(득점·슈팅 등)을 세 가지 길이의 기간으로 잰 것이라, 개수가 많다고 정보가 그만큼 많은 것은 아닙니다.'));
+
+  // ================================================================ F2. leakage
+  $('s1-leak-use').append(
+    el('li', { text: '그 경기 전까지 쌓인 기록: Elo, 최근 5·10·20경기 평균, 같은 장소(홈/원정) 성적. 날짜 순서대로 계산해서 같은 날 열린 다른 경기의 결과도 보지 않습니다.' }),
+    el('li', { text: '일정으로 이미 정해진 것: 홈/원정, 상대 팀, 휴식일, 최근 경기 밀도' }),
+    el('li', { text: '킥오프 전에 발표되는 것: 선발 11명 구성과 선발 포메이션. 다만 ESPN 기록에는 발표 시각이 없어, 경기 전에 알 수 있었다는 것을 시각으로 확인하지는 못했습니다.' }));
+  $('s1-leak-no').append(...IN.leakage.map((l) => el('li', {}, el('b', { text: l.what }), ` — ${l.why}`)));
+  const LE = IN.leak_example;
+  $('s1-leak-ex-title').textContent = `예시: ${LE.date} ${LE.team} 대 ${LE.opponent}, ${LE.team} 줄`;
+  $('s1-leak-ex').append(table([{ label: '항목' },{ label: '이 경기 기록 (입력 아님)', num: true }, { label: '경기 전 5경기 평균 (입력)', num: true }],
+    LE.items.map((it) => el('tr', {}, labCell(it.label, it.input), el('td', { class: 'num', text: fmtNum(it.same) }), el('td', { class: 'num', text: fmtNum(it.pre) }))),
+    { caption: '같은 경기 기록과 경기 전 입력의 비교', cls: 's1-leak-t' }));
+  const shot = LE.items.find((it) => it.stem === 'shots') || LE.items[0];
+  const notInput = (u) => IN.not_inputs.filter((n) => extra[n] && extra[n].use === u).map(labelOf);
+  const answer = IN.not_inputs.filter((n) => extra[n] && extra[n].role === 'target').map(labelOf);
+  $('s1-leak-read').append(
+    para('그래서?', `모델은 ${LE.team}이(가) 이 경기에서 ${shot.label} ${fmtNum(shot.same)}개를 기록했다는 사실을 모른 채, ‘경기 전 최근 5경기 평균 ${fmtNum(shot.pre)}개’만 보고 예측합니다.`),
+    para('입력이 아닌 열은?', `모델 표의 나머지 ${IN.not_inputs.length}열은 입력(모델이 보는 값)으로 쓰지 않습니다. ` +
+      (answer.length ? `${answer.join(', ')}은 모델이 맞히도록 배우는 답이고, ` : '') +
+      (notInput('weight').length ? `${notInput('weight').join('·')}는 학습할 때 줄마다 무게를 정하는 데 씁니다(오래된 경기는 가볍게, 맞대결 두 줄은 ${FL.derby_weight}씩). ` : '') +
+      '나머지 열의 쓰임새는 위 ‘모델 표’ 카드에 정리했고, 이 규칙은 자동 테스트로도 확인합니다.'));
+
+  // ================================================================ F3. searchable input table
+  $('s1-list-title').textContent = `입력 ${f.int(IN.n_total)}개 전체 목록`;
+  $('s1-list-sub').textContent = `검색하거나 묶음을 골라 좁혀 보세요. 열 제목을 누르면 정렬됩니다. ‘비어 있음’과 ‘대표값’은 구단 관점 행 ${f.int(K.rows)}개 전체 기준입니다.`;
+  const KIND = { category: '이름(글자)', binary: '0/1', count: '개수', rate: '숫자' };
+  const NO_UNIT = new Set(['', '0/1', '비율']);
+  function typical(e, s) {
+    if (!s) return { text: '–', sort: null };
+    if (e.kind === 'category') {
+      if (s.top == null) return { text: '–', sort: null };
+      const known = 1 - (s.miss || 0);
+      if (s.n > 1 && Math.abs(s.top_share * s.n / known - 1) < 0.02) return { text: `${s.n}종, 고르게`, sort: s.top_share };
+      return { text: `${String(s.top).replace('|', ' · ')} (${pct(s.top_share, 0)})`, sort: s.top_share, tip: `가장 흔한 값과 그 비율. 서로 다른 값은 모두 ${s.n}종` };
+    }
+    if (e.kind === 'binary') return { text: `1이 ${pct(s.one, 0)}`, sort: s.one, tip: '1(예)인 줄의 비율' };
+    const unit = NO_UNIT.has(e.unit) ? '' : e.unit;
+    return { text: `${fmtNum(s.q50)}${unit}`, sort: s.q50, tip: `가운데 80% 범위: ${fmtNum(s.q10)} ~ ${fmtNum(s.q90)}${unit}` };
+  }
+  // Inputs built from a stat that was stored as 0 when it was not recorded get a warning after their description.
+  function zeroNote(name) {
+    const z = zStatOf(name);
+    if (!z) return '';
+    if (name.endsWith('_coverage20')) return ` ※ ${z.label} 기록은 ${zWhen(z)} 시즌에 빈 칸 대신 0으로 저장되어, 기록이 없어도 ‘기록됨’으로 셉니다.`;
+    const share = z.inputs[name];
+    return ` ※ ${z.label} 기록은 ${zWhen(z)} 시즌에 빈 칸 대신 0으로 저장되어 있습니다(사실상 기록 없음).` +
+      (share != null ? ` 그래서 모델 표 줄의 ${pct(share)}에서 이 값이 0입니다.` : '');
+  }
+  const inputRows = catalog.map((e) => {
+    const s = IN.stats[e.name], t = typical(e, s), gr = groupBy.get(e.group), desc = e.desc + zeroNote(e.name);
+    return { label: e.label, name: e.name, group: gr ? gr.label : e.group, groupKey: e.group,
+      kind: KIND[e.kind] + (!NO_UNIT.has(e.unit) && e.kind !== 'category' ? ` · ${e.unit}` : ''),
+      miss: s ? s.miss : null, typ: t.sort, typText: t.text, typTip: t.tip || '', desc,
+      hay: `${e.label} ${e.name} ${gr ? gr.label : ''} ${desc}`.toLowerCase() };
+  });
+  const COLS = [
+    { key: 'label', label: '한국어 이름' },
+    { key: 'name', label: '열 이름', fmt: (v) => el('code', { class: 's1-code' }, v.split('_').flatMap((part, i) => (i ? ['_', el('wbr'), part] : [part]))) },
+    { key: 'group', label: '묶음' },
+    { key: 'kind', label: '종류·단위' },
+    { key: 'miss', label: '비어 있음', align: 'right', fmt: (v) => (v ? pct(v) : '0%') },
+    // Not sortable: medians in different units (Elo points, shares, counts) cannot be ranked against each other.
+    { key: 'typ', label: '대표값', align: 'right', sort: false, title: '숫자는 중앙값, 0/1은 1인 비율, 이름은 가장 흔한 값', fmt: (v, r) => el('span', { title: r.typTip || null, text: r.typText }) },
+    { key: 'desc', label: '설명', sort: false },
+  ];
+  let fGroup = '', fText = '', sortKey = null, sortDir = 1;
+  function drawInputs() {
+    // Keep the reader's sort across re-filtering: Lab.table owns the click state, so read it back from aria-sort.
+    const th = $('s1-input-table').querySelector('th[aria-sort]');
+    if (th) {
+      const col = COLS[[...th.parentNode.children].indexOf(th)];
+      if (col) { sortKey = col.key; sortDir = th.getAttribute('aria-sort') === 'descending' ? -1 : 1; }
+    }
+    const words = fText.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const rows = inputRows.filter((r) => (!fGroup || r.groupKey === fGroup) && words.every((w) => r.hay.includes(w)));
+    $('s1-count').textContent = `${f.int(IN.n_total)}개 중 ${f.int(rows.length)}개 표시`;
+    if (!rows.length) { $('s1-input-table').replaceChildren(el('p', { class: 'muted', text: '조건에 맞는 입력이 없습니다. 검색어를 줄여 보세요.' })); return; }
+    Lab.table($('s1-input-table'), COLS, rows, { maxHeight: 560, caption: '모델 입력 전체 목록', sortKey, sortDir });
+  }
+  const sel = Lab.select([{ value: '', label: `모든 묶음 (${IN.n_total})` }, ...groups.filter((g) => IN.group_counts[g.key]).map((g) => ({ value: g.key, label: `${g.label} (${IN.group_counts[g.key]})` }))],
+    '', (v) => { fGroup = v; drawInputs(); }, { id: 's1-grp-filter' });
+  $('s1-grp-select').append(sel);
+  $('s1-q').addEventListener('input', (e) => { fText = e.target.value; drawInputs(); });
+  drawInputs();
+
+  // ================================================================ G. what is missing
+  const L = D.limits;
+  [
+    ['부상·출전 정지', '누가 왜 빠졌는지에 대한 경기 전 기록이 없습니다. 선발 명단이 바뀐 것만 보입니다.'],
+    ['감독', '감독 교체나 전술 성향이 들어 있지 않습니다.'],
+    ['이적', '영입·방출이 직접 들어 있지 않고, 선발 명단의 변화로만 간접적으로 드러납니다.'],
+    ['선수 능력', '나이·시장가치·평점 같은 능력 지표가 없습니다. 선수 기록은 이 데이터에 모인 6개 구단 경기에서 관측한 득점·도움·슈팅뿐이라, 선수의 커리어 전체가 아닙니다.'],
+    ['날씨·경기장 상태', '날씨, 잔디 상태, 관중 같은 경기 환경 정보가 없습니다.'],
+    ['포메이션의 독립 검증', 'ESPN 한 곳의 표기만 있고 다른 출처와 대조하지 못했습니다. 경기 전에 발표된 시각도 기록되어 있지 않습니다.'],
+    ['옛 선수단과 지금 선수단', `${L.first_date}의 구단과 지금의 구단은 선수도 감독도 다릅니다. 그래서 학습할 때 오래된 경기의 무게를 줄입니다` +
+      (L.half_life_days ? `(${f.int(L.half_life_days)}일 전 경기는 무게가 절반).` : '.')],
+    ['기록 품질', `ESPN에 없던 기록이 빈 칸 대신 0으로 저장되어 있습니다. 팀 기록 전체가 0인 경기가 ${f.int(Q.possession_both_zero)}개(양 팀 점유율 0% 기준)이고` +
+      (W ? `, ${W.label} 항목은 ${zWhen(W)} 시즌에 사실상 기록이 없습니다` : '') +
+      '. 현재 모델은 이 0을 실제 값으로 씁니다(위 원시 표의 주의 상자 참고).'],
+  ].forEach(([t, d]) => $('s1-limits').append(el('li', {}, el('b', { text: t }), ` — ${d}`)));
+
+  Lab.nav(root, null, ['s2', '전처리']);
+});
+</script>

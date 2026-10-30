@@ -1,0 +1,1219 @@
+<style>
+.s3-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.s3-toc button{display:inline-flex;align-items:center;min-height:36px;padding:4px 12px;border:1px solid var(--border-strong);border-radius:99px;background:var(--surface);color:var(--ink);font-size:14px;cursor:pointer}
+.s3-toc button:hover{background:var(--surface-2)}
+.s3-toc b{color:var(--ink-2);font-weight:650;margin-right:6px}
+.s3-sec{margin:34px 0 4px;font-size:21px;scroll-margin-top:84px}
+.s3-sec:focus{outline:none}
+.s3-sec:focus-visible{outline:3px solid var(--s1);outline-offset:4px}
+#s3>.grid2{margin-bottom:var(--gap)}
+.s3-sec small{display:block;font-size:12px;letter-spacing:.12em;color:var(--ink-2);font-weight:600;margin-bottom:2px}
+.s3-intro{color:var(--ink-2);max-width:80ch;margin:2px 0 14px}
+.s3-explain{margin:10px 0 0;padding:10px 12px;border-radius:8px;background:var(--surface-2);font-size:14px;line-height:1.6}
+.s3-explain p{margin:.15em 0}
+.s3-explain b{font-weight:650}
+.s3-row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:4px 0 10px}
+.s3-match{font-weight:600}
+.s3-big{font-size:15px;margin:6px 0}
+.s3-small{font-size:13px;color:var(--ink-2)}
+.s3-num{font-variant-numeric:tabular-nums}
+.s3-mt{margin-top:var(--gap)}
+.s3-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:10px 0 4px}
+.s3-fact{padding:10px 12px;border:1px solid var(--border);border-radius:10px}
+.s3-fact b{display:block;font-size:20px;font-weight:650;line-height:1.2;font-variant-numeric:tabular-nums}
+.s3-fact span{font-size:13px;color:var(--ink-2)}
+/* tree */
+.s3-tree{margin:12px 0 2px}
+.s3-tree-row{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+.s3-node{border:1px solid var(--border);border-radius:10px;background:var(--surface);padding:8px 10px;font-size:13px;line-height:1.45;min-width:0;align-self:start}
+.s3-node.ask{border-color:var(--border-strong)}
+.s3-node.top{justify-self:center;width:min(100%,340px)}
+.s3-node .q{font-weight:650;color:var(--ink);overflow-wrap:anywhere}
+.s3-node .m{color:var(--ink-2);font-size:12.5px}
+.s3-node .more{color:var(--ink-3);font-size:12px}
+.s3-node:focus-visible{outline:3px solid var(--s1)}
+.s3-bar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin:6px 0 4px;background:var(--surface-2)}
+.s3-bar i{display:block;height:100%;min-width:0}
+.s3-bar i+i{border-left:2px solid var(--surface)}
+.s3-conn{display:block;width:100%;height:34px;overflow:visible}
+.s3-conn line{stroke:var(--axis);stroke-width:1.5}
+.s3-conn text{font-size:12px;fill:var(--ink-2);paint-order:stroke;stroke:var(--surface);stroke-width:5px;stroke-linejoin:round}
+.s3-outline{margin:8px 0 0;padding-left:0;list-style:none;font-size:14px}
+.s3-outline ul{list-style:none;padding-left:16px;margin:4px 0 4px 6px;border-left:2px solid var(--grid)}
+.s3-outline li{margin:6px 0}
+.s3-outline .ans{display:inline-block;min-width:44px;margin-right:6px;font-weight:650;color:var(--ink-2)}
+.s3-outline .s3-bar{max-width:220px}
+details.s3-alt{margin-top:10px}
+details.s3-alt summary{cursor:pointer;color:var(--ink-2);font-size:14px;min-height:36px;display:flex;align-items:center;gap:8px;list-style:none}
+details.s3-alt summary::-webkit-details-marker{display:none}
+details.s3-alt summary::before{content:"";flex:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 7px;border-color:transparent transparent transparent currentColor;transition:transform .15s}
+details.s3-alt[open] summary::before{transform:rotate(90deg)}
+@media (max-width:719px){.s3-tree{display:none}}
+/* small multiples */
+.s3-minis{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px 20px;margin-top:8px}
+.s3-mini{border-top:1px solid var(--border);padding-top:8px;min-width:0}
+.s3-mini h4{font-size:14px;margin:0}
+.s3-mini h4 code{font-weight:400;color:var(--ink-2);font-size:12px}
+.s3-mini p{font-size:13px;color:var(--ink-2);margin:2px 0 0;line-height:1.5}
+/* confusion matrix */
+table.s3-cm{border-collapse:separate;border-spacing:3px;font-size:14px;font-variant-numeric:tabular-nums}
+table.s3-cm th{font-weight:600;color:var(--ink-2);padding:6px 8px;text-align:center;white-space:nowrap}
+table.s3-cm th[scope=row]{text-align:right}
+table.s3-cm td{padding:8px 10px;text-align:center;border-radius:6px;min-width:76px;color:var(--ink)}
+table.s3-cm td b{display:block;font-size:17px}
+table.s3-cm td span{font-size:12px;color:var(--ink-2)}
+table.s3-cm td.tot{background:transparent;color:var(--ink-2)}
+.s3-verdict ul{margin:.3em 0;padding-left:1.2em}
+.s3-verdict li{margin:.35em 0}
+#s3-trials td,#s3-trials th,#s3-split-table td,#s3-cut-table td,#s3-cal-table td,#s3-score-table td.num{white-space:nowrap}
+#s3 .grid2>*,#s3 .grid3>*{min-width:0}
+</style>
+
+<div class="step-head">
+  <div class="eyebrow">3단계 · 모델 학습</div>
+  <h2>랜덤 포레스트를 키우고, 설정을 고르고, 정직하게 채점하기</h2>
+  <p class="lede">결정나무 여러 그루로 승·무·패 확률을 내는 모델을 만들고, 설정(하이퍼파라미터) 조합을 시간순 검증으로 비교해 하나를 고른 뒤, 한 번도 보지 않은 경기로 채점했습니다.</p>
+</div>
+<div class="takeaway"><b class="t">한 줄 결론</b><p id="s3-takeaway"></p></div>
+<!-- buttons, not #hash links: the shell reads the hash as a step id -->
+<ul class="s3-toc" aria-label="3단계 안의 목차">
+  <li><button type="button" data-jump="s3-b"><b>1</b>랜덤 포레스트가 뭔가요?</button></li>
+  <li><button type="button" data-jump="s3-c"><b>2</b>어떻게 평가했나</button></li>
+  <li><button type="button" data-jump="s3-d"><b>3</b>하이퍼파라미터 튜닝</button></li>
+  <li><button type="button" data-jump="s3-e"><b>4</b>결과</button></li>
+  <li><button type="button" data-jump="s3-f"><b>5</b>무엇을 보고 판단했나</button></li>
+  <li><button type="button" data-jump="s3-g"><b>6</b>정리</button></li>
+</ul>
+
+<!-- ============================================================ B -->
+<h3 class="s3-sec" id="s3-b" tabindex="-1"><small>1 · 개념</small>랜덤 포레스트가 뭔가요?</h3>
+<p class="s3-intro" id="s3-b-intro"></p>
+<div class="card">
+  <h3>진짜 나무 한 그루 들여다보기</h3>
+  <p class="sub" id="s3-tree-sub"></p>
+  <div class="legend" id="s3-tree-legend"></div>
+  <div class="s3-tree" id="s3-tree" role="group" aria-label="결정나무 1번의 위쪽 단계"></div>
+  <details class="s3-alt" id="s3-tree-alt"><summary>나무를 글(목록)로 보기</summary><ul class="s3-outline" id="s3-tree-outline"></ul></details>
+  <div id="s3-tree-explain"></div>
+</div>
+<div class="card">
+  <h3 id="s3-vote-title">나무들의 투표: 실제 경기 하나로 보기</h3>
+  <p class="sub" id="s3-vote-sub"></p>
+  <div class="s3-row" id="s3-vote-pick"></div>
+  <p class="s3-match" id="s3-vote-match"></p>
+  <div id="s3-vote-chart"></div>
+  <div class="legend" id="s3-vote-legend"></div>
+  <p class="s3-big" id="s3-vote-answer"></p>
+  <div id="s3-vote-explain"></div>
+</div>
+<div class="card">
+  <h3>왜 한 그루보다 여러 그루의 평균이 나을까?</h3>
+  <p class="sub" id="s3-solo-sub"></p>
+  <div class="grid2">
+    <div><h4>나무 한 그루씩의 정확도</h4><div id="s3-solo-acc"></div></div>
+    <div><h4>나무 한 그루씩의 로그손실</h4><div id="s3-solo-ll"></div></div>
+  </div>
+  <div id="s3-solo-explain"></div>
+</div>
+
+<!-- ============================================================ C -->
+<h3 class="s3-sec" id="s3-c" tabindex="-1"><small>2 · 평가 방법</small>어떻게 평가했나</h3>
+<p class="s3-intro" id="s3-c-intro"></p>
+<div class="card">
+  <h3>시간 순서대로 나눈 학습·검증·테스트</h3>
+  <p class="sub">각 줄은 모델을 한 번 학습하고 채점한 실험입니다. 언제나 <b>점검하는 시즌보다 앞선 시즌</b>으로만 학습했습니다.</p>
+  <div class="legend" id="s3-split-legend"></div>
+  <div id="s3-split-chart"></div>
+  <div id="s3-split-table" class="s3-mt"></div>
+  <div id="s3-split-explain"></div>
+</div>
+<div class="grid2">
+  <div class="card">
+    <h3>왜 무작위로 섞어 나누지 않았나</h3>
+    <p>보통은 데이터를 무작위로 섞어 80%로 배우고 20%로 시험합니다. 하지만 경기 기록은 시간이 흐르며 쌓입니다. 섞어 버리면 2024년 경기로 배운 모델이 2019년 경기를 “예측”하는 일이 생기고, 그때는 알 수 없던 미래 정보가 몰래 섞입니다(<span data-g="누수">누수</span>). 그러면 점수가 실제보다 좋게 나옵니다.</p>
+    <p>그래서 실제로 예측하는 상황과 똑같이, <span data-g="시간순 검증">시간순 검증</span>으로 “지난 시즌까지 배우고 다음 시즌을 맞히는” 방식만 썼습니다.</p>
+  </div>
+  <div class="card">
+    <h3>‘처음 보는 경기(테스트)’의 정확한 뜻</h3>
+    <div id="s3-holdout"></div>
+    <p class="muted" id="s3-weights"></p>
+  </div>
+</div>
+<div class="card">
+  <h3>점수 세 가지: 정확도·로그손실·Brier 점수</h3>
+  <p class="sub">세 점수 모두 “실제 결과”와 “모델이 경기 전에 낸 확률”을 비교합니다. 아래 두 줄은 테스트 기간의 실제 경기와 선택 모델의 실제 예측입니다.</p>
+  <div id="s3-metric-table"></div>
+  <div class="grid3 s3-mt" id="s3-metric-cards"></div>
+  <h4 class="s3-mt">로그손실은 “실제 결과에 준 확률”이 낮을수록 가파르게 커집니다</h4>
+  <div id="s3-metric-curve"></div>
+  <div id="s3-metric-explain"></div>
+</div>
+
+<!-- ============================================================ D -->
+<h3 class="s3-sec" id="s3-d" tabindex="-1"><small>3 · 튜닝</small>하이퍼파라미터 튜닝</h3>
+<p class="s3-intro" id="s3-d-intro"></p>
+<div class="card">
+  <h3 id="s3-hp-title">찾아본 설정</h3>
+  <p class="sub" id="s3-hp-sub"></p>
+  <div id="s3-hp-table"></div>
+</div>
+<div class="card">
+  <div class="s3-row"><h3 style="margin:0" id="s3-rank-title">설정별 검증 성적</h3><div id="s3-variant"></div></div>
+  <p class="sub" id="s3-rank-sub"></p>
+  <div class="legend" id="s3-rank-legend"></div>
+  <div id="s3-rank-chart"></div>
+  <div id="s3-rank-explain"></div>
+</div>
+<div class="card">
+  <div class="s3-row"><h3 style="margin:0">설정 하나씩 떼어 보기</h3><div id="s3-mini-filter"></div></div>
+  <p class="sub" id="s3-mini-sub"></p>
+  <div class="legend" id="s3-mini-legend"></div>
+  <div class="s3-minis" id="s3-minis"></div>
+  <div id="s3-mini-explain"></div>
+</div>
+<div class="card">
+  <h3>과적합: 학습한 경기만 너무 잘 맞히는 문제</h3>
+  <p class="sub" id="s3-overfit-sub"></p>
+  <div class="legend" id="s3-overfit-legend"></div>
+  <div id="s3-overfit-chart"></div>
+  <div id="s3-overfit-explain"></div>
+</div>
+<div class="grid2">
+  <div class="card">
+    <h3>다른 종류의 모델과 비교</h3>
+    <p class="sub" id="s3-family-sub"></p>
+    <div class="legend" id="s3-family-legend"></div>
+    <div id="s3-family-chart"></div>
+    <div id="s3-family-explain"></div>
+  </div>
+  <div class="card">
+    <h3>포메이션 입력을 넣고 뺀 튜닝</h3>
+    <p class="sub" id="s3-pair-sub"></p>
+    <div class="legend" id="s3-pair-legend"></div>
+    <div id="s3-pair-chart"></div>
+    <div id="s3-pair-explain"></div>
+  </div>
+</div>
+<div class="card">
+  <h3>모든 시도 표</h3>
+  <p class="sub" id="s3-trials-sub"></p>
+  <div id="s3-trials"></div>
+</div>
+
+<!-- ============================================================ E -->
+<h3 class="s3-sec" id="s3-e" tabindex="-1"><small>4 · 결과</small>처음 보는 경기에서의 결과</h3>
+<p class="s3-intro" id="s3-e-intro"></p>
+<div class="card">
+  <h3>기준 모델들과 나란히 채점</h3>
+  <p class="sub" id="s3-score-sub"></p>
+  <div id="s3-score-table"></div>
+  <div class="grid2 s3-mt">
+    <div><h4>정확도(높을수록 좋음)</h4><div id="s3-score-acc"></div></div>
+    <div><h4>로그손실(낮을수록 좋음)</h4><div id="s3-score-ll"></div></div>
+  </div>
+  <div id="s3-score-explain"></div>
+</div>
+<div class="card">
+  <h3>그 차이, 우연일 수도 있을까? (95% 신뢰구간)</h3>
+  <p class="sub" id="s3-ci-sub"></p>
+  <div class="legend" id="s3-ci-legend"></div>
+  <div class="grid2">
+    <div><h4>정확도 차이</h4><div id="s3-ci-acc"></div></div>
+    <div><h4>로그손실 개선(양수 = 앞쪽 모델이 나음)</h4><div id="s3-ci-ll"></div></div>
+  </div>
+  <ul class="clean s3-mt" id="s3-ci-list"></ul>
+  <div id="s3-ci-explain"></div>
+</div>
+<div class="card">
+  <h3>검증 때보다 왜 낮아졌나</h3>
+  <p class="sub" id="s3-gap-sub"></p>
+  <div class="legend" id="s3-gap-legend"></div>
+  <div id="s3-gap-chart"></div>
+  <div id="s3-gap-explain"></div>
+</div>
+<div class="card">
+  <div class="s3-row"><h3 style="margin:0">시즌별 · 구단별 결과</h3><div id="s3-cut-pick"></div></div>
+  <p class="sub" id="s3-cut-sub"></p>
+  <div class="legend" id="s3-cut-legend"></div>
+  <div id="s3-cut-chart"></div>
+  <div id="s3-cut-table" class="s3-mt"></div>
+  <div id="s3-cut-explain"></div>
+</div>
+<div class="card">
+  <div class="s3-row"><h3 style="margin:0">무엇을 맞히고 무엇을 놓쳤나</h3><div id="s3-cm-pick"></div></div>
+  <p class="sub" id="s3-cm-sub"></p>
+  <div class="grid2">
+    <div><div class="scroll" id="s3-cm"></div></div>
+    <div id="s3-cm-class"></div>
+  </div>
+  <div id="s3-cm-explain"></div>
+</div>
+<div class="card">
+  <h3>“승 60%”라고 하면 정말 60% 이겼나 (<span data-g="보정(캘리브레이션)">보정</span>)</h3>
+  <p class="sub" id="s3-cal-sub"></p>
+  <div class="legend" id="s3-cal-legend"></div>
+  <div id="s3-cal-chart"></div>
+  <details class="s3-alt"><summary>구간별 숫자 표로 보기</summary><div id="s3-cal-table"></div></details>
+  <div id="s3-cal-explain"></div>
+</div>
+
+<!-- ============================================================ F -->
+<h3 class="s3-sec" id="s3-f" tabindex="-1"><small>5 · 근거</small>무엇을 보고 판단했나</h3>
+<p class="s3-intro" id="s3-f-intro"></p>
+<div class="card">
+  <h3>뒤섞으면 예측이 나빠지는 입력 (순열 중요도)</h3>
+  <p class="sub" id="s3-perm-sub"></p>
+  <div id="s3-perm-chart"></div>
+  <div class="s3-row"><button class="btn" type="button" id="s3-perm-more" aria-expanded="false" aria-controls="s3-perm-chart"></button></div>
+  <div id="s3-perm-explain"></div>
+</div>
+<div class="card">
+  <h3>입력 묶음별로 합친 중요도 (다른 방법: 불순도 감소)</h3>
+  <p class="sub" id="s3-group-sub"></p>
+  <div id="s3-group-chart"></div>
+  <div id="s3-group-explain"></div>
+</div>
+
+<!-- ============================================================ G -->
+<h3 class="s3-sec" id="s3-g" tabindex="-1"><small>6 · 정리</small>이 모델로 할 수 있는 것과 없는 것</h3>
+<div class="grid2 s3-verdict">
+  <div class="card"><h3>할 수 있는 것</h3><ul id="s3-can"></ul></div>
+  <div class="card"><h3>할 수 없는 것</h3><ul id="s3-cannot"></ul></div>
+</div>
+<p class="muted" id="s3-next"></p>
+
+<script>
+Lab.register('s3', function (root, data, LAB) {
+  'use strict';
+  const E = Lab.el, S = Lab.svgEl, f = Lab.fmt;
+  const $ = (id) => root.querySelector('#' + id);
+  if (!data) { root.append(E('div', { class: 'note' }, '3단계 데이터가 없습니다.')); return; }
+  const H = data.headline, T = data.tuning, R = data.results, V = data.vote;
+
+  // ---------------------------------------------------------------- shared helpers
+  const CLUB_SHORT = {}; (LAB.meta.clubs || []).forEach((c, i) => { CLUB_SHORT[c] = LAB.meta.clubs_short[i]; });
+  const club = (n) => CLUB_SHORT[n] || n;
+  const seasonShort = (s) => s.slice(0, 4) + '/' + s.slice(7, 9);
+  const OUT_LABEL = ['패', '무', '승'];
+  const OUTS = [{ code: 2, key: 'win', label: '승', color: 'var(--c-win)' }, { code: 1, key: 'draw', label: '무', color: 'var(--c-draw)' }, { code: 0, key: 'loss', label: '패', color: 'var(--c-loss)' }];
+  const pct = (x, d = 1) => f.pct(x, d);
+  const num = (x, d = 3) => f.num(x, d);
+  const pp = (x, d = 1) => (x >= 0 ? '+' : '−') + Math.abs(x * 100).toFixed(d) + '%p';
+  const sgn = (x, d = 3) => f.signed(x, d);
+  const esc = Lab.esc;
+  const median = (a) => { const s = [...a].sort((x, y) => x - y); return Lab.quantile(s, 0.5); };
+  // Models are drawn in the UI accent (our Random Forest) and ink tones + filled/hollow shapes (everything else), never
+  // in a categorical slot: --s1..--s7 belong to the clubs (and outcomes) across all steps, and a coloured dot in the
+  // per-club view would read as that club.
+  const C_MAIN = 'var(--accent)', C_SIDE = 'var(--ink-3)', C_FORM = 'var(--ink)';
+  const MODEL = {
+    selected_with_formation: { short: '선택 모델(튜닝 RF)', color: C_MAIN },
+    elo_logistic: { short: 'Elo 로지스틱', color: C_SIDE },
+    untuned_rf: { short: '튜닝 전 RF', color: C_MAIN, hollow: true },
+    same_spec_without_formation: { short: '포메이션 입력 제외', color: C_MAIN, hollow: true },
+    team_venue_prior: { short: '구단·장소별 과거 비율', color: C_SIDE },
+    always_team_win: { short: '항상 ‘승’', color: C_SIDE, hollow: true },
+    uniform_random: { short: '무작위(1/3씩)', color: C_SIDE, hollow: true },
+  };
+  const FAM = { rf: { label: '랜덤 포레스트', color: C_MAIN }, logistic: { label: '로지스틱 회귀(전체 입력)', color: C_SIDE }, hgb: { label: '그래디언트 부스팅', color: C_SIDE, hollow: true } };
+  const famLegend = () => Lab.legend(Object.values(FAM).map((x) => ({ label: x.label + (x.hollow ? '(속 빈 점)' : ''), color: x.color })));
+  const OBJ = { 2: '을', 1: '를', 0: '를' };                 // 승을 / 무를 / 패를
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  // in-step table of contents: scroll without touching location.hash (the shell treats the hash as a step id)
+  root.querySelectorAll('.s3-toc [data-jump]').forEach((b) => b.addEventListener('click', () => {
+    const target = $(b.dataset.jump); if (!target) return;
+    target.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+    target.focus({ preventScroll: true });
+  }));
+  function explain(read, so) {
+    const box = E('div', { class: 's3-explain' });
+    box.append(E('p', {}, E('b', { text: '이 그림 읽는 법 ' }), read));
+    if (so) { const p = E('p', {}, E('b', { text: '그래서? ' })); p.append(so.nodeType ? so : document.createTextNode(so)); box.append(p); }
+    return box;
+  }
+  function put(id, node) { const host = $(id); Lab.clear(host); host.append(node); return host; }
+  function matchText(m) { return `${m.date} · ${club(m.team)}(${m.home ? '홈' : '원정'}) vs ${club(m.opponent)} · ${m.gf}-${m.ga} ${OUT_LABEL[m.outcome]}`; }
+  // test seasons still being played (from split.tests[].in_progress / last_date)
+  const TEST_INFO = Object.fromEntries(data.split.tests.map((t) => [t.season, t]));
+  const inProgress = (s) => !!(TEST_INFO[s] && TEST_INFO[s].in_progress);
+  const untilText = (s) => { const d = TEST_INFO[s].last_date; return `${d.slice(0, 4)}년 ${+d.slice(5, 7)}월 ${+d.slice(8, 10)}일까지`; };
+  const seasonTag = (s) => seasonShort(s) + (inProgress(s) ? '(진행 중)' : '');
+  const partialTests = data.split.tests.filter((t) => t.in_progress);
+  const partialNote = partialTests.length
+    ? partialTests.map((t) => `${seasonShort(t.season)} 시즌은 아직 진행 중이라 ${untilText(t.season)}의 ${f.int(t.rows)}행(${f.int(t.matches)}경기)뿐입니다`).join(', ')
+    : '';
+  function shareBar(share) {     // share = [loss, draw, win]
+    const bar = E('div', { class: 's3-bar', 'aria-hidden': 'true' });
+    for (const o of OUTS) bar.append(E('i', { style: `width:${(share[o.code] * 100).toFixed(1)}%;background:${o.color}` }));
+    return bar;
+  }
+  const shareText = (share) => OUTS.map((o) => `${o.label} ${pct(share[o.code], 0)}`).join(' · ');
+  const hpLabel = (name) => T.text[name].label;
+  // nCols = input columns of the variant being shown (with / without formation inputs)
+  function hpValue(name, v, nCols = T.variants.with.n_columns) {
+    if (v === null || v === undefined) return name === 'max_depth' ? '제한 없음' : '끔';
+    if (name === 'max_features') return v === 'sqrt' ? `√열 수(${Math.max(1, Math.floor(Math.sqrt(nCols)))}개)` : `${pct(v, 0)}(${Math.max(1, Math.floor(v * nCols))}개)`;
+    if (name === 'max_samples') return pct(v, 0);
+    if (name === 'class_weight') return v === 'balanced_subsample' ? '켬(무승부 가중)' : String(v);
+    return String(v);
+  }
+  // numeric sort key for a hyper-parameter value: √n → its share of the columns, 'no limit' → very deep,
+  // switches / categories → their position in the search space
+  function hpSortKey(name, v, nCols) {
+    if (name === 'max_features' && v === 'sqrt') return Math.max(1, Math.floor(Math.sqrt(nCols))) / nCols;
+    if (typeof v === 'number') return v;
+    if (v == null && name === 'max_depth') return 1e6;
+    return T.space[name].findIndex((s) => String(s) === String(v));
+  }
+  function hpShort(name, v) {
+    if (v === null || v === undefined) return name === 'max_depth' ? '없음' : '끔';
+    if (name === 'max_features') return v === 'sqrt' ? '√n' : pct(v, 0);
+    if (name === 'max_samples') return pct(v, 0);
+    if (name === 'class_weight') return v === 'balanced_subsample' ? '켬' : String(v);
+    return String(v);
+  }
+  // Rows of dots on a shared x axis: rows=[{label, points:[{x,color,hollow,r,tip,label}], empty?}]
+  function dotRows(container, rows, { domain, format = (v) => num(v, 3), xLabel = '', refs = [], rowH = 36, labelW = 170, ariaLabel = '', ticks, padR = 22 } = {}) {
+    const topPad = refs.some((ref) => ref.label) ? 22 : 6;
+    return Lab.chart(container, {
+      height: rows.length * rowH + 40 + topPad, margin: { t: topPad, r: padR, b: 40, l: 8 }, label: ariaLabel,
+      draw({ g, w, h }) {
+        const lw = Math.min(labelW, Math.round(w * 0.42)), pw = w - lw;
+        const x = Lab.scaleLinear(domain, [lw, lw + pw]);
+        const tv = ticks || Lab.ticks(domain[0], domain[1], pw < 260 ? 4 : 5);
+        for (const t of tv) { g.append(S('line', { x1: x(t), x2: x(t), y1: 0, y2: h, class: 'grid-line' })); g.append(S('text', { x: x(t), y: h + 17, 'text-anchor': 'middle', class: 'tick' }, format(t))); }
+        g.append(S('line', { x1: lw, x2: lw + pw, y1: h, y2: h, class: 'axis-line' }));
+        if (xLabel) g.append(S('text', { x: lw + pw / 2, y: h + 33, 'text-anchor': 'middle', class: 'axis-label' }, xLabel));
+        for (const ref of refs) {
+          if (ref.x < domain[0] || ref.x > domain[1]) continue;
+          g.append(S('line', { x1: x(ref.x), x2: x(ref.x), y1: ref.label ? -6 : -2, y2: h, stroke: ref.color || 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': ref.dash || '4 4' }));
+        }
+        const band = h / rows.length;
+        rows.forEach((row, i) => {
+          const cy = i * band + band / 2, grp = S('g', { tabindex: 0, role: 'img', 'aria-label': row.aria || row.label });
+          grp.append(S('text', { x: lw - 10, y: cy + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, row.label));
+          grp.append(S('line', { x1: lw, x2: lw + pw, y1: cy, y2: cy, stroke: 'var(--grid)', 'stroke-width': 1 }));
+          if (row.empty) grp.append(S('text', { x: lw + 8, y: cy + 4, class: 'tick' }, row.empty));
+          for (const p of row.points || []) {
+            if (p.lo != null) grp.append(S('line', { x1: x(p.lo), x2: x(p.hi), y1: cy, y2: cy, stroke: p.color, 'stroke-width': 2.5, 'stroke-linecap': 'round' }));
+            grp.append(S('circle', { cx: x(p.x), cy, r: p.r || 5.5, fill: p.hollow ? 'var(--surface)' : p.color, stroke: p.hollow ? p.color : 'var(--surface)', 'stroke-width': 2, opacity: p.opacity || null }));
+            if (p.label) {
+              const t = S('text', { x: x(p.x) + (p.labelLeft ? -10 : 10), y: cy - 9, 'text-anchor': p.labelLeft ? 'end' : 'start', class: 'value-label' }, p.label);
+              grp.append(t);
+              // a right-hand label that would run past the chart's right edge flips to the left of its dot
+              if (!p.labelLeft) {
+                let len = 0; try { len = t.getComputedTextLength(); } catch (err) { len = 0; }
+                if (len && x(p.x) + 10 + len > lw + pw + padR - 4) { t.setAttribute('x', x(p.x) - 10); t.setAttribute('text-anchor', 'end'); }
+              }
+            }
+          }
+          grp.append(S('rect', { x: 0, y: i * band, width: w, height: band, fill: 'transparent' }));
+          if (row.tip) Lab.tip.attach(grp, () => row.tip);
+          g.append(grp);
+        });
+        for (const ref of refs) if (ref.label && ref.x >= domain[0] && ref.x <= domain[1]) {
+          g.append(S('text', { x: x(ref.x) + (ref.left ? -6 : 6), y: -8, 'text-anchor': ref.left ? 'end' : 'start', class: 'tick' }, ref.label));
+        }
+      },
+    });
+  }
+  // Histogram with one marked value (e.g. the forest's score among all its single trees)
+  // Values above domain[1] are collected in the last bin (its tooltip says so; callers mention it in the axis label).
+  function histMark(container, values, { domain, bins = 24, color = C_SIDE, mark, markLabel, format, xLabel, unitLabel = '그루', ariaLabel = '' }) {
+    const [lo, hi] = domain, step = (hi - lo) / bins, counts = new Array(bins).fill(0);
+    let over = 0;
+    for (const v of values) if (Number.isFinite(v)) { if (v > hi) over++; counts[Math.max(0, Math.min(bins - 1, Math.floor((v - lo) / step)))]++; }
+    return Lab.chart(container, {
+      height: 210, margin: { t: 26, r: 18, b: 40, l: 40 }, label: ariaLabel,
+      draw({ g, w, h }) {
+        const x = Lab.scaleLinear(domain, [0, w]), top = Math.max(...counts, 1), y = Lab.scaleLinear([0, top * 1.1], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: (v) => f.int(v) });
+        Lab.axisBottom(g, x, h, { format, label: xLabel, ticks: Lab.ticks(lo, hi, w < 300 ? 4 : 6) });
+        counts.forEach((c, i) => {
+          if (!c) return;
+          const r = S('rect', { x: x(lo + i * step) + 1, y: y(c), width: Math.max(1, x(lo + step) - x(lo) - 2), height: h - y(c), fill: color, rx: 2 });
+          g.append(r);
+        });
+        if (mark != null) {
+          const mx = x(Math.max(lo, Math.min(hi, mark)));
+          g.append(S('line', { x1: mx, x2: mx, y1: -14, y2: h, stroke: 'var(--ink)', 'stroke-width': 2 }));
+          g.append(S('text', { x: mx + (mx > w * 0.6 ? -6 : 6), y: -4, 'text-anchor': mx > w * 0.6 ? 'end' : 'start', class: 'value-label' }, markLabel));
+        }
+        const hit = S('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' }); g.append(hit);
+        Lab.tip.attach(hit, (e) => {
+          const r = hit.getBoundingClientRect(), i = Math.max(0, Math.min(bins - 1, Math.floor((((e ? e.clientX : r.left) - r.left) / r.width) * bins)));
+          const range = over && i === bins - 1 ? `${format(lo + i * step)} 이상` : `${format(lo + i * step)} ~ ${format(lo + (i + 1) * step)}`;
+          return `<b>${esc(range)}</b><div>나무 ${counts[i]}${unitLabel}</div>${over && i === bins - 1 ? `<div>(${esc(format(hi))}보다 큰 ${over}${unitLabel} 포함)</div>` : ''}`;
+        });
+      },
+    });
+  }
+  const variantState = { v: 'with' };
+
+  // ================================================================ A. takeaway
+  const cmp = Object.fromEntries(R.comparisons.map((c) => [c.key, c]));
+  const llWorse = H.log_loss > H.elo_log_loss;
+  $('s3-takeaway').textContent =
+    `나무 ${f.int(H.n_trees)}그루짜리 랜덤 포레스트를 ${T.rf_trials}가지 설정으로 튜닝해 골랐고, 처음 보는 ${f.int(H.rows)}개 구단 경기에서 ${pct(H.accuracy)}를 맞혔습니다. ` +
+    `Elo 차이와 홈/원정만 쓰는 단순 모델(${pct(H.elo_accuracy)})과 ${cmp.selected_vs_elo.accuracy.includes_zero ? '사실상 같은 수준이며' : '차이가 있지만'}, 확률의 질(로그손실 ${num(H.log_loss, 3)} 대 ${num(H.elo_log_loss, 3)})은 ${llWorse ? '오히려 조금 나빴습니다' : '조금 나았습니다'}. ` +
+    `포메이션 입력은 ${cmp.formation_gain.log_loss.includes_zero ? '측정 가능한 도움을 주지 못했습니다' : '차이를 보였습니다'}.`;
+
+  // ================================================================ B1. one real tree
+  const TR = data.tree;
+  $('s3-b-intro').innerHTML =
+    `<span data-g="결정나무">결정나무</span>는 “예/아니오” 질문을 차례로 던져 경기를 작은 무리로 나누고, 마지막 무리(잎)에서 승·무·패가 몇 %였는지를 그 경기의 확률로 답합니다. ` +
+    `<span data-g="랜덤 포레스트">랜덤 포레스트</span>는 이런 나무를 ${f.int(TR.n_trees)}그루 키워 답을 평균합니다. 나무마다 학습 행을 조금씩 다르게 뽑고, 질문 후보도 조금씩 다르게 보기 때문에 나무끼리 서로 다른 실수를 합니다.`;
+  $('s3-tree-sub').textContent =
+    `${f.int(TR.n_trees)}그루 중 1번 나무의 위쪽 ${TR.shown_depth}단계입니다. 이 나무는 ${seasonShort(data.split.tests[0].train_last_season)} 시즌까지의 학습 행 ${f.int(TR.train_rows)}개에서 중복을 허용해 다시 뽑은 표본(서로 다른 행 ${f.int(TR.root_distinct_rows)}개)으로 자랐고, ` +
+    `질문마다 입력 열 ${f.int(TR.n_columns)}개 중 ${f.int(TR.candidates_per_question)}개만 후보로 봅니다. 실제로는 ${TR.depth}단계 깊이, 잎 ${TR.leaves}개까지 내려갑니다(${f.int(TR.n_trees)}그루 깊이 중앙값 ${TR.forest_depth_median}).`;
+  $('s3-tree').setAttribute('aria-label', `결정나무 1번의 위쪽 ${TR.shown_depth}단계`);
+  $('s3-tree-legend').append(...Lab.legend(OUTS.map((o) => ({ label: o.label, color: o.color }))).childNodes);
+  const nodes = Object.fromEntries(TR.nodes.map((n) => [n.id, n]));
+  const edgeWord = (parent, side) => ((parent.yes === side) ? '예' : '아니오');
+  function nodeTip(n) {
+    let html = `<b>${esc(n.question || (n.leaf ? '잎(마지막 칸)' : '아래로 질문이 이어지는 칸'))}</b><div>학습 행 ${f.int(n.n)}개(최근 경기일수록 무게를 더 줌)</div><div>${esc(shareText(n.share))}</div>`;
+    if (n.missing_note) html += `<div>이 값이 비어 있던 경기(학습 행의 ${pct(n.missing_note.share, 1)})는 중앙값 ${esc(n.missing_note.median_text)}으로 채워져 ‘${edgeWord(n, n.missing_note.goes)}’ 쪽으로 갑니다.</div>`;
+    return html;
+  }
+  function renderTree() {
+    const host = Lab.clear($('s3-tree'));
+    const maxDepth = Math.max(...TR.nodes.map((n) => n.id.length));
+    for (let d = 0; d <= maxDepth; d++) {
+      const level = TR.nodes.filter((n) => n.id.length === d);
+      if (d > 0) {
+        const svg = S('svg', { class: 's3-conn', 'aria-hidden': 'true' });
+        for (const n of level) {
+          const parent = nodes[n.id.slice(0, -1)], pi = parseInt(parent.id.replace(/L/g, '0').replace(/R/g, '1') || '0', 2), ci = parseInt(n.id.replace(/L/g, '0').replace(/R/g, '1'), 2);
+          const px = ((pi + 0.5) / 2 ** (d - 1)) * 100, cx = ((ci + 0.5) / 2 ** d) * 100;
+          svg.append(S('line', { x1: px + '%', y1: 0, x2: cx + '%', y2: 34 }));
+          svg.append(S('text', { x: ((px + cx) / 2) + '%', y: 21, 'text-anchor': 'middle' }, edgeWord(parent, n.id.endsWith('L') ? 'left' : 'right')));
+        }
+        host.append(svg);
+      }
+      const row = E('div', { class: 's3-tree-row' });
+      for (const n of level) {
+        const idx = parseInt(n.id.replace(/L/g, '0').replace(/R/g, '1') || '0', 2), span = 8 / 2 ** d;
+        const box = E('div', { class: 's3-node' + (n.question ? ' ask' : '') + (d < 2 ? ' top' : ''), tabindex: 0, style: `grid-column:${idx * span + 1} / span ${span}` });
+        if (n.question) box.append(E('div', { class: 'q', text: n.question }));
+        else box.append(E('div', { class: 'm', text: n.leaf ? '잎: 여기서 답을 냅니다' : '' }));
+        box.append(shareBar(n.share));
+        const top = OUTS.reduce((a, o) => (n.share[o.code] > n.share[a.code] ? o : a), OUTS[0]);
+        box.append(E('div', { class: 'm', text: n.question ? `${shareText(n.share)} · ${f.int(n.n)}행` : `${top.label} ${pct(n.share[top.code], 0)} · ${f.int(n.n)}행` }));
+        if (n.more) box.append(E('div', { class: 'more', text: '↓ 질문이 더 이어짐' }));
+        Lab.tip.attach(box, () => nodeTip(n));
+        row.append(box);
+      }
+      host.append(row);
+    }
+    // outline (text alternative; the main view on narrow screens)
+    const outline = Lab.clear($('s3-tree-outline'));
+    (function walk(id, ul, prefix) {
+      const n = nodes[id]; if (!n) return;
+      const li = E('li');
+      if (prefix) li.append(E('span', { class: 'ans', text: prefix + ' →' }));
+      li.append(E('span', { text: n.question ? n.question + ' ' : (n.leaf ? '잎(답) ' : '(아래로 계속) ') }), E('span', { class: 'muted', text: `${shareText(n.share)} · ${f.int(n.n)}행` }), shareBar(n.share));
+      ul.append(li);
+      if (n.question) {
+        const sub = E('ul'); li.append(sub);
+        walk(id + 'L', sub, edgeWord(n, 'left')); walk(id + 'R', sub, edgeWord(n, 'right'));
+      }
+    })('', outline, '');
+  }
+  renderTree();
+  {
+    // Below 720 px the CSS hides the diagram, so the outline becomes the main view: open it whenever we get there.
+    const narrow = matchMedia('(max-width: 719px)'), alt = $('s3-tree-alt');
+    const sync = () => { if (narrow.matches) alt.open = true; };
+    sync();
+    narrow.addEventListener('change', sync);
+  }
+  {
+    const ends = TR.nodes.filter((n) => !n.question);
+    const lowWin = ends.reduce((a, n) => (n.share[2] < a.share[2] ? n : a)), highWin = ends.reduce((a, n) => (n.share[2] > a.share[2] ? n : a));
+    const path = (n) => { const out = []; for (let k = 0; k < n.id.length; k++) { const p = nodes[n.id.slice(0, k)]; out.push(`${p.question.replace(/\?$/, '')} → ${edgeWord(p, n.id[k] === 'L' ? 'left' : 'right')}`); } return out.join(' / '); };
+    const rootN = nodes[''];
+    put('s3-tree-explain', explain(
+      `네모 하나가 경기 무리 하나입니다. 위 질문에 “예/아니오”로 답하며 아래로 내려가고, 막대는 그 무리의 승·무·패 비율입니다. 이 비율은 그냥 센 값이 아니라 최근 경기에 더 큰 무게를 주고(${f.int(data.split.half_life_days)}일마다 절반), 나무가 다시 뽑은 표본으로 잰 값입니다. 숫자는 원래 단위(점·골·회)로 되돌린 값입니다. 네모에 마우스를 올리거나 Tab으로 이동하면 자세히 나옵니다.`,
+      E('span', {}, `맨 위에서는 (무게를 준) 승이 ${pct(rootN.share[2], 0)}입니다. 질문 ${TR.shown_depth}개만 거쳐도 무리가 크게 갈립니다.`, E('br'),
+        `· 승이 가장 높은 칸(${pct(highWin.share[2], 0)}): ${path(highWin)}`, E('br'),
+        `· 승이 가장 낮은 칸(${pct(lowWin.share[2], 0)}): ${path(lowWin)}`, E('br'),
+        `이 나무가 가장 먼저 던진 질문은 “${rootN.label}”입니다. 나무 하나는 거칠지만, ${f.int(TR.n_trees)}그루를 모으면 답이 매끄러워집니다.`)));
+  }
+
+  // ================================================================ B2. vote
+  $('s3-vote-sub').textContent =
+    `${seasonShort(V.season)} 시즌(처음 보는 경기)의 실제 경기에서 ${f.int(TR.n_trees)}그루가 각자 낸 확률을 모았습니다. 이 예시 모델은 ${seasonShort(data.split.tests[0].train_last_season)} 시즌까지 학습한 것으로, ${seasonShort(V.season)} 시즌에는 공식 평가 모델과 똑같습니다.`;
+  const NT = f.int(TR.n_trees);
+  $('s3-vote-title').textContent = `${NT}그루의 투표: 실제 경기 하나로 보기`;
+  $('s3-vote-legend').append(...Lab.legend([...OUTS.map((o) => ({ label: `${o.label}: 나무별 확률`, color: o.color })), { label: `굵은 세로선: ${NT}그루 평균(숲의 답)`, color: 'var(--ink)' }]).childNodes);
+  const SHORT_TITLE = { split: '의견이 갈린 경기', sure: '자신 있게 맞힌 경기', upset: '크게 빗나간 경기', draw: '무승부 경기' };
+  function drawVote(ex) {
+    $('s3-vote-match').textContent = matchText(ex);
+    const bins = 20;
+    const rows = OUTS.map((o) => {
+      const vals = ex.trees[o.key], counts = new Array(bins).fill(0);
+      for (const v of vals) counts[Math.min(bins - 1, Math.floor(v * bins))]++;
+      const sorted = [...vals].sort((a, b) => a - b);
+      return { o, counts, mean: ex.forest[o.code], t0: ex.tree0[o.code], p10: Lab.quantile(sorted, 0.1), p90: Lab.quantile(sorted, 0.9) };
+    });
+    Lab.chart($('s3-vote-chart'), {
+      height: 3 * 78 + 44, margin: { t: 8, r: 18, b: 40, l: 34 }, label: `나무 ${NT}그루가 이 경기에 준 승·무·패 확률의 분포`,
+      draw({ g, w, h }) {
+        const x = Lab.scaleLinear([0, 1], [0, w]), band = h / 3;
+        Lab.axisBottom(g, x, h, { ticks: [0, 0.2, 0.4, 0.6, 0.8, 1], format: (v) => Math.round(v * 100) + '%', label: '나무 한 그루가 준 확률', grid: true });
+        rows.forEach((r, i) => {
+          const top = i * band, base = top + band - 6, inner = band - 26, ymax = Math.max(...r.counts, 1);
+          g.append(S('text', { x: -10, y: base - inner / 2 + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, r.o.label));
+          g.append(S('line', { x1: 0, x2: w, y1: base, y2: base, class: 'axis-line' }));
+          r.counts.forEach((c, b) => {
+            if (!c) return;
+            const bh = Math.max(1, (c / ymax) * inner), rect = S('rect', { x: x(b / bins) + 1, y: base - bh, width: Math.max(1, x(1 / bins) - 2), height: bh, fill: r.o.color, rx: 2 });
+            g.append(rect);
+          });
+          const mx = x(r.mean);
+          g.append(S('line', { x1: mx, x2: mx, y1: base - inner - 6, y2: base, stroke: 'var(--ink)', 'stroke-width': 2 }));
+          g.append(S('text', { x: mx + (r.mean > 0.75 ? -6 : 6), y: base - inner + 4, 'text-anchor': r.mean > 0.75 ? 'end' : 'start', class: 'value-label', 'paint-order': 'stroke', stroke: 'var(--surface)', 'stroke-width': 4 }, `평균 ${pct(r.mean, 0)}`));
+          const hit = S('rect', { x: 0, y: top, width: w, height: band, fill: 'transparent' }); g.append(hit);
+          Lab.tip.attach(hit, (e) => {
+            const rr = hit.getBoundingClientRect(), b = Math.max(0, Math.min(bins - 1, Math.floor((((e ? e.clientX : rr.left) - rr.left) / rr.width) * bins)));
+            return `<b>${r.o.label} 확률 ${Math.round(b * 100 / bins)}~${Math.round((b + 1) * 100 / bins)}%</b><div>이렇게 답한 나무 ${r.counts[b]}그루</div><div>가운데 80% 나무: ${pct(r.p10, 0)} ~ ${pct(r.p90, 0)}</div><div>${NT}그루 평균 ${pct(r.mean, 1)}</div>`;
+          });
+        });
+      },
+    });
+    const pick = ex.forest.indexOf(Math.max(...ex.forest)), win = rows[0];
+    // a 'draw' pick is rare over the whole official test period: say how rare (from the payload)
+    const drawNote = ex.official_pick === 1
+      ? (V.test_draw_picks === 1 ? ` 이 경기는 테스트 기간 ${f.int(V.test_rows)}행 전체에서 모델이 ‘무’를 고른 유일한 경기입니다.`
+        : ` 테스트 기간 ${f.int(V.test_rows)}행 중 모델이 ‘무’를 고른 경기는 ${f.int(V.test_draw_picks)}번뿐입니다.`)
+      : '';
+    $('s3-vote-answer').textContent = `숲의 답: ${shareText(ex.forest)} → 예측: ${OUT_LABEL[pick]}(가장 큰 확률). 실제 결과: ${OUT_LABEL[ex.outcome]} ${ex.gf}-${ex.ga}.${drawNote}`;
+    put('s3-vote-explain', explain(
+      `줄마다 나무 ${NT}그루가 이 경기에 준 확률의 분포입니다. 막대가 높을수록 그 확률을 준 나무가 많고, 굵은 세로선이 ${NT}그루의 평균입니다.`,
+      `1번 나무 혼자서는 승 ${pct(win.t0, 0)}라고 했지만, 가운데 80% 나무의 답은 승 ${pct(win.p10, 0)}~${pct(win.p90, 0)}로 흩어져 있습니다. 숲은 이 의견들을 평균해 승 ${pct(win.mean, 0)}로 답합니다. 나무 한 그루의 답은 우연에 크게 흔들리지만 평균은 훨씬 덜 흔들립니다.`));
+  }
+  Lab.segmented($('s3-vote-pick'), V.examples.map((e) => ({ value: e.key, label: SHORT_TITLE[e.key] || e.title })), V.examples[0].key,
+    (k) => drawVote(V.examples.find((e) => e.key === k)), '예시 경기 고르기');
+  drawVote(V.examples[0]);
+
+  // ================================================================ B3. single tree vs forest
+  {
+    const accs = V.tree_accuracy, lls = V.tree_log_loss, sa = [...accs].sort((a, b) => a - b), sl = [...lls].sort((a, b) => a - b);
+    $('s3-solo-sub').textContent = `${seasonShort(V.season)} 시즌 ${f.int(V.rows)}개 구단 경기(${f.int(V.matches)}경기)를 나무 한 그루씩 따로 채점한 분포와, ${NT}그루 평균(숲)의 점수를 비교했습니다.`;
+    histMark($('s3-solo-acc'), accs, { domain: [Math.floor(Math.min(sa[0], V.forest.accuracy) * 20) / 20, Math.ceil(Math.max(sa[sa.length - 1], V.forest.accuracy) * 20) / 20], bins: 24, mark: V.forest.accuracy, markLabel: `숲 ${pct(V.forest.accuracy)}`, format: (v) => Math.round(v * 100) + '%', xLabel: '정확도(오른쪽일수록 좋음)', ariaLabel: `나무 ${NT}그루 각각의 정확도 분포와 숲의 정확도` });
+    // the x axis stops at LL_CAP; the few worse trees go into the last bin (said in the axis label and below)
+    const LL_CAP = 3, LL_BINS = 24, llLo = Math.floor(Math.min(sl[0], V.forest.log_loss) * 10) / 10;
+    const llHi = Math.ceil(Math.min(sl[sl.length - 1], LL_CAP) * 10) / 10, llOver = lls.filter((v) => v > llHi).length;
+    histMark($('s3-solo-ll'), lls, { domain: [llLo, llHi], bins: LL_BINS, mark: V.forest.log_loss, markLabel: `숲 ${num(V.forest.log_loss, 3)}`, format: (v) => num(v, 1), xLabel: llOver ? `로그손실(왼쪽일수록 좋음, 맨 오른쪽 칸은 ${num(llHi - (llHi - llLo) / LL_BINS, 1)} 이상 모두)` : '로그손실(왼쪽일수록 좋음)', ariaLabel: `나무 ${NT}그루 각각의 로그손실 분포와 숲의 로그손실` });
+    put('s3-solo-explain', explain(
+      `막대는 나무 ${NT}그루를 한 그루씩 채점한 점수의 분포, 굵은 세로선은 ${NT}그루 평균으로 낸 숲의 점수입니다.` + (llOver ? ` 로그손실이 ${num(llHi, 1)}보다 큰 나무 ${llOver}그루(최고 ${num(sl[sl.length - 1], 2)})는 맨 오른쪽 칸에 함께 넣었습니다.` : ''),
+      `나무 한 그루의 정확도는 중앙값 ${pct(median(accs))}(최저 ${pct(sa[0])}~최고 ${pct(sa[sa.length - 1])})인데 숲은 ${pct(V.forest.accuracy)}입니다. 숲보다 정확도가 높은 나무는 ${V.trees_beating_forest_accuracy}그루, 로그손실이 더 낮은 나무는 ${V.trees_beating_forest_log_loss}그루뿐입니다. ` +
+      `한 그루는 자기가 본 표본의 우연한 패턴을 따라가고, 가끔은 실제 결과에 0% 확률을 줍니다(이 시즌에서만 나무별 예측 ${f.int(V.tree_predictions)}번 중 ${f.int(V.zero_on_actual)}번). 서로 다른 실수를 하는 나무들을 평균하면 실수가 상쇄되고 0%도 사라집니다.`));
+  }
+
+  // ================================================================ C. evaluation
+  const SP = data.split;
+  $('s3-c-intro').textContent = `점수가 부풀려지지 않게 하려고, 학습에 쓴 경기와 채점에 쓴 경기를 시간으로 엄격히 갈랐습니다. 설정을 고를 때는 검증 시즌 ${SP.folds.length}개만, 최종 채점은 ${seasonShort(SP.test_start)} 이후 경기만 썼습니다.`;
+  {
+    const ROWS = [
+      ...SP.folds.map((fo, i) => ({ label: `검증 ${i + 1}`, kind: 'val', eval: [fo.season], trainEnd: fo.train_last_season, trainRows: fo.train_rows, evalRows: fo.val_rows, evalMatches: fo.val_matches })),
+      ...SP.tests.map((t) => ({ label: `테스트 ${seasonShort(t.season).slice(2)}${t.in_progress ? '*' : ''}`, kind: 'test', eval: [t.season], trainEnd: t.train_last_season, trainRows: t.train_rows, evalRows: t.rows, evalMatches: t.matches })),
+    ];
+    const COLORS = { train: 'var(--ink-3)', val: 'var(--accent)', test: 'var(--ink)' };
+    $('s3-split-legend').append(...Lab.legend([{ label: '학습에 쓴 시즌', color: COLORS.train }, { label: '검증(설정 고르기)', color: COLORS.val }, { label: '테스트(최종 채점)', color: COLORS.test }]).childNodes);
+    const seasons = SP.seasons, ML = 92;     // left margin = room for the row labels ('테스트 26/27*')
+    Lab.chart($('s3-split-chart'), {
+      height: ROWS.length * 30 + 40, margin: { t: 26, r: 10, b: 14, l: ML }, label: '시즌별 학습·검증·테스트 배치',
+      draw({ g, w, h }) {
+        const cw = w / seasons.length, band = h / ROWS.length, every = cw >= 40 ? 1 : cw >= 22 ? 2 : 4;
+        seasons.forEach((s, j) => { if (j % every === 0 || j === seasons.length - 1) g.append(S('text', { x: j * cw + cw / 2, y: -10, 'text-anchor': 'middle', class: 'tick' }, cw >= 40 ? s.slice(2, 4) + '/' + s.slice(7, 9) : "'" + s.slice(2, 4))); });
+        ROWS.forEach((row, i) => {
+          const y = i * band + 3, hh = band - 6, grp = S('g', { tabindex: 0 });
+          grp.append(S('text', { x: -10, y: y + hh / 2 + 4, 'text-anchor': 'end', class: 'tick tick-strong' }, row.label));
+          seasons.forEach((s, j) => {
+            const kind = row.eval.includes(s) ? row.kind : (s <= row.trainEnd ? 'train' : null);
+            grp.append(S('rect', { x: j * cw + 1, y, width: Math.max(1, cw - 2), height: hh, rx: 3, fill: kind ? COLORS[kind] : 'transparent', opacity: kind === 'train' ? 0.38 : 1, stroke: kind ? 'none' : 'var(--grid)' }));
+          });
+          grp.append(S('rect', { x: -ML, y: i * band, width: w + ML, height: band, fill: 'transparent' }));
+          Lab.tip.attach(grp, () => `<b>${esc(row.label)}</b><div>학습: ${esc(seasonShort(seasons[0]))} ~ ${esc(seasonShort(row.trainEnd))} 시즌 ${f.int(row.trainRows)}행</div><div>${row.kind === 'val' ? '검증' : '테스트'}: ${esc(seasonShort(row.eval[0]))} 시즌 ${f.int(row.evalRows)}행(${f.int(row.evalMatches)}경기)</div>` +
+            (row.kind === 'test' && inProgress(row.eval[0]) ? `<div>진행 중인 시즌: ${esc(untilText(row.eval[0]))}</div>` : ''));
+          g.append(grp);
+        });
+        const div = SP.folds.length * band;
+        g.append(S('line', { x1: 8 - ML, x2: w, y1: div, y2: div, stroke: 'var(--border-strong)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+      },
+    });
+    Lab.table($('s3-split-table'), [
+      { key: 'label', label: '실험' }, { key: 'train', label: '학습에 쓴 시즌' }, { key: 'trainRows', label: '학습 행', align: 'right', fmt: (v) => f.int(v) },
+      { key: 'evalSeason', label: '채점 시즌' }, { key: 'evalRows', label: '채점 행', align: 'right', fmt: (v) => f.int(v) }, { key: 'evalMatches', label: '고유 경기', align: 'right', fmt: (v) => f.int(v) },
+    ], ROWS.map((r) => ({ label: r.label, train: `${seasonShort(seasons[0])} ~ ${seasonShort(r.trainEnd)}`, trainRows: r.trainRows, evalSeason: r.kind === 'test' ? seasonTag(r.eval[0]) : seasonShort(r.eval[0]), evalRows: r.evalRows, evalMatches: r.evalMatches })), { caption: '학습·채점 구간과 크기' });
+    put('s3-split-explain', explain(
+      '가로는 시즌, 세로는 실험입니다. 칸은 위 범례의 색대로 학습에 쓴 시즌, 설정을 고를 때 채점한 검증 시즌, 마지막에 채점한 테스트 시즌을 뜻합니다. 빈 칸은 그 실험에서 쓰지 않은 시즌입니다.' + (partialNote ? ` *표: ${partialNote}.` : ''),
+      `어느 줄에서도 채점 시즌이 학습 시즌보다 앞에 오지 않습니다. 테스트는 시즌마다 그 직전 시즌까지 다시 학습하되, 설정(하이퍼파라미터)은 검증으로 고른 것을 그대로 고정했습니다. 맞대결(6개 구단끼리의 경기)은 양쪽 구단 행이 모두 있어 행 수(${f.int(SP.test_rows)})가 고유 경기 수(${f.int(SP.test_matches)})보다 많고, 점수를 낼 때는 그런 행을 0.5씩 세어 한 경기를 한 번만 셉니다.`));
+    // Per-season expanding refit: an earlier test season becomes training data for the next test season's model.
+    const [t0, t1] = SP.tests;
+    $('s3-holdout').append(
+      E('p', { text: `${seasonShort(SP.test_start)} 시즌 이후 ${f.int(SP.test_matches)}경기(${f.int(SP.test_rows)}개 구단 행)는 설정(하이퍼파라미터)을 고르는 데 한 번도 쓰지 않았고, 경기마다 그 경기를 본 적 없는 모델(그 시즌 전까지의 경기로만 학습)이 예측했습니다.` }),
+      ...(t1 ? [E('p', { text: `한 시즌의 채점이 끝나면 그 경기들은 다음 시즌 모델의 학습에 들어갑니다(예: ${seasonShort(t0.season)} 경기는 ${seasonShort(t1.season)} 시즌을 예측한 모델의 학습에 포함).` })] : []),
+      E('p', { text: '다만 이 경기들의 결과는 이전 버전 실험(v2)에서 이미 한 번 들여다본 적이 있습니다. 그래서 “완전히 새로운 미래”에서 잰 점수는 아니라는 뜻으로 ‘사후 보류 평가(retrospective hold-out)’라고 부릅니다.' }));
+    $('s3-weights').textContent = `학습할 때는 최근 경기일수록 더 큰 무게를 줍니다(${f.int(SP.half_life_days)}일 지날 때마다 무게가 절반). 오래전 스쿼드보다 요즘 팀 모습을 더 반영하기 위해서입니다.`;
+  }
+
+  // ---------------------------------------------------------------- metric primer
+  {
+    const M = data.metrics;
+    const exRows = M.examples.map((m) => ({ match: matchText(m), probs: shareText(m.p), picked: OUT_LABEL[m.picked], hit: m.picked === m.outcome ? '맞힘' : '틀림', p_actual: m.p_actual, log_loss: m.log_loss, brier: m.brier }));
+    Lab.table($('s3-metric-table'), [
+      { key: 'match', label: '실제 경기(우리 팀 관점)', sort: false }, { key: 'probs', label: '모델 확률', sort: false }, { key: 'picked', label: '예측', sort: false },
+      { key: 'hit', label: '정확도 판정', sort: false }, { key: 'p_actual', label: '실제 결과에 준 확률', align: 'right', sort: false, fmt: (v) => pct(v, 1) },
+      { key: 'log_loss', label: '로그손실', align: 'right', sort: false, fmt: (v) => num(v, 3) }, { key: 'brier', label: 'Brier', align: 'right', sort: false, fmt: (v) => num(v, 3) },
+    ], exRows, { caption: '점수 계산 예시' });
+    const [a, b] = M.examples;
+    const cards = $('s3-metric-cards');
+    const card = (title, html) => E('div', { class: 's3-fact', html: `<h4>${title}</h4>${html}` });
+    // '‘승’을 골라 맞힘(1)' — particle and hit/miss both follow the data
+    const pickText = (m) => `‘${OUT_LABEL[m.picked]}’${OBJ[m.picked]} 골라 ${m.picked === m.outcome ? '맞힘(1)' : '틀림(0)'}`;
+    cards.append(
+      card(Lab.term('정확도'), `<p>가장 큰 확률을 준 결과가 실제와 같으면 1, 아니면 0. 이것을 평균합니다.</p><p class="s3-small">예: 첫 경기는 ${pickText(a)}, 둘째 경기는 ${pickText(b)}. 테스트 전체 정확도는 ${pct(M.model_accuracy)}입니다. 아무렇게나 고르면 약 33%.</p>`),
+      card(Lab.term('로그손실'), `<p>실제 결과에 준 확률 p로 <span class="eq">−ln(p)</span>를 계산해 평균합니다. 낮을수록 좋습니다.</p><p class="s3-small">예: 첫 경기 −ln(${num(a.p_actual, 3)}) = ${num(a.log_loss, 3)}, 둘째 경기 −ln(${num(b.p_actual, 3)}) = ${num(b.log_loss, 3)}. 1/3씩 주면 언제나 ${num(M.uniform_log_loss, 4)}. 모델의 테스트 평균은 ${num(M.model_log_loss, 4)}입니다.</p>`),
+      card(Lab.term('Brier 점수'), `<p>승·무·패 각각 (확률 − 실제 0/1)²을 더한 값의 평균입니다. 0이 완벽, 낮을수록 좋습니다.</p><p class="s3-small">예: 첫 경기 ${num(a.brier, 3)}, 둘째 경기 ${num(b.brier, 3)}. 1/3씩 주면 ${num(M.uniform_brier, 3)}. 모델의 테스트 평균은 ${num(M.model_brier, 3)}입니다.</p>`));
+    Lab.chart($('s3-metric-curve'), {
+      height: 250, margin: { t: 14, r: 20, b: 42, l: 46 }, label: '실제 결과에 준 확률과 로그손실의 관계',
+      draw({ g, w, h }) {
+        const x = Lab.scaleLinear([0, 1], [0, w]), y = Lab.scaleLinear([0, 3.2], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: (v) => num(v, 1), ticks: [0, 1, 2, 3] });
+        Lab.axisBottom(g, x, h, { ticks: [0, 0.2, 0.4, 0.6, 0.8, 1], format: (v) => Math.round(v * 100) + '%', label: '실제 결과에 준 확률' });
+        let d = ''; for (let p = 0.04; p <= 1.0001; p += 0.01) d += `${d ? 'L' : 'M'}${x(p).toFixed(1)},${y(-Math.log(p)).toFixed(1)}`;
+        g.append(S('path', { d, fill: 'none', stroke: 'var(--ink-3)', 'stroke-width': 2 }));
+        const pts = [
+          { p: a.p_actual, l: a.log_loss, label: `${club(a.team)} ${a.gf}-${a.ga}`, color: OUTS.find((o) => o.code === a.outcome).color },
+          { p: b.p_actual, l: b.log_loss, label: `${club(b.team)} ${b.gf}-${b.ga}`, color: OUTS.find((o) => o.code === b.outcome).color },
+          { p: 1 / 3, l: M.uniform_log_loss, label: `1/3씩 ${num(M.uniform_log_loss, 3)}`, color: 'var(--ink-2)', hollow: true },
+          { p: M.model_geo_p, l: M.model_log_loss, label: `모델 평균 ${num(M.model_log_loss, 3)}`, color: C_MAIN },
+        ];
+        for (const p of pts) {
+          g.append(S('circle', { cx: x(p.p), cy: y(p.l), r: 6, fill: p.hollow ? 'var(--surface)' : p.color, stroke: p.hollow ? p.color : 'var(--surface)', 'stroke-width': 2 }));
+          // the uniform point sits just left of the model's average: label it below-left, the others above-right
+          const below = p === pts[2], right = !below && x(p.p) < w * 0.7;
+          g.append(S('text', { x: x(p.p) + (right ? 10 : -10), y: y(p.l) + (below ? 20 : -10), 'text-anchor': right ? 'start' : 'end', class: 'value-label', 'paint-order': 'stroke', stroke: 'var(--surface)', 'stroke-width': 4 }, p.label));
+        }
+        const hit = S('rect', { x: 0, y: 0, width: w, height: h, fill: 'transparent' }); g.append(hit);
+        Lab.tip.attach(hit, (e) => { const r = hit.getBoundingClientRect(), p = Math.max(0.01, Math.min(1, x.invert((e ? e.clientX : r.left + r.width / 2) - r.left))); return `<b>실제 결과에 ${pct(p, 0)}</b><div>로그손실 ${num(-Math.log(p), 3)}</div>`; });
+      },
+    });
+    put('s3-metric-explain', explain(
+      '곡선은 “실제로 일어난 결과에 준 확률”(가로)에 따른 로그손실(세로)입니다. 점은 위 두 경기, 아무 정보 없이 1/3씩 준 경우, 그리고 모델의 평균입니다.',
+      `확률을 낮게 줬다가 틀리면 벌점이 가파르게 커집니다. 모델의 평균 로그손실 ${num(M.model_log_loss, 3)}은 실제 결과에 평균적으로(기하평균) 약 ${pct(M.model_geo_p, 0)}의 확률을 준 것과 같습니다. 1/3(33%)보다 조금 나은 수준입니다.`));
+  }
+
+  // ================================================================ D. tuning
+  $('s3-d-intro').innerHTML = `<span data-g="하이퍼파라미터">하이퍼파라미터</span>는 학습 전에 사람이 정하는 설정입니다. ${T.order.length}가지 설정의 조합을 무작위로 ${T.rf_trials}개 뽑아, 각각 앞의 검증 시즌 ${SP.folds.length}개에서 로그손실을 재고 평균이 가장 낮은 것을 골랐습니다. 비교용으로 다른 종류의 모델 ${T.other_trials}개도 같은 방법으로 쟀고, 같은 탐색을 포메이션 입력을 빼고 한 번 더 했습니다.`;
+  Lab.table($('s3-hp-table'), [
+    { key: 'label', label: '설정', fmt: (v, r) => E('span', {}, E('b', { text: v }), E('br'), E('code', { text: r.name })) },
+    { key: 'desc', label: '뜻', sort: false }, { key: 'values', label: '찾아본 값', sort: false }, { key: 'chosen', label: '고른 값', fmt: (v) => E('b', { text: v }) },
+  ], T.order.map((name) => ({ name, label: hpLabel(name), desc: T.text[name].desc, values: T.space[name].map((v) => hpValue(name, v)).join(' · '), chosen: hpValue(name, T.chosen[name]) })), { caption: '탐색한 하이퍼파라미터' });
+  $('s3-hp-sub').textContent = `값 목록에서 ${T.order.length}가지 설정의 조합을 무작위로 뽑아 비교했습니다(랜덤 탐색). 마지막 열이 최종으로 고른 값입니다. ‘질문 후보 비율’ 괄호 안의 열 수는 포메이션 입력을 포함한 ${f.int(T.variants.with.n_columns)}개 열 기준입니다(포메이션 입력을 빼면 ${f.int(T.variants.without.n_columns)}개 열).`;
+
+  const VARIANT_LABEL = { with: '포메이션 입력 포함(공식)', without: '포메이션 입력 제외' };
+  // column counts in the tooltip follow the variant on screen (the without-formation design matrix is narrower)
+  function specTip(t) {
+    if (t.family !== 'rf') return `<div>${esc(FAM[t.family].label)} · ${esc(Object.entries(t.spec).map(([k, v]) => `${k}=${v}`).join(', '))}</div>`;
+    const nCols = T.variants[variantState.v].n_columns;
+    return T.order.map((k) => `<div>${esc(hpLabel(k))}: ${esc(hpValue(k, t.spec[k], nCols))}</div>`).join('');
+  }
+  function drawRank() {
+    const VR = T.variants[variantState.v], rf = VR.trials.filter((t) => t.family === 'rf').sort((a, b) => a.log_loss - b.log_loss);
+    const best = rf[0], cw = VR.class_weight, showUntuned = variantState.v === 'with';
+    $('s3-rank-sub').textContent = `${VARIANT_LABEL[variantState.v]} · 랜덤 포레스트 ${rf.length}개 설정을 검증 로그손실(시즌 ${SP.folds.length}개 평균, 낮을수록 좋음) 순서로 늘어놓았습니다.`;
+    Lab.clear($('s3-rank-legend')).append(...Lab.legend([{ label: '‘결과별 균형’ 끔', color: C_MAIN }, { label: '‘결과별 균형’ 켬(속 빈 점)', color: C_SIDE }, ...(showUntuned ? [{ label: '점선: 튜닝 전 기본 설정', color: 'var(--ink-2)' }] : [])]).childNodes);
+    const vals = rf.map((t) => t.log_loss).concat(showUntuned ? [T.untuned.log_loss] : []);
+    const lo = Math.floor(Math.min(...vals) * 100) / 100, hi = Math.ceil(Math.max(...vals) * 100) / 100;
+    Lab.chart($('s3-rank-chart'), {
+      height: 290, margin: { t: 40, r: 18, b: 42, l: 46 }, label: '랜덤 포레스트 설정별 검증 로그손실 순위',
+      draw({ g, w, h }) {
+        const x = Lab.scaleLinear([0.5, rf.length + 0.5], [0, w]), y = Lab.scaleLinear([lo, hi], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: (v) => num(v, 2) });
+        g.append(S('text', { x: -40, y: -26, class: 'axis-label' }, '↑ 검증 로그손실(아래일수록 좋음)'));
+        const n = rf.length, inner = Lab.ticks(1, n, w < 420 ? 3 : 6).filter((t) => t > 1 && Number.isInteger(t) && n - t >= n * 0.12);
+        Lab.axisBottom(g, x, h, { ticks: [1, ...inner, n], format: (v) => `${v}위`, label: '순위(1위 = 가장 좋음)' });
+        if (showUntuned) {
+          const uy = y(T.untuned.log_loss);
+          g.append(S('line', { x1: 0, x2: w, y1: uy, y2: uy, stroke: 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': '5 4' }));
+          g.append(S('text', { x: w - 4, y: uy + 16, 'text-anchor': 'end', class: 'tick', 'paint-order': 'stroke', stroke: 'var(--surface)', 'stroke-width': 4 }, `튜닝 전 기본 설정 ${num(T.untuned.log_loss, 3)}`));
+        }
+        rf.forEach((t, i) => {
+          const on = t.spec.class_weight != null, isBest = t === best, cx = x(i + 1), cy = y(t.log_loss);
+          const grp = S('g', { tabindex: 0 });
+          grp.append(S('circle', { cx, cy, r: isBest ? 7.5 : 5, fill: on ? 'var(--surface)' : C_MAIN, stroke: on ? C_SIDE : 'var(--surface)', 'stroke-width': 2 }));
+          if (isBest) {
+            grp.append(S('circle', { cx, cy, r: 11, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 1.5 }));
+            const ly = Math.max(-10, cy - 46);
+            grp.append(S('line', { x1: cx, x2: cx, y1: cy - 11, y2: ly + 4, stroke: 'var(--ink)', 'stroke-width': 1 }));
+            grp.append(S('text', { x: cx + 4, y: ly, class: 'value-label', 'paint-order': 'stroke', stroke: 'var(--surface)', 'stroke-width': 4 }, `선택: 시도 ${t.trial} · ${num(t.log_loss, 4)}`));
+          }
+          grp.append(S('rect', { x: cx - (w / rf.length) / 2, y: 0, width: w / rf.length, height: h, fill: 'transparent' }));
+          Lab.tip.attach(grp, () => `<b>${i + 1}위 · 시도 ${t.trial}</b><div>검증 로그손실 ${num(t.log_loss, 4)} · 정확도 ${pct(t.accuracy)}</div>${specTip(t)}`);
+          g.append(grp);
+        });
+      },
+    });
+    const so = `1위부터 ${cw.leading_off}위까지가 모두 ‘결과별 균형’을 끈 설정입니다. 끈 ${cw.off.n}개는 ${num(cw.off.min, 3)}~${num(cw.off.max, 3)}, 켠 ${cw.on.n}개는 ${num(cw.on.min, 3)}~${num(cw.on.max, 3)}로 두 무리가 ${cw.off.max < cw.on.min ? '전혀 겹치지 않습니다' : '일부 겹칩니다'}. 무승부에 억지로 무게를 주면 확률이 실제보다 무승부 쪽으로 쏠려 로그손실이 나빠진 것으로 보입니다. ` +
+      (showUntuned ? `반면 끈 설정들끼리의 차이(${num(cw.off.max - cw.off.min, 3)})는 작고, 튜닝 전 기본 설정(${num(T.untuned.log_loss, 3)})을 이 순위에 넣으면 ${rf.filter((t) => t.log_loss < T.untuned.log_loss).length + 1}위에 해당합니다. 튜닝으로 얻은 개선 폭(${num(T.untuned.log_loss - best.log_loss, 4)})이 크지 않다는 뜻입니다.` : '');
+    put('s3-rank-explain', explain('점 하나가 설정 조합 하나입니다. 왼쪽일수록 순위가 높고, 아래쪽일수록 검증 로그손실이 낮습니다(좋습니다). 점에 마우스를 올리면 설정 전체가 나옵니다.', so));
+  }
+  function drawMinis() {
+    const VR = T.variants[variantState.v], onlyOff = miniFilter.v === 'off';
+    const all = VR.trials.filter((t) => t.family === 'rf'), rf = onlyOff ? all.filter((t) => t.spec.class_weight == null) : all;
+    const lo = Math.floor(Math.min(...rf.map((t) => t.log_loss)) * 100) / 100, hi = Math.ceil(Math.max(...rf.map((t) => t.log_loss)) * 100) / 100;
+    $('s3-mini-sub').textContent = `${VARIANT_LABEL[variantState.v]} · ${onlyOff ? `‘결과별 균형’을 끈 ${rf.length}개` : `랜덤 포레스트 ${rf.length}개 전부`}를 설정 값별로 나눠 다시 그렸습니다. 가로선은 각 값의 중앙값입니다.`;
+    const host = Lab.clear($('s3-minis'));
+    const lines = [];
+    for (const name of T.order) {
+      const values = T.space[name], panel = E('div', { class: 's3-mini' });
+      const groups = values.map((v) => ({ v, items: rf.filter((t) => String(t.spec[name]) === String(v)) }));
+      groups.forEach((gr) => { gr.med = gr.items.length ? median(gr.items.map((t) => t.log_loss)) : null; });
+      const withData = groups.filter((gr) => gr.items.length), bestG = withData.reduce((a, b2) => (b2.med < a.med ? b2 : a), withData[0]);
+      panel.append(E('h4', {}, hpLabel(name) + ' ', E('code', { text: name })));
+      const chartBox = E('div'); panel.append(chartBox);
+      const chosen = T.chosen[name];
+      const sentence = withData.length > 1
+        ? `중앙값이 가장 낮은 값: ${hpShort(name, bestG.v)}(${num(bestG.med, 3)}, n=${bestG.items.length}). 고른 값: ${hpShort(name, chosen)}.`
+        : `이 조건에서는 값이 하나뿐입니다(n=${withData[0] ? withData[0].items.length : 0}).`;
+      panel.append(E('p', { text: sentence }));
+      host.append(panel);
+      lines.push({ name, bestG, n: withData.length });
+      Lab.chart(chartBox, {
+        height: 178, margin: { t: 8, r: 8, b: 40, l: 38 }, label: `${hpLabel(name)} 값별 검증 로그손실`,
+        draw({ g, w, h }) {
+          const x = Lab.scaleBand(values.map(String), [0, w], 0.3), y = Lab.scaleLinear([lo, hi], [h, 0]);
+          Lab.axisLeft(g, y, w, { format: (v) => num(v, 2), ticks: Lab.ticks(lo, hi, 3) });
+          g.append(S('line', { x1: 0, x2: w, y1: h, y2: h, class: 'axis-line' }));
+          groups.forEach((gr) => {
+            const bx = x(String(gr.v)), bw = x.bandwidth, cx = bx + bw / 2, isChosen = String(gr.v) === String(chosen);
+            g.append(S('text', { x: cx, y: h + 15, 'text-anchor': 'middle', class: 'tick' + (isChosen ? ' tick-strong' : ''), 'font-weight': isChosen ? 700 : null }, hpShort(name, gr.v)));
+            g.append(S('text', { x: cx, y: h + 30, 'text-anchor': 'middle', class: 'tick', 'font-size': 11 }, `n=${gr.items.length}`));
+            if (isChosen) g.append(S('line', { x1: bx, x2: bx + bw, y1: h + 34, y2: h + 34, stroke: 'var(--ink)', 'stroke-width': 2 }));
+            gr.items.forEach((t, k) => {
+              const jitter = gr.items.length > 1 ? ((k / (gr.items.length - 1)) - 0.5) * Math.min(bw * 0.7, 30) : 0, on = t.spec.class_weight != null;
+              const c = S('circle', { cx: cx + jitter, cy: y(t.log_loss), r: 4, fill: on ? 'var(--surface)' : C_MAIN, stroke: on ? C_SIDE : 'var(--surface)', 'stroke-width': 1.5 });
+              g.append(c);
+            });
+            if (gr.med != null) g.append(S('line', { x1: cx - Math.min(bw / 2, 22), x2: cx + Math.min(bw / 2, 22), y1: y(gr.med), y2: y(gr.med), stroke: 'var(--ink)', 'stroke-width': 2 }));
+            const hit = S('rect', { x: bx, y: 0, width: bw, height: h, fill: 'transparent', tabindex: 0 }); g.append(hit);
+            Lab.tip.attach(hit, () => `<b>${esc(hpLabel(name))} = ${esc(hpValue(name, gr.v))}</b><div>설정 ${gr.items.length}개${gr.items.length ? ` · 중앙값 ${num(gr.med, 4)}` : ''}</div>${gr.items.length ? `<div>최저 ${num(Math.min(...gr.items.map((t) => t.log_loss)), 4)} · 최고 ${num(Math.max(...gr.items.map((t) => t.log_loss)), 4)}</div>` : ''}`);
+          });
+        },
+      });
+    }
+    const separated = VR.hyper.filter((hp) => hp.separated).map((hp) => hpLabel(hp.name));
+    // An example of confounding: the hyper-parameter whose chosen value ranks worst by median (over all RF trials).
+    let example = null;
+    for (const hp of VR.hyper) {
+      const ranked = hp.values.filter((v) => v.n).sort((a, b) => a.median - b.median), pos = ranked.findIndex((v) => v.key === String(T.chosen[hp.name]));
+      if (ranked.length > 1 && pos > 0 && (!example || pos / (ranked.length - 1) > example.rel)) example = { hp, v: ranked[pos], rel: pos / (ranked.length - 1), last: pos === ranked.length - 1 };
+    }
+    const exampleText = example
+      ? `예를 들어 ‘${hpLabel(example.hp.name)}’ = ${hpShort(example.hp.name, example.v.value)}인 시도들은 전체 기준 중앙값이 ${num(example.v.median, 3)}(n=${example.v.n})로 ${example.last ? '가장 나빴지만' : '좋은 편이 아니었지만'}, 가장 좋은 시도도 이 값을 썼습니다. ‘결과별 균형’을 끈 설정만 보기로 바꾸면 이런 섞임이 줄어듭니다. `
+      : '';
+    put('s3-mini-explain', explain(
+      '작은 그림 하나가 설정 하나입니다. 가로는 그 설정의 값, 점은 시도 하나, 굵은 가로선은 중앙값, 밑줄 친 값이 최종 선택입니다. 세로 눈금은 모든 그림이 같습니다.',
+      `값끼리 범위가 전혀 겹치지 않은 설정은 ${separated.length ? separated.join(', ') + '뿐입니다' : '없습니다'}. 나머지는 조심해서 읽어야 합니다. 시도마다 ${T.order.length}가지 설정이 한꺼번에 무작위로 바뀌어, 어떤 값의 중앙값에는 함께 뽑힌 다른 설정의 영향이 섞여 있습니다. ` +
+      exampleText + `값마다 시도가 ${Math.min(...VR.hyper.map((hp) => hp.min_n))}~${Math.max(...VR.hyper.flatMap((hp) => hp.values.map((v) => v.n)))}개뿐이라 작은 차이는 우연일 수 있습니다.`));
+  }
+  const miniFilter = { v: 'all' };
+  Lab.segmented($('s3-mini-filter'), [{ value: 'all', label: '모두 보기' }, { value: 'off', label: '‘결과별 균형’ 끈 설정만' }], 'all', (v) => { miniFilter.v = v; drawMinis(); }, '표시할 시도');
+  $('s3-mini-legend').append(...Lab.legend([{ label: '‘결과별 균형’ 끔', color: C_MAIN }, { label: '‘결과별 균형’ 켬(속 빈 점)', color: C_SIDE }, { label: '가로선: 중앙값', color: 'var(--ink)' }]).childNodes);
+
+  // ---------------------------------------------------------------- overfitting
+  {
+    const O = T.overfit, [small, chosen] = O.runs;
+    $('s3-overfit-sub').innerHTML = `<span data-g="과적합">과적합</span>은 학습한 경기의 우연한 무늬까지 외워서, 처음 보는 경기에서는 오히려 못 맞히는 상태입니다. 마지막 검증(${esc(seasonShort(O.season))} 시즌 채점, 그 전 시즌 ${f.int(O.train_rows)}행 학습)에서 고른 설정과 “잎 최소 크기”만 ${small.min_samples_leaf}로 바꾼 설정을 비교했습니다(이 페이지를 만들 때 같은 방법으로 다시 계산).`;
+    $('s3-overfit-legend').append(...Lab.legend([{ label: '학습한 경기(속 빈 점)', color: C_SIDE }, { label: '처음 보는 검증 시즌', color: C_MAIN }]).childNodes);
+    const row = (run) => ({
+      label: `잎 최소 ${run.min_samples_leaf}행`,
+      points: [{ x: run.train_log_loss, color: C_SIDE, hollow: true, label: `학습 ${num(run.train_log_loss, 2)}`, labelLeft: true }, { x: run.val_log_loss, color: C_MAIN, label: `검증 ${num(run.val_log_loss, 2)}` }],
+      tip: `<b>잎 최소 크기 ${run.min_samples_leaf}</b><div>학습 경기: 정확도 ${pct(run.train_accuracy)} · 로그손실 ${num(run.train_log_loss, 3)}</div><div>검증 시즌: 정확도 ${pct(run.val_accuracy)} · 로그손실 ${num(run.val_log_loss, 3)}</div><div>나무 깊이 중앙값 ${run.depth_median} · 잎 ${f.int(run.leaves_median)}개</div>`,
+    });
+    const rows = [row(small), row(chosen)];
+    rows.forEach((r2, i) => { const run = O.runs[i]; r2.points.unshift({ x: run.train_log_loss, lo: run.train_log_loss, hi: run.val_log_loss, color: 'var(--grid)', r: 0.1 }); });
+    // room on the right for the value labels (the axis runs a little past the largest loss)
+    const ofHi = Math.max(1, Math.ceil(Math.max(...O.runs.map((run) => run.val_log_loss)) * 10) / 10 + 0.1);
+    dotRows($('s3-overfit-chart'), rows, { domain: [0, ofHi], format: (v) => num(v, 1), xLabel: '로그손실(낮을수록 좋음)', labelW: 120, rowH: 54, padR: 40, ariaLabel: '잎 최소 크기별 학습·검증 로그손실' });
+    put('s3-overfit-explain', explain(
+      '줄마다 같은 숲을 “학습한 경기”와 “처음 보는 시즌”으로 각각 채점했습니다. 두 점 사이가 멀수록 학습 경기만 잘 맞히는 것입니다.',
+      `잎을 ${small.min_samples_leaf}행까지 잘게 쪼갠 숲은 학습 경기 정확도가 ${pct(small.train_accuracy)}(나무 깊이 중앙값 ${small.depth_median}단계, 잎 ${f.int(small.leaves_median)}개)로 거의 외웠지만, 처음 보는 시즌 로그손실은 ${num(small.val_log_loss, 3)}으로 잎을 ${chosen.min_samples_leaf}행 이상으로 묶은 숲(${num(chosen.val_log_loss, 3)})보다 나빴습니다. 잎을 크게 묶으면 학습 점수는 내려가도(정확도 ${pct(chosen.train_accuracy)}) 처음 보는 경기에 더 잘 통합니다.`));
+  }
+
+  // ---------------------------------------------------------------- family comparison + formation pairs
+  function drawFamily() {
+    const VR = T.variants[variantState.v];
+    $('s3-family-sub').textContent = `${VARIANT_LABEL[variantState.v]} · 모든 시도를 모델 종류별로 모았습니다. 큰 점이 종류별 최고 성적입니다.`;
+    Lab.clear($('s3-family-legend')).append(...famLegend().childNodes);
+    const vals = VR.trials.map((t) => t.log_loss), lo = Math.floor(Math.min(...vals) * 100) / 100, hi = Math.ceil(Math.max(...vals) * 100) / 100;
+    const rows = ['rf', 'logistic', 'hgb'].map((fam) => {
+      const ts = VR.trials.filter((t) => t.family === fam), best = ts.reduce((a, b) => (b.log_loss < a.log_loss ? b : a));
+      return {
+        label: `${FAM[fam].label.replace('(전체 입력)', '')} ${ts.length}개`,
+        points: [...ts.filter((t) => t !== best).map((t) => ({ x: t.log_loss, color: FAM[fam].color, hollow: FAM[fam].hollow, r: 4, opacity: 0.55 })), { x: best.log_loss, color: FAM[fam].color, hollow: FAM[fam].hollow, r: 7, label: num(best.log_loss, 3) }],
+        tip: `<b>${esc(FAM[fam].label)}</b><div>시도 ${ts.length}개 · 최고 ${num(best.log_loss, 4)}(시도 ${best.trial})</div>${specTip(best)}`,
+        best,
+      };
+    });
+    dotRows($('s3-family-chart'), rows, { domain: [lo, hi], format: (v) => num(v, 2), xLabel: '검증 로그손실(낮을수록 좋음)', labelW: 150, rowH: 46, ariaLabel: '모델 종류별 검증 로그손실', refs: variantState.v === 'with' ? [{ x: T.untuned.log_loss, label: '튜닝 전 RF' }] : [] });
+    const [rfB, lgB, hgB] = rows.map((r2) => r2.best);
+    put('s3-family-explain', explain('줄마다 한 종류의 모델이고, 점 하나가 시도 하나입니다. 왼쪽일수록 좋습니다.',
+      rfB.log_loss < Math.min(lgB.log_loss, hgB.log_loss)
+        ? `가장 좋은 랜덤 포레스트(${num(rfB.log_loss, 4)})가 가장 좋은 로지스틱 회귀(${num(lgB.log_loss, 4)})와 그래디언트 부스팅(${num(hgB.log_loss, 4)})보다 낮아 선택되었지만, 다음 순위와의 차이는 ${num(Math.min(lgB.log_loss, hgB.log_loss) - rfB.log_loss, 4)}입니다. 설정을 고를 때 가장 낮은 값을 기계적으로 골랐을 뿐, 이 정도 차이로 “랜덤 포레스트가 더 낫다”고 단정하기는 어렵습니다.`
+        : `이 변형에서는 랜덤 포레스트 최고(${num(rfB.log_loss, 4)})보다 다른 종류(로지스틱 ${num(lgB.log_loss, 4)}, 부스팅 ${num(hgB.log_loss, 4)})가 같거나 더 좋았습니다.`));
+  }
+  {
+    const P = T.pairs, PS = T.pairs_summary;
+    $('s3-pair-sub').textContent = `같은 설정 ${PS.n}개를 포메이션 입력을 넣고 한 번, 빼고 한 번 검증했습니다. 점선보다 위쪽에 있는 점은 넣었을 때 더 좋았던 설정입니다.`;
+    $('s3-pair-legend').append(...famLegend().childNodes);
+    const vals = P.flatMap((p) => [p.with, p.without]), lo = Math.floor(Math.min(...vals) * 100) / 100, hi = Math.ceil(Math.max(...vals) * 100) / 100;
+    Lab.chart($('s3-pair-chart'), {
+      height: 320, margin: { t: 28, r: 16, b: 42, l: 46 }, label: '포메이션 포함·제외 검증 로그손실 비교',
+      draw({ g, w, h }) {
+        const side = Math.min(w, h), x = Lab.scaleLinear([lo, hi], [0, w]), y = Lab.scaleLinear([lo, hi], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: (v) => num(v, 2), ticks: Lab.ticks(lo, hi, 4) });
+        g.append(S('text', { x: -40, y: -14, class: 'axis-label' }, '↑ 포메이션 제외'));
+        Lab.axisBottom(g, x, h, { format: (v) => num(v, 2), label: '포메이션 포함', ticks: Lab.ticks(lo, hi, side < 280 ? 3 : 5) });
+        g.append(S('line', { x1: x(lo), y1: y(lo), x2: x(hi), y2: y(hi), stroke: 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': '5 4' }));
+        for (const p of P) {
+          const grp = S('g', { tabindex: 0 });
+          const fam = FAM[p.family];
+          grp.append(S('circle', { cx: x(p.with), cy: y(p.without), r: 5, fill: fam.hollow ? 'var(--surface)' : fam.color, stroke: fam.hollow ? fam.color : 'var(--surface)', 'stroke-width': 2 }));
+          grp.append(S('circle', { cx: x(p.with), cy: y(p.without), r: 10, fill: 'transparent' }));
+          Lab.tip.attach(grp, () => `<b>시도 ${p.trial} · ${esc(FAM[p.family].label)}</b><div>포함 ${num(p.with, 4)} · 제외 ${num(p.without, 4)}</div><div>차이 ${sgn(p.without - p.with, 4)}</div>`);
+          g.append(grp);
+        }
+      },
+    });
+    put('s3-pair-explain', explain('가로는 포메이션을 넣었을 때, 세로는 뺐을 때의 검증 로그손실입니다. 점선(같은 값) 근처에 있으면 차이가 없다는 뜻입니다.',
+      `${PS.n}개 중 ${PS.with_better}개는 넣었을 때, ${PS.without_better}개는 뺐을 때 조금 더 좋았고${PS.ties ? `(나머지 ${PS.ties}개는 소수 넷째 자리까지 같음)` : ''}, 차이는 가장 큰 것도 ${num(PS.max_abs_gap, 4)}입니다. 가장 좋은 설정 기준으로는 포함 ${num(T.selected_validation.log_loss, 4)}, 제외 ${num(T.selected_without_validation.log_loss, 4)}로 ${T.selected_without_validation.log_loss < T.selected_validation.log_loss ? '오히려 뺀 쪽이 조금 낮았습니다' : '넣은 쪽이 조금 낮았습니다'}. 포메이션 입력이 꾸준히 도움이 된다는 흔적은 없습니다.`));
+  }
+  function drawTrials() {
+    const VR = T.variants[variantState.v];
+    $('s3-trials-sub').textContent = `${VARIANT_LABEL[variantState.v]} · 시도 ${VR.trials.length}개(랜덤 포레스트 ${VR.trials.filter((t) => t.family === 'rf').length} + 기타 ${VR.trials.filter((t) => t.family !== 'rf').length}). 열 제목을 누르면 정렬됩니다. 시즌별 열은 그 검증 시즌의 로그손실입니다.`;
+    const rows = VR.trials.map((t) => {
+      const row = { trial: t.trial, family: { rf: 'RF', logistic: '로지스틱', hgb: '부스팅' }[t.family], log_loss: t.log_loss, accuracy: t.accuracy, brier: t.brier };
+      SP.folds.forEach((fo, i) => { row['f' + i] = t.fold_log_loss[i]; });
+      // sort keys are always numbers (or +Infinity for non-RF rows), so every settings column sorts consistently
+      T.order.forEach((k) => { row[k] = t.family === 'rf' ? hpSortKey(k, t.spec[k], VR.n_columns) : Infinity; });
+      if (t.family === 'rf') T.order.forEach((k) => { row[k + '_t'] = hpShort(k, t.spec[k]); });
+      else row.other = Object.entries(t.spec).map(([k, v]) => `${k}=${v}`).join(', ');
+      return row;
+    });
+    const cols = [
+      { key: 'trial', label: '시도', align: 'right', fmt: (v) => (v === VR.best_trial ? E('b', { text: `${v} (선택)` }) : String(v)) },
+      { key: 'family', label: '종류' },
+      ...T.order.map((k) => ({ key: k, label: hpLabel(k), title: k, fmt: (v, r2) => (r2[k + '_t'] || '–') })),
+      { key: 'other', label: '기타 설정', sort: false, fmt: (v) => v || '' },
+      { key: 'log_loss', label: '검증 로그손실', align: 'right', fmt: (v) => num(v, 4) },
+      { key: 'accuracy', label: '정확도', align: 'right', fmt: (v) => pct(v) },
+      { key: 'brier', label: 'Brier', align: 'right', fmt: (v) => num(v, 3) },
+      ...SP.folds.map((fo, i) => ({ key: 'f' + i, label: seasonShort(fo.season), align: 'right', fmt: (v) => num(v, 3) })),
+    ];
+    Lab.table($('s3-trials'), cols, rows, { maxHeight: 440, sortKey: 'log_loss', sortDir: 1, caption: '튜닝 시도 전체' });
+  }
+  function drawVariant() { drawRank(); drawMinis(); drawFamily(); drawTrials(); Lab.upgradeTerms(root); }
+  Lab.segmented($('s3-variant'), [{ value: 'with', label: '포메이션 포함(공식)' }, { value: 'without', label: '포메이션 제외' }], 'with', (v) => { variantState.v = v; drawVariant(); }, '튜닝 변형 고르기');
+  drawVariant();
+
+  // ================================================================ E. results
+  const SB = Object.fromEntries(R.scoreboard.map((s) => [s.key, s]));
+  $('s3-e-intro').textContent = `여기부터는 공식 결과입니다. ${seasonShort(SP.test_start)} 시즌 이후 ${f.int(H.matches)}경기(${f.int(H.rows)}개 구단 행)를, 시즌마다 그 직전까지의 경기로 다시 학습한 모델로 예측했습니다. 기존 비교 화면(comparison.html)과 같은 숫자입니다.`;
+  {
+    $('s3-score-sub').innerHTML = `새 모델이 쓸모 있는지는 단순한 <span data-g="기준 모델">기준 모델</span>과 비교해야 알 수 있습니다. 같은 ${f.int(H.rows)}개 행, 같은 채점 방식입니다.`;
+    const rows = R.scoreboard.map((s) => ({ ...s, short: MODEL[s.key].short }));
+    Lab.table($('s3-score-table'), [
+      { key: 'label', label: '모델', fmt: (v, r2) => (r2.key === 'selected_with_formation' ? E('b', { text: v }) : v) },
+      { key: 'accuracy', label: '정확도', align: 'right', fmt: (v) => pct(v) },
+      { key: 'log_loss', label: '로그손실', align: 'right', fmt: (v, r2) => (v == null ? E('span', { class: 'muted', title: `확률이 0 또는 1뿐이라 계산하면 ${num(r2.log_loss_raw, 2)}처럼 무의미하게 커집니다`, text: '해당 없음' }) : num(v, 4)) },
+      { key: 'brier', label: 'Brier', align: 'right', fmt: (v) => num(v, 4) },
+    ], rows, { caption: '테스트 성적표' });
+    Lab.barsH($('s3-score-acc'), rows.map((s) => ({ label: s.short, value: s.accuracy, color: MODEL[s.key].hollow ? 'var(--ink-3)' : MODEL[s.key].color, tip: `<b>${esc(s.label)}</b><div>정확도 ${pct(s.accuracy)} · ${f.int(s.rows)}행</div>` })),
+      { format: (v) => pct(v), max: 1, labelWidth: 150, ariaLabel: '모델별 테스트 정확도' });
+    const llRows = rows.map((s) => ({
+      label: s.short, points: s.log_loss == null ? [] : [{ x: s.log_loss, color: MODEL[s.key].color, hollow: MODEL[s.key].hollow }],
+      empty: s.log_loss == null ? '해당 없음(확률이 0/1뿐)' : null,
+      tip: `<b>${esc(s.label)}</b><div>${s.log_loss == null ? '확률 예측이 아니라 로그손실을 비교할 수 없습니다' : `로그손실 ${num(s.log_loss, 4)}`}</div>`,
+    }));
+    const lls = rows.filter((s) => s.log_loss != null).map((s) => s.log_loss);
+    dotRows($('s3-score-ll'), llRows, { domain: [Math.floor(Math.min(...lls) * 50) / 50, Math.ceil(Math.max(...lls) * 50) / 50], format: (v) => num(v, 2), labelW: 150, rowH: 30, ariaLabel: '모델별 테스트 로그손실', refs: [{ x: SB.uniform_random.log_loss, label: '1/3씩', left: true }] });
+    const mk = R.market;
+    put('s3-score-explain', explain(
+      '왼쪽 막대는 0%부터 그린 정확도, 오른쪽 점은 로그손실입니다(오른쪽 그림은 차이를 보이려고 가로축을 좁혔습니다).',
+      `선택 모델 ${pct(SB.selected_with_formation.accuracy)}는 “항상 우리 팀 승”(${pct(SB.always_team_win.accuracy)})보다 ${cmp.selected_vs_always_win.accuracy.low > 0 ? '확실히 낫고' : '높지만 확실하지는 않고'} Elo 로지스틱(${pct(SB.elo_logistic.accuracy)})과 ${cmp.selected_vs_elo.accuracy.includes_zero ? '비슷합니다' : '차이가 납니다'}. 로그손실은 Elo 로지스틱(${num(SB.elo_logistic.log_loss, 3)})이 선택 모델(${num(SB.selected_with_formation.log_loss, 3)})보다 ${SB.elo_logistic.log_loss < SB.selected_with_formation.log_loss ? '오히려 낮습니다' : '높습니다'}. ` +
+      `“구단·장소별 과거 비율”은 ${pct(R.prior_always_win_share, 0)}의 행에서 ‘승’을 가장 크게 봤습니다(정확도 ${pct(SB.team_venue_prior.accuracy)}). 참고로 경기 직전 배당(시장)은 같은 ${f.int(mk.rows)}행에서 정확도 ${pct(mk.accuracy)}, 로그손실 ${num(mk.log_loss, 3)}였습니다${mk.log_loss < Math.min(...R.scoreboard.filter((s) => s.log_loss != null).map((s) => s.log_loss)) ? '. 위의 어느 모델보다도 좋습니다' : ''}.`));
+  }
+  // ---------------------------------------------------------------- confidence intervals
+  {
+    const C = R.comparisons;
+    $('s3-ci-sub').innerHTML = `시험 기간을 주 단위로 나눠 무작위로 다시 뽑는 일을 ${f.int(C[0].repeats)}번 반복해(${f.int(C[0].weeks)}주), 차이가 얼마나 흔들리는지 쟀습니다. 막대가 <span data-g="신뢰구간">95% 신뢰구간</span>이고, 0을 포함하면 “차이가 없다고 해도 이상하지 않다”는 뜻입니다.`;
+    const COL = { good: 'var(--ok)', bad: 'var(--bad)', zero: 'var(--ink-3)' };
+    $('s3-ci-legend').append(...Lab.legend([{ label: '0보다 확실히 나음', color: COL.good }, { label: '0을 포함(차이 불확실)', color: COL.zero }, { label: '0보다 확실히 나쁨', color: COL.bad }]).childNodes);
+    const kind = (m) => (m.low > 0 ? 'good' : m.high < 0 ? 'bad' : 'zero');
+    const SHORT = { tuning_gain: '튜닝 효과', formation_gain: '포메이션 효과', selected_vs_elo: '선택 vs Elo', selected_vs_always_win: '선택 vs 항상 승' };
+    for (const [metric, host, fmt] of [['accuracy', 's3-ci-acc', (v) => pp(v, 0)], ['log_loss', 's3-ci-ll', (v) => sgn(v, 2)]]) {
+      const usable = C.filter((c) => c[metric].usable);
+      const ext = Math.max(...usable.flatMap((c) => [Math.abs(c[metric].low), Math.abs(c[metric].high)])) * 1.1;
+      const rows = C.map((c) => {
+        const m = c[metric];
+        if (!m.usable) return { label: SHORT[c.key], points: [], empty: '해당 없음', tip: '<b>항상 ‘승’ 모델은 확률이 0/1뿐</b><div>로그손실 비교는 의미가 없습니다.</div>' };
+        return { label: SHORT[c.key], points: [{ x: m.value, lo: m.low, hi: m.high, color: COL[kind(m)] }],
+          tip: `<b>${esc(c.title)}</b><div>${esc(c.candidate)} − ${esc(c.baseline)}</div><div>차이 ${metric === 'accuracy' ? pp(m.value, 1) : sgn(m.value, 4)} (95% 구간 ${metric === 'accuracy' ? pp(m.low, 1) : sgn(m.low, 4)} ~ ${metric === 'accuracy' ? pp(m.high, 1) : sgn(m.high, 4)})</div>` };
+      });
+      dotRows($(host), rows, { domain: [-ext, ext], format: fmt, labelW: 112, rowH: 40, refs: [{ x: 0, color: 'var(--ink-2)', dash: '0' }], ariaLabel: metric === 'accuracy' ? '비교별 정확도 차이와 95% 신뢰구간' : '비교별 로그손실 개선과 95% 신뢰구간' });
+    }
+    const list = $('s3-ci-list');
+    const say = (m, metric) => {
+      const v = metric === 'accuracy' ? `${pp(m.value)} (구간 ${pp(m.low)} ~ ${pp(m.high)})` : `${sgn(m.value, 4)} (구간 ${sgn(m.low, 4)} ~ ${sgn(m.high, 4)})`;
+      const verdict = m.low > 0 ? '0을 포함하지 않음 → 우연이라 보기 어려운 개선' : m.high < 0 ? '0을 포함하지 않음 → 오히려 나쁨' : '0을 포함 → 차이가 있다고 말할 수 없음';
+      return `${metric === 'accuracy' ? '정확도' : '로그손실'} ${v}: ${verdict}`;
+    };
+    for (const c of C) {
+      const parts = [say(c.accuracy, 'accuracy')]; if (c.log_loss.usable) parts.push(say(c.log_loss, 'log_loss'));
+      list.append(E('li', {}, E('b', { text: `${c.title} (${c.candidate} − ${c.baseline}). ` }), parts.join(' / ')));
+    }
+    const tg = cmp.tuning_gain, se = cmp.selected_vs_elo, fg = cmp.formation_gain;
+    const fgText = fg.accuracy.includes_zero && fg.log_loss.includes_zero ? '두 점수 모두 0을 포함합니다'
+      : `정확도 구간은 0을 ${fg.accuracy.includes_zero ? '포함하고' : '포함하지 않고'}, 로그손실 구간은 0을 ${fg.log_loss.includes_zero ? '포함합니다' : '포함하지 않습니다'}`;
+    put('s3-ci-explain', explain('점이 실제 차이, 막대가 그럴 법한 범위입니다. 세로선이 0(차이 없음)입니다. 오른쪽일수록 앞쪽 모델이 낫습니다.',
+      `튜닝은 로그손실을 ${sgn(tg.log_loss.value, 3)}만큼 ${tg.log_loss.low > 0 ? '꾸준히 줄였지만' : '줄였지만 확실하지 않고'}, 정확도 차이는 ${tg.accuracy.includes_zero ? '0을 포함합니다' : '0을 포함하지 않습니다'}. 포메이션 입력의 효과는 ${fgText}. Elo 로지스틱과 비교하면 정확도는 ${pp(se.accuracy.value)}, 로그손실은 ${sgn(se.log_loss.value, 3)}로 ${se.accuracy.includes_zero && se.log_loss.includes_zero ? '둘 다 0을 포함합니다. 단순한 Elo 모델보다 낫다고 말할 근거가 없습니다' : '차이가 납니다'}.`));
+  }
+  // ---------------------------------------------------------------- validation vs test
+  {
+    // per-season points for the chart; the sentences use R.gap (each phase pooled, derbies 0.5 — like the official scores)
+    const W = R.win_share, val = W.filter((x) => x.phase === 'validation'), tst = W.filter((x) => x.phase === 'test'), GP = R.gap;
+    $('s3-gap-sub').textContent = `검증 시즌 정확도는 ${pct(GP.val_model)}였는데 테스트는 ${pct(GP.test_model)}입니다. 시즌마다 모델 정확도와 “6개 구단이 실제로 이긴 비율”(= 항상 ‘승’ 정확도)을 나란히 놓았습니다.`;
+    $('s3-gap-legend').append(...Lab.legend([{ label: '선택 모델 정확도', color: C_MAIN }, { label: '6개 구단이 이긴 비율(항상 ‘승’)', color: C_SIDE }]).childNodes);
+    const gv = W.flatMap((d) => [d.model_accuracy, d.always_win]);
+    const gLo = Math.min(0.3, Math.floor(Math.min(...gv) * 10) / 10), gHi = Math.max(0.8, Math.ceil(Math.max(...gv) * 10) / 10);
+    Lab.chart($('s3-gap-chart'), {
+      height: 260, margin: { t: 26, r: 14, b: 44, l: 46 }, label: '시즌별 모델 정확도와 구단 승률',
+      draw({ g, w, h }) {
+        const x = Lab.scaleBand(W.map((d) => d.season), [0, w], 0.4), y = Lab.scaleLinear([gLo, gHi], [h, 0]);
+        Lab.axisLeft(g, y, w, { format: (v) => Math.round(v * 100) + '%', ticks: Lab.ticks(gLo, gHi, 6) });
+        g.append(S('line', { x1: 0, x2: w, y1: h, y2: h, class: 'axis-line' }));
+        const sep = (x(tst[0].season) + x(val[val.length - 1].season) + x.bandwidth) / 2;
+        g.append(S('line', { x1: sep, x2: sep, y1: -20, y2: h, stroke: 'var(--border-strong)', 'stroke-dasharray': '4 4' }));
+        g.append(S('text', { x: sep - 8, y: -8, 'text-anchor': 'end', class: 'tick' }, '검증 시즌'));
+        g.append(S('text', { x: sep + 8, y: -8, 'text-anchor': 'start', class: 'tick' }, '테스트 시즌'));
+        for (const d of W) {
+          const cx = x(d.season) + x.bandwidth / 2, grp = S('g', { tabindex: 0 });
+          const star = inProgress(d.season) ? '*' : '';
+          grp.append(S('text', { x: cx, y: h + 16, 'text-anchor': 'middle', class: 'tick' }, (w < 420 ? "'" + d.season.slice(2, 4) : seasonShort(d.season)) + star));
+          grp.append(S('text', { x: cx, y: h + 31, 'text-anchor': 'middle', class: 'tick', 'font-size': 11 }, `n=${d.rows}`));
+          grp.append(S('line', { x1: cx, x2: cx, y1: y(d.always_win), y2: y(d.model_accuracy), stroke: 'var(--grid)', 'stroke-width': 3 }));
+          grp.append(S('circle', { cx, cy: y(d.always_win), r: 5.5, fill: C_SIDE, stroke: 'var(--surface)', 'stroke-width': 2 }));
+          grp.append(S('circle', { cx, cy: y(d.model_accuracy), r: 6, fill: C_MAIN, stroke: 'var(--surface)', 'stroke-width': 2 }));
+          grp.append(S('rect', { x: x(d.season), y: 0, width: x.bandwidth, height: h, fill: 'transparent' }));
+          Lab.tip.attach(grp, () => `<b>${esc(seasonTag(d.season))} (${d.phase === 'test' ? '테스트' : '검증'})</b><div>모델 정확도 ${pct(d.model_accuracy)}</div><div>6개 구단이 이긴 비율 ${pct(d.always_win)}</div><div>${d.rows}행</div>` +
+            (inProgress(d.season) ? `<div>${esc(untilText(d.season))}의 경기만 있습니다</div>` : ''));
+          g.append(grp);
+        }
+      },
+    });
+    const below = tst.filter((d) => d.model_accuracy < d.always_win);
+    put('s3-gap-explain', explain(`파란 점이 모델 정확도, 회색 점이 그 시즌 6개 구단이 실제로 이긴 비율입니다. 둘 사이 간격이 “항상 승”보다 나은 만큼입니다.${partialNote ? ` *표: ${partialNote}.` : ''}`,
+      `검증 시즌 ${val.length}개를 합치면 6개 구단이 ${pct(GP.val_always)}를 이겼지만, 테스트 시즌 ${tst.length}개를 합치면 ${pct(GP.test_always)}만 이겼습니다(${pp(GP.test_always - GP.val_always)}). 모델 정확도도 ${pct(GP.val_model)}에서 ${pct(GP.test_model)}로 ${GP.test_model < GP.val_model ? '내려갔고' : '바뀌었고'}, “항상 승”보다 나은 폭은 검증 ${pp(GP.val_model - GP.val_always)}, 테스트 ${pp(GP.test_model - GP.test_always)}입니다. ` +
+      (below.length ? `${below.map((d) => seasonTag(d.season)).join(', ')}에서는 모델이 “항상 승”보다 낮았습니다${below.some((d) => inProgress(d.season)) ? '(아직 행이 적은 진행 중 시즌)' : ''}. ` : '') +
+      (GP.test_always < GP.val_always ? '강팀이 덜 이긴, 맞히기 어려운 시즌이었던 것이 점수를 끌어내린 것으로 보입니다. ' : '') + '그래서 검증 점수는 미래 성적의 약속이 아닙니다.'));
+  }
+  // ---------------------------------------------------------------- by season / by club
+  {
+    const KEYS = ['selected_with_formation', 'elo_logistic', 'always_team_win'];
+    // ink tones + shapes only: a categorical colour here would read as one of the clubs in the per-club view
+    const COL = { selected_with_formation: C_MAIN, elo_logistic: 'var(--ink-2)', always_team_win: C_SIDE };
+    const HOLLOW = { always_team_win: true };
+    $('s3-cut-legend').append(...Lab.legend(KEYS.map((k) => ({ label: MODEL[k].short + (HOLLOW[k] ? '(속 빈 점)' : ''), color: COL[k] }))).childNodes);
+    function drawCut(which) {
+      const isSeason = which === 'season';
+      const list = isSeason ? R.by_season.map((d) => ({ name: seasonShort(d.season), tag: seasonTag(d.season), star: inProgress(d.season) ? '*' : '', d }))
+        : R.by_team.map((d) => ({ name: club(d.team), tag: club(d.team), star: '', d }));
+      $('s3-cut-sub').textContent = isSeason
+        ? `테스트 시즌별 정확도입니다. 맞대결 행은 0.5로 셉니다.${partialNote ? ` *표: ${partialNote}.` : ''}`
+        : '구단별 정확도입니다. 구단 관점이라 맞대결도 각 구단에 한 번씩 들어가며(가중치 1), 구단마다 행이 적어 들쭉날쭉합니다.';
+      const rows = list.map(({ name, tag, star, d }) => ({
+        label: `${name}${star} (n=${d.selected_with_formation.rows})`,
+        points: KEYS.map((k) => ({ x: d[k].accuracy, color: COL[k], hollow: HOLLOW[k], r: k === 'selected_with_formation' ? 6.5 : 5 })),
+        tip: `<b>${esc(tag)}</b>` + KEYS.map((k) => `<div><i class="swatch" style="background:${COL[k]}"></i>${esc(MODEL[k].short)} ${pct(d[k].accuracy)}${k !== 'always_team_win' ? ` · 로그손실 ${num(d[k].log_loss, 3)}` : ''}</div>`).join('') + `<div>${d.selected_with_formation.rows}행 · ${d.selected_with_formation.matches}경기</div>`,
+      }));
+      const cv = list.flatMap(({ d }) => KEYS.map((k) => d[k].accuracy));
+      const cLo = Math.min(0.2, Math.floor(Math.min(...cv) * 10) / 10), cHi = Math.max(0.9, Math.ceil(Math.max(...cv) * 10) / 10);
+      dotRows($('s3-cut-chart'), rows, { domain: [cLo, cHi], ticks: Lab.ticks(cLo, cHi, 4), format: (v) => Math.round(v * 100) + '%', xLabel: '정확도', labelW: 150, rowH: 36, ariaLabel: isSeason ? '시즌별 정확도' : '구단별 정확도' });
+      Lab.table($('s3-cut-table'), [
+        { key: 'name', label: isSeason ? '시즌' : '구단' }, { key: 'rows', label: '행', align: 'right' },
+        { key: 'acc', label: '선택 모델 정확도', align: 'right', fmt: (v) => pct(v) }, { key: 'll', label: '선택 모델 로그손실', align: 'right', fmt: (v) => num(v, 3) },
+        { key: 'eacc', label: 'Elo 정확도', align: 'right', fmt: (v) => pct(v) }, { key: 'ell', label: 'Elo 로그손실', align: 'right', fmt: (v) => num(v, 3) },
+        { key: 'wacc', label: '항상 ‘승’ 정확도', align: 'right', fmt: (v) => pct(v) },
+      ], list.map(({ tag, d }) => ({ name: tag, rows: d.selected_with_formation.rows, acc: d.selected_with_formation.accuracy, ll: d.selected_with_formation.log_loss, eacc: d.elo_logistic.accuracy, ell: d.elo_logistic.log_loss, wacc: d.always_team_win.accuracy })), { caption: isSeason ? '시즌별 결과' : '구단별 결과' });
+      const better = list.filter(({ d }) => d.selected_with_formation.log_loss < d.elo_logistic.log_loss).length;
+      const accs = list.map(({ d }) => d.selected_with_formation.accuracy), ns = list.map(({ d }) => d.selected_with_formation.rows);
+      const smallest = list.reduce((a, b) => (b.d.selected_with_formation.rows < a.d.selected_with_formation.rows ? b : a));
+      const tail = isSeason
+        ? `시즌마다 행이 ${f.int(Math.min(...ns))}~${f.int(Math.max(...ns))}개라 작은 차이는 우연일 수 있고, 특히 ${smallest.star ? '아직 진행 중인 ' : ''}${smallest.name} 시즌은 ${f.int(smallest.d.selected_with_formation.rows)}행뿐이라 더 흔들리기 쉽습니다. 이 차이를 그 시즌만의 특성으로 단정하기는 어렵습니다.`
+        : `구단마다 행이 ${f.int(Math.min(...ns))}${Math.min(...ns) === Math.max(...ns) ? '' : `~${f.int(Math.max(...ns))}`}개뿐이라 이 차이를 구단의 특성으로 읽기는 어렵습니다.`;
+      put('s3-cut-explain', explain('줄마다 같은 행을 세 모델로 채점한 정확도입니다. 파란 점(선택 모델)이 다른 점보다 오른쪽이면 그 묶음에서 더 잘 맞혔습니다.',
+        `${isSeason ? '시즌' : '구단'}에 따라 정확도가 ${pct(Math.min(...accs))}~${pct(Math.max(...accs))}로 달라집니다. 로그손실이 Elo 로지스틱보다 낮은(좋은) 묶음은 ${list.length}개 중 ${better}개입니다. ${tail}`));
+    }
+    Lab.segmented($('s3-cut-pick'), [{ value: 'season', label: '시즌별' }, { value: 'team', label: '구단별' }], 'season', drawCut, '묶음 고르기');
+    drawCut('season');
+  }
+  // ---------------------------------------------------------------- confusion matrix
+  {
+    const CM_KEYS = Object.keys(R.confusion);
+    function drawCM(key) {
+      const C = R.confusion[key], m = C.matrix;
+      $('s3-cm-sub').textContent = `${MODEL[key].short} · 테스트 ${f.int(C.rows)}개 구단 행(맞대결은 양쪽 모두 셈)을 실제 결과(행)와 예측(열)으로 나눴습니다. 이렇게 행으로 센 정확도는 ${pct(C.row_accuracy)}입니다(맞대결을 0.5로 센 공식 값과 조금 다릅니다).`;
+      const order = [2, 1, 0];
+      const table = E('table', { class: 's3-cm' });
+      table.append(E('caption', { class: 'sr-only', text: '혼동 행렬: 실제 결과별 예측 분포' }));
+      table.append(E('thead', {}, E('tr', {}, E('th', { text: '실제 ＼ 예측' }), ...order.map((o) => E('th', { scope: 'col', text: `${OUT_LABEL[o]} 예측` })), E('th', { scope: 'col', text: '합계' }))));
+      const body = E('tbody');
+      for (const a of order) {
+        const total = m[a].reduce((s, x) => s + x, 0), tr = E('tr', {}, E('th', { scope: 'row', text: `실제 ${OUT_LABEL[a]}` }));
+        for (const p of order) {
+          const share = total ? m[a][p] / total : 0;
+          tr.append(E('td', { style: `background:color-mix(in srgb, var(--accent) ${Math.round(share * 55)}%, var(--surface-2))`, title: `실제 ${OUT_LABEL[a]} ${total}행 중 ${m[a][p]}행을 ${OUT_LABEL[p]}로 예측` }, E('b', { text: f.int(m[a][p]) }), E('span', { text: pct(share, 0) })));
+        }
+        tr.append(E('td', { class: 'tot', text: f.int(total) }));
+        body.append(tr);
+      }
+      table.append(body);
+      put('s3-cm', table);
+      Lab.table($('s3-cm-class'), [
+        { key: 'name', label: '결과', sort: false }, { key: 'actual', label: '실제 횟수', align: 'right', sort: false }, { key: 'predicted', label: '예측 횟수', align: 'right', sort: false },
+        { key: 'precision', label: '정밀도', align: 'right', sort: false, fmt: (v) => (v == null ? '예측 없음' : pct(v)) }, { key: 'recall', label: '재현율', align: 'right', sort: false, fmt: (v) => pct(v) },
+      ], order.map((o) => { const pc = C.per_class.find((x) => x.outcome === o); return { name: OUT_LABEL[o], ...pc }; }), { caption: '결과별 정밀도와 재현율' });
+      const d = C.per_class.find((x) => x.outcome === 1), w2 = C.per_class.find((x) => x.outcome === 2), dp = C.draw_prob;
+      const others = CM_KEYS.filter((k) => k !== key).map((k) => `${MODEL[k].short} ${f.int(R.confusion[k].per_class.find((x) => x.outcome === 1).predicted)}번`).join(', ');
+      put('s3-cm-explain', explain('행은 실제 결과, 열은 모델이 가장 큰 확률을 준 결과입니다. 칸의 숫자는 행 수, 아래 %는 그 실제 결과 중 비율(행 기준)입니다. 정밀도는 “그렇게 예측했을 때 맞은 비율”, 재현율은 “실제로 그랬던 경기 중 맞힌 비율”입니다.',
+        `실제 무승부가 ${f.int(d.actual)}행(${pct(d.actual / C.rows, 0)})이나 있었는데, 이 모델은 ‘무’를 ${d.predicted ? `${f.int(d.predicted)}번만 골랐습니다` : '한 번도 고르지 않았습니다'}(재현율 ${pct(d.recall)}). 무승부 확률은 가운데 80% 경기에서 ${pct(dp.p10, 0)}~${pct(dp.p90, 0)}(가장 높을 때 ${pct(dp.max, 0)})에 머물러, 승이나 패 확률보다 커지는 일이 거의 없기 때문입니다. 대신 ‘승’을 ${f.int(w2.predicted)}번 골라 실제 승의 ${pct(w2.recall, 0)}를 잡았습니다. 다른 모델이 ‘무’를 고른 횟수: ${others}(위 버튼으로 바꿔 보세요).`));
+    }
+    Lab.segmented($('s3-cm-pick'), CM_KEYS.map((k) => ({ value: k, label: MODEL[k].short })), CM_KEYS[0], drawCM, '모델 고르기');
+    drawCM(CM_KEYS[0]);
+  }
+  // ---------------------------------------------------------------- calibration
+  {
+    const CAL = R.calibration, WR = R.win_rates, KEYS = ['selected_with_formation', 'elo_logistic'], COL = { selected_with_formation: C_MAIN, elo_logistic: C_SIDE };
+    $('s3-cal-sub').textContent = `테스트 ${f.int(WR.test_rows)}행을 모델이 준 ‘승’ 확률에 따라 ${Math.round((CAL.selected_with_formation[0].hi - CAL.selected_with_formation[0].lo) * 100)}%p 구간으로 나누고, 각 구간에서 실제로 이긴 비율을 셌습니다. 점이 점선(대각선)에 가까울수록 확률이 정직한 것입니다.`;
+    $('s3-cal-legend').append(...Lab.legend([...KEYS.map((k) => ({ label: MODEL[k].short, color: COL[k] })), { label: '점선: 완벽한 보정', color: 'var(--ink-2)' }]).childNodes);
+    Lab.chart($('s3-cal-chart'), {
+      height: 360, margin: { t: 30, r: 18, b: 44, l: 46 }, label: '승 확률 보정 그림',
+      draw({ g, w, h }) {
+        const stripH = 46, ph = h - stripH - 12;
+        const x = Lab.scaleLinear([0, 1], [0, w]), y = Lab.scaleLinear([0, 1], [ph, 0]);
+        Lab.axisLeft(g, y, w, { format: (v) => Math.round(v * 100) + '%', ticks: [0, 0.25, 0.5, 0.75, 1] });
+        g.append(S('text', { x: -40, y: -16, class: 'axis-label' }, '↑ 실제로 이긴 비율'));
+        g.append(S('line', { x1: x(0), y1: y(0), x2: x(1), y2: y(1), stroke: 'var(--ink-2)', 'stroke-width': 1.5, 'stroke-dasharray': '5 4' }));
+        g.append(S('line', { x1: 0, x2: w, y1: ph, y2: ph, class: 'axis-line' }));
+        const nMax = Math.max(...KEYS.flatMap((k) => CAL[k].map((b) => b.n)));
+        const sy = ph + 12, bwid = (x(0.1) - x(0)) / 2 - 2;
+        KEYS.forEach((k, ki) => {
+          const pts = CAL[k];
+          g.append(S('path', { d: pts.map((b, i) => `${i ? 'L' : 'M'}${x(b.mean_p).toFixed(1)},${y(b.observed).toFixed(1)}`).join(''), fill: 'none', stroke: COL[k], 'stroke-width': 2 }));
+          for (const b of pts) {
+            g.append(S('circle', { cx: x(b.mean_p), cy: y(b.observed), r: 5, fill: COL[k], stroke: 'var(--surface)', 'stroke-width': 2 }));
+            const bh = (b.n / nMax) * stripH;
+            g.append(S('rect', { x: x(b.lo) + 1 + ki * (bwid + 1), y: sy + stripH - bh, width: Math.max(1, bwid), height: bh, fill: COL[k], rx: 1.5 }));
+          }
+        });
+        g.append(S('line', { x1: 0, x2: w, y1: sy + stripH, y2: sy + stripH, class: 'axis-line' }));
+        g.append(S('text', { x: 4, y: sy + 8, class: 'tick' }, '구간별 행 수'));
+        for (const t of [0, 0.2, 0.4, 0.6, 0.8, 1]) g.append(S('text', { x: x(t), y: sy + stripH + 16, 'text-anchor': 'middle', class: 'tick' }, Math.round(t * 100) + '%'));
+        g.append(S('text', { x: w / 2, y: sy + stripH + 32, 'text-anchor': 'middle', class: 'axis-label' }, '모델이 준 ‘승’ 확률'));
+        for (let i = 0; i < 10; i++) {
+          const lo = i / 10, hit = S('rect', { x: x(lo), y: 0, width: x(0.1) - x(0), height: sy + stripH, fill: 'transparent' }); g.append(hit);
+          Lab.tip.attach(hit, () => `<b>‘승’ 확률 ${i * 10}~${i * 10 + 10}%</b>` + KEYS.map((k) => { const b = CAL[k].find((q) => Math.abs(q.lo - lo) < 1e-9); return `<div><i class="swatch" style="background:${COL[k]}"></i>${esc(MODEL[k].short)}: ${b ? `${b.n}행, 평균 예측 ${pct(b.mean_p, 0)} → 실제 ${pct(b.observed, 0)}` : '해당 행 없음'}</div>`; }).join(''));
+        }
+      },
+    });
+    Lab.table($('s3-cal-table'), [
+      { key: 'bin', label: '‘승’ 확률 구간', sort: false }, { key: 'model', label: '모델', sort: false }, { key: 'n', label: '행 수', align: 'right', sort: false },
+      { key: 'mean_p', label: '평균 예측', align: 'right', sort: false, fmt: (v) => pct(v) }, { key: 'observed', label: '실제 승률', align: 'right', sort: false, fmt: (v) => pct(v) },
+    ], KEYS.flatMap((k) => CAL[k].map((b) => ({ bin: `${Math.round(b.lo * 100)}~${Math.round(b.hi * 100)}%`, model: MODEL[k].short, n: b.n, mean_p: b.mean_p, observed: b.observed }))), { caption: '보정 구간별 숫자' });
+    // like-for-like: every club row counts once here (the same rows the bins count; derbies are not halved)
+    const rf = CAL.selected_with_formation, over = rf.filter((b) => b.mean_p > 0.5 && b.observed < b.mean_p);
+    const meanP = WR.mean_p_win.selected_with_formation, binN = rf.map((b) => b.n);
+    put('s3-cal-explain', explain('가로는 모델이 준 ‘승’ 확률(구간 평균), 세로는 그 경기들에서 실제로 이긴 비율입니다. 아래 막대는 구간마다 행이 몇 개였는지입니다.',
+      `‘승’ 확률을 50% 넘게 준 구간 ${rf.filter((b) => b.mean_p > 0.5).length}개 중 ${over.length}개에서 실제 승률이 예측보다 낮았습니다. 같은 테스트 ${f.int(WR.test_rows)}행을 한 번씩 세면, 선택 모델이 준 ‘승’ 확률의 평균은 ${pct(meanP)}, 실제로 이긴 행은 ${pct(WR.test_rows_share)}입니다(${pp(meanP - WR.test_rows_share)}). 학습 기간 행에서는 ${pct(WR.train_rows_share)}가 이겼습니다. ` +
+      (meanP > WR.test_rows_share && WR.train_rows_share > WR.test_rows_share ? '더 자주 이기던 과거를 보고 배워서 승리를 조금 후하게 봤기 때문일 수 있습니다. ' : '') +
+      `구간마다 행이 ${f.int(Math.min(...binN))}~${f.int(Math.max(...binN))}개라 점 하나하나는 몇 %p씩 흔들릴 수 있습니다.`));
+  }
+
+  // ================================================================ F. importance
+  {
+    const I = data.importance;
+    $('s3-f-intro').innerHTML = `모델이 무엇에 의지했는지 두 가지 방법으로 봤습니다. 둘 다 “원인”이 아니라 “모델이 기대는 정도”를 잽니다. <span data-g="변수 중요도">변수 중요도</span>는 이름이 같아도 방법에 따라 숫자가 달라지므로, 방법을 구분해 읽어야 합니다.`;
+    $('s3-perm-sub').textContent = `마지막 검증 시즌(${seasonShort(I.fold)})에서, 입력 하나의 값을 경기끼리 무작위로 뒤섞었을 때 로그손실이 얼마나 나빠지는지(${I.permutation_repeats}번 반복 평균)입니다. 학습 데이터 기준 불순도 중요도 상위 ${I.permutation_preselect}개 열만 검사했고, 그중 상위 ${I.permutation_top_n}개입니다. 가는 선은 반복 간 표준편차입니다.`;
+    let showAll = false;
+    const btn = $('s3-perm-more');
+    function drawPerm() {
+      const items = showAll ? I.permutation : I.permutation.slice(0, 12);
+      btn.textContent = showAll ? '상위 12개만 보기' : `${I.permutation.length}개 모두 보기`;
+      btn.setAttribute('aria-expanded', String(showAll));
+      const maxV = Math.max(...items.map((p) => p.importance + p.sd));
+      Lab.chart($('s3-perm-chart'), {
+        height: items.length * 44 + 30, margin: { t: 4, r: 64, b: 30, l: 18 }, label: '순열 중요도 상위 입력',
+        draw({ g, w, h }) {
+          const x = Lab.scaleLinear([Math.min(0, ...items.map((p) => p.importance - p.sd)), maxV * 1.05], [0, w]), band = h / items.length;
+          for (const t of Lab.ticks(x.domain[0], x.domain[1], 4)) { g.append(S('line', { x1: x(t), x2: x(t), y1: 0, y2: h, class: 'grid-line' })); g.append(S('text', { x: x(t), y: h + 16, 'text-anchor': 'middle', class: 'tick' }, num(t, 3))); }
+          g.append(S('line', { x1: x(0), x2: x(0), y1: 0, y2: h, class: 'axis-line' }));
+          items.forEach((p, i) => {
+            const top = i * band, grp = S('g', { tabindex: 0 }), cy = top + band - 12;
+            grp.append(S('text', { x: 0, y: top + 15, class: 'tick tick-strong' }, `${i + 1}. ${p.label}`));
+            grp.append(S('rect', { x: Math.min(x(0), x(p.importance)), y: cy - 6, width: Math.max(1, Math.abs(x(p.importance) - x(0))), height: 12, rx: 3, fill: p.group === 'formation' ? C_FORM : C_MAIN }));
+            grp.append(S('line', { x1: x(Math.max(x.domain[0], p.importance - p.sd)), x2: x(p.importance + p.sd), y1: cy, y2: cy, stroke: 'var(--ink-2)', 'stroke-width': 1.5 }));
+            grp.append(S('text', { x: x(p.importance + p.sd) + 6, y: cy + 4, class: 'value-label' }, num(p.importance, 4)));
+            grp.append(S('rect', { x: 0, y: top, width: w, height: band, fill: 'transparent' }));
+            Lab.tip.attach(grp, () => `<b>${esc(p.label)}</b><div>묶음: ${esc(p.group_label)}</div><div>뒤섞으면 로그손실 +${num(p.importance, 4)} (±${num(p.sd, 4)})</div><div class="mono">${esc(p.feature)}</div>`);
+            g.append(grp);
+          });
+        },
+      });
+    }
+    btn.addEventListener('click', () => { showAll = !showAll; drawPerm(); });
+    drawPerm();
+    const ranked = I.permutation.slice().sort((a, b) => b.importance - a.importance), top = ranked[0], second = ranked[1];
+    // which input groups fill the list (counted from the data, largest first)
+    const byGroup = {}; for (const p of ranked) byGroup[p.group_label] = (byGroup[p.group_label] || 0) + 1;
+    const groupText = Object.entries(byGroup).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([g, n]) => `${g} ${n}개`).join(', ');
+    put('s3-perm-explain', explain('막대가 길수록 그 입력을 망가뜨렸을 때 예측이 많이 나빠집니다. 즉 모델이 그 입력에 많이 기댑니다.' + (I.permutation_formation ? ' 진한 막대가 포메이션 입력입니다.' : ''),
+      `1위 “${top.label}”(${num(top.importance, 4)})은 2위 “${second.label}”(${num(second.importance, 4)})의 약 ${Math.round(top.importance / second.importance)}배입니다. 이 목록 ${I.permutation_top_n}개 중 포메이션 입력은 ${I.permutation_formation}개입니다. 묶음별로는 ${groupText} 순으로 많고, 2위부터는 하나하나가 로그손실을 ${num(second.importance, 4)} 이하로만 바꿉니다.`));
+
+    const G = I.impurity_groups.slice().sort((a, b) => b.share - a.share), form = G.find((x) => x.group === 'formation'), elo = G.find((x) => x.group === 'elo');
+    $('s3-group-sub').textContent = `위와는 다른 방법입니다. 연습용 모델(${I.impurity_model_last_date.slice(0, 4)}년 ${+I.impurity_model_last_date.slice(5, 7)}월까지 학습)의 나무들이 질문할 때 각 입력 열이 결과를 얼마나 깔끔하게 갈랐는지(불순도 감소)를 학습 데이터 기준으로 더한 뒤, 1단계에서 본 입력 묶음별로 합쳤습니다. 전체 ${f.int(I.n_columns)}개 열의 합이 100%입니다.`;
+    $('s3-group-chart').before(Lab.legend([{ label: '포메이션 관련 묶음', color: C_FORM }, { label: '그 밖의 입력 묶음', color: C_MAIN }]));
+    Lab.barsH($('s3-group-chart'), G.map((x) => ({ label: `${x.label} (${x.columns}열)`, value: x.share, color: x.group === 'formation' ? C_FORM : C_MAIN, tip: `<b>${esc(x.label)}</b><div>${esc(x.desc)}</div><div>열 ${x.columns}개 합계 ${pct(x.share, 1)}</div><div>가장 큰 열: ${esc(x.top_label)} (${pct(x.top_share, 1)})</div>` })),
+      { format: (v) => pct(v, 1), labelWidth: 150, ariaLabel: '입력 묶음별 불순도 중요도 합계' });
+    put('s3-group-explain', explain('막대는 묶음에 속한 열들의 중요도를 모두 더한 몫입니다. 괄호 안은 그 묶음의 열 개수입니다(팀 이름·포메이션은 원-핫 인코딩으로 여러 열이 됩니다).',
+      (form.share < elo.share
+        ? `포메이션 관련 ${form.columns}개 열을 모두 합쳐도 ${pct(form.share, 1)}로, Elo ${elo.columns}개 열(${pct(elo.share, 1)})의 약 ${Math.round(elo.share / form.share)}분의 1입니다. `
+        : `포메이션 관련 ${form.columns}개 열의 합은 ${pct(form.share, 1)}, Elo ${elo.columns}개 열은 ${pct(elo.share, 1)}입니다. `) +
+      '이 방법은 값의 종류가 많은 숫자 열을 실제보다 크게 보이게 하는 경향이 있어 비율을 정확한 몫으로 읽으면 안 됩니다.' +
+      (I.permutation_formation === 0 && form.share < elo.share ? ' 그래도 두 방법 모두 포메이션 입력이 거의 쓰이지 않았다는 점은 같습니다.' : '')));
+  }
+
+  // ================================================================ G. verdict
+  {
+    const tg = cmp.tuning_gain, fg = cmp.formation_gain, se = cmp.selected_vs_elo, sa = cmp.selected_vs_always_win, d = R.confusion.selected_with_formation.per_class.find((x) => x.outcome === 1);
+    const li = (t) => E('li', { text: t });
+    $('s3-can').append(
+      li(`경기 전 정보만으로 승·무·패 확률을 냅니다. 처음 보는 ${f.int(H.rows)}개 구단 경기에서 정확도 ${pct(H.accuracy)}로, “항상 우리 팀 승”(${pct(H.always_accuracy)})보다 ${pp(sa.accuracy.value)} 높았고 그 차이의 95% 구간(${pp(sa.accuracy.low)} ~ ${pp(sa.accuracy.high)})은 0을 ${sa.accuracy.includes_zero ? '포함합니다' : '포함하지 않습니다'}.`),
+      li(`튜닝으로 확률의 질(로그손실)을 ${sgn(tg.log_loss.value, 3)} 개선했고, 그 구간이 0을 ${tg.log_loss.includes_zero ? '포함합니다' : '포함하지 않습니다'}.`),
+      li(`어떤 입력에 기댔는지 보여 줍니다. 검증 시즌 기준으로 ${data.importance.permutation.slice(0, 3).map((p) => `“${p.label}”`).join(', ')} 순으로 컸습니다.`),
+      li('4단계에서 실제로 처음 보는 경기나 가상의 대결을 넣어 확률이 어떻게 바뀌는지 실험해 볼 수 있습니다.'));
+    $('s3-cannot').append(
+      li(`단순한 Elo 모델보다 ${se.accuracy.low > 0 && se.log_loss.low > 0 ? '두 점수 모두 나았지만 차이는 작습니다' : '낫다고 말할 수 없습니다'}. 정확도 차이 ${pp(se.accuracy.value)}, 로그손실 차이 ${sgn(se.log_loss.value, 3)}이고 ` +
+        (se.accuracy.includes_zero && se.log_loss.includes_zero ? '두 구간 모두 0을 포함합니다.' : `정확도 구간은 0을 ${se.accuracy.includes_zero ? '포함하고' : '포함하지 않고'}, 로그손실 구간은 0을 ${se.log_loss.includes_zero ? '포함합니다' : '포함하지 않습니다'}.`)),
+      li(`포메이션 입력의 도움은 ${fg.log_loss.includes_zero && fg.accuracy.includes_zero ? '측정되지 않았습니다' : '구간으로 보면 분명하지 않습니다'}(로그손실 차이 ${sgn(fg.log_loss.value, 4)}, 구간 ${sgn(fg.log_loss.low, 4)} ~ ${sgn(fg.log_loss.high, 4)}). 그러니 “최적 포메이션” 같은 결론은 낼 수 없습니다.`),
+      li(`무승부를 거의 예측하지 못합니다(실제 무승부 ${f.int(d.actual)}행 중 ${f.int(d.hit)}행만 맞힘).`),
+      li('부상·감독 교체·이적 같은 정보는 데이터에 없습니다. 중요도는 “모델이 기댄 정도”일 뿐 원인이 아닙니다.'),
+      li(`테스트 시즌 결과는 이전 실험에서 이미 본 적이 있어 완전히 새로운 미래 시험은 아닙니다. 경기 직전 배당은 정확도 ${pct(R.market.accuracy)}, 로그손실 ${num(R.market.log_loss, 3)}로 ${R.market.log_loss < H.log_loss ? '이 모델보다 좋았습니다' : '이 모델과 비슷했습니다'}.`));
+    $('s3-next').textContent = '다음 단계에서는 이 모델에 직접 경기를 넣어 봅니다. 숫자 하나보다 승·무·패 확률 세 개를 함께, 그리고 위의 한계를 기억하며 보세요.';
+  }
+  Lab.nav(root, ['s2', '전처리'], ['s4', '예측 실험']);
+});
+</script>

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ko" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EPL 경기 예측 실험실</title>
+<script>window.Lab={steps:{},inited:new Set(),register:function(id,init){this.steps[id]=init;}};</script>
+<style>
+:root{
+  color-scheme:light;
+  --page:#f9f9f7; --surface:#fcfcfb; --surface-2:#f3f2ee; --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#6e6c66;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.12); --border-strong:rgba(11,11,11,.22);
+  --accent:#1c5cab; --accent-ink:#ffffff; --accent-soft:#e6eef9; --link:#184f95;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#6250d6; --s8:#e34948;
+  --c-win:var(--s1); --c-loss:var(--s2); --c-draw:var(--s3);
+  --ok:#006300; --warn-bg:#fff6e0; --warn-line:#c98500; --warn-ink:#5c3d00; --bad:#b32d2d;
+  --shadow:0 1px 2px rgba(11,11,11,.06),0 4px 14px rgba(11,11,11,.05);
+  --radius:12px; --gap:20px;
+  --font:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,-apple-system,sans-serif;
+  --mono:"Cascadia Mono","Consolas","D2Coding",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme:dark;
+    --page:#0d0d0d; --surface:#1a1a19; --surface-2:#232321; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#a09e96;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.12); --border-strong:rgba(255,255,255,.24);
+    --accent:#256abf; --accent-ink:#ffffff; --accent-soft:#16253a; --link:#6da7ec;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --ok:#0ca30c; --warn-bg:#2b2412; --warn-line:#c98500; --warn-ink:#f1d9a0; --bad:#e66767;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0d0d0d; --surface:#1a1a19; --surface-2:#232321; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#a09e96;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.12); --border-strong:rgba(255,255,255,.24);
+  --accent:#256abf; --accent-ink:#ffffff; --accent-soft:#16253a; --link:#6da7ec;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+  --ok:#0ca30c; --warn-bg:#2b2412; --warn-line:#c98500; --warn-ink:#f1d9a0; --bad:#e66767;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:84px}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.7 var(--font);-webkit-text-size-adjust:100%}
+h1,h2,h3,h4{line-height:1.3;margin:0;font-weight:650;letter-spacing:-.01em}
+h1{font-size:clamp(24px,3.4vw,34px)}
+h2{font-size:clamp(20px,2.4vw,25px)}
+h3{font-size:17px;margin-top:4px}
+h4{font-size:15px}
+p{margin:.5em 0}
+a{color:var(--link)}
+button,select,input{font:inherit;color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* header */
+.top{padding:28px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.14em;color:var(--ink-2);text-transform:uppercase;font-weight:600}
+.top h1{margin:6px 0 8px}
+.lede{color:var(--ink-2);max-width:78ch;font-size:16px}
+.top-actions{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 6px}
+.ov{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;text-align:left;cursor:pointer;display:block;width:100%}
+.ov:hover{border-color:var(--border-strong)}
+.ov .n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:13px;font-weight:650}
+.ov b{display:block;margin:8px 0 2px;font-size:15px}
+.ov span{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.55}
+.verdict{margin:14px 0 4px;padding:14px 18px;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius);background:var(--surface)}
+.verdict b{font-weight:650}
+.verdict .scoreline{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:6px;color:var(--ink-2);font-size:14px}
+.verdict .scoreline strong{color:var(--ink);font-size:17px;font-weight:650}
+
+/* stepper */
+.stepper-bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--page) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);margin-top:14px}
+.stepper{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px 0}
+.stepper button{display:flex;align-items:center;gap:10px;text-align:left;padding:9px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer;min-height:48px}
+.stepper button:hover{border-color:var(--border-strong)}
+.stepper button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.stepper .n{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;border:1.5px solid currentColor;font-size:13px;font-weight:650}
+.stepper b{display:block;font-size:14.5px;line-height:1.25}
+.stepper small{display:block;font-size:12px;opacity:.85;line-height:1.3}
+:focus-visible{outline:3px solid var(--s1);outline-offset:2px;border-radius:4px}
+
+/* step panels */
+main{padding:22px 0 56px}
+.step[hidden]{display:none}
+.step-head{margin-bottom:16px}
+.step-head .eyebrow{color:var(--accent)}
+:root[data-theme="dark"] .step-head .eyebrow{color:var(--link)}
+.step-head h2{margin:4px 0 6px}
+.takeaway{margin:14px 0 20px;padding:16px 20px;background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:10px}
+.takeaway b.t{display:block;font-size:12px;letter-spacing:.1em;color:var(--ink-2);margin-bottom:2px}
+.takeaway p{margin:.2em 0;font-size:15.5px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin:0 0 var(--gap);min-width:0}
+.card>h3:first-child,.card>h4:first-child{margin-top:0}
+.card .sub{color:var(--ink-2);margin:.2em 0 .9em;font-size:14.5px;max-width:80ch}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.grid2>.card,.grid3>.card{margin:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 var(--gap)}
+.kpi{padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.kpi .v{font-size:26px;font-weight:650;line-height:1.15;letter-spacing:-.02em}
+.kpi .l{font-size:13px;color:var(--ink-2);margin-top:3px}
+.note{display:flex;gap:10px;margin:12px 0;padding:11px 14px;border:1px solid var(--warn-line);border-radius:10px;background:var(--warn-bg);color:var(--warn-ink);font-size:14px;line-height:1.6}
+.note::before{content:"!";flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--warn-line);color:#fff;font-weight:700;font-size:13px;margin-top:2px}
+.note.info{border-color:var(--border-strong);background:var(--surface-2);color:var(--ink)}
+.note.info::before{content:"i";background:var(--ink-2);color:var(--surface)}
+.step-nav{display:flex;justify-content:space-between;gap:10px;margin-top:8px}
+.eq{font-family:var(--mono);font-size:13px;background:var(--surface-2);border-radius:8px;padding:2px 7px}
+code,.mono{font-family:var(--mono);font-size:.92em}
+.muted{color:var(--ink-2)}
+ul.clean{margin:.4em 0;padding-left:1.2em}
+ul.clean li{margin:.25em 0}
+
+/* controls */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--border-strong);border-radius:9px;background:var(--surface);cursor:pointer;min-height:38px}
+.btn:hover{background:var(--surface-2)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.small{padding:4px 10px;min-height:36px;font-size:13px}
+select,input[type=text],input[type=number]{padding:7px 10px;border:1px solid var(--border-strong);border-radius:8px;background:var(--surface);min-height:38px;max-width:100%}
+input[type=range]{width:100%;accent-color:var(--accent)}
+label.f{display:block;font-size:13px;color:var(--ink-2);margin-bottom:4px;font-weight:550}
+.seg{display:inline-flex;border:1px solid var(--border-strong);border-radius:9px;overflow:hidden;flex-wrap:wrap}
+.seg button{border:0;background:var(--surface);padding:7px 13px;cursor:pointer;min-height:36px;border-right:1px solid var(--border)}
+.seg button:last-child{border-right:0}
+.seg button[aria-checked="true"]{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.chip{display:inline-block;padding:1px 9px;border-radius:99px;background:var(--surface-2);border:1px solid var(--border);font-size:12.5px;color:var(--ink-2)}
+.chip.win{border-color:var(--c-win)} .chip.draw{border-color:var(--c-draw)} .chip.loss{border-color:var(--c-loss)}
+.badge-edit{display:inline-block;margin-left:6px;padding:0 6px;border-radius:6px;background:var(--s4);color:#0b0b0b;font-size:11.5px;font-weight:650}
+
+/* tables */
+.scroll{overflow:auto;max-width:100%;border-radius:8px}
+table.data{width:100%;border-collapse:collapse;font-size:13.5px}
+table.data th,table.data td{padding:8px 10px;border-bottom:1px solid var(--grid);text-align:left;vertical-align:top}
+table.data th{font-weight:600;color:var(--ink-2);position:sticky;top:0;background:var(--surface);white-space:nowrap}
+table.data td.num,table.data th.num{text-align:right;font-variant-numeric:tabular-nums}
+table.data tr.clickable{cursor:pointer}
+table.data tr.clickable:hover td{background:var(--surface-2)}
+.th-btn{all:unset;cursor:pointer}
+.th-btn:focus-visible{outline:3px solid var(--s1)}
+
+/* charts */
+.chart{position:relative;width:100%;min-width:0}
+.chart-svg{display:block;max-width:100%;overflow:visible}
+.chart-canvas canvas{display:block}
+.chart-overlay{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+.chart text{fill:var(--ink-2);font-family:var(--font)}
+.chart .tick{font-size:12px}
+.chart .tick-strong{fill:var(--ink)}
+.chart .axis-label{font-size:12px;fill:var(--ink-2)}
+.chart .value-label{font-size:12.5px;fill:var(--ink);font-weight:550}
+.chart .axis-line{stroke:var(--axis);stroke-width:1}
+.chart .grid-line{stroke:var(--grid);stroke-width:1}
+.chart .hover-ring{stroke:var(--ink);stroke-width:2}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin:6px 0 2px}
+.legend-item{display:inline-flex;align-items:center;gap:6px}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.tooltip{position:fixed;z-index:100;pointer-events:none;max-width:320px;padding:8px 11px;border-radius:9px;background:var(--ink);color:var(--page);font-size:13px;line-height:1.5;box-shadow:var(--shadow)}
+.tooltip .swatch{width:10px;height:10px}
+
+/* glossary */
+.term{all:unset;cursor:help;border-bottom:1.5px dotted var(--ink-3);color:inherit}
+.term:focus-visible{outline:3px solid var(--s1)}
+.pop{position:fixed;z-index:110;max-width:340px;padding:12px 14px;border-radius:10px;background:var(--surface);border:1px solid var(--border-strong);box-shadow:var(--shadow);font-size:13.5px;line-height:1.6}
+.pop b{display:block;margin-bottom:2px}
+dl.gloss{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}
+dl.gloss dt{font-weight:650}
+dl.gloss dd{margin:0;color:var(--ink-2)}
+footer{border-top:1px solid var(--border);padding:22px 0 40px;color:var(--ink-2);font-size:13.5px}
+footer h3{color:var(--ink)}
+
+@media (max-width:900px){
+  .overview{grid-template-columns:repeat(2,1fr)}
+  .grid3{grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+  .wrap{padding:0 14px}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .stepper{grid-template-columns:repeat(4,minmax(132px,1fr));overflow-x:auto;scrollbar-width:thin}
+  .stepper small{display:none}
+  .card{padding:16px 15px}
+  dl.gloss{grid-template-columns:1fr}
+  .top{padding-top:18px}
+}
+@media (max-width:480px){.overview{grid-template-columns:1fr}}
+@media print{.stepper-bar,.step-nav,.top-actions{display:none}.step[hidden]{display:block}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="eyebrow">S2BEV · EPL 6개 구단 · 경기 결과 예측 실험실</div>
+  <h1>데이터를 모으고, 다듬고, 학습시키고, 직접 넣어 보는 4단계</h1>
+  <p class="lede" id="lede"></p>
+  <div class="overview" id="overview"></div>
+  <div class="verdict" id="verdict"></div>
+  <div class="top-actions">
+    <button class="btn small" id="theme-toggle" type="button" aria-pressed="false">화면 색 바꾸기</button>
+    <a class="btn small" href="#glossary">용어 사전</a>
+    <a class="btn small" href="comparison.html">기존 비교 표 화면</a>
+  </div>
+</div></header>
+
+<div class="stepper-bar"><div class="wrap"><nav class="stepper" role="tablist" aria-label="분석 4단계" id="stepper"></nav></div></div>
+
+<main><div class="wrap" id="steps">
+<!--__SECTIONS__-->
+</div></main>
+
+<footer><div class="wrap">
+  <h3 id="glossary">용어 사전</h3>
+  <p>본문의 점선 밑줄 단어를 누르면 같은 설명이 말풍선으로 나옵니다.</p>
+  <dl class="gloss" id="gloss"></dl>
+  <p style="margin-top:18px" id="sources"></p>
+</div></footer>
+
+<script id="lab-payload" type="application/json">__PAYLOAD__</script>
+<script>/*__ENGINE__*/</script>
+<script>/*__CHARTS__*/</script>
+<script>
+(function () {
+  'use strict';
+  const LAB = JSON.parse(document.getElementById('lab-payload').textContent);
+  const Lab = window.Lab;
+  Lab.data = LAB;
+  LabCharts(Lab);
+
+  // ------------------------------------------------------------ glossary
+  const GLOSSARY = [
+    ['종속변수(정답)', '예측하려는 값. 여기서는 한 구단 입장에서 본 경기 결과(패·무·승)입니다.'],
+    ['독립변수(입력)', '결과를 예측하는 데 쓰는 값. 경기 전에 알 수 있는 정보만 사용합니다(Elo, 최근 경기 기록, 홈/원정, 포메이션 등).'],
+    ['누수', '예측 시점에는 알 수 없는 정보(그 경기의 득점·슈팅 등)가 입력에 섞여 성적이 부풀려지는 오류. 이 프로젝트는 날짜별로 이전 경기만 쓰도록 막았습니다.'],
+    ['Elo', '경기 결과(승·무·패)로 갱신하는 팀 전력 점수. 시작은 1500점이고, 강팀을 이기면 많이 오르고 약팀에 지면 많이 내려갑니다.'],
+    ['결측치', '기록이 비어 있는 값. 예: 2006~2008 시즌은 포메이션 기록이 없습니다. 없는 값을 지어내지 않고 “없음”으로 표시합니다.'],
+    ['중앙값 대체', '빈 칸을 그 열의 중앙값(가운데 값)으로 채우는 방법. 함께 “원래 비어 있었음” 표시를 추가해 정보가 사라지지 않게 합니다.'],
+    ['표준화', '열마다 평균 0, 퍼짐 1이 되도록 맞추는 변환. 단위가 다른 변수(Elo 수천 점 vs 득점 1~2골)를 같은 눈금에 올립니다.'],
+    ['원-핫 인코딩', '팀 이름 같은 글자 값을 “이 팀이면 1, 아니면 0”인 여러 개의 숫자 열로 바꾸는 방법.'],
+    ['랜덤 포레스트', '서로 조금씩 다른 결정나무 수백 그루가 각자 승·무·패 확률을 내고, 그 평균을 최종 확률로 쓰는 모델.'],
+    ['결정나무', '“상대와 Elo 차이가 −20보다 큰가?” 같은 질문을 차례로 던져 가며 결과를 가르는 규칙 나무.'],
+    ['하이퍼파라미터', '학습 전에 사람이 정하는 모델 설정(나무 개수, 깊이 등). 값을 바꿔 가며 가장 좋은 조합을 찾는 과정이 튜닝입니다.'],
+    ['시간순 검증', '과거로 학습하고 그 다음 시즌으로 점검하는 방식. 미래 경기를 학습에 섞지 않기 위해 무작위 분할을 쓰지 않습니다.'],
+    ['과적합', '학습한 경기는 잘 맞히지만 처음 보는 경기는 못 맞히는 상태. 나무를 너무 깊게 키우면 생깁니다.'],
+    ['정확도', '가장 높은 확률로 고른 결과가 실제와 같았던 비율. 승·무·패 3가지라 아무 때나 찍으면 약 33%입니다.'],
+    ['로그손실', '확률 예측의 품질 점수(낮을수록 좋음). 맞혔는지가 아니라 실제 결과에 확률을 얼마나 크게 줬는지를 봅니다. 아무 정보 없이 1/3씩 주면 1.0986입니다.'],
+    ['Brier 점수', '예측 확률과 실제 결과(0 또는 1)의 차이를 제곱해 평균한 값(낮을수록 좋음).'],
+    ['기준 모델', '새 모델이 쓸모 있는지 가늠하는 단순한 비교 대상(항상 해당 구단 승리 예측, Elo만 쓰는 모델 등).'],
+    ['신뢰구간', '표본이 달라졌어도 결과가 있을 법한 범위. 0을 포함하면 “차이가 없다고 해도 이상하지 않다”는 뜻입니다.'],
+    ['보정(캘리브레이션)', '“승리 60%”라고 한 경기들이 실제로 약 60% 이겼는지 확인하는 것. 확률 예측이 믿을 만한지 보는 검사입니다.'],
+    ['변수 중요도', '입력 하나를 뒤섞었을 때 예측이 얼마나 나빠지는지로 잰 기여도. 원인이 아니라 “모델이 의지한 정도”입니다.'],
+  ];
+  Lab.glossary = new Map(GLOSSARY);
+  const pop = document.createElement('div'); pop.className = 'pop'; pop.hidden = true; pop.setAttribute('role', 'tooltip'); document.body.append(pop);
+  let popFor = null;
+  function showPop(btn) {
+    const name = btn.dataset.term, text = Lab.glossary.get(name);
+    if (!text) return;
+    pop.innerHTML = `<b>${Lab.esc(name)}</b>${Lab.esc(text)}`; pop.hidden = false; popFor = btn;
+    const r = btn.getBoundingClientRect(), p = pop.getBoundingClientRect();
+    pop.style.left = Math.max(8, Math.min(innerWidth - p.width - 8, r.left)) + 'px';
+    pop.style.top = (r.bottom + p.height + 12 > innerHeight ? r.top - p.height - 8 : r.bottom + 6) + 'px';
+  }
+  const hidePop = () => { pop.hidden = true; popFor = null; };
+  document.addEventListener('click', (e) => { const t = e.target.closest('.term'); if (t) { popFor === t ? hidePop() : showPop(t); } else hidePop(); });
+  document.addEventListener('mouseover', (e) => { const t = e.target.closest && e.target.closest('.term'); if (t && popFor !== t) showPop(t); });
+  document.addEventListener('mouseout', (e) => { const t = e.target.closest && e.target.closest('.term'); if (t && !t.matches(':focus')) hidePop(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hidePop(); });
+  document.addEventListener('focusin', (e) => { if (e.target.classList && e.target.classList.contains('term')) showPop(e.target); });
+  // Lab.term('로그손실') or Lab.term('로그손실', '손실 점수') -> HTML string for use inside trusted markup
+  Lab.term = (name, text) => `<button type="button" class="term" data-term="${Lab.esc(name)}">${Lab.esc(text || name)}</button>`;
+  // Turn <abbr class="g">로그손실</abbr>-style markers written in static fragments into term buttons.
+  function upgradeTerms(root) {
+    root.querySelectorAll('[data-g]').forEach((n) => {
+      const name = n.getAttribute('data-g');
+      n.replaceWith(Lab.el('button', { type: 'button', class: 'term', 'data-term': name }, n.textContent || name));
+    });
+  }
+  Lab.upgradeTerms = upgradeTerms;
+  const gloss = document.getElementById('gloss');
+  for (const [k, v] of GLOSSARY) gloss.append(Lab.el('dt', { text: k }), Lab.el('dd', { text: v }));
+
+  // ------------------------------------------------------------ steps
+  const STEPS = [
+    ['s1', '데이터', '무엇을 모았나', '데이터 수집·구조·정답과 입력'],
+    ['s2', '전처리', '어떻게 다듬었나', '원시 기록을 모델 입력으로'],
+    ['s3', '모델 학습', '랜덤 포레스트 튜닝', '설정을 바꿔 가며 가장 좋은 조합 찾기'],
+    ['s4', '예측 실험', '직접 넣어 보기', '처음 보는 경기·가상 경기 예측'],
+  ];
+  const stepper = document.getElementById('stepper');
+  const buttons = STEPS.map(([id, title, sub], i) => {
+    const b = Lab.el('button', { type: 'button', role: 'tab', id: `tab-${id}`, 'aria-controls': id, 'aria-selected': 'false', tabindex: '-1' },
+      Lab.el('span', { class: 'n', text: String(i + 1) }), Lab.el('span', {}, Lab.el('b', { text: title }), Lab.el('small', { text: sub })));
+    b.addEventListener('click', () => show(id, true));
+    b.addEventListener('keydown', (e) => {
+      const k = { ArrowRight: 1, ArrowLeft: -1 }[e.key]; if (!k) return;
+      const next = STEPS[(i + k + STEPS.length) % STEPS.length][0]; show(next, true); document.getElementById(`tab-${next}`).focus(); e.preventDefault();
+    });
+    stepper.append(b); return b;
+  });
+  function show(id, push) {
+    if (!STEPS.some((s) => s[0] === id)) id = 's1';
+    hidePop(); Lab.tip.hide();
+    STEPS.forEach(([sid], i) => {
+      const on = sid === id, panel = document.getElementById(sid);
+      panel.hidden = !on; buttons[i].setAttribute('aria-selected', String(on)); buttons[i].tabIndex = on ? 0 : -1;
+    });
+    if (!Lab.inited.has(id) && Lab.steps[id]) {
+      Lab.inited.add(id);
+      const panel = document.getElementById(id);
+      try { Lab.steps[id](panel, LAB[id], LAB); upgradeTerms(panel); }
+      catch (err) { console.error(err); panel.append(Lab.el('div', { class: 'note' }, `이 단계를 그리는 중 오류가 났습니다: ${err.message}`)); }
+    } else Lab.redrawAll();
+    if (push) { history.replaceState(null, '', `#${id}`); window.scrollTo({ top: document.querySelector('.stepper-bar').offsetTop - 4, behavior: 'smooth' }); }
+  }
+  Lab.show = show;
+  document.querySelectorAll('[data-goto]').forEach((n) => n.addEventListener('click', () => show(n.dataset.goto, true)));
+  Lab.nav = (panel, prev, next) => panel.append(Lab.el('div', { class: 'step-nav' },
+    prev ? Lab.el('button', { class: 'btn', type: 'button', onclick: () => show(prev[0], true) }, `← ${prev[1]}`) : Lab.el('span'),
+    next ? Lab.el('button', { class: 'btn primary', type: 'button', onclick: () => show(next[0], true) }, `${next[1]} →`) : Lab.el('span')));
+
+  // ------------------------------------------------------------ overview + verdict (numbers come from the payload)
+  const M = LAB.meta, f = Lab.fmt;
+  document.getElementById('lede').textContent =
+    `${M.clubs.length}개 구단(${M.clubs_short.join('·')})이 ${M.first_date.slice(0, 4)}년부터 ${M.last_date.slice(0, 4)}년까지 치른 EPL 경기 ${f.int(M.n_matches)}개를 모아, ` +
+    `경기 전에 알 수 있는 정보만으로 승·무·패 확률을 예측하는 모델을 만들었습니다. 아래 4단계를 차례로 눌러 보세요. 각 단계 맨 위의 “한 줄 결론”만 읽어도 흐름을 알 수 있습니다.`;
+  const ov = document.getElementById('overview');
+  STEPS.forEach(([id, title, , desc], i) => ov.append(Lab.el('button', { class: 'ov', type: 'button', onclick: () => show(id, true) },
+    Lab.el('span', { class: 'n', text: String(i + 1) }), Lab.el('b', { text: title }), Lab.el('span', { text: M.step_blurbs[i] }))));
+  const v = M.scores;
+  document.getElementById('verdict').append(
+    Lab.el('b', { text: '먼저 결론: ' }),
+    document.createTextNode(`튜닝한 랜덤 포레스트는 처음 보는 ${f.int(M.test_team_rows)}개 구단 경기에서 ${f.pct(v.rf.accuracy)}를 맞혔습니다. 아무렇게나 찍으면 ${f.pct(1 / 3)}, 한 줄짜리 Elo 모델은 ${f.pct(v.elo.accuracy)}입니다. 즉 이 모델은 “미래를 맞히는 도구”가 아니라, 같은 정보로는 축구 결과를 약 절반 정도만 맞힐 수 있다는 한계를 보여 주는 실험입니다.`),
+    Lab.el('div', { class: 'scoreline' },
+      Lab.el('span', {}, '튜닝 랜덤 포레스트 ', Lab.el('strong', { text: f.pct(v.rf.accuracy) })),
+      Lab.el('span', {}, 'Elo 단순 모델 ', Lab.el('strong', { text: f.pct(v.elo.accuracy) })),
+      Lab.el('span', {}, '항상 해당 구단 승리 ', Lab.el('strong', { text: f.pct(v.always.accuracy) })),
+      Lab.el('span', {}, '무작위 ', Lab.el('strong', { text: f.pct(1 / 3) }))));
+  document.getElementById('sources').textContent = M.source_note;
+
+  // ------------------------------------------------------------ theme
+  const root = document.documentElement, toggle = document.getElementById('theme-toggle');
+  function setTheme(t) {
+    root.setAttribute('data-theme', t);
+    try { localStorage.setItem('lab-theme', t); } catch (e) { /* storage may be blocked */ }
+    toggle.setAttribute('aria-pressed', String(t === 'dark'));
+    requestAnimationFrame(Lab.redrawAll);
+  }
+  let saved = null; try { saved = localStorage.getItem('lab-theme'); } catch (e) { /* ignore */ }
+  const media = matchMedia('(prefers-color-scheme: dark)');
+  if (saved === 'light' || saved === 'dark') setTheme(saved);
+  toggle.addEventListener('click', () => setTheme((root.getAttribute('data-theme') === 'dark' || (root.getAttribute('data-theme') === 'auto' && media.matches)) ? 'light' : 'dark'));
+  media.addEventListener('change', () => requestAnimationFrame(Lab.redrawAll));
+
+  // ------------------------------------------------------------ boot
+  // A hash that is not a step id may point at an anchor inside a step (e.g. #s3-d): open that step (anchors are prefixed
+  // with the step id, and the step draws lazily), then scroll to the anchor.
+  function route(hash, scroll) {
+    const id = hash || 's1';
+    if (STEPS.some((s) => s[0] === id)) return show(id, false);
+    if (id === 'glossary') return;
+    const owner = STEPS.find((s) => id.startsWith(`${s[0]}-`));
+    show(owner ? owner[0] : 's1', false);
+    const target = owner && document.getElementById(id);
+    if (target && scroll) requestAnimationFrame(() => target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }));
+  }
+  addEventListener('hashchange', () => route(location.hash.slice(1), true));
+  route(location.hash.slice(1), true);
+  document.title = 'EPL 경기 예측 실험실 · 4단계';
+})();
+</script>
+</body>
+</html>

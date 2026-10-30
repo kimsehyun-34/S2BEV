@@ -9,6 +9,7 @@
 - [경기당 하나의 테스트 예측](artifacts/v2/test_predictions.csv), [팀별 분석 가능성 CSV](reports/tactical_feasibility.csv).
 - [학습 모델](artifacts/v2/model.joblib), [그래프 SVG](reports/benchmark.svg).
 - [유명 6개 구단 집중 분석](reports/focused/index.html): Arsenal·Chelsea·Liverpool·Manchester City·Manchester United·Tottenham의 2006/07~2026/27 EPL 경기 4,003개, Random Forest 하이퍼파라미터 튜닝 결과.
+- [EPL 경기 예측 실험실](reports/focused/lab.html): 위 6개 구단 분석을 데이터 → 전처리 → 모델 학습(랜덤 포레스트·튜닝) → 예측 실험 4단계로 풀어 쓴 화면. 4단계에서 팀·장소·입력값을 직접 바꿔 학습에 쓰지 않은 경기와 가상의 경기를 예측해 볼 수 있습니다. 서버 없이 파일만 열면 동작합니다.
 
 ## 실제 결과
 
@@ -47,6 +48,25 @@ python -m epl_tactics report-focused             # 재학습 없이 리포트만
 ```
 
 수집한 원본 ESPN 응답(`data/focused/facts/`)은 재배포 권리가 불분명해 Git에 올리지 않습니다. `collect-focused`로 다시 받을 수 있습니다.
+
+### 분석 실험실 (`reports/focused/lab.html`)
+
+기존 비교 표(`comparison.html`)를 처음 보는 사람도 따라갈 수 있게 4단계로 다시 구성한 화면입니다.
+
+| 단계 | 내용 |
+|---|---|
+| 1 데이터 | 수집 출처·조인 검증, 원시 표와 모델 표의 모양, 종속변수(승·무·패)와 독립변수 220개의 의미, 누수 방지 규칙, 아직 없는 정보 |
+| 2 전처리 | 경기 전 값 만들기(Elo·최근 5/10/20경기), 결측 처리, 표준화·원핫, 분포·산점도·상관·시즌별 변화, 한 경기의 입력이 만들어지는 과정 |
+| 3 모델 학습 | 랜덤 포레스트가 하는 일(나무·투표), 하이퍼파라미터 후보 32개의 시간순 검증, 튜닝 전후와 Elo 기준 비교, 입력 중요도, 보정(calibration), 신뢰구간 |
+| 4 예측 실험 | 학습에 쓰지 않은 2024/25 이후 경기(구단 행 504개)에서 입력을 바꿔 보거나, 팀·홈/원정·포메이션을 골라 가상의 경기를 만들어 승·무·패 확률과 이유를 확인 |
+
+4단계의 랜덤 포레스트는 파이썬 모델의 트리를 그대로 내보내 브라우저(JavaScript)에서 계산합니다. 학습에 쓰지 않은 504개 구단 행(고유 경기 439개)에서 파이썬 확률과의 차이는 최대 약 2e-9입니다. 단, 이 고정 모델은 2024/25 이전 경기만으로 한 번 학습한 것이라 시즌마다 다시 학습하는 공식 점수(54.3%)와 조금 다릅니다(53.9%). 가상의 경기는 가장 최근 경기(2026-10-25)까지의 팀 상태에서 만들며, 선발 11명 관련 값은 최근 경기 평균으로 채웁니다.
+
+```powershell
+python -m epl_tactics report-lab                 # reports/focused/lab.html 생성 (모델 재학습 약 30초)
+python -m unittest discover -s tests -p "test_lab_*.py" -v
+CHROME_PATH=<chrome.exe> node scripts/verify_lab.cjs <playwright-core 경로> <스크린샷 폴더>
+```
 
 ## 실행 환경
 

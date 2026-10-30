@@ -74,7 +74,7 @@ def _lineup_features(players: list[dict], history: ClubHistory) -> dict:
     return output
 
 
-def build_focused_features(data_dir: str | Path = "data/focused") -> tuple[pd.DataFrame, list[str], dict]:
+def build_focused_features(data_dir: str | Path = "data/focused", return_states: bool = False) -> tuple:
     root = Path(data_dir)
     league = pd.read_csv(root / "league_context.csv")
     detailed = pd.read_csv(root / "matches.csv").set_index("match_id")
@@ -168,4 +168,7 @@ def build_focused_features(data_dir: str | Path = "data/focused") -> tuple[pd.Da
                 "same_match_excluded": ["goals", "shots", "possession", "cards", "player match stats", "odds"],
                 "lineup_note": "Current starting identities only; player productivity from earlier observed selected-club fixtures. No career/ability or injury claims.",
                 "context_note": "All EPL opponent result histories are context, never supervised non-cohort team rows."}
+    if return_states:
+        # Final per-club histories, so a hypothetical fixture can be featurised exactly like a real one.
+        return frame, numeric, metadata, states
     return frame, numeric, metadata

@@ -37,6 +37,10 @@ def parser() -> argparse.ArgumentParser:
     focused_report.add_argument("--data-dir", default="data/focused")
     focused_report.add_argument("--model-dir", default="artifacts/focused")
     focused_report.add_argument("--output-dir", default="reports/focused")
+    lab = commands.add_parser("report-lab", help="Build the four-step interactive lab page (data -> preprocessing -> tuned RF -> inference)")
+    lab.add_argument("--data-dir", default="data/focused")
+    lab.add_argument("--model-dir", default="artifacts/focused")
+    lab.add_argument("--output-dir", default="reports/focused")
     recent = commands.add_parser("collect-recent", help="Collect recent ESPN lineups and independently verify scores")
     recent.add_argument("--output", default="data/epl_recent.csv")
     recent.add_argument("--start-year", type=int, default=2019)
@@ -87,6 +91,9 @@ def main(argv: list[str] | None = None) -> None:
         elif args.command == "report-focused":
             from .focused_report import write_focused_report
             result = {"html": str(write_focused_report(args.data_dir, args.model_dir, args.output_dir).resolve())}
+        elif args.command == "report-lab":
+            from .lab.report import write_lab_report
+            result = {"html": str(write_lab_report(args.data_dir, args.model_dir, args.output_dir).resolve())}
         elif args.command == "collect-recent":
             result = {"collection": fetch_recent(args.output, args.start_year, args.cutoff, args.workers),
                       "crosscheck": crosscheck_football_data(args.output)}
